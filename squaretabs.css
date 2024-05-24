@@ -17,7 +17,7 @@ text-align:center; padding-top:35px; margin-bottom:-10px; height: 94px; margin:a
 }
 /* set the generic tab style--and set position so that it overlaps the header*/ 
 nav {position:relative; top:-13px; color: navy; border-bottom: 1px solid black;
-margin: -25px 0 0 0; padding: 0px; padding-left: 10px z-index: 1; }
+margin: -25px 0 0 0; padding: 0px; padding-left: 10px; z-index: 1; }
 /* use display:inline to remove IE6 double margin bug*/
 nav li { display: inline; overflow: hidden; list-style-type: none; 
 	}
