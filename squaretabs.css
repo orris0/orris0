@@ -30,15 +30,15 @@ text-align:center; padding-top:35px; margin-bottom:-10px; height: 94px; margin:a
 		border: 1px solid black; padding: 2px 5px 0px 5px; margin: 0; text-decoration: none; 
 		}
  /*make a 3px wide bottom border on tab the same colour as the page*/  
-	nav a.active { background: #cfecf5; color:navy; border-bottom: 3px solid #cfecf5; 
+	#navone a.active { background: #cfecf5; color:navy; border-bottom: 3px solid #cfecf5; 
 	}
   /*hovering over a non-active tab shows an aqua tab*/
-	nav a:hover { 	background: aqua; 
+	#navone a:hover { 	background: aqua; 
 	}
- 	nav a:visited { color: navy; 
+ 	#navone a:visited { color: navy; 
 	}
  /*hovering over the active tab shows navy text*/
-	nav a.active:hover { background: #cfecf5; color: navy; 
+	#navone a.active:hover { background: #cfecf5; color: navy; 
 	}
 /*set the position of the content to butt up to the menu tabs*/ 
 	#content {margin-top:0; font : 0.9em/1.3em "bitstream vera sans", verdana, sans-serif;
@@ -68,9 +68,9 @@ body {margin:auto; width:970px;
 header {
 	width:970px;
 }
-nav { float:left; margin-left:10px; width:115px;
+#navone { float:left; margin-left:10px; width:115px;
 }
-nav ul { margin-left:0; border:0; width:115px;
+#navone ul { margin-left:0; border:0; width:115px;
 }
 /*set far right column for ads*/
 #rightcol { width:150px; float:right; text-align:center;	
