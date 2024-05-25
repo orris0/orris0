@@ -57,15 +57,15 @@ br .clear {	clear:both;
 img { 	border:0;
 }
 /*set far right column for ads*/
-#rightcol { width:150px; float:right; text-align:center;	
+#rightcol { width:150px; float:right; text-align:center;margin-top: -190px;	
 }
-#rightcol p.advert {font-size:small; margin-top:90px;
+#rightcol p.advert {font-size:small; margin-top: 90px;
 } 
 /*set middle column for main content*/
 #midcol { margin-left:135px; margin-right:155px;
 }
 /*set gallery block position*/ 
-#gallery-block { position:relative; left: 20%; top:-175px; 
+#gallery-block { position:relative; left: 20%; top:-195px; 
 }
 /*set footer*/
 footer { 	clear:both; color:black; text-align:center; width:970px;
@@ -131,22 +131,24 @@ li	{ margin: 5px; list-style-type:none;
 #col-3 a:hover img.hid { visibility:visible; 
 }
 
-#navtwo ul  {padding-top:230px;padding:0;list-style-type:none; margin:auto; 
-display:block;height:36px;text-transform:uppercase;
-font-size:12px;font-weight:bold;
-background:url('images/bgOFF.gif') repeat-x left top;
-font-family:Helvetica,Arial,Verdana,sans-serif;
-border-bottom:4px solid #336666; border-top:1px solid #C0E2D4;
-position:relative;	top: -266px; left: 0;
-}
-#navtwo ul  li { display:block;float:left;margin:0;padding:0;
-}
-#navtwo ul  li a { display:block; float:left;color:#874B46;
-text-decoration:none;padding:12px 20px 0 20px;height:24px;
-background:transparent url("images/bgDIVIDER.gif") no-repeat top right; 
-}
-#navtwo ul  li a:hover{ background:transparent url("images/bgHOVER.gif") no-repeat top right; 
-}
-#navtwo ul  li a.current,ul#main-menu li a.current:hover { color:#fff;
-background:transparent url("images/bgON.gif") no-repeat top right; 
-}
+/* set the generic tab style--and set position so that it overlaps the header*/ 
+#navtwo {position:relative; top:-13px; color: navy; border-bottom: 1px solid black;
+margin: -25px 0 0 0; padding: 0px; padding-left: 10px; z-index: 1; }
+/* use display:inline to remove IE6 double margin bug*/
+#navtwo li { display: inline; overflow: hidden; list-style-type: none; 
+	}
+/*set tab colour*/
+	#navtwo a, a.active { color: navy; background: #81d9f6; font: bold 1em "Trebuchet MS", Arial, sans-serif;
+		border: 1px solid black; padding: 2px 5px 0px 5px; margin: 0; text-decoration: none; 
+		}
+ /*make a 3px wide bottom border on tab the same colour as the page*/  
+	 a.active { background: #cfecf5; color:navy; border-bottom: 3px solid #cfecf5; 
+	}
+  /*hovering over a non-active tab shows an aqua tab*/
+	#navtwo a:hover { 	background: aqua; 
+	}
+ 	#navtwo a:visited { color: navy; 
+	}
+ /*hovering over the active tab shows navy text*/
+	#navtwo a.active:hover { background: #cfecf5; color: navy; 
+	}
