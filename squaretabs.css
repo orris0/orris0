@@ -15,42 +15,121 @@ background-image:url('images/bluepan.jpg'); background-repeat:no-repeat;
 h1 {font-family:Arial; font-size:x-large; color:white; font-weight:normal; 
 text-align:center; padding-top:35px; margin-bottom:-10px; height: 94px; margin:auto;
 }
-/* set the generic tab style--and set position so that it overlaps the header*/ 
-nav {position:relative; top:-13px; color: navy; border-bottom: 1px solid black;
-margin: -25px 0 0 0; padding: 0px; padding-left: 10px; z-index: 1; }
+
+div {
+  float: left;
+  vertical-align: middle;
+  box-sizing: border-box;
+}
+.tabs {
+  padding-left: 20px;
+}
+.tab {
+  position: relative;
+  padding: .5em 1em .35em;
+  color: #000;
+  top: 1px
+}
+.tab::before {
+  content: '';
+  position: absolute;
+  top: 0; right: 0; bottom: 0; left: 0;
+  z-index: -1;
+  transform: scaleX(1.25) scaleY(1.4) perspective(0.5em) rotateX(5deg);
+  transform-origin: bottom;
+  background: #ccc;
+  background-image: linear-gradient(hsla(0,0%,100%,.6), hsla(0,0%,100%,0));
+  border: 1px solid rgba(0,0,0,.4);
+  border-bottom: none;
+  border-width: 2px 1px 0;
+  border-radius: .5em .5em 0 0;
+  box-shadow: 0 .15em  rgba(0,0,0,.3) inset;
+}
+.tab::after {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  top: 100%; right: -15px; left: -15px;
+  height: 15px;
+  background: #fff;
+}
+.tab.active {
+  z-index: 1;
+}
+.tab.active::before {
+  background: #fff;
+}
+.box {
+  clear: left;
+  /*
+  width: 500px;
+  height: 100px;
+  
+  background: #fff;*/
+  border-radius: 5px;
+  border: 1px solid rgba(0,0,0,.4);
+}
+
+
+
+/* set the generic tab style--and set position so that it overlaps the header*/
+
+nav {
+	position:relative;
+    top:-13px; color: yellow; 
+margin: -25px 0 0 0; padding: .3em 1em 0; padding-left: 10px; z-index: 1; }
 /* use display:inline to remove IE6 double margin bug*/
 nav li { display: inline; overflow: hidden; list-style-type: none; 
 	}
 /*set tab colour*/
-	nav a, a.active { color: navy; background: #81d9f6; font: bold 1em "Trebuchet MS", Arial, sans-serif;
-		border: 1px solid black; padding: 2px 5px 0px 5px; margin: 0; text-decoration: none; 
-		}
- /*make a 3px wide bottom border on tab the same colour as the page*/  
-	 a.active { background: #cfecf5; color:navy; border-bottom: 3px solid #cfecf5; 
+
+nav a {
+	position: relative;
+	display: inline-block;
+	padding: .3em 1em 0;
+}
+nav  a::before {
+    content: '';
+	position:absolute;
+	top: 0; 
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: -1;
+	background: #CCC;
+	background-image: linear-gradient(
+		                hsla(0,0%,100%,.6),hsla(0,0%,100%,0));
+	border: 1px solid rgba(0,0,0,.4);
+	border-bottom: none;
+	border-radius: .5em .5em 0 0;
+	box-shadow: 0 .15em white inset;
+	transform: perspective(.5em) rotateX(5deg);
+	transform-origin: bottom left;
+
+}
+	
+ /*make a 3px wide bottom border on tab the same colour as the page */
+	 a.active { background: #ccc; color:navy; border-bottom: 3px solid #cfecf5; 
 	}
   /*hovering over a non-active tab shows an aqua tab*/
-	nav a:hover { 	background: aqua; 
+	nav a:hover { 	background: aqua; border: 4px outset #c96e6b; border: 4px outset #c96e6b
 	}
  	nav a:visited { color: navy; 
 	}
  /*hovering over the active tab shows navy text*/
-	nav a.active:hover { background: #cfecf5; color: navy; 
+	nav a.active:hover { background: #cfecf5; color: navy; border: 4px outset #c96e6b
 	}
 /*set the position of the content to butt up to the menu tabs*/ 
-	#content {margin-top:0; font : 0.9em/1.3em "bitstream vera sans", verdana, sans-serif;
+	#box {margin-top:0; font : 0.9em/1.3em "bitstream vera sans", verdana, sans-serif;
 		position:relative; top:-13px; text-align: left; background: #cfecf5;
 		padding: 20px; border: 1px solid black; border-top: none; z-index: 2;
 		}
 
-/*set attributes for consistent appearance in all browsers
-html, body, p, ul, li, h1, h2 {	margin:0; padding:0; 
-}*/
+
 /*set images to have no borders*/
 img { 	border:0;
 }
-/*add display attributes for the semantic tags
-header, footer, section, article, nav { display:block; 
-}*/
+
 /*SET FONTS*/
 span.small { font-size:small;
 }
@@ -89,7 +168,7 @@ footer { 	clear:both; color:black; text-align:center; width:970px;
 #navone li.btn a { display:block; background-color :#946055; color:yellow; font-weight:bold; padding:4px;
 	margin-left:0; text-align:center; list-style-type:none; text-decoration:none; width:110px;border: 4px outset #c96e6b;
 }
-#navone li.btn a:hover { background-color:#9f7562;color:white;  border: 4px outset #c96e6b;
+#navone li.btn a:hover { background-color:aqua;color:white;  border: 4px outset #c96e6b;
 }
 #navone li a:active { background:#aecbff;  border: 4px inset #aecbff; 
 }
@@ -143,7 +222,7 @@ li	{ margin: 5px; list-style-type:none;
 }
 #col-3 a:hover img.hid { visibility:visible; 
 }
-
+/*
 #navtwo ul  {padding-top:230px;padding:0;list-style-type:none; margin:auto; 
 display:block;height:36px;text-transform:uppercase;
 font-size:12px;font-weight:bold;
@@ -163,4 +242,4 @@ background:transparent url("images/bgDIVIDER.gif") no-repeat top right;
 #navtwo ul  li a.current,ul#main-menu li a.current:hover { color:#fff;
 background:transparent url("images/bgON.gif") no-repeat top right; 
 }
- 
+ */
