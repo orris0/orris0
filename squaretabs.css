@@ -170,7 +170,7 @@ footer { 	clear:both; color:black; text-align:center; width:970px;
 }
 #navone li.btn a:hover { background-color:aqua;color:white;  border: 4px outset #c96e6b;
 }
-#navone li a:active { background:#aecbff;  border: 4px inset #aecbff; 
+#navone nav li a:active { background:#aecbff;  border: 4px inset #aecbff; 
 }
 #navone li.btn { width:110px;
 }
