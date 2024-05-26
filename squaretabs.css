@@ -3,7 +3,7 @@ html, body, h1, h2, h3, h4, h5, h6, p, ol, ul, li {  padding: 0; margin: 0;
 }
 header, footer, section, article, nav { display:block; 
 }
-body {text-align:center; margin-top: 20px; background: #bee8ff; font: medium arial; 
+body {text-align:center; margin-top: 20px; background: #bee8ff; font: large arial; 
 }
 #container {width:960px; margin:-10px auto 0 auto; 
 }
@@ -17,7 +17,7 @@ text-align:center; padding-top:35px; margin-bottom:-10px; height: 94px; margin:a
 }
 
 div {
-  float: left;
+  float: right;
   vertical-align: middle;
   box-sizing: border-box;
 }
@@ -70,7 +70,11 @@ div {
   border: 1px solid rgba(0,0,0,.4);
 }
 
-
+a[href] {
+	background:linear-gradient(90deg, gray 66%, transparent 0) no-repeat;
+	background-size: .4em 4px;
+	background-position: 0 1em;;
+}
 
 /* set the generic tab style--and set position so that it overlaps the header*/
 
@@ -86,7 +90,7 @@ nav li { display: inline; overflow: hidden; list-style-type: none;
 nav a {
 	position: relative;
 	display: inline-block;
-	padding: .8em 1em 0;
+	padding: .3em 1em 0;
 }
 nav  a::before {
     content: '';
@@ -96,10 +100,11 @@ nav  a::before {
 	bottom: 0;
 	left: 0;
 	z-index: -1;
-	background: #CCC;
+	background: #946055;
 	background-image: linear-gradient(
 		                hsla(0,0%,100%,.6),hsla(0,0%,100%,0));
 	border: 1px solid rgba(0,0,0,.4);
+	border: 4px outset #c96e6b;
 	border-bottom: none;
 	border-radius: .5em .5em 0 0;
 	box-shadow: 0 .15em white inset;
@@ -109,12 +114,12 @@ nav  a::before {
 }
 	
  /*make a 3px wide bottom border on tab the same colour as the page */
-	 a.active { background: #ccc; color:navy; border-bottom: 3px solid #cfecf5; 
+	 a.active { background: #946055; color:yellow; border-bottom: 3px solid #cfecf5; border: 4px outset #c96e6b;
 	}
   /*hovering over a non-active tab shows an aqua tab*/
-	nav a:hover { 	background: aqua; border: 4px outset #c96e6b; border: 4px outset #c96e6b; border-radius: .5em .5em 0 0;
+	nav a:hover { 	background: aqua;  border: 4px outset #c96e6b; border-radius: .5em .5em 0 0;
 	}
- 	nav a:visited { color: navy; 
+ 	nav a:visited { color: yellow; border: 4px outset #c96e6b;
 	}
  /*hovering over the active tab shows navy text*/
 	nav a.active:hover { background: #cfecf5; color: navy; border: 4px outset #c96e6b
@@ -151,13 +156,13 @@ body {margin:auto; width:970px;
 /*set far right column for ads*/
 #rightcol { width:19%; float:right; text-align:center;	
 }
-#rightcol p.advert {font-size:small; margin-top:190px;
+#rightcol p.advert {font-size:small; margin-top:200px;
 } 
 /*set middle column for main content*/
 #midcol { margin-left:135px; margin-right:155px;
 }
 /*set gallery block position*/ 
-#gallery-block { position:relative; left: 0px; top:-8px; 
+#gallery-block { position:relative; left: -290px; top:-8px; 
 }
 /*set footer*/
 footer { 	clear:both; color:black; text-align:center; width:970px;
@@ -166,7 +171,7 @@ footer { 	clear:both; color:black; text-align:center; width:970px;
 }
 /*set menu buttons*/
 #navone li.btn a { display:block; background-color :#946055; color:yellow; font-weight:bold; padding:4px;
-	margin-left:0; text-align:center; list-style-type:none; text-decoration:none; width:110px;border: 4px outset #c96e6b;
+	margin-left: -150px; text-align:center; list-style-type:none; text-decoration:none; width:110px;border: 4px outset #c96e6b;
 }
 #navone li.btn a:hover { background-color:aqua;color:white;  border: 4px outset #c96e6b;
 }
