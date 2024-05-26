@@ -90,7 +90,8 @@ nav li { display: inline; overflow: hidden; list-style-type: none;
 nav a {
 	position: relative;
 	display: inline-block;
-	padding: .3em 1em 0;
+	padding: .6em 1em 0;
+	font-size:large; font-family:"times new roman"; text-align:center;
 }
 nav  a::before {
     content: '';
@@ -114,15 +115,15 @@ nav  a::before {
 }
 	
  /*make a 3px wide bottom border on tab the same colour as the page */
-	 a.active { background: #946055; color:yellow; border-bottom: 3px solid #cfecf5; border: 4px outset #c96e6b;
+	 a.active { background: #946055; color:yellow; border-bottom: 3px solid #cfecf5; border: 4px outset #c96e6b; font-size:small; font-family:"times new roman"; text-align:center;
 	}
   /*hovering over a non-active tab shows an aqua tab*/
-	nav a:hover { 	background: aqua;  border: 4px outset #c96e6b; border-radius: .5em .5em 0 0;
+	nav a:hover { 	background: aqua;  border: 4px outset #c96e6b; border-radius: .5em .5em 0 0; font-size:small; font-family:"times new roman"; text-align:center;
 	}
- 	nav a:visited { color: yellow; border: 4px outset #c96e6b;
+ 	nav a:visited { color: yellow; border: 4px outset #c96e6b;font-size:small; font-family:"times new roman"; text-align:center;
 	}
  /*hovering over the active tab shows navy text*/
-	nav a.active:hover { background: #cfecf5; color: navy; border: 4px outset #c96e6b
+	nav a.active:hover { background: #cfecf5; color: navy; border: 4px outset #c96e6b; font-size:small; font-family:"times new roman"; text-align:center;
 	}
 /*set the position of the content to butt up to the menu tabs*/ 
 	#box {margin-top:0; font : 0.9em/1.3em "bitstream vera sans", verdana, sans-serif;
