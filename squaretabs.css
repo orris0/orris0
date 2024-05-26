@@ -86,7 +86,7 @@ nav li { display: inline; overflow: hidden; list-style-type: none;
 nav a {
 	position: relative;
 	display: inline-block;
-	padding: .3em 1em 0;
+	padding: .8em 1em 0;
 }
 nav  a::before {
     content: '';
@@ -104,7 +104,7 @@ nav  a::before {
 	border-radius: .5em .5em 0 0;
 	box-shadow: 0 .15em white inset;
 	transform: perspective(.5em) rotateX(5deg);
-	transform-origin: bottom left;
+	transform-origin: bottom;
 
 }
 	
@@ -112,7 +112,7 @@ nav  a::before {
 	 a.active { background: #ccc; color:navy; border-bottom: 3px solid #cfecf5; 
 	}
   /*hovering over a non-active tab shows an aqua tab*/
-	nav a:hover { 	background: aqua; border: 4px outset #c96e6b; border: 4px outset #c96e6b
+	nav a:hover { 	background: aqua; border: 4px outset #c96e6b; border: 4px outset #c96e6b; border-radius: .5em .5em 0 0;
 	}
  	nav a:visited { color: navy; 
 	}
