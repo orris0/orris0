@@ -26,7 +26,7 @@ nav {
 body {
 	  display: flex;
 	  min-height: 100vh;
-    margin: 0px;
+    margin:auto; width:970px;
     background: #bee8ff;
     font: medium arial;
 }
@@ -58,7 +58,7 @@ header {
   margin: auto;
 }
 
-/*set attributes for consistent appearance in all browsers*/
+/*set attributes for consistent appearance in all browsers*
 html,
 body,
 p,
@@ -75,7 +75,7 @@ img {
   border: 0;
 }
 
-/*add display attributes for the semantic tags*/
+/*add display attributes for the semantic tags*
 header,
 footer,
 section,
