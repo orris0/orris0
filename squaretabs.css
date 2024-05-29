@@ -1,23 +1,4 @@
 ﻿/* Set styles to equalise browser rendition*/
-<<<<<<< HEAD
-html, body, h1, h2, h3, h4, h5, h6, p, ol, ul, li {  padding: 0; margin: 0; 
-}
-/*add display attributes for the semantic tags*/
-header, footer, section, article, nav { display:block; 
-}
-body {text-align:center; margin-top: 20px; background: #bee8ff; font: large arial; 
-}
-#container {width:960px; margin:-10px auto 0 auto; 
-}
-/*HEADER/BANNER FILLS THE CONTAINER'S WIDTH*/
-header {padding-top:0; width:960px; height:100px; margin-top:20px; 
-background-image:url('images/183827104_3988962411179790_7582603085971185577_n.jpg'); background-repeat:no-repeat; 
-}
-*/
-h1 {font-family:Arial; font-size:x-large; color:white; font-weight:normal; 
-text-align:center; padding-top:35px; margin-bottom:-10px; height: 94px; margin:auto;
-}
-=======
 html,
 body,
 h1,
@@ -89,15 +70,10 @@ h2 {
   padding: 0;
 }
 
->>>>>>> 30370fc9fc81c09ba49576307191bcc072e9ae35
 /*set images to have no borders*/
 img {
   border: 0;
 }
-<<<<<<< HEAD
-/*SET FONTS*
-span.small { font-size:small;
-=======
 
 /*add display attributes for the semantic tags*
 header,
@@ -111,7 +87,6 @@ nav {
 /*SET FONTS*/
 span.small {
   font-size: small;
->>>>>>> 30370fc9fc81c09ba49576307191bcc072e9ae35
 }
 
 h1 {
@@ -324,19 +299,12 @@ nav li {
 /*set tab colour*/
 
 nav a {
-<<<<<<< HEAD
-	position: relative;
-	display: inline-block;
-	padding: .2em 1em 0;
-	font-size:medium; font-family:"times new roman"; text-align:center;
-=======
   position: relative;
   display: inline-block;
   padding: 0.2em 1em 0;
   font-size: large;
   font-family: "times new roman";
   text-align: center;
->>>>>>> 30370fc9fc81c09ba49576307191bcc072e9ae35
 }
 
 nav a::before {
