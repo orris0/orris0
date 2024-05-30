@@ -12,9 +12,16 @@ body {text-align:center; margin-top: 20px; background: #bee8ff; font: large aria
 header {padding-top:0; width:960px; height:100px; margin-top:20px; 
 background-image:url('images/183827104_3988962411179790_7582603085971185577_n.jpg'); background-repeat:no-repeat; 
 }
-*/
-h1 {font-family:Arial; font-size:x-large; color:white; font-weight:normal; 
-text-align:center; padding-top:35px; margin-bottom:-10px; height: 94px; margin:auto;
+
+h1 {
+	font-family:Arial;
+	background: hsl(0,50%,45%);
+	text-shadow: 1px 1px black, 2px 2px black,
+	             3px 3px black, 4px 4px black,
+				 5px 5px black, 6px 6px black,
+				 7px 7px black, 8px 8px black;
+	font-size:x-large; color:white; font-weight:normal; 
+text-align:center; padding-top:35px; margin-bottom:-10px; height: 84px; margin:auto;
 }
 /*set images to have no borders*/
 img { 	border:0;
@@ -97,12 +104,11 @@ li	{ margin: 5px; list-style-type:none;
 nav {
 	position:relative;
     top:-13px; color: yellow; 
-margin: -25px 0 0 0; padding: .3em 1em 0; padding-left: 10px; z-index: 1; }
-/* use display:inline to remove IE6 double margin bug*/
-nav li { display: inline; overflow: hidden; list-style-type: none; 
-	}
+    margin: -25px 0 0 0; padding: .3em 1em 0; padding-left: 10px; z-index: 1; }
+    /* use display:inline to remove IE6 double margin bug*/
+    nav li { display: inline; overflow: hidden; list-style-type: none; 
+}
 /*set tab colour*/
-
 nav a {
 	position: relative;
 	display: inline-block;
@@ -130,8 +136,9 @@ nav  a::before {
 
 }
 	
- /*make a 3px wide bottom border on tab the same colour as the page */
-	 a.active { background: #946055; color:yellow; border-bottom: 3px solid #cfecf5; border: 4px outset #c96e6b; font-size:small; font-family:"times new roman"; text-align:center;
+     /*make a 3px wide bottom border on tab the same colour as the page */
+a.active { 
+	background: #946055; color: white; border-bottom: 3px solid #cfecf5; border: 4px outset #c96e6b; font-size:small; font-family:"times new roman"; text-align:center;
 	}
   /*hovering over a non-active tab shows an aqua tab*/
 	nav a:hover { 	background: aqua;  border: 4px outset #c96e6b; border-radius: .5em .5em 0 0; font-size:small; font-family:"times new roman"; text-align:center;
@@ -149,16 +156,6 @@ nav  a::before {
 /*SET FONTS*/
 span.small { font-size:small;
 }
-/*
-h1 { font-size:x-large; font-family:"times new roman"; text-align:center;
-}
-
-h2 {font-size:large; color: black; font-family:"times new roman"; text-align:center;
-}
-/*PAGE LAYOUT*/
-body {margin:auto; width:970px; 
-}
-
 
 #navone { float:left; margin-left:10px; width:115px;
 }
