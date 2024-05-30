@@ -19,23 +19,6 @@ text-align:center; padding-top:35px; margin-bottom:-10px; height: 94px; margin:a
 /*set images to have no borders*/
 img { 	border:0;
 }
-/*SET FONTS*
-span.small { font-size:small;
-}
-h1 { font-size:x-large; font-family:"times new roman"; text-align:center;
-}
-h2 {font-size:large; font-family:"times new roman"; text-align:center;
-}
-/*PAGE LAYOUT*
-body {margin:auto; width:970px; 
-}
-header {
-	width:970px;
-}
-nav { float:left; margin-left:10px; width:115px;
-}
-nav ul { margin-left:0; border:0; width:115px;
-}
 /*set far right column for ads*/
 #rightcol { width:150px; float:right; text-align:center;	
 }
@@ -163,16 +146,10 @@ nav  a::before {
 		position:relative; top:-13px; text-align: left; background: #cfecf5;
 		padding: 20px; border: 1px solid black; border-top: none; z-index: 2;
 		}
-
-
-/*set images to have no borders*/
-img { 	border:0;
-}
-
 /*SET FONTS*/
 span.small { font-size:small;
 }
-
+/*
 h1 { font-size:x-large; font-family:"times new roman"; text-align:center;
 }
 
@@ -187,22 +164,6 @@ body {margin:auto; width:970px;
 }
 #navone ul { margin-left:0; border:0; width:115px;
 }
-/*set far right column for ads*
-#rightcol { width:180px; float:right; text-align:center;	
-}
-#rightcol p.advert {font-size:small; margin-top:200px;
-} 
-/*set middle column for main content*
-#midcol { margin-left:135px; margin-right:155px;
-}
-/*set gallery block position* 
-#gallery-block { position:relative; left: 20px; top:-8px; 
-}
-/*set footer*
-footer { 	clear:both; color:black; text-align:center; width:970px;
-}
-.clear { clear:both;
-}
 /*set menu buttons*/
 #navone li.btn a { display:block; background-color :#946055; color:yellow; font-weight:bold; padding:4px;
 	margin-left: -10px; text-align:center; list-style-type:none; text-decoration:none; width:110px;border: 4px outset #c96e6b;
@@ -214,77 +175,3 @@ footer { 	clear:both; color:black; text-align:center; width:970px;
 #navone li.btn { width:110px;
 }
 
-#navone {
-	
-}
-
-
-/*SET THUMBNAIL GALLERY BLOCK*/  
-/* Set general thumbnail styles *
-#col-1	{ position: absolute; top: 0; left: 0; width:85px;
-} 
-/*place the column on the page*
-li	{ margin: 5px; list-style-type:none; 
-} 
-/*remove bullets from the un-ordered list elements and create the
-MouseOut state (default) - create and position a space for the larger images and hide them*
-#col-1 a img.hid { width: 260px; height:390px; position: absolute; top: 10px; left: 330px;
-	visibility: hidden;
-}
-/* MouseOver state (hover)- this reveals larger picture *
-#col-1 a:hover { background: white; }
-#col-1 a:hover img.hid { visibility:visible; }
-
-/*----------------------------------------------------*/
-
-/* set 2nd column of thumbnails 85px further over to right*
-#col-2	{ position: absolute; top: 0; left: 85px; width:85px; }
-li	{ margin: 5px; list-style-type:none;	
-}
-/* MouseOut state (default) - hide larger picture *
-#col-2 a img.hid { width: 260px; height:390px;
-	position: absolute; top: 10px; left: 245px; margin-left:0;
-	visibility: hidden;
-	}
-/* MouseOver state (hover)- reveal larger picture *
-#col-2 a:hover { background: white; }
-#col-2 a:hover img.hid { visibility:visible; }
-
-/*----------------------------------------------------*/
-
-/* set 3nd column of thumbnails 170px further over to right*
-#col-3	{ position: absolute; top: 0; left: 175px; width:95px; }
-li	{ margin: 5px; list-style-type:none;	
-}
-/* MouseOut state (default) - hide larger picture *
-#col-3 a img.hid {
-	width: 260px; height:390px;
-	position: absolute; top: 10px; left: 155px; margin-left:0;
-	visibility: hidden;
-	}
-/* MouseOver state (hover)- reveal larger picture 
-#col-3a:hover { background: white; 
-}
-#col-3 a:hover img.hid { visibility:visible; 
-}
-/*
-#navtwo ul  {padding-top:230px;padding:0;list-style-type:none; margin:auto; 
-display:block;height:36px;text-transform:uppercase;
-font-size:12px;font-weight:bold;
-background:url('images/bgOFF.gif') repeat-x left top;
-font-family:Helvetica,Arial,Verdana,sans-serif;
-border-bottom:4px solid #336666; border-top:1px solid #C0E2D4;
-position:relative;	top: -266px; left: 0;
-}
-#navtwo ul  li { display:block;float:left;margin:0;padding:0;
-}
-#navtwo ul  li a { display:block; float:left;color:#874B46;
-text-decoration:none;padding:12px 20px 0 20px;height:24px;
-background:transparent url("images/bgDIVIDER.gif") no-repeat top right; 
-}
-#navtwo ul  li a:hover{ background:transparent url("images/bgHOVER.gif") no-repeat top right; 
-}
-#navtwo ul  li a.current,ul#main-menu li a.current:hover { color:#fff;
-background:transparent url("images/bgON.gif") no-repeat top right; 
-}
- */
