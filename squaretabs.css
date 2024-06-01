@@ -1,25 +1,4 @@
 ﻿/* Set styles to equalise browser rendition*/
-<<<<<<< HEAD
-html, body, h1, h2, h3, h4, h5, h6, p, ol,  ul, li {
-    padding: 0;
-    margin: 0;
-}
-
-header, footer, section, article, nav {
-  display: block;
-}
-
-/*PAGE LAYOUT*/
-body {margin:auto; width:970px; 
-}
-header {
-	width:970px;
-}
-*/
-#container {
-  width: 960px;
-  margin: -10px auto 0 auto;
-=======
 html, body, h1, h2, h3, h4, h5, h6, p, ol, ul, li {  padding: 0; margin: 0; 
 }
 /*add display attributes for the semantic tags*/
@@ -28,64 +7,8 @@ header, footer, section, article, nav { display:block;
 body {text-align:center; margin-top: 20px; background: #bee8ff; font: large arial; 
 }
 #container {width:960px; margin:-10px auto 0 auto; 
->>>>>>> c458b377406ddfc85d33109f2605d256bcc14a3a
 }
 /*HEADER/BANNER FILLS THE CONTAINER'S WIDTH*/
-<<<<<<< HEAD
-header {
-  /* padding-top: 0; */
-  width: 100%;
-  height: 156px;
-  margin-top: 0px;
-  background-image: url("images/183827104_3988962411179790_7582603085971185577_n.jpg");
-  background-repeat: no-repeat;
-  background-position:center;
- border-bottom:0;
-}
-/*
-h1 {
-    font-family: Arial;
-    font-size: 40px;
-    color: white;
-    font-weight: normal;
-    text-align: center;
-    padding-top: 35px;
-    margin-bottom: -10px;
-    height: 94px;
-    margin: auto;
-}
-
-/*set the generic style--and move menu upwards so that it overlaps the header*/
-nav {
-    position: relative;
-    top: -13px; 
-    color: navy;
-    border-bottom: 1px solid black; 
-    margin: 25px 0 0 0;
-    padding: 0px; 
-    padding-left: 10px;
-    z-index: 1;
-}
-
-/*gallery-page */
-
-/*set images to have no borders*/
-img { 	border:0;
-}
-
-/*SET FONTS*/
-span.small { font-size:small;
-}
-
-h1 { font-size:x-large; font-family:"times new roman"; text-align:center;
-}
-h2 {font-size:large; font-family:"times new roman"; text-align:center;
-}
-
-nav { float:left; margin-left:10px; width:115px;
-}
-nav ul { margin-left:0; border:0; width:115px;
-=======
 header {padding-top:0; width:960px; height:100px; margin-top:20px; 
 /* background-image:url('images/183827104_3988962411179790_7582603085971185577_n.jpg'); background-repeat:no-repeat; */ 
 }
@@ -102,7 +25,6 @@ text-align:center; padding-top:35px; margin-bottom:-10px; height: 84px; margin:a
 }
 /*set images to have no borders*/
 img { 	border:0;
->>>>>>> c458b377406ddfc85d33109f2605d256bcc14a3a
 }
 /*set far right column for ads*/
 #rightcol { width:150px; float:right; text-align:center;	
@@ -173,31 +95,12 @@ li	{ margin: 5px; list-style-type:none;
 	}
 /* MouseOver state (hover)- reveal larger picture */
 #col-3a:hover { background: white; 
-<<<<<<< HEAD
 }
 #col-3 a:hover img.hid { visibility:visible; 
 }
 
-=======
-}
-#col-3 a:hover img.hid { visibility:visible; 
-}
->>>>>>> c458b377406ddfc85d33109f2605d256bcc14a3a
 
 
-<<<<<<< HEAD
-
-#navone {
-  float: left;
-  margin-left: 10px;
-  width: 115px;
-}
-
-#navone ul {
-  margin-left: 0;
-  border: 0;
-  width: 115px;
-=======
 nav {
 	position:relative;
     top:-13px; color: yellow; 
@@ -257,7 +160,6 @@ span.small { font-size:small;
 #navone { float:left; margin-left:10px; width:115px;
 }
 #navone ul { margin-left:0; border:0; width:115px;
->>>>>>> c458b377406ddfc85d33109f2605d256bcc14a3a
 }
 /*set menu buttons*/
 #navone li.btn a { display:block; background-color :#946055; color:yellow; font-weight:bold; padding:4px;
