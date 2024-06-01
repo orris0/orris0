@@ -1,4 +1,5 @@
 ﻿/* Set styles to equalise browser rendition*/
+<<<<<<< HEAD
 html, body, h1, h2, h3, h4, h5, h6, p, ol,  ul, li {
     padding: 0;
     margin: 0;
@@ -18,9 +19,19 @@ header {
 #container {
   width: 960px;
   margin: -10px auto 0 auto;
+=======
+html, body, h1, h2, h3, h4, h5, h6, p, ol, ul, li {  padding: 0; margin: 0; 
 }
-
+/*add display attributes for the semantic tags*/
+header, footer, section, article, nav { display:block; 
+}
+body {text-align:center; margin-top: 20px; background: #bee8ff; font: large arial; 
+}
+#container {width:960px; margin:-10px auto 0 auto; 
+>>>>>>> c458b377406ddfc85d33109f2605d256bcc14a3a
+}
 /*HEADER/BANNER FILLS THE CONTAINER'S WIDTH*/
+<<<<<<< HEAD
 header {
   /* padding-top: 0; */
   width: 100%;
@@ -74,6 +85,24 @@ h2 {font-size:large; font-family:"times new roman"; text-align:center;
 nav { float:left; margin-left:10px; width:115px;
 }
 nav ul { margin-left:0; border:0; width:115px;
+=======
+header {padding-top:0; width:960px; height:100px; margin-top:20px; 
+/* background-image:url('images/183827104_3988962411179790_7582603085971185577_n.jpg'); background-repeat:no-repeat; */ 
+}
+
+h1 {
+	font-family:Arial;
+	background: hsl(0,50%,45%);
+	text-shadow: 1px 1px black, 2px 2px black,
+	             3px 3px black, 4px 4px black,
+				 5px 5px black, 6px 6px black,
+				 7px 7px black, 8px 8px black;
+	font-size:x-large; color:white; font-weight:normal; 
+text-align:center; padding-top:35px; margin-bottom:-10px; height: 84px; margin:auto;
+}
+/*set images to have no borders*/
+img { 	border:0;
+>>>>>>> c458b377406ddfc85d33109f2605d256bcc14a3a
 }
 /*set far right column for ads*/
 #rightcol { width:150px; float:right; text-align:center;	
@@ -144,12 +173,19 @@ li	{ margin: 5px; list-style-type:none;
 	}
 /* MouseOver state (hover)- reveal larger picture */
 #col-3a:hover { background: white; 
+<<<<<<< HEAD
 }
 #col-3 a:hover img.hid { visibility:visible; 
 }
 
+=======
+}
+#col-3 a:hover img.hid { visibility:visible; 
+}
+>>>>>>> c458b377406ddfc85d33109f2605d256bcc14a3a
 
 
+<<<<<<< HEAD
 
 #navone {
   float: left;
@@ -161,33 +197,76 @@ li	{ margin: 5px; list-style-type:none;
   margin-left: 0;
   border: 0;
   width: 115px;
+=======
+nav {
+	position:relative;
+    top:-13px; color: yellow; 
+    margin: -25px 0 0 0; padding: .3em 1em 0; padding-left: 10px; z-index: 1; }
+    /* use display:inline to remove IE6 double margin bug*/
+    nav li { display: inline; overflow: hidden; list-style-type: none; 
+}
+/*set tab colour*/
+nav a {
+	position: relative;
+	display: inline-block;
+	padding: .2em 1em 0;
+	font-size:medium; font-family:"times new roman"; text-align:center;
+}
+nav  a::before {
+    content: '';
+	position:absolute;
+	top: 0; 
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: -1;
+	background: #946055;
+	background-image: linear-gradient(
+		                hsla(0,0%,100%,.6),hsla(0,0%,100%,0));
+	border: 1px solid rgba(0,0,0,.4);
+	border: 4px outset #c96e6b;
+	border-bottom: none;
+	border-radius: .5em .5em 0 0;
+	box-shadow: 0 .15em white inset;
+	transform: perspective(.5em) rotateX(5deg);
+	transform-origin: bottom;
+
+}
+	
+     /*make a 3px wide bottom border on tab the same colour as the page */
+a.active { 
+	background: #946055; color: white; border-bottom: 3px solid #cfecf5; border: 4px outset #c96e6b; font-size:small; font-family:"times new roman"; text-align:center;
+	}
+  /*hovering over a non-active tab shows an aqua tab*/
+	nav a:hover { 	background: aqua;  border: 4px outset #c96e6b; border-radius: .5em .5em 0 0; font-size:small; font-family:"times new roman"; text-align:center;
+	}
+ 	nav a:visited { color: yellow; border: 4px outset #c96e6b;font-size:small; font-family:"times new roman"; text-align:center;
+	}
+ /*hovering over the active tab shows navy text*/
+	nav a.active:hover { background: #cfecf5; color: navy; border: 4px outset #c96e6b; font-size:small; font-family:"times new roman"; text-align:center;
+	}
+/*set the position of the content to butt up to the menu tabs*/ 
+	#box {margin-top:0; font : 0.9em/1.3em "bitstream vera sans", verdana, sans-serif;
+		position:relative; top:-13px; text-align: left; background: #cfecf5;
+		padding: 20px; border: 1px solid black; border-top: none; z-index: 2;
+		}
+/*SET FONTS*/
+span.small { font-size:small;
+}
+
+#navone { float:left; margin-left:10px; width:115px;
+}
+#navone ul { margin-left:0; border:0; width:115px;
+>>>>>>> c458b377406ddfc85d33109f2605d256bcc14a3a
 }
 /*set menu buttons*/
-#navone li.btn a {
-  display: block;
-  background-color: #946055;
-  color: yellow;
-  font-weight: bold;
-  padding: 4px;
-  margin-left: -10px;
-  text-align: center;
-  list-style-type: none;
-  text-decoration: none;
-  width: 110px;
-  border: 4px outset #c96e6b;
+#navone li.btn a { display:block; background-color :#946055; color:yellow; font-weight:bold; padding:4px;
+	margin-left: -10px; text-align:center; list-style-type:none; text-decoration:none; width:110px;border: 4px outset #c96e6b;
+}
+#navone li.btn a:hover { background-color:aqua;color:white;  border: 4px outset #c96e6b;
+}
+#navone nav li a:active { background:#aecbff;  border: 4px inset #aecbff; 
+}
+#navone li.btn { width:110px;
 }
 
-#navone li.btn a:hover {
-  background-color: aqua;
-  color: white;
-  border: 4px outset #c96e6b;
-}
-
-#navone nav li a:active {
-  background: #aecbff;
-  border: 4px inset #aecbff;
-}
-
-#navone li.btn {
-  width: 110px;
-}
