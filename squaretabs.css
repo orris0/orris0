@@ -7,6 +7,7 @@ header, footer, section, article, nav { display:block;
 body {
 	display: flex;
 	flex-direction: column;
+	text-align:center;
 	background:#FFF url(images/green-grad.jpg) repeat-x; margin:auto;
 	width: 100%;
 	min-height: 50vh;
