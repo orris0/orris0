@@ -4,13 +4,36 @@ html, body, h1, h2, h3, h4, h5, h6, p, ol, ul, li {  padding: 0; margin: 0;
 /*add display attributes for the semantic tags*/
 header, footer, section, article, nav { display:block; 
 }
-body {text-align:center; margin-top: 20px; background: #bee8ff; font: large arial; 
+body {
+	display: flex;
+	flex-direction: column;
+	background:#FFF url(images/green-grad.jpg) repeat-x; margin:auto;
+	width: 100%;
+	min-height: 50vh;
+	margin:auto; 
+     
 }
+/*
+body {
+	text-align:center; 
+	background: white; 
+	border: 10px solid hsla(0,0%,100%,.5);
+	background-clip: padding-box;
+	font: large; 
+}
+*/
 #container {width:960px; margin:-10px auto 0 auto; 
 }
 /*HEADER/BANNER FILLS THE CONTAINER'S WIDTH*/
-header {padding-top:0; width:960px; height:100px; margin-top:20px; 
-background-image:url('images/183827104_3988962411179790_7582603085971185577_n.jpg'); background-repeat:no-repeat; 
+header {
+	padding-top:0; 
+	width:960px; 
+	height:100px; 
+	margin-top:20px; 
+	background-size: 50% 100%;
+    background-image:url('images/183827104_3988962411179790_7582603085971185577_n.jpg'); background-repeat:no-repeat;
+    background: #58a;
+    background: linear-gradient(-45deg, transparent 15px, #58a 0); 
 }
 /*SET FONTS*/
 span.small { font-size:small;
@@ -42,7 +65,9 @@ span.small { font-size:small;
 				 7px 7px black, 8px 8px black;
     padding-top:25px; 
 }
-
+h2 {
+	font-size: 1em;
+}
 /*set images to have no borders*/
 img { 	border:0;
 }
@@ -123,7 +148,7 @@ li	{ margin: 5px; list-style-type:none;
 
 nav {
 	position:relative;
-    top:-93px; color: yellow; 
+    top:-85px; color: yellow; 
     margin: -25px 0 0 0; padding: .3em 1em 0; padding-left: 10px; z-index: 1; }
     /* use display:inline to remove IE6 double margin bug*/
     nav li { display: inline; overflow: hidden; list-style-type: none; 
@@ -191,4 +216,8 @@ span.small { font-size:small;
 }
 #navone li.btn { width:110px;
 }
+footer a:link {color: navy; text-decoration:none;font-weight:bold; font-size:80%;}
+footer a:visited {color: blue; text-decoration: none; }
+footer a:active {color: navy; text-decoration: none; }
+footer a:hover {color: red;text-decoration: none; }
 
