@@ -14,20 +14,7 @@ body {
 	margin:auto; 
      
 }
-p {
-   /* background-image:url('images/183827104_3988962411179790_7582603085971185577_n.jpg'); background-repeat:no-repeat; */
-    background: #58a;
-    background: linear-gradient(-45deg, transparent 5px, #58a 0);
-}
-/*
-body {
-	text-align:center; 
-	background: white; 
-	border: 10px solid hsla(0,0%,100%,.5);
-	background-clip: padding-box;
-	font: large; 
-}
-*/
+
 #container {width:960px; margin:-10px auto 0 auto; 
 }
 /*HEADER/BANNER FILLS THE CONTAINER'S WIDTH*/
