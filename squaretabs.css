@@ -15,7 +15,9 @@ body {
      
 }
 p {
-	
+   /* background-image:url('images/183827104_3988962411179790_7582603085971185577_n.jpg'); background-repeat:no-repeat; */
+    background: #58a;
+    background: linear-gradient(-45deg, transparent 5px, #58a 0);
 }
 /*
 body {
@@ -76,7 +78,7 @@ h2 {
 img { 	border:0;
 }
 /*set far right column for ads*/
-#rightcol { width:150px; float:right; text-align:center;	
+#rightcol { width:250px; float:right; text-align:center;	
 }
 #rightcol p.advert {font-size:small; margin-top:190px;
 } 
@@ -84,7 +86,7 @@ img { 	border:0;
 #midcol { margin-left:135px; margin-right:155px;
 }
 /*set gallery block position*/ 
-#gallery-block { position:relative; left: 30px; top:10px; 
+#gallery-block { position:relative; left: 10px; top:0px; 
 }
 /*set footer*/
 footer { 	clear:both; color:black; text-align:center; width:970px;
@@ -108,7 +110,7 @@ li	{ margin: 5px; list-style-type:none;
 } 
 /*remove bullets from the un-ordered list elements and create the
 MouseOut state (default) - create and position a space for the larger images and hide them*/
-#col-1 a img.hid { width: 260px; height:390px; position: absolute; top: 10px; left: 330px;
+#col-1 a img.hid { width: 260px; height:390px; position: absolute; top: 10px; left: 280px;
 	visibility: hidden;
 }
 /* MouseOver state (hover)- this reveals larger picture */
@@ -123,7 +125,7 @@ li	{ margin: 5px; list-style-type:none;
 }
 /* MouseOut state (default) - hide larger picture */
 #col-2 a img.hid { width: 260px; height:390px;
-	position: absolute; top: 10px; left: 245px; margin-left:0;
+	position: absolute; top: 10px; left: 197px; margin-left:0;
 	visibility: hidden;
 	}
 /* MouseOver state (hover)- reveal larger picture */
@@ -139,7 +141,7 @@ li	{ margin: 5px; list-style-type:none;
 /* MouseOut state (default) - hide larger picture */
 #col-3 a img.hid {
 	width: 260px; height:390px;
-	position: absolute; top: 10px; left: 155px; margin-left:0;
+	position: absolute; top: 10px; left: 115px; margin-left:0;
 	visibility: hidden;
 	}
 /* MouseOver state (hover)- reveal larger picture */
