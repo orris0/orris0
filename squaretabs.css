@@ -72,7 +72,7 @@ img { 	border:0;
 #midcol { margin-left:135px; margin-right:155px;
 }
 /*set gallery block position*/ 
-#gallery-block { position:relative; left: 10px; top:0px; 
+#gallery-block { position:relative; left: 0px; top:0px; 
 }
 /*set footer*/
 footer { 	clear:both; color:black; text-align:center; width:970px;
