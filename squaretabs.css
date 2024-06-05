@@ -81,13 +81,11 @@ span.small { font-size:small;
     padding-top:25px; 
 }
 h2 {
-	font-size: 1em;
-}
-/*set images to have no borders*/
+	font-size: 1em; padding: 10pxmages to have no borders*/
 img { 	border:0;
 }
 /*set far right column for ads*/
-#rightcol { width:150px; float:right; text-align:center;	
+#rightcol { width:170px; float:right; padding-top: 10px; text-align:center;	
 }
 #rightcol p.advert {font-size:small; margin-top:190px;
 } 
@@ -216,12 +214,12 @@ a.active {
 /*SET FONTS*/
 span.small { font-size:small;
 }
-/*
+
 #navone { float:left; margin-left:10px; width:115px;
 }
 #navone ul { margin-left:0; border:0; width:115px;
 }
-/*set menu buttons*
+/*set menu buttons*/
 #navone li.btn a { display:block; background-color :#946055; color:yellow; font-weight:bold; padding:4px;
 	margin-left: -10px; text-align:center; list-style-type:none; text-decoration:none; width:110px;border: 4px outset #c96e6b;
 }
@@ -231,12 +229,12 @@ span.small { font-size:small;
 }
 #navone li.btn { width:110px;
 }
-*/
+/*
 #navone { float:left; margin-top: 3%; width:115px; font-size: 100%; font-family:"times new roman"; text-align:center;
 }
 #navone ul { margin-left:0; border:0; width:115px;
 }
-/*set menu buttons */
+/*set menu buttons *
 #navone li.btn a { display:block; background-color :#946055; color:yellow; font-weight:bold; padding:4px;
 	margin-left: 10px; margin-top: -5%; text-align:center; list-style-type:none; text-decoration:none; width:110px;border: 4px outset #c96e6b;
 }
@@ -246,7 +244,7 @@ span.small { font-size:small;
 }
 #navone li.btn { width:110px;
 }
-
+*/
 a { background: oramge;}
 footer a:link {color: navy; text-decoration:none;font-weight:bold; font-size:80%;}
 footer a:visited {color: blue; text-decoration: none; }
