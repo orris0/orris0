@@ -20,7 +20,7 @@ h2 {font-size:large; font-family:"times new roman"; text-align:center;
 }
 
 /* PAGE LAYOUT */
-body {margin:auto; width:970px; 
+body {margin-top: 0; background-color: #FFF; :auto; width:970px; 
 }
 
 header {
@@ -295,15 +295,15 @@ li	{ margin: 5px; list-style-type:none;
 }
 
 
-*/
+*
 nav {
 	position:relative;
     top:-70px; color: yellow; 
     margin: -25px 0 0 0; padding: .2em .1em 0; padding-left: 10px; z-index: 1; }
-    /* use display:inline to remove IE6 double margin bug*/
+    /* use display:inline to remove IE6 double margin bug*
     nav li { display: inline; overflow: hidden; list-style-type: none; 
 }
-/*set tab colour*/
+/*set tab colour*
 nav a {
 	position: relative;
 	display: inline-block;
@@ -331,19 +331,19 @@ nav  a::before {
 
 }
 	
-     /*make a 3px wide bottom border on tab the same colour as the page */
+     /*make a 3px wide bottom border on tab the same colour as the page *
 a.active { 
 	background: #946055; color: white; border-bottom: 3px solid #cfecf5; border: 4px outset #c96e6b; font-size:small; font-family:"times new roman"; text-align:center;
 	}
-  /*hovering over a non-active tab shows an aqua tab*/
+  /*hovering over a non-active tab shows an aqua tab*
 	nav a:hover { 	background: aqua;  border: 4px outset #c96e6b; border-radius: .5em .5em 0 0; font-size:small; font-family:"times new roman"; text-align:center;
 	}
  	nav a:visited { color: yellow; border: 4px outset #c96e6b;font-size:small; font-family:"times new roman"; text-align:center;
 	}
- /*hovering over the active tab shows navy text*/
+ /*hovering over the active tab shows navy text*
 	nav a.active:hover { background: #cfecf5; color: navy; border: 4px outset #c96e6b; font-size:small; font-family:"times new roman"; text-align:center;
 	}
-/*set the position of the content to butt up to the menu tabs*/ 
+/*set the position of the content to butt up to the menu tabs* 
 	#box {margin-top:0; font : 0.9em/1.3em "bitstream vera sans", verdana, sans-serif;
 		position:relative; top:-13px; text-align: left; background: #cfecf5;
 		padding: 20px; border: 1px solid black; border-top: none; z-index: 2;
