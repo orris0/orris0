@@ -15,7 +15,7 @@ span.small { font-size:small;
 }
 h1 { font-size:x-large; font-family:"times new roman"; text-align:center;
 }
-h2 {font-size:large; font-family:"times new roman"; text-align:center;
+h2 {font-size:large; font-family:"times new roman"; text-align:center; line-height: 1em;
 }
 
 /* PAGE LAYOUT */
@@ -208,10 +208,10 @@ a {
 header {
 	padding-top:0; 
 	width:960px; 
-	height:100px; 
-	margin-top:20px; 
+	height:156px; 
+	margin-top:0; 
 	background-size: 50% 100%;
-    background-image:url('images/183827104_3988962411179790_7582603085971185577_n.jpg'); background-repeat:no-repeat;
+    background-image:url('images/bluepan.jpg'); background-repeat:no-repeat;
     background: #58a;
     background: linear-gradient(-45deg, transparent 15px, #58a 0); 
 }
