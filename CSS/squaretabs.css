@@ -9,17 +9,6 @@ img { 	border:0;
 /*add display attributes for the semantic tags*/
 header, footer, section, article, nav { display:block; 
 }
-/*HEADER/BANNER FILLS THE CONTAINER'S WIDTH*/
-header {
-	padding-top:0; 
-	width:960px; 
-	height:128px; 
-	margin-top:0; 
-	background-size: 50% 100%;
-    background-image:url('images/bluepan.jpg'); background-repeat:no-repeat;
-    background: #58a;
-    background: linear-gradient(-45deg, transparent 15px, #58a 0); 
-}
 
 /*SET FONTS*/
 span.small { font-size:small;
@@ -36,7 +25,7 @@ body {
 	text-align:center;
 	font-size: 100%;
 	font-weight: normal;
-	background:#FFF url(/CSS/images/green-grad.jpg) repeat-x; margin:auto;
+	background:#FFF url(images/green-grad.jpg) repeat-x; margin:auto;
 	width: 970px; 
 	min-height: 50vh;
 	margin:auto; 
