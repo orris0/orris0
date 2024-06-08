@@ -10,12 +10,7 @@ img { 	border:0;
 header, footer, section, article, nav { display:block; 
 }
 
-/*SET FONTS*/
-span.small { font-size:small;
-}
-h1 { font-size:x-large; font-family:"times new roman"; text-align:center;
-}
-h2 {font-size:large; font-family:"times new roman"; text-align:center; line-height: 1.3em;
+header { width:970px; margin-top: 0; height: ;
 }
 
 /* PAGE LAYOUT */
@@ -28,13 +23,25 @@ body {
 	background:#FFF url(green-grad.jpg) repeat-x; margin:auto;
 	width: 970px; 
 	min-height: 50vh;
-	margin:auto; 
-     
+	margin:auto;     
 }
 
-header {
-	width:970px;
+#container { width: 960px; margin: -10px auto 0 auto;
 }
+
+/*SET FONTS*/
+span.small { font-size:small;
+}
+
+h1 { font-size:x-large; font-family:"times new roman"; text-align:center;
+}
+
+h2 {font-size:large; font-family:"times new roman"; text-align:center; line-height: 1.3em;
+}
+
+
+
+
 /*
 nav { float:left; margin-left:10px; width:115px;
 }
@@ -201,10 +208,6 @@ p {
 	background: white; margin: auto; text-align: center;
 }
 
-#container { width: 960px; margin: -10px auto 0 auto;
-
-}
-
 #container-2 {
 	margin: auto; text-align: center; width: 97%; min-width: 800px; max-width: 1200px;
 }
@@ -215,18 +218,6 @@ a {
  */
 .inline-block a {
 	display: inline-block; width: 23%; height: 30px; line-height: 30px;text-align: center;
-}
-
-/*HEADER/BANNER FILLS THE CONTAINER'S WIDTH*/
-header {
-	padding-top:0; 
-	width:960px; 
-	height:128px; 
-	margin-top:0; 
-	background-size: 50% 100%;
-    background-image:url('images/bluepan.jpg'); background-repeat:no-repeat;
-    background: #58a;
-    background: linear-gradient(-45deg, transparent 15px, #58a 0); 
 }
 
 @font-face {
