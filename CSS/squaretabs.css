@@ -59,7 +59,7 @@ nav a {
 nav  a::before {
     content: '';
 	position:absolute;
-	top: 0; 
+	top: -3em; 
 	right: 0;
 	bottom: 0;
 	left: 0;
@@ -274,9 +274,7 @@ span.small { font-size:medium;
 #navone li.btn { width:110px;
 }
 
-a { background: oramge;}
-
-a { background: oramge;}
+/* a { background: oramge;} */
 footer a:link {color: navy; text-decoration:none;font-weight:bold; font-size:80%;}
 footer a:visited {color: blue; text-decoration: none; }
 footer a:active {color: navy; text-decoration: none; }
