@@ -15,7 +15,7 @@ span.small { font-size:small;
 }
 h1 { font-size:x-large; font-family:"times new roman"; text-align:center;
 }
-h2 {font-size:large; font-family:"times new roman"; text-align:center; line-height: 1.3em;
+h2 {font-size:large; font-family:"times new roman"; text-align:center; line-height: -5em;
 }
 
 /* PAGE LAYOUT */
@@ -25,7 +25,7 @@ body {
 	text-align:center;
 	font-size: 100%;
 	font-weight: normal;
-	background:#bee8ff url(CSS/images/green-grad.jpg) repeat-x; margin:auto;
+	background:#bee8ff url(images/green-grad.jpg) repeat-x; margin:auto;
 	width: 970px; 
 	min-height: 50vh;
 	margin: 20px auto; 
@@ -34,6 +34,16 @@ body {
 
 #container { width: 960px; margin: -10px auto 0 auto;
 }
+
+header { 
+	margin-top:0; 
+	height:156px; 
+	width:100%; 
+	background-image:url('images/bluepan.jpg'); 
+	background-repeat:no-repeat; 
+	background-position:center;
+	 border-bottom:0; 
+	 }
 
 /*SET FONTS*/
 span.small { font-size:small;
@@ -49,7 +59,7 @@ nav ul { margin-left:0; border:0; width:115px;
 */
 nav {
 	position:relative;
-    top: -5.1em; color: yellow; 
+    top: -2em; color: yellow; 
     margin: -25px 0 0 0; padding: -1em .1em 0em; padding-left: 10px; z-index: 1; }
     /* use display:inline to remove IE6 double margin bug*/
     nav li { display: inline; overflow: hidden; list-style-type: none; 
