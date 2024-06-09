@@ -25,24 +25,29 @@ body {
 	text-align:center;
 	font-size: 100%;
 	font-weight: normal;
-	background:#bee8ff url(images/green-grad.jpg) repeat-x; margin:auto;
+	background:#bbffaa url(images/green-grad.jpg) repeat-x; margin:auto;
 	width: 970px; 
 	min-height: 50vh;
 	margin: 20px auto; 
+	font-family: Arial, Helvetica, sans-serif;
      
 }
 
-#container { width: 960px; margin: -10px auto 0 auto;
+#container { 
+	width: 97%; 
+	margin: auto; 
+	min-width: 800px; 
+	max-width: 1100px;
 }
 
 header { 
 	margin-top:0; 
-	height:156px; 
+	height:190px; 
 	width:100%; 
-	background-image:url('images/bluepan.jpg'); 
+	background-image:url('CSS/images/bluepan.jpg'); 
 	background-repeat:no-repeat; 
 	background-position:center;
-	 border-bottom:0; 
+	border-bottom:0; 
 	 }
 
 /*SET FONTS*/
@@ -204,7 +209,17 @@ li	{ margin: 5px; list-style-type:none;
 
 
 #content {
-	background-color: transparent; border-left: 10px white solid; border-right: 10px white solid; border-bottom: 10px white solid; width: 100%; margin-top: -80px; margin-left: auto; margin-right: auto; padding: 8px; font-size: medium; color: maroon;
+	background-color: transparent; 
+	border-left: 10px white solid; 
+	border-right: 10px white solid; 
+	border-bottom: 10px white solid; 
+	width: 100%;
+	margin-top: -80px; 
+	margin-left: auto;
+    margin-right: auto;
+	padding: 8px; 
+	font-size: medium; 
+	color: maroon;
 }
 
 ul {
