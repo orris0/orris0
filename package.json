@@ -1,0 +1,27 @@
+{
+  "name": "html5-projects",
+  "version": "1.0.0",
+  "description": "complete education on web coding and development",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/orris0/orris0.git"
+  },
+  "keywords": [
+    "html5",
+    "javascript",
+    "node.js",
+    "css",
+    "jquery",
+    "phython"
+  ],
+  "author": "orris a baker jr",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/orris0/orris0/issues"
+  },
+  "homepage": "https://github.com/orris0/orris0#readme"
+}
