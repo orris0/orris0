@@ -25,7 +25,7 @@ body {
 	text-align:center;
 	font-size: 100%;
 	font-weight: normal;
-	background:#bee8ff url(images/green-grad.jpg) repeat-x; margin:auto;
+	background:#bee8ff url(CSS/images/green-grad.jpg) repeat-x; margin:auto;
 	width: 970px; 
 	min-height: 50vh;
 	margin: 20px auto; 
