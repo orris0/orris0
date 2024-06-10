@@ -17,12 +17,12 @@ header, footer, section, article, nav {
 body {
 	font: medium arial;
 	text-align: center;
-	font-size: 100%;
+	font-size: 80%;
 	font-weight: normal;
 	background:#bee8ff url(images/green-grad.jpg) repeat-x; margin:auto;
 	width: 970px; 
 	min-height: 50vh;
-	margin: 20px auto; 
+	margin: auto; 
 	font-family: Arial, Helvetica, sans-serif;
      
 }
@@ -37,14 +37,14 @@ body {
 #container-2 {
 	 
 	text-align: center; 
-	width: 960px; 
-	min-width: 960px; 
-	max-width: 1200px;
+	width: 97%; 
+	min-width: 500px; 
+	max-width: 800px;
 }
 
 header { 
 	margin-top:0; 
-	height:190px; 
+	height:156px; 
 	width:100%; 
 	background-image:url('CSS/images/bluepan.jpg'); 
 	background-repeat:no-repeat; 
@@ -123,7 +123,7 @@ a.active {
 	}
 
   /*set the generic tab style--and set position so that it overlaps the header*/ 
-	nav {position:relative; top: 23px; color: navy; border-bottom: 1px solid black;
+	nav {position:relative; top: 16px; color: navy; border-bottom: 1px solid black;
 		margin: -25px 0 0 0; padding: 0px; padding-left: 10px; z-index: 1; }
 /* use display:inline to remove IE6 double margin bug*/
 	nav li { display: inline; overflow: hidden; list-style-type: none; 
