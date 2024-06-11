@@ -15,15 +15,17 @@ header, footer, section, article, nav {
 
 /* PAGE LAYOUT */
 body {
-	font: medium arial;
+	font-family: Arial, Helvetica, sans-serif;
 	text-align: center;
 	font-size: 80%;
 	font-weight: normal;
-	background:#bee8ff url(images/green-grad.jpg) repeat-x; margin:auto;
+	background:#bee8ff url(images/green-grad.jpg) repeat-x;
+	background-clip: padding-box;
 	width: 970px; 
 	min-height: 50vh;
+	border: 10px solid hsla(0,0%,100%,.5);
 	margin: auto; 
-	font-family: Arial, Helvetica, sans-serif;
+	
      
 }
 
