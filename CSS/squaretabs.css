@@ -44,6 +44,15 @@ body {
 	max-width: 800px;
 }
 
+#wrapper {
+	width: 980px; 
+	margin: 0 auto; 
+	padding: 0;
+	background: yellowgreen;
+	border:10px solid #655;
+	outline: 15px solid pink;
+}
+
 header { 
 	margin-top:0; 
 	height:156px; 
@@ -108,97 +117,54 @@ nav a.active:hover { background: #cfecf5; color: navy;
 	position:relative; top:-13px; text-align: left; background: #cfecf5;
 	padding: 20px; border: 1px solid black; border-top: none; z-index: 2;
 	}
-
-
-/*set tab colour*
-nav a {
-	position: relative;
-	display: inline-block;
-	padding: 1em 1em 0;
-	font-size:medium; font-family:"times new roman"; text-align:center;
+      /*set the generic tab style--and set position so that it overlaps the header*/ 
+nav {
+	position:relative; 
+	top: 13px; 
+	color: navy; 
+	border-bottom: 1px solid black;
+	margin: -25px 0 0 0; 
+	padding: 0px; 
+	padding-left: 10px; 
+	z-index: 1; 
 }
-nav  a::before {
-    content: '';
-	position:absolute;
-	top: .1em; 
-	right: 0;
-	bottom: 0;
-	left: 0;
-	z-index: -1;
-	background: #946055;
-	background-image: linear-gradient(
-		                hsla(0,0%,100%,.6),hsla(0,0%,100%,0));
-	border: 1px solid rgba(0,0,0,.4);
-	border: 4px outset #c96e6b;
-	border-bottom: none;
-	border-radius: .5em .5em 0 0;
-	box-shadow: 0 .15em white inset;
-	transform: perspective(.5em) rotateX(5deg);
-	transform-origin: bottom;
-}
-     /*make a 3px wide bottom border on tab the same colour as the page *
-a.active { 
-	background: #946055; color: white; border-bottom: 3px solid #cfecf5; border: 4px outset #c96e6b; font-size:small; font-family:"times new roman"; text-align:center;
-	}
-
-  /*set the generic tab style--and set position so that it overlaps the header*/ 
-	nav {
-		position:relative; 
-		top: 13px; 
-		color: navy; 
-		border-bottom: 1px solid black;
-		margin: -25px 0 0 0; 
-		padding: 0px; 
-		padding-left: 10px; 
-		z-index: 1; 
-	}
     /* use display:inline to remove IE6 double margin bug*/
 nav li { 
-	    display: inline; 
-	    overflow: hidden; 
-	    list-style-type: none; 
-	}
+	display: inline; 
+    overflow: hidden; 
+	list-style-type: none; 
+}
     /*set tab colour*/
-	nav a, a.active { 
-		color: navy; 
-		background: #81d9f6; 
-		font: bold 1em "Arial";
-		border: 1px solid black; 
-		padding: 2px 5px 0px 5px; 
-		margin: 0; 
-		text-decoration: none; 
+nav a, a.active { 
+	color: navy; 
+	background: #81d9f6; 
+	font: bold 1em "Arial";
+	border: 1px solid black; 
+	padding: 2px 5px 0px 5px; 
+	margin: 0; 
+	text-decoration: none; 
+}
+        /*make a 3px wide bottom border on tab the same colour as the page*/ 
+nav a.active { 
+	background: #cfecf5; 
+	color:navy; 
+	border-bottom: 3px solid #cfecf5; 
+}
+        /*hovering over a non-active tab shows an aqua tab*/
+nav a:hover { 	
+	background: aqua; 
 	}
-    /*make a 3px wide bottom border on tab the same colour as the page*/ 
-	nav a.active { 
-		background: #cfecf5; 
-		color:navy; 
-		border-bottom: 3px solid #cfecf5; 
+nav a:visited { 
+	color: navy; 
 	}
-    /*hovering over a non-active tab shows an aqua tab*/
-	nav a:hover { 	
-		background: aqua; 
+        /*hovering over the active tab shows navy text*/
+nav a.active:hover { 
+	background: #cfecf5; 
+	color: navy; 
 	}
- 	nav a:visited { color: navy; 
-	}
- /*hovering over the active tab shows navy text*/
-	nav a.active:hover { background: #cfecf5; color: navy; 
-	}
-/*set tab colour*
-	nav a, a.active { color: navy; background: #81d9f6; font: bold 1em "Trebuchet MS", Arial, sans-serif;
-		border: 1px solid black; padding: 2px 5px 0px 5px; margin: 0; text-decoration: none; 
-		}
- /*make a 3px wide bottom border on tab the same colour as the page* / 
-	nav a.active { background: #cfecf5; color:navy; border-bottom: 3px solid #cfecf5; 
-	}
-  /*hovering over a non-active tab shows an aqua tab*
-	nav a:hover { 	background: aqua; 
-	}
- 	nav a:visited { color: navy; 
-	}
- /*hovering over the active tab shows navy text*
-	nav a.active:hover { background: #cfecf5; color: navy; 
-	}
-/*set far right column for ads*/
+
+
+    /*set far right column for ads*/
 #rightcol { width:150px; float:right; text-align:center;	
 }
 #rightcol p.advert {font-size:small; margin-top:190px;
