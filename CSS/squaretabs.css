@@ -55,26 +55,43 @@ header {
 	 }
 
 /*SET FONTS*/
-span.small { font-size:small;
+span.small { 
+	font-size:small;
 }
-h1 { font-size:x-large; font-family:"times new roman"; text-align:center;
+
+h1 { 
+	font-size: 320%; 
+	font-family:"Arial"; 
+	text-align:center;
 }
-h2 {font-size:large; font-family:"times new roman"; text-align:center; line-height: -5em;
+
+h2 {
+	font-size:large; 
+	font-family:"Arial"; 
+	text-align:center; 
+	line-height: -5em;
 }
 
 nav {
 	position:relative;
-    top: -2em; color: yellow; 
-    margin: -25px 0 0 0; padding: -1em .1em 0em; padding-left: 10px; z-index: 1; }
+    top: -2em; 
+	color: yellow; 
+    margin: -25px 0 0 0; 
+	padding: -1em .1em 0em; 
+	padding-left: 10px; 
+	z-index: 1; 
+}
     /* use display:inline to remove IE6 double margin bug*/
-    nav li { display: inline; overflow: hidden; list-style-type: none; 
+ nav li { 
+	display: inline; overflow: hidden; list-style-type: none; 
 }
 
 /*set tab colour*/
 nav a, a.active { color: navy; background: #81d9f6; font: bold 1em "Trebuchet MS", Arial, sans-serif;
 	border: 1px solid black; padding: 2px 5px 0px 5px; margin: 0; text-decoration: none; 
-	}
-/*make a 3px wide bottom border on tab the same colour as the page* / 
+}
+
+/*make a 3px wide bottom border on tab the same colour as the page* /
 nav a.active { background: #cfecf5; color:navy; border-bottom: 3px solid #cfecf5; 
 }
 /*hovering over a non-active tab shows an aqua tab*/
@@ -93,7 +110,7 @@ nav a.active:hover { background: #cfecf5; color: navy;
 	}
 
 
-/*set tab colour*/
+/*set tab colour*
 nav a {
 	position: relative;
 	display: inline-block;
@@ -119,30 +136,66 @@ nav  a::before {
 	transform: perspective(.5em) rotateX(5deg);
 	transform-origin: bottom;
 }
-     /*make a 3px wide bottom border on tab the same colour as the page */
+     /*make a 3px wide bottom border on tab the same colour as the page *
 a.active { 
 	background: #946055; color: white; border-bottom: 3px solid #cfecf5; border: 4px outset #c96e6b; font-size:small; font-family:"times new roman"; text-align:center;
 	}
 
   /*set the generic tab style--and set position so that it overlaps the header*/ 
-	nav {position:relative; top: 16px; color: navy; border-bottom: 1px solid black;
-		margin: -25px 0 0 0; padding: 0px; padding-left: 10px; z-index: 1; }
-/* use display:inline to remove IE6 double margin bug*/
-	nav li { display: inline; overflow: hidden; list-style-type: none; 
+	nav {
+		position:relative; 
+		top: 13px; 
+		color: navy; 
+		border-bottom: 1px solid black;
+		margin: -25px 0 0 0; 
+		padding: 0px; 
+		padding-left: 10px; 
+		z-index: 1; 
 	}
-/*set tab colour*/
+    /* use display:inline to remove IE6 double margin bug*/
+nav li { 
+	    display: inline; 
+	    overflow: hidden; 
+	    list-style-type: none; 
+	}
+    /*set tab colour*/
+	nav a, a.active { 
+		color: navy; 
+		background: #81d9f6; 
+		font: bold 1em "Arial";
+		border: 1px solid black; 
+		padding: 2px 5px 0px 5px; 
+		margin: 0; 
+		text-decoration: none; 
+	}
+    /*make a 3px wide bottom border on tab the same colour as the page*/ 
+	nav a.active { 
+		background: #cfecf5; 
+		color:navy; 
+		border-bottom: 3px solid #cfecf5; 
+	}
+    /*hovering over a non-active tab shows an aqua tab*/
+	nav a:hover { 	
+		background: aqua; 
+	}
+ 	nav a:visited { color: navy; 
+	}
+ /*hovering over the active tab shows navy text*/
+	nav a.active:hover { background: #cfecf5; color: navy; 
+	}
+/*set tab colour*
 	nav a, a.active { color: navy; background: #81d9f6; font: bold 1em "Trebuchet MS", Arial, sans-serif;
 		border: 1px solid black; padding: 2px 5px 0px 5px; margin: 0; text-decoration: none; 
 		}
  /*make a 3px wide bottom border on tab the same colour as the page* / 
 	nav a.active { background: #cfecf5; color:navy; border-bottom: 3px solid #cfecf5; 
 	}
-  /*hovering over a non-active tab shows an aqua tab*/
+  /*hovering over a non-active tab shows an aqua tab*
 	nav a:hover { 	background: aqua; 
 	}
  	nav a:visited { color: navy; 
 	}
- /*hovering over the active tab shows navy text*/
+ /*hovering over the active tab shows navy text*
 	nav a.active:hover { background: #cfecf5; color: navy; 
 	}
 /*set far right column for ads*/
