@@ -24,9 +24,7 @@ body {
 	width: 970px; 
 	min-height: 50vh;
 	border: 10px solid hsla(0,0%,100%,.5);
-	margin: auto; 
-	
-     
+	margin: auto;      
 }
 
 #container { 
@@ -63,6 +61,18 @@ header {
 	border-bottom:0; 
 	 }
 
+	 hr {
+		height: .5em;
+		background: currentColor;
+	 }
+
+	 input, select, button {
+		font: inherit;
+	 }
+	 a {
+		color: inherit;
+	 }
+
 /*SET FONTS*/
 span.small { 
 	font-size:small;
@@ -96,8 +106,14 @@ nav {
 }
 
 /*set tab colour*/
-nav a, a.active { color: navy; background: #81d9f6; font: bold 1em "Trebuchet MS", Arial, sans-serif;
-	border: 1px solid black; padding: 2px 5px 0px 5px; margin: 0; text-decoration: none; 
+nav a, a.active { 
+	color: navy; 
+	background: #81d9f6; 
+	font: bold 1em "Trebuchet MS", Arial, sans-serif;
+	border: 10px solid transparent;
+	box-shadow: 0 0 0 1px rgba(0,0 0 .3) inset;
+	background-clip: padding-box;
+	 padding: 2px 5px 0px 5px; margin: 0; text-decoration: none; 
 }
 
 /*make a 3px wide bottom border on tab the same colour as the page* /
@@ -113,8 +129,13 @@ nav a.active:hover { background: #cfecf5; color: navy;
 }
 
 /*set the position of the content to butt up to the menu tabs*/ 
-#content {margin-top:0; font : 0.9em/1.3em "bitstream vera sans", verdana, sans-serif;
-	position:relative; top:-16px; text-align: left; background: #cfecf5;
+#content {
+	margin-top:0; 
+	font: 0.9em/1.3em "bitstream vera sans", verdana, sans-serif;
+	position:relative; top:-16px; text-align: left; 
+	background: #cfecf5;
+    background-size: 2em 2em;
+	background-repeat: no-repeat;
 	padding: 20px; border: 1px solid black; border-top: none; z-index: 2;
 	}
       /*set the generic tab style--and set position so that it overlaps the header*/ 
@@ -122,11 +143,20 @@ nav {
 	position:relative; 
 	top: 13px; 
 	color: navy; 
+	border: 10px solid transparent;
+	box-shadow: 0 0 0 1px rgba(0,0 0 .3) inset;
+	background-clip: padding-box;
 	border-bottom: 1px solid black;
 	margin: -25px 0 0 0; 
 	padding: 0px; 
 	padding-left: 10px; 
 	z-index: 1; 
+}
+nav::before {
+	content: '';
+	position: absolute;
+	top: -10px; right: -10px;
+	bottom: -10px; left: -10px;
 }
     /* use display:inline to remove IE6 double margin bug*/
 nav li { 
@@ -199,9 +229,13 @@ li.btn a {
 	text-decoration:none; 
 	width:110px;
 }
-li.btn a:hover { background-color:blue; color:white;
+li.btn a:hover { background: var(--accent-color); color:white;
 }
 li.btn { width:110px;
+}
+
+li { 
+	background: var(--accent-color);
 }
 
 /*SET THUMBNAIL GALLERY BLOCK*/  
@@ -254,6 +288,7 @@ li	{ margin: 5px; list-style-type:none;
 }
 
 ul {
+	--accent-color: purple;
 	padding-left: 0;
 	/* end of style equalization */
 }
