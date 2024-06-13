@@ -1,0 +1,9 @@
+{
+    "name": "validation",
+    "version": "1.2.0",
+    "main": [
+        "validation.js"
+    ],
+    "dependencies": {
+    }
+}
