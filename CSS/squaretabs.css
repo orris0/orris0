@@ -74,6 +74,16 @@ header {
 	padding-top: 25px;
 }
 
+@font-face {
+	font-family: Ampersand;
+	;
+	src: local('Baskerville-Italic'),
+		local('GoudyOldStyleT-Italic'),
+		local('Palatino-Italic'),
+		local('BookAntiqua-Italic');
+	unicode-range: U+26;
+}
+
 /*SET FONTS*/
 span.small {
 	font-size: small;
@@ -161,90 +171,6 @@ nav a.active:hover {
 	border-top: none;
 	z-index: 2;
 }
-
-/*
-#container-2 {
-	display: flex; justify-content: space-between; text-align: center;
-}
-.container {
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-	width: 100%;
-	border: 5px double black;
-	height: 15vh;
-}
-.item {
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-	border: 1px solid black;
-	width: 160px;
-	height: 80px;
-	padding: .1rem;
-	font-family: Verdana, Geneva, Tahoma, sans-serif;
-	font-size: small;
-}
-.item1 {
-	background-color: rgb(240, 240, 240);
-	width: 110px;
-	
-	background-color: rgb(224, 224, 224);
-}
-#wrapper {
-	
-	width: 980px; 
-	margin: 0 auto; 
-	padding: 0;
-	background: yellowgreen;
-	border:10px solid #655;
-	outline: 15px solid pink;
-}
-
-
-
-	 hr {
-		height: .5em;
-		background: currentColor;
-	 }
-
-	 input, select, button {
-		font: inherit;
-	 }
-	 a {
-		color: inherit;
-	 }
-*
-
-
-
-
-nav {
-	position: relative;
-	top: -2em;
-	color: yellow;
-	margin: -25px 0 0 0;
-	padding: -1em .1em 0em;
-	padding-left: 10px;
-	z-index: 1;
-}
-
-
-
-/*
-
-nav::before {
-	content: '';
-	position: absolute;
-	top: -10px;
-	right: -10px;
-	bottom: -10px;
-	left: -10px;
-}
-
-
-
-
 /*set far right column for ads*/
 #rightcol {
 	width: 18ipx;
@@ -431,34 +357,91 @@ p {
 	text-align: center;
 }
 
-
-/*
-a {
-	background: orange; color: navy;
+.container {
+	border: 5px double black;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
- */
+
 .inline-block a {
-	display: inline-block;
-	width: 10%;
-	height: 30px;
-	line-height: 20px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	line-height: 30px;
 	text-align: center;
 }
 
-@font-face {
-	font-family: Ampersand;
-	;
-	src: local('Baskerville-Italic'),
-		local('GoudyOldStyleT-Italic'),
-		local('Palatino-Italic'),
-		local('BookAntiqua-Italic');
-	unicode-range: U+26;
+.item {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	
+	list-style-type: none;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	font-size: small;
+	border: 1px solid black;
+	text-align: center;
 }
 
+.item1 {
+	background-color: rgb(240, 240, 240);
+	width: 210px;
+}
+.item2 {
+	background-color: rgb(224, 224, 224);
+}
+.item3 {
+	background-color: rgb(200, 200, 200);
+}
+.item4 {
+	background-color: rgb(192, 192, 192);
+}
+.item5 {
+	background-color: rgb(170, 170, 170);
+}
+.item6 {
+	background-color: rgb(240, 240, 240);
+}.item7 {
+	background-color: rgb(224, 224, 224);
+}
 
-/*SET FONTS*/
-span.small {
-	font-size: medium;
+.item8{
+	background-color: rgb(200, 200, 200);
+}
+.item9 {
+	background-color: rgb(192, 192, 192);
+}.item10 {
+	background-color: rgb(170, 170, 170);
+}
+.item11 {
+	background-color: rgb(240, 240, 240);
+}
+.item12 {
+	background-color: rgb(224, 224, 224);
+}
+.item13 {
+	background-color: rgb(200, 200, 200);
+}
+.item14 {
+	background-color: rgb(192, 192, 192);
+}
+.item15 {
+	background-color: rgb(170, 170, 170);
+}
+.item16 {
+	background-color: rgb(240, 240, 240);
+}.item17 {
+	background-color: rgb(224, 224, 224);
+}
+
+.item18{
+	background-color: rgb(200, 200, 200);
+}
+.item19 {
+	background-color: rgb(192, 192, 192);
+}.item20 {
+	background-color: rgb(170, 170, 170);
 }
 
 #navone {
@@ -510,7 +493,7 @@ span.small {
 /* a { background: oramge;} */
 
 footer a:visited {
-	color: blue;
+	color: navy;
 	text-decoration: none;
 }
 
