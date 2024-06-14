@@ -361,13 +361,9 @@ p {
 	border: 5px double black;
 	display: flex;
 	justify-content: center;
-	align-items: center;
 }
 
 .inline-block a {
-	display: flex;
-	justify-content: center;
-	align-items: center;
 	line-height: 30px;
 	text-align: center;
 }
@@ -386,7 +382,9 @@ p {
 
 .item1 {
 	background-color: rgb(240, 240, 240);
-	width: 210px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 .item2 {
 	background-color: rgb(224, 224, 224);
@@ -411,7 +409,8 @@ p {
 }
 .item9 {
 	background-color: rgb(192, 192, 192);
-}.item10 {
+}
+.item10 {
 	background-color: rgb(170, 170, 170);
 }
 .item11 {
@@ -443,7 +442,19 @@ p {
 }.item20 {
 	background-color: rgb(170, 170, 170);
 }
-
+.item21 {
+	background-color: rgb(240, 240, 240);
+	width: 210px;
+}
+.item22 {
+	background-color: rgb(224, 224, 224);
+}
+.item23 {
+	background-color: rgb(200, 200, 200);
+}
+.item24 {
+	background-color: rgb(192, 192, 192);
+}
 #navone {
 	float: left;
 	margin-top: 2em;
