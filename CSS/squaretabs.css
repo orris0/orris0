@@ -32,6 +32,7 @@ nav {
 body {
 	font: medium arial;
 	text-align: center;
+	align-items: center;
 	/*font-size: 80%;
 	font-weight: normal;*/
 	background: #bee8ff url(images/green-grad.jpg) repeat-x;
@@ -39,6 +40,9 @@ body {
 }
 
 #container {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
 	width: 960px;
 	margin: 10px auto 0 auto;
 	/* min-width: 960px; 
@@ -71,7 +75,7 @@ header {
 		3px 3px black, 4px 4px black,
 		5px 5px black, 6px 6px black,
 		7px 7px black, 8px 8px black;
-	padding-top: 25px;
+	padding-top: 5px;
 }
 
 @font-face {
@@ -357,10 +361,11 @@ p {
 	text-align: center;
 }
 
-.container {
-	border: 5px double black;
+#container-2 {
 	display: flex;
 	justify-content: center;
+	flex-wrap: wrap;
+	border: 5px double black;
 }
 
 .inline-block a {
