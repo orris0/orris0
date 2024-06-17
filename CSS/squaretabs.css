@@ -24,16 +24,21 @@ ol {
 /*set images to have no borders*/
 img {
 	border: 0;
+	clip-path: polygon(50% 0, 100% 50%, 50% 100%, 0 50%);
+	transition: 1s clip-path;
+}
+img:hover {
+	clip-path: polygon(0 0, 100% 100% 0, 100% 100%, 0 100%);	
 }
 
 .picture {
-	transform: rotate(45deg);
+	transform: rotate(45deg) scale(1.00);
 	overflow: hidden;
 }
 .picture img {
-	max-width: 100%;
+	
 	clip-path: polygon(50% 0, 100% 50%, 100%, 0 50%);
-	transform: rotate(0deg) scale(1.00); 
+	transform: rotate(-45deg) scale(2.00); 
 
 }
 
@@ -96,11 +101,11 @@ header {
 
 #banner, h1 a {
 	font-family: "times new roman";
-	font-size: 80%;
+	font-size: 75%;
 	color: white;
 	text-align: center;
 	font-weight:bold;
-	padding-top:30px; 
+	padding-top:20px; 
 	margin-bottom: 0px;
 	height: 100px;
 	margin: auto;
@@ -207,6 +212,8 @@ nav a.active:hover {
 }
 /*set far right column for ads*/
 #rightcol {
+	display: flex;
+	flex-direction: column;
 	width: 180px;
 	float: right;
 	text-align: center;
