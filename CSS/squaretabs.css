@@ -26,6 +26,17 @@ img {
 	border: 0;
 }
 
+.picture {
+	transform: rotate(45deg);
+	overflow: hidden;
+}
+.picture img {
+	max-width: 100%;
+	clip-path: polygon(50% 0, 100% 50%, 100%, 0 50%);
+	transform: rotate(0deg) scale(1.00); 
+
+}
+
 /*add display attributes for the semantic tags*/
 header,
 footer,
@@ -50,10 +61,8 @@ body {
 }
 
 .wrapper {
-   /* display: flex;
-	flex-direction: row-reverse;
-	justify-content: space-between;
-    scroll-behavior: smooth; */
+    display: flex;
+
 	background: #131313;
 	border: 1px solid silver;
     font-family:'Helvetica Neue', sans-serif;
@@ -114,11 +123,11 @@ header {
 	unicode-range: U+26;
 }
 
-/*SET FONTS*/
+/*SET FONTS*
 span.small {
 	font-size: small;
 }
-
+*/
 h2 {
 	position: relative;
 	font-size: small;
@@ -181,6 +190,8 @@ nav a.active:hover {
 
 /*set the position of the content to butt up to the menu tabs*/
 .content {
+	display: flex;
+	flex-direction: column;
 	margin-top: 0;
 	font: 0.9em/1.3em "bitstream vera sans", verdana, sans-serif;
 	position: relative;
@@ -214,9 +225,11 @@ nav a.active:hover {
 
 /*set gallery block position*/
 #gallery-block {
+	display: flex;
+	flex-direction: column;
 	position: relative;
-	left: 0px;
-	top: 10px;
+	left: -20px;
+	top: 0px;
 }
 
 /*set footer*/
@@ -245,27 +258,6 @@ li.btn a { display:block; background: #946055; color: white; border-bottom: 3px 
 margin-left:0; text-align:center; list-style-type:none; text-decoration:none; */ width:110px;
 }
 
-
-
-
-/*set menu buttons
-li.btn a {
-	display: block;
-	background-color: #0080a0;
-	border-top: 4px color-one solid;
-	border-right: 4px color-two solid;
-	border-bottom: 4px color-two solid;
-	border-left: 4px color-one solid;
-	color: black;
-	font-weight: bold;
-	padding: 4px;
-	margin-left: 0;
-	text-align: center;
-	list-style-type: none;
-	text-decoration: none;
-	width: 110px;
-}
-*/
 li.btn a:hover {
 	background: var(--accent-color);
 	color: white;
@@ -486,53 +478,25 @@ p {
 .item24 {
 	background-color: rgb(192, 192, 192);
 }
-#navone {
-	float: left;
-	margin-top: 2em;
-	width: 115px;
-	font-size: 100%;
-	font-family: "times new roman";
-	text-align: center;
+
+/*SET FONTS*/
+span.small { font-size:medium;
 }
 
-#navone ul {
-	margin-left: 0;
-	border: 0;
-	width: 115px;
+#navone { float:left; margin-top: 0; width:115px; font-size: 100%; font-family:"times new roman"; text-align:center;
 }
-
+#navone ul { margin-left:0; border:0; width:115px;
+}
 /*set menu buttons */
-#navone li.btn a {
-	display: block;
-	background-color: #946055;
-	color: yellow;
-	font-weight: bold;
-	padding: 4px;
-	margin-left: 10px;
-	margin-top: 5%;
-	text-align: center;
-	list-style-type: none;
-	text-decoration: none;
-	width: 110px;
-	border: 4px outset #c96e6b;
+#navone li.btn a { display:block; background-color :#946055; color:yellow; font-weight:bold; padding:4px;
+	margin-left: 0px; margin-top: 20px; text-align:center; list-style-type:none; text-decoration:none; width:110px;border: 4px outset #c96e6b;
 }
-
-#navone li.btn a:hover {
-	background-color: aqua;
-	color: white;
-	border: 4px outset #c96e6b;
+#navone li.btn a:hover { background-color:aqua;color:white;  border: 4px outset #c96e6b;
 }
-
-#navone nav li a:active {
-	background: #aecbff;
-	border: 4px inset #aecbff;
+#navone nav li a:active { background:#aecbff;  border: 4px inset #aecbff; 
 }
-
-#navone li.btn {
-	width: 110px;
+#navone li.btn { width:110px;
 }
-
-/* a { background: oramge;} */
 
 footer a:visited {
 	color: navy;
@@ -548,8 +512,6 @@ footer a:hover {
 	color: red;
 	text-decoration: none;
 }
-
-
 
 .navigation a {
   text-decoration: none;
@@ -583,9 +545,6 @@ footer a:hover {
     border-bottom: none;
   }
 }
-
-
-
 
 .popover {
    display: none;
