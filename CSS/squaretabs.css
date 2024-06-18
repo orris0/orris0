@@ -4,6 +4,9 @@
     padding: 0;
 }
 
+section {
+	display:flex ;
+}
 
 /*set attributes for consistent appearance in all browsers*/
 html,
@@ -53,7 +56,7 @@ nav {
 
 /* PAGE LAYOUT */
 body {
-	margin: auto;width: 970px;font: medium arial;font-size: 100%;font-weight: normal;background: #bee8ff url(images/green-grad.jpg) repeat-x;
+	margin: auto;width: 970px;font: medium arial;font-size: 80%;font-weight: normal;background: rgba(0,0,0,.9) url(images/green-grad.jpg) repeat-x;
 }
 
 .wrapper {
@@ -63,27 +66,30 @@ body {
 }
 
 /* fpn */
-#container {
+.container {
+	height:8vh; 
+	display: flex;
+	justify-content:center;
+	align-items: center;
 	padding: 0;
 	margin: 0;
 	list-style: none;
-    min-height: 100vh;
-    scroll-behavior: smooth;
+    scroll-behavior: smooth;background: #131313;
 	border: 1px solid silver;
     font-family:'Helvetica Neue', sans-serif;
 }
 
 header {
 	margin-top: 0;
-	height: 100px;
-	width: 100%;
+	height: 180px;
+	width: 970px;
 	background-image: url('CSS/images/bluepan.jpg');
 	background-repeat: no-repeat;
 	background-position: center;
 	border-bottom: 0;
 }
 
-#banner, h1 a {
+#banner {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-around;
@@ -238,7 +244,10 @@ footer {
 	clear: both;
 	text-align: center;
 	width: 970px;
+	height: fit-content;
 	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
 
 }
 
@@ -552,9 +561,17 @@ footer a:hover {
   }
 }
 
+h1 a {
+	font-size: 80px;
+	color: #BF2E97;
+	text-decoration: none;
+	text-transform: uppercase;
+  }
+
 .popover {
-   display: none;
-   box-shadow: 0px 6px 8px rgba(19, 19, 19, .7);
+    width: 100%;
+    display: none;
+    box-shadow: 0px 6px 8px rgba(19, 19, 19, .7);
 }
 
 .popover:target {
@@ -573,7 +590,7 @@ footer a:hover {
   align-items: center;
   justify-content: center;
   position: relative;
-  width: 0;
+  width: 100%;
   height: 0;
   color: #fff;
   background-color: #191919;
@@ -587,12 +604,12 @@ footer a:hover {
 
 .nav_list a {
   text-decoration: none;
-  font-size: small;
+  font-size: 25px;
   color: #fff;
 }
 
 .nav_list_item {
-  height: 20%;
+  height: 24%;
   overflow: hidden;
 }
 
