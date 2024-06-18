@@ -59,13 +59,58 @@ body {
 	margin: auto;width: 970px;font: medium arial;font-size: 80%;font-weight: normal;background: rgba(0,0,0,.9) url(images/green-grad.jpg) repeat-x;
 }
 
-.wrapper {
-
+.container {
+	padding: 0;
+	margin: 0;
+	list-style: none;
 	border: 1px solid silver;
-    font-family:'Helvetica Neue', sans-serif;
-}
+	display: flex;
+	justify-content: center;
+	background: green;
+  
+  
+  }
+  
+  .nowrap  {
+	display: flex;
+	flex-wrap: nowrap;
+  }
+  
+  .nowrap li {
+	background: black;
+  }
+  
+  .wrap    {
+	flex-wrap: wrap;
+  }  
+  .wrap li {
+	background: purple;
+  }
+  
+  .wrap-reverse {
+	flex-wrap: wrap-reverse;
+  }  
+  .wrap-reverse li {
+	background: pink;
+  }
+  
+  .flex-item {
+  
+  
+	padding: 3px;
+	width: 180px;
+	height: 26px;
+	margin: 10px;
+  
+  
+	line-height: 1.2em;
+	color: white;
+	font-weight: bold;
+	font-size:x-small;
+	text-align: center;
+  }
 
-/* fpn */
+/* fpn *
 .container {
 	height:8vh; 
 	display: flex;
@@ -78,7 +123,7 @@ body {
 	border: 1px solid silver;
     font-family:'Helvetica Neue', sans-serif;
 }
-
+*/
 header {
 	margin-top: 0;
 	height: 180px;
