@@ -53,22 +53,11 @@ nav {
 
 /* PAGE LAYOUT */
 body {
-	 display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-    scroll-behavior: smooth; 
-	font: medium arial;
-	align-items: center;
-	font-size: 100%;
-	font-weight: normal;
-	background: #bee8ff url(images/green-grad.jpg) repeat-x;
-	margin: 20px auto;
+	margin: auto;width: 970px;font: medium arial;font-size: 100%;font-weight: normal;background: #bee8ff url(images/green-grad.jpg) repeat-x;
 }
 
 .wrapper {
-    display: flex;
 
-	background: #131313;
 	border: 1px solid silver;
     font-family:'Helvetica Neue', sans-serif;
 }
@@ -79,12 +68,7 @@ body {
 	margin: 0;
 	list-style: none;
     min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-	justify-content: center;
-    align-items: center;
     scroll-behavior: smooth;
-	background: #131313;
 	border: 1px solid silver;
     font-family:'Helvetica Neue', sans-serif;
 }
@@ -100,12 +84,15 @@ header {
 }
 
 #banner, h1 a {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
 	font-family: "times new roman";
-	font-size: 75%;
+	font-size: large;
 	color: white;
 	text-align: center;
 	font-weight:bold;
-	padding-top:20px; 
+	padding-top:0px; 
 	margin-bottom: 0px;
 	height: 100px;
 	margin: auto;
@@ -143,12 +130,16 @@ h2 {
 
 /*set the generic tab style--and set position so that it overlaps the header*/
 nav {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
 	position: relative;
 	top: 13px;
+	left: 25.5%;
 	color: navy;
 	border-bottom: 1px solid black;
-	margin: 0px 0 0px 5%;
-	width: 70%;
+	margin: 0;
+	width: 49%;
 	padding: 0px;
 	padding-left: -2%;
 	z-index: 1;
@@ -197,6 +188,7 @@ nav a.active:hover {
 .content {
 	display: flex;
 	flex-direction: column;
+	justify-content: space-around;
 	margin-top: 0;
 	font: 0.9em/1.3em "bitstream vera sans", verdana, sans-serif;
 	position: relative;
@@ -214,6 +206,7 @@ nav a.active:hover {
 #rightcol {
 	display: flex;
 	flex-direction: column;
+	justify-content: space-around;
 	width: 180px;
 	float: right;
 	text-align: center;
@@ -234,8 +227,9 @@ nav a.active:hover {
 #gallery-block {
 	display: flex;
 	flex-direction: column;
+	justify-content: space-around;
 	position: relative;
-	left: -20px;
+	left: -60px;
 	top: 0px;
 }
 
@@ -253,7 +247,10 @@ footer {
 }
 
 /*set menu buttons*/
-li.btn a { display:block; background: #946055; color: white; border-bottom: 3px solid #cfecf5; border: 4px outset #c96e6b; font-size:medium; font-family:"times new roman"; text-align:center; background-image: linear-gradient(
+li.btn a { display:block; background: #946055; 
+	color: white; border-bottom: 3px solid #cfecf5; 
+	border: 4px outset #c96e6b; 
+	font-size: large; font-family:"times new roman"; text-align:center; background-image: linear-gradient(
 	hsla(0,0%,100%,.6),hsla(0,0%,100%,0));
     border: 1px solid rgba(0,0,0,.4);
     border: 4px outset #c96e6b;
@@ -271,7 +268,7 @@ li.btn a:hover {
 }
 
 li.btn {
-	width: 110px;
+	width: 100px;
 }
 
 li {
@@ -405,7 +402,9 @@ p {
 }
 
 .item {
-	
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
 	list-style-type: none;
 	font-family: Verdana, Geneva, Tahoma, sans-serif;
 	font-size: small;
@@ -492,7 +491,7 @@ span.small { font-size:medium;
 
 #navone { float:left; margin-top: 0; width:115px; font-size: 100%; font-family:"times new roman"; text-align:center;
 }
-#navone ul { margin-left:0; border:0; width:115px;
+#navone ul { margin-left:0; border:0; width:115px; 
 }
 /*set menu buttons */
 #navone li.btn a { display:block; background-color :#946055; color:yellow; font-weight:bold; padding:4px;
@@ -593,7 +592,7 @@ footer a:hover {
 }
 
 .nav_list_item {
-  height: 10%;
+  height: 20%;
   overflow: hidden;
 }
 
