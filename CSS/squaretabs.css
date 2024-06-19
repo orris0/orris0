@@ -275,9 +275,10 @@ nav a.active:hover {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-around;
+	
 	position: relative;
 	left: 0px;
-	top: 0px;
+	top: 25px;
 }
 
 /*set footer*/
@@ -545,7 +546,7 @@ span.small { font-size:medium;
 }
 /*set menu buttons */
 #navone li.btn a { display:block; background-color :#946055; color:yellow; font-weight:bold; padding:4px;
-	margin-left: 0px; margin-top: 0px; text-align:center; list-style-type:none; text-decoration:none; width:110px;border: 4px outset #c96e6b;
+	margin-left: 0px; margin-top: 20px; text-align:center; list-style-type:none; text-decoration:none; width:110px;border: 4px outset #c96e6b;
 }
 #navone li.btn a:hover { background-color:aqua;color:white;  border: 4px outset #c96e6b;
 }
@@ -603,10 +604,11 @@ footer a:hover {
 }
 
 h1 a {
-	font-size: 50px;
-	color: #BF2E97;
+	font-size: 100%;
+	color: #fff;
 	text-decoration: none;
 	text-transform: uppercase;
+	
   }
 
 .popover {
