@@ -325,7 +325,7 @@ li.btn {
 }
 
 li {
-	background: var(--accent-color);
+	background: rgba(0, 0, 0, 0.4);
 }
 
 /*SET THUMBNAIL GALLERY BLOCK*/
