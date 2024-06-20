@@ -58,17 +58,31 @@ nav {
 body {
 	margin: auto;width: 970px;font: medium arial;font-size: 80%;font-weight: normal;background: rgba(0,0,0,.9) url(images/green-grad.jpg) repeat-x;
 }
-
 .container {
-	padding: 0;
-	margin: 0;
-	list-style: none;
-	border: 1px solid silver;
+	display: flex; /* or inline-flex */
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+  }
+
+  .flex-container {
+	/* We first create a flex layout context */
 	display: flex;
-	justify-content: center;
-	background: green;
   
+	/* Then we define the flow direction 
+	   and if we allow the items to wrap 
+	 * Remember this is the same as:
+	 * flex-direction: row;
+	 * flex-wrap: wrap;
+	 */
+	flex-flow: row wrap;
   
+	/* Then we define how is distributed the remaining space */
+	justify-content: space-around;
+	gap: 10px;
+    gap: 10px 20px; /* row-gap column gap */
+    row-gap: 10px;
+    column-gap: 20px;
   }
   
   .nowrap  {
@@ -98,11 +112,12 @@ body {
 	padding: 3px;
 	width: 6rem;
 	height: 2.5rem;
-	margin: 10px;
+	margin: 0px;
 	line-height: 1.5em;
 	color: white;
 	font-weight: bold;
-	font-size:xx-small;
+	font-size:100%;
+	border: 1px solid silver;
 	text-align: center;
   }
 
@@ -298,7 +313,7 @@ footer {
 }
 
 /*set menu buttons*/
-li.btn a { display:block; background: #946055; 
+li.btn a { display:flex; background: #946055; 
 	color: white; border-bottom: 3px solid #cfecf5; 
 	border: 4px outset #c96e6b; 
 	font-size: large; font-family:"times new roman"; text-align:center; background-image: linear-gradient(
@@ -447,6 +462,9 @@ p {
 	display: flex;
 	justify-content: space-around;
 	flex-wrap: wrap;
+	position: absolute;
+	top: 10px;
+	left: 155px;
 	align-items: center;
 	line-height: 30px;
 	text-align: center;
@@ -545,14 +563,26 @@ span.small { font-size:medium;
 #navone ul { margin-left:0; border:0; width:115px; 
 }
 /*set menu buttons */
-#navone li.btn a { display:block; background-color :#946055; color:yellow; font-weight:bold; padding:4px;
-	margin-left: 0px; margin-top: 20px; text-align:center; list-style-type:none; text-decoration:none; width:110px;border: 4px outset #c96e6b;
+#navone li.btn a { 
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap; 
+	background-color :#946055; 
+	color:#007bff; 
+	font-weight:bold; 
+	padding:0px;
+	margin-left: 0px; margin-top: 0px; text-align:center; list-style-type:none; text-decoration:none; width:110px;border: 4px outset #c96e6b;
 }
 #navone li.btn a:hover { background-color:aqua;color:white;  border: 4px outset #c96e6b;
 }
 #navone nav li a:active { background:#aecbff;  border: 4px inset #aecbff; 
 }
 #navone li.btn { width:110px;
+}
+
+#linked-pages {
+	position: absolute;
+	top: 350px;
 }
 
 footer a:visited {
