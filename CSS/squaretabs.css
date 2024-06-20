@@ -79,6 +79,8 @@ body {
   
 	/* Then we define how is distributed the remaining space */
 	justify-content: space-around;
+	position: relative;
+	bottom: -40em;
 	gap: 10px;
     gap: 10px 20px; /* row-gap column gap */
     row-gap: 10px;
@@ -463,7 +465,7 @@ p {
 	justify-content: space-around;
 	flex-wrap: wrap;
 	position: absolute;
-	top: 10px;
+	bottom: 10px;
 	left: 155px;
 	align-items: center;
 	line-height: 30px;
@@ -583,6 +585,7 @@ span.small { font-size:medium;
 #linked-pages {
 	position: absolute;
 	top: 350px;
+	left: 250px;
 }
 
 footer a:visited {
