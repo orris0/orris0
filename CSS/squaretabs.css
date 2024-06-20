@@ -27,7 +27,7 @@ ol {
 /*set images to have no borders*/
 img {
 	border: 0;
-	scale(1.00);
+	scale:(1.00);
 	clip-path: polygon(50% 0, 100% 50%, 50% 100%, 0 50%);
 	transition: 1s clip-path;
 }
