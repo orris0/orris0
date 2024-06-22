@@ -1,29 +1,22 @@
-﻿* {
+﻿@font-face {
+	font-family: Ampersand;
+	;
+	src: local('Baskerville-Italic'),
+		local('GoudyOldStyleT-Italic'),
+		local('Palatino-Italic'),
+		local('BookAntiqua-Italic');
+	unicode-range: U+26;
+}
+
+/*set attributes for consistent appearance in all browsers*/
+html, body, p, ul, li, h1, h2 {	margin:0; padding:0; 
+}
+
+* {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
-
-section {
-	display:flex ;
-}
-
-/*set attributes for consistent appearance in all browsers*/
-html,
-body,
-p,
-ul,
-li,
-h1,
-h2,
-h3,
-h4,
-h5,
-ol {
-	margin: 0;
-	padding: 0;
-}
-
 /*set images to have no borders*/
 img {
 	border: 0;
@@ -45,31 +38,698 @@ img:hover {
 	transform: rotate(-45deg) scale(2.00); 
 
 }
-
 /*add display attributes for the semantic tags*/
-header,
-footer,
-section,
-article,
-nav {
-	display: block;
+header, footer, section, article, nav { display:block; 
+}
+/*SET FONTS*/
+span.small { font-size:small;
+}
+#banner h1 { 
+    font-family:"times new roman"; 
+	font-size:x-large; 
+	color:white;  
+	text-align:center;
+	font-weight:bold; 
+    text-align:center; 
+	padding-top:30px; 
+	margin-bottom:0px; 
+	height: 50px; 
+	margin:auto; 	  
+    text-shadow: 0.1em 0.1em 0.2em blue; 
 }
 
-/* PAGE LAYOUT */
+h1 a {
+	font-size: x-large;
+	color: #fff;
+	text-decoration: none;
+	text-transform: uppercase;
+  }
+
+h2 {font-size:large; font-family:"times new roman"; text-align:center;
+}
+
+/*PAGE LAYOUT*/
 body {
-	margin: auto;width: 970px;font: medium arial;font-size: 80%;font-weight: normal;background: rgba(0,0,0,.9) url(images/green-grad.jpg) repeat-x;
+	width: 970px;
+	background:#FFF url(images/green-grad.jpg) repeat-x; 
+	margin: 20px auto;
+    font-family: Arial;  
+}
+
+header { 
+	width: 970px;
+	color:black; 
+	background-color:#FFCC00; 
+	background-position:35% top; 
+	background-image:url('images/compbkgcrop.jpg'); 
+	background-repeat:no-repeat;
+}
+#rosette { 
+    position:relative; 
+    left:85%; 
+	top:5px; 
+}
+
+#navone { float:left; margin-top: 0; width:115px; font-size: 100%; font-family:"times new roman"; text-align:center;
+}
+#navone ul { margin-left:0; border:0; width:115px; 
+}
+/*set menu buttons */
+#navone li.btn a { 
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap; 
+	background-color :#946055; 
+	color:#007bff; 
+	font-weight:bold; 
+	padding:0px;
+	margin-left: 0px; margin-top: 0px; text-align:center; list-style-type:none; text-decoration:none; width:110px;border: 4px outset #c96e6b;
+} */
+#navone li.btn a:hover { background-color:aqua;color:white;  border: 4px outset #c96e6b;
+}
+#navone nav li a:active { background:#aecbff;  border: 4px inset #aecbff; 
+}
+#navone li.btn { width:110px;
+}
+
+/*
+nav { float:left; margin-left:10px; width:115px;
+}
+nav ul { margin-left:0; border:0; width:115px;
+}
+set far right column for ads
+*/
+/*set horizontal menu buttons general style*/
+#hnav  {display:inline-block;  margin:10px auto 10px auto; width:650px; 
+height:42px; 
+}
+#hnav li {margin:10px; float:left; text-align:center; padding:5px;  list-style-type:none;
+}
+/*set general anchor style to fill the container*/
+#hnav li a {text-decoration:none; color:yellow; font-weight:bold; width:120px; padding:5px; text-align:center; 
+}
+/*mouseOut state (default)*/
+#hnav li a { background: #9f7562; border: 4px outset #c96e6b; text-align:center; margin-right:5px;
+}
+/* mouseover */
+#hnav li a:hover { background: #9f7562; color:white;   border: 4px outset #c96e6b; width:120px; 
+}
+/* omousedown */
+#hnav li a:active 	{ background:#ABCBFF;  border: 4px inset #c96e6b; 
+}
+
+
+
+nav { width:140px;
+}
+nav ul { width: 145px; float:left;margin-left:0; 
+}
+nav li { margin-bottom: 1px; text-align: center; list-style:none; padding-bottom:3px;
+}
+nav li a { display: block; color: yellow; font-weight: bold;
+text-decoration: none; zoom:1; 
+}
+/* mouseout (default) */
+nav li a { background: #946055;  border: 4px outset #c96e6b;
+}
+nav li a:hover { background: #9f7562; color:white;  border: 4px outset #c96e6b;
+}
+nav li a:active { background:#aecbff;  border: 4px inset #aecbff; 
+}
+/* set general inset button styles */
+nav li.insetbtn { border:none;
+}
+nav li.insetbtn a { display: block; color:orange; font-weight: bold;
+text-decoration: none; cursor:default; margin-bottom: 0; text-align: center; list-style:none;
+padding-bottom:3px; background:#744035; border-top: 4px #5e2100 solid;
+border-left: 4px #5e2100 solid; border-right:3px #bfa5a2 solid; border-bottom:3px #bfa5a2 solid;
+}
+
+/* unvisited link */
+a:link {
+	color: red;
+  }
+  
+  /* visited link */
+  a:visited {
+	color: green;
+  }
+  
+  /* mouse over link */
+  a:hover {
+	color: hotpink;
+  }
+  
+  /* selected link */
+  a:active {
+	color: blue;
+  }
+
+
+#rightcol { width:150px; float:right; text-align:center;position: relative; top:-15em;	
+}
+#rightcol p.advert {font-size:small;; 
+}
+ 
+/*set middle column for main content*/
+#midcol { margin-left:135px; margin-right:155px;
+}
+/*set gallery block position*/ 
+#gallery-block { position:relative; left: 30px; top:10px; 
+}
+/*set footer*/
+footer { color:black; text-align:center; width:970px;position:relative; left: 0px; top:675px;
+}
+/*set menu buttons*/
+li.btn a { display:block; background-color :#66CCFF; color:black; font-weight:bold; padding:4px;
+	margin-left:0;border: 4px outset #c96e6b;background-image: linear-gradient(
+		hsla(0,0%,100%,.6),hsla(0,0%,100%,0));
+		border: 1px solid rgba(0,0,0,.4);
+		border: 4px outset #c96e6b;
+		border-bottom: none;
+		border-radius: .5em .5em 0 0;
+		box-shadow: 0 .15em white inset;
+		transform: perspective(.5em) rotateX(5deg);
+		transform-origin: bottom; text-align:center; list-style-type:none; text-decoration:none; width:110px;
+}
+li.btn a:hover { background-color:blue; color:white;
+}
+li.btn { width:110px;
+}
+li.btn a:hover {
+	background: var(--accent-color);
+	color: white;
+}
+
+li.btn {
+	width: 100px;
+}
+
+li {
+	background: rgba(0, 0, 0, 0.4);
 }
 
 .container {
-	padding: 0;
-	margin: 0;
-	list-style: none;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    scroll-behavior: smooth;
+    background: #131313;
+    font-family:'Helvetica Neue', sans-serif;
+}
+
+h1 a {
+  font-size: 80px;
+  color: #BF2E97;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+h1,h2,h3,h4,h5,h6 {font-family: "Oswald"}
+body {font-family: "Open Sans"}
+
+.popover {
+	max-width: 100%;
+   display: none;
+   box-shadow: 0px 6px 8px rgba(19, 19, 19, .7);
+}
+
+.popover:target {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.popover .content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 0;
+  height: 0;
+  color: #fff;
+  background-color: #191919;
+  animation: 1s grow ease forwards;
+  text-align: center;
+}
+
+.nav_list  {
+  list-style-type: none;
+}
+
+.nav_list a {
+  text-decoration: none;
+  font-size: 300%;
+  color: #BF2E97;
+}
+
+.nav_list_item {
+  height: 35px;
+  overflow: hidden;
+}
+
+.nav_list li {
+  padding: -5px 0;
+  text-transform: uppercase;
+  transform: translateY(200px);
+  opacity: 0;
+  animation: 2s slideUp ease forwards .5s;
+  position: relative;
+  top: 0%;
+}
+
+.nav_list li::before {
+  content: '';
+  position: absolute;
+  height: 2px;
+  width: 0px;
+  left: 0;
+  bottom: 10px;
+  background: #BF2E97; 
+  transition: all .5s ease;
+}
+
+.nav_list li:hover:before {
+      width: 100%;
+}
+
+.popover p {
+  padding: 50px;
+  opacity: 0;
+  animation: 1s fadeIn ease forwards 1s;
+}
+
+.popover .close::after {
+  right: 0;
+  top: 0;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  display: flex;
+  z-index: 1;
+  font-size: 30px;
+  align-items: center;
+  justify-content: center;
+  background-color: #BF2E97;
+  color: #fff;
+  content: "×";
+  cursor: pointer;
+  opacity: 0; 
+  animation: 1s fadeIn ease forwards .5s;
+}
+
+@keyframes grow {
+  100% {
+    height: 90%;
+    width: 90%;
+ }
+}
+
+@keyframes fadeIn {
+100% {
+  opacity: 1;
+ }
+}
+
+@keyframes slideUp {
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+#container {width:1850px; margin-left:-450px; padding:5px;
+}
+a { color:navy;
+}
+.inline-block a { display:inline-block; width:200px; height:17px; line-height:20px; text-align:center;
+}
+
+footer a:link {color: navy; text-decoration:none; font-size:small;}
+footer a:visited {color: gray; text-decoration: none; }
+footer a:active {color: navy; text-decoration: none; }
+footer a:hover {color: red;text-decoration: none; }
+
+
+/*SET THUMBNAIL GALLERY BLOCK*/  
+/* Set general thumbnail styles */
+#col-1	{ position: absolute; top: 0; left: 0; width:85px;
+} 
+/*place the column on the page*/
+li	{ margin: 5px; list-style-type:none; 
+} 
+/*remove bullets from the un-ordered list elements and create the
+MouseOut state (default) - create and position a space for the larger images and hide them*/
+#col-1 a img.hid { width: 260px; height:390px; position: absolute; top: -23px; left: 350px;
+	visibility: hidden;
+}
+/* MouseOver state (hover)- this reveals larger picture */
+#col-1 a:hover { background: white; }
+#col-1 a:hover img.hid { visibility:visible; }
+
+/*----------------------------------------------------*/
+
+/* set 2nd column of thumbnails 85px further over to right*/
+#col-2	{ position: absolute; top: 0; left: 85px; width:85px; }
+li	{ margin: 5px; list-style-type:none;	
+}
+/* MouseOut state (default) - hide larger picture */
+#col-2 a img.hid { width: 260px; height:390px;
+	position: absolute; top: -23px; left: 265px; margin-left:0;
+	visibility: hidden;
+	}
+/* MouseOver state (hover)- reveal larger picture */
+#col-2 a:hover { background: white; }
+#col-2 a:hover img.hid { visibility:visible; }
+
+/*----------------------------------------------------*/
+
+/* set 3nd column of thumbnails 170px further over to right*/
+#col-3	{ position: absolute; top: 0; left: 175px; width:95px; }
+li	{ margin: 5px; list-style-type:none;	
+}
+/* MouseOut state (default) - hide larger picture */
+#col-3 a img.hid {
+	width: 260px; height:390px;
+	position: absolute; top: -23px; left: 180px; margin-left:0;
+	visibility: hidden;
+	}
+/* MouseOver state (hover)- reveal larger picture */
+#col-3a:hover { background: white; 
+}
+#col-3 a:hover img.hid { visibility:visible; 
+}
+
+#example {width:100%; height:482px; padding-bottom: 0px; margin:auto;background: url(images/safe_image.gif) no-repeat 99% 26%,url(images/clipbrd.gif) no-repeat 79% 14%,url(images/blugrad500.jpg) repeat-x;}
+
+/* Page */
+#page { width: 100%; margin: 0 auto; padding: 0px 0px 0px 40px;
+	background: url(images/img03.gif) repeat-y left top;
+}
+#page-bgtop { padding: 20px 0px;
+}
+/* Content */
+
+/*
+#wrapper {position:relative; top:0; left:0;
+	width:100%; margin:auto; text-align:center;
+}
+
+#container { margin-left:20px; margin-top:0px;
+}/*
+#container {
+	width:960px; 
+	margin:-10px auto 0 auto;width:97%; max-width:960px; min-width:780px; margin:auto; 
+}*
+#main-content { 
+    width:100%;
+    height:600px; 
+	margin:0;  
+	padding:0;
+}
+
+/*set the position of the content to butt up to the menu tabs*/ 
+#content {
+	margin-top:0px; font: 0.9em/1.3em "bitstream vera sans", verdana, sans-serif;position:relative; top:-13px; text-align: left;height:694px; background-color: transparent; padding: 20px; border: 1px solid red; border-top: 1px solid yellow; z-index: 2;
+}
+/* set vertical button menu position */
+#container { margin-left:10px; margin-top:0px;
+}
+
+#main-content { text-align:center; color:black; margin-top:30px; 
+	}
+p {  background-image: url("images/cheqflags.jpg"); background-attachment: fixed; text-align:center; 
+}
+#para-shadow p {	
+box-shadow: 6px 6px 8px #888;margin-left:30px; padding: 5px 5px 5px 15px; width:200px; background-color:#66FF99; color:black; font-weight:bold;background-image: url("images/cheqflags.jpg"); background-attachment: fixed; text-align:center;
+}
+
+h3 { width:300px;margin-top:-50px;padding-bottom:10px;}
+.top-right-corner {
+	background:url('images/top-rightcorner.png') no-repeat right top;
+	width: 220px;
+}
+.bottom-left-corner {
+	background:url('images/bottom-leftcorner.png') no-repeat left bottom;
+	padding-top:8px;
+	padding-left:8px;
+}
+.shadowbox {
+	background:url('images/main-shadow.png') right bottom;
+}
+.innerbox {
+	position: relative;
+	left:-8px;
+	top:-8px;
+}
+.innerbox p {
+	margin:0; padding:5px; width:200px; border:1px silver solid;
+}
+#gradient-box {margin:auto; text-align:center; font-size:x-large; color:white;
+border:1px black solid;
+	width:400px; height:500px;
+	background: -moz-radial-gradient(center 45deg, circle closest-corner, white 0%, green 100%); 	
+	background: -webkit-gradient(radial, center center, 0, center center, 200, from(white), to(green));
+}
+
+
+
+p{margin:0;padding: 0 10px 1em}/*
+div#container{width:450px;margin: 0 auto;padding:10px 0;text-align:left}
+div#content{float:left;width:300px;padding:10px 0;background: #FFBD00}
+div#navpanel{float:right;width:145px;padding:10px 0;background:#42B4AC}*/
+
+
+
+
+
+
+
+
+/*SET THUMBNAIL GALLERY BLOCK*/  
+/* Set general thumbnail styles *
+#col-1	{ position: absolute; top: -13px; left: -10px; width:85px;} 
+/*place the column on the page*
+li	{ margin: 5px; list-style-type:none;} 
+/*remove bullets from the un-ordered list elements and create the
+MouseOut state (default) - create and position a space for the larger images and hide them*
+#col-1 a img.hid { width: 260px; height:390px; position: absolute; top: 5px; left: 272px;visibility: hidden;}
+/* MouseOver state (hover)- this reveals larger picture *
+#col-1 a:hover { background: transparent;}
+#col-1 a:hover img.hid { visibility:visible;}
+
+/*----------------------------------------------------*/
+
+/* set 2nd column of thumbnails 85px further over to right*
+#col-2	{ position: absolute; top: -13px; left: 30px; width:85px;}
+li	{ margin: 5px; list-style-type:none;}
+/* MouseOut state (default) - hide larger picture *
+#col-2 a img.hid { width: 260px; height:390px;position: absolute; top: 26px; left: 220px; margin-left:0;visibility: hidden;}
+/* MouseOver state (hover)- reveal larger picture *
+#col-2 a:hover { background: white;}
+#col-2 a:hover img.hid { visibility:visible;}
+
+/*----------------------------------------------------*/
+
+/* set 3nd column of thumbnails 170px further over to right*
+#col-3	{ position: absolute; top: -13px; left: 70px; width:95px;}
+li	{ margin: 5px; list-style-type:none;}
+/* MouseOut state (default) - hide larger picture *
+#col-3 a img.hid { width: 260px; height:390px;position: absolute; top: 26px; left: 180px; margin-left:0;visibility: hidden;}
+/* MouseOver state (hover)- reveal larger picture *
+#col-3 a:hover { background: white;}
+#col-3 a:hover img.hid { visibility:visible;}
+/*-----------------------------------------------------*
+#col-4	{ position: absolute; top: 175px; left: -10px; width:85px;} 
+/*place the column on the page*
+li	{ margin: 5px; list-style-type:none;} 
+/*remove bullets from the un-ordered list elements and create the
+MouseOut state (default) - create and position a space for the larger images and hide them*
+#col-4 a img.hid { width: 260px; height:390px; position: absolute; top: -161px; left: 260px;visibility: hidden;}
+/* MouseOver state (hover)- this reveals larger picture *
+#col-4 a:hover { background: white;}
+#col-4 a:hover img.hid { visibility:visible;}
+
+/*----------------------------------------------------*/
+
+/* set 2nd column of thumbnails 85px further over to right*
+#col-5	{ position: absolute; top: 175px; left: 30px; width:85px;}
+li	{ margin: 5px; list-style-type:none;}
+/* MouseOut state (default) - hide larger picture *
+#col-5 a img.hid { width: 260px; height:390px;position: absolute; top: -161px; left: 220px; margin-left:0;visibility: hidden;}
+/* MouseOver state (hover)- reveal larger picture *
+#col-5 a:hover { background: white;}
+#col-5 a:hover img.hid { visibility:visible;}
+
+/*----------------------------------------------------*/
+
+/* set 3nd column of thumbnails 170px further over to right*
+#col-6	{ position: absolute; top: 175px; left: 70px; width:95px;}
+li	{ margin: 5px; list-style-type:none;}
+/* MouseOut state (default) - hide larger picture *
+#col-6 a img.hid { width: 260px; height:390px;position: absolute; top: -161px; left: 180px; margin-left:0;visibility: hidden;}
+/* MouseOver state (hover)- reveal larger picture *
+#col-6 a:hover { background: white;}
+#col-6 a:hover img.hid { visibility:visible;}
+/*----------------------------------------------------*
+#col-7	{ position: absolute; top: 360px; left: -10px; width:85px;} 
+/*place the column on the page*
+li	{ margin: 5px; list-style-type:none;} 
+/*remove bullets from the un-ordered list elements and create the
+MouseOut state (default) - create and position a space for the larger images and hide them*
+#col-7 a img.hid { width: 260px; height:390px; position: absolute; top: -349px; left: 260px;visibility: hidden;}
+/* MouseOver state (hover)- this reveals larger picture *
+#col-7 a:hover { background: white;}
+#col-7 a:hover img.hid { visibility:visible;}
+
+/*----------------------------------------------------*/
+
+/* set 2nd column of thumbnails 85px further over to right*
+#col-8	{ position: absolute; top: 360px; left: 30px; width:85px;}
+li	{ margin: 5px; list-style-type:none;}
+/* MouseOut state (default) - hide larger picture *
+#col-8 a img.hid { width: 260px; height:390px;position: absolute; top: -349px; left: 220px; margin-left:0;visibility: hidden;}
+/* MouseOver state (hover)- reveal larger picture *
+#col-8 a:hover { background: white;}
+#col-8 a:hover img.hid { visibility:visible;}
+
+/*----------------------------------------------------*/
+
+/* set 3nd column of thumbnails 170px further over to right*
+#col-9	{ position: absolute; top: 360px; left: 70px; width:95px;}
+li	{ margin: 5px; list-style-type:none;}
+/* MouseOut state (default) - hide larger picture *
+#col-9 a img.hid { width: 260px; height:390px;position: absolute; top: -349px; left: 180px; margin-left:0;visibility: hidden;}
+/* MouseOver state (hover)- reveal larger picture *
+#col-9 a:hover { background: white;}
+#col-9 a:hover img.hid { visibility:visible;}
+/*-----------------------------------------------------*
+#col-10	{ position: absolute; top: -13px; left: 110px; width:85px;} 
+/*place the column on the page*
+li	{ margin: 5px; list-style-type:none;} 
+/*remove bullets from the un-ordered list elements and create the
+MouseOut state (default) - create and position a space for the larger images and hide them*
+#col-10 a img.hid { width: 260px; height:390px; position: absolute; top: 20px; left: 140px;visibility: hidden;}
+/* MouseOver state (hover)- this reveals larger picture *
+#col-10 a:hover { background: white;}
+#col-10 a:hover img.hid { visibility:visible;}
+
+/*----------------------------------------------------*/
+
+/* set 2nd column of thumbnails 85px further over to right*
+#col-11	{ position: absolute; top: -13px; left: 150px; width:85px;}
+li	{ margin: 5px; list-style-type:none;}
+/* MouseOut state (default) - hide larger picture *
+#col-11 a img.hid { width: 260px; height:390px;position: absolute; top: 20px; left: 100px; margin-left:0;visibility: hidden;}
+/* MouseOver state (hover)- reveal larger picture *
+#col-11 a:hover { background: white;}
+#col-11 a:hover img.hid { visibility:visible;}
+
+/*----------------------------------------------------*/
+
+/* set 3nd column of thumbnails 170px further over to right*
+#col-12	{ position: absolute; top: -13px; left: 190px; width:95px;}
+li	{ margin: 5px; list-style-type:none;}
+/* MouseOut state (default) - hide larger picture *
+#col-12 a img.hid { width: 260px; height:390px;position: absolute; top: 20px; left: 60px; margin-left:0;visibility: hidden;}
+/* MouseOver state (hover)- reveal larger picture *
+#col-12 a:hover { background: white;}
+#col-12 a:hover img.hid { visibility:visible;}
+
+
+#col-13	{ position: absolute; top:175px; left: 110px; width:85px;} 
+/*place the column on the page*
+li	{ margin: 5px; list-style-type:none;} 
+/*remove bullets from the un-ordered list elements and create the
+MouseOut state (default) - create and position a space for the larger images and hide them*
+#col-13 a img.hid { width: 260px; height:390px; position: absolute; top: -160px; left: 140px;visibility: hidden;}
+/* MouseOver state (hover)- this reveals larger picture *
+#col-13 a:hover { background: white;}
+#col-13 a:hover img.hid { visibility:visible;}
+
+/*----------------------------------------------------*/
+
+/* set 2nd column of thumbnails 85px further over to right*
+#col-14	{ position: absolute; top: 175px; left: 150px; width:85px;}
+li	{ margin: 5px; list-style-type:none;}
+/* MouseOut state (default) - hide larger picture *
+#col-14 a img.hid { width: 260px; height:390px;position: absolute; top: -160px; left: 100px; margin-left:0;visibility: hidden;}
+/* MouseOver state (hover)- reveal larger picture *
+#col-14 a:hover { background: white;}
+#col-14 a:hover img.hid { visibility:visible;}
+
+/*----------------------------------------------------*/
+
+/* set 3nd column of thumbnails 170px further over to right*
+#col-15	{ position: absolute; top:175px; left: 190px; width:95px;}
+li	{ margin: 5px; list-style-type:none;}
+/* MouseOut state (default) - hide larger picture *
+#col-15 a img.hid { width: 260px; height:390px;position: absolute; top: -163px; left: 60px; margin-left:0;visibility: hidden;}
+/* MouseOver state (hover)- reveal larger picture *
+#col-15 a:hover { background: white;}
+#col-15 a:hover img.hid { visibility:visible;}
+/*-----------------------------------------------------*
+#col-16	{ position: absolute; top: 360px; left: 110px; width:85px;} 
+/*place the column on the page*
+li	{ margin: 5px; list-style-type:none;} 
+/*remove bullets from the un-ordered list elements and create the
+MouseOut state (default) - create and position a space for the larger images and hide them*
+#col-16 a img.hid { width: 260px; height:390px; position: absolute; top: -346px; left: 140px;visibility: hidden;}
+/* MouseOver state (hover)- this reveals larger picture *
+#col-16 a:hover { background: white;}
+#col-16 a:hover img.hid { visibility:visible;}
+
+/*----------------------------------------------------*/
+
+/* set 2nd column of thumbnails 85px further over to right*
+#col-17	{ position: absolute; top: 360px; left: 150px; width:85px;}
+li	{margin: 5px; list-style-type:none;}
+/* MouseOut state (default) - hide larger picture *
+#col-17 a img.hid { width: 260px; height:400px;position: absolute; top: -346px; left: 100px; margin-left:0;visibility: hidden;}
+/* MouseOver state (hover)- reveal larger picture *
+#col-17 a:hover { background: white;}
+#col-17 a:hover img.hid { visibility:visible;}
+
+/*----------------------------------------------------*/
+
+/* set 3nd column of thumbnails 170px further over to right*
+#col-18	{ position: absolute; top: 360px; left: 190px; width:95px;}
+li	{ margin: 5px; list-style-type:none;}
+/* MouseOut state (default) - hide larger picture *
+#col-18 a img.hid { width: 260px; height:390px;position: absolute; top: -346px; left: 60px; margin-left:0;visibility: hidden;}
+/* MouseOver state (hover)- reveal larger picture *
+#col-18 a:hover { background: white;}
+#col-18 a:hover img.hid { visibility:visible;}
+/*----------------------------------------------------*/
+
+
+
+
+/* 
+.container {
+	display: flex; /* or inline-flex *
+
+  }
+
+.container {
+	min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    scroll-behavior: smooth;
+    background: #131313;
+    font-family:'Helvetica Neue', sans-serif;
 	border: 1px solid silver;
-	display: flex;
-	justify-content: center;
-	background: green;
-  
-  
+	gap: 10px;
+	gap: 10px 20px; /* row-gap column gap *
+	row-gap: 10px;
+	column-gap: 20px;
+	
   }
   
   .nowrap  {
@@ -107,44 +767,12 @@ body {
 	text-align: center;
   }
 
-/* fpn *
-.container {
-	height:8vh; 
-	display: flex;
-	justify-content:center;
-	align-items: center;
-	padding: 0;
-	margin: 0;
-	list-style: none;
-    scroll-behavior: smooth;background: #131313;
-	border: 1px solid silver;
-    font-family:'Helvetica Neue', sans-serif;
-}
-*/
-header {
-	margin-top: 0;
-	height: 180px;
-	width: 970px;
-	background-image: url('CSS/images/bluepan.jpg');
-	background-repeat: no-repeat;
-	background-position: center;
-	border-bottom: 0;
-}
-
 #banner {
 	display: flex;
 	flex-direction: column;
-	justify-content: space-around;
+	justify-content: space-between;
 	font-family: "times new roman";
 	font-size: large;
-	color: white;
-	text-align: center;
-	font-weight:bold;
-	padding-top:0px; 
-	margin-bottom: 0px;
-	height: 100px;
-	margin: auto;
-	text-shadow: 0.1em 0.1em 0.2em blue;
 	background: hsl(0, 50%, 45%);
 	text-shadow: 1px 1px black, 2px 2px black,
 		3px 3px black, 4px 4px black,
@@ -152,95 +780,19 @@ header {
 		7px 7px black, 8px 8px black;
 	padding-top: 5px;
 }
-
-@font-face {
-	font-family: Ampersand;
-	;
-	src: local('Baskerville-Italic'),
-		local('GoudyOldStyleT-Italic'),
-		local('Palatino-Italic'),
-		local('BookAntiqua-Italic');
-	unicode-range: U+26;
-}
-
-/*SET FONTS*
-span.small {
-	font-size: small;
-}
 */
-h2 {
-	position: relative;
-	font-size: small;
-	font-family: "Arial";
-	text-align: center;
-	
-}
 
-/*set the generic tab style--and set position so that it overlaps the header*/
-nav {
-	display: flex;
-	flex-direction: column;
-	justify-content: space-around;
-	position: relative;
-	top: 13px;
-	left: 25.5%;
-	color: navy;
-	border-bottom: 1px solid black;
-	margin: 0;
-	width: 49%;
-	padding: 0px;
-	padding-left: -2%;
-	z-index: 1;
-}
-/* use display:inline to remove IE6 double margin bug*/
-nav li {
-	display: inline;
-	overflow: hidden;
-	list-style-type: none;
-}
-
-/*set tab colour*/
-nav a, a.active {
-	color: navy;
-	background: #81d9f6;
-	font: bold small "Trebuchet MS", Arial, sans-serif;
-	border: 1px solid  black;
-	padding: 0px 5px 0px 5px;
-	margin: 0;
-	text-decoration: none;
-}
-
-/*make a 3px wide bottom border on tab the same colour as the page*s*/
-nav a.active {
-	background: #cfecf5;
-	color: navy;
-	border-bottom: 3px solid #cfecf5;
-}
-
-/*hovering over a non-active tab shows an aqua tab*/
-nav a:hover {
-	background: aqua;
-}
-
-nav a:visited {
-	color: navy;
-}
-
-/*hovering over the active tab shows navy text*/
-nav a.active:hover {
-	background: #cfecf5;
-	color: navy;
-}
 
 /*set the position of the content to butt up to the menu tabs*/
-.content {
+
+.main {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-around;
-	margin-top: 0;
+	
 	font: 0.9em/1.3em "bitstream vera sans", verdana, sans-serif;
 	position: relative;
-	top: -13px;
+	top: -20rem;
 	text-align: left;
 	background: #cfecf5;
 	background-size: 2em 2em;
@@ -250,35 +802,11 @@ nav a.active:hover {
 	border-top: none;
 	z-index: 2;
 }
-/*set far right column for ads*/
-#rightcol {
-	position: relative;
-	width: 20em;
-	top: -35em;
-	float: right;
-	text-align: center;
-}
-
-#rightcol p.advert {
-	font-size: small;
-	margin-top: 1em;
-}
 
 /*set middle column for main content*/
-#midcol {
+.main {
 	margin-left: 135px;
 	margin-right: 155px;
-}
-
-/*set gallery block position*/
-#gallery-block {
-	display: flex;
-	flex-direction: column;
-	justify-content: space-around;
-	
-	position: relative;
-	left: 0px;
-	top: 25px;
 }
 
 /*set footer*/
@@ -288,7 +816,7 @@ footer {
 	clear: both;
 	text-align: center;
 	width: 970px;
-	height: fit-content;
+	
 	display: flex;
 	flex-direction: column;
 	justify-content: space-around;
@@ -299,34 +827,6 @@ footer {
 	clear: both;
 }
 
-/*set menu buttons*/
-li.btn a { display:block; background: #946055; 
-	color: white; border-bottom: 3px solid #cfecf5; 
-	border: 4px outset #c96e6b; 
-	font-size: large; font-family:"times new roman"; text-align:center; background-image: linear-gradient(
-	hsla(0,0%,100%,.6),hsla(0,0%,100%,0));
-    border: 1px solid rgba(0,0,0,.4);
-    border: 4px outset #c96e6b;
-    border-bottom: none;
-    border-radius: .5em .5em 0 0;
-    box-shadow: 0 .15em white inset;
-    transform: perspective(.5em) rotateX(5deg);
-    transform-origin: bottom; /* background-color :#66CCFF; color:black; padding:4px;
-margin-left:0; text-align:center; list-style-type:none; text-decoration:none; */ width:110px;
-}
-
-li.btn a:hover {
-	background: var(--accent-color);
-	color: white;
-}
-
-li.btn {
-	width: 100px;
-}
-
-li {
-	background: rgba(0, 0, 0, 0.4);
-}
 
 /*SET THUMBNAIL GALLERY BLOCK*/
 /* Set general thumbnail styles */
@@ -541,31 +1041,7 @@ p {
 	background-color: rgb(192, 192, 192);
 }
 
-/*SET FONTS*/
-span.small { font-size:medium;
-}
 
-#navone { float:left; margin-top: 0; width:115px; font-size: 100%; font-family:"times new roman"; text-align:center;
-}
-#navone ul { margin-left:0; border:0; width:115px; 
-}
-/*set menu buttons */
-#navone li.btn a { 
-	display: flex;
-	justify-content: space-between;
-	flex-wrap: wrap; 
-	background-color :#946055; 
-	color:#007bff; 
-	font-weight:bold; 
-	padding:0px;
-	margin-left: 0px; margin-top: 0px; text-align:center; list-style-type:none; text-decoration:none; width:110px;border: 4px outset #c96e6b;
-}
-#navone li.btn a:hover { background-color:aqua;color:white;  border: 4px outset #c96e6b;
-}
-#navone nav li a:active { background:#aecbff;  border: 4px inset #aecbff; 
-}
-#navone li.btn { width:110px;
-}
 
 #linked-pages, p {
 	position: absolute;
@@ -587,50 +1063,7 @@ footer a:hover {
 	text-decoration: none;
 }
 
-.navigation a {
-  text-decoration: none;
-  display: block;
-  padding: 1em;
-  color: white;
-}
-
-.navigation a:hover {
-  background: #1565C0;
-}
-
-@media all and (max-width: 800px) {
-  .navigation {
-    justify-content: space-around;
-  }
-}
-
-@media all and (max-width: 600px) {
-  .navigation {
-    flex-flow: column wrap;
-    padding: 0;
-  }
-  .navigation a { 
-    text-align: center; 
-    padding: 10px;
-    border-top: 1px solid rgba(255, 255, 255,0.3); 
-    border-bottom: 1px solid rgba(0, 0, 0, 0.1); 
-  }
-  .navigation li:last-of-type a {
-    border-bottom: none;
-  }
-}
-
-h1 a {
-	font-size: 100%;
-	color: #fff;
-	text-decoration: none;
-	text-transform: uppercase;
-	
-  }
-
 .popover {
-    width: 100%;
-    display: none;
     box-shadow: 0px 6px 8px rgba(19, 19, 19, .7);
 }
 
@@ -645,94 +1078,15 @@ h1 a {
   justify-content: center;
 }
 
-.popover .content {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  width: 100%;
-  height: 0;
-  color: #fff;
-  background-color: #191919;
-  animation: 1s grow ease forwards;
-  text-align: center;
-}
 
 .nav_list  {
   list-style-type: none;
 }
 
-.nav_list a {
-  text-decoration: none;
-  font-size: 25px;
-  color: #fff;
-}
 
 .nav_list_item {
-  height: 24%;
+  height: 100%;
   overflow: hidden;
-}
-
-.nav_list li {
-  padding: 15px 0;
-  text-transform: uppercase;
-  transform: translateY(200px);
-  opacity: 0;
-  animation: 2s slideUp ease forwards .5s;
-  position: relative;
-}
-
-.nav_list li::before {
-  content: '';
-  position: absolute;
-  height: 2px;
-  width: 0px;
-  left: 0;
-  bottom: 10px;
-  background: #BF2E97; 
-  transition: all .5s ease;
-}
-
-.nav_list li:hover:before {
-      width: 100%;
-}
-
-.popover p {
-  padding: 50px;
-  opacity: 0;
-  animation: 1s fadeIn ease forwards 1s;
-}
-
-.popover .close::after {
-  right: 0;
-  top: 0;
-  width: 50px;
-  height: 50px;
-  position: absolute;
-  display: flex;
-  z-index: 1;
-  font-size: 30px;
-  align-items: center;
-  justify-content: center;
-  background-color: #BF2E97;
-  color: #fff;
-  content: "×";
-  cursor: pointer;
-  opacity: 0; 
-  animation: 1s fadeIn ease forwards .5s;
-}
-
-@keyframes grow {
-  100% {
-    height: 90%;
-    width: 90%;
- }
-}
-
-@keyframes fadeIn {
-100% {
-  opacity: 1;
- }
 }
 
 @keyframes slideUp {
@@ -741,5 +1095,419 @@ h1 a {
     opacity: 1;
   }
 } 
- 
+
+#rosette { 
+    position:relative; 
+    left:85%; 
+	top:5px; 
+}
+/*
+nav { float:left; margin-left:10px; width:115px;
+}
+nav ul { margin-left:0; border:0; width:115px;
+}
+set far right column for ads
+*/
+
+
+/*set middle column for main content*
+.main { margin-left:135px; margin-right:155px;
+}
+/*set footer*/
+footer { color:black; text-align:center; width:970px;position:relative; left: 0px; top:675px;
+}
+
+
+footer a:link {color: navy; text-decoration:none; font-size:small;}
+footer a:visited {color: gray; text-decoration: none; }
+footer a:active {color: navy; text-decoration: none; }
+footer a:hover {color: red;text-decoration: none; }
+
+
+/*SET THUMBNAIL GALLERY BLOCK*/  
+/* Set general thumbnail styles */
+#col-1	{ position: absolute; top: 0; left: 0; width:85px;
+} 
+/*place the column on the page*/
+li	{ margin: 5px; list-style-type:none; 
+} 
+/*remove bullets from the un-ordered list elements and create the
+MouseOut state (default) - create and position a space for the larger images and hide them*/
+#col-1 a img.hid { width: 260px; height:390px; position: absolute; top: -23px; left: 350px;
+	visibility: hidden;
+}
+/* MouseOver state (hover)- this reveals larger picture */
+#col-1 a:hover { background: white; }
+#col-1 a:hover img.hid { visibility:visible; }
+
+/*----------------------------------------------------*/
+
+/* set 2nd column of thumbnails 85px further over to right*/
+#col-2	{ position: absolute; top: 0; left: 85px; width:85px; }
+li	{ margin: 5px; list-style-type:none;	
+}
+/* MouseOut state (default) - hide larger picture */
+#col-2 a img.hid { width: 260px; height:390px;
+	position: absolute; top: -23px; left: 265px; margin-left:0;
+	visibility: hidden;
+	}
+/* MouseOver state (hover)- reveal larger picture */
+#col-2 a:hover { background: white; }
+#col-2 a:hover img.hid { visibility:visible; }
+
+/*----------------------------------------------------*/
+
+/* set 3nd column of thumbnails 170px further over to right*/
+#col-3	{ position: absolute; top: 0; left: 175px; width:95px; }
+li	{ margin: 5px; list-style-type:none;	
+}
+/* MouseOut state (default) - hide larger picture */
+#col-3 a img.hid {
+	width: 260px; height:390px;
+	position: absolute; top: -23px; left: 180px; margin-left:0;
+	visibility: hidden;
+	}
+/* MouseOver state (hover)- reveal larger picture */
+#col-3a:hover { background: white; 
+}
+#col-3 a:hover img.hid { visibility:visible; 
+}
+/*
+#example {width:100%; height:482px; padding-bottom: 0px; margin:auto;background: url(images/safe_image.gif) no-repeat 99% 26%,url(images/clipbrd.gif) no-repeat 79% 14%,url(images/blugrad500.jpg) repeat-x;}
+
+/* Page *
+#page { width: 100%; margin: 0 auto; padding: 0px 0px 0px 40px;
+	background: url(images/img03.gif) repeat-y left top;
+}
+#page-bgtop { padding: 20px 0px;
+}
+/* Content */
+
+/*
+#wrapper {position:relative; top:0; left:0;
+	width:100%; margin:auto; text-align:center;
+}
+
+#container { margin-left:20px; margin-top:0px;
+}/*
+#container {
+	width:960px; 
+	margin:-10px auto 0 auto;width:97%; max-width:960px; min-width:780px; margin:auto; 
+}*
+#main-content { 
+    width:100%;
+    height:600px; 
+	margin:0;  
+	padding:0;
+}
+
+/*set the position of the content to butt up to the menu tabs*/ 
+#content {
+	margin-top:0px; font: 0.9em/1.3em "bitstream vera sans", verdana, sans-serif;position:relative; top:-13px; text-align: left;height:694px; background-color: transparent; padding: 20px; border: 1px solid red; border-top: 1px solid yellow; z-index: 2;
+}
+/* set vertical button menu position */
+#container { margin-left:10px; margin-top:0px;
+}
+
+#main-content { text-align:center; color:black; margin-top:30px; 
+	}
+p {  background-image: url("images/cheqflags.jpg"); background-attachment: fixed; text-align:center; 
+}
+#para-shadow p {	
+box-shadow: 6px 6px 8px #888;margin-left:30px; padding: 5px 5px 5px 15px; width:200px; background-color:#66FF99; color:black; font-weight:bold;background-image: url("images/cheqflags.jpg"); background-attachment: fixed; text-align:center;
+}
+
+h3 { width:300px;margin-top:-50px;padding-bottom:10px;}
+.top-right-corner {
+	background:url('images/top-rightcorner.png') no-repeat right top;
+	width: 220px;
+}
+.bottom-left-corner {
+	background:url('images/bottom-leftcorner.png') no-repeat left bottom;
+	padding-top:8px;
+	padding-left:8px;
+}
+.shadowbox {
+	background:url('images/main-shadow.png') right bottom;
+}
+.innerbox {
+	position: relative;
+	left:-8px;
+	top:-8px;
+}
+.innerbox p {
+	margin:0; padding:5px; width:200px; border:1px silver solid;
+}
+#gradient-box {margin:auto; text-align:center; font-size:x-large; color:white;
+border:1px black solid;
+	width:400px; height:500px;
+	background: -moz-radial-gradient(center 45deg, circle closest-corner, white 0%, green 100%); 	
+	background: -webkit-gradient(radial, center center, 0, center center, 200, from(white), to(green));
+}
+
+
+
+p {margin:0;padding: 0 10px 1em}/*
+
+
+
+
+
+
+
+
+
+/*SET THUMBNAIL GALLERY BLOCK*/  
+/* Set general thumbnail styles *
+#col-1	{ position: absolute; top: -13px; left: -10px; width:85px;} 
+/*place the column on the page*
+li	{ margin: 5px; list-style-type:none;} 
+/*remove bullets from the un-ordered list elements and create the
+MouseOut state (default) - create and position a space for the larger images and hide them*
+#col-1 a img.hid { width: 260px; height:390px; position: absolute; top: 5px; left: 272px;visibility: hidden;}
+/* MouseOver state (hover)- this reveals larger picture *
+#col-1 a:hover { background: transparent;}
+#col-1 a:hover img.hid { visibility:visible;}
+
+/*----------------------------------------------------*/
+
+/* set 2nd column of thumbnails 85px further over to right*
+#col-2	{ position: absolute; top: -13px; left: 30px; width:85px;}
+li	{ margin: 5px; list-style-type:none;}
+/* MouseOut state (default) - hide larger picture *
+#col-2 a img.hid { width: 260px; height:390px;position: absolute; top: 26px; left: 220px; margin-left:0;visibility: hidden;}
+/* MouseOver state (hover)- reveal larger picture *
+#col-2 a:hover { background: white;}
+#col-2 a:hover img.hid { visibility:visible;}
+
+/*----------------------------------------------------*/
+
+/* set 3nd column of thumbnails 170px further over to right*
+#col-3	{ position: absolute; top: -13px; left: 70px; width:95px;}
+li	{ margin: 5px; list-style-type:none;}
+/* MouseOut state (default) - hide larger picture *
+#col-3 a img.hid { width: 260px; height:390px;position: absolute; top: 26px; left: 180px; margin-left:0;visibility: hidden;}
+/* MouseOver state (hover)- reveal larger picture *
+#col-3 a:hover { background: white;}
+#col-3 a:hover img.hid { visibility:visible;}
+/*-----------------------------------------------------*
+#col-4	{ position: absolute; top: 175px; left: -10px; width:85px;} 
+/*place the column on the page*
+li	{ margin: 5px; list-style-type:none;} 
+/*remove bullets from the un-ordered list elements and create the
+MouseOut state (default) - create and position a space for the larger images and hide them*
+#col-4 a img.hid { width: 260px; height:390px; position: absolute; top: -161px; left: 260px;visibility: hidden;}
+/* MouseOver state (hover)- this reveals larger picture *
+#col-4 a:hover { background: white;}
+#col-4 a:hover img.hid { visibility:visible;}
+
+/*----------------------------------------------------*/
+
+/* set 2nd column of thumbnails 85px further over to right*
+#col-5	{ position: absolute; top: 175px; left: 30px; width:85px;}
+li	{ margin: 5px; list-style-type:none;}
+/* MouseOut state (default) - hide larger picture *
+#col-5 a img.hid { width: 260px; height:390px;position: absolute; top: -161px; left: 220px; margin-left:0;visibility: hidden;}
+/* MouseOver state (hover)- reveal larger picture *
+#col-5 a:hover { background: white;}
+#col-5 a:hover img.hid { visibility:visible;}
+
+/*----------------------------------------------------*/
+
+/* set 3nd column of thumbnails 170px further over to right*
+#col-6	{ position: absolute; top: 175px; left: 70px; width:95px;}
+li	{ margin: 5px; list-style-type:none;}
+/* MouseOut state (default) - hide larger picture *
+#col-6 a img.hid { width: 260px; height:390px;position: absolute; top: -161px; left: 180px; margin-left:0;visibility: hidden;}
+/* MouseOver state (hover)- reveal larger picture *
+#col-6 a:hover { background: white;}
+#col-6 a:hover img.hid { visibility:visible;}
+/*----------------------------------------------------*
+#col-7	{ position: absolute; top: 360px; left: -10px; width:85px;} 
+/*place the column on the page*
+li	{ margin: 5px; list-style-type:none;} 
+/*remove bullets from the un-ordered list elements and create the
+MouseOut state (default) - create and position a space for the larger images and hide them*
+#col-7 a img.hid { width: 260px; height:390px; position: absolute; top: -349px; left: 260px;visibility: hidden;}
+/* MouseOver state (hover)- this reveals larger picture *
+#col-7 a:hover { background: white;}
+#col-7 a:hover img.hid { visibility:visible;}
+
+/*----------------------------------------------------*/
+
+/* set 2nd column of thumbnails 85px further over to right*
+#col-8	{ position: absolute; top: 360px; left: 30px; width:85px;}
+li	{ margin: 5px; list-style-type:none;}
+/* MouseOut state (default) - hide larger picture *
+#col-8 a img.hid { width: 260px; height:390px;position: absolute; top: -349px; left: 220px; margin-left:0;visibility: hidden;}
+/* MouseOver state (hover)- reveal larger picture *
+#col-8 a:hover { background: white;}
+#col-8 a:hover img.hid { visibility:visible;}
+
+/*----------------------------------------------------*/
+
+/* set 3nd column of thumbnails 170px further over to right*
+#col-9	{ position: absolute; top: 360px; left: 70px; width:95px;}
+li	{ margin: 5px; list-style-type:none;}
+/* MouseOut state (default) - hide larger picture *
+#col-9 a img.hid { width: 260px; height:390px;position: absolute; top: -349px; left: 180px; margin-left:0;visibility: hidden;}
+/* MouseOver state (hover)- reveal larger picture *
+#col-9 a:hover { background: white;}
+#col-9 a:hover img.hid { visibility:visible;}
+/*-----------------------------------------------------*
+#col-10	{ position: absolute; top: -13px; left: 110px; width:85px;} 
+/*place the column on the page*
+li	{ margin: 5px; list-style-type:none;} 
+/*remove bullets from the un-ordered list elements and create the
+MouseOut state (default) - create and position a space for the larger images and hide them*
+#col-10 a img.hid { width: 260px; height:390px; position: absolute; top: 20px; left: 140px;visibility: hidden;}
+/* MouseOver state (hover)- this reveals larger picture *
+#col-10 a:hover { background: white;}
+#col-10 a:hover img.hid { visibility:visible;}
+
+/*----------------------------------------------------*/
+
+/* set 2nd column of thumbnails 85px further over to right*
+#col-11	{ position: absolute; top: -13px; left: 150px; width:85px;}
+li	{ margin: 5px; list-style-type:none;}
+/* MouseOut state (default) - hide larger picture *
+#col-11 a img.hid { width: 260px; height:390px;position: absolute; top: 20px; left: 100px; margin-left:0;visibility: hidden;}
+/* MouseOver state (hover)- reveal larger picture *
+#col-11 a:hover { background: white;}
+#col-11 a:hover img.hid { visibility:visible;}
+
+/*----------------------------------------------------*/
+
+/* set 3nd column of thumbnails 170px further over to right*
+#col-12	{ position: absolute; top: -13px; left: 190px; width:95px;}
+li	{ margin: 5px; list-style-type:none;}
+/* MouseOut state (default) - hide larger picture *
+#col-12 a img.hid { width: 260px; height:390px;position: absolute; top: 20px; left: 60px; margin-left:0;visibility: hidden;}
+/* MouseOver state (hover)- reveal larger picture *
+#col-12 a:hover { background: white;}
+#col-12 a:hover img.hid { visibility:visible;}
+
+
+#col-13	{ position: absolute; top:175px; left: 110px; width:85px;} 
+/*place the column on the page*
+li	{ margin: 5px; list-style-type:none;} 
+/*remove bullets from the un-ordered list elements and create the
+MouseOut state (default) - create and position a space for the larger images and hide them*
+#col-13 a img.hid { width: 260px; height:390px; position: absolute; top: -160px; left: 140px;visibility: hidden;}
+/* MouseOver state (hover)- this reveals larger picture *
+#col-13 a:hover { background: white;}
+#col-13 a:hover img.hid { visibility:visible;}
+
+/*----------------------------------------------------*/
+
+/* set 2nd column of thumbnails 85px further over to right*
+#col-14	{ position: absolute; top: 175px; left: 150px; width:85px;}
+li	{ margin: 5px; list-style-type:none;}
+/* MouseOut state (default) - hide larger picture *
+#col-14 a img.hid { width: 260px; height:390px;position: absolute; top: -160px; left: 100px; margin-left:0;visibility: hidden;}
+/* MouseOver state (hover)- reveal larger picture *
+#col-14 a:hover { background: white;}
+#col-14 a:hover img.hid { visibility:visible;}
+
+/*----------------------------------------------------*/
+
+/* set 3nd column of thumbnails 170px further over to right*
+#col-15	{ position: absolute; top:175px; left: 190px; width:95px;}
+li	{ margin: 5px; list-style-type:none;}
+/* MouseOut state (default) - hide larger picture *
+#col-15 a img.hid { width: 260px; height:390px;position: absolute; top: -163px; left: 60px; margin-left:0;visibility: hidden;}
+/* MouseOver state (hover)- reveal larger picture *
+#col-15 a:hover { background: white;}
+#col-15 a:hover img.hid { visibility:visible;}
+/*-----------------------------------------------------*
+#col-16	{ position: absolute; top: 360px; left: 110px; width:85px;} 
+/*place the column on the page*
+li	{ margin: 5px; list-style-type:none;} 
+/*remove bullets from the un-ordered list elements and create the
+MouseOut state (default) - create and position a space for the larger images and hide them*
+#col-16 a img.hid { width: 260px; height:390px; position: absolute; top: -346px; left: 140px;visibility: hidden;}
+/* MouseOver state (hover)- this reveals larger picture *
+#col-16 a:hover { background: white;}
+#col-16 a:hover img.hid { visibility:visible;}
+
+/*----------------------------------------------------*/
+
+/* set 2nd column of thumbnails 85px further over to right*
+#col-17	{ position: absolute; top: 360px; left: 150px; width:85px;}
+li	{margin: 5px; list-style-type:none;}
+/* MouseOut state (default) - hide larger picture *
+#col-17 a img.hid { width: 260px; height:400px;position: absolute; top: -346px; left: 100px; margin-left:0;visibility: hidden;}
+/* MouseOver state (hover)- reveal larger picture *
+#col-17 a:hover { background: white;}
+#col-17 a:hover img.hid { visibility:visible;}
+
+/*----------------------------------------------------*/
+
+/* set 3nd column of thumbnails 170px further over to right*
+#col-18	{ position: absolute; top: 360px; left: 190px; width:95px;}
+li	{ margin: 5px; list-style-type:none;}
+/* MouseOut state (default) - hide larger picture *
+#col-18 a img.hid { width: 260px; height:390px;position: absolute; top: -346px; left: 60px; margin-left:0;visibility: hidden;}
+/* MouseOver state (hover)- reveal larger picture *
+#col-18 a:hover { background: white;}
+#col-18 a:hover img.hid { visibility:visible;}
+/*----------------------------------------------------*/
+
+.wrapper {
+	display: flex;
+	flex-flow: row wrap;
+  }
+  
+  /* We tell all items to be 100% width, via flex-basis */
+  .wrapper > * {
+	flex: 1 100%;
+  }
+  
+  /* We rely on source order for mobile-first approach
+   * in this case:
+   * 1. header
+   * 2. article
+   * 3. aside 1
+   * 4. aside 2
+   * 5. footer
+   */
+  
+  /* Medium screens */
+  @media all and (min-width: 600px) {
+	/* We tell both sidebars to share a row */
+	.aside { flex: 1 auto; }
+  }
+  
+  /* Large screens */
+  @media all and (min-width: 800px) {
+	/* We invert order of first sidebar and main
+	 * And tell the main element to take twice as much width as the other two sidebars 
+	 */
+	.main { flex: 3 0px; }
+	.aside-1 { order: 1; }
+	.main    { order: 2; }
+	.aside-2 { order: 3; }
+	.footer  { order: 4; }
+  }
+
+
+  /*------------------------ full page nav ----------------------------*/
+
+
+h1 a {
+  font-size: 80px;
+  color: #BF2E97;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.nav_list  {
+  list-style-type: none;
+}
+
+
+.nav_list_item {
+  height: 100%;
+  overflow: hidden;
+}
 
