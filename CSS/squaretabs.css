@@ -370,7 +370,7 @@ body { font-family: "Open Sans"}
 
 .inline-block a { 
 	display:inline-block; 
-	width:200px; 
+	width:19%; 
 	height:17px; 
 	line-height: 20px; 
 	text-align:center;
@@ -1156,7 +1156,7 @@ li	{ margin: 5px; list-style-type:none;
 
 #main-content { text-align:center; color:black; margin-top:30px; 
 	}
-p {  background-image: url("images/cheqflags.jpg"); background-attachment: fixed; text-align:center; 
+p {  background-image: url("images/cheqflags.jpg"); background-attachment: fixed; margin:0;padding: 0 10px 1em; border: 1px solid silver; text-align:center; 
 }
 #para-shadow p {	
 box-shadow: 6px 6px 8px #888;margin-left:30px; padding: 5px 5px 5px 15px; width:200px; background-color:#66FF99; color:black; font-weight:bold;background-image: url("images/cheqflags.jpg"); background-attachment: fixed; text-align:center;
@@ -1189,18 +1189,6 @@ border:1px black solid;
 	background: -moz-radial-gradient(center 45deg, circle closest-corner, white 0%, green 100%); 	
 	background: -webkit-gradient(radial, center center, 0, center center, 200, from(white), to(green));
 }
-
-
-
-p {margin:0;padding: 0 10px 1em}/*
-
-
-
-
-
-
-
-
 
 /*SET THUMBNAIL GALLERY BLOCK*/  
 /* Set general thumbnail styles *
