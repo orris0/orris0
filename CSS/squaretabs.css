@@ -1065,6 +1065,13 @@ footer a:hover {
     left:85%; 
 	top:5px; 
 }
+
+#copyright {
+	position: relative;
+	bottom: 0;
+}
+
+
 /*
 nav { float:left; margin-left:10px; width:115px;
 }
