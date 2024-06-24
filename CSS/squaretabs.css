@@ -196,7 +196,7 @@ a:link {
 #gallery-block { position:relative; left: 30px; top:10px; 
 }
 /*set footer*/
-footer { color:black; text-align:center; width:970px;position:relative; left: 0px; top:675px;
+footer { color:black; text-align:center; width:970px;position:relative; left: 0px; top:-2px;
 }
 /*set menu buttons*/
 li.btn a { display:block; background-color :#66CCFF; color:black; font-weight:bold; padding:4px;
@@ -336,7 +336,7 @@ body { font-family: "Open Sans"}
 }
 
 @keyframes grow {
-  100% {
+100% {
     height: 90%;
     width: 90%;
  }
@@ -349,12 +349,23 @@ body { font-family: "Open Sans"}
 }
 
 @keyframes slideUp {
-  100% {
+100% {
     transform: translateY(0);
     opacity: 1;
-  }
 }
-#container {width:1850px; margin-left:-450px; padding:5px;
+}
+
+.flex-container {
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    scroll-behavior: smooth;
+    background: #131313;
+    font-family:'Helvetica Neue', sans-serif;
+}
+
+.container { display: flex;
 }
 
 .inline-block a { 
@@ -783,7 +794,7 @@ li	{ margin: 5px; list-style-type:none;}
 /*set footer*/
 footer {
 	position: relative;
-	top: 10em;
+	top: -15em;
 	clear: both;
 	text-align: center;
 	width: 970px;
@@ -1037,12 +1048,6 @@ footer a:hover {
   justify-content: center;
 }
 
-
-.nav_list  {
-  list-style-type: none;
-}
-
-
 .nav_list_item {
   height: 100%;
   overflow: hidden;
@@ -1072,16 +1077,6 @@ set far right column for ads
 /*set middle column for main content*
 .main { margin-left:135px; margin-right:155px;
 }
-/*set footer*/
-footer { color:black; text-align:center; width:970px;position:relative; left: 0px; top:675px;
-}
-
-
-footer a:link {color: navy; text-decoration:none; font-size:small;}
-footer a:visited {color: gray; text-decoration: none; }
-footer a:active {color: navy; text-decoration: none; }
-footer a:hover {color: red;text-decoration: none; }
-
 
 /*SET THUMBNAIL GALLERY BLOCK*/  
 /* Set general thumbnail styles */
@@ -1442,12 +1437,6 @@ li	{ margin: 5px; list-style-type:none;}
 
 
   /*------------------------ full page nav ----------------------------*/
-
-
-.nav_list  {
-  list-style-type: none;
-}
-
 
 .nav_list_item {
   height: 100%;
