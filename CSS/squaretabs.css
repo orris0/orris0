@@ -809,6 +809,11 @@ footer {
 	clear: both;
 }
 
+.flex-container {
+	display: flex;
+	flex-wrap: wrap;
+  }s
+
 
 /*SET THUMBNAIL GALLERY BLOCK*/
 /* Set general thumbnail styles */
