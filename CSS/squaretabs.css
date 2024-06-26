@@ -90,6 +90,10 @@ header {
 	top:5px; 
 }
 
+.btn {
+	display: inline-block;vertical-align: 0;
+}
+
 #navone { float:left; margin-top: 0; width:115px; font-size: 100%; font-family:"times new roman"; text-align:center;
 }
 #navone ul { margin-left:0; border:0; width:115px; 
