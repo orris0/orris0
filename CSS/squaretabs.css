@@ -90,6 +90,10 @@ header {
 	top:5px; 
 }
 
+#farewell {
+	position: relative;bottom: -234px;
+}
+
 .btn {
 	display: inline-block;vertical-align: 0;
 }
@@ -174,7 +178,7 @@ a:link {
   
   /* visited link */
   .nav a:visited {
-	color: navy;
+	color: #BF2E97;
   }
   
   /* mouse over link */
@@ -203,10 +207,9 @@ a:link {
 footer { color:black; text-align:center; width:970px;position:relative; left: 0px; top:-2px;
 }
 /*set menu buttons*/
-li.btn a { display:block; background-color :#66CCFF; color:black; font-weight:bold; padding:4px;
-	margin-left:0;border: 4px outset #c96e6b;background-image: linear-gradient(
+li.btn a { display:block; background-color :#66CCFF; color:black; background-image: linear-gradient(
 		hsla(0,0%,100%,.6),hsla(0,0%,100%,0));
-		border: 1px solid rgba(0,0,0,.4);
+		
 		border: 4px outset #c96e6b;
 		border-bottom: none;
 		border-radius: .5em .5em 0 0;
@@ -269,6 +272,7 @@ h1,h2,h3,h4,h5,h6 { font-family: "Oswald"}
   width: 0;
   height: 0;
   color: #fff;
+  background:#FFF url(images/grandparent.jpg) no-repeat;background-size: cover;
   background-color: #191919;
   animation: 1s grow ease forwards;
   text-align: center;
