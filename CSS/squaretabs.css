@@ -44,26 +44,29 @@ header, footer, section, article, nav { display:block;
 /*SET FONTS*/
 span.small { font-size:small;
 }
-#banner h1 { 
-    font-family:"times new roman"; 
-	font-size:x-large;  
-	line-height: .0; 
-	text-align:center;
-	font-weight:bold; 
-    text-align:center; 
-	padding-top:30px; 
-	margin-bottom:0px; 
-	height: 50px; 
-	margin:auto; 	  
+#banner h1 { 	  
     text-shadow: 0.1em 0.1em 0.2em blue; 
 }
-
+.headerReplacement {
+	text-indent: -9999px;
+	width: 600px;
+	height: 100px;
+	background: url(CSS/images/Web_scapture_30-11-2021_215726_.jpeg) #cccccc no-repeat;  
+ }
+/*
 h1 a {
 	font-size: x-large;
 	color: #fff;
 	text-decoration: none;
 	text-transform: uppercase;
   }
+*/
+
+.page-links{
+	position: inherit;
+	top:24em;
+}
+
 
 h2 {font-size:large; font-family:"times new roman"; text-align:center;
 }
@@ -75,7 +78,7 @@ body {
 	margin: 20px auto;
     font-family: Arial;  
 }
-
+/*
 header { 
 	width: 970px;
 	color:black; 
@@ -84,6 +87,7 @@ header {
 	background-image:url('images/compbkgcrop.jpg'); 
 	background-repeat:no-repeat;
 }
+    */
 #rosette { 
     position:relative; 
     left:85%; 
@@ -91,7 +95,7 @@ header {
 }
 
 #farewell {
-	position: relative;bottom: -234px;
+	position: relative;top: 29em;
 }
 
 .btn {
@@ -192,7 +196,7 @@ a:link {
   }
 
 
-#rightcol { width:150px; float:right; text-align:center;position: relative; top:-15em;	
+#rightcol { width:30%; float:right; text-align:center;	
 }
 #rightcol p.advert {font-size:small;; 
 }
@@ -201,21 +205,30 @@ a:link {
 #midcol { margin-left:135px; margin-right:155px;
 }
 /*set gallery block position*/ 
-#gallery-block { position:relative; left: 30px; top:10px; 
+#gallery-block { position:relative; left: 30px; top:1em; 
 }
-/*set footer*/
-footer { color:black; text-align:center; width:970px;position:relative; left: 0px; top:-2px;
+/*set footer*
+footer { color:black; text-align:center; width:970px;position:relative; left: 0px; top: 86ems;
 }
 /*set menu buttons*/
-li.btn a { display:block; background-color :#66CCFF; color:black; background-image: linear-gradient(
-		hsla(0,0%,100%,.6),hsla(0,0%,100%,0));
-		
-		border: 4px outset #c96e6b;
-		border-bottom: none;
-		border-radius: .5em .5em 0 0;
-		box-shadow: 0 .15em white inset;
-		transform: perspective(.5em) rotateX(5deg);
-		transform-origin: bottom; text-align:center; list-style-type:none; text-decoration:none; width:110px;
+li.btn a { 
+	display:block;
+	padding: 6px 16px; 
+	border: 4px outset #c96e6b;
+	background: #66CCFF linear-gradient(hsla(0,0%,100%,.2),transparent);
+	border-radius: .2em;
+	color:black;
+	box-shadow: 0 .05em 25em rgba(0,0,0,.5);
+	font-size: 85%;
+	line-height: 1.5;
+	border-width: 10px;
+	border-left-width: 0;
+
+
+	background-image: linear-gradient(hsla(0,0%,100%,.6),hsla(0,0%,100%,0));	
+	border-bottom: none;
+	transform: perspective(.5em) rotateX(5deg);
+	transform-origin: bottom; text-align:center; list-style-type:none; text-decoration:none; width:110px;
 }
 li.btn a:hover { background-color:blue; color:white;
 }
@@ -234,7 +247,7 @@ li {
 	background: rgba(0, 0, 0, 0.4);
 }
 
-.container {
+#container {
     
     display: flex;
     justify-content: center;
@@ -244,7 +257,8 @@ li {
     font-family:'Helvetica Neue', sans-serif;
 }
 
-h1,h2,h3,h4,h5,h6 { font-family: "Oswald"}
+h1,h2,h3,h4,h5,h6 { font-family: "Oswald";
+}
 
 
 .popover {
@@ -272,7 +286,7 @@ h1,h2,h3,h4,h5,h6 { font-family: "Oswald"}
   width: 0;
   height: 0;
   color: #fff;
-  background:#FFF url(images/grandparent.jpg) no-repeat;background-size: cover;
+  background:#FFF url(images/12321519_1121741314523211_6102705910064939945_n.jpg) no-repeat;background-size: cover;
   background-color: #191919;
   animation: 1s grow ease forwards;
   text-align: center;
@@ -367,6 +381,9 @@ h1,h2,h3,h4,h5,h6 { font-family: "Oswald"}
     
     display: flex;
     justify-content: center;
+	position: relative;
+	top: 26em;
+	left: 5em;
     align-items: center;
     scroll-behavior: smooth;
     background: #131313;
@@ -376,11 +393,12 @@ h1,h2,h3,h4,h5,h6 { font-family: "Oswald"}
 .container { display: flex;
 }
 
-.inline-block a { 
+.inline-block, footer { 
 	display:inline-block; 
-	width:19%; 
-	height:17px; 
-	line-height: 20px; 
+	position: relative;
+	top: -6em; 
+	left:-14%;
+	line-height: 1.5; 
 	text-align:center;
 }
 /* bullets.css */
@@ -698,11 +716,13 @@ li	{ margin: 5px; list-style-type:none;}
 /*----------------------------------------------------*/
 
 
+div.flex.container {
+	display: flex;
+}
 
 
-/* 
 .container {
-	display: flex; /* or inline-flex *
+	display: flex; /* or inline-flex */
 
   }
 
@@ -770,7 +790,7 @@ li	{ margin: 5px; list-style-type:none;}
 		7px 7px black, 8px 8px black;
 	padding-top: 5px;
 }
-*/
+
 
 
 /*set the position of the content to butt up to the menu tabs*/
@@ -799,20 +819,20 @@ li	{ margin: 5px; list-style-type:none;}
 	margin-right: 155px;
 }
 
-/*set footer*/
+/*set footer
 footer {
 	position: relative;
-	top: -15em;
+	top: 215px;
 	clear: both;
 	text-align: center;
 	width: 970px;
 	
-	display: flex;
+	display:;
 	flex-direction: column;
 	justify-content: space-around;
 
 }
-
+*/
 .clear {
 	clear: both;
 }
@@ -1027,8 +1047,7 @@ p {
 
 
 #linked-pages, p {
-	position: absolute;
-	top: 330px;
+	border:none;
 }
 
 footer a:visited {
@@ -1080,8 +1099,8 @@ footer a:hover {
 }
 
 #copyright {
-	position: relative;
-	bottom: 0;
+	position: absolute;
+	top: 20ems;
 }
 
 
@@ -1176,7 +1195,7 @@ li	{ margin: 5px; list-style-type:none;
 
 #main-content { text-align:center; color:black; margin-top:30px; 
 	}
-p {  background-image: url("images/cheqflags.jpg"); background-attachment: fixed; margin:0;padding: 0 10px 1em; border: 1px solid silver; text-align:center; 
+p {  background-image: url("images/cheqflags.jpg"); margin:0;padding: 0 10px 1em; text-align:center; 
 }
 #para-shadow p {	
 box-shadow: 6px 6px 8px #888;margin-left:30px; padding: 5px 5px 5px 15px; width:200px; background-color:#66FF99; color:black; font-weight:bold;background-image: url("images/cheqflags.jpg"); background-attachment: fixed; text-align:center;
@@ -1204,7 +1223,7 @@ h3 { width:300px;margin-top:-50px;padding-bottom:10px;}
 	margin:0; padding:5px; width:200px; border:1px silver solid;
 }
 #gradient-box {margin:auto; text-align:center; font-size:x-large; color:white;
-border:1px black solid;
+    border:1px black solid;
 	width:400px; height:500px;
 	background: -moz-radial-gradient(center 45deg, circle closest-corner, white 0%, green 100%); 	
 	background: -webkit-gradient(radial, center center, 0, center center, 200, from(white), to(green));
@@ -1415,6 +1434,9 @@ li	{ margin: 5px; list-style-type:none;}
   .wrapper > * {
 	flex: 1 100%;
   }
+  /*set gallery block position*/ 
+#gallery-block { position:relative; left: 30px; top:10px; 
+}
   
   /* We rely on source order for mobile-first approach
    * in this case:
