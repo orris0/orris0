@@ -1,0 +1,490 @@
+define(["database", "common", "jquery.ui", "video-manager"], function (Database, Common) {
+	var analytics = true;
+
+	$.widget("que.Notes", {
+
+		options: {
+			data : []
+		},
+
+		_create: function () {
+			var btn = this.element.find("#submit-note");
+
+			this.element.find("#noteText").on("input", $.proxy(this.onChangeNote, this));
+			this.element.find("#submit-note").click($.proxy(this.onClickSubmit, this));
+			this.element.find(".close-button").click($.proxy(this.onClickClose, this));
+
+			this.element.find(".note-search").on("input", $.proxy(this.onChangeSearch, this));
+
+			this.notes = [];
+			this.last_iframe = undefined;
+
+			Database.getUserData("notes", $.proxy(this.onLoadNotes, this));
+
+			if (this.options.manager) {
+				this.options.manager.on("onNewTOC", $.proxy(this.showCurrentAnchorTitle, this));
+			}
+		},
+
+		reloadNotes: function () {
+			Database.getUserData("notes", $.proxy(this.onLoadNotes, this));
+		},
+
+		resizeToFit: function () {
+			var body = this.element.find(".panel-body");
+			var h = this.element.outerHeight();
+			var header = this.element.find(".panel-heading").outerHeight();
+			var footer = this.element.find(".panel-footer").outerHeight();
+			var bodyHeight = (h - (header + footer)) - 2;
+			body.outerHeight(bodyHeight);
+		},
+
+		clearNotes: function () {
+			this.element.find(".note").remove();
+
+			this.notes = [];
+		},
+
+		onLoadNotes: function (data) {
+			this.clearNotes();
+
+			this.options.data = data;
+
+			var recs = data;
+
+			// add non-child comments first
+			for (var each in recs) {
+				var c = recs[each];
+				if (!c.parent) {
+					c.key = each;
+					this.addNote(c);
+				}
+			}
+
+			this.showNoteIconsInIframe();
+
+			this.updateCaption();
+		},
+
+		addNote: function (params) {
+			var dateFromTimestamp = new Date(params.timestamp);
+
+			var d = $("<div>", { class: "note alert", tabindex: 0, role: "listitem"});
+			d.attr("data-key", params.key);
+
+			var p = $("<p>", {class: "note-text", text: params.text});
+			d.append(p);
+
+			var bottom = $("<div>", { class: "note-footer"});
+			d.append(bottom);
+
+			var dateOptions = { year: "numeric", month: "short", day: "numeric", hour: "2-digit", minute: "2-digit" };
+			var dateFormatted = dateFromTimestamp.toLocaleTimeString([], dateOptions);
+
+			var date = $("<small>", { text: dateFormatted });
+			bottom.append(date);
+
+			if (params.anchor_id) {
+				var title = this.options.manager.VideoManager("getTOCTitleForID", params.anchor_id);
+				if (params.time != undefined) title += " (" + String(params.time).toHHMMSS() + ")";
+
+				var t = $("<p>", { class: "text-info small reference", text: title });
+				bottom.prepend(t);
+
+				d.addClass("has-anchor");
+				t.click($.proxy(this.onClickNote, this));
+			}
+
+			var btn2 = $("<button>", { class: "btn btn-danger btn-xs delete-button", text: "Delete" });
+			btn2.click($.proxy(this.onClickNoteDelete, this));
+			bottom.append(btn2);
+
+			var btn1 = $("<button>", { class: "btn btn-primary btn-xs edit-button", text: "Edit" });
+			btn1.click($.proxy(this.onClickNoteEdit, this));
+			bottom.append(btn1);
+
+			this.element.find(".notes-scroller").append(d);
+
+			this.notes.push(params);
+		},
+
+		onClickNote: function (event) {
+			var key = $(event.currentTarget).parents(".note").attr("data-key");
+			for (var i = 0; i < this.notes.length; i++) {
+				var c = this.notes[i];
+				if (c.key == key) {
+					var options = {};
+
+					var index = c.anchor_id;
+
+					if (c.time) {
+						options.time = c.time;
+					}
+
+					this.options.manager.VideoManager("playFromTOC", index, options);
+					break;
+				}
+			}
+		},
+
+		onClickMarker: function (key) {
+			this.gotoNote(key);
+		},
+
+		onClickSubmit: function () {
+			var text = this.element.find("#noteText").val();
+			var timestamp = Date.now();
+
+			var rec = { "text": text, "timestamp": timestamp };
+
+			var ref = this.options.manager.VideoManager("getReferenceForCurrentItem");
+			if (ref) {
+				rec.anchor_id = ref.id;
+				if (ref.time != undefined) {
+					rec.time = ref.time;
+				}
+			}
+
+			var newData = this.options.data.slice();
+			newData.push(rec);
+
+			Database.setUserData("notes", newData, $.proxy(this.onNoteSubmitted, this));
+		},
+
+		onNoteSubmitted: function () {
+			this.resetDataEntry();
+			this.reloadNotes();
+
+			if (analytics)
+				ga("send", "event", "interface", "note", "save");
+		},
+
+		onChangeNote: function (event) {
+			var el = $(event.target);
+			var form = el.parents(".form-inline");
+
+			var text = el.val();
+			if (text)
+				form.find("#submit-note").removeClass("disabled");
+			else
+				form.find("#submit-note").addClass("disabled");
+
+			// refresh anchor with current time, if video
+			this.showCurrentAnchorTitle();
+		},
+
+		resetDataEntry: function () {
+			this.element.find("#noteText").val("");
+			this.element.find("#submit-note").addClass("disabled");
+		},
+
+		closeOtherPanels: function () {
+			$(".slide-panel.showing").hide("slide", {direction:"right"}).removeClass("showing");
+		},
+
+		onClickClose: function () {
+			this.closePanel();
+		},
+
+		openPanel: function () {
+			this.closeOtherPanels();
+
+			this.element.show("slide", {direction: "right"}).addClass("showing");
+			this.element.find(".note.animated").removeClass("animated");
+
+			this.resizeToFit();
+
+			this.showCurrentAnchorTitle();
+
+			if (analytics)
+				ga("send", "event", "interface", "note", "open");
+		},
+
+		closePanel: function () {
+			this.element.hide("slide", {direction: "right"}).removeClass("showing");
+		},
+
+		togglePanel: function () {
+			if (this.element.is(":visible")) {
+				this.closePanel();
+			} else {
+				this.openPanel();
+			}
+		},
+
+		showNoteIconsInIframe: function (iframe) {
+			var count = 0;
+
+			if (iframe == undefined)
+				iframe = this.last_iframe;
+
+			// if it's an epub, find the comment on the page
+			if (iframe && iframe.remove) {
+				iframe.remove(".note-anchor");
+
+				for (var i = 0; i < this.notes.length; i++) {
+					var c = this.notes[i];
+					c.onPage = false;
+					if (c.anchor_id) {
+						var hash = this.options.manager.VideoManager("getHashForID", c.anchor_id);
+						var el = iframe.contents().find(hash);
+						if (el.length) {
+							var d = $("<div>", { class: "note-anchor", html: "&#xe02f" });
+							d.attr("data-key", c.key);
+							el.append(d);
+							c.onPage = true;
+							count++;
+						}
+					}
+				}
+				this.last_iframe = iframe;
+
+				iframe.contents().find(".note-anchor").off("click").click($.proxy(this.doClickAnchor, this));
+			} else {
+				for (var i = 0; i < this.notes.length; i++) {
+					var c = this.notes[i];
+					c.onPage = false;
+					if (c.anchor_id) {
+						var ref = this.options.manager.VideoManager("getReferenceForCurrentItem");
+						if (ref) {
+							var id = ref.id;
+							if (id == c.anchor_id) {
+								c.onPage = true;
+								count++;
+							}
+						}
+					}
+				}
+			}
+
+			this.refreshNoteList();
+
+			this.showAnyTimelineMarkers();
+		},
+
+		showAnyTimelineMarkers: function () {
+			var markers = [];
+
+			var ref = this.options.manager.VideoManager("getReferenceForCurrentItem");
+			if (ref) {
+				for (var i = 0; i < this.notes.length; i++) {
+					var c = this.notes[i];
+					if (c.anchor_id == ref.id) {
+						markers.push({ time: c.time, text: c.text, class: "timeline-note", noteKey: c.key });
+					}
+				}
+			}
+
+			this.options.manager.VideoManager("addTimelineMarkers", markers);
+		},
+
+		doClickAnchor: function (event) {
+			var el = event.target;
+			var key = $(el).attr("data-key");
+			if (key) {
+				this.gotoNote(key);
+			}
+		},
+
+		gotoNote: function (key) {
+			this.refreshNoteList(true);
+
+			var me = this;
+			setTimeout(function () {
+				me.scrollToNote(key);
+			}, 500);
+
+			this.openPanel();
+		},
+
+		findNote: function (key) {
+			for (var i = 0; i < this.notes.length; i++) {
+				var c = this.notes[i];
+				if (c.key == key) return c;
+			}
+			return undefined;
+		},
+
+		scrollToNote: function (key) {
+			var entry = this.element.find("[data-key='" + key + "']");
+			var scroller = this.element.find("#notes-content");
+			var t = scroller.scrollTop();
+			var h = scroller.height();
+			var p = entry.offset().top;
+			var desired_top = (h * .5);// - entry.height();
+			var adj = p - desired_top;
+			var dest = (t + adj);
+			scroller.stop().animate(
+				{
+					scrollTop: dest
+				},
+				{
+					duration: 1000,
+					complete: function () {
+						entry.removeClass("animated flash").hide(0).addClass("animated flash").show(0);
+					}
+				}
+			);
+		},
+
+		refreshNoteList: function (showAll) {
+			if (showAll == undefined) {
+				var tab = this.element.find("#all-or-page-tabs li.active");
+				if (tab.length && tab.attr("id") == "tab-li-page") {
+					showAll = false;
+				} else {
+					showAll = true;
+				}
+			} else {
+				// make tab reflect choice
+				if (showAll) {
+					this.element.find("#tab-li-all").addClass("active");
+					this.element.find("#tab-li-page").removeClass("active");
+				} else {
+					this.element.find("#tab-li-all").removeClass("active");
+					this.element.find("#tab-li-page").addClass("active");
+				}
+			}
+
+			if (showAll) {
+				this.element.find(".tab-content .note").show(0);
+			} else {
+				this.element.find(".tab-content .note").hide(0);
+				for (var i = 0; i < this.notes.length; i++) {
+					var c = this.notes[i];
+					if (c.onPage) {
+						this.element.find("[data-key='" + c.key + "']").show(0);
+					}
+				}
+			}
+		},
+
+		onClickDeleteNote: function (event) {
+			var el = $(event.target).parents(".notes-entry");
+			el.remove();
+		},
+
+		showCurrentAnchorTitle: function () {
+			var ref = this.options.manager.VideoManager("getReferenceForCurrentItem");
+			if (ref) {
+				var anchor_id = ref.id;
+				var title = this.options.manager.VideoManager("getTOCTitleForID", anchor_id);
+				if (title) {
+					if (ref.time != undefined) title += " (" + String(ref.time).toHHMMSS() + ")";
+					this.element.find(".anchor-title").text(title);
+				} else {
+					this.element.find(".anchor-title").text("");
+				}
+			}
+		},
+
+		// delete or cancel
+		onClickNoteDelete: function (event) {
+			var note = $(event.currentTarget).parents(".note");
+
+			if (note.hasClass("editing")) {
+				this.cancelEditing(note);
+			} else {
+				var key = note.attr("data-key");
+
+				var newData = this.options.data.filter(function (element, index, array) {
+					return (element.key != key);
+				});
+
+				Database.setUserData("notes", newData, $.proxy(this.reloadNotes, this));
+
+				if (analytics)
+					ga("send", "event", "interface", "note", "delete");
+			}
+		},
+
+		// edit or save
+		onClickNoteEdit: function (event) {
+			var note = $(event.currentTarget).parents(".note");
+
+			if (note.hasClass("editing")) {
+				this.saveEditing(note);
+			} else {
+				this.setupForEditing(note);
+
+				if (analytics)
+					ga("send", "event", "interface", "note", "edit");
+			}
+		},
+
+		getNoteFromData: function (key) {
+			return this.options.data.filter(function (element, index, array) {
+				return element.key === key;
+			});
+		},
+
+		setupForEditing: function (note) {
+			note.addClass("editing");
+			var text = note.find(".note-text").attr("contentEditable", true).focus();
+			var btn = note.find(".edit-button").removeClass("btn-primary").addClass("btn-success").text("Save");
+			var btn = note.find(".delete-button").removeClass("btn-danger").addClass("btn-info").text("Cancel");
+		},
+
+		cancelEditing: function (note) {
+			var key = note.attr("data-key");
+			var d = this.getNoteFromData(key);
+			note.removeClass("editing");
+			var text = note.find(".note-text").attr("contentEditable", false);
+			if (d.length) text.text(d[0].text);
+			var btn = note.find(".edit-button").removeClass("btn-success").addClass("btn-primary").text("Edit");
+			var btn = note.find(".delete-button").removeClass("btn-info").addClass("btn-danger").text("Delete");
+		},
+
+		saveEditing: function (note) {
+			var key = note.attr("data-key");
+			note.removeClass("editing");
+			var text = note.find(".note-text").attr("contentEditable", false);
+			var btn = note.find(".edit-button").removeClass("btn-success").addClass("btn-primary").text("Edit");
+			var btn = note.find(".delete-button").removeClass("btn-info").addClass("btn-danger").text("Delete");
+
+			var d = this.getNoteFromData(key);
+			if (d.length) {
+				d[0].text = text.text();
+
+				Database.setUserData("notes", this.options.data, $.proxy(this.reloadNotes, this));
+			}
+		},
+
+		onChangeSearch: function (event) {
+			var search = $(event.currentTarget).val().toLowerCase();
+
+			this.element.find(".note").removeClass("hit");
+
+			if (search.length) {
+				this.element.addClass("searching");
+			} else {
+				this.element.removeClass("searching");
+			}
+
+			var results = this.options.data.filter(function (element, index, array) {
+				return element.text.toLowerCase().indexOf(search) != -1;
+			});
+
+			for (var i = 0; i < results.length; i++) {
+				var r = results[i];
+				this.element.find(".note[data-key=" + r.key + "]").addClass("hit");
+			}
+
+			this.element.find(".note.hit").show(200);
+			this.element.find(".note:not(.hit)").hide(200);
+
+			if (search)
+				this.updateCaption(results.length);
+			else
+				this.updateCaption();
+		},
+
+		updateCaption: function (searchResultCount) {
+			if (searchResultCount != undefined) {
+				this.element.find(".panel-heading h2").text("Notes (" + this.notes.length + " total, " + searchResultCount + " matching)");
+			} else {
+				this.element.find(".panel-heading h2").text("Notes (" + this.notes.length + ")");
+			}
+		}
+	});
+});
