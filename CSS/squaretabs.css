@@ -22,7 +22,6 @@ header {margin-top:0; height:156px; width:100%; background-image:url('images/blu
 }
 #banner, h1 {text-shadow: 0.1em 0.1em 0.2em blue; font-family:Arial; font-size:125%; color:white; font-weight:normal; text-align:center; padding-top:35px; margin-bottom:-10px; height: 94px; margin:auto; 
 }
-
 /*set the generic tab style--and move menu upwards so that it overlaps the header*/ nav {position:relative; top:-13px; color: navy; border-bottom: 1px solid black;  margin: -25px 0 0 0; padding: 0px; padding-left: 10px z-index: 1; }
 /* use display:inline to remove IE6 double margin bug*/
 nav li { display: inline; overflow: hidden; list-style-type: none;
@@ -457,10 +456,6 @@ li	{ margin: 5px; list-style-type:none;
 #page-bgtop { padding: 20px 0px;
 }
 
-/*set the position of the content to butt up to the menu tabs*/ 
-#content {
-	margin-top:0px; font: 0.9em/1.3em "bitstream vera sans", verdana, sans-serif;position:relative; top:-13px; text-align: left;height:694px; background-color: transparent; padding: 20px; border: 1px solid red; border-top: 1px solid yellow; z-index: 2;
-}
 
 #main-content { text-align:center; color:black; margin-top:30px; 
 	}
