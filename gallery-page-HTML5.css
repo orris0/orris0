@@ -2,7 +2,7 @@
 html, body, p, ul, li, h1, h2 {	margin:0; padding:0; 
 }
 /*set images to have no borders*/
-img { border:0;
+img { 	border:0;
 }
 /*add display attributes for the semantic tags*/
 header, footer, section, article, nav { display:block; 
@@ -10,19 +10,60 @@ header, footer, section, article, nav { display:block;
 /*SET FONTS*/
 span.small { font-size:small;
 }
-h1 { font-size:x-large; font-family:"times new roman"; text-align:center;
+h1 { font-size:xx-large; font-family:"times new roman"; text-align:center;
 }
 h2 {font-size:large; font-family:"times new roman"; text-align:center;
 }
 /*PAGE LAYOUT*/
-body {margin:auto; width:970px; 
+body {
+	display: flex;
+	flex-direction: column;
+	background:#FFF url(images/green-grad.jpg) repeat-x; margin:auto;
+	width: 100%;
+	min-height: 50vh;
+	margin:auto; 
+     
+}
+.container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh; 
+	border: 5px double black;
+}
+.item {
+	border: 1px double black;
+	padding: 0;
+	font-family: "Verdana", sans-serif;
+	font-size: 90%;
+	text-align: center;	
+}
+.item1 {
+	background-color: rgb(240, 240, 240);
+}
+.item2 {
+	background-color: rgb(224, 224, 224);
+}
+.item3 {
+	background-color: rgb(208, 208, 208);
+}
+.item4 {
+	background-color: rgb(192, 192, 192);
+}
+.item5 {
+	background-color: rgb(176, 176, 176);
 }
 header {
 	width:970px;
+	height: 2.5rem;
+	border: 1px solid black;
 }
-nav { float:left; margin-left:10px; width:115px;
+nav { 
+    float:left; 
+	margin-left:10px; 
+	width:115px;
 }
-nav ul { margin-left:0; border:0; width:115px;
+nav ul { margin-left:0; border:0; width:100px;
 }
 /*set far right column for ads*/
 #rightcol { width:150px; float:right; text-align:center;	
@@ -33,10 +74,21 @@ nav ul { margin-left:0; border:0; width:115px;
 #midcol { margin-left:135px; margin-right:155px;
 }
 /*set gallery block position*/ 
-#gallery-block { position:relative; left: 30px; top:10px; 
+#gallery-block { 
+    position:relative;
+    width: 70%;	
+    left: 20%; 
+	top:10%; 
 }
 /*set footer*/
-footer { clear:both; color:black; text-align:center; width:970px;
+footer { 	
+    height: 2.5rem;
+	/*margin-top: 1rem;*/
+	border: 1px solid black;
+    clear:both; 
+	color:black; 
+	text-align:center; 
+	width: 970px;
 }
 .clear { clear:both;
 }
@@ -67,7 +119,7 @@ MouseOut state (default) - create and position a space for the larger images and
 /*----------------------------------------------------*/
 
 /* set 2nd column of thumbnails 85px further over to right*/
-#col-2	{ position: absolute; top: 0; left: 95px; width:85px; }
+#col-2	{ position: absolute; top: 0; left: 85px; width:85px; }
 li	{ margin: 5px; list-style-type:none;	
 }
 /* MouseOut state (default) - hide larger picture */
@@ -82,7 +134,7 @@ li	{ margin: 5px; list-style-type:none;
 /*----------------------------------------------------*/
 
 /* set 3nd column of thumbnails 170px further over to right*/
-#col-3	{ position: absolute; top: 0; left: 105px; width:95px; }
+#col-3	{ position: absolute; top: 0; left: 175px; width:95px; }
 li	{ margin: 5px; list-style-type:none;	
 }
 /* MouseOut state (default) - hide larger picture */
