@@ -72,34 +72,14 @@ h1 a {
 	text-decoration: none;
 	text-transform: uppercase;
   }
-*/
 
 .page-links{
 	position: inherit;
 	top:24em;
 }
-
-
 h2 {font-size:large; font-family:"times new roman"; text-align:center;
 }
 
-/*PAGE LAYOUT*
-body {
-	width: 970px;
-	background:#FFF url(images/green-grad.jpg) repeat-x; 
-	margin: 20px auto;
-    font-family: Arial;  
-}
-
-header { 
-	width: 970px;
-	color:black; 
-	background-color:#FFCC00; 
-	background-position:35% top; 
-	background-image:url('images/compbkgcrop.jpg'); 
-	background-repeat:no-repeat;
-}
-    */
 #rosette { 
     position:relative; 
     left:85%; 
