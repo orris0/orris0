@@ -15,9 +15,9 @@ span.small { font-size:small;
 }
 body {text-align:center; margin: 20px; background: #bee8ff; font: medium arial;
 }
-#container {width:960px; 
+#container {width:950px; 
 }
-.wrapper{ position: relative; top: 0; left: 0; width: 950px; margin: auto; text-align: center;}
+.wrapper{ position: relative; top: 0; left: 0; width: 960px; margin: auto; text-align: center;}
 header {margin-top:0; height:156px; width:100%; background-image:url('../images/showcase.jpg'); background-repeat:no-repeat; background-position:center; border-bottom:0;
 }
 #banner, h1 {text-shadow: 0.1em 0.1em 0.2em blue; font-family:Arial; font-size:100%; color:white; font-weight:normal; text-align:center; padding-top:0px; margin-bottom:-10px; height: 94px; margin:auto; 
