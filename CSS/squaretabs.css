@@ -52,47 +52,6 @@ img:hover{
 			  20px 100%, 0 calc(100% - 20px), 0 20px);
 }
 
-#container { height: 36em;
-	margin:5px auto 0 auto; 
-	    padding: .3em .8em;
-        border: 1px solid rgba(0, 0, 0, .1);
-        background: #58a linear-gradient(#FF9966, #58a);
-        border-radius: .2em;
-        box-shadow: 0 .05em .25em rgba(0, 0, 0, .5);
-        color: white;
-        text-shadow: 0 -.05em .05em rgba(0, 0, 0, .5);
-        font-size: 100%;
-        line-height: 1.5;
-        border-width: 10px;
-        border-left-width: 0;
-
-	clip-path:polygon(20px 0, calc(100% - 20px) 0, 100% 20px, 
-			  100% calc(100% - 20px), calc(100% - 20px) 100%,
-			  20px 100%, 0 calc(100% - 20px), 0 20px);}
-/*
-header {
-	margin-top:0.2em; 
-        height: 28rem; 
-        width:96.7%; 
-        background-image:url('images/bluepan.jpg'); 
-        background-repeat:no-repeat; 
-        background-position: center;
-        border-bottom:0;
-        padding: .3em .8em;
-        border: 1px solid rgba(0, 0, 0, .1);
-        border-radius: .2em;
-        box-shadow: 0 .05em .25em rgba(0, 0, 0, .5);
-        color: white;
-        text-shadow: 0 -.05em .05em rgba(0, 0, 0, .5);
-        font-size: 100%;
-        line-height: 1.5;
-        border-width: 10px;
-        border-left-width: 0;
-
-	clip-path:polygon(20px 0, calc(100% - 20px) 0, 100% 20px, 
-			  100% calc(100% - 20px), calc(100% - 20px) 100%,
-			  20px 100%, 0 calc(100% - 20px), 0 20px);} 
-*/
     h1 {
 	font-family:Arial; 
         display: block;
