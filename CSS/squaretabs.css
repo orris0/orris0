@@ -13,7 +13,7 @@ html {
   background-size: 100% 300px, auto; }
 
 /* Set styles to equalise browser rendition*/
-html, body, h1, h2, h3, h4, h5, h6, p, ol, ul, li {  
+html, h1, h2, h3, h4, h5, h6, p, ol, ul, li {  
 	padding: 0; 
 	margin: 0; 
 }
