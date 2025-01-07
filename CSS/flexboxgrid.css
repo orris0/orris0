@@ -26,7 +26,7 @@ header {margin-top:0; height:156px; width:100%; background-image:url('../images/
 
 /*set the generic tab style--and move menu upwards so that it overlaps the header*/ 
 nav {
-  position:relative; top:-13px; 
+  position:relative; top:-7px; 
   color: navy; 
   border-bottom: 1px solid black;
   margin: -25px 0 0 0; padding: 0px; padding-left: 10px z-index: 1; }
