@@ -13,7 +13,7 @@ header, footer, section, article, nav { display:block;
 /*SET FONTS*/
 span.small { font-size:small;
 }
-body {text-align:center; margin: 20px; background: #bee8ff; font: medium arial;
+body {text-align:center; margin: 20px; background: #bee8ff; font-size: 100%;
 }
 #container {width:960px; margin:-10px auto 0 auto;
 }
