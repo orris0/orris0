@@ -58,7 +58,7 @@ nav a.active:hover { background: #cfecf5; color: navy;
   border-top: none; 
   z-index: 2;
 }
-
+/*
 nav { float:left; width:5em; 
                     color: white;
                     text-shadow: 0 -.05em .05em rgba(0, 0, 0, .5);
@@ -67,6 +67,7 @@ nav { float:left; width:5em;
                     border-width: 10px;
                     border-left-width: 0;
                     }
+*/
                 article { float:right; width:70%; background-color:#FF9966; margin-bottom:1em; text-align: center;
                     border: 1px solid rgba(0, 0, 0, .1);
                     background: #58a linear-gradient(#FF9966, #58a);
