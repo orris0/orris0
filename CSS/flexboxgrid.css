@@ -58,16 +58,7 @@ nav a.active:hover { background: #cfecf5; color: navy;
   border-top: none; 
   z-index: 2;
 }
-/*
-nav { float:left; width:5em; 
-                    color: white;
-                    text-shadow: 0 -.05em .05em rgba(0, 0, 0, .5);
-                    font-size: 90%;
-                    line-height: 1.5;
-                    border-width: 10px;
-                    border-left-width: 0;
-                    }
-*/
+
                 article { float:right; width:70%; background-color:#FF9966; margin-bottom:1em; text-align: center;
                     border: 1px solid rgba(0, 0, 0, .1);
                     background: #58a linear-gradient(#FF9966, #58a);
@@ -130,54 +121,7 @@ nav { float:left; width:5em;
                 .button>div {
                     transform: skewX(45deg);
                 }
-                /*
-		nav ul { width: 160%; float:left;margin-left:-6em;font-size:.3rem; 
-                }
-                nav li { 
-                    margin: -10px; 
-                    text-align: center; 
-                    list-style:none; 
-                    padding-bottom:3px;padding: .3em .8em;
-                    border: 1px solid rgba(0, 0, 0, .1);
-                    background: rgba(255, 255, 255, .2);
-                    border-radius: .2em;
-                    box-shadow: 0 .05em .25em rgba(0, 0, 0, .5);
-                    color: white;
-                    text-shadow: 0 -.05em .05em rgba(0, 0, 0, .5);
-                    font-size: 100%;
-                    text-align: center;
-                    line-height: 1.5;
-                    border-width: 10px;
-                    border-left-width: 0;                }
-                nav li a { 
-                    display: block; 
-                    color: yellow; 
-                    font-weight: bold;
-                    text-decoration: none;  
-                    zoom:1; 
-                }
-		nav li a:active { 
-                    background:#aecbff;  
-                    border: 4px inset #aecbff; 
-                }
-                 set general inset button styles 
-                nav li.insetbtn { 
-                    border:none;
-                }
-                nav li.insetbtn a { 
-                    display: block; 
-                    color:orange; 
-                    font-weight: bold;
-                    text-decoration: none; 
-                    cursor:default; 
-                    margin-bottom: 0; 
-                    text-align: center; 
-                    list-style:none;
-                    padding-bottom:3px;
-                }
-
-
-*/
+                
 /* Uncomment and set these variables to customize the grid. */
 
 .container-fluid {
