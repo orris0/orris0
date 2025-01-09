@@ -59,7 +59,7 @@ nav a.active:hover { background: #cfecf5; color: navy;
   z-index: 2;
 }
 
-menu { float:left; width:5em; 
+nav { float:left; width:5em; 
                     color: white;
                     text-shadow: 0 -.05em .05em rgba(0, 0, 0, .5);
                     font-size: 90%;
