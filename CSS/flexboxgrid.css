@@ -59,6 +59,123 @@ nav a.active:hover { background: #cfecf5; color: navy;
   z-index: 2;
 }
 
+menu { float:left; width:5em; 
+                    color: white;
+                    text-shadow: 0 -.05em .05em rgba(0, 0, 0, .5);
+                    font-size: 90%;
+                    line-height: 1.5;
+                    border-width: 10px;
+                    border-left-width: 0;
+                    }
+                article { float:right; width:70%; background-color:#FF9966; margin-bottom:1em; text-align: center;
+                    border: 1px solid rgba(0, 0, 0, .1);
+                    background: #58a linear-gradient(#FF9966, #58a);
+                    border-radius: .2em;
+                    box-shadow: 0 .05em .25em rgba(0, 0, 0, .5);
+                    color: white;
+                    text-shadow: 0 -.05em .05em rgba(0, 0, 0, .5);
+                    font-size: 100%;
+                    line-height: 1.5;
+                    border-width: 10px;
+                    border-left-width: 0;
+                    }
+                footer { clear:both; background-color:#FF9966; text-align:center; padding: .3em .8em;
+                    border: 1px solid rgba(0, 0, 0, .1);
+                    background: #58a linear-gradient(#FF9966, #58a);
+                    border-radius: .2em;
+                    box-shadow: 0 .05em .25em rgba(0, 0, 0, .5);
+                    color: white;
+                    text-shadow: 0 -.05em .05em rgba(0, 0, 0, .5);
+                    font-size: 100%;
+                    line-height: 1.5;
+                    border-width: 10px;
+                    border-left-width: 0;                    }
+                h2 { 
+                    font-weight: bold;
+                    margin-top: 0;
+                    margin-bottom: 0;
+                    
+                    background: rgba(0, 0, 0, .5);
+                    border-radius: .2em;
+                    box-shadow: 0 .05em .25em rgba(0, 0, 0, .5);
+                    color: white;
+                    text-shadow: 0 -.05em .05em rgba(0, 0, 0, .5);
+                    font-size: 100%;
+                    text-align: center;
+                    line-height: 1.5;
+                    border-width: 10px;
+                    border-left-width: 0;
+                    }
+                .button {
+                    position: relative;
+                    /* text color, paddings, etc. */
+                    display: inline-block;
+                    border-radius: .2em;
+                    color: white;
+                    text-shadow: 0 -.05em .05em rgba(0, 0, 0, .5);
+                    font-size: 0.8rem;
+                    line-height: 1.5;
+                    border-width: 10px;
+                    border-left-width: 0;
+                    }
+                .button::before {
+                    content: ''; /* To generate the box */
+                    position: absolute;
+                    top: 0; right: 0; bottom: 0; left: 0;
+                    z-index: -1;
+                    background: maroon;
+                    transform: skew(45deg);
+                    }
+                .button>div {
+                    transform: skewX(45deg);
+                }
+                
+		menu, ul { width: 160%; float:left;margin-left:-6em;font-size:.3rem; 
+                }
+                menu, li { 
+                    margin: -10px; 
+                    text-align: center; 
+                    list-style:none; 
+                    padding-bottom:3px;padding: .3em .8em;
+                    border: 1px solid rgba(0, 0, 0, .1);
+                    background: rgba(255, 255, 255, .2);
+                    border-radius: .2em;
+                    box-shadow: 0 .05em .25em rgba(0, 0, 0, .5);
+                    color: white;
+                    text-shadow: 0 -.05em .05em rgba(0, 0, 0, .5);
+                    font-size: 100%;
+                    text-align: center;
+                    line-height: 1.5;
+                    border-width: 10px;
+                    border-left-width: 0;                }
+                menu, li, a { 
+                    display: block; 
+                    color: yellow; 
+                    font-weight: bold;
+                    text-decoration: none;  
+                    zoom:1; 
+                }
+		menu, li, a:active { 
+                    background:#aecbff;  
+                    border: 4px inset #aecbff; 
+                }
+                /* set general inset button styles */
+                menu li.insetbtn { 
+                    border:none;
+                }
+                menu li.insetbtn a { 
+                    display: block; 
+                    color:orange; 
+                    font-weight: bold;
+                    text-decoration: none; 
+                    cursor:default; 
+                    margin-bottom: 0; 
+                    text-align: center; 
+                    list-style:none;
+                    padding-bottom:3px;
+                }
+
+
 
 /* Uncomment and set these variables to customize the grid. */
 
