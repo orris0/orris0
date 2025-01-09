@@ -130,9 +130,9 @@ nav { float:left; width:5em;
                     transform: skewX(45deg);
                 }
                 
-		menu, ul { width: 160%; float:left;margin-left:-6em;font-size:.3rem; 
+		nav ul { width: 160%; float:left;margin-left:-6em;font-size:.3rem; 
                 }
-                menu, li { 
+                nav li { 
                     margin: -10px; 
                     text-align: center; 
                     list-style:none; 
@@ -148,22 +148,22 @@ nav { float:left; width:5em;
                     line-height: 1.5;
                     border-width: 10px;
                     border-left-width: 0;                }
-                menu, li, a { 
+                nav li a { 
                     display: block; 
                     color: yellow; 
                     font-weight: bold;
                     text-decoration: none;  
                     zoom:1; 
                 }
-		menu, li, a:active { 
+		nav li a:active { 
                     background:#aecbff;  
                     border: 4px inset #aecbff; 
                 }
                 /* set general inset button styles */
-                menu li.insetbtn { 
+                nav li.insetbtn { 
                     border:none;
                 }
-                menu li.insetbtn a { 
+                nav li.insetbtn a { 
                     display: block; 
                     color:orange; 
                     font-weight: bold;
