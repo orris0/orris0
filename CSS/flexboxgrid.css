@@ -138,7 +138,7 @@ background:transparent url("images/bgDIVIDER.gif") no-repeat top right;
 }
 #hnav ul  li a:hover{ background:transparent url("images/bgHOVER.gif") no-repeat top right; 
 }
-nav ul  li a.current,ul#main-menu li a.current:hover { color:#fff;
+#hnav ul  li a.current,ul#main-menu li a.current:hover { color:#fff;
 background:transparent url("images/bgON.gif") no-repeat top right; 
 }                
 /* Uncomment and set these variables to customize the grid. */
