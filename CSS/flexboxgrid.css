@@ -16,12 +16,12 @@ span.small { font-size:small;
 body { background-color:#bbFFaa; color:black; font-family:Arial;}      
 body {text-align:center; margin: 20px; background: #bee8ff; font: medium arial;
 }
-#container {width:960px; 
+div#container {width:960px; 
 }
 .wrapper{ position: relative; top: 0; left: 0; width: 950px; margin: auto; text-align: center;}
 header {margin-top:0; height:156px; width:100%; background-image:url('../images/showcase.jpg'); background-repeat:no-repeat; background-position:center; border-bottom:0;
 }
-#banner, h1 {text-shadow: 0.1em 0.1em 0.2em blue; font-family:Arial; font-size:100%; color:white; font-weight:normal; text-align:center; padding-top:0px; margin-bottom:-10px; margin:auto; 
+div#banner, h1 {text-shadow: 0.1em 0.1em 0.2em blue; font-family:Arial; font-size:100%; color:white; font-weight:normal; text-align:center; padding-top:0px; margin-bottom:-10px; margin:auto; 
 }
 
 /*set the generic tab style--and move menu upwards so that it overlaps the header*/ 
@@ -47,7 +47,7 @@ nav a:visited { color: navy;
 nav a.active:hover { background: #cfecf5; color: navy;
 }
 /*set the position of the content to move it close up to the menu tabs*/
-#content {
+div#content {
   margin-top:13px; 
   font : 0.9em/1.3em "bitstream vera sans", verdana; 
   position:relative; 
@@ -136,7 +136,7 @@ div#hnav ul  {
 }
 div#hnav ul  li { display:block;float:left;margin:0;padding:0;
 }
-#hnav ul  li a { display:block; float:left;color:#874B46;
+div#hnav ul  li a { display:block; float:left;color:#874B46;
 text-decoration:none;padding:12px 20px 0 20px;height:24px;
 background:transparent url("images/bgDIVIDER.gif") no-repeat top right; 
 }
