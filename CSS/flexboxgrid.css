@@ -142,7 +142,7 @@ background:transparent url("images/bgDIVIDER.gif") no-repeat top right;
 }
 div#hnav ul li a:hover{ background:transparent url("images/bgHOVER.gif") no-repeat top right; 
 }
-div#hnav ul li a.current,ul#main-menu li a.current:hover { color:#fff;
+div#hnav ul li a.currentul#main-menu li a.current:hover { color:#fff;
 background:transparent url("images/bgON.gif") no-repeat top right; 
 }   
 
