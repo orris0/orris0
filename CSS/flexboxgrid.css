@@ -34,17 +34,17 @@ nav {
 nav li { display: inline; overflow: hidden; list-style-type: none;
 }
 /*set tab colour*/
-nav a, a.active { color: navy; background: #81d9f6; font: bold 1em Arial;  border: 1px solid black; padding: 2px 5px 0px 5px; margin: 0; text-decoration: none; }
+nav, a, a.active { color: navy; background: #81d9f6; font: bold 1em Arial;  border: 1px solid black; padding: 2px 5px 0px 5px; margin: 0; text-decoration: none; }
 /*make a 3px wide bottom border on tab the same colour as the page*/
 nav a.active { background: #cfecf5; color:navy; border-bottom: 3px solid #cfecf5;
 }
 /*hovering over a non-active tab shows an aqua tab*/
-nav a:hover { background: aqua;
+nav, a:hover { background: aqua;
 }
-nav a:visited { color: navy;
+nav, a:visited { color: navy;
 }
 /*hovering over the active tab shows navy text*/
-nav a.active:hover { background: #cfecf5; color: navy;
+nav, a.active:hover { background: #cfecf5; color: navy;
 }
 /*set the position of the content to move it close up to the menu tabs*/
 div#content {
@@ -122,7 +122,7 @@ div#content {
                 .button>div {
                     transform: skewX(45deg);
                 }
-div#hnav ul  {
+div#hnav, ul  {
     padding-top:230px;
     padding:0;
     list-style-type:none; 
@@ -134,15 +134,15 @@ div#hnav ul  {
     border-bottom:4px solid #336666; border-top:1px solid #C0E2D4;
     position:relative;	top: -98px; left: 0;
 }
-div#hnav ul  li { display:block;float:left;margin:0;padding:0;
+div#hnav, ul, li { display:block;float:left;margin:0;padding:0;
 }
-div#hnav ul  li a { display:block; float:left;color:#874B46;
+div#hnav, ul, li, a { display:block; float:left;color:#874B46;
 text-decoration:none;padding:12px 20px 0 20px;height:24px;
 background:transparent url("images/bgDIVIDER.gif") no-repeat top right; 
 }
-div#hnav ul  li a:hover{ background:transparent url("images/bgHOVER.gif") no-repeat top right; 
+div#hnav, ul, li, a:hover{ background:transparent url("images/bgHOVER.gif") no-repeat top right; 
 }
-div#hnav ul  li a.current,ul#main-menu li a.current:hover { color:#fff;
+div#hnav, ul, li a.current,ul#main-menu, li a.current:hover { color:#fff;
 background:transparent url("images/bgON.gif") no-repeat top right; 
 }   
 
