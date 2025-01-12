@@ -21,7 +21,7 @@ div#container {width:960px;
 .wrapper{ position: relative; top: 0; left: 0; width: 950px; margin: auto; text-align: center;}
 header {margin-top:1px; height:156px; width:100%; background-image:url('../images/showcase.jpg'); background-position: top; background-repeat:no-repeat; border-bottom:0;
 }
-div#banner h1 {text-shadow: 0.1em 0.1em 0.2em blue; font-family:Arial; font-size:100%; color:white; font-weight:normal; text-align:center; padding-top:0px; margin-bottom:-10px; margin:auto; 
+#banner h1 {text-shadow: 0.1em 0.1em 0.2em blue; font-family:Arial; font-size:100%; color:white; font-weight:normal; text-align:center; padding-top:0px; margin-bottom:-10px; margin:auto; 
 }
 
 /*set the generic tab style--and move menu upwards so that it overlaps the header*/ 
