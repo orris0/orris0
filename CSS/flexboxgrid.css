@@ -19,7 +19,7 @@ body {text-align:center; margin: 20px; background: #bee8ff; font: medium arial;
 div#container {width:960px; margin:-10px auto 0 auto;
 }
 .wrapper{ position: relative; top: 0; left: 0; width: 950px; margin: auto; text-align: center;}
-header {margin-top:1px; height:156px; width:100%; background-image:url('../images/showcase.jpg'); background-position: top; background-repeat:no-repeat; border-bottom:0;
+header {margin-top:1em; height:156px; width:100%; background-image:url('../images/showcase.jpg'); background-position: top; background-repeat:no-repeat; border-bottom:0;
 }
 #banner h1 {text-shadow: 0.1em 0.1em 0.2em blue; font-family:Arial; font-size:125%; color:white; font-weight:normal; text-align:center; padding-top:2em; margin-bottom:-10px; margin:auto; 
 }
