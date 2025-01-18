@@ -96,8 +96,8 @@
     <body class=”container w3-light-grey">
     <!-- HEADER -->
         <div class="wrapper">
-            <div id="container">
-                <header id="main-header">
+        <div data-role=”page” id=”page-one” data-title=”Page 1”>
+                <div data-role=”header” id="main-header">
                     <!-- w3-content defines a container for fixed size centered content, 
                         and is wrapped around the whole page content, except for the footer in this example -->
                     <div class="w3-light-grey">
@@ -114,10 +114,10 @@
                                 <li><a href="index2.html" title="">Home</a></li>
                             </ul>
                         </div>
-                        <br class="clear" />
+                        <br class="clear">
                     </div>
                 </div>
-            </header>
+            </div>
             <!-- MENU -->
             <div class="row">
                 <div class="col-xs-12 col-sm-10 col-md-10 c0l-lg-10">
@@ -135,7 +135,7 @@
                 </div>
             </div>
             <div class="main">
-                <div id="content">
+                <div data-role=”content”>
                     <!-- SHOWCASE -->
                     <div class="showcase">
                         <div class="row">
@@ -222,7 +222,10 @@
                         </div>
                     </div>
                 </div>
-                <div class="item3">
+		
+	    </div>
+	
+                 <div data-role=”footer” class="item3">
                     <div class="row" style="background-color: #e5ef3f;">
                         <div class="col-9">
                             <h2>Above the clouds &amp; over the sea.</h2>
@@ -232,6 +235,8 @@
                         </div>
                     </div>
                 </div>
+        </div> <!-- end pg-1 -->
+	    
                 <div class="item4">
                     <div class="row" style="background-color: #34495e;">
                         <div class="col-8">
