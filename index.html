@@ -98,30 +98,30 @@
             <!-- HEADER -->
             <div data-role="header" id="main-header">
                 <h1>MJ's Simplistic HTML5 Templates</h1>
-            </div> 
-            <!-- hnav -->
-            <div id="hnav">
-                <ul>
-                    <li><a href="about.html" title="">About Us</a></li>
-                    <li><a href="news.html" title="">News</a></li>
-                    <li><a href="events.html" title="" class="current">Events</a></li>
-                    <li><a href="volunteers.html" title="">Volunteers</a></li>
-                    <li><a href="services.html" title="">Services</a></li>
-                    <li><a href="membership.html" title="">Membership</a></li>
-                    <li><a href="index2.html" title="">Home</a></li>
-                </ul>
-            </div> <!-- end hnav -->
-            <br class="clear">
-        </div>
-                    </div>
-                </div>
+            </div><!-- end header --> 
+            <div data-role="content">
+
+                <!-- hnav -->
+                <div id="hnav">
+                    <ul>
+                        <li><a href="about.html" title="">About Us</a></li>
+                        <li><a href="news.html" title="">News</a></li>
+                        <li><a href="events.html" title="" class="current">Events</a></li>
+                        <li><a href="volunteers.html" title="">Volunteers</a></li>
+                        <li><a href="services.html" title="">Services</a></li>
+                        <li><a href="membership.html" title="">Membership</a></li>
+                        <li><a href="index2.html" title="">Home</a></li>
+                    </ul>
+                </div> <!-- end hnav -->
+                <br class="clear">
+
                 <!-- MENU -->
                 <div class="row">
                     <div class="col-xs-12 col-sm-10 col-md-10 c0l-lg-10">
                         <div class="menu-bar">
                             <nav>
                                 <ul>
-                                    <li><a class="active" href="index.html">Home Page</a></li>
+                                    <li><a class="active" href="index.html">Home Page</a></li>                                    
                                     <li><a href="page2.html">Page Two</a></li>
                                     <li><a href="page3.html">Page Three with a long label</a></li>
                                     <li><a href="page4.html">Page Four</a></li>
@@ -130,9 +130,8 @@
                             </nav>
                         </div>
                     </div>
-                </div>
-                <div class="main">
-                    <div data-role="content">
+                </div><!-- end menu -->
+                
                         <!-- SHOWCASE -->
                         <div class="showcase">
                             <div class="row">
@@ -190,7 +189,7 @@
                             <img class="circle" src="images/orange-globe.png">
                         </div>
                     </div>
-                </div><!-- END SHOWCASE -->
+                <!-- END SHOWCASE -->
 
                 <div class="features">
                     <div class="row" style="background-color: #1abc9c;">
@@ -202,24 +201,27 @@
                         </div>
                     </div>
                 </div>
-		
-            </div>
+                <p><a href="#page-two">Link to page 2</a></p>
+
+            </div><!-- end content -->
 	
-                 <div data-role="footer" class="item3">
-                    <div class="row" style="background-color: #e5ef3f;">
-                        <div class="col-9">
-                            <h2>Above the clouds &amp; over the sea.</h2>
-                        </div>
-                        <div class="col-3">
-                            <img class="circle" src="images/plane.png" width="215px">
-                        </div>
+            <div data-role="footer" class="item3">
+                <div class="row" style="background-color: #e5ef3f;">
+                    <div class="col-9">
+                        <h2>Above the clouds &amp; over the sea.</h2>
+                    </div>
+                    <div class="col-3">
+                        <img class="circle" src="images/plane.png" width="215px">
                     </div>
                 </div>
-	    </div><!-- end pg-1 -->        
-	
+            </div>
+        </div><!-- end pg-1 -->
 	    
-                <div class="item4">
-                    <div class="row" style="background-color: #34495e;">
+        <div data-role="page" id="page-two" data-title="Page 2" class="item4">
+            <div data-role="header">
+                <h1>Page 2</h1>
+            </div>       
+            <div class="row" style="background-color: #34495e;">
                         <div class="col-8">
                             <h2>In just 42 hours and 27 minutes</h2>
                         </div>
@@ -227,7 +229,7 @@
                             <img class="circle" src="images/paper-blue.png" width="215px">
                         </div>
                     </div>
-                </div>
+        </div>
                 <div class="item5">
                     <div class="row" style="background-color: #00afe1;">
                         <div class="col-7">
@@ -262,12 +264,12 @@
                     </div>
                 </div>
                 <div class="col-12">
-                    <footer class="row" style="background-color: #34495e; border-top: 2px solid #f6931e">
+                    <div class="row" style="background-color: #34495e; border-top: 2px solid #f6931e">
 
                         <p>&copy; Kite-It.</p>
-                    </footer>
+                    </div>
                 </div>
-        </div> <!-- end wrapper -->
+            
     </body>
 </html>
 
