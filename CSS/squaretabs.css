@@ -8,10 +8,10 @@ html, body {
   min-height: 100%; }
 
 html {
-  /* background: #302722 url("./images/tweed.jpg") fixed; */
+  /* background: #302722 url("./images/tweed.jpg") fixed; 
   background: linear-gradient(rgba(0, 0, 0, 0.6), transparent) top left repeat-x, url("css/images/tweed.jpg") #2e241f;
   background-size: 100% 300px, auto; }
-
+*/
 /* Set styles to equalise browser rendition*/
 html, h1, h2, h3, h4, h5, h6, p, ol, ul, li {  
 	padding: 0; 
