@@ -14,7 +14,7 @@ body {text-align:center; margin: 1.25em; background: #bee8ff; font: medium arial
 div#container {width: 59.375em; margin:-10px auto 0 auto; }
 
 header, footer, section, article, nav { display:block; }
-header {margin-top:1em; height:156px; width:100%; background-image:url('../images/showcase.jpg'); background-position: top; background-repeat:no-repeat; border-bottom:0;
+#main-header {margin-top:1em; height:156px; width:100%; background-image:url('../images/showcase.jpg'); background-position: top; background-repeat:no-repeat; border-bottom:0;
 }
 div#container {width:960px; margin:-10px auto 0 auto; }
 
@@ -80,7 +80,7 @@ img:hover{
         border-width: 10px;
         border-left-width: 0;
     }
-/*set the generic tab style--and set position so that it overlaps the header*/ 
+/*set the generic tab style--and set position so that it overlaps the header*
 #hnav {
 	position:relative; 
 	top:4.9rem; 
@@ -91,13 +91,13 @@ img:hover{
 	padding-left: 10px; 
 	z-index: 1; 
 }
-/* use display:inline to remove IE6 double margin bug*/
+/* use display:inline to remove IE6 double margin bug*
 #hnav li { 
 	display: inline; 
 	overflow: hidden; 
 	list-style-type: none; 
 }
-/*set tab colour*/
+/*set tab colour*
 	
 #hnav a, a.active { 
 	color: navy; 
@@ -109,20 +109,20 @@ img:hover{
 	margin: 0; 
 	text-decoration: none; 
 }
- /*make a 3px wide bottom border on tab the same colour as the page*/  
+ /*make a 3px wide bottom border on tab the same colour as the page*  
 #hnav a.active { 
 	background: #cfecf5; 
 	color:navy; 
 	border-bottom: 3px solid #cfecf5; 
 }
-  /*hovering over a non-active tab shows an aqua tab*/
+  /*hovering over a non-active tab shows an aqua tab*
 #hnav a:hover { 	
 	background: aqua; 
 }
 #hnav a:visited { 
 	color: navy; 
 }
- /*hovering over the active tab shows navy text*/
+ /*hovering over the active tab shows navy text*
 #hnav a.active:hover { 
 	background: #cfecf5; 
 	color: navy; 
