@@ -3,24 +3,27 @@
   margin: 0;
   padding: 0;
   font-weight: normal; }
+/* Set styles to equalise browser rendition*/
+html, body, h1, h2, h3, h4, h5, h6, p, ol, ul, li { padding: 0; margin: 0;
+}
 
 html, body {
   min-height: 100%; }
 
+  body {text-align:center; margin: 20px; background: #bee8ff; font: medium arial;
+  }
+
+  header, footer, section, article, nav { 
+    display:block; 
+  }
+/*
 html {
-  /* background: #302722 url("./images/tweed.jpg") fixed; 
+   background: #302722 url("./images/tweed.jpg") fixed; 
   background: linear-gradient(rgba(0, 0, 0, 0.6), transparent) top left repeat-x, url("css/images/tweed.jpg") #2e241f;
   background-size: 100% 300px, auto; }
 */
-/* Set styles to equalise browser rendition*/
-html, h1, h2, h3, h4, h5, h6, p, ol, ul, li {  
-	padding: 0; 
-	margin: 0; 
-}
 
-header, footer, section, article, nav { 
-	display:block; 
-}
+
 
 .picture {
 	width: 220px;
