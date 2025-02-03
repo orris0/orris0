@@ -1,6 +1,6 @@
-/* Set styles to equalise browser rendition*/
+/* Set styles to equalise browser rendition
 html, body, h1, h2, h3, h4, h5, h6, p, ol, ul, li { padding: 0; margin: 0;
-}
+}*/
 html, body {
   min-height: 100%; }
 header, footer, section, article, nav { display:block;
@@ -19,9 +19,10 @@ span.small { font-size:small;
 body { background-color:#bbFFaa; color:black; font-family:Arial;}      
 body {text-align:center; margin: 20px; background: #bee8ff; font: medium arial;
 }
-*/
+
 div#container {width:960px; margin:-10px auto 0 auto;
 }
+*/
 .wrapper{ position: relative; top: 0; left: 0; width: 950px; margin: auto; text-align: center;}
 header {margin-top:1em; height:156px; width:100%; background-image:url('../images/showcase.jpg'); background-position: top; background-repeat:no-repeat; border-bottom:0;
 }

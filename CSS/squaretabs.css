@@ -16,6 +16,11 @@ html, body {
   header, footer, section, article, nav { 
     display:block; 
   }
+
+  .wrapper{ position: relative; top: 0; left: 0; width: 950px; margin: auto; text-align: center;}
+
+  div#container {width:960px; margin:-10px auto 0 auto;
+  }
 /*
 html {
    background: #302722 url("./images/tweed.jpg") fixed; 
