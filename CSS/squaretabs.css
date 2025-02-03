@@ -9,22 +9,19 @@ html, body {
 
 body {text-align:center; margin: 1.25em; background: #bee8ff; font: medium arial; }
 
-.wrapper{ position: relative; top: 0; left: 0; width: 950px; margin: auto; text-align: center;}
+.wrapper{ position: relative; top: 0; left: 0; width: 60em; margin: auto; text-align: center;}
+
+div#container {width: 59.375em; margin:-10px auto 0 auto; }
 
 header, footer, section, article, nav { display:block; }
+header {margin-top:1em; height:156px; width:100%; background-image:url('../images/showcase.jpg'); background-position: top; background-repeat:no-repeat; border-bottom:0;
+}
+div#container {width:960px; margin:-10px auto 0 auto; }
 
-
-
-  div#container {width:960px; margin:-10px auto 0 auto;
-  }
-/*
 html {
    background: #302722 url("./images/tweed.jpg") fixed; 
   background: linear-gradient(rgba(0, 0, 0, 0.6), transparent) top left repeat-x, url("css/images/tweed.jpg") #2e241f;
   background-size: 100% 300px, auto; }
-*/
-
-
 
 .picture {
 	width: 220px;
@@ -362,7 +359,7 @@ footer {
   text-align: center;
   font-size: 80%;
   padding: 1em 0; }
-
+/*
 nav {
   position: absolute;
   top: 2.1em;
