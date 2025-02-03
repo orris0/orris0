@@ -399,7 +399,7 @@ nav {
   padding-right: 2em;
   width: 90px;
   margin-left: calc(-28em - 90px);
-  /* Decorative stitches */ }
+  /* Decorative stitches */ 
   @media (max-width: 1100px) {
     nav {
       margin-left: calc(-15em - 90px); } }
@@ -634,9 +634,6 @@ ul.talks > li {
 		.talks .comment {
 				font-size:75%;
 				font-style:normal;
-		}
-
-		.talks address {
 		}
 
 		.talks address:before {
