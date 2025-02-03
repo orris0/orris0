@@ -18,10 +18,40 @@ header, footer, section, article, nav { display:block; }
 }
 div#container {width:960px; margin:-10px auto 0 auto; }
 
-html {
-   background: #302722 url("./images/tweed.jpg") fixed; 
-  background: linear-gradient(rgba(0, 0, 0, 0.6), transparent) top left repeat-x, url("css/images/tweed.jpg") #2e241f;
-  background-size: 100% 300px, auto; }
+nav {
+  position:relative; top:6px; 
+  color: navy; 
+  border-bottom: 1px solid black;
+  margin: -25px 0 0 0; padding: 0px; padding-left: 3em; z-index: 1;}
+/* use display:inline to remove IE6 double margin bug*/
+nav li { display: inline; overflow: hidden; list-style-type: none;
+}
+/*set tab colour*/
+nav a a.active { color: navy; background: #81d9f6; font-family: Arial; border: 1px solid black; padding: 2px 5px 0px 5px; margin: 0; text-decoration: none; }
+/*make a 3px wide bottom border on tab the same colour as the page*/
+nav a.active { background: #cfecf5; color:navy; border-bottom: 3px solid #cfecf5;
+}
+/*hovering over a non-active tab shows an aqua tab*/
+nav a:hover { background: aqua;
+}
+nav a:visited { color: navy;
+}
+/*hovering over the active tab shows navy text*/
+nav a.active:hover { background: #cfecf5; color: navy;
+}
+/*set the position of the content to move it close up to the menu tabs*/
+div#content {
+  margin-top:15px; 
+  font : 0.9em/1.3em "bitstream vera sans", verdana; 
+  position:relative; 
+  top: 26px; 
+  text-align: left; 
+  background: #cfecf5;
+  padding: 20px; 
+  border: 1px solid black; 
+  border-top: none; 
+  z-index: 2;
+}
 
 .picture {
 	width: 220px;
