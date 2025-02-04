@@ -12,7 +12,7 @@ span.small { font-size:small;
 
 div#container {width:48.75em; margin:-0.625em auto 0 auto; }
 
-header, footer, section, article, nav { display:block; }
+#main-header, footer, section, article, nav { display:block; }
 #main-header {margin-top:1em; height:9.75em; width:48.75em; background-image:url('../images/showcase.jpg'); background-position: top; background-repeat:no-repeat; border-bottom:0;
 }
 #banner h1 {text-shadow: 0.1em 0.1em 0.2em blue; font-family:Arial; font-size:125%; color:white; font-weight:normal; text-align:center; padding-top:2em; margin-bottom:-0.625em; margin:auto; 
@@ -21,13 +21,13 @@ header, footer, section, article, nav { display:block; }
 /* Set styles to equalise browser rendition*/
 html, body, h1, h2, h3, h4, h5, h6, p, ol, ul, li {  padding: 0; margin: 0; 
 }
-header, footer, section, article, nav { display:block; 
+#main-header, footer, section, article, nav { display:block; 
 }
 body {text-align:center; margin: 1.25em; background: #bee8ff; font: medium arial; 
 }
 #container {width:48.75em; margin:-0.625em auto 0 auto; 
 }
-header {margin-top:0; height:9.75em; width:100%; 
+#main-header {margin-top:0; height:9.75em; width:100%; 
 background-image:url('images/bluepan.jpg'); background-repeat:no-repeat; background-position:center;
  border-bottom:0; 
  }
