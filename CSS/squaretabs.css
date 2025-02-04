@@ -19,7 +19,8 @@ header, footer, section, article, nav { display:block; }
 div#container {width:48.75em; margin:-10px auto 0 auto; }
 
 nav {
-  position:relative; top:6px; 
+  position:relative; 
+  top:6px; 
   color: navy; 
   border-bottom: 1px solid black;
   margin: -25px 0 0 0; padding: 0px; padding-left: 3em; z-index: 1;}
