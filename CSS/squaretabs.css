@@ -15,7 +15,6 @@ img:hover{
 100% 100%, 0 100%);		
 }
 
-
 /*SET FONTS*/
 span.small { font-size:small;
 }
@@ -199,7 +198,7 @@ nav a.active:hover { background: #cfecf5; color: navy;
 	border-top: none; 
 	z-index: 2;
 }
-	
+/*	
 #hnav { 
       width: 95%;   
         color: white;
@@ -248,7 +247,7 @@ h2 {
 }
 .parallel {
 position: relative;
-/* text color, paddings, etc. */
+/* text color, paddings, etc. *
 display: inline-block;
 border-radius: .2em;
 color: white;
@@ -259,7 +258,7 @@ border-width: 10px;
 border-left-width: 0;
 }
 .parallel::before {
-content: ''; /* To generate the box */
+content: ''; /* To generate the box *
 position: absolute;
 top: 0; right: 0; bottom: 0; left: 0;
 z-index: -1;
@@ -302,7 +301,7 @@ background:transparent url("images/bgON.gif") no-repeat top right;
 
 .parallel {
 position: relative;
-/* text color, paddings, etc. */
+/* text color, paddings, etc. *
 display: inline-block;
 border-radius: .2em;
 color: white;
@@ -313,7 +312,7 @@ border-width: 10px;
 border-left-width: 0;
 }
 .parallel::before {
-content: ''; /* To generate the box */
+content: ''; /* To generate the box *
 position: absolute;
 top: 0; right: 0; bottom: 0; left: 0;
 z-index: -1;
