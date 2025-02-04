@@ -4,6 +4,17 @@
 /*set images to have no borders*/
 img {   border:0;
 }
+img {
+  clip-path: polygon(50% 0, 100% 50%,
+             50% 100%, 0 50%);
+             transition: 1s clip-path;
+}
+
+img:hover{
+      clip-path: polygon(0% 0, 100% 0%,
+100% 100%, 0 100%);		
+}
+
 
 /*SET FONTS*/
 span.small { font-size:small;
@@ -114,16 +125,6 @@ div#content {
 	overflow: hidden;
 }
 
-img {
-    clip-path: polygon(50% 0, 100% 50%,
-		           50% 100%, 0 50%);
-		           transition: 1s clip-path;
-}
-
-img:hover{
-        clip-path: polygon(0% 0, 100% 0%,
-	100% 100%, 0 100%);		
-}
 
 
 #content { flex: 1;
