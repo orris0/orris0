@@ -11,12 +11,12 @@ body {text-align:center; margin: 1.25em; background: #bee8ff; font: medium arial
 
 .wrapper{ position: relative; top: 0; left: 0; width: 60em; margin: auto; text-align: center;}
 
-div#container {width: 59.375em; margin:-10px auto 0 auto; }
+div#container {width:48.75em; margin:-10px auto 0 auto; }
 
 header, footer, section, article, nav { display:block; }
 #main-header {margin-top:1em; height:9.75em; width:48.75em; background-image:url('../images/showcase.jpg'); background-position: top; background-repeat:no-repeat; border-bottom:0;
 }
-div#container {width:48.75em; margin:-10px auto 0 auto; }
+
 
 nav {
   position:relative; 
