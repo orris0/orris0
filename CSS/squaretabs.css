@@ -287,7 +287,7 @@ padding-bottom:3px;
 }
 */
 
-/* --- style --- */
+/* --- style --- *
 
 a {
   color: inherit;
@@ -366,12 +366,12 @@ header figure:after {
   left: 0;
   border-radius: 50%; }
 
-/* Shading */
+/* Shading *
 header figure:before {
   margin: 2em;
   box-shadow: 0.1em 0.1em 0.4em rgba(255, 255, 255, 0.2), 0.1em 0.1em 1em black inset; }
 
-/* Stiches */
+/* Stiches *
 header figure:after {
   border: 2px dashed #291e0a;
   margin: .8em .7em .7em .8em;
@@ -399,7 +399,7 @@ nav {
   padding-right: 2em;
   width: 90px;
   margin-left: calc(-28em - 90px);
-  /* Decorative stitches */ 
+  /* Decorative stitches *
   @media (max-width: 1100px) {
     nav {
       margin-left: calc(-15em - 90px); } }
@@ -446,11 +446,11 @@ nav {
   color: black;
   transition: .4s;
   /* Button holes */
-  /* Stiching */ }
+  /* Stiching * }
   .button > svg {
     display: block;
     width: 54.73006px;
-    /* *0.86 / sqrt(2) */
+    /* *0.86 / sqrt(2) *
     overflow: visible;
     margin: auto; }
     .button > svg text {
@@ -513,7 +513,7 @@ nav {
 
 #talks:not(:target) {
   display: none; }
-/* -------- talks  ------------ */
+/* -------- talks  ------------ *
 
 h1#past, h1#upcoming {
 		margin-top: 1em;
