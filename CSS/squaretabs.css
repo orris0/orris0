@@ -163,7 +163,7 @@ div#content {
 /*set the generic tab style--and set position so that it overlaps the header*/
 #hnav {
 	position:relative; 
-	top:4.9rem; 
+	top:0.1rem; 
 	color: navy; 
 	
 	margin: -25px 0 0 0; 
