@@ -43,10 +43,7 @@ body {text-align:center; margin: 1.25em; background: #bee8ff; font: medium arial
 }
 #container-1 {width:48.75em; margin:-0.625em auto 0 auto; 
 }
-#main-header {margin-top:0; height:9.75em; width:48.75em; 
-background-image:url('images/bluepan.jpg'); background-repeat:no-repeat; background-position:center;
- border-bottom:0; 
- }
+
 h1 {font-family:Arial; font-size:320%; color:white; font-weight:normal; 
 text-align:center; padding-top:2.1875em; margin-bottom:-0.625em; height: 5.875em; margin:auto;
 }
