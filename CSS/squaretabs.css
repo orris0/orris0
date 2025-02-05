@@ -312,7 +312,7 @@ h2 {
 }
 .parallel {
 position: relative;
-/* text color, paddings, etc. *
+/* text color, paddings, etc. */
 display: inline-block;
 border-radius: .2em;
 color: white;
@@ -323,7 +323,7 @@ border-width: 10px;
 border-left-width: 0;
 }
 .parallel::before {
-content: ''; /* To generate the box *
+content: ''; /* To generate the box */
 position: absolute;
 top: 0; right: 0; bottom: 0; left: 0;
 z-index: -1;
@@ -332,6 +332,14 @@ transform: skew(45deg);
 }
 .parallel>div {
 transform: skewX(45deg);
+}
+/* Uncomment and set these variables to customize the grid. */
+
+.container-fluid {
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 2rem;
+  padding-left: 2rem;
 }
 
 
