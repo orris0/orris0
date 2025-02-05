@@ -34,7 +34,7 @@ div#container {width:48.75em; margin:-0.625em auto 0 auto; }
 #banner h1 {text-shadow: 0.1em 0.1em 0.2em blue; font-family:Arial; font-size:125%; color:white; font-weight:normal; text-align:center; padding-top:2em; margin-bottom:-0.625em; margin:auto; 
 }
 
-.menu-bar { position: relative; top: 0; left: 0;
+div.menu-bar { position: relative; top: 0; left: 0;
 
 }
 /* Set styles to equalise browser rendition*/
