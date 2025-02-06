@@ -3,7 +3,7 @@
   margin: 0; padding: 0; font-weight: normal; }
 */
 /*equalise for various browsers and change #header to header*/
-div body header #content { margin:0; padding:0; border:0; 
+div body #main-header #content { margin:0; padding:0; border:0; 
 }
 /*set images to have no borders*/
 img {   border:0;
