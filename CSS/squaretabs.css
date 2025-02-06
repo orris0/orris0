@@ -80,15 +80,15 @@ text-align:center; padding-top:2.1875em; margin-bottom:-0.625em; height: 5.875em
 		padding: 1.25em; border:  0.0625em solid black; border-top: none; z-index: 2;
 		}
 
-/*hovering over a non-active tab shows an aqua tab*/
+/*hovering over a non-active tab shows an aqua tab*
 nav a:hover { background: aqua;
 }
 nav a:visited { color: navy;
 }
-/*hovering over the active tab shows navy text*/
+/*hovering over the active tab shows navy text
 nav a.active:hover { background: #cfecf5; color: navy;
 }
-
+*/
 .picture {
 	width: 220px;
 	transform: rotate(10deg);
