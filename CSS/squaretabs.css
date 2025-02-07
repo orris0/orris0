@@ -34,6 +34,10 @@ div#container {width:48.75em; margin:-0.625em auto 0 auto; }
   100% calc(100% - 20px), calc(100% - 20px) 100%,
   20px 100%, 0 calc(100% - 20px), 0 20px);
 }
+
+h1 { font-size:300%; color :white; position: relative; left:90px; top: 55px; width:480px; 
+}
+
 #banner h1 { 
     text-shadow: 0.1em 0.1em 0.2em blue;        
     font-family:Arial; font-size:125%; color:white; 
@@ -204,11 +208,10 @@ nav a.active:hover { background: #cfecf5; color: navy;
 
 body { background:#FFF url(images/green-grad.jpg) repeat-x; margin:auto;
 }
-/*add display attributes for the semantic tags*
+/*add display attributes for the semantic tags*/
 
 
-h1 { font-size:300%; color :white; position: relative; left:90px; top: 55px; width:480px; 
-}
+
 #rosette { position:relative; left:750px; top:5px; }
 #content { background-color:transparent; border-left:10px white solid; border-right:10px white solid; 
 border-bottom:10px white solid; width: 904px; margin-top:-10px; margin-left:auto; margin-right:auto; padding:8px; font-size:medium; color:maroon; 
@@ -257,7 +260,7 @@ footer { clear:both; color:maroon; text-align:center;
 
 	
 #hnav { 
-      width: 95%;   
+      width: 100%;   
         color: white;
         text-shadow: 0 -.05em .05em rgba(0, 0, 0, .5);
         font-size: 105%;
@@ -283,8 +286,10 @@ article { float:right;
 	border-width: 10px;
 	border-left-width: 0;
 }
+/*
 footer { clear:both; background-color:#FF9966; text-align:center;
 }
+*/
 h2 { 
 	font-weight: bold;
 	margin-top: 0;
@@ -302,29 +307,7 @@ h2 {
 	border-width: 10px;
 	border-left-width: 0;
 }
-.parallel {
-position: relative;
-/* text color, paddings, etc. */
-display: inline-block;
-border-radius: .2em;
-color: white;
-text-shadow: 0 -.05em .05em rgba(0, 0, 0, .5);
-font-size: 80%;
-line-height: 1.5;
-border-width: 10px;
-border-left-width: 0;
-}
-.parallel::before {
-content: ''; /* To generate the box */
-position: absolute;
-top: 0; right: 0; bottom: 0; left: 0;
-z-index: -1;
-background: maroon;
-transform: skew(45deg);
-}
-.parallel>div {
-transform: skewX(45deg);
-}
+
 /* Uncomment and set these variables to customize the grid. */
 
 .container-fluid {
@@ -349,8 +332,8 @@ div#hnav ul  {
   font-family:Helvetica,Arial,Verdana,sans-serif;
   border-bottom:4px solid #336666; border-top:1px solid #C0E2D4;
   position:relative;	
-  top: -1em; 
-  left: 0;
+  top: -4em; 
+  left: 19px;
 }
 div#hnav ul li { display:block;float:left;margin:0;padding:0;
 }
