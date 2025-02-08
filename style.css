@@ -685,6 +685,8 @@ h2{
   background: url("explore-section1.jpg") top center;
   background-size: cover;
   position: relative;
+  top: 2em;
+  left: 2em;
 }
 
 #hero:before {
