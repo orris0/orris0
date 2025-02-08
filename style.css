@@ -429,8 +429,19 @@ h2{
 .navbar-mobile .dropdown>.dropdown-active {
   display: block;
 }
-@media (max-width: 630px)
+/* MEDIA QUERIES */
+@media(max-width:800px){
+  #showcase h1{
+    font-size:30px;
+  }
 }
+
+@media(max-width:500px){
+  #showcase .showcase-content{
+    padding:40px 10px;
+  }
+}
+
 .button {
     margin-left: 15px;
 }
