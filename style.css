@@ -685,8 +685,8 @@ h2{
   background: url("explore-section1.jpg") top center;
   background-size: cover;
   position: relative;
-  top: 2em;
-  left: 2em;
+  top: 1em;
+  left: 0em;
 }
 
 #hero:before {
@@ -712,6 +712,7 @@ h2{
   color: #eee;
   margin-bottom: 30px;
   font-size: 24px;
+  background: #eacd8b;
 }
 
 #hero .btn-get-started {
