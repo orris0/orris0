@@ -456,7 +456,7 @@ h2{
 # Hero Section
 --------------------------------------------------------------*/
 #hero {
-  width: 71em;
+  width: 61em;
   height: calc(115vh - 120px);
   background: url("explore-section1.jpg") top center;
   background-size: cover;
