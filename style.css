@@ -10,7 +10,7 @@ body {
   line-height: var(--bs-body-line-height);
   color: #fff;
   text-align: var(--bs-body-text-align);
-  background-color: #07062f;
+  background-color: #07062f!important;
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: transparent;
 }
