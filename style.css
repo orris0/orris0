@@ -1,236 +1,23 @@
 
 body {
   font-family: "Open Sans", sans-serif;
-  
+  color: #444444;
+}
+body {
   margin: 0;
-  padding:0;
   font-family: var(--bs-body-font-family);
   font-size: var(--bs-body-font-size);
   font-weight: var(--bs-body-font-weight);
   line-height: var(--bs-body-line-height);
   color: #fff;
   text-align: var(--bs-body-text-align);
-  background-color: #07062f!important;
+  background-color: #07062f;
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: transparent;
 }
-
-img{
-  width:100%;
-}
-
-.container{
-  margin:auto;
-}
-
 a {
   color: #eacd8b;
   text-decoration: none;
-}
-
-/* COMMON CLASSES */
-.primary-text{
-  color:#56a79a;
-}
-
-.primary-background{
-  background:#56a79a;
-}
-
-/* HEADER */
-#main-header{
-  border-bottom:1px solid #56a79a;
-}
-
-/* NAVBAR */
-#navbar{
-  text-transform:uppercase;
-}
-
-#navbar li{
-  display:inline;
-  padding-right:20px;
-  list-style:none;
-}
-
-#navbar a{
-  text-decoration:none;
-  color:#888;
-}
-
-#navbar li.current a, #navbar a:hover{
-  color:#56a79a;
-  border-bottom: 3px solid #56a79a;
-  padding-bottom:3px;
-}
-
-/* SHOWCASE */
-#showcase{
-  background:url('../images/showcase.jpg') no-repeat center center;
-  border-bottom:1px solid #56a79a;
-  margin-bottom:30px;
-}
-
-#showcase .row{
-  height:600px;
-}
-
-#showcase h1{
-  font-size:50px;
-  margin:0;
-  padding-bottom:20px;
-}
-
-#showcase p{
-  color:#ccc;
-  margin:0;
-}
-
-#showcase .showcase-content{
-  background:#333;
-  color:#fff;
-  border-radius:90px;
-  padding:40px;
-  opacity:0.9;
-}
-
-/* FEATURES */
-#features h2{
-  font-size:35px;
-  margin:0;
-  padding-bottom:10px;
-}
-
-#features p{
-  color:#888;
-  margin:0;
-  margin-bottom:40px;
-}
-
-#features .fa{
-  font-size:60px;
-  color:#56a79a;
-}
-
-/* INFO */
-#info{
-  background:#333 url('../images/info-bg.jpg') no-repeat;
-  color:#fff;
-}
-
-#info h2{
-  font-size:35px;
-  margin:0;
-  padding-bottom:10px;
-}
-
-#info ul{
-  list-style:none;
-  padding:0;
-}
-
-#info li{
-  line-height:2em;
-  font-size:20px;
-}
-
-/* COMPANY */
-#company{
-  background:#333;
-  color:#fff;
-  padding:10px 0;
-}
-
-#company h4{
-  text-transform:uppercase;
-  margin-bottom:0;
-}
-
-#company ul{
-  padding:0;
-  list-style:none;
-  line-height:2em;
-}
-
-#company input[type="text"]{
-  padding:7px;
-}
-
-#company button{
-  background:#222;
-  color:#fff;
-  padding:10px;
-  border:0;
-}
-
-/* FOOTER */
-#main-footer{
-  background:#56a79a;
-  color:#fff;
-}
-
-/* PAGE */
-#page{
-  margin-bottom:40px;
-}
-
-/* SERVICES */
-.services ul li{
-  list-style:none;
-  padding:10px;
-}
-
-.services ul li:nth-child(odd){
-  background:#333;
-  color:#fff;
-}
-
-.services ul li:nth-child(even){
-  background:#56a79a;
-  color:#fff;
-}
-
-/* CONTACT */
-.contact form{
-  background:#333;
-  color:#fff;
-  padding:20px;
-}
-
-.contact form input[type="text"]{
-  width:50%;
-  height:30px;
-  margin-bottom:10px;
-}
-
-.contact form textarea{
-  width:50%;
-  height:100px;
-}
-
-.contact form button{
-  width:50%;
-  padding:10px 0;
-  border:0;
-  background:#222;
-  color:#fff;
-}
-
-.contact form label{
-  text-transform:uppercase;
-}
-
-/* MEDIA QUERIES */
-@media(max-width:800px){
-  #showcase h1{
-    font-size:30px;
-  }
-}
-
-@media(max-width:500px){
-  #showcase .showcase-content{
-    padding:40px 10px;
-  }
 }
 
 a:hover {
@@ -247,7 +34,7 @@ h6 {
   font-family: "Raleway", sans-serif;
 }
 h2{
-      color: #fff;
+      color: #07062f;
   font-weight: bold;
   font-size: 40px;
 }
@@ -643,19 +430,8 @@ h2{
 .navbar-mobile .dropdown>.dropdown-active {
   display: block;
 }
-/* MEDIA QUERIES */
-@media(max-width:800px){
-  #showcase h1{
-    font-size:30px;
-  }
-}
-
-@media(max-width:500px){
-  #showcase .showcase-content{
-    padding:40px 10px;
-  }
-}
-
+@media (max-width: 630px)
+<style>
 .button {
     margin-left: 15px;
 }
@@ -680,13 +456,11 @@ h2{
 # Hero Section
 --------------------------------------------------------------*/
 #hero {
-  width: 61em;
+  width: 71em;
   height: calc(115vh - 120px);
   background: url("explore-section1.jpg") top center;
   background-size: cover;
   position: relative;
-  top: 1em;
-  left: 0em;
 }
 
 #hero:before {
@@ -712,7 +486,6 @@ h2{
   color: #eee;
   margin-bottom: 30px;
   font-size: 24px;
-  background: transparent;
 }
 
 #hero .btn-get-started {
@@ -857,7 +630,7 @@ section {
   padding: 50px 30px;
   box-shadow: 0px 2px 15px rgb(255, 251, 246);
   transition: all ease-in-out 0.3s;
-  background: url("./EFSHexteriorWEB.jpg") top center;
+  background: ../url("EFSHexteriorWEB.jpg") top center;
   background-size: cover;
 }
 
