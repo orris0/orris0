@@ -258,7 +258,7 @@ br.clear { 	clear:both;
 footer { clear:both; color:maroon; text-align:center; 
 }
 
-	
+	/*
 #hnav { 
       width: 100%;   
         color: white;
@@ -267,6 +267,7 @@ footer { clear:both; color:maroon; text-align:center;
         line-height: 1.5;
 
 }
+        */
 article { float:right;
 	 position:relative; 
 	 top:-73em; 
