@@ -335,7 +335,7 @@ div#hnav ul  {
   top: -4em; 
   left: 19px;
 }
-  */
+  
 div#hnav ul li { display:block;float:left;margin:0;padding:0;
 }
 div#hnav ul li a { display:block; float:left;color:#874B46;
@@ -347,7 +347,7 @@ div#hnav ul li a:hover{ background:transparent url("images/bgHOVER.gif") no-repe
 div#hnav ul li a.currentul#main-menu li a.current:hover { color:#fff;
 background:transparent url("images/bgON.gif") no-repeat top right; 
 }   
-
+*/
 .parallel {
 position: relative;
 /* text color, paddings, etc. */
