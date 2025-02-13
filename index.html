@@ -234,28 +234,78 @@
     </head>
     
     <body>   
-        <div class="wrapper"> <!-- wrapper -->    
-            <div class="row" id="main-header">
-                <div class="col-12">
-                    <img src="images/flexy-logo.png">                                     
-                </div><!-- end col-12 -->                            
-            </div>	<!-- end-wrapper --> 
+        <div id="wrapper"> <!-- wrapper --> 
+            <div id="banner-wrapper">
+                <header>    
+                    <div id="header-inner">
+                        <a href="index.html" id="logo"></a>
+                            <nav>
+                                <a href="#" id="menu-icon"></a>
+                                    <ul>                          
+                                        <li><a href="index.html" class="current" title="">Home</a></li>
+                                        <li><a href="About.html" title="">about</a></li>
+                                        <li><a href="news.html" title="">News</a></li>
+                                        <li><a href="events.html" title="" class="current">Events</a></li>
+                                        <li><a href="volunteers.html" title="">Volunteers</a></li>
+                                        <li><a href="services.html" title="">Services</a></li>
+                                        <li><a href="membership.html" title="">Membership</a></li>
+                                        <li><a href="index.html" title="">Home</a></li>         
+                                </ul> <!-- end ul --> 
+                            </nav>
+                            <img src="images/flexy-logo.png">                                     
+                    </div><!-- end col-12 -->
+                </header> 
+                <!--- Slider Start -->
+                <script src="js/jquery.bxslider.min.js"></script><!--For Image Slider-->
+                <div class="slide-wrap">
+                    <section class="slider">
+                        <ul class="slider1">
+                            <li><img src="img/pics/desktop-1.png"></li>
+                            <li><img src="img/pics/desktop-2.png"></li>
+                            <li><img src="img/pics/desktop-3.png"></li>
+                        </ul>
+                    </section>
+                </div>
+
+        <script type="text/javascript">
+            $('.slider1').bxSlider({
+                mode: 'fade',
+                captions: false,
+                auto:true,
+                pager:false,
+                
+            });
+            $('.slider2').bxSlider({
+                pager:false,
+                captions: true,
+                maxSlides: 3,
+                minSlides: 1,
+                slideWidth: 230,
+                slideMargin: 10
+            });
+            $('.slider3').bxSlider({
+                mode: 'fade',
+                captions: false,
+                auto:true,
+                pager:false,
+                controls:false,
+            });
+        </script>
+            <!-- Slider End -->
+            </div>
+            <section class="one-third">
+                <div class="icon-wrap">
+                    <td><i class="fa-desktop"></i></td>
+                </div>
+                <h3>Web Design</h3>
+            </section>
+
+        </div>	<!-- end-wrapper --> 
+
                         
             <div class="row">
                  <div class="col-12">
-                    <nav role="navigation" id="hnav"><!-- navigation -->
-                        <input class="trigger" type="checkbox" id="mainNavButton">
-                        <label for="mainNavButton" onclick>Menu</label>
-                        <ul>                          
-                            <li><a href="about.html" title="">About Us</a></li>
-                            <li><a href="news.html" title="">News</a></li>
-                            <li><a href="events.html" title="" class="current">Events</a></li>
-                            <li><a href="volunteers.html" title="">Volunteers</a></li>
-                            <li><a href="services.html" title="">Services</a></li>
-                            <li><a href="membership.html" title="">Membership</a></li>
-                            <li><a href="index2.html" title="">Home</a></li>         
-                        </ul> <!-- end ul --> 
-                    </nav>                                                             
+                                                                                 
 			    </div> <!-- end-hnavigation -->
 
                 <div class="row">
@@ -1350,36 +1400,7 @@
                 <script src="../orris0/js/"></script> 
                 <!-- Template Main JS File --> 
                 <script src="../orris0/main.js"></script>
-                <!--- Slider Start -->
-		<script src="js/jquery.bxslider.min.js"></script><!--For Image Slider-->
-
-        <!--- ADD IMAGE SLIDER HTML HERE -->
-        
-                <script type="text/javascript">
-                    $('.slider1').bxSlider({
-                        mode: 'fade',
-                        captions: false,
-                        auto:true,
-                        pager:false,
-                        
-                    });
-                    $('.slider2').bxSlider({
-                        pager:false,
-                        captions: true,
-                        maxSlides: 3,
-                        minSlides: 1,
-                        slideWidth: 230,
-                        slideMargin: 10
-                    });
-                    $('.slider3').bxSlider({
-                        mode: 'fade',
-                        captions: false,
-                        auto:true,
-                        pager:false,
-                        controls:false,
-                    });
-                </script>
-        <!--- Slider End -->
+                
             </div><!-- end wrapper -->      
         </div><!-- end page -->        
     </body><!-- end body  -->
