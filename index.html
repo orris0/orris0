@@ -13,16 +13,6 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">  
         <meta http-equiv="REFRESH" content="240">
-        <title>Practical HTML5 Projects</title>
-        <link href="css/jquery.bxslider.css" rel="stylesheet" />
-	    
-        <link rel="stylesheet" href="https://m.w3newbie.com/you-tube.css">
-	    <link href="style.css" rel="stylesheet">
-	    <link href="css/font-awesome.min.css" rel="stylesheet"/>
-	    <link rel="shortcut icon" type="image/png" href="img/icons/favicon.png"/>
-	    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
-  	    <script src="https://code.jquery.com/jquery-3.1.1.js"></script>
-  	    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
         <!-- <meta details go here> -->
         <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW"></META>
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -107,13 +97,22 @@
         <meta property="og:image" content="https://example.com/rock3.jpg">
         
         <meta property="og:image:height" content="1000">
-
+        <title>Practical HTML5 Projects</title>
+        <link href="css/jquery.bxslider.css" rel="stylesheet">
+	    
+        <link rel="stylesheet" href="https://m.w3newbie.com/you-tube.css">
+	    <link href="style.css" rel="stylesheet">
+	    <link href="css/font-awesome.min.css" rel="stylesheet">
+	    <link rel="shortcut icon" type="image/png" href="img/icons/favicon.png">
+	    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+  	    <script src="https://code.jquery.com/jquery-3.1.1.js"></script>
+  	    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+        
         <link rel="stylesheet" href="../orris0/CSS/flexboxgrid.css">
 
         <link rel="stylesheet" href="../orris0/CSS/squaretabs.css">
         <link rel="stylesheet" href="./style.css">
         <link rel="stylesheet" href="./nav.css">
-        <link rel="stylesheet" href="./style.css">
 
         <!-- <link href="/Myjourneyonline/" rel="stylesheet"> -->
         
@@ -152,9 +151,7 @@
         <link href="../CSS/creative.min.css" rel="stylesheet">
         
         <link rel="stylesheet" href="../Myjourneyonline/../orris0/fonts/font-awesome.min.css">
-        <!--
-        <link rel="stylesheet" href="CSS/css/style.css">
-    -->
+        
         <!-- Favicon-->	            
         
         <link rel="apple-touch-icon" href="../orris0/apple-touch-icon-72x72-precomposed.png">
@@ -268,7 +265,7 @@
                 </div>
 		                
                         <br class="clear">
-                <!-- hero --
+                <!-- hero -->
                 
                 <section id="hero" class="d-flex align-items-center scrolled-offset">
                     <div class="container position-relative aos-init aos-animate" data-aos="fade-up" data-aos-delay="500">                   
@@ -300,7 +297,7 @@
                         </div>
                     </div>                                       
                 </div>
-            -->
+            
                 <div class="row" style="background-color: #3c8886; padding: 5% 0 3%;">                    
                     <div class="col-12">                   
                         <img src="images/paper.png" width="915px">
@@ -1353,6 +1350,36 @@
                 <script src="../orris0/js/"></script> 
                 <!-- Template Main JS File --> 
                 <script src="../orris0/main.js"></script>
+                <!--- Slider Start -->
+		<script src="js/jquery.bxslider.min.js"></script><!--For Image Slider-->
+
+        <!--- ADD IMAGE SLIDER HTML HERE -->
+        
+                <script type="text/javascript">
+                    $('.slider1').bxSlider({
+                        mode: 'fade',
+                        captions: false,
+                        auto:true,
+                        pager:false,
+                        
+                    });
+                    $('.slider2').bxSlider({
+                        pager:false,
+                        captions: true,
+                        maxSlides: 3,
+                        minSlides: 1,
+                        slideWidth: 230,
+                        slideMargin: 10
+                    });
+                    $('.slider3').bxSlider({
+                        mode: 'fade',
+                        captions: false,
+                        auto:true,
+                        pager:false,
+                        controls:false,
+                    });
+                </script>
+        <!--- Slider End -->
             </div><!-- end wrapper -->      
         </div><!-- end page -->        
     </body><!-- end body  -->
