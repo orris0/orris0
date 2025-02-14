@@ -93,7 +93,7 @@ nav ul  li {
    
 nav ul  li a { 
 	display:block; 
-	float:left;
+	float:center;
 	color:#874B46;
     text-decoration:none;
 	padding:12px 20px 0 20px;
