@@ -81,15 +81,15 @@ br .clear {	clear:both;
 /*set images to have no borders*/
 img { 	border:0;
 }
-/*set far right column for ads*/
+/*set far right column for ads*
 #rightcol { width:150px; float:right; text-align:center;margin-top: -190px;	
 }
 #rightcol p.advert {font-size:small; margin-top: 90px;
 } 
-/*set middle column for main content*/
+/*set middle column for main content*
 #midcol { margin-left:135px; margin-right:155px;
 }
-/*set gallery block position*/ 
+/*set gallery block position* 
 #gallery-block { position:relative; left: 20%; top:-195px; 
 }
 /*set footer*/
