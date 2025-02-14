@@ -166,3 +166,5 @@ margin: -25px 0 0 0; padding: 0px; padding-left: 10px; z-index: 1; }
  /*hovering over the active tab shows navy text*/
 	#navtwo a.active:hover { background: #cfecf5; color: navy; 
 	}
+
+	/* end turquoise-tabs */
