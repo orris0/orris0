@@ -31,6 +31,16 @@ html, body {
 img {
 	max-width: 100%;
 }
+
+h2.dark {
+	color:#34495e;
+}
+
+h2 {
+	font-size:300 2em/1 'Railway', sans-serif;
+	color:#fff;
+	padding: 2%;
+}
  
 /* turquise tabs *
 
