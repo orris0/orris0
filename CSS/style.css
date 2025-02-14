@@ -1,3 +1,12 @@
+@import 'https://fonts.googleapis.com/css?family=Alegreya+Sans';
+
+* {
+	margin: 0;
+	border: 0;
+	padding: 0;
+}
+
+
 body{
   font-family:'Open-sans', sans-serif;
   font-size:17px;
