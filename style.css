@@ -90,7 +90,7 @@ nav ul  li {
 	margin:0;
 	padding:0;
 }
-    
+  */  
 nav ul  li a { 
 	display:block; 
 	float:left;
@@ -102,7 +102,7 @@ nav ul  li a {
     }
 nav ul  li a:hover{ background:transparent url("images/bgHOVER.gif") no-repeat top right; 
 }
-*/
+
 nav ul  li a.current,ul#main-menu li a.current:hover { color:#fff;
 background:transparent url("images/bgON.gif") no-repeat top right; 
 }
