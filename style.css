@@ -1,9 +1,18 @@
-@import 'https://fonts.googleapis.com/css?family=Alegreya+Sans';
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400');
+@import url('https://fonts.googleapis.com/css?family=Railway:300');
 
 * {
 	margin: 0;
 	border: 0;
 	padding: 0;
+}
+
+html, body {
+	height: 100%;
+	background:fff;
+	text-align: center;
+	font-size: 1.5em/1 'Open Sans' sans-serif;
+	color:white;
 }
  
 /* turquise tabs *
