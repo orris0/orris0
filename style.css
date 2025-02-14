@@ -74,7 +74,7 @@ nav ul  {
     display:block;
     height:36px;
     text-transform:uppercase;
-    align-items: center;
+    text-align: center;
     font-size:12px;
     font-weight:bold;
     background:url('images/bgOFF.gif') repeat-x left top;
