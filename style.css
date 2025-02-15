@@ -83,13 +83,13 @@ nav ul  {
     height:36px;
     text-transform:uppercase;
     text-align: center;
-    font-size:12px;
+    font-size:100%;
     font-weight:bold;
     background:url('images/bgOFF.gif') repeat-x left top;
     font-family:Helvetica,Arial,Verdana,sans-serif;
     border-bottom:4px solid #336666; 
     border-top:1px solid #C0E2D4;
-    position:relative;	top: -70em; left: 0;
+    position:relative;	top: -95em; left: 0;
     }
 	
 nav ul  li { 
@@ -105,7 +105,7 @@ nav ul  li a {
 	color:#874B46;
     text-decoration:none;
 	padding:12px 20px 0 20px;
-	height:24px;
+	height:31px;
     background:transparent url("images/bgDIVIDER.gif") no-repeat top right; 
     }
 nav ul  li a:hover{ background:transparent url("images/bgHOVER.gif") no-repeat top right; 
