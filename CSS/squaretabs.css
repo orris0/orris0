@@ -83,22 +83,22 @@ text-align:center; padding-top:2.1875em; margin-bottom:-0.625em; height: 5.875em
 	nav#hnav { position:relative; top:-42.5625em; color:navy; border-bottom: 1px solid black;
 		margin: -1.5625em 0 0 0; padding: 0em; padding-left: 0.625em; z-index: 1; }
 /* use display:inline to remove IE6 double margin bug*/
-	nav li { display: inline; overflow: hidden; list-style-type: none; 
+	#hnav li { display: inline; overflow: hidden; list-style-type: none; 
 	}
 /*set tab colour*/
-	nav a, a.active { color: navy; background: #81d9f6; font: bold 1em "Trebuchet MS", Arial, sans-serif;
+#hnav a, a.active { color: navy; background: #81d9f6; font: bold 1em "Trebuchet MS", Arial, sans-serif;
 		border: 1px solid black; padding: 0.125em 0.313em 0em 0.313em; margin: 0; text-decoration: none; 
 		}
  /*make a 3px wide bottom border on tab the same colour as the page*/  
-	nav a.active { background: #cfecf5; color:navy; border-bottom: 0.1875 solid #cfecf5; 
+ #hnav a.active { background: #cfecf5; color:navy; border-bottom: 0.1875 solid #cfecf5; 
 	}
   /*hovering over a non-active tab shows an aqua tab*/
-	nav a:hover { 	background: aqua; 
+	#hnav a:hover { 	background: aqua; 
 	}
- 	nav a:visited { color: navy; 
+  #hnav a:visited { color: navy; 
 	}
  /*hovering over the active tab shows navy text*/
-	nav a.active:hover { background: #cfecf5; color: navy; 
+ #hnav a.active:hover { background: #cfecf5; color: navy; 
 	}
 /*set the position of the content to butt up to the menu tabs*/ 
 	div#content {margin-top:0; font : 0.9em/1.3em "bitstream vera sans", verdana, sans-serif;
