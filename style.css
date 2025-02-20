@@ -75,7 +75,7 @@ h2 {
 	#hnav ul li { display:block;float:left;margin:0;padding:0;
 	}
 	#hnav ul li a { display:block; float:left;color:#874B46; text-decoration:none; 
-	padding:12px 20px 0 20px;height:24px; 
+	padding:12px 20px 0 20px;height:34em; 
 	background:transparent url("images/bgDIVIDER.gif") no-repeat top right;
 	}
 	#hnav ul li a:hover{ background:transparent url("images/bgHOVER.gif") no-repeat top right;
