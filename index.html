@@ -245,134 +245,120 @@
                         <div data-role="header" class="header first" id="container" id="header" class="d-flex align-items-center fixed-top"> 
                             <img src="images/flexy-logo.png"  id="logo"></a>                                      	    	                               
                         </div>
-                        <!-- <br class="clear">
-                        <br class="clear"> -->                                          
+                            <!--- Slider Start -->
+                        <script src="js/jquery.bxslider.min.js"></script><!--For Image Slider-->
+                        <div class="slide-wrap">
+                            <section class="slider">
+                                <ul class="slider1">
+                                    <li><img src="img/pics/desktop-1.png"></li>
+                                    <li><img src="img/pics/desktop-2.png"></li>
+                                    <li><img src="img/pics/desktop-3.png"></li>
+                                    <li><img src="img/pics/desktop-4.png"></li>
+                                    <li><img src="imgages/13254472_10204294975694373_20682880527887189_n (1).jpg"></li>
+                                    <li><img src="images/IMG_20220308_095421.jpg"></li>
+                                </ul>
+                            </section>
+                        </div>
+                        
+                        <script type="text/javascript">
+                            $('.slider1').bxSlider({
+                                mode: 'fade',
+                                captions: false,
+                                auto:true,
+                                pager:false,               
+                            });
+
+                            $('.slider2').bxSlider({
+                                pager:false,
+                                captions: true,
+                                maxSlides: 3,
+                                minSlides: 1,
+                                slideWidth: 230,
+                                slideMargin: 10
+                            });
+                            
+                            $('.slider3').bxSlider({
+                                mode: 'fade',
+                                captions: false,
+                                auto:true,
+                                pager:false,
+                                controls:false,
+                            });
+                        
+                            $('.slider4').bxSlider({
+                                mode: 'fade',
+                                captions: false,
+                                auto:true,
+                                pager:false,
+                            });
+                        
+                            $('.slider5').bxSlider({
+                                pager:false,
+                                captions: true,
+                                maxSlides: 3,
+                                minSlides: 1,
+                                slideWidth: 230,
+                                slideMargin: 10
+                            });
+                        
+                            $('.slider6').bxSlider({
+                                mode: 'fade',
+                                captions: false,
+                                auto:true,
+                                pager:false,
+                                controls:false,
+                            });
                     
-                    <!--- Slider Start -->
-                    <script src="js/jquery.bxslider.min.js"></script><!--For Image Slider-->
-                    <div class="slide-wrap">
-                        <section class="slider">
-                            <ul class="slider1">
-                                <li><img src="img/pics/desktop-1.png"></li>
-                                <li><img src="img/pics/desktop-2.png"></li>
-                                <li><img src="img/pics/desktop-3.png"></li>
-                                <li><img src="img/pics/desktop-4.png"></li>
-                                <li><img src="imgages/13254472_10204294975694373_20682880527887189_n (1).jpg"></li>
-                                <li><img src="images/IMG_20220308_095421.jpg"></li>
-                            </ul>
+                        </script><!-- Slider End -->
+                        
+                        <!-- start three column section -->
+                        
+                        <section class="one-third">                   
+                            <div class="icon-wrap">                       
+                                <td><i class="fa fa-desktop"></i></td>                   
+                            </div>
+                            <h3>Web Design</h3>                                      
                         </section>
+                
+                        <section class="one-third">
+                            <div class="icon-wrap">             
+                                <td><i class="fa fa-pencil-square-o"></i></td>
+                            </div>
+                            <h3>Digital Graphics</h3>
+                        </section>
+                
+                        <section class="one-third">
+                            <div class="icon-wrap">
+                                <td><i class="fa file-code-o"></i></td>
+                            </div>
+                            <h3>Development</h3>
+                        </section>
+                        <!-- end three column section -->
+                        <section class="left-col">
+                    
+                        <p>
+                   
+                            We create strategies based on the outcomes you expect to see for your company.
+                    
+                            The process for developing award-winning brands and campaigns begins by looking at
+                    
+                            the big picture. Every effort that goes into development and production of a project
+                    
+                            should be made with the end goal, or rather, the big picture in mind.
+                   
+                        </p>
                     </div>
-                    <script type="text/javascript">
-                        $('.slider1').bxSlider({
-                            mode: 'fade',
-                            captions: false,
-                            auto:true,
-                            pager:false,
-                
-                        });
-                        $('.slider2').bxSlider({
-                            pager:false,
-                            captions: true,
-                            maxSlides: 3,
-                            minSlides: 1,
-                            slideWidth: 230,
-                            slideMargin: 10
-                        });
-                        $('.slider3').bxSlider({
-                            mode: 'fade',
-                            captions: false,
-                            auto:true,
-                            pager:false,
-                            controls:false,
-                        });
-                        $('.slider4').bxSlider({
-                            mode: 'fade',
-                            captions: false,
-                            auto:true,
-                            pager:false,
-                
-                        });
-                        $('.slider5').bxSlider({
-                            pager:false,
-                            captions: true,
-                            maxSlides: 3,
-                            minSlides: 1,
-                            slideWidth: 230,
-                            slideMargin: 10
-                        });
-                        $('.slider6').bxSlider({
-                            mode: 'fade',
-                            captions: false,
-                            auto:true,
-                            pager:false,
-                            controls:false,
-                        });
-                    </script>
-                    <!-- Slider End -->
-                
-                    <!-- start three column section -->
-                    <section class="one-third">
-                    
-                        <div class="icon-wrap">
-                        
-                            <td><i class="fa fa-desktop"></i></td>
-                    
-                        </div>
-                    
-                        <h3>Web Design</h3>
-                
-                    </section>
-                
-                    <section class="one-third">
-                    
-                        <div class="icon-wrap">
-                        
-                            <td><i class="fa fa-pencil-square-o"></i></td>
-                    
-                        </div>
-                    
-                        <h3>Digital Graphics</h3>
-                
-                    </section>
-                
-                    <section class="one-third">
-                    
-                        <div class="icon-wrap">
-                      
-                            <td><i class="fa file-code-o"></i></td>
+                </div>
+            </section>
+                    <!--
+                    <section class="sidebar">
                    
-                        </div>
-                 
-                        <h3>Development</h3>
-               
-                    </section>
-               
-                    <!-- end three column section -->
-               
-                <section class="left-col">
-                    
-                    <p>
-                   
-                        We create strategies based on the outcomes you expect to see for your company.
-                    
-                        The process for developing award-winning brands and campaigns begins by looking at
-                    
-                        the big picture. Every effort that goes into development and production of a project
-                    
-                        should be made with the end goal, or rather, the big picture in mind.
-                   
-                    </p>
-                
-                </section>
-                <!--
-                <section class="sidebar">
-                   
-                    <img src="images/IMG_20220308_095421.jpg">
+                        <img src="images/IMG_20220308_095421.jpg">
 
                 
-                </section> 
-            --> </div>
-            </section> <!-- End Hero -->             
+                    </section> 
+            -->     </div>
+                </section> <!-- End Hero -->             
         
             <div class="row">
                 <div class="col-12">
@@ -403,9 +389,8 @@
                 <div class="col-12" style="padding: 2%;">
                      <div id="banner">
                         <div id="banner-wrapper">            
-                        <h2 class="dark">
-                            Practical HTML5 Projects for Fun and Profit                                                     <!--<a href="./creating-a-website.html" class="btn-get-started scrollto">get started</a> -->                                  
-                        </h2>		               
+                            <h2 class="dark">Practical HTML5 Projects for Fun and Profit</h2>                                                     <!--<a href="./creating-a-website.html" class="btn-get-started scrollto">get started</a> -->                                  		               
+                        </div>
                     </div>
                 </div>
             </div>
