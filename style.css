@@ -27,12 +27,12 @@ div.wrapper {
     background-color: #f5f5f5;
 	height: 100%;
 }
-
+/*
 .header {
 	background-color: #afded4;
 }
-
-#header {
+*/
+div#container.header.first {
 	background-color: #afded4;
 }
 /*
