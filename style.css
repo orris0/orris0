@@ -40,6 +40,8 @@ div.wrapper {
 */
 div#container.header.first {
 	background-color: #afded4;
+	width:48.75em; 
+	margin:-0.625em auto 0 auto;
 }
 /*
 div.row {
