@@ -71,7 +71,7 @@ h2 {
 	margin:auto; 
 	display:block;
 	height:36px;
-	width:79em;
+	width:65em;
 	text-transform:uppercase; 
 	font-size:12px; 
 	font-weight:bold; 
@@ -81,7 +81,7 @@ h2 {
 	border-top:1px solid #C0E2D4; 
 	position:relative; 
 	top: -132em; 
-	left: 3.5em;
+	left: 0.5em;
 	}
 	#hnav ul li { display:block;float:left;margin:0;padding:0;
 	}
