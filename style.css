@@ -54,9 +54,7 @@ div.row {
 
 }
 
-section #hero {
 
-}
 
 div.col-12 {
 
@@ -299,13 +297,12 @@ margin: -25px 0 0 0; padding: 0px; padding-left: 10px; z-index: 1; }
 
 	html, body, h1, h2, h3, h4, h5, h6, p, ol, ul, li { padding: 0; margin: 0;
 	}
+
 	header, footer, section, article, nav { display:block;
 	}
+
 	/*set images to have no borders*/
 	img {   border:0;
-	}
-	/*add display attributes for the semantic tags*/
-	header, footer, section, article, nav { display:block; 
 	}
 	
 	/*SET FONTS*/
@@ -1450,7 +1447,9 @@ span.small { font-size:small;
 }
 
 
-#main-header, footer, section, article, nav { display:block; }
+#main-header, footer, section, article, nav { display:block; 
+}
+
 #main-header {margin-top:1em; height:9.75em; width:48.75em; background-image:url('../images/showcase.jpg'); background-position: center; background-repeat:no-repeat; border-bottom:0; clip-path:polygon(20px 0, calc(100% - 20px) 0, 100% 20px, 
   100% calc(100% - 20px), calc(100% - 20px) 100%,
   20px 100%, 0 calc(100% - 20px), 0 20px);
@@ -1490,8 +1489,7 @@ div.menu-bar { position: relative; top: 0; left: 0;
 /* Set styles to equalise browser rendition*/
 html, body, h1, h2, h3, h4, h5, h6, p, ol, ul, li {  padding: 0; margin: 0; 
 }
-#main-header, footer, section, article, nav { display:block; 
-}
+
 body {text-align:center; margin: 1.25em; background: #bee8ff; font: medium arial; 
 }
 #container-1 {width:48.75em; margin:-0.625em auto 0 auto; 
