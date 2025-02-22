@@ -1448,7 +1448,7 @@ img:hover{
 /*SET FONTS*/
 span.small { font-size:small;
 }
-.wrapper{ position: relative; top: 4em; left: 0; width: 60em; margin: auto; text-align: center;}
+
 
 #main-header, footer, section, article, nav { display:block; }
 #main-header {margin-top:1em; height:9.75em; width:48.75em; background-image:url('../images/showcase.jpg'); background-position: center; background-repeat:no-repeat; border-bottom:0; clip-path:polygon(20px 0, calc(100% - 20px) 0, 100% 20px, 
