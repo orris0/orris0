@@ -10,9 +10,6 @@
 html, body, h1, h2, h3, h4, h5, h6, p, ol, ul, li {  padding: 0; margin: 0; 
 }
 
-header, footer, section, article, nav { display:block; 
-}
-
 html, body {
 	height: 100%;
 	background:fff;
@@ -109,10 +106,6 @@ h2 {
  
 /* turquise tabs *
 
-html, body, h1, h2, h3, h4, h5, h6, p, ol, ul, li {  padding: 0; margin: 0; 
-}
-header, footer, section, article, nav { display:block; 
-}
 body { background-color:#bbFFaa; color:black; font-family:Arial;
 }
 #container { width:97%; margin:auto; min-width:800px; max-width:1100px; 
@@ -295,11 +288,7 @@ margin: -25px 0 0 0; padding: 0px; padding-left: 10px; z-index: 1; }
 
 	/* start flexgrid css */
 
-	html, body, h1, h2, h3, h4, h5, h6, p, ol, ul, li { padding: 0; margin: 0;
-	}
 
-	header, footer, section, article, nav { display:block;
-	}
 
 	/*set images to have no borders*/
 	img {   border:0;
@@ -1425,9 +1414,7 @@ margin: -25px 0 0 0; padding: 0px; padding-left: 10px; z-index: 1; }
 /*equalise for various browsers and change #header to header*/
 div body #main-header #content { margin:0; padding:0; border:0; 
 }
-/*set images to have no borders*/
-img {   border:0;
-}
+
 img {
   clip-path: polygon(50% 0, 100% 50%,
              50% 100%, 0 50%);
@@ -1486,9 +1473,7 @@ h1 { font-size:300%; color :white; position: relative; left:90px; top: 55px; wid
 div.menu-bar { position: relative; top: 0; left: 0;
 
 }
-/* Set styles to equalise browser rendition*/
-html, body, h1, h2, h3, h4, h5, h6, p, ol, ul, li {  padding: 0; margin: 0; 
-}
+
 
 body {text-align:center; margin: 1.25em; background: #bee8ff; font: medium arial; 
 }
@@ -3132,15 +3117,8 @@ ul.talks > li {
 		.talks .comment a {
 				text-decoration: underline;
 		}
+				*/
 div body #main-header #content { margin:0; padding:0; border:0; 
-}
-/*set images to have no borders*/
-img {   border:0;
-}
-img {
-  clip-path: polygon(50% 0, 100% 50%,
-             50% 100%, 0 50%);
-             transition: 1s clip-path;
 }
 
 .clear { clear:both;
@@ -3154,11 +3132,8 @@ img:hover{
 /*SET FONTS*/
 span.small { font-size:small;
 }
-.wrapper{ position: relative; top: 4em; left: 0; width: 60em; margin: auto; text-align: center;}
-/*
-div#container {width:48.75em; margin:-0.625em auto 0 auto; }
-*/
-#main-header, footer, section, article, nav { display:block; }
+
+
 #main-header {margin-top:1em; height:9.75em; width:48.75em; background-image:url('../images/showcase.jpg'); background-position: center; background-repeat:no-repeat; border-bottom:0; clip-path:polygon(20px 0, calc(100% - 20px) 0, 100% 20px, 
   100% calc(100% - 20px), calc(100% - 20px) 100%,
   20px 100%, 0 calc(100% - 20px), 0 20px);
@@ -3195,11 +3170,8 @@ h1 { font-size:300%; color :white; position: relative; left:90px; top: 55px; wid
 div.menu-bar { position: relative; top: 0; left: 0;
 
 }
-/* Set styles to equalise browser rendition*/
-html, body, h1, h2, h3, h4, h5, h6, p, ol, ul, li {  padding: 0; margin: 0; 
-}
-#main-header, footer, section, article, nav { display:block; 
-}
+
+
 body {text-align:center; margin: 1.25em; background: #bee8ff; font: medium arial; 
 }
 #container-1 {width:48.75em; margin:-0.625em auto 0 auto; 
