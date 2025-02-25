@@ -69,8 +69,7 @@ h2 {
  
 /* turquise tabs *
 
-body { background-color:#bbFFaa; color:black; font-family:Arial;
-}
+
 #container { width:97%; margin:auto; min-width:800px; max-width:1100px; 
 }
 /*
@@ -260,9 +259,7 @@ margin: -25px 0 0 0; padding: 0px; padding-left: 10px; z-index: 1; }
 	/*SET FONTS*/
 	span.small { font-size:small;
 	}
-	body { background-color:#bbFFaa; color:black; font-family:Arial;}      
-	body {text-align:center; margin: 20px; background: #bee8ff; font: medium arial;
-	}
+	
 	div#container {width:960px; margin:-10px auto 0 auto;
 	}
 	
@@ -1375,7 +1372,7 @@ margin: -25px 0 0 0; padding: 0px; padding-left: 10px; z-index: 1; }
   margin: 0; padding: 0; font-weight: normal; }
 */
 /*equalise for various browsers and change #header to header*/
-div body #main-header #content { margin:0; padding:0; border:0; 
+div #main-header #content { margin:0; padding:0; border:0; 
 }
 
 img {
@@ -1434,12 +1431,8 @@ h1 { font-size:300%; color :white; position: relative; left:90px; top: 55px; wid
 }
 
 div.menu-bar { position: relative; top: 0; left: 0;
-
 }
 
-
-body {text-align:center; margin: 1.25em; background: #bee8ff; font: medium arial; 
-}
 #container-1 {width:48.75em; margin:-0.625em auto 0 auto; 
 }
 /*
@@ -1572,9 +1565,6 @@ nav a.active:hover { background: #cfecf5; color: navy;
 	z-index: 2;
 }
 
-
-body { background:#FFF url(images/green-grad.jpg) repeat-x; margin:auto;
-}
 /*add display attributes for the semantic tags*/
 
 
@@ -3081,7 +3071,7 @@ ul.talks > li {
 				text-decoration: underline;
 		}
 				*/
-div body #main-header #content { margin:0; padding:0; border:0; 
+div #main-header #content { margin:0; padding:0; border:0; 
 }
 
 .clear { clear:both;
@@ -3134,9 +3124,6 @@ div.menu-bar { position: relative; top: 0; left: 0;
 
 }
 
-
-body {text-align:center; margin: 1.25em; background: #bee8ff; font: medium arial; 
-}
 #container-1 {width:48.75em; margin:-0.625em auto 0 auto; 
 }
 /*
