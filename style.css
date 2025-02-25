@@ -26,6 +26,8 @@ body{
 	padding:0;
   }
 
+ div.wrapper{ position: relative; top: 1em; left: 0; width: 950px; margin: auto; text-align: center;}
+
 div#container.header.first {
 	background-color: #afded4;
 	width:48.75em; 
@@ -277,7 +279,7 @@ margin: -25px 0 0 0; padding: 0px; padding-left: 10px; z-index: 1; }
 	}
 	div#container {width:960px; margin:-10px auto 0 auto;
 	}
-	.wrapper{ position: relative; top: 1em; left: 0; width: 950px; margin: auto; text-align: center;}
+	
 	header {margin-top:1em; height:156px; width:100%; background-image:url('../images/showcase.jpg'); background-position: top; background-repeat:no-repeat; border-bottom:0;
 	}
 	#banner h1 {text-shadow: 0.1em 0.1em 0.2em blue; font-family:Arial; font-size:125%; color:white; font-weight:normal; text-align:center; padding-top:2em; margin-bottom:-10px; margin:auto; 
