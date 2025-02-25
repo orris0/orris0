@@ -10,21 +10,7 @@
 html, body, h1, h2, h3, h4, h5, h6, p, ol, ul, li {  padding: 0; margin: 0; 
 }
 
-html, body {
-	height: 100%;
-	background:fff;
-	text-align: center;
-	font-size: 1.5em/1 'Open Sans' sans-serif;
-	color:white;
-}
-
-body{
-	font-family:'Open-sans', sans-serif;
-	font-size:17px;
-	line-height:1.5em;
-	margin-top:2em;
-	padding:0;
-  }
+body { background:#FFF url(images/green-grad.jpg) repeat-x; margin:auto;}
 
  div.wrapper{ position: relative; top: 1em; left: 0; width: 950px; margin: auto; text-align: center;}
 
@@ -3235,10 +3221,6 @@ nav a.active:hover { background: #cfecf5; color: navy;
 	z-index: 2;
 }
 
-
-body { background:#FFF url(images/green-grad.jpg) repeat-x; margin:auto;
-}
-/*add display attributes for the semantic tags*/
 
 
 
