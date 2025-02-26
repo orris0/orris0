@@ -50,6 +50,30 @@ body { background:#FFF url(images/green-grad.jpg) repeat-x; margin:auto;}
 	margin-top: 0px;
   }
 
+  div #main-header #content { margin:0; padding:0; border:0; 
+  }
+  
+  .clear { clear:both;
+  }
+  
+  img:hover{
+		clip-path: polygon(0% 0, 100% 0%,
+  100% 100%, 0 100%);		
+  }
+  
+  /*SET FONTS*/
+  span.small { font-size:small;
+  }
+  
+  
+  #main-header {margin-top:1em; height:9.75em; width:48.75em; background-image:url('../images/showcase.jpg'); background-position: center; background-repeat:no-repeat; border-bottom:0; clip-path:polygon(20px 0, calc(100% - 20px) 0, 100% 20px, 
+	100% calc(100% - 20px), calc(100% - 20px) 100%,
+	20px 100%, 0 calc(100% - 20px), 0 20px);
+  }
+  
+  h1 { font-size:300%; color :white; position: relative; left:90px; top: 55px; width:480px; 
+  }
+
 div#container #header.first {
 	background-color: #afded4;
 	width:70.95em; 
@@ -324,7 +348,7 @@ margin: -25px 0 0 0; padding: 0px; padding-left: 10px; z-index: 1; }
 	/*SET FONTS*/
 	span.small { font-size:small;
 	}
-	
+	/*
 	header {margin-top:1em; height:156px; width:100%; background-image:url('../images/showcase.jpg'); background-position: top; background-repeat:no-repeat; border-bottom:0;
 	}
 	#banner h1 {text-shadow: 0.1em 0.1em 0.2em blue; font-family:Arial; font-size:125%; color:white; font-weight:normal; text-align:center; padding-top:2em; margin-bottom:-10px; margin:auto; 
@@ -3108,29 +3132,7 @@ ul.talks > li {
 				text-decoration: underline;
 		}
 				*/
-div #main-header #content { margin:0; padding:0; border:0; 
-}
 
-.clear { clear:both;
-}
-
-img:hover{
-      clip-path: polygon(0% 0, 100% 0%,
-100% 100%, 0 100%);		
-}
-
-/*SET FONTS*/
-span.small { font-size:small;
-}
-
-
-#main-header {margin-top:1em; height:9.75em; width:48.75em; background-image:url('../images/showcase.jpg'); background-position: center; background-repeat:no-repeat; border-bottom:0; clip-path:polygon(20px 0, calc(100% - 20px) 0, 100% 20px, 
-  100% calc(100% - 20px), calc(100% - 20px) 100%,
-  20px 100%, 0 calc(100% - 20px), 0 20px);
-}
-
-h1 { font-size:300%; color :white; position: relative; left:90px; top: 55px; width:480px; 
-}
 
 #banner h1 { 
     text-shadow: 0.1em 0.1em 0.2em blue;        
