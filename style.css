@@ -14,6 +14,42 @@ body { background:#FFF url(images/green-grad.jpg) repeat-x; margin:auto;}
 
  div.wrapper{ position: relative; top: 1em; left: 0; width: 950px; margin: auto; text-align: center;}
 
+/*--------------------------------------------------------------
+  # Header
+  --------------------------------------------------------------*/
+  #header-first {
+	background: rgba(25, 25, 25, 0.95);
+	transition: all 0.5s;
+	z-index: 997;
+	height: 70px;
+  }
+  
+  #header-first.fixed-top {
+	background: #07062f;
+  }
+  
+  #header-first .logo {
+	font-size: 30px;
+	margin: 0;
+	padding: 0;
+	line-height: 1;
+	font-weight: 700;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+  }
+  
+  #header .logo a {
+	color: #fff;
+  }
+  
+  #header .logo img {
+	max-height: 40px;
+  }
+  
+  .scrolled-offset {
+	margin-top: 0px;
+  }
+
 div#container.header.first {
 	background-color: #afded4;
 	width:70.95em; 
@@ -3822,41 +3858,7 @@ body {
 	color: #fff;
   }
   
-  /*--------------------------------------------------------------
-  # Header
-  --------------------------------------------------------------*/
-  #header {
-	background: rgba(25, 25, 25, 0.95);
-	transition: all 0.5s;
-	z-index: 997;
-	height: 70px;
-  }
   
-  #header.fixed-top {
-	background: #07062f;
-  }
-  
-  #header .logo {
-	font-size: 30px;
-	margin: 0;
-	padding: 0;
-	line-height: 1;
-	font-weight: 700;
-	letter-spacing: 2px;
-	text-transform: uppercase;
-  }
-  
-  #header .logo a {
-	color: #fff;
-  }
-  
-  #header .logo img {
-	max-height: 40px;
-  }
-  
-  .scrolled-offset {
-	margin-top: 0px;
-  }
   
   /*--------------------------------------------------------------
   # Navigation Menu
