@@ -50,7 +50,7 @@ body { background:#FFF url(images/green-grad.jpg) repeat-x; margin:auto;}
 	margin-top: 0px;
   }
 
-div#container.header.first {
+div#container.#header.first {
 	background-color: #afded4;
 	width:70.95em; 
 	margin:-0.625em auto 0 auto;
