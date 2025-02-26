@@ -16,7 +16,7 @@ body { background:#FFF url(images/green-grad.jpg) repeat-x; margin:auto;}
 
 div#container.header.first {
 	background-color: #afded4;
-	width:48.75em; 
+	width:70.95em; 
 	margin:-0.625em auto 0 auto;
 }
 
@@ -3973,9 +3973,7 @@ body {
 	}
   }
   
-  /**
-  * Mobile Navigation 
-  */
+  
   .mobile-nav-toggle {
 	color: #fff;
 	font-size: 28px;
@@ -4083,9 +4081,7 @@ body {
 	display: block;
   }
   @media (max-width: 630px)
-  <style>
-  .button {
-	  margin-left: 15px;
+ {
   }
   .button {
 	  position: relative;
