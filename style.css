@@ -4282,7 +4282,7 @@ body {
 	padding: 50px 30px;
 	box-shadow: 0px 2px 15px rgb(255, 251, 246);
 	transition: all ease-in-out 0.3s;
-	background: ../url("EFSHexteriorWEB.jpg") top center;
+	background: url("EFSHexteriorWEB.jpg") top center;
 	background-size: cover;
   }
   
