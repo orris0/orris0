@@ -16,7 +16,7 @@ span.small { font-size:small;
 body { background-color:#bbFFaa; color:black; font-family:Arial;}      
 body {text-align:center; margin: 20px; background: #bee8ff; font: medium arial;
 }
-div#container {width:60em; margin:-10px auto 0 auto;
+div#container.header.first {width:60em; margin:-10px auto 0 auto;
 }
 .wrapper{ position: relative; top: 0; left: 0; width: 59.375em; margin: auto; text-align: center;}
 header {margin-top:1em; height:156px; width:100%; background-image:url('../images/showcase.jpg'); background-position: top; background-repeat:no-repeat; border-bottom:0;
