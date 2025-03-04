@@ -191,7 +191,7 @@ h2 {
 nav#nav ul li { display:block;float:center;margin:0;padding:0;
 }
 nav#nav ul li a { display:block; float:center;color:#874B46;
-text-decoration:none;padding:12px 20px 0 20px;height:24px;
+text-decoration:none;text-align:center; height:24px;
 background:transparent url("images/bgDIVIDER.gif") no-repeat top right; 
 }
 nav#nav ul li a:hover{ background:transparent url("images/bgHOVER.gif") no-repeat top right; 
