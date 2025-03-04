@@ -171,7 +171,7 @@ h2 {
                 
   }
 
-  div#hnav ul  {
+  nav#nav ul  {
     
     padding:0;
     
@@ -189,15 +189,15 @@ h2 {
     top: 4.7em; 
     left: 0;
 }
-div#hnav ul li { display:block;float:left;margin:0;padding:0;
+nav#nav ul li { display:block;float:left;margin:0;padding:0;
 }
-div#hnav ul li a { display:block; float:left;color:#874B46;
+nav#nav ul li a { display:block; float:left;color:#874B46;
 text-decoration:none;padding:12px 20px 0 20px;height:24px;
 background:transparent url("images/bgDIVIDER.gif") no-repeat top right; 
 }
-div#hnav ul li a:hover{ background:transparent url("images/bgHOVER.gif") no-repeat top right; 
+nav#nav ul li a:hover{ background:transparent url("images/bgHOVER.gif") no-repeat top right; 
 }
-div#hnav ul li a.currentul#main-menu li a.current:hover { color:#fff;
+nav#nav ul li a.currentul#main-menu li a.current:hover { color:#fff;
 background:transparent url("images/bgON.gif") no-repeat top right; 
 }   
 
