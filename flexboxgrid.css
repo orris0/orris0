@@ -188,7 +188,7 @@ h2 {
     top: -6.3em; 
     left: 0;
 }
-nav#nav ul li { display:block;float:left;margin:0;padding:0;
+nav#nav ul li { display:block;float:center;margin:0;padding:0;
 }
 nav#nav ul li a { display:block; float:center;color:#874B46;
 text-decoration:none;padding:12px 20px 0 20px;height:24px;
