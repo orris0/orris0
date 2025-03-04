@@ -13,7 +13,7 @@ img {
              50% 100%, 0 50%);
              transition: 1s clip-path;
 }
-img#logo {
+img, #logo {
   text-align: left;
 }
 .clear { clear:both;
