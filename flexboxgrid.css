@@ -60,6 +60,10 @@ div#content {
   z-index: 2;
 }
 
+div.icon-wrap {
+  position: relative; top: 1em;
+}
+
 article { float:right; width:70%; background-color:#FF9966; margin-bottom:1em; text-align: center;
     border: 1px solid rgba(0, 0, 0, .1);
     background: #58a linear-gradient(#FF9966, #58a);
