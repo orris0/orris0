@@ -60,7 +60,7 @@ div#content {
   z-index: 2;
 }
 
-div.slide-wrap {
+div.container.position-relative.aos.init.aos-animate {
   position: relative; top: 1em;
 }
 
