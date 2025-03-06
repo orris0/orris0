@@ -33,7 +33,7 @@ nav ul { margin-left:0; border:0; width:115px;
 #midcol { margin-left:135px; margin-right:155px;
 }
 /*set gallery block position*/ 
-#gallery-block { position:relative; left: 1.875em; top:-8em; 
+#gallery-block { position:relative; left: 1.875em; top:-28em; 
 }
 /*set footer*/
 footer { 	clear:both; color:black; text-align:center; width:970px;
