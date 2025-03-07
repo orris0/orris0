@@ -7,7 +7,7 @@ html, body, h1, h2, h3, h4, h5, h6, p, ol, ul, li {  padding: 0; margin: 0;
 }
 body { background:#FFF url(images/green-grad.jpg) repeat-x; margin:auto; color:black; font-family:Arial;
 }
-.wrapper{ position: relative; top: 4em; left: 0; width: 60em; margin: auto;
+.wrapper{ position: relative; top: 0em; left: 0; width: 60em; margin: auto;
 }
 nav#nav ul  {
   padding:0;
