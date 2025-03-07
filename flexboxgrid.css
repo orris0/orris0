@@ -24,7 +24,7 @@ nav#nav ul  {
   border-bottom:4px solid #336666; border-top:1px solid #C0E2D4;
   position:relative;	
   top: -10.3em; 
-  left: -2em;
+  left: .9em;
 }
 nav#nav ul li { display:block;float:center;margin:0;padding:0;
 }
