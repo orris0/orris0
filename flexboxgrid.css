@@ -6,10 +6,10 @@ header, nav, footer, article, section { display:block;
 header {width:920px; height:160px; border:10px solid white ; margin:20px auto;
 }
 
-/* Set styles to equalise browser rendition*/
+/* Set styles to equalise browser rendition*
 html, body, h1, h2, h3, h4, h5, h6, p, ol, ul, li { padding: 0; margin: 0;
 }
-
+*/
 /*set images to have no borders*/
 img {   border:0;
 }
