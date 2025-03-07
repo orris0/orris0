@@ -3,7 +3,7 @@ html, body, h1, h2, h3, h4, h5, h6, p, ol, ul, li {  padding: 0; margin: 0;
 /*add display attributes for the semantic tags*/
 #header, footer, section, article, nav { display:block; 
 }
-#header {width:920px; height:160px; border:10px solid white ; margin:20px auto;
+#header {background-image: url("images/panew.jpg"); height: 920px; height:160px; border:10px solid white ; margin:20px auto;
 }
 body { background:#FFF url(images/green-grad.jpg) repeat-x; margin:auto; color:black; font-family:Arial;
 }
