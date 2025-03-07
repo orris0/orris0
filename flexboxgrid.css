@@ -59,10 +59,10 @@ header {margin-top:1em; height:156px; width:100%; background-image:url('../image
 }
 /*set the generic tab style--and move menu upwards so that it overlaps the header*/ 
 #hnav {
-  position:relative; top:3.625rem; color: navy; border-bottom: 1px solid black; margin: -25px 0 0 0; padding: 0px; padding-left: 3em; z-index: 1;}
+  position:relative; top:3.625rem; color: navy; border-bottom: 1px solid black; margin: -25px 0 0 0; padding: 0px; padding-left: 3em; z-index: 1;
+}
 /* use display:inline to remove IE6 double margin bug*/
-#hnav {
-  li { display: inline; overflow: hidden; list-style-type: none;
+#hnav li { display: inline; overflow: hidden; list-style-type: none;
 }
 /*set tab colour*/
 nav a a.active { color: navy; background: #81d9f6; font-family: Arial; border: 1px solid black; padding: 2px 5px 0px 5px; margin: 0; text-decoration: none; }
@@ -1124,4 +1124,3 @@ transform: skewX(45deg);
     -webkit-box-ordinal-group: 2;
     order: 1;
   }
-}
