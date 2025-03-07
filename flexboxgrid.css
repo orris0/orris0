@@ -9,12 +9,34 @@ body { background:#FFF url(images/green-grad.jpg) repeat-x; margin:auto; color:b
 }
 .wrapper{ position: relative; top: 4em; left: 0; width: 60em; margin: auto;
 }
-
-
-/* Set styles to equalise browser rendition*
-html, body, h1, h2, h3, h4, h5, h6, p, ol, ul, li { padding: 0; margin: 0;
+nav#nav ul  {
+  padding:0;
+  list-style-type:none; 
+  margin:auto; 
+  display:block;
+  height:3em;
+  text-align: left;
+  text-transform:uppercase;
+  font-size:12px;
+  font-weight:bold;
+  background:url('images/bgOFF.gif') repeat-x left top;
+  font-family:Helvetica,Arial,Verdana,sans-serif;
+  border-bottom:4px solid #336666; border-top:1px solid #C0E2D4;
+  position:relative;	
+  top: -10.3em; 
+  left: -2em;
 }
-*/
+nav#nav ul li { display:block;float:center;margin:0;padding:0;
+}
+nav#nav ul li a { display:block; float:center;color:#874B46;
+text-decoration:none;text-align:center; height:24px;
+background:transparent url("images/bgDIVIDER.gif") no-repeat top right; 
+}
+nav#nav ul li a:hover{ background:transparent url("images/bgHOVER.gif") no-repeat top right; 
+}
+nav#nav ul li a.currentul#main-menu li a.current:hover { color:#fff;
+background:transparent url("images/bgON.gif") no-repeat top right; 
+}
 /*set images to have no borders*/
 img {   border:0;
 }
@@ -186,34 +208,7 @@ h2 {
                 
   }
 
-  nav#nav ul  {
-    padding:0;
-    list-style-type:none; 
-    margin:auto; 
-    display:block;
-    height:3em;
-    text-align: left;
-    text-transform:uppercase;
-    font-size:12px;
-    font-weight:bold;
-    background:url('images/bgOFF.gif') repeat-x left top;
-    font-family:Helvetica,Arial,Verdana,sans-serif;
-    border-bottom:4px solid #336666; border-top:1px solid #C0E2D4;
-    position:relative;	
-    top: -10.3em; 
-    left: -2em;
-}
-nav#nav ul li { display:block;float:center;margin:0;padding:0;
-}
-nav#nav ul li a { display:block; float:center;color:#874B46;
-text-decoration:none;text-align:center; height:24px;
-background:transparent url("images/bgDIVIDER.gif") no-repeat top right; 
-}
-nav#nav ul li a:hover{ background:transparent url("images/bgHOVER.gif") no-repeat top right; 
-}
-nav#nav ul li a.currentul#main-menu li a.current:hover { color:#fff;
-background:transparent url("images/bgON.gif") no-repeat top right; 
-}   
+     
 
 .parallel {
 position: relative;
