@@ -16,6 +16,7 @@ nav#nav ul  {
   display:block;
   height:2.25em;
   text-align: left;
+  line-height: 1.5;
   text-transform:uppercase;
   font-size:12px;
   font-weight:bold;
