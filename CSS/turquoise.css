@@ -2,10 +2,13 @@ html, body, h1, h2, h3, h4, h5, h6, p, ol, ul, li {  padding: 0; margin: 0;
 }
 header, footer, section, article, nav { display:block; 
 }
+/*
 body { background-color:#bbFFaa; color:black; font-family:Arial;
 }
+*/
 #container { width:97%; margin:auto; min-width:50em; max-width:68.75em; 
 }
+/*
 body {text-align:center; line-height: 0.5; margin: 1.25em; background: #bee8ff; font: medium arial;
 }
 /*
