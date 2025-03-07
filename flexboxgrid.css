@@ -1,5 +1,6 @@
 body { background:#FFF url(images/green-grad.jpg) repeat-x; margin:auto;
 }
+/*add display attributes for the semantic tags*/
 header, nav, footer, article, section { display:block;
 }
 header {width:920px; height:160px; border:10px solid white ; margin:20px auto;
@@ -12,18 +13,17 @@ html, body, h1, h2, h3, h4, h5, h6, p, ol, ul, li { padding: 0; margin: 0;
 /*set images to have no borders*/
 img {   border:0;
 }
-/*add display attributes for the semantic tags*/
-header, footer, section, article, nav { display:block; 
-}
+
+
 
 /*SET FONTS*/
 span.small { font-size:small;
 }
 /*
 body { background-color:#bbFFaa; color:black; font-family:Arial;}      
-*/
+*
 body {text-align:center; line-height: 0.5; margin: 20px; background: #bee8ff; font: medium arial;
-}
+} */
 div#container.header.first {width:60em;/*margin:-10px auto 0 auto; */
 }
 .wrapper{ position: relative; top: 10em; left: 0; width: 59.375em; margin: auto; text-align: center;}
