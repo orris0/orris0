@@ -65,17 +65,17 @@ header {margin-top:1em; height:156px; width:100%; background-image:url('../image
 #hnav li { display: inline; overflow: hidden; list-style-type: none;
 }
 /*set tab colour*/
-nav a a.active { color: navy; background: #81d9f6; font-family: Arial; border: 1px solid black; padding: 2px 5px 0px 5px; margin: 0; text-decoration: none; }
+#hnav a a.active { color: navy; background: #81d9f6; font-family: Arial; border: 1px solid black; padding: 2px 5px 0px 5px; margin: 0; text-decoration: none; }
 /*make a 3px wide bottom border on tab the same colour as the page*/
-nav a.active { background: #cfecf5; color:navy; border-bottom: 3px solid #cfecf5;
+#hnav a.active { background: #cfecf5; color:navy; border-bottom: 3px solid #cfecf5;
 }
 /*hovering over a non-active tab shows an aqua tab*/
-nav a:hover { background: aqua;
+#hnav a:hover { background: aqua;
 }
-nav a:visited { color: navy;
+#hnav a:visited { color: navy;
 }
 /*hovering over the active tab shows navy text*/
-nav a.active:hover { background: #cfecf5; color: navy;
+#hnav a.active:hover { background: #cfecf5; color: navy;
 }
 /*set the position of the content to move it close up to the menu tabs*/
 div#content {
