@@ -27,7 +27,7 @@ nav#nav ul  {
 }
 nav#nav ul li { display:block;float:center;margin:0;padding:0;
 }
-nav#nav ul li a { display:block; float:center;color:#874B46;
+nav#nav ul li a { display:block; float:left;color:#874B46;
 text-decoration:none;text-align:center; height:24px;
 background:transparent url("images/bgDIVIDER.gif") no-repeat top right; 
 }
