@@ -31,6 +31,9 @@ body { background:#FFF url(images/green-grad.jpg) repeat-x; margin:auto; color:b
   line-height: 1.5;
   border-width: 10px;
   border-left-width: 0;
+  background: yellowgreen;
+  border: 10px solid #655;
+  outline: 15px solid deeppink;
 
 }
 .wrapper{ position: relative; top: 0em; left: 0; width: 60em; margin: auto;
