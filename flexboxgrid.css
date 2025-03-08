@@ -23,6 +23,33 @@ body { background:#FFF url(images/green-grad.jpg) repeat-x; margin:auto; color:b
 }
 .wrapper{ position: relative; top: 0em; left: 0; width: 60em; margin: auto;
 }
+
+hr {
+  height: .5em;
+  background: currentColor;
+  }
+
+input, select, button { font: inherit; }
+
+a { color: inherit; }
+
+.callout { position: relative; }
+.callout::before {
+content: "";
+position: absolute;
+top: -.4em; left: 1em;
+padding: .35em;
+background: inherit;
+border: inherit;
+border-right: 0;
+border-bottom: 0;
+transform: rotate(45deg);
+}
+
+img {
+  background-size: cover;
+}
+
 nav#nav ul  {
   padding:0;
   list-style-type:none; 
