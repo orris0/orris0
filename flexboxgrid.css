@@ -1,7 +1,19 @@
 html, body, h1, h2, h3, h4, h5, h6, p, ol, ul, li {  padding: 0; margin: 0; 
 }
 /*add display attributes for the semantic tags*/
-#header, footer, section, article, nav { display:block; 
+#header, footer, section, article, nav { display:block;
+  padding: .3em .8em;
+  border: 1px solid rgba(0,0,0,.1);
+  background: #58a linear-gradient(hsla(0,0%,100%,.2),
+  transparent);
+  border-radius: .2em;
+  box-shadow: 0 .05em .25em rgba(0,0,0,.5);
+  color: white;
+  text-shadow: 0 -.05em .05em rgba(0,0,0,.5);
+  font-size: 125%;
+  line-height: 1.5;
+  border-width: 10px;
+  border-left-width: 0; 
 }
 #header {background-image: url("images/panew.jpg"); height: 920px; height:160px; border:10px solid white ; margin:20px auto;
 }
