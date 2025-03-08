@@ -2,6 +2,9 @@ html, body, h1, h2, h3, h4, h5, h6, p, ol, ul, li {  padding: 0; margin: 0;
 }
 /*add display attributes for the semantic tags*/
 #header, footer, section, article, nav { display:block;
+   
+}
+#header {background-image: url("images/panew.jpg"); width: 920px; height:160px; border:10px solid white ; margin:20px auto;
   padding: .3em .8em;
   border: 1px solid rgba(0,0,0,.1);
   background: #58a linear-gradient(hsla(0,0%,100%,.2),
@@ -16,9 +19,7 @@ html, body, h1, h2, h3, h4, h5, h6, p, ol, ul, li {  padding: 0; margin: 0;
   border-left-width: 0;
   background: yellowgreen;
   border: 10px solid #655;
-  outline: 15px solid deeppink; 
-}
-#header {background-image: url("images/panew.jpg"); width: 920px; height:160px; border:10px solid white ; margin:20px auto;
+  outline: 15px solid deeppink;
 }
 body { background:#FFF url(images/green-grad.jpg) repeat-x; margin:auto; color:black; font-family:Arial;
 
