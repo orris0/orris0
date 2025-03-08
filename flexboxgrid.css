@@ -50,6 +50,10 @@ img {
   background-size: cover;
 }
 
+ul { --accent-color: purple; }
+ol { --accent-color: rebeccapurple; }
+li { background: var(--accent-color); }
+
 nav#nav ul  {
   padding:0;
   list-style-type:none; 
