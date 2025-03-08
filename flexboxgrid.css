@@ -17,6 +17,8 @@ body { background:#FFF url(images/green-grad.jpg) repeat-x; margin:auto; color:b
   text-shadow: 0 -.05em .05em rgba(0,0,0,.5);
   font-size: 125%;
   line-height: 1.5;
+  border-width: 10px;
+  border-left-width: 0;
 
 }
 .wrapper{ position: relative; top: 0em; left: 0; width: 60em; margin: auto;
@@ -63,6 +65,16 @@ span.small { font-size:small;
 div#container.header.first {width:97%;
 }
 /*
+button.cancel {
+background-color: #c00;
+}
+button.ok {
+background-color: #6b0;
+}
+
+
+
+
 .wrapper{ position: relative; top: 10em; left: 0; width: 59.375em; margin: auto; text-align: center;}
 header {margin-top:1em; height:156px; width:100%; background-image:url('../images/showcase.jpg'); background-position: top; background-repeat:no-repeat; border-bottom:0;
 }
