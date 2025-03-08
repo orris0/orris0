@@ -39,6 +39,10 @@ body { background:#FFF url(images/green-grad.jpg) repeat-x; margin:auto; color:b
   border: 10px solid #655;
   outline: 15px solid deeppink;
 
+  background: url(code-pirate.svg)
+  no-repeat bottom right #58a;
+  background-position: right 20px bottom 10px; 
+
 }
 .wrapper{ position: relative; top: 0em; left: 0; width: 60em; margin: auto;
 }
