@@ -3,7 +3,7 @@
 html, body, p, ul, li, h1, h2 {	margin:0; padding:0; 
 }
 
-#wrapper { width: 980px; margin: 0 auto; padding: 0;
+div.wrapper { width: 980px; margin: 0 auto; padding: 0;
 }
 /*set images to have no borders*/
 img { 	border:0;
