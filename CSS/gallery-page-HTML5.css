@@ -37,7 +37,7 @@ nav { float:left; margin-left:0.625em; width:115px;
 nav ul { margin-left:0; border:0; width:115px;
 }
 */
-/*LAYOUT position content at horizontal centre of screen for IE and Mozilla*
+/*LAYOUT position content at horizontal centre of screen for IE and Mozilla*/
 body {text-align:center; background-color:#D7FFEB; color:black; font-family: "times new roman"; max-width:1024px; min-width:800px;
 font-size: medium; color: #000000; margin: auto; width:95%;}
 /* set header height and background image */
