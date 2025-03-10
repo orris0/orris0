@@ -8,7 +8,7 @@ div.wrapper { width: 61.25em; margin: 0 auto; padding: 0;
 img { 	border:0;
 }
 /*add display attributes for the semantic tags*/
-div#header, footer, section, article, nav { display:block; 
+div.header, footer, section, article, nav { display:block; 
 }
 /*SET FONTS*/
 span.small { font-size:small;
