@@ -26,7 +26,7 @@ h1 { font-size:x-large; font-family:"times new roman"; text-align:center;
 h2 {font-size:large; font-family:"times new roman"; text-align:center;
 }
 /*PAGE LAYOUT*/
-body {margin:auto; width:60.625em; 
+body {margin:auto; width:60.625em; background:#FFF url(images/green-grad.jpg) repeat-x; margin:auto; color:black; font-family:Arial; 
 }
 #header {
 	width:60.625em;
