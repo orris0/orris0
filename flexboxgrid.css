@@ -22,7 +22,7 @@ html, body, h1, h2, h3, h4, h5, h6, p, ol, ul, li {  padding: 0; margin: 0;
   border: 10px solid #655;
   outline: 15px solid deeppink;
 }
-*/
+
 body { background:#FFF url(images/green-grad.jpg) repeat-x; margin:auto; color:black; font-family:Arial;
 
   padding: .3em .8em;
@@ -35,7 +35,7 @@ body { background:#FFF url(images/green-grad.jpg) repeat-x; margin:auto; color:b
   text-shadow: 0 -.05em .05em rgba(0,0,0,.5);
   font-size: 125%;
   line-height: 1.5;
-  /*
+  
   border-width: 10px;
   border-left-width: 0;
   background: yellowgreen;
