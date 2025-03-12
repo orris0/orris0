@@ -73,7 +73,7 @@ h1 {padding: 110px  0 0 12%; margin-bottom:0; font-family :"times new roman";  f
 	nav ul  li a.current,ul#main-menu li a.current:hover { color:#fff;
 	background:transparent url("images/bgON.gif") no-repeat top right; 
 	}
-section#hero.d-flex.align-items-center.scrolled-off-set {
+#hero.d-flex.align-items-center.scrolled-off-set {
 	position: absolute;
 }
 
