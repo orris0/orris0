@@ -73,8 +73,9 @@ h1 {padding: 110px  0 0 12%; margin-bottom:0; font-family :"times new roman";  f
 	nav ul  li a.current,ul#main-menu li a.current:hover { color:#fff;
 	background:transparent url("images/bgON.gif") no-repeat top right; 
 	}
-#hero.d-flex.align-items-center.scrolled-off-set {
-	position: absolute;
+div.slide-wrap {
+	position: relative;
+	top: 0%;
 }
 
 /*set far right column for ads*/
