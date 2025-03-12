@@ -1,9 +1,5 @@
 ﻿
-/*set attributes for consistent appearance in all browsers*/
-div.wrapper html { margin:0; padding:0; 
-}
-div.wrapper { width: 61.25em; margin: 0 auto; padding: 0; 
-}
+
 /*FORMUL-ACCESS.CSS*/
 /*reset browsers for cross-client consistency*/
 html,body,h1,h2,h3,h4,h4,h5,h6,p {margin:0; padding:0 }
@@ -12,12 +8,36 @@ img {border-style: none;
 	margin-left: 0px;
 	margin-right: 0px;
 }
-/*set images to have no borders*/
-img { 	border:0;
+/*PAGE LAYOUT*/
+body {margin:auto; width:60.625em; background:#FFF url(images/green-grad.jpg) repeat-x; margin:auto; color:black; font-family:Arial; 
+}
+/*LAYOUT position content at horizontal centre of screen for IE and Mozilla*/
+body {text-align:center; background-color:#D7FFEB; color:black; font-family: "times new roman"; max-width:1024px; min-width:800px;
+	font-size: medium; color: #000000; margin: auto; width:95%;}
+/*set attributes for consistent appearance in all browsers*/
+div.wrapper html { margin:0; padding:0; 
+}
+div.wrapper { width: 61.25em; margin: 0 auto; padding: 0; 
 }
 /*add display attributes for the semantic tags*/
 div#header, footer, section, article, nav { display:block; 
 }
+	/* set header height and background image */
+	#header{ margin-top:0; margin-bottom:0; background-position:45% top; background-image:url('images/compbkgcrop.jpg'); 
+	background-repeat:no-repeat; height:160px; padding-bottom:0	}
+	h1 {padding: 110px  0 0 12%; margin-bottom:0; font-family :"times new roman";  font-size: 250%; color: #0080a0;; font-weight:bold;}
+	#header {
+		position:relative;
+	}
+#header {
+	width:60.625em;
+}
+
+
+/*set images to have no borders*/
+img { 	border:0;
+}
+
 /*SET FONTS*/
 span.small { font-size:small;
 }
@@ -25,28 +45,14 @@ h1 { font-size:x-large; font-family:"times new roman"; text-align:center;
 }
 h2 {font-size:large; font-family:"times new roman"; text-align:center;
 }
-/*PAGE LAYOUT*/
-body {margin:auto; width:60.625em; background:#FFF url(images/green-grad.jpg) repeat-x; margin:auto; color:black; font-family:Arial; 
-}
-#header {
-	width:60.625em;
-}
+
 /*
 nav { float:left; margin-left:0.625em; width:115px;
 }
 nav ul { margin-left:0; border:0; width:115px;
 }
 */
-/*LAYOUT position content at horizontal centre of screen for IE and Mozilla*/
-body {text-align:center; background-color:#D7FFEB; color:black; font-family: "times new roman"; max-width:1024px; min-width:800px;
-font-size: medium; color: #000000; margin: auto; width:95%;}
-/* set header height and background image */
-#header{ margin-top:0; margin-bottom:0; background-position:45% top; background-image:url('images/compbkgcrop.jpg'); 
-background-repeat:no-repeat; height:160px; padding-bottom:0	}
-h1 {padding: 110px  0 0 12%; margin-bottom:0; font-family :"times new roman";  font-size: 250%; color: #0080a0;; font-weight:bold;}
-#header {
-	position:relative;
-}
+
 .search {
 	position:absolute; top:10px; right:40px;
 	height: 56px;
