@@ -1,7 +1,10 @@
 ﻿/*FORMUL-ACCESS.CSS*/
 /*reset browsers for cross-client consistency*/
 html,body,h1,h2,h3,h4,h4,h5,h6,p {margin:auto; padding:0 }
-img {border-style: none;
+
+/*set images to have no borders*/
+img { 	border:0;
+    border-style: none;
 	float: none;
 	margin-left: 0px;
 	margin-right: 0px;
@@ -62,14 +65,8 @@ div#header, footer, section, article, nav { display:block;
 	#header {
 		position:relative;
 	}
-#header {
-	width:60.625em;
-}
 
 
-/*set images to have no borders*/
-img { 	border:0;
-}
 
 /*SET FONTS*/
 span.small { font-size:small;
