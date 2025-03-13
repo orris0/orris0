@@ -1,6 +1,4 @@
-﻿
-
-/*FORMUL-ACCESS.CSS*/
+﻿/*FORMUL-ACCESS.CSS*/
 /*reset browsers for cross-client consistency*/
 html,body,h1,h2,h3,h4,h4,h5,h6,p {margin:auto; padding:0 }
 img {border-style: none;
@@ -12,8 +10,6 @@ img {border-style: none;
 body {margin:auto; width:60.625em; background:#FFF url(images/green-grad.jpg) repeat-x; margin:auto; color:black; font-family:Arial; 
 	text-align:center; background-color:#D7FFEB; color:black; font-family: "times new roman"; max-width:1024px; min-width:800px;
 	font-size: medium; color: #000000; margin: auto; width:95%;
-	
-	
 	padding: .3em .8em;	
 	border: 1px solid rgba(0, 0, 0, .1);
    background: #58a linear-gradient(#FF9966, #58a);
