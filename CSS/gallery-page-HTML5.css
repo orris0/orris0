@@ -2,7 +2,7 @@
 
 /*FORMUL-ACCESS.CSS*/
 /*reset browsers for cross-client consistency*/
-html,body,h1,h2,h3,h4,h4,h5,h6,p {margin:0; padding:0 }
+html,body,h1,h2,h3,h4,h4,h5,h6,p {margin:auto; padding:0 }
 img {border-style: none;
 	float: none;
 	margin-left: 0px;
