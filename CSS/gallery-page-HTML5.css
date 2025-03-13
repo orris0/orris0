@@ -17,7 +17,7 @@ body {margin:auto; width:60.625em; background:#FFF url(images/green-grad.jpg) re
    box-shadow: 0 .05em .25em rgba(0, 0, 0, .5);
    color: white;
    text-shadow: 0 -.05em .05em rgba(0, 0, 0, .5);
-   font-size: 100%;
+   font-size: 125%;
    line-height: 1.5;
    border-width: 10px;
    border-left-width: 0;
@@ -28,23 +28,36 @@ div.wrapper html { margin:0; padding:0;
 }
 div.wrapper { width: 61.25em; margin: 0 auto; padding: 0;
 	padding: .3em .8em;	
-	border: 1px solid rgba(0, 0, 0, .1);
-   background: #58a linear-gradient(#FF9966, #58a);
-   border-radius: .2em;
-   box-shadow: 0 .05em .25em rgba(0, 0, 0, .5);
-   color: white;
-   text-shadow: 0 -.05em .05em rgba(0, 0, 0, .5);
-   font-size: 100%;
-   line-height: 1.5;
-   border-width: 10px;
-   border-left-width: 0;
+    border: 1px solid rgba(0, 0, 0, .1);
+    background: #58a linear-gradient(#FF9966, #58a);
+    border-radius: .2em;
+    box-shadow: 0 .05em .25em rgba(0, 0, 0, .5);
+    color: white;
+    text-shadow: 0 -.05em .05em rgba(0, 0, 0, .5);
+    font-size: 125%;
+    line-height: 1.5;
+    border-width: 10px;
+    border-left-width: 0;
 }
 /*add display attributes for the semantic tags*/
 div#header, footer, section, article, nav { display:block; 
 }
 	/* set header height and background image */
 	#header{ margin-top:0; margin-bottom:0; background-position:45% top; background-image:url('images/compbkgcrop.jpg'); 
-	background-repeat:no-repeat; height:160px; padding-bottom:0	}
+	background-repeat:no-repeat; height:160px; padding-bottom:0;
+	padding: .3em .8em;	
+    border: 1px solid rgba(0, 0, 0, .1);
+    background: #58a linear-gradient(#FF9966, #58a);
+    border-radius: .2em;
+    box-shadow: 0 .05em .25em rgba(0, 0, 0, .5);
+    color: white;
+    text-shadow: 0 -.05em .05em rgba(0, 0, 0, .5);
+    font-size: 125%;
+    line-height: 1.5;
+    border-width: 10px;
+    border-left-width: 0;	
+
+}
 	h1 {padding: 110px  0 0 12%; margin-bottom:0; font-family :"times new roman";  font-size: 250%; color: #0080a0;; font-weight:bold;}
 	#header {
 		position:relative;
