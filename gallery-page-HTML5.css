@@ -75,7 +75,7 @@ border-left: 4px #5e2100 solid; border-right:3px #bfa5a2 solid; border-bottom:3p
 #midcol { margin-left:135px; margin-right:155px;
 }
 /*set gallery block position*/ 
-#gallery-block { position:relative; left: -115px; top:190px; 
+#gallery-block { position:relative; left: -10.125em; top: -25em; 
 }
 /*set footer*/
 footer { 	clear:both; color:black; text-align:center; width:970px;
