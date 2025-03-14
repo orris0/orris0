@@ -132,7 +132,8 @@ div.slide-wrap {
 }
 
 /*set far right column for ads*/
-#rightcol { float:right; text-align:center; width: 150px;	padding: .3em .8em;	
+#rightcol { float:right; text-align:center; width: 150px;	
+    padding: .3em .8em;	
     border: 1px solid rgba(0, 0, 0, .1);
     background: #58a linear-gradient(#FF9966, #58a);
     border-radius: .2em;
