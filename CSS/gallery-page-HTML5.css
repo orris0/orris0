@@ -81,12 +81,12 @@ h1 { font-size:x-large; font-family:"times new roman"; text-align:center;
 h2 {font-size:large; font-family:"times new roman"; text-align:center;
 }
 
-/*
+
 nav { float:left; margin-left:0.625em; width:115px;
 }
 nav ul { margin-left:0; border:0; width:115px;
 }
-*/
+
 
 .search {
 	position:absolute; top:10px; right:40px;
