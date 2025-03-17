@@ -155,7 +155,7 @@ div.slide-wrap {
     border-width: 10px;
     border-left-width: 0;
 }
-#rightcol p.advert {font-size:small; margin-top:11.875em; padding: .3em .8em;	
+#rightcol p.advert {font-size:small; margin-top:0.125em; padding: .3em .8em;	
     border: 1px solid rgba(0, 0, 0, .1);
     border-radius: .2em;
     box-shadow: 0 .05em .25em rgba(0, 0, 0, .5);
