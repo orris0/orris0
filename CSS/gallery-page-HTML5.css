@@ -105,7 +105,7 @@ nav ul { margin-left:0; border:0; width:115px;
 #nav ul  {padding:0;list-style-type:none; margin:auto; 
 	display:block;
     height:36px;
-    width: 60em 
+    width: 60em; 
     text-transform:uppercase;
 	font-size:12px;font-weight:bold;
 	background:url('images/bgOFF.gif') repeat-x left top;
