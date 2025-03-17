@@ -237,8 +237,8 @@ MouseOut state (default) - create and position a space for the larger images and
 li	{ margin: 5px; list-style-type:none;	
 }
 /* MouseOut state (default) - hide larger picture */
-#col-2 a img.hid { width: 16.25em; height:24.375em;
-	position: absolute; top: 0.625em; left: 15.3125em; margin-left:0;
+#col-2 a img.hid { width: 260px; height:390px;
+	position: absolute; top: 10px; left: 245px; margin-left:0;
 	visibility: hidden;
 	}
 /* MouseOver state (hover)- reveal larger picture */
