@@ -212,7 +212,7 @@ li.btn a { display:block; background-color :#66CCFF; color:black; font-weight:bo
 }
 li.btn a:hover { background-color:blue; color:white;
 }
-li.btn { width:6.875em;
+li.btn { width:110px;
 }
 /*SET THUMBNAIL GALLERY BLOCK*/  
 /* Set general thumbnail styles */
