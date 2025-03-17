@@ -181,7 +181,7 @@ div.slide-wrap {
     border-left-width: 0;
 }
 /*set gallery block position*/ 
-#gallery-block { position:relative; left: -7.125em; top:-9em; padding: .3em .8em;	
+#gallery-block { position:relative; left: 30px; top:10px; padding: .3em .8em;	
     border: 1px solid rgba(0, 0, 0, .1);
     border-radius: .2em;
     box-shadow: 0 .05em .25em rgba(0, 0, 0, .5);
