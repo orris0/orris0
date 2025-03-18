@@ -213,7 +213,7 @@ footer { clear:both;
     border-width: 10px;
                     
     border-left-width: 0;                    }
-                
+    /*            
 h2 { 
                     
     font-weight: bold;
@@ -243,6 +243,7 @@ h2 {
     border-left-width: 0;
                     
   }
+    */
 .button {
     position: relative;
                     
