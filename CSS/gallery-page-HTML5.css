@@ -169,7 +169,9 @@ div.slide-wrap {
     border-left-width: 0;
 } 
 /*set middle column for main content*/
-#midcol {margin-top: 2em;  margin-left:8.4375em; margin-right:9.6875em; padding: .3em .8em;	
+#midcol {position:relative; 
+    left: -6.8em; 
+    top:-8.3475em;   margin-left:8.4375em; margin-right:9.6875em; padding: .3em .8em;	
     border: 1px solid rgba(0, 0, 0, .1);
     border-radius: .2em;
     box-shadow: 0 .05em .25em rgba(0, 0, 0, .5);
