@@ -1,4 +1,4 @@
-﻿/*FORMUL-ACCESS.CSS*/
+/*FORMUL-ACCESS.CSS*/
 /*reset browsers for cross-client consistency*/
 html,body,h1,h2,h3,h4,h4,h5,h6,p {margin:auto; padding:0 }
 
@@ -78,7 +78,23 @@ h1 { font-size:x-large; font-family:"times new roman"; text-align:center;
     border-width: 10px;
     border-left-width: 0;
 }
-h2 {font-size:large; font-family:"times new roman"; text-align:center;
+                
+h2 {                 
+    font-weight: bold;               
+    margin-top: 0;              
+    margin-bottom: 0;                               
+    background: rgba(0, 0, 0, .5);                
+    border-radius: .2em;               
+    box-shadow: 0 .05em .25em rgba(0, 0, 0, .5);               
+    color: white;               
+    text-shadow: 0 -.05em .05em rgba(0, 0, 0, .5);               
+    font-size: 100%;                
+    text-align: center;               
+    line-height: 1.5;                 
+    border-width: 10px;                
+    border-left-width: 0;                 
+  }
+h2 { font-family:"times new roman";
 }
 
 /*
