@@ -171,7 +171,7 @@ div.slide-wrap {
 /*set middle column for main content*/
 #midcol {position:relative; 
     left: 30px; 
-    top:10px;   margin-left:8.4375em; margin-right:9.6875em; padding: .3em .8em;	
+    top:10px;   margin-left:135px; margin-right:155px; padding: .3em .8em;	
     border: 1px solid rgba(0, 0, 0, .1);
     border-radius: .2em;
     box-shadow: 0 .05em .25em rgba(0, 0, 0, .5);
