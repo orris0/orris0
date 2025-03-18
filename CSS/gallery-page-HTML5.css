@@ -183,7 +183,7 @@ div.slide-wrap {
 /*set gallery block position*/ 
 #gallery-block { 
     position:relative; 
-    left: -175px; 
+    left: -6.8em; 
     top:-4.3475em; 
     padding: 5.3em .8em;	
     border: 1px solid rgba(0, 0, 0, .1);
