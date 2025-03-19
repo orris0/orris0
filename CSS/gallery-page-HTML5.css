@@ -3,8 +3,7 @@
 html,body,h1,h2,h3,h4,h4,h5,h6,p {margin:auto; padding:0 }
 
 /*set images to have no borders*/
-img { 
-    width: 95%;	
+img { 	
     border:0;
     border-style: none;
 	float: none;
