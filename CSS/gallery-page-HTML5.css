@@ -125,7 +125,7 @@ nav ul { margin-left:0; border:0; width:115px;
 }
 */
 
-.search {
+p.search {
 	position:absolute; top:40px; left:6.8em;	
     border: 1px solid rgba(0, 0, 0, .1);
     border-radius: .2em;
