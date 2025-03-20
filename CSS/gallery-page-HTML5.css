@@ -75,12 +75,11 @@ div#header, footer, section, article, nav { display:block;
 
 }
 .logo {
-    width: 400px;
-    height: 400px;
+    width: 100px;
+    height: 100px;
     position: absolute;
     top: 10%;
     left: 7%;
-    
     background: #58a linear-gradient(#FF9966, #58a);
     border: 1px solid rgba(0, 0, 0, .1);
     border-left-width: 0;
