@@ -52,7 +52,7 @@ div.wrapper { margin: 0 auto; padding: 0;
 div#header, footer, section, article, nav { display:block; 
 }
 	/* set header height and background image */
-	#header{ margin-top:0; margin-bottom:0; background-position:45% top; background-image:url('images/compbkgcrop.jpg'); 
+	#header{ margin-top:0; margin-bottom:0; background-position:50% top; background-image:url('images/compbkgcrop.jpg'); 
 	background-repeat:no-repeat; height:9.5em; padding-bottom:0;
 	padding: .3em .8em;	
     border: 1px solid rgba(0, 0, 0, .1);
