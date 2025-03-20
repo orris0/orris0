@@ -47,10 +47,10 @@ body { background:#FFF url(images/green-grad.jpg) repeat-x; margin:auto; color:b
   background-position: right 20px bottom 10px; 
 
 }
-  */
+  
 .wrapper{ position: relative; top: 0em; left: 0; width: 60em; margin: auto;
 }
-
+*/
 hr {
   height: .5em;
   background: currentColor;
