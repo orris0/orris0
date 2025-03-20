@@ -80,6 +80,21 @@ div#header, footer, section, article, nav { display:block;
     position: absolute;
     top: 10%;
     left: 7%;
+    
+    background: #58a linear-gradient(#FF9966, #58a);
+    border: 1px solid rgba(0, 0, 0, .1);
+    border-left-width: 0;
+    border-width: 10px;
+    border-radius: .2em;
+    box-shadow: 0 .05em .25em rgba(0, 0, 0, .5);
+    color: white;
+    font-size: 100%;
+    text-shadow: 0 -.05em .05em rgba(0, 0, 0, .5);
+    line-height: 1.5;
+    margin: 0 auto; padding: 0;
+	padding: .3em .8em;	 
+    text-shadow: 0 -.05em .05em rgba(0, 0, 0, .5);
+
   }
 	h1 {padding: 110px  0 0 12%; margin-bottom:0; font-family :"times new roman";  font-size: 250%; color: #0080a0;; font-weight:bold;}
 
