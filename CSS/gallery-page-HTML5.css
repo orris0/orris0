@@ -52,7 +52,7 @@ div.wrapper { margin: 0 auto; padding: 0;
 div#header, footer, section, article, nav { display:block; 
 }
 	/* set header height and background image */
-#header, img { 
+#header { 
     background-image:url('images/compbkgcrop.jpg');
     background-position:50% top;  
 	background-repeat:no-repeat; height:9.5em; padding-bottom:0;	
@@ -70,6 +70,13 @@ div#header, footer, section, article, nav { display:block;
     text-shadow: 0 -.05em .05em rgba(0, 0, 0, .5);
 
 }
+.logo {
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
 	h1 {padding: 110px  0 0 12%; margin-bottom:0; font-family :"times new roman";  font-size: 250%; color: #0080a0;; font-weight:bold;}
 
 /*SET FONTS*/
