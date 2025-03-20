@@ -79,7 +79,7 @@ div#header, footer, section, article, nav { display:block;
     height: 40px;
     position: absolute;
     top: 2%;
-    left: 24%;
+    left: 10%;
     background: #58a linear-gradient(#FF9966, #58a);
     border: 1px solid rgba(0, 0, 0, .1);
     border-left-width: 0;
