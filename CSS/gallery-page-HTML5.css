@@ -1,6 +1,8 @@
 /*FORMUL-ACCESS.CSS*/
 /*reset browsers for cross-client consistency*/
-html,body,h1,h2,h3,h4,h4,h5,h6,p {margin:auto; padding:0 }
+html,body,h1,h2,h3,h4,h4,h5,h6,p {
+    margin:auto; 
+    padding:0 }
 
 /*set images to have no borders*/
 img { 	
@@ -33,8 +35,6 @@ body {
 }
 
 /*set attributes for consistent appearance in all browsers*/
-div.wrapper html { margin:0; padding:0; 
-}
 div.wrapper { margin: 0 auto; padding: 0;
 	padding: .3em .8em;	
     border: 1px solid rgba(0, 0, 0, .1);
