@@ -74,8 +74,8 @@ div#header, footer, section, article, nav { display:block;
     width: 450px;
     height: 400px;
     position: absolute;
-    top: 85px;
-    left: 0;
+    top: 90px;
+    left: 100px;
   }
 	h1 {padding: 110px  0 0 12%; margin-bottom:0; font-family :"times new roman";  font-size: 250%; color: #0080a0;; font-weight:bold;}
 
