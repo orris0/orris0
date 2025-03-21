@@ -27,7 +27,7 @@ body { border: 10px solid hsla(0,0%,100%,.5);
     box-shadow: 0 .05em .25em rgba(0, 0, 0, .5);
     color: #000000;
     font-family:Arial; 
-    font-size: 100%;
+    font-size: 125%;
     text-align:center; 
     line-height: 1.5; 
     max-width:1024px; 
@@ -47,7 +47,7 @@ div.wrapper {
     border-radius: .2em;
     box-shadow: 0 .05em .25em rgba(0, 0, 0, .5);
     color: white;
-    font-size: 100%;
+    font-size: 125%;
     text-shadow: 0 -.05em .05em rgba(0, 0, 0, .5);
     line-height: 1.5;
     margin: 0 auto; padding: 0;
