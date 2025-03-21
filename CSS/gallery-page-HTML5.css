@@ -71,7 +71,7 @@ div#header, footer, section, article, nav { display:block;
     border-width: 10px;
     box-shadow: 0 .05em .25em rgba(0, 0, 0, .5);
     color: white;
-    font-size: 99%;
+    font-size: 125%;
     line-height: 1.5;
     margin-top:0; 
     margin-bottom:0;
