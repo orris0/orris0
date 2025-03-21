@@ -145,7 +145,7 @@ nav ul { margin-left:0; border:0; width:115px;
 */
 
 div.search {
-	position:absolute; top:12%; left:13.5%;	
+	position:absolute; top:12%; left:7.5%;	
     border: 1px solid rgba(0, 0, 0, .1);
     border-radius: .2em;
     box-shadow: 0 .05em .25em rgba(0, 0, 0, .5);
