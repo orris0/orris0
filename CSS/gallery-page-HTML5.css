@@ -13,7 +13,11 @@ img {
 	margin-right: 0px;
 }
 /*PAGE LAYOUT position content at horizontal centre of screen for IE and Mozilla*/
-body { 
+body { border: 10px solid hsla(0,0%,100%,.5);
+    background: white;
+    background-clip: padding-box;
+
+
     background:#FFF url(images/green-grad.jpg) repeat-x; 
     background-color:#D7FFEB;
     border: 1px solid rgba(0, 0, 0, .1);
