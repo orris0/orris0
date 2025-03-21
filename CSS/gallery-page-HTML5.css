@@ -79,7 +79,7 @@ div#header, footer, section, article, nav { display:block;
     height: 40px;
     position: absolute;
     top: 5%;
-    left: 8%;
+    left: 15%;
     background: #58a linear-gradient(#FF9966, #58a);
     border: 1px solid rgba(0, 0, 0, .1);
     border-left-width: 0;
@@ -140,7 +140,7 @@ nav ul { margin-left:0; border:0; width:115px;
 */
 
 div.search {
-	position:absolute; top:40px; left:6.8em;	
+	position:absolute; top:7%; left:6.8em;	
     border: 1px solid rgba(0, 0, 0, .1);
     border-radius: .2em;
     box-shadow: 0 .05em .25em rgba(0, 0, 0, .5);
