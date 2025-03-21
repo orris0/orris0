@@ -33,7 +33,7 @@ body { border: 10px solid hsla(0,0%,100%,.5);
     max-width:1024px; 
     min-width:800px;
     margin: auto; 
-    width:100%;
+    width:125%;
     padding: .3em .8em;	
     text-shadow: 0 -.05em .05em rgba(0, 0, 0, .5);  
 }
