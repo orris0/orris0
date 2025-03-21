@@ -63,7 +63,7 @@ div#header, footer, section, article, nav { display:block;
     background-position:50% top;  
 	background-repeat:no-repeat; background-size: cover; 
     
-    height:16.5em; 
+    height:10.5em; 
     padding-bottom:0;	
     border: 1px solid rgba(0, 0, 0, .1);
     border-radius: .2em;
