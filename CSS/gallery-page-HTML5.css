@@ -225,7 +225,7 @@ div.slide-wrap {
 } 
 /*set middle column for main content*/
 #midcol {position:relative; 
-    left: 10em; 
+    left: 7em; 
     top:-17.2em; margin-top: 33px;  margin-left:135px; margin-right:155px; padding: 0.3em .8em;	
     width: 10em;
     border: 1px solid rgba(0, 0, 0, .1);
