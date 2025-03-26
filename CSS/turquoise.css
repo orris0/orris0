@@ -45,12 +45,9 @@ div.wrapper {
 
 #container { width:97%; margin:auto; min-width:50em; max-width:68.75em; 
 }
-/*
-body {text-align:center; line-height: 0.5; margin: 1.25em; background: #bee8ff; font: medium arial;
-}
-/*
+
 header {background-image:url("images/panew.jpg"); background-repeat:no-repeat; height:190px; background-position:top left;
-}
+}/*
 /*HEADER/BANNER FILLS THE CONTAINER'S WIDTH*
 header {padding-top:0; width:60em; height:100px; margin-top:1.25em; 
 background-image:url('images/183827104_3988962411179790_7582603085971185577_n.jpg'); background-repeat:no-repeat; 
