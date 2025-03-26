@@ -43,7 +43,7 @@ div.wrapper {
     text-shadow: 0 -.05em .05em rgba(0, 0, 0, .5);
 }
 
-#container { width:97%; margin:auto; min-width:50em; max-width:68.75em; 
+#container { width:97%; margin:auto; min-width:800px; max-width:1100px; 
 }
 
 header {background-image:url("images/panew.jpg"); background-repeat:no-repeat; height:190px; background-position:top left;
