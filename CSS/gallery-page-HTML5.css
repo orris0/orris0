@@ -24,7 +24,7 @@ body {
     max-width:1024px; 
     min-width:800px;
     margin: auto; 
-    width:125%;
+    
     padding: .3em .8em;	
     text-shadow: 0 -.05em .05em rgba(0, 0, 0, .5);  
 }
@@ -112,7 +112,40 @@ img {
 	margin-right: 0px;
 }
 
-
+#nav ul  {padding:0;list-style-type:none; margin:auto; 
+	display:block;
+    height:24px;
+    width: 932px; 
+    text-transform:uppercase;
+	background:url('images/bgOFF.gif') repeat-x left top;
+	font-family:Helvetica,Arial,Verdana,sans-serif;
+	border-bottom:4px solid #336666; border-top:1px solid #C0E2D4;
+	position:relative;	
+	top: -23.9em; 
+	left: 0em;
+	padding: .3em .8em;	
+    border: 1px solid rgba(0, 0, 0, .1);
+    background: #58a linear-gradient(#FF9966, #58a);
+    border-radius: .2em;
+    box-shadow: 0 .05em .25em rgba(0, 0, 0, .5);
+    color: white;
+    text-shadow: 0 -.05em .05em rgba(0, 0, 0, .5);
+    font-size: 80%;
+    line-height: 1.5;
+    border-width: 10px;
+    border-left-width: 0;
+	}
+	nav ul  li { display:block;float:left;margin:0;padding:0;
+	}
+	nav ul  li a { display:block; float:left;color:#874B46;
+	text-decoration:none;padding:.12px 20px 0 20px;height:24px;
+	background:transparent url("images/bgDIVIDER.gif") no-repeat top right; 
+	}
+	nav ul  li a:hover{ background:transparent url("images/bgHOVER.gif") no-repeat top right; 
+	}
+	nav ul  li a.current,ul#main-menu li a.current:hover { color:#fff;
+	background:transparent url("images/bgON.gif") no-repeat top right; 
+	}
 
 
 
@@ -153,49 +186,6 @@ h2 {
 h2 { font-family:"times new roman";
 }
 
-/*
-nav { float:left; margin-left:0.625em; width:115px;
-}
-nav ul { margin-left:0; border:0; width:115px;
-}
-*/
-
-
-
-#nav ul  {padding:0;list-style-type:none; margin:auto; 
-	display:block;
-    height:24px;
-    width: 932px; 
-    text-transform:uppercase;
-	background:url('images/bgOFF.gif') repeat-x left top;
-	font-family:Helvetica,Arial,Verdana,sans-serif;
-	border-bottom:4px solid #336666; border-top:1px solid #C0E2D4;
-	position:relative;	
-	top: -23.9em; 
-	left: 0em;
-	padding: .3em .8em;	
-    border: 1px solid rgba(0, 0, 0, .1);
-    background: #58a linear-gradient(#FF9966, #58a);
-    border-radius: .2em;
-    box-shadow: 0 .05em .25em rgba(0, 0, 0, .5);
-    color: white;
-    text-shadow: 0 -.05em .05em rgba(0, 0, 0, .5);
-    font-size: 80%;
-    line-height: 1.5;
-    border-width: 10px;
-    border-left-width: 0;
-	}
-	nav ul  li { display:block;float:left;margin:0;padding:0;
-	}
-	nav ul  li a { display:block; float:left;color:#874B46;
-	text-decoration:none;padding:.12px 20px 0 20px;height:24px;
-	background:transparent url("images/bgDIVIDER.gif") no-repeat top right; 
-	}
-	nav ul  li a:hover{ background:transparent url("images/bgHOVER.gif") no-repeat top right; 
-	}
-	nav ul  li a.current,ul#main-menu li a.current:hover { color:#fff;
-	background:transparent url("images/bgON.gif") no-repeat top right; 
-	}
 div.slide-wrap {
 	position: relative;
 	top: 0em;
