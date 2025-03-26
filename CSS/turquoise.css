@@ -19,13 +19,12 @@ body {
     box-shadow: 0 .05em .25em rgba(0, 0, 0, .5);
     color: #000000;
     font-family:Arial; 
-    font-size: 125%;
+    font-size: 100%;
     text-align:center; 
     line-height: 1.5; 
     max-width:1024px; 
     min-width:800px;
     margin: auto; 
-    
     padding: .3em .8em;	
     text-shadow: 0 -.05em .05em rgba(0, 0, 0, .5);  
 }
