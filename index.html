@@ -11,7 +11,7 @@
         <!-- head section is communicating about the page to the browser -->
         <!-- Anything you write under head is not displayed on the browser content page. -->
         <meta charset="UTF-8">
-        <title>gallery page & HTML5 Templates</title>
+        <title>HTML5 Gallery page Templates</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">  
         <meta http-equiv="REFRESH" content="240">
         <!-- <meta details go here> -->
@@ -164,8 +164,6 @@
         
         <!-- Template Main CSS File -->
         
-        
-        
         <link rel=”stylesheet” href=”http://code.jquery.com/mobile/1.0.1/jquery.mobile-1.0.1.min.css”>
         
         <!-- Font Awesome Icons -->
@@ -267,17 +265,18 @@
     
     </head>
     
-    <body>                                         	    	                       
-        <div class="wrapper"> <!-- wrapper -->
-            
+    <body> 
+        <!-- WRAPPER -->                                        	    	                       
+        <div class="wrapper">
+            <!-- HEADER /-->
             <div class="row" id="header">
-                <div class="col-12"> <!-- close top section - content area starts -->
+                <div class="col-12"> <!-- close top section - content area starts --> 
                     <div data-role="header" class="header first" id="container" class="d-flex align-items-center fixed-top">                                
                         <div class="logo">
                             <img src="images/flexy-logo.png" >
                         </div> 
-                    
-			            <div class="search"> <!-- search -->
+                        <!-- SEARCH BOX -->
+		                <div class="search"> 
                             <form method=get action="http://search.yahoo.com/search">
                                 <a href="http://search.yahoo.com/"></a>
                                 <input type="text" name="p" value="Yahoo" size=15>
@@ -286,10 +285,11 @@
                                 <input type="radio" name="vs" value="https://orris0.github.io/orris0" checked="checked">Search this site
                             </form>
                         </div>
-                    </div> <!-- end-header -->		            
+                    </div> <!-- end-CONTAINER -->		            
                 </div><!-- end col-12 --> 
-            </div> <!-- end class row -->
-            
+            </div> <!-- end header -->
+
+            <!-- RIGHT-COL -->
 	        <div id="rightcol">
                 <h2 class="dark">A  full page roll-over<br> gallery</h2><br>
                 <p>
@@ -307,8 +307,9 @@
                 </p>
                 <br class="clear">
                 <p class="advert">Web Design by Orris Baker</p>
-            </div> 
-            
+            </div> <!-- end right-col -->
+
+            <!-- NAVIGATION -->
             <div class="row">
                 <div class="col-12">                     
                     <nav role="navigation" id="nav">
@@ -319,7 +320,7 @@
                             <li><a href="index.html" class="current" title="">Home</a></li>
                             <li><a href="https://orrisb.github.io/" title="about">about</a></li>
                             <li><a href="news.html" title="news">News</a></li>
-                            <li><a href="events.html" title="events" class="current">Events</a></li>
+                            <li><a href="events.html" title="events">Events</a></li>
                             <li><a href="volunteers.html" title="volunteers">Volunteers</a></li>
                             <li><a href="services.html" title="services">Services</a></li>
                             <li><a href="membership.html" title="membership">Membership</a></li>                                   
