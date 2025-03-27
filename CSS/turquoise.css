@@ -186,7 +186,7 @@ nav ul  li a:hover{ background:transparent url("images/bgHOVER.gif") no-repeat t
 nav ul  li a.current,ul#main-menu li a.current:hover { color:#fff;
 background:transparent url("images/bgON.gif") no-repeat top right; 
 }
-#main-content { text-align:center; background-color:white; color:black; margin-top:195px;
+#main-content { text-align:center; background-color:white; color:black; margin-top:18%;
 	border-bottom:4px solid #336666; border-left:4px solid #336666; border-right:4px solid #336666; border-top:none; 
 	}
 	
