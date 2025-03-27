@@ -210,7 +210,7 @@ img { 	border:0;
 /*set far right column for ads*/
 #rightcol { width:150px; float:right; text-align:center;margin-top: -190px;	
 }
-#rightcol p.advert {font-size:small; margin-top: 90px;
+#rightcol p.advert {font-size:small; margin-top: 1%;
 } 
 /*set middle column for main content*/
 #midcol { margin-left:135px; margin-right:155px;
