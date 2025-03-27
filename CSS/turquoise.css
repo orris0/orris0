@@ -43,7 +43,7 @@ div.wrapper {
     text-shadow: 0 -.05em .05em rgba(0, 0, 0, .5);
 }
 
-#container-body { 
+#containerwrap { 
 	width:93%; 
 	margin:auto; 
 	min-width:800px; 
@@ -118,7 +118,7 @@ div.search {
 	padding: .3em .8em;	 
     text-shadow: 0 -.05em .05em rgba(0, 0, 0, .5);	
 }
-#container-header { 
+#containernav { 
 	width:97%; 
 	margin:auto; 
 	min-width:800px; 
