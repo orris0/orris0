@@ -100,8 +100,6 @@ div#header.row {
 	margin-left: -1rem;
   }
 
-
-
 .logo {
     width: 40px;
     height: 40px;
@@ -142,7 +140,6 @@ div.search {
 	margin:auto; 
 	min-width:815px; 
 	max-width:1100px;
-	
 	background: #58a linear-gradient(#FF9966, #58a);
     border: 1px solid rgba(0, 0, 0, .1);
     border-left-width: 0;
@@ -189,7 +186,7 @@ nav ul  li a:hover{ background:transparent url("images/bgHOVER.gif") no-repeat t
 nav ul  li a.current,ul#main-menu li a.current:hover { color:#fff;
 background:transparent url("images/bgON.gif") no-repeat top right; 
 }
-#main-content { text-align:center; background-color:white; color:black; margin-top:35px;
+#main-content { text-align:center; background-color:white; color:black; margin-top:195px;
 	border-bottom:4px solid #336666; border-left:4px solid #336666; border-right:4px solid #336666; border-top:none; 
 	}
 	
