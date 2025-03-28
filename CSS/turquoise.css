@@ -4,7 +4,8 @@ html, body, h1, h2, h3, h4, h5, h6, p, ol, ul, li {
 }
 header, footer, section, article, nav { display:block; 
 }
-body { background-color:#bbFFaa;
+body { 
+    background-color:#bbFFaa;
     border: 10px solid hsla(0,0%,100%,.0);
     background: white;
     background-clip: padding-box;
@@ -28,7 +29,7 @@ body { background-color:#bbFFaa;
 }
 /*set attributes for consistent appearance in all browsers*/
 div.wrapper { 
-    background: #58a linear-gradient(#FF9966, #58a);
+    /* background: #58a linear-gradient(#FF9966, #58a); */
     border: 1px solid rgba(0, 0, 0, .1);
     border-left-width: 0 !important;
     border-width: 10px;
@@ -48,7 +49,7 @@ div.wrapper {
 	margin:auto; 
 	min-width:800px; 
 	max-width:1100px;
-	background: #58a linear-gradient(#FF9966, #58a);
+	/* background: #58a linear-gradient(#FF9966, #58a); */
     border: 1px solid rgba(0, 0, 0, .1);
     border-left-width: 0 !important;
     border-width: 10px;
@@ -101,11 +102,6 @@ div#header.row {
   }
 
 .logo {
-    width: 40px;
-    height: 40px;
-    position: absolute;
-    top: 25%;
-    left: 0%;
     background: solid rgba(0, 0, 0, .1);
     border: 1px solid rgba(0, 0, 0, .1);
     border-left-width: 0 !important;
@@ -113,7 +109,7 @@ div#header.row {
     border-radius: .2em;
     box-shadow: 0 .05em .25em rgba(0, 0, 0, .5);
     color: white;
-    font-size: 0%;
+    font-size: 100%;
     text-shadow: 0 -.05em .05em rgba(0, 0, 0, .5);
     line-height: 1.5;
     margin: 0 auto; padding: 0;
@@ -142,7 +138,7 @@ div.search {
 	margin:auto; 
 	min-width:815px; 
 	max-width:1100px;
-	background: #58a linear-gradient(#FF9966, #58a);
+	/* background: #58a linear-gradient(#FF9966, #58a); */
     border: 1px solid rgba(0, 0, 0, .1);
     border-left-width: 0 !important;
     border-width: 10px;
