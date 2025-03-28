@@ -193,6 +193,19 @@ nav ul  li a.current,ul#main-menu li a.current:hover { color:#fff;
 background:transparent url("images/bgON.gif") no-repeat top right; 
 }
 #main-content { 
+    /* background: #58a linear-gradient(#FF9966, #58a); */
+    border: 1px solid rgba(0, 0, 0, .1);
+    border-left-width: 0 !important;
+    border-width: 10px;
+    border-radius: .2em;
+    box-shadow: 0 .05em .25em rgba(0, 0, 0, .5);
+    color: white;
+    font-size: 100%;
+    text-shadow: 0 -.05em .05em rgba(0, 0, 0, .5);
+    line-height: 1.5;
+    margin: 0 auto; padding: 0;
+	padding: .3em .8em;	 
+    text-shadow: 0 -.05em .05em rgba(0, 0, 0, .5);
     text-align:center; 
     background-color:white; 
     color:black; 
