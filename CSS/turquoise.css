@@ -75,7 +75,7 @@ div#header.row {
     border-radius: .2em;
     box-shadow: 0 .05em .25em rgba(0, 0, 0, .5);
 	position:absolute; 
-	top:12%; left:15%;
+	top:7%; left:15%;
     color: white;
     font-size: 100%;
     text-shadow: 0 -.05em .05em rgba(0, 0, 0, .5);
@@ -208,7 +208,11 @@ br .clear {	clear:both;
 img { 	border:0;
 }
 /*set far right column for ads*/
-#rightcol { width:150px; float:right; text-align:center;margin-top: -190px;	
+#rightcol { 
+    width:150px; 
+    float:right; 
+    text-align:center;
+    margin-top: 10%;	
 }
 #rightcol p.advert {font-size:small; margin-top: 1%;
 } 
