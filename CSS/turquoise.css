@@ -106,7 +106,7 @@ div#header.row {
     position: absolute;
     top: 25%;
     left: 0%;
-    background: #58a linear-gradient(#FF9966, #58a);
+    background: solid rgba(0, 0, 0, .1);
     border: 1px solid rgba(0, 0, 0, .1);
     border-left-width: 0 !important;
     border-width: 10px;
