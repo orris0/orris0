@@ -44,7 +44,7 @@ div.wrapper {
 }
 
 #wrapped-container { 
-	width:970px; 
+	width:96%; 
 	margin:auto; 
 	min-width:800px; 
 	max-width:1100px;
