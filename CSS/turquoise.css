@@ -112,7 +112,7 @@ div#header.row {
     font-size: 100%;
     text-shadow: 0 -.05em .05em rgba(0, 0, 0, .5);
     line-height: 1.5;
-    margin: 0 auto; padding: 0;
+    margin: 28px auto; padding: 0;
 	padding: .3em .8em;	 
     text-shadow: 0 -.05em .05em rgba(0, 0, 0, .5);
 }
