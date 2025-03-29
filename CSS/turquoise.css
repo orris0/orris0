@@ -123,7 +123,7 @@ div.search {
     border-radius: .2em;
     box-shadow: 0 .05em .25em rgba(0, 0, 0, .5);
 	position:absolute; 
-    top:25%; 
+    top:31%; 
     left:50%;
     color: white;
     font-size: 100%;
@@ -192,8 +192,8 @@ nav ul  {
     border-bottom:4px solid #336666; 
     border-top:1px solid #C0E2D4;
     position:relative;	
-    top: -34em; 
-    left: 4.4em;
+    top: -7em; 
+    left: 0.6em;
 }
 nav ul  li { display:block;float:left;margin:0;padding:0;
 }
