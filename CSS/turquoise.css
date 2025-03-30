@@ -192,6 +192,7 @@ nav ul  {
     position:relative;	
     top: -7em; 
     left: 0.6em;
+    width:1%;
 }
 nav ul  li { display:block;float:left;margin:0;padding:0;
 }
