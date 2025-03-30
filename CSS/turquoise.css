@@ -25,6 +25,8 @@ body { width:76%;
     min-width:970px;
     margin:1% auto; 
     padding: .3em .8em;	
+    position: relative;
+    top: -1%;
     text-shadow: 0 -.05em .05em rgba(0, 0, 0, .5);  
 }
 /*set attributes for consistent appearance in all browsers*/
