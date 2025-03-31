@@ -111,7 +111,7 @@ div#header.row {
     border-radius: .2em;
     box-shadow: 0 .05em .25em rgba(0, 0, 0, .5);
     color: white;
-    font-size: 100%;
+    font-size:0%;
     text-shadow: 0 -.05em .05em rgba(0, 0, 0, .5);
     line-height: 1.5;
     margin: -1px auto; padding: 0;
@@ -128,7 +128,7 @@ div.search {
     top:12%; 
     left:70%;
     color: white;
-    font-size: 100%;
+    font-size: 75%;
     text-shadow: 0 -.05em .05em rgba(0, 0, 0, .5);
     line-height: 1.5;
     margin: 0 auto; padding: 0;
