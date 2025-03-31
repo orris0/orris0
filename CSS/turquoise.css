@@ -68,8 +68,8 @@ div.wrapper {
 div#header.row {
 	background-image:url("images/panew.jpg"); 
 	background-repeat:no-repeat; 
-	height:156px; 
-	width:78%;
+	height:1.5%; 
+	width:75%;
 	background-position:top left;
 	border: 1px solid rgba(0, 0, 0, .1);
     border-left-width: 0 !important;
