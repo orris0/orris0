@@ -193,9 +193,9 @@ nav ul  {
     border-bottom:4px solid #336666; 
     border-top:1px solid #C0E2D4;
     position:relative;	
-    top:-5.8em; 
-    left:-1.77%;
-    width:118%;
+    top:-.1em; 
+    left:-2.5%;
+    width:115em;
 }
 nav ul  li { display:block;float:left;margin:0;padding:0;
 }
@@ -232,7 +232,7 @@ background:transparent url("images/bgON.gif") no-repeat top right;
 /*set middle column for main content*/
 #midcol {position:relative; 
     left: 16.2em; 
-    top:-11em; margin-top: 33px;  margin-left:135px; margin-right:155px; padding: 0.3em .8em;	
+    top:-1em; margin-top: 33px;  margin-left:135px; margin-right:155px; padding: 0.3em .8em;	
     width: 14em;
     border: 1px solid rgba(0, 0, 0, .1);
     border-radius: .2em;
