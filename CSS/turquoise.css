@@ -231,7 +231,7 @@ background:transparent url("images/bgON.gif") no-repeat top right;
 
 /*set middle column for main content*/
 #midcol {position:relative; 
-    left: 7.2em; 
+    left: -10.8em; 
     top:-11em; margin-top: 33px;  margin-left:135px; margin-right:155px; padding: 0.3em .8em;	
     width: 100%;
     border: 1px solid rgba(0, 0, 0, .1);
@@ -314,7 +314,7 @@ img { 	border:0;
 #midcol { margin-left:135px; margin-right:155px;
 }
 /*set gallery block position*/ 
-#gallery-block { position:relative; left: 20%; top:-195px; 
+#gallery-block { position:relative; left: 28%; top:-103px; 
 }
 /*set footer*/
 footer { 	clear:both; color:black; text-align:center; width:970px;
