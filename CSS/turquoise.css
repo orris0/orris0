@@ -232,8 +232,8 @@ background:transparent url("images/bgON.gif") no-repeat top right;
 /*set middle column for main content*/
 #midcol {position:relative; 
     left: 7.2em; 
-    top:-15.9em; margin-top: 33px;  margin-left:135px; margin-right:155px; padding: 0.3em .8em;	
-    width: 10em;
+    top:-11em; margin-top: 33px;  margin-left:135px; margin-right:155px; padding: 0.3em .8em;	
+    width: 100%;
     border: 1px solid rgba(0, 0, 0, .1);
     border-radius: .2em;
     box-shadow: 0 .05em .25em rgba(0, 0, 0, .5);
@@ -291,7 +291,7 @@ div#hnav {
 #mid-col { margin-left:185px; margin-right:185px;
 }
 
-h1 {font-family:Arial; font-size:150%; padding-top:60px; padding-left:60px; margin-top:0; margin-bottom:0; color:#333;
+h1 {font-family:Arial; font-size:150%; padding-top:60px; padding-left:60px; margin-top:5%; margin-bottom:0; color:#333;
 }
 h2 { font-size:75%; margin-top:0; margin-bottom:5px; color:black;
 }
