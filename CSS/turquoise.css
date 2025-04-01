@@ -194,8 +194,8 @@ nav ul  {
     border-top:1px solid #C0E2D4;
     position:relative;	
     top:-.1em; 
-    left:-2.5%;
-    width:115em;
+    left:2.5%;
+    width:66em;
 }
 nav ul  li { display:block;float:left;margin:0;padding:0;
 }
