@@ -124,9 +124,27 @@
     
         <div class="wrapper">
             <div id="container">
-	            <header id="main-header">                    
-                            <!-- w3-content defines a container for fixed size centered content, 
-                            and is wrapped around the whole page content, except for the footer in this example -->       
+                <!-- HEADER /-->
+                <div class="row" id="header">
+                    <div class="col-12"> <!-- close top section - content area starts -->                                
+                        <div class="logo">
+                            <img src="images/flexy-logo.png" >
+                        </div> 
+                        <!-- SEARCH BOX -->
+		                <div class="search"> 
+                            <form method=get action="http://search.yahoo.com/search">
+                                <a href="http://search.yahoo.com/"></a>
+                                <input type="text" name="p" value="Yahoo" size=15>
+                                <input type="hidden" name="fr" value="yscpb">
+                                <input type="submit" value="Search"><br>
+                                <input type="radio" name="vs" value="https://orris0.github.io/orris0" checked="checked">Search this site
+                            </form>
+                        </div>		            
+                    </div><!-- end col-12 --> 
+                </div> <!-- end header -->
+	            <!--<header id="main-header">                    
+                             w3-content defines a container for fixed size centered content, 
+                            and is wrapped around the whole page content, except for the footer in this example --       
                     <div class="w3-light-grey">          
 		                <div id="banner"> 
                             <h1>MJ's Simplistic HTML5 Templates</h1>
