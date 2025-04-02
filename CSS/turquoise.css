@@ -52,6 +52,7 @@ div.wrapper {
     top: 0%;
     left: 0%;
 	width:96%; 
+    height: 2em;
 	margin:auto; 
 	min-width:800px; 
 	max-width:1100px;
