@@ -71,7 +71,7 @@ div#header.row {
 	background-image:url("images/panew.jpg"); 
 	background-repeat:no-repeat; 
 	height:7em; 
-	width:78%;
+	width:99%;
 	background-position:top left;
 	border: 1px solid rgba(0, 0, 0, .1);
     border-left-width: 0 !important;
@@ -79,8 +79,8 @@ div#header.row {
     border-radius: .2em;
     box-shadow: 0 .05em .25em rgba(0, 0, 0, .5);
 	position:absolute; 
-	top:.2%; 
-    left:3.9%;
+	top:0.2%; 
+    left:2.4%;
     color: white;
     font-size: 100%;
     text-shadow: 0 -.05em .05em rgba(0, 0, 0, .5);
