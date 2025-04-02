@@ -49,7 +49,7 @@ div.wrapper {
 
 #wrapped-container { 
     position: relative;
-    top: 0%;
+    top: 1em;
     left: 0%;
 	width:96%; 
     height: 2em;
