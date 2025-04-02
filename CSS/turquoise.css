@@ -217,8 +217,8 @@ background:transparent url("images/bgON.gif") no-repeat top right;
 }
 #main-content { 
     position: relative;
-    top: 0%;
-    left: 0%S;
+    top: -8em;
+    left: 0%;
     /* background: #58a linear-gradient(#FF9966, #58a); */
     border: 1px solid transparent;
     border-left-width: 0 !important;
