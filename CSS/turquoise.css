@@ -293,7 +293,11 @@ div#hnav {
 /*hovering over the active tab shows navy text*/
 #hnav a.active:hover { background: #cfecf5; color: navy;
 }
-
+.slide-wrap { 
+    position: relative;
+    top: 0em;
+    left: 0em;
+}
 	
 #left-col { float:left; width: 180px; 
 }
