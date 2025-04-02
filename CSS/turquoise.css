@@ -48,6 +48,9 @@ div.wrapper {
 }
 
 #wrapped-container { 
+    position: relative;
+    top: 0%;
+    left: 0%;
 	width:96%; 
 	margin:auto; 
 	min-width:800px; 
