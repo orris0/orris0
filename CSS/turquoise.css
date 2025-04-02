@@ -168,7 +168,7 @@ background-image:url("images/panew.jpg"); background-repeat:no-repeat; height:19
 }
 */
 nav ul  {
-    background: solid rgba(0, 0, 0, .1);
+    
     border: 1px solid rgba(0, 0, 0, .1);
     border-left-width: 0 !important;
     border-width: 10px;
@@ -195,7 +195,7 @@ nav ul  {
     position:relative;	
     top:-.1em; 
     left:2.5%;
-    width:66em;
+    width:97.6em;
 }
 nav ul  li { display:block;float:left;margin:0;padding:0;
 }
