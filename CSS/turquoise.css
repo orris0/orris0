@@ -181,7 +181,7 @@ nav ul  {
     border-radius: .2em;
     box-shadow: 0 .05em .25em rgba(0, 0, 0, .5);
     color: white;
-    font-size: 70%;
+    font-size: 67%;
     text-shadow: 0 -.05em .05em rgba(0, 0, 0, .5);
     line-height: 1.5;
     margin: 0 auto; padding: 0;
@@ -192,16 +192,17 @@ nav ul  {
     list-style-type:none; 
     margin:auto; 
     display:block;
-    height:2em;text-transform:uppercase;
+    height:6em;
+    text-transform:uppercase;
     font-weight:bold;
     background:url('images/bgOFF.gif') repeat-x left top;
     font-family:Helvetica,Arial,Verdana,sans-serif;
     border-bottom:4px solid #336666; 
     border-top:1px solid #C0E2D4;
     position:relative;	
-    top:-4.2em; 
-    left:-1.1%;
-    width:61.6em;
+    top:-27.2em; 
+    left:-0.1%;
+    width:89.6em;
 }
 nav ul  li { display:block;float:left;margin:0;padding:0;
 }
