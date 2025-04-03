@@ -300,10 +300,10 @@ div#hnav {
 }
 section#hero {
     position:relative;
-    top: 0em;
-    left: 0em;
+    top: -65em;
+    left: 1em;
     display: block;
-    width:100%;
+    width:80%;
 }
 
 .button {
