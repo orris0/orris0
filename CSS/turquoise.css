@@ -295,7 +295,7 @@ div#hnav {
 }
 .slide-wrap { 
     position: relative;
-    top: -18em;
+    top: 0em;
     left: 0em;
 }
 section#hero {
