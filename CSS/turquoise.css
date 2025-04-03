@@ -303,6 +303,7 @@ section #hero {
     top: 0em;
     left: 0em;
     display: block;
+    width:100%;
 }
 
 .button {
