@@ -297,6 +297,7 @@ div#hnav {
     position: relative;
     top: 0em;
     left: 0em;
+    width: 80%;
 }
 section#hero {
     position:relative;
