@@ -298,6 +298,78 @@ div#hnav {
     top: -54em;
     left: 0em;
 }
+
+.button {
+    position: relative;
+                    
+    /* text color, paddings, etc. */
+                    
+    display: inline-block;
+                   
+    border-radius: .2em;
+                    
+    color: white;
+                   
+    text-shadow: 0 -.05em .05em rgba(0, 0, 0, .5);
+                    
+    font-size: 0.8rem;
+                    
+    line-height: 1.5;
+                    
+    border-width: 10px;
+                    
+    border-left-width: 0;
+                    
+  }
+                
+  .button::before {
+                    
+    content: ''; 
+    /* To generate the box */
+                    
+    position: absolute;
+                    
+    top: 0; right: 0; bottom: 0; left: 0;
+                    
+    z-index: -1;
+                    
+    background: maroon;
+                    
+    transform: skew(45deg);
+                    
+  }
+                
+  .button>div {
+                    
+    transform: skewX(45deg);
+                
+  }
+
+     
+
+.parallel {
+position: relative;
+/* text color, paddings, etc. */
+display: inline-block;
+border-radius: .2em;
+color: white;
+text-shadow: 0 -.05em .05em rgba(0, 0, 0, .5);
+font-size: 80%;
+line-height: 1.5;
+border-width: 10px;
+border-left-width: 0;
+}
+.parallel::before {
+content: ''; /* To generate the box */
+position: absolute;
+top: 0; right: 0; bottom: 0; left: 0;
+z-index: -1;
+background: maroon;
+transform: skew(45deg);
+}
+.parallel>div {
+transform: skewX(45deg);
+}
 	
 #left-col { float:left; width: 180px; 
 }
