@@ -299,6 +299,13 @@ div#hnav {
     left: 0em;
 }
 
+menu {
+    position:relative;
+    top: 0em;
+    left: 0em;
+    display: block;
+}
+
 .button {
     position: relative;
                     
