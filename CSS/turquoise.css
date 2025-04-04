@@ -295,9 +295,9 @@ div#hnav {
 }
 .slide-wrap { 
     position: relative;
-    top: 0em;
+    top: 6em;
     left: 0em;
-    width: 80%;
+    width: 90%;
 }
 section#hero {
     position:relative;
