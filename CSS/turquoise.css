@@ -217,8 +217,8 @@ nav ul  li a.current,ul#main-menu li a.current:hover { color:#fff;
 background:transparent url("images/bgON.gif") no-repeat top right; 
 }
 
-.bx-prev {
-    position: relative;top:0em; left: 0em
+.bx-prev .bx-next {
+    position: relative;top:1em; left: 0em
 }
 #main-content { 
     position: relative;
