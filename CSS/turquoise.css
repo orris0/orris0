@@ -34,7 +34,7 @@ div.wrapper {
     position: relative;
     top: 2em;
     left: 0%;
-    /* background: #58a linear-gradient(#FF9966, #58a); */
+    background: #58a linear-gradient(#FF9966, #58a);
     border-left-width: 0 !important;
     border-width: 10px;
     box-shadow: 0 .05em .25em rgba(0, 0, 0, .5);
