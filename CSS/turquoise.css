@@ -216,6 +216,10 @@ nav ul  li a:hover{ background:transparent url("images/bgHOVER.gif") no-repeat t
 nav ul  li a.current,ul#main-menu li a.current:hover { color:#fff;
 background:transparent url("images/bgON.gif") no-repeat top right; 
 }
+
+.bx-prev {
+    position: relative;top:0em; left: 0em
+}
 #main-content { 
     position: relative;
     top: 2em;
