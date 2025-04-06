@@ -22,7 +22,7 @@ body { width:76%;
     text-align:center; 
     line-height: 1.5; 
     max-width:1024px; 
-    min-width:970px;
+    min-width:60.5em;
     margin:1% auto; 
     padding: .3em .8em;	
     position: relative;
@@ -163,7 +163,7 @@ div.search {
 }
 
 .container {  position: relative; top: 0em; left: 0em;
-	width:970px; 
+	width:44em; 
 	margin:auto; 
 	min-width:815px; 
 	max-width:1100px;
