@@ -997,12 +997,12 @@ transform: skewX(45deg);
     order: 1;
   }
 }
-
+/*
 @media only screen and (min-width: 75em) {
   .container {
     width: 51rem;
   }
-
+*/
   .col-lg,
   .col-lg-1,
   .col-lg-2,
