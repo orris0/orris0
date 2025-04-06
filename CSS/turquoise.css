@@ -324,7 +324,7 @@ div#hnav {
 }
 .slide-wrap { 
     position: relative;
-    top: -1em;
+    top: -.6em;
     left: 1.2em;
     width: 90%;
 }
