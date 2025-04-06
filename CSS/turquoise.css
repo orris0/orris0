@@ -345,6 +345,12 @@ div.bx-viewport {
     position: relative;
     height: 486.667px;
 }
+ul.slider1 {
+    width: 100%;
+    position: relative;
+    left: 0em;
+    height: 486.667px;
+}
 .button {
     position: relative;
                     
