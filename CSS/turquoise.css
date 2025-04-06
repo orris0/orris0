@@ -272,7 +272,7 @@ background:transparent url("images/bgON.gif") no-repeat top right;
 /*set middle column for main content*/
 #midcol {position:relative; 
     left: 13em; 
-    top:38em; margin-top: 33px;  margin-left:135px; margin-right:155px; padding: 0.3em .8em;	
+    top:25em; margin-top: 33px;  margin-left:135px; margin-right:155px; padding: 0.3em .8em;	
     width: 14em;
     border: 1px solid rgba(0, 0, 0, .1);
     border-radius: .2em;
