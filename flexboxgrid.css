@@ -295,8 +295,8 @@ h2 {
 
 .parallel {
 position: relative;
-top: 0em;
-left: 0em;
+top: -85em;
+left: -31em;
 /* text color, paddings, etc. */
 display: inline-block;
 border-radius: .2em;
