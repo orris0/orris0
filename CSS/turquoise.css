@@ -162,7 +162,9 @@ div.search {
     text-shadow: 0 -.05em .05em rgba(0, 0, 0, .5);
 }
 
-.container {  position: relative; top: -2rem; left: 0em;
+.container {  
+    position: relative; 
+    top: -2rem; left: 2.5em;
 	width:43em; 
 	margin:auto; 
 	min-width:43rem; 
