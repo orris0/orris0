@@ -7,7 +7,7 @@ header, footer, section, article, nav { display:block;
 body { width:76%; 
     background-color:#bbFFaa;
     border: 10px solid hsla(0,0%,100%,.0);
-    background: white;
+    
     background-clip: padding-box;
     background:#FFF url(images/green-grad.jpg) repeat-x; 
     background-color:#D7FFEB;
