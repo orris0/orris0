@@ -48,7 +48,7 @@ div.wrapper {
     width:59.5em;
 }
 
-#wrapped-container { 
+#wrapped-header-container { 
     position: relative;
     top: 1em;
     left: 0%;
@@ -541,3 +541,5 @@ margin: -25px 0 0 0; padding: 0px; padding-left: 10px; z-index: 1; }
  /*hovering over the active tab shows navy text*/
 	#navtwo a.active:hover { background: #cfecf5; color: navy; 
 	}
+
+    
