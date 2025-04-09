@@ -344,6 +344,7 @@ section#hero {
 div.bx-viewport {
     width: 100%;
     position: relative;
+    top: 0em;
     height: 486.667px;
 }
 ul.slider1 {
