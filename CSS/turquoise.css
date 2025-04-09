@@ -363,6 +363,7 @@ div.bx-wrapper {
 ul.slider1 {
     width: 100%;
     position: relative;
+    top:0em
     left: -3em;
     height: 486.667px;
 }
