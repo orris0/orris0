@@ -26,25 +26,8 @@ body {
     top: -2em;
     text-shadow: 0 -.05em .05em rgba(0, 0, 0, .5);  
 }
-/*set attributes for consistent appearance in all browsers*/
-div.wrapper { 
-    position: relative;
-    top: 2em;
-    left: 0%;
-    border-left-width: 0 !important;
-    border-width: 10px;
-    box-shadow: 0 .05em .25em rgba(0, 0, 0, .5);
-    color: white;
-    font-size: 100%;
-    text-shadow: 0 -.05em .05em rgba(0, 0, 0, .5);
-    line-height: 1.5;
-    margin: 0 auto;
-	padding: .3em .8em;	 
-    text-shadow: 0 -.05em .05em rgba(0, 0, 0, .5);
-    width:59.5em;
-}
 
-#wrapped-header-container { 
+div#wrapped-header-container { 
     position: relative;
     top: 1em;
     left: 0%;
@@ -67,6 +50,26 @@ div.wrapper {
 	padding: .3em .8em;	 
     text-shadow: 0 -.05em .05em rgba(0, 0, 0, .5);
 }
+
+/*set attributes for consistent appearance in all browsers*/
+div.wrapper { 
+    position: relative;
+    top: 2em;
+    left: 0%;
+    border-left-width: 0 !important;
+    border-width: 10px;
+    box-shadow: 0 .05em .25em rgba(0, 0, 0, .5);
+    color: white;
+    font-size: 100%;
+    text-shadow: 0 -.05em .05em rgba(0, 0, 0, .5);
+    line-height: 1.5;
+    margin: 0 auto;
+	padding: .3em .8em;	 
+    text-shadow: 0 -.05em .05em rgba(0, 0, 0, .5);
+    width:59.5em;
+}
+
+
 
 div#header.row {
 	background-image:url("images/panew.jpg"); 
