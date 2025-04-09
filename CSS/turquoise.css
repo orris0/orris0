@@ -5,12 +5,9 @@ html, body, h1, h2, h3, h4, h5, h6, p, ol, ul, li {
 header, footer, section, article, nav { display:block; 
 }
 body {  
-    
     border: 10px solid hsla(0,0%,100%,.0);
-    
     background-clip: padding-box;
     background:#FFF url(images/green-grad.jpg) repeat-x; 
-    background-color:#D7FFEB;
     border: 1px solid rgba(0, 0, 0, .1);
     border-left-width: 0 !important;
     border-radius: .2em;
