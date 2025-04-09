@@ -347,6 +347,11 @@ div.bx-viewport {
     top: 0em;
     height: 486.667px;
 }
+div.bx-wrapper {
+    position:relative;
+    top: -57.5em;
+    left: 1em;
+}
 ul.slider1 {
     width: 100%;
     position: relative;
