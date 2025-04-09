@@ -94,6 +94,9 @@ div#header.row {
 	flex-wrap: wrap;
 	margin-right: -1rem;
 	margin-left: -1rem;
+    clip-path:polygon(20px 0, calc(100% - 20px) 0, 100% 20px, 
+    100% calc(100% - 20px), calc(100% - 20px) 100%,
+    20px 100%, 0 calc(100% - 20px), 0 20px); 
   }
 
 /*set attributes for consistent appearance in all browsers*/
