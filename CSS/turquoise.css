@@ -239,8 +239,8 @@ nav ul  {
     border-bottom:4px solid #336666; 
     border-top:1px solid #C0E2D4;
     position:relative;	
-    top:190em; 
-    left:12.6%;
+    top:49em; 
+    left:2.6%;
     width:67.6em;
 }
 nav ul  li { display:block;float:left;margin:0;padding:0;
@@ -463,7 +463,7 @@ transform: skewX(45deg);
 #mid-col { margin-left:185px; margin-right:185px;
 }
 
-h1 {font-family:Arial; font-size:150%; padding-top:60px; padding-left:60px; margin-top:5%; margin-bottom:0; color:#333;
+h1 {font-family:Arial; font-size:125%; padding-top:60px; padding-left:60px; margin-top:5%; margin-bottom:0; color:#333;
 }
 h2 { font-size:75%; margin-top:0; margin-bottom:5px; color:black;
 }
