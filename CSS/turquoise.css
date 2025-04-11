@@ -260,7 +260,7 @@ background:transparent url("images/bgON.gif") no-repeat top right;
 }
 #main-content { 
     position: relative;
-    top: 1.5em;
+    top: 2.5em;
     left: -1%;
     /* background: #58a linear-gradient(#FF9966, #58a); */
     border: 1px solid transparent;
