@@ -378,10 +378,10 @@ ul.slider1 {
 }
 
 div.menu-bar {
-    width: 100%;
+    width:47em;
     position: relative;
     top:0em;
-    left: -3em;
+    left: 12em;
 }
 
 .button {
