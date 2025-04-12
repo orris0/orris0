@@ -57,7 +57,7 @@ div#wrapped-header-container {
     text-shadow: 0 -.05em .05em rgba(0, 0, 0, .5);
 }
 
-header.row.fixed-top {
+header.row {
 	background-image:url("images/panew.jpg"); 
 	background-repeat:no-repeat; 
 	height:7em; 
