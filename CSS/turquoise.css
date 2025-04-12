@@ -4,19 +4,16 @@ html, body, h1, h2, h3, h4, h5, h6, p, ol, ul, li {
 }
 
 /* html.fa-events-icons-ready {} */
+
 header, footer, section, article, nav { display:block; 
 }
 
 body {  
     height: 100%;
-    margin: 0;
     font-family: Arial, Helvetica, sans-serif;
-    border: 10px solid hsla(0,0%,100%,.0);
-    background-clip: padding-box;
     background:#FFF url(images/green-grad.jpg) repeat-x; 
-    border: 1px solid rgba(0, 0, 0, .1);
     border-left-width: 0 !important;
-    border-radius: .2em;
+
     border-width: 10px; 
     box-shadow: 0 .05em .25em rgba(0, 0, 0, .0);
     color: #000000; 
@@ -24,9 +21,7 @@ body {
     text-align:center; 
     line-height: 1.5; 
     max-width:1024px; 
-    min-width:60.5em;
-    margin:1% auto; 
-    padding: .3em .8em;	
+    min-width:60.5em; 	
     position: relative;
     top: -2em;
     text-shadow: 0 -.05em .05em rgba(0, 0, 0, .5); 
