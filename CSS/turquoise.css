@@ -31,7 +31,8 @@ body {
 }
 
 div#wrapped-header-container { 
-    position: relative;
+    position: relative;background-image:url("images/panew.jpg"); 
+	background-repeat:no-repeat; 
     top: 3em;
     left: 0%;
 	width:97%; 
