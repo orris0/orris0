@@ -31,15 +31,18 @@ body {
 }
 
 div#wrapped-header-container { 
+    /* image */
     position: relative;background-image:url("images/panew.jpg"); 
 	background-repeat:no-repeat; 
     top: 3em;
     left: 0%;
 	width:97%; 
     height: 7em;
+    /* cut curners */
     clip-path:polygon(20px 0, calc(100% - 20px) 0, 100% 20px, 
   100% calc(100% - 20px), calc(100% - 20px) 100%,
   20px 100%, 0 calc(100% - 20px), 0 20px);
+  /* ****** */                                                                                                                                                                                                                                                                                                                                                                                               
 	margin:auto; 
 	min-width:800px; 
 	max-width:1100px;
@@ -305,7 +308,7 @@ nav ul  {
     border-bottom:4px solid #336666; 
     border-top:1px solid #C0E2D4;
     position:relative;	
-    top:49em; 
+    top:-9em; 
     left:2.6%;
     width:67.6em;
 }
