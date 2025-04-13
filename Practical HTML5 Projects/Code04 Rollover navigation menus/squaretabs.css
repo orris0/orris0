@@ -59,7 +59,7 @@ h1 { font-size:x-large; font-family:"times new roman"; text-align:center;
 }
 h2 {font-size:large; font-family:"times new roman"; text-align:center;
 }
-/*PAGE LAYOUT*/
+/*PAGE LAYOUT*
 body {margin:auto; width:970px; 
 }
 header {
@@ -85,7 +85,7 @@ footer { 	clear:both; color:black; text-align:center; width:970px;
 }
 .clear { clear:both;
 }
-/*set menu buttons*/
+/*set menu buttons*
 li.btn a { display:block; background-color :#66CCFF; color:black; font-weight:bold; padding:4px;
 	margin-left:0; text-align:center; list-style-type:none; text-decoration:none; width:110px;
 }
