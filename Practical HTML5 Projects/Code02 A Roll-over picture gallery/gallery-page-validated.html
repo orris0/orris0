@@ -6,7 +6,7 @@
 	<meta charset="utf-8">
 	<link rel="stylesheet" type="text/css" href="gallery-page-HTML5.css">
 	<!--[if lte IE 7]>
-    <link rel = "stylesheet" type = "text/css" href = "gallery-ie7.css">
+        <link rel = "stylesheet" type = "text/css" href = "gallery-ie7.css">
     <![endif]-->
 	<!-- conditional Javascript added -->
 	<!--[if lte IE 8]>
@@ -15,6 +15,30 @@
 </head>
 
 <body>
+	<noscript>
+		<p>
+			Hey, your browser has JavaScript turned off!
+		</p>
+		<p>
+			Okay, cool, perhaps you'll prefer this <a href="no-js.html">non-JavaScript version</a> of the page.
+		</p>
+	</noscript>
+
+	<!-- Embed an SVG circle using object -->
+	<svg>
+		<!--<svg xmlns="http://www.w3.org/2000/svg" version="1.1">-->
+		<circle cx="100" cy="50" r="40" stroke="black" stroke-width="2" fill="blue">
+	</svg>
+	<!-- svg-text-embed -->
+    <svg version="1.1" baseProfile="full" xmlns="http://www.w3.org/2000/svg" width="500px" height="60px">
+        <text x="20" y="50"
+            style="font-family:times new roman; font-size:36pt; font-weight:bold; letter-spacing:20px; stroke:black; fill:white; ">
+            Tour Orris</text>
+    </svg>
+	<!-- <title>Embed an SVG square inline in an HTML5 page</title> -->
+	<svg>
+		<rect x="10" y="10" fill="red" width="100px" height="100px" />
+	</svg>
 	<header>
 		<h1>A full page roll-over gallery of greetings cards</h1>
 		<h2>Hover the mouse over a small picture to see an enlarged version</h2>
