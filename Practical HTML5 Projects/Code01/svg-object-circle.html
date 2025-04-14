@@ -4,6 +4,13 @@
 <head>
     <title>Embed an SVG circle using object</title>
     <meta charset="utf-8">
+    <!--[if lte IE 7]>
+        <link rel = "stylesheet" type = "text/css" href = "gallery-ie7.css">
+    <![endif]-->
+	<!-- conditional Javascript added -->
+	<!--[if lte IE 8]>
+        <script src="html5.js" type="text/javascript"></script>
+    <![endif]-->
 </head>
 
 <body>
@@ -22,7 +29,7 @@
             style="font-family:times new roman; font-size:36pt; font-weight:bold; letter-spacing:20px; stroke:black; fill:white; ">
             Tour Orris</text>
     </svg>
-    <!-- svg-object -->
+    <!-- svg-obj -->
     <object type="image/svg+xml" data="blue-circle-svg.svg"></object>
     <!-- aside -->
     <section>
