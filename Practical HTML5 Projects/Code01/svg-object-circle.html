@@ -1,10 +1,68 @@
 <!doctype html>
-<html lang=en>
+<html lang="en">
+
 <head>
-<title>Embed an SVG circle using object</title>
-<meta charset=utf-8>
+    <title>Embed an SVG circle using object</title>
+    <meta charset="utf-8">
 </head>
+
 <body>
-<object type="image/svg+xml" data="blue-circle-svg.svg"></object>
-</body>
+    <noscript>
+    <p>
+        Hey, your browser has JavaScript turned off!
+    </p>
+    <p>
+        Okay, cool, perhaps you'll prefer this <a href="no-js.html">non-JavaScript version</a> of the page.
+    </p>
+    </noscript>>
+
+    <!-- svg-text-embed -->
+    <svg version="1.1" baseProfile="full" xmlns="http://www.w3.org/2000/svg" width="500px" height="60px">
+        <text x="20" y="50"
+            style="font-family:times new roman; font-size:36pt; font-weight:bold; letter-spacing:20px; stroke:black; fill:white; ">
+            Tour Orris</text>
+    </svg>
+    <!-- svg-object -->
+    <object type="image/svg+xml" data="blue-circle-svg.svg"></object>
+    <!-- aside -->
+    <section>
+        <h1>Which browser should you design for?</h1>
+        <article>
+            <strong>The answer is all of them.</strong> If you survey a group of computer
+            aficionados you will get very different answers compared with the general
+            public’s answers.&nbsp;
+            I worked as a freelance computer technician for over eleven years, During that
+            period
+            I never came across a single person who was using a browser other than Internet Explorer.
+            <aside>
+                The great majority of ordinary folk are using IE because it came pre-installed with their
+                computers.
+            </aside>
+            None had ever heard of Mozilla Firefox, although I did meet one person whose son had put Firefox on
+            his
+            computer,
+            he wanted me to remove it because he did not know what it was.
+            The great majority of ordinary folk are using IE because it came pre-installed
+            with their computers. When reading magazine surveys, it would be safer to increase the survey
+            figures for
+            Internet Explorer.
+            The result would mean that you should make sure that your websites work in IE7 and IE8 because these
+            are the most popular by default. It would be safe to predict that there will be a strong swing
+            towards IE 9 when it is finalised in 2011.
+        </article>
+        <!-- summary-details -->
+        <details>
+            <summary><b>A COMPUTER FOR &pound;15?</b></summary>
+            <p>The UK not for profit organization Raspberry Pi is hoping to sell<br> a computer for &pound;15
+                (or less if the take up is good).<br>
+                It is no bigger than a USB connector, it has an ARM chipset, <br>a wi-fi chip, a version of the
+                BASIC progrmming language <br>and it is preloaded with the Linux operating system. The primary
+                purpose <br>for this innovation is as a teaching tool for UK schools where children <br>are
+                bored stiff with the current curriculum. You can read more about it at
+                <br>http://www.wired.co.uk/news/archive//2011-01/20/raspberry-pi-computer
+            </p>
+        </details>
+    </section>
+    </body>
+
 </html>

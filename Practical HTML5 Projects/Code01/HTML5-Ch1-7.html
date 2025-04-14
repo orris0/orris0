@@ -1,54 +1,290 @@
 <!doctype html>
 <html lang=en>
+
 <head>
-<title>Test page for semantic tags</title>
-<meta charset=utf-8>
-<link rel="stylesheet" type="text/css" href="HTML5-style-2.css">
-<!--conditional Javascript added-->
-<!--[if lte IE 8]>
+  <title>Test page for semantic tags</title>
+  <meta charset=utf-8>
+  <link rel="stylesheet" type="text/css" href="HTML5-style-2.css">
+  <style>
+    /* original styles by Andreas Bovens */
+
+    body {
+      font-size: 0.9em;
+      margin: 0;
+      padding: 1em;
+    }
+
+    h1 {
+      font-size: 1.5em;
+    }
+
+    form {
+      background: #eee;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      margin-bottom: 1em;
+      padding: 1em;
+      box-shadow: #ccc 0 0 15px;
+      width: 46em;
+    }
+
+    * {
+      font-family: Helvetica, Arial, sans-serif;
+    }
+
+    div {
+      clear: left;
+      margin-bottom: 0.5em;
+    }
+
+    label {
+      display: block;
+      float: left;
+      width: 12em;
+      text-align: right;
+      font-weight: bold;
+      padding: 0.3em 0.5em 0 0;
+    }
+
+    input {
+      height: 1.3em;
+      margin: 0;
+    }
+
+    /* defining some specific input sizes */
+
+    input[type=text],
+    input[type=tel],
+    input[type=email],
+    input[type=url] {
+      width: 14em;
+    }
+
+    input[type=number] {
+      width: 3em;
+    }
+
+    input[type=color] {
+      width: 4em;
+    }
+
+    input[type=submit] {
+      margin: 2em 0 0 13.5em;
+      height: 2em;
+    }
+
+    /* dynamic CSS3 validation styles */
+
+    input[type=text]:focus:valid,
+    input[type=email]:focus:valid,
+    input[type=number]:focus:in-range {
+      outline: 2px #0f0 solid;
+    }
+
+    input[type=text]:focus:invalid,
+    input[type=email]:focus:invalid,
+    input[type=number]:focus:out-of-range {
+      outline: 2px #f00 solid;
+    }
+  </style>
+  <!--conditional Javascript added-->
+  <!--[if lte IE 8]>
 <script src="html5.js">
 </script>
 <![endif]-->
 </head>
+
 <body>
-<!--<div id="container">--><!--surround header and border with a container-->
-<header><!--change <div id="hdr"> to <header>-->
-  <h1>Devon's Rural Retreats</h1>
-</header>
-<!--</div>--><!--close top section - content area starts -->
-<div id="content">
-   <h2>Award winning accommodation, self catering or bed and breakfast</h2>
-<div id="leftcol">
-<h3>Cottages, converted barns, caravans</h3><img alt="Cottage interior" title="Cottage interior"
-height="225" src="images/cotdining300.jpg" width="300"><br>The superb interior 
-of one of our cottages
-</div>
-<nav><!--use the semantic tag <nav>-->
-<ul><!--start of menu list-->
- <li class="btn"> <a href="accommodation.html" title="Accommodation">Accommodation</a>
-</li>
-<li class="btn"><a href="maps.html" title="Location Maps">Maps</a>
-</li>
-<li class="btn"><a href="faqs.html" title="Frequently Asked Questions">Information</a>
-</li>
-<li class="btn"><a href="attractions.html" title="Local attractions">Attractions</a>
-</li>
-<li class="btn"><a href="contact.html" title="Contact us">Contact Us</a>
-</li>
-<li class="btn"><a href="index.html" title="Return to Home Page">Home Page</a>
-</li>
-</ul><!--end of menu list-->
-</nav><!--remove </div> and replace with </nav>-->
-<div id="midcol">
-  <h3>Situated in the UK's beautiful Devon countryside</h3>
-<img title="Devon countryside" alt="Devon countryside" src="images/devon398.jpg"
- height="229" width="398">
-</div>
-<br class="clear">
-</div><!--content section closed-->
-<!--change <div id=footer"> to <footer> and enclose text in a paragraph so that it 
+  <noscript>
+    <p>
+        Hey, your browser has JavaScript turned off!
+    </p>
+    <p>
+        Okay, cool, perhaps you'll prefer this <a href="no-js.html">non-JavaScript version</a> of the page.
+    </p>
+</noscript>
+  <!-- svg-text-embed -->
+  <svg version="1.1" baseProfile="full" xmlns="http://www.w3.org/2000/svg" width="500px" height="60px">
+    <text x="20" y="50"
+      style="font-family:times new roman; font-size:36pt; font-weight:bold; letter-spacing:20px; stroke:black; fill:white; ">
+      Tour Orris</text>
+  </svg>
+  <!--<div id="container">--><!--surround header and border with a container-->
+  <header><!--change <div id="hdr"> to <header>-->
+    <!-- <h1> SVG </h1> -->
+    <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+      <circle cx="100" cy="50" r="40" stroke="black" stroke-width="2" fill="blue">
+    </svg>
+    <!-- <h1>Devon's Rural Retreats</h1> -->
+    <h1>Orris's Practical HTML5 Projects</h1>
+
+  </header>
+  <!--</div>--><!--close top section - content area starts -->
+  <div id="content">
+    <h2>Award winning accommodation, self catering or bed and breakfast</h2>
+    <div id="leftcol">
+      <h3>Cottages, converted barns, caravans</h3><img alt="Cottage interior" title="Cottage interior" height="225"
+        src="images/cotdining300.jpg" width="300"><br>The superb interior
+      of one of our cottages
+    </div>
+
+    <nav><!--use the semantic tag <nav>-->
+      <ul><!--start of menu list-->
+        <li class="btn"> <a href="accommodation.html" title="Accommodation">Accommodation</a>
+        </li>
+        <li class="btn"><a href="maps.html" title="Location Maps">Maps</a>
+        </li>
+        <li class="btn"><a href="faqs.html" title="Frequently Asked Questions">Information</a>
+        </li>
+        <li class="btn"><a href="attractions.html" title="Local attractions">Attractions</a>
+        </li>
+        <li class="btn"><a href="contact.html" title="Contact us">Contact Us</a>
+        </li>
+        <li class="btn"><a href="index.html" title="Return to Home Page">Home Page</a>
+        </li>
+      </ul><!--end of menu list-->
+    </nav><!--remove </div> and replace with </nav>-->
+    <!-- aside -->
+    <section>
+      <h1>Which browser should you design for?</h1>
+      <article>
+        <strong>The answer is all of them.</strong> If you survey a group of computer
+        aficionados you will get very different answers compared with the general
+        public’s answers.&nbsp;
+        I worked as a freelance computer technician for over eleven years, During that
+        period
+        I never came across a single person who was using a browser other than Internet Explorer.
+        <aside>
+          The great majority of ordinary folk are using IE because it came pre-installed with their
+          computers.
+        </aside>
+        None had ever heard of Mozilla Firefox, although I did meet one person whose son had put Firefox on
+        his
+        computer,
+        he wanted me to remove it because he did not know what it was.
+        The great majority of ordinary folk are using IE because it came pre-installed
+        with their computers. When reading magazine surveys, it would be safer to increase the survey
+        figures for
+        Internet Explorer.
+        The result would mean that you should make sure that your websites work in IE7 and IE8 because these
+        are the most popular by default. It would be safe to predict that there will be a strong swing
+        towards IE 9 when it is finalised in 2011.
+      </article>
+      <!-- summary-details -->
+      <details>
+        <summary><b>A COMPUTER FOR &pound;15?</b></summary>
+        <p>The UK not for profit organization Raspberry Pi is hoping to sell<br> a computer for &pound;15
+          (or less if the take up is good).<br>
+          It is no bigger than a USB connector, it has an ARM chipset, <br>a wi-fi chip, a version of the
+          BASIC progrmming language <br>and it is preloaded with the Linux operating system. The primary
+          purpose <br>for this innovation is as a teaching tool for UK schools where children <br>are
+          bored stiff with the current curriculum. You can read more about it at
+          <br>http://www.wired.co.uk/news/archive//2011-01/20/raspberry-pi-computer
+        </p>
+      </details>
+    </section>
+    <div id="midcol">
+      <h3>Situated in the UK's beautiful Devon countryside</h3>
+      <img title="Devon countryside" alt="Devon countryside" src="images/devon398.jpg" height="229" width="398">
+    </div>
+    <br class="clear">
+  </div><!--content section closed-->
+  <!--change <div id=footer"> to <footer> and enclose text in a paragraph so that it 
 can be centred -->
-<footer><p>Footer goes here</p>
-</footer>
+  <footer>
+    <!-- note that we're programmatically forcing validation and then preventing the form from actually submitting...this is only a test form, and there's no point having it submit to itself for no reason -->
+
+    <!-- <h1>HTML5 forms example</h1> -->
+
+    <p>This is an example for the <a href="http://dev.opera.com/articles/view/new-form-features-in-HTML5/"><cite>New
+          form features in HTML5</cite></a> article</p>
+
+    <form id="form-order" onsubmit="this.checkValidity(); return false;">
+      <div>
+        <label for="title">Title</label>
+        <input type="text" list="mydata" name="title" id="title" placeholder="Select one or enter your own" required>
+        <datalist id="mydata">
+          <option label="Mr" value="Mister">
+          <option label="Mrs" value="Mistress">
+          <option label="Ms" value="Miss">
+        </datalist>
+      </div>
+
+      <div>
+        <label for="name">Name</label>
+        <input type="text" name="name" id="name" placeholder="John Doe" required>
+      </div>
+
+      <div>
+        <label for="phone">Phone number</label>
+        <input type="tel" name="phone" id="phone" placeholder="+1 23456789" pattern="[0-9]{10}"> (optional)
+      </div>
+
+      <div>
+        <label for="email">Email address</label>
+        <input type="email" name="email" id="email" placeholder="foo@bar.com" required>
+      </div>
+
+      <div>
+        <label for="website">Your website</label>
+        <input type="url" name="website" id="website" placeholder="www.yoursite.com"> (optional)
+      </div>
+
+      <div>
+        <label for="numberexample">Nr. of items to order</label>
+        <input type="number" name="numberexample" id="numberexample" min="1" max="10" value="1" required> (1-10)
+      </div>
+
+      <div>
+        <label for="rangeexample">Length</label>
+        <input type="range" name="rangeexample" id="rangeexample" min="1" max="10" value="1" step="0.1">
+        <output onforminput="value=rangeexample.value" for="rangeexample">1</output>m (in 10cm increments)
+      </div>
+
+      <div>
+        <label for="deliverydate">Delivery date</label>
+        <input type="date" name="deliverydate" id="deliverydate" min="2010-12-16" required> (minimum 16 December
+        2010)
+        <!-- with some server-side scripting we'd prefill the min attribute with today's date ... in this static example it's simply hardcoded -->
+      </div>
+
+      <div>
+        <label for="timeexample">Time of delivery</label>
+        <input type="time" name="timeexample" id="timeexample" step="1800" required> (in 30 min increments)
+      </div>
+
+      <div>
+        <label for="colorexample">Color of the item</label>
+        <input type="color" name="colorexample" id="colorexample" value="#ed1c24"> (default red)
+      </div>
+
+      <input type="submit">
+    </form>
+
+
+    <form id="form-search" onsubmit="return false;">
+      <div id="search_demo">
+        <label for="search">Search</label><input name="search" id="search" type="search"> <button
+          type="submit">Go</button>
+      </div>
+    </form>
+
+    <form id="form-progress-meter" onsubmit="return false;">
+      <div>
+        <label for="progress">Progress</label>
+        <progress id="progress" value="25" max="100"><span>25</span>%</progress>
+      </div>
+
+      <div id="meter_demo">
+        <label>Disk usage</label>
+        <meter min="0" value="50.3" max="232.57">50.3 GB used out of 232.57 GB</meter>
+        <meter min="0" value="193.44" max="232.57">193.44 GB used out of 232.57 GB</meter>
+        <meter min="0" value="232.57" max="232.57">232.57 GB used out of 232.57 GB</meter>
+        (3 <code>meter</code> values)
+      </div>
+
+    </form>
+  </footer>
 </body>
+
 </html>
