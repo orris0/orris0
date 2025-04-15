@@ -21,10 +21,17 @@ header {
 	width:970px;
 }
 
-nav { float:left; margin-left:10px; width:115px;
+.nav { float:left; margin-left:10px; width:129px;
 }
-nav ul { margin-left:0; border:0; width:115px;
+.nav ul { margin-left:0; border:0; width:115px;
 }
+.nav {
+	color: red
+	}
+	 nav {
+	display: block;
+	background-color: blue
+	}
 /*set far right column for ads*/
 #rightcol { width:150px; float:right; text-align:center;	
 }
