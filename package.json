@@ -289,5 +289,8 @@
   "bugs": {
     "url": "https://github.com/orris0/orris0/issues"
   },
-  "homepage": "https://github.com/orris0/orris0#readme"
+  "homepage": "https://github.com/orris0/orris0#readme",
+  "workspaces": [
+    "packages/practical-html5-projects"
+  ]
 }
