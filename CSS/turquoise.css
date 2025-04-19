@@ -37,7 +37,7 @@ div#wrapped-header-container {
     position: relative; 
     top: 3em;
     left: 0%;
-	width:97%; 
+	width:96.5%; 
     height: 7em;
     /* cut curners */
     clip-path:polygon(20px 0, calc(100% - 20px) 0, 100% 20px, 
