@@ -73,7 +73,7 @@ header.row {
     border-radius: .2em;
     box-shadow: 0 .05em .25em rgba(0, 0, 0, .5);
 	position:absolute; 
-	top:2.2%; 
+	top:25px; 
     left:2.4%;
     color: white;
     font-size: 100%;
