@@ -51,7 +51,7 @@ html, body, h1, h2, p, ul, li {
     padding: 0;
 }
 
-/* html.fa-events-icons-ready {} */
+/* html.fa-events-icons-ready {} *
 
 header, footer, section, article, nav { display:block; 
 }
@@ -79,7 +79,7 @@ body {
     100% calc(100% - 20px), calc(100% - 20px) 100%,
     20px 100%, 0 calc(100% - 20px), 0 20px); 
 }
-
+*/
 div#wrapped-header-container { 
     /* image */
     position: relative; 
