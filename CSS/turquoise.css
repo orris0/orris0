@@ -332,14 +332,14 @@ h2.dark {
 
 
 
-
+/*
 
 #container { 
 	width:970px; 
 	margin:auto; 
 	min-width:815px; 
 	max-width:1100px;
-	/* background: #58a linear-gradient(#FF9966, #58a); */
+	background: #58a linear-gradient(#FF9966, #58a); 
     border: 1px solid rgba(0, 0, 0, .1);
     border-left-width: 0 !important;
     border-width: 10px;
@@ -353,7 +353,7 @@ h2.dark {
 	padding: .3em .8em;	 
     text-shadow: 0 -.05em .05em rgba(0, 0, 0, .5);
 }
-
+*/
 .container {  
     position: relative; 
     top: -0.3em; 
