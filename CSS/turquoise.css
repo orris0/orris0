@@ -77,7 +77,17 @@ div#main-content { text-align:center; background-color:white; color:black; margi
 
     }
 
-div#right-col { float:right; width:180px;
+div#right-col { float:right; width:180px;border: 1px solid rgba(0, 0, 0, .1);
+    border-left-width: 0 !important;
+    border-width: 10px;
+    box-shadow: 0 .05em .25em rgba(0, 0, 0, .5);
+    color: white;
+    font-size: 100%;
+    text-shadow: 0 -.05em .05em rgba(0, 0, 0, .5);
+    line-height: 1.5;
+    margin: 0 auto;
+	padding: .3em .8em;	 
+    text-shadow: 0 -.05em .05em rgba(0, 0, 0, .5);
 
     }
 
