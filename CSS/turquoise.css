@@ -10,46 +10,27 @@ header.row {  clip-path:polygon(20px 0, calc(100% - 20px) 0, 100% 20px,
     100% calc(100% - 20px), calc(100% - 20px) 100%,
     20px 100%, 0 calc(100% - 20px), 0 20px); background-image:url("images/panew.jpg"); background-repeat:no-repeat; height:190px; background-position:top left;
 }
-/*
-header.row {
-	background-image:url("images/panew.jpg"); 
-	background-repeat:no-repeat; 
-	height:7em; 
-	width:99%;
-	background-position:top left;
-	border: 1px solid rgba(0, 0, 0, .1);
+/*set attributes for consistent appearance in all browsers*/
+div.wrapper { 
+    position: relative;
+    top: 0em;
+    left: 0%;
+    border: 1px solid rgba(0, 0, 0, .1);
     border-left-width: 0 !important;
     border-width: 10px;
-    border-radius: .2em;
     box-shadow: 0 .05em .25em rgba(0, 0, 0, .5);
-	position:absolute; 
-	top:25px; 
-    left:2.4%;
     color: white;
     font-size: 100%;
     text-shadow: 0 -.05em .05em rgba(0, 0, 0, .5);
     line-height: 1.5;
-    margin: 0 auto; padding: 0;
+    margin: 0 auto;
 	padding: .3em .8em;	 
     text-shadow: 0 -.05em .05em rgba(0, 0, 0, .5);
-	box-sizing: border-box;
-	display: -ms-flexbox;
-	display: -webkit-box;
-	display: flex;
-	-ms-flex: 0 1 auto;
-	-webkit-box-flex: 0;
-	flex: 0 1 auto;
-	-ms-flex-direction: row;
-	-webkit-box-orient: horizontal;
-	-webkit-box-direction: normal;
-	flex-direction: row;
-	-ms-flex-wrap: wrap;
-	flex-wrap: wrap;
-	margin-right: -1rem;
-	margin-left: -1rem;
-    
-  }
-    */
+    width:59.5em;
+}
+
+
+
 nav ul  { left: -19.5em; width: -2%; padding-top:230px;padding:0;list-style-type:none; margin:auto; 
 display:block;height:25px;text-transform:uppercase;
 font-size:12px;font-weight:bold;
@@ -202,24 +183,6 @@ div.search {
 
 /* form */
 
-/*set attributes for consistent appearance in all browsers*/
-div.wrapper { 
-    position: relative;
-    top: 10em;
-    left: 0%;
-    border: 1px solid rgba(0, 0, 0, .1);
-    border-left-width: 0 !important;
-    border-width: 10px;
-    box-shadow: 0 .05em .25em rgba(0, 0, 0, .5);
-    color: white;
-    font-size: 100%;
-    text-shadow: 0 -.05em .05em rgba(0, 0, 0, .5);
-    line-height: 1.5;
-    margin: 0 auto;
-	padding: .3em .8em;	 
-    text-shadow: 0 -.05em .05em rgba(0, 0, 0, .5);
-    width:59.5em;
-}
 
 div#main-content { 
     position: relative;
