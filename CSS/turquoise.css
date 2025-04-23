@@ -72,7 +72,7 @@ body {
     max-width:1024px; 
     min-width:60.5em; 	
     position: relative;
-    top: -2em;
+    top: 1em;
     text-shadow: 0 -.05em .05em rgba(0, 0, 0, .5); 
    
     clip-path:polygon(20px 0, calc(100% - 20px) 0, 100% 20px, 
