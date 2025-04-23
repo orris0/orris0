@@ -61,7 +61,7 @@ div#main-content {
 	border-bottom:4px solid #336666; border-left:4px solid #336666; border-right:4px solid #336666; border-top:none; 
 }
 
-#main-content { text-align:center; background-color:white; color:black; margin-top:35px;
+div#main-content { text-align:center; background-color:white; color:black; margin-top:35px;
 	border-bottom:4px solid #336666; border-left:4px solid #336666; border-right:4px solid #336666; border-top:none; 
 	border: 1px solid rgba(0, 0, 0, .1);
     border-left-width: 0 !important;
