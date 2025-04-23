@@ -85,6 +85,11 @@ h2 { font-size:150%; margin-top:0; margin-bottom:5px; color:black;
 br .clear {	clear:both;
 }
 
+a { background: orange; color:navy;
+}
+.inline-block a { display:inline-block; width:110px; height:30px; line-height:30px; text-align:center;
+}
+
 div#wrapped-header-container { 
     /* image */
     position: relative; 
