@@ -2,7 +2,7 @@ html, body, h1, h2, h3, h4, h5, h6, p, ol, ul, li {  padding: 0; margin: 0;
 }
 header, footer, section, article, nav { display:block; 
 }
-body { background-color:#bbFFaa; color:black; font-family:Arial;
+body { display:flex; background-color:#bbFFaa; color:black; font-family:Arial;
 }
 #container { width:97%; margin:auto; min-width:800px; max-width:1100px; 
 }
@@ -43,9 +43,13 @@ h2 { font-size:150%; margin-top:0; margin-bottom:5px; color:black;
 br .clear {	clear:both;
 }
 
-
-
-/*
+div#wrapped-header-container { 
+    /* image */
+    position: relative; 
+    top: 3em;
+    left: 0%;
+	width:96.5%; 
+    height: 7em;/*
 html, body, h1, h2, p, ul, li { 
     margin: 0; 
     padding: 0;
@@ -53,40 +57,6 @@ html, body, h1, h2, p, ul, li {
 
 /* html.fa-events-icons-ready {} *
 
-header, footer, section, article, nav { display:block; 
-}
-
-body {  
-    height: 100%;
-    font-family: Arial, Helvetica, sans-serif;
-    background:#FFF url(images/green-grad.jpg) repeat-x; 
-    border-left-width: 0 !important;
-
-    border-width: 10px; 
-    box-shadow: 0 .05em .25em rgba(0, 0, 0, .0);
-    color: #000000; 
-    font-size: 100%;
-    text-align:center; 
-    line-height: 1.5; 
-    margin:auto;
-    max-width:1024px; 
-    min-width:60.5em; 	
-    position: relative;
-    top: 1em;
-    text-shadow: 0 -.05em .05em rgba(0, 0, 0, .5); 
-   
-    clip-path:polygon(20px 0, calc(100% - 20px) 0, 100% 20px, 
-    100% calc(100% - 20px), calc(100% - 20px) 100%,
-    20px 100%, 0 calc(100% - 20px), 0 20px); 
-}
-*/
-div#wrapped-header-container { 
-    /* image */
-    position: relative; 
-    top: 3em;
-    left: 0%;
-	width:96.5%; 
-    height: 7em;
     /* cut curners */
     clip-path:polygon(20px 0, calc(100% - 20px) 0, 100% 20px, 
   100% calc(100% - 20px), calc(100% - 20px) 100%,
