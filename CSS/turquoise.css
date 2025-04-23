@@ -37,6 +37,26 @@ div.wrapper {
     20px 100%, 0 calc(100% - 20px), 0 20px);
 }
 
+#main-content { text-align:center; background-color:white; color:black; margin-top:35px;
+	border-bottom:4px solid #336666; border-left:4px solid #336666; border-right:4px solid #336666; border-top:none; 
+	border: 1px solid rgba(0, 0, 0, .1);
+    border-left-width: 0 !important;
+    border-width: 10px;
+    box-shadow: 0 .05em .25em rgba(0, 0, 0, .5);
+    color: white;
+    font-size: 100%;
+    text-shadow: 0 -.05em .05em rgba(0, 0, 0, .5);
+    line-height: 1.5;
+    margin: 0 auto;
+	padding: .3em .8em;	 
+    text-shadow: 0 -.05em .05em rgba(0, 0, 0, .5);
+    width:59.5em;
+
+    clip-path:polygon(20px 0, calc(100% - 20px) 0, 100% 20px, 
+    100% calc(100% - 20px), calc(100% - 20px) 100%,
+    20px 100%, 0 calc(100% - 20px), 0 20px);
+
+    }
 
 
 nav ul  { left: -19.5em; width: -2%; padding-top:230px;padding:0;list-style-type:none; margin:auto; 
@@ -58,26 +78,7 @@ nav ul  li a:hover{ background:transparent url("images/bgHOVER.gif") no-repeat t
 nav ul  li a.current,ul#main-menu li a.current:hover { color:#fff;
 background:transparent url("images/bgON.gif") no-repeat top right; 
 }
-#main-content { text-align:center; background-color:white; color:black; margin-top:35px;
-	border-bottom:4px solid #336666; border-left:4px solid #336666; border-right:4px solid #336666; border-top:none; 
-	border: 1px solid rgba(0, 0, 0, .1);
-    border-left-width: 0 !important;
-    border-width: 10px;
-    box-shadow: 0 .05em .25em rgba(0, 0, 0, .5);
-    color: white;
-    font-size: 100%;
-    text-shadow: 0 -.05em .05em rgba(0, 0, 0, .5);
-    line-height: 1.5;
-    margin: 0 auto;
-	padding: .3em .8em;	 
-    text-shadow: 0 -.05em .05em rgba(0, 0, 0, .5);
-    width:59.5em;
 
-    clip-path:polygon(20px 0, calc(100% - 20px) 0, 100% 20px, 
-    100% calc(100% - 20px), calc(100% - 20px) 100%,
-    20px 100%, 0 calc(100% - 20px), 0 20px);
-
-    }
 #left-col { float:left; width: 180px; 
 }
 #right-col { float:right; width:180px;
