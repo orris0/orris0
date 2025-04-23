@@ -8,8 +8,8 @@ body { background-color:#bbFFaa; color:black; font-family:Arial;
 }
 header.row {background-image:url("images/panew.jpg"); background-repeat:no-repeat; height:190px; background-position:top left;
 }
-nav ul  {padding-top:230px;padding:0;list-style-type:none; margin:auto; 
-display:block;height:36px;text-transform:uppercase;
+nav ul  { left: -11.5%; width: 142.5%; padding-top:230px;padding:0;list-style-type:none; margin:auto; 
+display:block;height:25px;text-transform:uppercase;
 font-size:12px;font-weight:bold;
 background:url('images/bgOFF.gif') repeat-x left top;
 font-family:Helvetica,Arial,Verdana,sans-serif;
