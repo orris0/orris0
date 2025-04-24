@@ -10,9 +10,15 @@ body { background-color:#bbFFaa; color:black; font-family:Arial; clip-path:polyg
     100% calc(100% - 20px), calc(100% - 20px) 100%,
     20px 100%, 0 calc(100% - 20px), 0 20px);
 }
-header.row {  clip-path:polygon(20px 0, calc(100% - 20px) 0, 100% 20px, 
+header.row {  
+    clip-path:polygon(20px 0, calc(100% - 20px) 0, 100% 20px, 
     100% calc(100% - 20px), calc(100% - 20px) 100%,
-    20px 100%, 0 calc(100% - 20px), 0 20px); background-image:url("images/panew.jpg"); background-repeat:no-repeat; height:190px; background-position:top left;
+    20px 100%, 0 calc(100% - 20px), 0 20px); 
+    background-image:url("images/panew.jpg"); 
+    background-repeat:no-repeat; 
+    height:190px;
+    width:790px; 
+    background-position:top left;
 }
 div.col-12 { display: block; unicode-bidi: isolate; color: black; font-family: Arial;
   } 
