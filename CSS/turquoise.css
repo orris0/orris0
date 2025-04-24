@@ -326,7 +326,7 @@ div#hnav {
 /*set middle column for main content*/
 #midcol {position:relative; 
     left: 13em; 
-    top:-60em; margin-top: 33px;  margin-left:135px; margin-right:155px; padding: 0.3em .8em;	
+    top:0em; margin-top: 33px;  margin-left:135px; margin-right:155px; padding: 0.3em .8em;	
     width: 14em;
     border: 1px solid rgba(0, 0, 0, .1);
     border-radius: .2em;
