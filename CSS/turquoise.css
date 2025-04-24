@@ -20,7 +20,8 @@ header.row {
     20px 100%, 0 calc(100% - 20px), 0 20px); 
     background-image:url("images/panew.jpg"); 
     background-repeat:no-repeat; 
-
+    margin-left: 1em;
+    margin-right: 1em;
     width:790px; 
     background-position:;
 }
