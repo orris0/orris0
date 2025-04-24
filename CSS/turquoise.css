@@ -170,7 +170,7 @@ a { background: orange; color:navy;
 div#wrapped-header-container { 
     /* image */
     position: relative; 
-    top: 1em;
+    top: 2em;
     left: 0%;
 	width:96.5%; 
     /* cut curners */
