@@ -387,14 +387,14 @@ div#hnav {
 }
 section#hero {
     position:relative;
-    top: -28.5em;
-    left: 1.2em;
+    top: 0em;
+    left: 1em;
     display: block;
     width:95%;
 }section.slider {
     width: 100%;
     position: relative;
-    top: 29em;
+    top: 0em;
     left: 3em;
     height: 486.667px;
 }
