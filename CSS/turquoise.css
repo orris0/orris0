@@ -170,22 +170,14 @@ a { background: orange; color:navy;
 div#wrapped-header-container { 
     /* image */
     position: relative; 
-    top: 3em;
+    top: 1em;
     left: 0%;
 	width:96.5%; 
-  /*  height: 7em;
-html, body, h1, h2, p, ul, li { 
-    margin: 0; 
-    padding: 0;
-}
-
-/* html.fa-events-icons-ready {} *
-
     /* cut curners */
     clip-path:polygon(20px 0, calc(100% - 20px) 0, 100% 20px, 
   100% calc(100% - 20px), calc(100% - 20px) 100%,
   20px 100%, 0 calc(100% - 20px), 0 20px);
-  /* ****** */                                                                                                                                                                                                                                                                                                                                                                                               
+                                                                                                                                                                                                                                                                                                                                                                                                
 	min-width:800px; 
 	max-width:1100px;
 	background: #58a linear-gradient(#FF9966, #58a); 
@@ -608,13 +600,3 @@ margin: -25px 0 0 0; padding: 0px; padding-left: 10px; z-index: 1; }
  /*hovering over the active tab shows navy text*/
 	#navtwo a.active:hover { background: #cfecf5; color: navy; 
 	}
-<!-- <title>Embed an SVG square inline in an HTML5 page</title> -->
-                    <svg>
-                        <rect x="10" y="10" fill="red" width="100px" height="100px" />
-                    </svg>
-                    <!-- Embed an SVG circle using object -->
-                    <svg>
-                        <!--<svg xmlns="http://www.w3.org/2000/svg" version="1.1">-->
-                        <circle cx="100" cy="50" r="40" stroke="black" stroke-width="2" fill="blue">
-                    </svg>
-    
