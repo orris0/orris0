@@ -26,7 +26,9 @@ header.row {
     width:970px; 
 
 }
-div.col-12 { display: block; unicode-bidi: isolate; color: black; font-family: Arial;
+div.col-12 { display: block; unicode-bidi: isolate; color: black; font-family: Arial; clip-path:polygon(20px 0, calc(100% - 20px) 0, 100% 20px, 
+    100% calc(100% - 20px), calc(100% - 20px) 100%,
+    20px 100%, 0 calc(100% - 20px), 0 20px);
   } 
 
 div.logo {
