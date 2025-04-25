@@ -73,7 +73,7 @@ div.header-wrapper {
 /*set attributes for consistent appearance in all browsers*/
 div.wrapper { 
     position: relative;
-    top: 1.1em;
+    top: 1.2em;
     left: 0%;
     border: 1px solid rgba(0, 0, 0, .1);
     border-left-width: 0 !important;
