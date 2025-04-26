@@ -388,7 +388,7 @@ div#hnav {
 div#hnav {
   position:relative; 
   top:-100.9em; 
-  left: 0%;
+  left: 2%;
   color: navy; border-bottom: 1px solid black; margin: -25px 0 0 0; padding: 0px; padding-left: 3em; z-index: 1;
 }
 /* use display:inline to remove IE6 double margin bug*/
