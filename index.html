@@ -187,30 +187,31 @@
 </head>
 
 <body>
-    <noscript>
-        <p>
-            Hey, your browser has JavaScript turned off!
-        </p>
-        <p>
-            Okay, cool, perhaps you'll prefer this <a href="no-js.html">non-JavaScript version</a> of the page.
-        </p>
-    </noscript>
-
-    <div class="header-wrapper">
-        <!-- HEADER /-->
-        <header class="row">
-            <div class="col-12"> <!-- close top section - content area starts -->
-                <div class="logo">
-
-                    <!-- svg-text-embed -->
-                    <svg version="1.1" baseProfile="full" xmlns="http://www.w3.org/2000/svg" width="500px"
-                        height="60px">
-                        <text x="20" y="50"
-                            style="font-family:times new roman; font-size:36pt; font-weight:bold; letter-spacing:20px; stroke:black; fill:white; ">Tour
-                            Orris</text>
-                    </svg>
-                </div><!-- end col-12 -->
-                <div class="search">
+    <div id="container"> 
+	<div id="header">
+	
+	    <noscript>
+		<p>Hey, your browser has JavaScript turned off!</p>
+		<p>Okay, cool, perhaps you'll prefer this <a href="no-js.html">non-JavaScript version</a> of the page.</p>
+	    </noscript>
+		
+	    <!-- Embed an SVG circle using object -->
+	    <svg>
+		<!--<svg xmlns="http://www.w3.org/2000/svg" version="1.1">-->
+		<circle cx="100" cy="50" r="40" stroke="black" stroke-width="2" fill="blue">
+	    </svg>
+		
+	    <!-- svg-text-embed -->
+	    <svg version="1.1" baseProfile="full" xmlns="http://www.w3.org/2000/svg" width="500px" height="60px">
+		<text x="20" y="50"
+			style="font-family:times new roman; font-size:36pt; font-weight:bold; letter-spacing:20px; stroke:black; fill:white; ">
+			Tour Orris</text>
+	    </svg>	
+		<!-- <title>Embed an SVG square inline in an HTML5 page</title> -->
+		<svg>
+			<rect x="10" y="10" fill="red" width="100px" height="100px" />
+		</svg>
+		<div class="search">
                     <form method=get action="http://search.yahoo.com/search">
                         <a href="http://search.yahoo.com/"></a>
                         <input type="text" name="p" value="Yahoo" size=15>
@@ -218,13 +219,10 @@
                         <input type="radio" name="vs" value="https://orris0.github.io/orris0" checked="checked">Search
                         this site
                     </form>
-
                 </div>
-
-
-
-        </header> <!-- end header -->
-    </div><!-- end header-wrapper -->
+			<h1>MJ's Rural Retreats</h1>
+        </div> <!-- end header -->
+    </div><!-- end container -->
 
     <!-- WRAPPER -->
     <div class="wrapper">
