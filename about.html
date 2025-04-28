@@ -107,6 +107,7 @@
             <![endif]-->
         </head>
 	<body>
+
     <noscript>
         <p>
             Hey, your browser has JavaScript turned off!
@@ -116,31 +117,18 @@
         </p>
     </noscript>
 
-    <div class="header-wrapper">
+    <div id="wrapped-header-container">
         <!-- HEADER /-->
         <header class="row">
             <div class="col-12"> <!-- close top section - content area starts -->
-                <div class="logo">
-
-                    <!-- svg-text-embed -->
-                    <svg version="1.1" baseProfile="full" xmlns="http://www.w3.org/2000/svg" width="500px"
-                        height="60px">
-                        <text x="20" y="50"
-                            style="font-family:times new roman; font-size:36pt; font-weight:bold; letter-spacing:20px; stroke:black; fill:white; ">Tour
-                            Orris</text>
+                <!-- svg-text-embed -->
+                    <svg version="1.1" baseProfile="full" xmlns="http://www.w3.org/2000/svg" width="500px" height="60px"> 
+			<text x="20" y="50" style="font-family:times new roman; font-size:36pt; font-weight:bold; letter-spacing:20px; stroke:black; fill:white;">Tour Orris</text>
                     </svg>
+	   
                 </div><!-- end col-12 -->
-                <div class="search">
-                    <form method=get action="http://search.yahoo.com/search">
-                        <a href="http://search.yahoo.com/"></a>
-                        <input type="text" name="p" value="Yahoo" size=15>
-                        <input type="hidden" name="fr" value="yscpb"> <input type="submit" value="Search"><br>
-                        <input type="radio" name="vs" value="https://orris0.github.io/orris0" checked="checked">Search
-                        this site
-                    </form>
-
-                </div>
-		<nav>
+		    
+                    <nav>
                         <ul>
 			    <li><a href="about.html" title="">About Us</a></li>
 			    <li><a href="news.html" title="">News</a></li>
@@ -152,8 +140,19 @@
                         </ul>
 		    </nav>
 		    <br class="clear" />
-	    </header><!-- end header -->
-    </div><!-- end header-wrapper -->
+		    <div class="search">
+                    <form method=get action="http://search.yahoo.com/search">
+                        <a href="http://search.yahoo.com/"></a>
+                        <input type="text" name="p" value="Yahoo" size=15>
+                        <input type="hidden" name="fr" value="yscpb"> <input type="submit" value="Search"><br>
+                        <input type="radio" name="vs" value="https://orris0.github.io/orris0" checked="checked">Search
+                        this site
+                    </form>
+
+                </div>
+	    </header> 
+            
+	</div> <!--end wrapper --> <!-- end header -->
 
     <!-- WRAPPER -->
     <div class="wrapper">
