@@ -276,10 +276,10 @@ div.search {
     border-radius: .2em;
     box-shadow: 0 .05em .25em rgba(0, 0, 0, .5);
 	position:absolute; 
-    top:1em; 
-    left:64em;
+    top:2em; 
+    left:100em;
     color: white;
-    font-size: 75%;
+    font-size: 50%;
     text-shadow: 0 -.05em .05em rgba(0, 0, 0, .5);
     line-height: 1.5;
     margin: 0 auto; padding: 0;
