@@ -14,7 +14,7 @@ body {
     100% calc(100% - 20px), calc(100% - 20px) 100%,
     20px 100%, 0 calc(100% - 20px), 0 20px);
 }
-header.row {width:100%; height:80px; color:black; background-color:#FFCC00; padding-top:10px; 
+header.row { color:black; background-color:#FFCC00; padding-top:10px; 
     clip-path:polygon(20px 0, calc(100% - 20px) 0, 100% 20px, 
     100% calc(100% - 20px), calc(100% - 20px) 100%,
     20px 100%, 0 calc(100% - 20px), 0 20px); 
@@ -23,7 +23,11 @@ header.row {width:100%; height:80px; color:black; background-color:#FFCC00; padd
     margin-left: 1em;
     margin-right: 1em;
     margin:10px auto;
-    width:970px; 
+    width: 920px;
+    height: 180px;
+    padding: 0;
+    border: 10px white solid;
+    margin: 0 auto 0 auto; 
 
 }
 div.col-12 { display: block; unicode-bidi: isolate; color: black; font-family: Arial; clip-path:polygon(20px 0, calc(100% - 20px) 0, 100% 20px, 
