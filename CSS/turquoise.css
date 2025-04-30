@@ -283,7 +283,7 @@ div.search {
     border-radius: .2em;
     box-shadow: 0 .05em .25em rgba(0, 0, 0, .5);
 	position:absolute; 
-    top:2em; 
+    top:16em; 
     left:100em;
     color: white;
     font-size: 50%;
