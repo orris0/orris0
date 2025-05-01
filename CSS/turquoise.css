@@ -181,7 +181,7 @@ background:url('images/bgOFF.gif') repeat-x left top;
 font-family:Helvetica,Arial,Verdana,sans-serif;
 border-bottom:4px solid #336666; border-top:1px solid #C0E2D4;
 position:relative;	
-top: -4em; left:2.5em;
+top: .2em; left:2.5em;
 }
 nav ul  li { display:block;float:left;margin:0;padding:0;
 }
