@@ -290,69 +290,56 @@
 </head>
 
 <body>
-  <noscript>
-    <p>
-      Hey, your browser has JavaScript turned off!
-    </p>
-    <p>
-      Okay, cool, perhaps you'll prefer this <a href="no-js.html">non-JavaScript version</a> of the page.
-    </p>
-  </noscript>
-  <!-- svg-text-embed -->
-  <svg version="1.1" baseProfile="full" xmlns="http://www.w3.org/2000/svg" width="500px" height="60px">
-    <text x="20" y="50"
-      style="font-family:times new roman; font-size:36pt; font-weight:bold; letter-spacing:20px; stroke:black; fill:white; ">
-      Tour Orris</text>
-  </svg>
-  <!--<div id="container">--><!--surround header and border with a container-->
-  <header><!--change <div id="hdr"> to <header>-->
-    <!-- <h1> SVG </h1> -->
-    <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
-      <circle cx="100" cy="50" r="40" stroke="black" stroke-width="2" fill="blue">
-    </svg>
-    <!-- <h1>Devon's Rural Retreats</h1> -->
-    <h1>MJ's Practical HTML5 Projects</h1>
 
-  </header>
-  <!--</div>--><!--close top section - content area starts -->
-  <div id="content">
-    <h2>Award winning accommodation, self catering or bed and breakfast</h2>
-    <div id="leftcol">
-      <h3>Cottages, converted barns, caravans</h3><img alt="Cottage interior" title="Cottage interior" height="225"
-        src="images/cotdining300.jpg" width="300"><br>The superb interior
-      of one of our cottages
-    </div>
+    <div id="container"> <!--surround header and border with a container-->
+        <header><!--change <div id="hdr"> to <header>-->
+            <!-- <h1> SVG </h1> -->
+            <noscript>
+                <p>Hey, your browser has JavaScript turned off!</p>
+                <p>Okay, cool, perhaps you'll prefer this <a href="no-js.html">non-JavaScript version</a> of the page.</p>
+            </noscript>
+            <!-- svg-text-embed -->
+            <svg version="1.1" baseProfile="full" xmlns="http://www.w3.org/2000/svg" width="500px" height="60px">
+                <text x="20" y="50" style="font-family:times new roman; font-size:36pt; font-weight:bold; letter-spacing:20px; stroke:black; fill:white; "> Tour Orris</text>
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+                <circle cx="100" cy="50" r="40" stroke="black" stroke-width="2" fill="blue">
+            </svg>
+            <h1>Orris's Rural Retreats</h1> 
 
-    <nav><!--use the semantic tag <nav>-->
-      <ul><!--start of menu list-->
-        <li class="btn"> <a href="accommodation.html" title="Accommodation">Accommodation</a>
-        </li>
-        <li class="btn"><a href="maps.html" title="Location Maps">Maps</a>
-        </li>
-        <li class="btn"><a href="faqs.html" title="Frequently Asked Questions">Information</a>
-        </li>
-        <li class="btn"><a href="attractions.html" title="Local attractions">Attractions</a>
-        </li>
-        <li class="btn"><a href="contact.html" title="Contact us">Contact Us</a>
-        </li>
-        <li class="btn"><a href="index.html" title="Return to Home Page">Home Page</a>
-        </li>
-      </ul><!--end of menu list-->
-    </nav><!--remove </div> and replace with </nav>-->
-    <!-- aside -->
-    <section>
-      <h1>Which browser should you design for?</h1>
-      <article>
-        <strong>The answer is all of them.</strong> If you survey a group of computer
-        aficionados you will get very different answers compared with the general
-        public’s answers.&nbsp;
-        I worked as a freelance computer technician for over eleven years, During that
-        period
-        I never came across a single person who was using a browser other than Internet Explorer.
-        <aside>
-          The great majority of ordinary folk are using IE because it came pre-installed with their
-          computers.
-        </aside>
+        </header>
+        <!--</div>--><!--close top section - content area starts -->
+        <div id="content">
+            <h2>Award winning accommodation, self catering or bed and breakfast</h2>
+            <div id="leftcol">
+                <h3>Cottages, converted barns, caravans</h3>
+                    <img alt="Cottage interior" title="Cottage interior" height="225" src="images/cotdining300.jpg" width="300"><br>The superb interior of one of our cottages
+            </div>
+
+            <nav><!--use the semantic tag <nav>-->
+                <ul><!--start of menu list-->
+                    <li class="btn"> <a href="accommodation.html" title="Accommodation">Accommodation</a></li>
+                    <li class="btn"><a href="maps.html" title="Location Maps">Maps</a></li>
+                    <li class="btn"><a href="faqs.html" title="Frequently Asked Questions">Information</a></li>
+                    <li class="btn"><a href="attractions.html" title="Local attractions">Attractions</a></li>
+                    <li class="btn"><a href="contact.html" title="Contact us">Contact Us</a></li>
+                    <li class="btn"><a href="index.html" title="Return to Home Page">Home Page</a></li>
+                </ul><!--end of menu list-->
+            </nav><!--remove </div> and replace with </nav>-->
+            <!-- aside -->
+            <section>
+                <h1>Which browser should you design for?</h1>
+                <article>
+                    <strong>The answer is all of them.</strong> If you survey a group of computer
+                        aficionados you will get very different answers compared with the general
+                        public’s answers.&nbsp;
+                        I worked as a freelance computer technician for over eleven years, During that
+                        period
+                        I never came across a single person who was using a browser other than Internet Explorer.
+                        <aside>
+                            The great majority of ordinary folk are using IE because it came pre-installed with their
+                            computers.
+                        </aside>
         None had ever heard of Mozilla Firefox, although I did meet one person whose son had put Firefox on
         his
         computer,
