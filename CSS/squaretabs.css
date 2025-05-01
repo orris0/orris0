@@ -67,7 +67,7 @@ h1 { font-size:300%; color :white; position: relative; left:90px; top: 55px; wid
       border-left-width: 0;font-weight:normal; text-align:center; padding-top:2em; margin-bottom:-0.625em; margin:auto; */
 }
 
-div.menu-bar { position: relative; top: 0; left: 0;
+div.menu-bar { position: relative; top: 1em; left: 0;
 
 }
 /* Set styles to equalise browser rendition*/
