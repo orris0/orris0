@@ -409,7 +409,7 @@ div#hnav {
   position:relative; 
   top:-1.7em; 
   left: 2%;
-  color: navy; border-bottom: 1px solid black; margin: -25px 0 0 0; padding: 0px; padding-left: 3em; z-index: 1;
+  color: navy; margin: -25px 0 0 0; padding: 0px; padding-left: 3em; z-index: 1;
 }
 /* use display:inline to remove IE6 double margin bug*/
 #hnav li { display: inline; overflow: hidden; list-style-type: none;
