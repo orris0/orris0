@@ -174,14 +174,16 @@ h2.dark {
 nav ul  { 
     top: -4em; 
     width: 109%; 
-    padding-top:230px;padding:0;list-style-type:none; margin:auto; 
+    padding:0;list-style-type:none; margin:auto; 
 display:block;height:36px;text-transform:uppercase;
 font-size:56%;font-weight:bold;
 background:url('images/bgOFF.gif') repeat-x left top;
 font-family:Helvetica,Arial,Verdana,sans-serif;
 border-bottom:4px solid #336666; border-top:1px solid #C0E2D4;
-position:relative;	
-top: .2em; left:2.5em;
+position:relative;
+
+    top: 2.9em; 
+    left:2.5em;
 }
 nav ul  li { display:block;float:left;margin:0;padding:0;
 }
