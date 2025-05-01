@@ -36,6 +36,8 @@ div.col-12 { display: block; unicode-bidi: isolate; color: black; font-family: A
   }
   
   svg {
+    width: 500px;
+    height: 60px
 
   }
 
