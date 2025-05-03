@@ -455,8 +455,8 @@ div.bx-viewport {
 }
 div.bx-wrapper {
     position:relative;
-    top: 30em;
-    left: 2.9em;
+    top: 0em;
+    left: 0em;
 }
 ul.slider1 {
     width: 100%;
