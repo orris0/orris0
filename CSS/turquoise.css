@@ -10,6 +10,8 @@ body {
     100% calc(100% - 20px), calc(100% - 20px) 100%,
     20px 100%, 0 calc(100% - 20px), 0 20px);
 }
+#container {width:960px; margin:-10px auto 0 auto;
+} 
 #container { width:97%; margin:auto; min-width:800px; max-width:1100px; clip-path:polygon(20px 0, calc(100% - 20px) 0, 100% 20px, 
     100% calc(100% - 20px), calc(100% - 20px) 100%,
     20px 100%, 0 calc(100% - 20px), 0 20px);
