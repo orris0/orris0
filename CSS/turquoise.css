@@ -36,7 +36,7 @@ div.col-12 { display: block; unicode-bidi: isolate; color: black; font-family: A
     100% calc(100% - 20px), calc(100% - 20px) 100%,
     20px 100%, 0 calc(100% - 20px), 0 20px);
   }
-h1 { font-size:300%; color :white; position: relative; left:25%; top: 5em; width:680px; 
+h1 { font-size:300%; color :white; position: relative; left:25%; top: -5em; width:680px; 
 }
 
 #banner h1 { 
