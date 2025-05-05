@@ -81,11 +81,11 @@ div.wrapper {
 	padding: .3em .8em;	 
     text-shadow: 0 -.05em .05em rgba(0, 0, 0, .5);
 }
-/*add display attributes for the semantic tags*/
+/*add display attributes for the semantic tags*
 div#header, footer, section, article, nav { 
     display:block; 
 }
-	/* set header height and background image */
+	/* set header height and background image 
 #header { 
     background-image:url('images/compbkgcrop.jpg');
     background-position:50% top;  
@@ -140,7 +140,7 @@ div.search {
 	padding: .3em .8em;	 
     text-shadow: 0 -.05em .05em rgba(0, 0, 0, .5);	
 }
-/*set images to have no borders*/
+/*set images to have no borders*
 img { 	
     border:0;
     border-style: none;
@@ -188,7 +188,7 @@ img {
 
 	h1 {padding: 110px  0 0 12%; margin-bottom:0; font-family :"times new roman";  font-size: 250%; color: #0080a0;; font-weight:bold;}
 
-/*SET FONTS*/
+/*SET FONTS*
 span.small { font-size:small;
 }
 h1 { font-family:"times new roman"; text-align:center;
@@ -229,7 +229,7 @@ div.slide-wrap {
 	left: -3em
 }
 
-/*set far right column for ads*/
+/*set far right column for ads*
 #rightcol { float:right; text-align:center; width: 150px; 
     position: relative; top: 11.5em;	
     padding: .3em .8em;	
@@ -255,7 +255,7 @@ div.slide-wrap {
     border-width: 10px;
     border-left-width: 0;
 } 
-/*set middle column for main content*/
+/*set middle column for main content*
 #midcol {position:relative; 
     left: 7.2em; 
     top:-15.9em; margin-top: 33px;  margin-left:135px; margin-right:155px; padding: 0.3em .8em;	
@@ -270,7 +270,7 @@ div.slide-wrap {
     border-width: 10px;
     border-left-width: 0;
 }
-/*set gallery block position*/ 
+/*set gallery block position* 
 #gallery-block { 
     position:relative; 
     left: -9em; 
@@ -313,7 +313,7 @@ div#hnav {
 
 
 
-/*set footer*/
+/*set footer*
 footer { 	clear:both; color:black; text-align:center; width:60.625em; padding: .3em .8em;	
     border: 1px solid rgba(0, 0, 0, .1);
     border-radius: .2em;
