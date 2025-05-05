@@ -41,7 +41,7 @@ footer { clear:both; color:black; text-align:center; width:970px;
 }
 
 
-/*PAGE LAYOUT position content at horizontal centre of screen for IE and Mozilla*/
+/*PAGE LAYOUT position content at horizontal centre of screen for IE and Mozilla*
 body { 
     border: 10px solid hsla(0,0%,100%,.5);
     background: white;
