@@ -92,6 +92,9 @@ li.btn a { display:block; background-color :#66CCFF; color:black; font-weight:bo
     }
     #col-3 a:hover img.hid { visibility:visible;
     } 
+    /*set the gallery block 10px further to the right*/
+    #gallery-block { position:absolute; left: 165px; top:50px;
+    } 
 
 
 /*PAGE LAYOUT position content at horizontal centre of screen for IE and Mozilla*
