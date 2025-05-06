@@ -4,9 +4,7 @@ html, body, p, ul, li, h1, h2 { margin:0; padding:0;
 /*set images to have no borders*/
 img { border:0;
 }
-/*add display attributes for the semantic tags*/
-header, footer, section, article, nav { display:block;
-}
+
 /*SET FONTS*/
 span.small { font-size:small;
 }
@@ -25,6 +23,13 @@ body {margin:auto; width:970px; background-color:#bbFFaa;
 
 div#container { width:780px; margin:auto;
 }
+/*add display attributes for the semantic tags*/
+header, footer, section, article, nav { display:block;
+}
+div.col-12 { display: block; unicode-bidi: isolate; color: black; font-family: Arial; clip-path:polygon(20px 0, calc(100% - 20px) 0, 100% 20px, 
+    100% calc(100% - 20px), calc(100% - 20px) 100%,
+    20px 100%, 0 calc(100% - 20px), 0 20px);
+  }
 header { width:970px; background-image:url('../images/showcase.jpg'); background-position: center; background-repeat:no-repeat; border-bottom:0; clip-path:polygon(20px 0, calc(100% - 20px) 0, 100% 20px, 
     100% calc(100% - 20px), calc(100% - 20px) 100%,
     20px 100%, 0 calc(100% - 20px), 0 20px);
