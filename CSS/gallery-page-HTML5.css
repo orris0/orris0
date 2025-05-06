@@ -47,10 +47,10 @@ nav ul { margin-left:0; border:0; width:115px;
 /*set far right column for ads*/
 #rightcol { width:150px; float:right; text-align:center;
 }
-#rightcol p.advert {font-size:small; margin-top:190px; position:relative; top: 0; left: 0;
+#rightcol p.advert {font-size:small; margin-top:190px; 
 }
 /*set middle column for main content*/
-#midcol { margin-left:135px; margin-right:155px;
+#midcol { margin-left:135px; margin-right:155px; position:relative; top: 0; left: 0;
 }
 /*set gallery block position*/
 #gallery-block { position:relative; left: 30px; top:10px;
