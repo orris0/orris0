@@ -27,7 +27,7 @@ div#container { width:970px; margin:auto;
 div.wrapper { 
     position: relative;
     top: 0.2em;
-    left: 15%;
+    left: 10%;
     border: 1px solid rgba(0, 0, 0, .1);
     border-left-width: 0 !important;
     border-width: 10px;
