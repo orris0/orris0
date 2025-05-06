@@ -488,8 +488,8 @@ div#hnav {
 }
 .slide-wrap { 
     position: relative;
-    top: -59.6em;
-    left: -12%;
+    top: -86.6em;
+    left: -20%;
     width: 79%;
 }
 section#hero {
@@ -498,7 +498,9 @@ section#hero {
     left: 1em;
     display: block;
     width:95%;
-}section.slider {
+}
+
+section.slider {
     width: 100%;
     position: relative;
     top: 1em;

@@ -55,6 +55,14 @@ nav ul { margin-left:0; border:0; width:115px;
 /*set gallery block position*/
 #gallery-block { position:relative; left: 30px; top:57px;
 }
+.slide-wrap { 
+    position: relative;
+    top: -86.6em;
+    left: -20%;
+    width: 79%;
+}
+
+
 /*set footer*/
 footer { clear:both; color:black; text-align:center; width:970px;
 }
