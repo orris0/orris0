@@ -501,7 +501,7 @@ section#hero {
 }section.slider {
     width: 100%;
     position: relative;
-    top: 30em;
+    top: 1em;
     left: 3.3em;
     height: 486.667px;
 }
