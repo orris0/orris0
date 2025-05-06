@@ -29,7 +29,7 @@ nav ul { margin-left:0; border:0; width:115px;
 #rightcol p.advert {font-size:small; margin-top:190px;
 }
 /*set middle column for main content*/
-#midcol { margin-left:135px; margin-right:155px;
+#midcol { margin-left:135px; margin-right:155px; position: relative; top: 0em; left: 0em;
 }
 /*set gallery block position*
 #gallery-block { position:relative; left: 30px; top:10px;
