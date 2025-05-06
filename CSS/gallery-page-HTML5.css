@@ -31,7 +31,7 @@ nav ul { margin-left:0; border:0; width:115px;
 /*set middle column for main content*/
 #midcol { margin-left:135px; margin-right:155px;
 }
-/*set gallery block position*/
+/*set gallery block position*
 #gallery-block { position:relative; left: 30px; top:10px;
 }
 /*set footer*/
@@ -92,10 +92,10 @@ li.btn a { display:block; background-color :#66CCFF; color:black; font-weight:bo
     }
     #col-3 a:hover img.hid { visibility:visible;
     } 
-    /*set the gallery block 10px further to the right*
+    /*set the gallery block 10px further to the right
     #gallery-block { position:absolute; left: 165px; top:50px;
-    } 
-    */
+    } */
+    
 
 /*PAGE LAYOUT position content at horizontal centre of screen for IE and Mozilla*
 body { 
