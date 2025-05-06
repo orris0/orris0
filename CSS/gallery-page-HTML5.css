@@ -23,22 +23,23 @@ body {margin:auto; width:970px; background-color:#bbFFaa;
 
 div#container { width:780px; margin:auto;
 }
-
-#wrapper {position:relative; top:0; left:0;width:950px; margin:auto; text-align:center;
-}
-
-
 /*add display attributes for the semantic tags*/
 header, footer, section, article, nav { display:block;
 }
-div.col-12 { display: block; unicode-bidi: isolate; color: black; font-family: Arial; clip-path:polygon(20px 0, calc(100% - 20px) 0, 100% 20px, 
-    100% calc(100% - 20px), calc(100% - 20px) 100%,
-    20px 100%, 0 calc(100% - 20px), 0 20px);
-  }
 header { width:970px; background-image:url('../images/showcase.jpg'); background-position: center; background-repeat:no-repeat; border-bottom:0; clip-path:polygon(20px 0, calc(100% - 20px) 0, 100% 20px, 
     100% calc(100% - 20px), calc(100% - 20px) 100%,
     20px 100%, 0 calc(100% - 20px), 0 20px);
 }
+#wrapper {position:relative; top:0; left:0;width:950px; margin:auto; text-align:center;
+}
+
+
+
+div.col-12 { display: block; unicode-bidi: isolate; color: black; font-family: Arial; clip-path:polygon(20px 0, calc(100% - 20px) 0, 100% 20px, 
+    100% calc(100% - 20px), calc(100% - 20px) 100%,
+    20px 100%, 0 calc(100% - 20px), 0 20px);
+  }
+
 nav { float:left; margin-left:10px; width:115px;
 }
 nav ul { margin-left:0; border:0; width:115px;
