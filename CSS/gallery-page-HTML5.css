@@ -62,10 +62,11 @@ div.wrapper {
     font-size: 100%;
     text-shadow: 0 -.05em .05em rgba(0, 0, 0, .5);
     line-height: 1.5;
-    margin: 0 auto;
+    
 	padding: .3em .8em;	 
     text-shadow: 0 -.05em .05em rgba(0, 0, 0, .5);
-    width: 50em;
+    width: 900px;
+    margin: 1em calc(50% -450px);
     background: #58a linear-gradient(#FF9966, #58a);
 
     clip-path:polygon(20px 0, calc(100% - 20px) 0, 100% 20px, 
