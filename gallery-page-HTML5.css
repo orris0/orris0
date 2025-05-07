@@ -27,7 +27,7 @@ h2 {font-size:large; font-family:"times new roman"; text-align:center;color:maro
 }
 
 h1 { font-size:150%; color :white; position: relative; left:90px; top:15px; width:480px; font-family:"times new roman"; text-align:center;
-}*/
+}
 h2 {font-size:75%; font-family:"times new roman"; line-height:3.4rem; text-align:center;
 }
 /*PAGE LAYOUT*/
@@ -144,7 +144,7 @@ nav li a { color:white; font-size:80%; text-decoration:none; padding:0 5px 0 30p
 
 /*SET THUMBNAIL GALLERY BLOCK*/  
 /* Set general thumbnail styles */
-#col-1	{ position: absolute; top: -10px; left: -10px; width:85px;} 
+#col-1	{ position: absolute; top: -20px; left: -10px; width:85px;} 
 /*place the column on the page*/
 li	{ margin: 5px; list-style-type:none;} 
 /*remove bullets from the un-ordered list elements and create the
