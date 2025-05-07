@@ -13,10 +13,21 @@ h1 { font-size:x-large; font-family:"times new roman"; text-align:center;
 h2 {font-size:large; font-family:"times new roman"; text-align:center;
 }
 /*PAGE LAYOUT*/
-body {margin:auto; width:970px; 
-    border-width: 10px; border-left-width:0;
-    padding: .3em .8em; border: 1px solid rgba(0,0,0,.1); background: #58a linear-gradient(0,0%,100%,.2),transparent); border-radius: .2em; 
-      box-shadow: 0 .05em rgba(0,0,0,.5); color: white; text-shadow: 0c-.05em .05em rgba(0,0,0,.5); font-size: 100%; line-height: 1.5;
+body {
+    margin:auto; 
+    width:970px; 
+
+    border-width: 10px; 
+    border-left-width:0;
+
+    padding: .3em .8em; 
+    border: 1px solid rgba(0,0,0,.1); 
+    background: #58a linear-gradient(0,0%,100%,.2),transparent; 
+    border-radius: .2em; 
+    box-shadow: 0 .05em rgba(0,0,0,.5); 
+    color: white; text-shadow: 0 -.05em .05em rgba(0,0,0,.5); 
+    font-size: 100%; 
+    line-height: 1.5;
     background-color:#bbFFaa; 
     color:black; 
     font-family:Arial; 
@@ -456,23 +467,4 @@ li.btn a:hover { background-color:blue; color:white;
 li.btn { width:110px;
 }
 /*SET THUMBNAIL GALLERY BLOCK*/  
-/* Set general thumbnail styles *
-#col-1	{ position: absolute; top: 0; left: 0; width:85px;
-} 
-/*place the column on the page*
-li	{ margin: 5px; list-style-type:none; 
-} 
-/*remove bullets from the un-ordered list elements and create the
-MouseOut state (default) - create and position a space for the larger images and hide them*
-#col-1 a img.hid { width: 260px; height:390px; position: absolute; top: -20px; left: 330px;
-	visibility: hidden;
 }
-/* MouseOver state (hover)- this reveals larger picture *
-#col-1 a:hover { background: white; }
-#col-1 a:hover img.hid { visibility:visible; }
-
-/*----------------------------------------------------*/
-
-/*----------------------------------------------------
-
- 
