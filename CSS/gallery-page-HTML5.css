@@ -13,7 +13,8 @@ h1 { font-size:x-large; font-family:"times new roman"; text-align:center;
 h2 {font-size:large; font-family:"times new roman"; text-align:center;
 }
 /*PAGE LAYOUT*/
-body {margin:auto; width:970px; background-color:#bbFFaa; 
+body {margin:auto; width:970px; padding: .3em .8em; border: 1px solid rgba(0,0,0,.1); background: #58a linear-gradient(0,0%,100%,.2),transparent); border-radius: .2em; box-shadow: 0 .05em rgba(0,0,0,.5); color: white; text-shadow: 0c-.05em .05em rgba(0,0,0,.5); font-size: 125%; line-height: 1.5;
+    background-color:#bbFFaa; 
     color:black; 
     font-family:Arial; 
     clip-path:polygon(20px 0, calc(100% - 20px) 0, 100% 20px, 
