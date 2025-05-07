@@ -16,7 +16,7 @@ h2 {font-size:large; font-family:"times new roman"; text-align:center;
 body {
     margin:auto; 
     width:970px; 
-
+    
     border-width: 10px; 
     border-left-width:0;
 
@@ -47,9 +47,13 @@ div#container { width:970px; margin:auto;
 }
 /*set attributes for consistent appearance in all browsers*/
 div.wrapper { 
+    max-width: 900px;
+    margin: 1em calc(50% - 450px);
+    /*
     position: relative;
     top: 0.2em;
     left: 7%;
+    */
     border: 1px solid rgba(0, 0, 0, .1);
     border-left-width: 0 !important;
     border-width: 10px;
