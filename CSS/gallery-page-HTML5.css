@@ -276,7 +276,7 @@ body {
 header {
     background-image: url("images/panew.jpg");
     background-repeat: no-repeat;
-    height: 190px;
+    /* height: 190px; */
     background-position: top left;
 }
 */
