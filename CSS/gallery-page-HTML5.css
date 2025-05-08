@@ -235,7 +235,7 @@ li {
 
 /* end-css  */
 
-/* Listing 4-12b. Providing the CSS Styling for all the Pages that Use the cssportal.com Menu (turquoise.css) *
+/* Listing 4-12b. Providing the CSS Styling for all the Pages that Use the cssportal.com Menu (turquoise.css) */
 html,
 body,
 h1,
@@ -361,14 +361,14 @@ h1 {
     margin-bottom: 0;
     color: white;
 }
-*/
+
 h2 {
     font-size: 150%;
     margin-top: 0;
     margin-bottom: 5px;
     color: black;
 }
-
+*/
 br .clear {
     clear: both;
 }
