@@ -66,6 +66,8 @@
         $(function() {
           alert('Ready to do your bidding!');
         });
+
+	$('p,div,h1,input')
         </script>
    <!-- <link href="./CSS/turquoise.css" rel="stylesheet"> -->  
     <!-- <link href="./CSS/squaretabs.css" rel="stylesheet"> -->
@@ -122,37 +124,33 @@
 </head>
 <body>
     <div class="wrapper">
-        <div id="container">
-        <header>
-            <noscript>
-                <p>
-                    Hey, your browser has JavaScript turned off!
-                </p>
-                <p>
-                    Okay, cool, perhaps you'll prefer this <a href="no-js.html">non-JavaScript version</a> of the page.
-                </p>
-            </noscript>
-            <h1>StarTrackr!</h1>
-
-    
-            <div class="col-12"> <!-- close top section - content area starts -->
-                <!-- svg-text-embed -->
-                <svg version="1.1" baseProfile="full" xmlns="http://www.w3.org/2000/svg" width="500px" height="60px">
-                    <text x="20" y="50" style="font-family:times new roman; font-size:20pt; font-weight:bold; letter-spacing:1px; stroke:black; fill:white;">A full page roll-over gallery of greeting cards</text>
-                </svg>
-        
-                <!-- <h2>Hover the mouse over a small picture to see an enlarged version</h2> -->
-            
-            </div><!-- end col-12 -->
-        </header><!-- end-header -->
-        <div id="content">
+        <div class="data" id="container">
+            <header>
+                <noscript>
+                    <p>
+                        Hey, your browser has JavaScript turned off!
+                    </p>
+                    <p>
+                        Okay, cool, perhaps you'll prefer this <a href="no-js.html">non-JavaScript version</a> of the page.
+                    </p>
+                </noscript>
+                <h1>StarTrackr!</h1>
+                <div class="col-12"> <!-- close top section - content area starts -->
+                    <!-- svg-text-embed -->
+                    <svg version="1.1" baseProfile="full" xmlns="http://www.w3.org/2000/svg" width="500px" height="60px">
+                        <text x="20" y="50" style="font-family:times new roman; font-size:20pt; font-weight:bold; letter-spacing:1px; stroke:black; fill:white;">A full page roll-over gallery of greeting cards</text>
+                    </svg>   
+                </div><!-- end col-12 -->
+            </header><!-- end-header -->
+            <div id="content">
+		<h2>Welcome! A full page roll-over gallery of greeting cards</h2>
             <nav> 
-                <ul>
-                    <li class="btn"><a href="pagetwo.html">Page Two</a></li>
-                    <li class="btn"><a href="pagethree.html">Page Three</a></li>
-                    <li class="btn"><a href="pagefour.html">Page Four</a></li>
-                    <li class="btn"><a href="Homepage.html">Home Page</a></li>
-                </ul><!-- end-ul -->
+                    <ul>
+                        <li class="btn"><a href="pagetwo.html">Page Two</a></li>
+                        <li class="btn"><a href="pagethree.html">Page Three</a></li>
+                        <li class="btn"><a href="pagefour.html">Page Four</a></li>
+                        <li class="btn"><a href="Homepage.html">Home Page</a></li>
+                    </ul><!-- end-ul -->
             </nav><!-- end-nav -->
             <!-- WRAPPER -->
             <div class="wrapper">
@@ -364,11 +362,11 @@
                 <div class="menu-bar">--
                     <div id="hnav">
                         <ul>
-                            <li><a class="active" href="https://orrisb.github.io/">Home Page</a></li>
-                            <li><a href="page2.html">Page Two</a></li>
-                            <li><a href="page3.html">Page Three with a long label</a></li>
-                            <li><a href="page4.html">Page Four</a></li>
-                            <li><a href="page5.html">Page Five</a></li>
+                            <li><a class="active" href="index2.html/">Home Page</a></li>
+                            <li><a href="./page2.html">Page Two</a></li>
+                            <li><a href="./page3.html">Page Three with a long label</a></li>
+                            <li><a href="./page4.html">Page Four</a></li>
+                            <li><a href="./page5.html">Page Five</a></li>
                         </ul>
                     </div>
                 </div>
@@ -815,6 +813,7 @@
                         </div>
 
                     </div>
+		</div>
 
                     <footer role="contentinfo" class="row">
                         <div class="footer-inner">
