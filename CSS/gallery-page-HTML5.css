@@ -266,14 +266,14 @@ body {
     color: white;
     font-family: Arial;
 }
-
+/*
 #container {
     width: 97%;
     margin: auto;
     min-width: 800px;
     max-width: 1100px;
 }
-
+*/
 header {
     background-image: url("images/panew.jpg");
     background-repeat: no-repeat;
