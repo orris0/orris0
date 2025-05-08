@@ -87,7 +87,7 @@ nav ul {
 #gallery-block {
     position: relative;
     left: 30px;
-    top: 58em;
+    top: -58em;
 }
 
 /*set footer*/
