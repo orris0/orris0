@@ -197,7 +197,15 @@ position: absolute; top: 10px; left: 155px; margin-left:0; visibility: hidden;
 }
 #col-3 a:hover img.hid { visibility:visible;
 }
+Listing 2-6c. Conditional CSS for Listing 2-6a to Support Browser IE 7 (gallery-ie7.css)
+/*set the gallery block 10px further to the right*/
+#gallery-block { position:absolute; left: 165px; top:50px;
+}
 
+
+
+
+/* old css */
 /*set attributes for consistent appearance in all browsers*
 html, body, p, ul, li, h1, h2 { margin:0; padding:0;
 }
