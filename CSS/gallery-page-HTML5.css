@@ -51,6 +51,10 @@ body {
 
 header {
     width: 970px;
+    background-image: url("images/panew.jpg");
+    background-repeat: no-repeat;
+    /* height: 190px; */
+    background-position: top left;
 }
 
 nav {
@@ -274,12 +278,6 @@ body {
     max-width: 1100px;
 }
 */
-header {
-    background-image: url("images/panew.jpg");
-    background-repeat: no-repeat;
-    /* height: 190px; */
-    background-position: top left;
-}
 */
 nav ul {
     padding-top: 230px;
