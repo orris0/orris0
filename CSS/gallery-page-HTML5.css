@@ -391,23 +391,23 @@ header {margin-top:0; height:156px; width:100%; background-image:url('images/blu
 h1 {font-family:Arial; font-size:320%; color:white; font-weight:normal; text-align:center; padding-top:35px; margin-bottom:-10px; height: 94px; margin:auto;
 }
 /*set the generic tab style--and move menu upwards so that it overlaps the header*/
-#hnav {position:relative; top:-13px; color: navy; border-bottom: 1px solid black; margin: -25px 0 0 0; padding: 0px; padding-left: 10px z-index: 1; }
+div#hnav {position:relative; top:-13px; color: navy; border-bottom: 1px solid black; margin: -25px 0 0 0; padding: 0px; padding-left: 10px z-index: 1; }
 /* use display:inline to remove IE6 double margin bug*/
 #hnav li { display: inline; overflow: hidden; list-style-type: none;
 }
 *set tab colour*/
-#hnav a, a.active { color: navy; background: #81d9f6; font: bold 1em Arial; border: 1px solid black; padding: 2px 5px 0px 5px; margin: 0; text-decoration: none;
+div#hnav a, a.active { color: navy; background: #81d9f6; font: bold 1em Arial; border: 1px solid black; padding: 2px 5px 0px 5px; margin: 0; text-decoration: none;
 }
 /*make a 3px wide bottom border on tab the same colour as the page*/
-#hnav a.active { background: #cfecf5; color:navy; border-bottom: 3px solid #cfecf5;
+div#hnav a.active { background: #cfecf5; color:navy; border-bottom: 3px solid #cfecf5;
 }
 /*hovering over a non-active tab shows an aqua tab*/
-#hnav a:hover { background: aqua;
+div#hnav a:hover { background: aqua;
 }
-#hnav a:visited { color: navy;
+div#hnav a:visited { color: navy;
 }
 /*hovering over the active tab shows navy text*/
-#hnav a.active:hover { background: #cfecf5; color: navy;
+div#hnav a.active:hover { background: #cfecf5; color: navy;
 }
 /*set the position of the content to move it close up to the menu tabs*/
 #content {margin-top:0; font : 0.9em/1.3em "bitstream vera sans", verdana; position:relative; top:-13px; text-align: left; background: #cfecf5; padding: 20px; border: 1px solid black; border-top: none; z-index: 2;
