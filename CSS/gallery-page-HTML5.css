@@ -230,8 +230,8 @@ li {
 /*set the gallery block 10px further to the right*/
 #gallery-block {
     position: absolute;
-    left: 165px;
-    top: 465px;
+    left: 30px;
+    top: 10px;
 }
 
 /* end-css  */
