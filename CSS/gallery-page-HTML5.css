@@ -47,12 +47,11 @@ h2 {
 body {
     margin: auto; 
     width: 970px;
-}
-body {
     background-color: #bbFFaa;
     color: white;
     font-family: Arial;
 }
+
 header {
     width: 970px;
     background-image: url("images/panew.jpg");
