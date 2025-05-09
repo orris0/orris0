@@ -236,7 +236,7 @@ li {
 
 /* end-css  */
 
-/* Listing 4-12b. Providing the CSS Styling for all the Pages that Use the cssportal.com Menu (turquoise.css) */
+/* Listing 4-12b. Providing the CSS Styling for all the Pages that Use the cssportal.com Menu (turquoise.css) *
 html,
 body,
 h1,
@@ -250,7 +250,7 @@ ol,
 ul,
 li {
     padding: 0;
-    /* margin: 0; */
+    /* margin: 0; *
 }
 
 header,
