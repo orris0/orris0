@@ -484,7 +484,7 @@ div#hnav {position:relative; top:-25px; left: 5px; color: navy; border-bottom: 1
 /* use display:inline to remove IE6 double margin bug*/
 #hnav li { display: inline; overflow: hidden; list-style-type: none;
 }
-*set tab colour*/
+/*set tab colour*/
 div#hnav a, a.active { color: navy; background: #81d9f6; font: bold 1em Arial; border: 1px solid black; padding: 2px 5px 0px 5px; margin: 0; text-decoration: none;
 }
 /*make a 3px wide bottom border on tab the same colour as the page*/
