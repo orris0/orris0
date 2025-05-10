@@ -5,7 +5,14 @@
 	border: 0;
 	padding: 0;
 }
-
+/*PAGE LAYOUT*/
+body {
+    margin: auto; 
+    width: 970px;
+    background-color: #bbFFaa;
+    color: white;
+    font-family: Arial;
+}
 
 body{
   font-family:'Open-sans', sans-serif;
@@ -107,14 +114,7 @@ h2 {
     text-align: center;
 }
 
-/*PAGE LAYOUT*/
-body {
-    margin: auto; 
-    width: 970px;
-    background-color: #bbFFaa;
-    color: white;
-    font-family: Arial;
-}
+
 
 header {
     width: 970px;
