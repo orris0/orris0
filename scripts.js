@@ -2,6 +2,16 @@
 // Scripts
 // 
 
+            $(function () {
+                alert('Welcome to StarTracker! Now no longer under police investigation!');
+            });
+
+            $(function () {
+                alert('Ready to do your bidding!');
+            });
+
+            $('p,div,h1,input')
+    
 window.addEventListener('DOMContentLoaded', event => {
 
     // Navbar shrink function
