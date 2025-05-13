@@ -21,7 +21,8 @@ body{
   margin:0;
   padding:0;
 }
-
+/*mouseout state (see Figure 4-4)*/
+li.hbtn a { background: #0080a0; border: 4px outset #aabaff; }
 
 
 
