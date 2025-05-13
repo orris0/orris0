@@ -85,7 +85,7 @@ h2 {
 
 /*set images to have no borders*/
 img {
-    border: 0; position: relative; top: 59px; left: 43px;
+    border: 0; position: relative; top: 59px; left: 5px;
 }
 
 /*add display attributes for the semantic tags*/
