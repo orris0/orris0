@@ -162,12 +162,12 @@ div#hnav {
 #hnav a.active:hover { background: #cfecf5; color: navy;
 }
 
-.picture {
+div.picture {
 width: 400px;
 transform: rotate(45deg);
 overflow: hidden;
 }
-.picture > img {
+div.picture > img {
 max-width: 100%;
 transform: rotate(-45deg);
 }
