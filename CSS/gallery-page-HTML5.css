@@ -162,6 +162,17 @@ div#hnav {
 #hnav a.active:hover { background: #cfecf5; color: navy;
 }
 
+.picture {
+width: 400px;
+transform: rotate(45deg);
+overflow: hidden;
+}
+.picture > img {
+max-width: 100%;
+transform: rotate(-45deg);
+}
+
+
 .parallel {
 position: relative;
 /* text color, paddings, etc. */
