@@ -163,7 +163,7 @@ div#hnav {
 }
 
 div.picture {
-width: 400px;
+width: 200px;
 transform: rotate(45deg);
 overflow: hidden;
 }
