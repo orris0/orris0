@@ -21,6 +21,7 @@ body{
   margin:0;
   padding:0;
 }
+/* gradient-style */
 body { background:#FFF url(images/green-grad.jpg) repeat-x; margin:auto;
 }
 header, nav, footer, article, section { display:block;
