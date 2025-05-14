@@ -14,7 +14,7 @@ header, footer, section, article, nav { display:block;
 }
 body { margin:auto; background:url(images/green-grad.jpg) repeat-x;
 }
-header {width:920px; height:180px; padding:0; border:10px white solid; 
+header {width:920px; height:180px; padding:0; border:10px white solid;
 background: url(images/header3.jpg); margin:10px auto;
 }
 header {
