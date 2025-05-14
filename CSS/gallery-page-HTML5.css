@@ -6,6 +6,25 @@
 	padding: 0;
 }
 /*PAGE LAYOUT*/
+/*Listing 3-3. CSS for new style sheet (gradient-pic.css) */
+body, header { margin:0; padding:0; border:0;
+}
+/*add display attributes for the semantic tags*/
+header, footer, section, article, nav { display:block;
+}
+body { margin:auto; background:url(images/green-grad.jpg) repeat-x;
+}
+header {width:920px; height:180px; padding:0; border:10px white solid; 
+background: url(images/header3.jpg); margin:10px auto;
+}
+header {
+    width: 970px;
+    background-image: url("images/panew.jpg");
+    background-repeat: no-repeat;
+    /* height: 190px; */
+    background-position: top left;
+}
+
 body {
     margin: auto; 
     width: 970px;
@@ -21,14 +40,7 @@ body{
   margin:0;
   padding:0;
 }
-/* background-ex1 */
-body { background:#FFF url(images/green-grad.jpg) repeat-x; margin:auto;
-}
-header, nav, footer, article, section { display:block;
-}
-header {width:920px; height:160px; border:10px solid white ; margin:20px auto;
-}
-/* end background-ex1 */
+/* Gradient background and white border */
 
 /*mouseout state (see Figure 4-4)*/
 li.hbtn a { background: #0080a0; border: 4px outset #aabaff; }
