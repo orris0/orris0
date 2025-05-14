@@ -21,6 +21,14 @@ body{
   margin:0;
   padding:0;
 }
+body { background:#FFF url(images/green-grad.jpg) repeat-x; margin:auto;
+}
+header, nav, footer, article, section { display:block;
+}
+header {width:920px; height:160px; border:10px solid white ; margin:20px auto;
+}
+
+
 /*mouseout state (see Figure 4-4)*/
 li.hbtn a { background: #0080a0; border: 4px outset #aabaff; }
 
