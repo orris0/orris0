@@ -575,5 +575,5 @@ div#hnav a:visited { color: navy;
 div#hnav a.active:hover { background: #cfecf5; color: navy;
 }
 /*set the position of the content to move it close up to the menu tabs*/
-#content {margin-top:0; font : 0.9em/1.3em "bitstream vera sans", verdana; position:relative; top:-15px; text-align: left; background: #cfecf5; padding: 20px; border: 1px solid black; border-top: none; z-index: 2;
+#content {margin-top:0; font : 0.9em/1.3em "bitstream vera sans", verdana; position:relative; top:-57px; text-align: left; background: #cfecf5; padding: 20px; border: 1px solid black; border-top: none; z-index: 2;
 }
