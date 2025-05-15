@@ -24,12 +24,16 @@ div.wrapper {
     20px 100%, 0 calc(100% - 20px), 0 20px);
 }
 
-header { width: 980px; height: 280px; margin: 0 auto; padding: 0px;
-}
 * {
 	margin: 0;
 	border: 0;
 	padding: 0;
+}
+header {
+    width: 970px;
+    background-image: url("images/panew.jpg");
+    background-repeat: no-repeat;
+    background-position: top left;
 }
 div#container.data { width:97%; margin:auto; min-width:800px; max-width:1100px; clip-path:polygon(20px 0, calc(100% - 20px) 0, 100% 20px, 
     100% calc(100% - 20px), calc(100% - 20px) 100%,
@@ -42,15 +46,11 @@ body, header { margin:0; padding:0; border:0;
 /*add display attributes for the semantic tags*/
 header, footer, section, article, nav { display:block;
 }
+
 body { margin:auto; background:url(images/green-grad.jpg) repeat-x;
 }
 
-header {
-    width: 970px;
-    background-image: url("images/panew.jpg");
-    background-repeat: no-repeat;
-    background-position: top left;
-}
+
 body {
     margin: auto; 
     width: 970px;
