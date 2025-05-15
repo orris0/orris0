@@ -49,10 +49,8 @@ header {
     width: 970px;
     background-image: url("images/panew.jpg");
     background-repeat: no-repeat;
-    /* height: 190px; */
     background-position: top left;
 }
-
 body {
     margin: auto; 
     width: 970px;
@@ -164,15 +162,6 @@ h2 {
     text-align: center;
 }
 
-
-
-header {
-    width: 970px;
-    background-image: url("images/panew.jpg");
-    background-repeat: no-repeat;
-    /* height: 190px; */
-    background-position: top left;
-}
 /*
 nav {
     float: left;
