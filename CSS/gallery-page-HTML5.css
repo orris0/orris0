@@ -50,15 +50,6 @@ header, footer, section, article, nav { display:block;
 body { margin:auto; background:url(images/green-grad.jpg) repeat-x;
 }
 
-
-body {
-    margin: auto; 
-    width: 970px;
-    background-color: #bbFFaa;
-    color: black;
-    font-family: Arial;
-}
-
 body{
   font-family:'Open-sans', sans-serif;
   font-size:17px;
