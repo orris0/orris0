@@ -231,7 +231,7 @@ transform: skewX(45deg);
 /*set far right column for ads*/
 div#rightcol { position: relative; top: -26em; left: 0em; width:150px; float:right; text-align:center;
 }
-div#rightcol p.advert {font-size:small; margin-top:190px;
+div#rightcol p.advert {font-size:small; margin-top:35px;
 }
 /*set middle column for main content*/
 #midcol { margin-left:135px; margin-right:155px;
