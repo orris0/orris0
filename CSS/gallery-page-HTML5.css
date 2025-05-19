@@ -228,31 +228,16 @@ transform: skew(45deg);
 .parallel>div {
 transform: skewX(45deg);
 }
-
-
 /*set far right column for ads*/
-#rightcol {
-    width: 150px;
-    float: right;
-    text-align: center;
+#rightcol { width:150px; float:right; text-align:center;
 }
-
-#rightcol p.advert {
-    font-size: small;
-    margin-top: 190px;
+#rightcol p.advert {font-size:small; margin-top:190px;
 }
-
 /*set middle column for main content*/
-#midcol {
-    margin-left: 135px;
-    margin-right: 155px;
+#midcol { margin-left:135px; margin-right:155px;
 }
-
-/*set gallery block position*
-#gallery-block {
-    position: relative;
-    left: 30px;
-    top: 100px;
+/*set gallery block position*/
+#gallery-block { position:relative; left: 30px; top:10px;
 }
 
 /*set footer*/
