@@ -229,9 +229,9 @@ transform: skew(45deg);
 transform: skewX(45deg);
 }
 /*set far right column for ads*/
-#rightcol { width:150px; float:right; text-align:center;
+div#rightcol { width:150px; float:right; text-align:center;
 }
-#rightcol p.advert {font-size:small; margin-top:190px;
+div#rightcol p.advert {font-size:small; margin-top:190px;
 }
 /*set middle column for main content*/
 #midcol { margin-left:135px; margin-right:155px;
