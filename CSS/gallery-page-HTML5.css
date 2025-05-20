@@ -171,7 +171,7 @@ nav ul {
 #banner h1 {text-shadow: 0.1em 0.1em 0.2em blue; font-family:Arial; font-size:125%; color:white; font-weight:normal; text-align:center; padding-top:2em; margin-bottom:-10px; margin:auto; 
 }
 /*set the generic tab style--and move menu upwards so that it overlaps the header*/ 
-div#hnav, nav {
+div#hnav {
   position:relative; 
   top: -1.5em; 
   left: 2%;
