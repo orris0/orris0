@@ -470,7 +470,7 @@ ul#main-menu li a.current:hover {
     color: #fff;
     background: transparent url("images/bgON.gif") no-repeat top right;
 }
-
+/*
 #main-content {
     text-align: center;
     background-color: white;
