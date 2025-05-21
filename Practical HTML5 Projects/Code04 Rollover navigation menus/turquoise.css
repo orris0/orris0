@@ -30,6 +30,33 @@ div.wrapper {
 	padding: 0;
 }
 
+.clear {
+    clear: both;
+}
+
+/*set menu buttons*/
+li.btn a {
+    display: block;
+    background-color: #66CCFF;
+    color: black;
+    font-weight: bold;
+    padding: 4px;
+    margin-left: 0;
+    text-align: center;
+    list-style-type: none;
+    text-decoration: none;
+    width: 110px;
+}
+
+li.btn a:hover {
+    background-color: blue;
+    color: white;
+}
+
+li.btn {
+    width: 110px;
+}
+
 header, footer, section, article, nav { display:block; 
 }
 body { background-color:#bbFFaa; color:black; font-family:Arial;
