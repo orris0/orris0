@@ -30,9 +30,52 @@ div.wrapper {
 	padding: 0;
 }
 
-.clear {
-    clear: both;
+div.picture {
+width: 200px;
+transform: rotate(45deg);
+overflow: hidden;
 }
+div.picture > img {
+max-width: 100%;
+transform: rotate(-45deg);
+}
+
+
+.parallel {
+position: relative;
+/* text color, paddings, etc. */
+display: inline-block;
+border-radius: .2em;
+color: white;
+text-shadow: 0 -.05em .05em rgba(0, 0, 0, .5);
+font-size: 80%;
+line-height: 1.5;
+border-width: 10px;
+border-left-width: 0;
+}
+.parallel::before {
+content: ''; /* To generate the box */
+position: absolute;
+top: 0; right: 0; bottom: 0; left: 0;
+z-index: -1;
+background: maroon;
+transform: skew(45deg);
+}
+.parallel>div {
+transform: skewX(45deg);
+}
+/*set far right column for ads*/
+div#rightcol { position: relative; top: -26em; left: 0em; width:150px; float:right; text-align:center;
+}
+div#rightcol p.advert {font-size:small; margin-top:35px;
+}
+/*set middle column for main content*/
+#midcol { margin-left:135px; margin-right:155px;
+}
+/*set gallery block position*/
+#gallery-block { position:relative; left: 30px; top:10px;
+}
+
 
 /*set menu buttons*/
 li.btn a {
