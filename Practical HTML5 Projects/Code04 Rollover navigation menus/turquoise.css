@@ -129,6 +129,29 @@ nav ul  li a:hover{ background:transparent url("images/bgHOVER.gif") no-repeat t
 nav ul  li a.current,ul#main-menu li a.current:hover { color:#fff;
 background:transparent url("images/bgON.gif") no-repeat top right; 
 }
+/*set menu buttons*/
+li.btn a {
+    display: block;
+    background-color: #66CCFF;
+    color: black;
+    font-weight: bold;
+    padding: 4px;
+    margin-left: 0;
+    text-align: center;
+    list-style-type: none;
+    text-decoration: none;
+    width: 110px;
+}
+
+li.btn a:hover {
+    background-color: blue;
+    color: white;
+}
+
+li.btn {
+    width: 110px;
+}
+
 #main-content {
     text-align: center;
     color: black;
