@@ -41,7 +41,7 @@ div#container.data { width:97%; margin:auto; min-width:800px; max-width:1100px; 
 }
 /*PAGE LAYOUT*/
 /*Listing 3-3. CSS for new style sheet (gradient-pic.css) */
-body, header { margin:0; padding:0; border:0;
+body, header { margin:auto; padding:0; border:0;
 }
 /*add display attributes for the semantic tags*/
 header, footer, section, article, nav { display:block;
@@ -54,7 +54,7 @@ body{
   font-family:'Open-sans', sans-serif;
   font-size:17px;
   line-height:1.5em;
-  margin:0;
+  margin:auto;
   padding:0;
 }
 /* Gradient background and white border */
