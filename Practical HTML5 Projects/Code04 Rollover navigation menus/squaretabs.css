@@ -37,7 +37,7 @@ text-align:center; padding-top:2.1875em; margin-bottom:-0.625em; height: 5.875em
 	}
 /*set the position of the content to butt up to the menu tabs*/ 
 	#content {margin-top:0; font : 0.9em/1.3em "bitstream vera sans", verdana, sans-serif;
-		position:relative; top:-1em; text-align: left; background: #cfecf5;
+		position:relative; top:-13em; text-align: left; background: #cfecf5;
 		padding: 20px; border: 1px solid black; border-top: none; z-index: 2;
 		}
 
