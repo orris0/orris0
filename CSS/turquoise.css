@@ -133,7 +133,7 @@ div.wrapper {
     20px 100%, 0 calc(100% - 20px), 0 20px);
 }
 /*set the position of the content to move it close up to the menu tabs*/
-#content {margin-top:10px; font : 0.9em/1.3em "bitstream vera sans", verdana; position:relative; top:-10px; text-align: left; background: #cfecf5; padding: 20px; border: 1px solid black; border-top: none; z-index: 2;
+#content {margin-top:10px; font : 0.9em/1.3em "bitstream vera sans", verdana; position:relative; top:-100px; text-align: left; background: #cfecf5; padding: 20px; border: 1px solid black; border-top: none; z-index: 2;
 }
 div#main-content { 
     position: relative;
