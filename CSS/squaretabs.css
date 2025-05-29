@@ -189,7 +189,7 @@ nav a.active:hover { background: #cfecf5; color: navy;
 }
 /*set the position of the content to butt up to the menu tabs*
 #content {
-	height: 115em;
+	height: 150em;
 	margin-top:0.23em; 
 	position:relative; 
 	top:4.3rem; 
