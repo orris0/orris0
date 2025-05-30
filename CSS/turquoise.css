@@ -208,17 +208,15 @@ h2.dark {
   }
 
 
-nav ul  { 
-    top: -4em; 
+nav ul  {  
     width: 99.5em; 
     padding:0;list-style-type:none; margin:auto; 
-display:block;height:36px;text-transform:uppercase;
-font-size:56%;font-weight:bold;
-background:url('images/bgOFF.gif') repeat-x left top;
-font-family:Helvetica,Arial,Verdana,sans-serif;
-border-bottom:4px solid #336666; border-top:1px solid #C0E2D4;
-position:relative;
-
+    display:block;height:36px;text-transform:uppercase;
+    font-size:56%;font-weight:bold;
+    background:url('images/bgOFF.gif') repeat-x left top;
+    font-family:Helvetica,Arial,Verdana,sans-serif;
+    border-bottom:4px solid #336666; border-top:1px solid #C0E2D4;
+    position:relative;
     top: 2.9em; 
     left:0.5em;
 }
