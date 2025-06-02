@@ -23,9 +23,9 @@
     display: grid;
     grid-template-columns: repeat(3, 100px);
     grid-template-rows: repeat(3, 100px);
-    height: 500px;
+    /* height: 500px;
     width: 500px;
-    /* gap: 10px; */
+    gap: 10px; */
 }
 
 .wrapper {
