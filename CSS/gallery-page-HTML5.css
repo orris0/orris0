@@ -21,6 +21,10 @@
     padding: 1em;
     color: #d9480f;
 }
+
+.wrapper {
+    display: grid;
+}
   /*  position: relative;
     top: 0.2em;
     left: 1.4%;
