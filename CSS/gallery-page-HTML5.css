@@ -1,5 +1,12 @@
 @import 'https://fonts.googleapis.com/css?family=Alegreya+Sans';
 
+* {
+    box-sizing: border-box;
+	margin: 0;
+	border: 0;
+	padding: 0;
+}
+
 /*set attributes for consistent appearance in all browsers*/
 div.wrapper { 
     position: relative;
@@ -24,11 +31,7 @@ div.wrapper {
     20px 100%, 0 calc(100% - 20px), 0 20px);
 }
 
-* {
-	margin: 0;
-	border: 0;
-	padding: 0;
-}
+
 header {
     width: 970px;
     background-image: url("images/panew.jpg");
