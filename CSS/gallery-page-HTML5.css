@@ -17,6 +17,9 @@
 .wrapper > div {
     border: 2px solid #ffa94d;
     border-radius: 5px;
+    background-color: #ffd8a8;
+    padding: 1em;
+    color: #d9480f;
 }
   /*  position: relative;
     top: 0.2em;
