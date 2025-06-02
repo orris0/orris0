@@ -12,6 +12,12 @@
     border:2px solid #f76707;
     border-radius: 5px;
     background-color: #fff4e6;
+}
+
+.wrapper > div {
+    border: 2px solid #ffa94d;
+    border-radius: 5px;
+}
   /*  position: relative;
     top: 0.2em;
     left: 1.4%;
