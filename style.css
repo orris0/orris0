@@ -1311,8 +1311,10 @@ nav {
     line-height: 2;
     text-align: center; }
   nav a {
+    /*
     font-size: 20px;
     font-size: 1.25rem;
+    */
     color: #fff;
     display: block;
     font-family: 'Josefin Sans',sans-serif;
