@@ -3,8 +3,11 @@
 * {
     box-sizing: border-box;
 }
-
+body {
+    margin: 40px;
+}
 /*set attributes for consistent appearance in all browsers*/
+
 .wrapper { 
     border:2px solid #f76707;
     border-radius: 5px;
