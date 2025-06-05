@@ -14,7 +14,7 @@ body {
     background-color: #fff4e6;
 }
 
-.wrapper, .inline-block-wrapper > div {
+.wrapper, wrapper.inline-block-wrapper > div {
     border: 2px solid #ffa94d;
     border-radius: 5px;
     background-color: #ffd8a8;
@@ -22,7 +22,7 @@ body {
     color: #d9480f;
 }
 
-.wrapper .inline-block-wrapper {
+.wrapper wrapper.inline-block-wrapper {
     display: grid;
    /*  grid-template-columns: repeat(3, 100px);
     grid-template-rows: repeat(3, 100px);
