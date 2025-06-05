@@ -46,11 +46,12 @@ a { background: orange; color:navy;
 .inline-block a { display:inline-block; width:110px; height:30px; line-height:30px; text-align:center;
 }
 /*Listing 4-2b. Styling Equal-width Buttons with Rollover Color Change (equal-2d.css) */
-/* Set styles to equalise browser renditions*/
+/* Set styles to equalise browser renditions*
 html, body, h1, h2, h3, h4, h5, h6, p, ol, ul, li { padding: 0; margin: 0;
 }
 body { font-size: 100%; font-weight: normal; background-color:#99FF66; font: 100% arial;
 }
+*/
 header, footer, section, article, nav { display:block;
 }
 #wrapper {position:relative; top:0; left:0;width:950px; margin:auto; text-align:center;
@@ -75,11 +76,13 @@ nav a:hover { font-weight: bold; background-color:green; color:white;
 }
 
 /* Listing 4-3b. The CSS for Listing 4-3a Giving Rollover and Variable Width Buttons (variable-2d.css) */
-/* Set styles to equalise browser renditions*/
+/* Set styles to equalise browser renditions*
 html, body, h1, h2, h3, h4, h5, h6, p, ol, ul, li { padding: 0; margin: 0;
 }
+/*
 body { width:960px; margin:auto; background-color:#99FF66; font: 100% Arial; font-size: 100%; font-weight: normal;
 }
+*/
 header, footer, section, article, nav { display:block;
 }
 #wrapper {position:relative; top:0; left:0; width:950px; margin:auto; text-align:center;
