@@ -53,10 +53,7 @@ a { background: orange; color:navy;
 }
 /*Listing 4-2b. Styling Equal-width Buttons with Rollover Color Change (equal-2d.css) */
 /* Set styles to equalise browser renditions*
-html, body, h1, h2, h3, h4, h5, h6, p, ol, ul, li { padding: 0; margin: 0;
-}
-body { font-size: 100%; font-weight: normal; background-color:#99FF66; font: 100% arial;
-}
+
 */
 header, footer, section, article, nav { display:block;
 }
