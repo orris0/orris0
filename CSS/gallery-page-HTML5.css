@@ -201,7 +201,7 @@ ol ol ul, ol ul ul, ul ol ul, ul ul ul { list-style-type:square; }
 
 
 /* Listing 2-6b. The CSS Style Sheet for Listing 2-6a (gallery-page.css) */
-/*set attributes for consistent appearance in all browsers*/
+/*set attributes for consistent appearance in all browsers*
 html,
 body,
 p,
