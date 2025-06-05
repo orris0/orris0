@@ -37,47 +37,37 @@ body { font-size: 100%; font-weight: normal;
 }
 ul { padding-left: 0;}
 /* end of style equalisation */
-p { background:white margin:auto; text-align:center;
+p { background:white; margin:auto; text-align:center;
 }
-#inline-block-container { margin:auto; text-align:center; width:97%; min-width:800px; 
-max-width:1200px;
+#inline-block-container { margin:auto; text-align:center; width:97%; min-width:800px; max-width:1200px;
 }
 a { background: orange; color:navy;
 }
-.inline-block a { display:inline-block; width:110px; height:30px; 
-line-height:30px; text-align:center;
+.inline-block a { display:inline-block; width:110px; height:30px; line-height:30px; text-align:center;
 }
 /*Listing 4-2b. Styling Equal-width Buttons with Rollover Color Change (equal-2d.css) */
 /* Set styles to equalise browser renditions*/
 html, body, h1, h2, h3, h4, h5, h6, p, ol, ul, li { padding: 0; margin: 0;
 }
-body { font-size: 100%; font-weight: normal; background-color:#99FF66; 
-font: 100% arial;
+body { font-size: 100%; font-weight: normal; background-color:#99FF66; font: 100% arial;
 }
 header, footer, section, article, nav { display:block;
 }
-#wrapper {position:relative; top:0; left:0;width:950px; margin:auto; 
-text-align:center;
+#wrapper {position:relative; top:0; left:0;width:950px; margin:auto; text-align:center;
 }
-header {width:100%; height:80px; color:black; background-color:#FFCC00; 
-padding-top:10px;
+header {width:100%; height:80px; color:black; background-color:#FFCC00; padding-top:10px;
 }
 h1 { font-size:200%; font-weight:bold; margin-top:20px;
 }
-#main-content {width:950px; margin:50px auto 0 auto; background-color:white; 
-color:black; text-align:center; font-weight:bold;
+#main-content {width:950px; margin:50px auto 0 auto; background-color:white; color:black; text-align:center; font-weight:bold;
 }
-footer {margin:10px auto 0 auto; width:950px; font-weight:bold; 
-text-align:center; background-color:#FFCC00; color:black; clear:both;
+footer {margin:10px auto 0 auto; width:950px; font-weight:bold; text-align:center; background-color:#FFCC00; color:black; clear:both;
 }
-nav ul {position:absolute; top:100px; left:9%; width: 780px; 
-list-style: none; height: 36px;
+nav ul {position:absolute; top:100px; left:9%; width: 780px; list-style: none; height: 36px;
 }
 nav li { float: left; width: 120px; margin:0 5px 0 5px;
 }
-nav a { color: #000; font-size: 100%; font-weight:bold; text-decoration: none; 
-text-align:center; border: 1px solid #000; padding: 5px; display: block; 
-background-color: white;
+nav a { color: #000; font-size: 100%; font-weight:bold; text-decoration: none; text-align:center; border: 1px solid #000; padding: 5px; display: block; background-color: white;
 }
 nav a:hover { font-weight: bold; background-color:green; color:white;
 }
@@ -88,35 +78,25 @@ nav a:hover { font-weight: bold; background-color:green; color:white;
 /* Set styles to equalise browser renditions*/
 html, body, h1, h2, h3, h4, h5, h6, p, ol, ul, li { padding: 0; margin: 0;
 }
-body { width:960px; margin:auto; background-color:#99FF66; font: 100% Arial; 
-font-size: 100%; font-weight: normal;
+body { width:960px; margin:auto; background-color:#99FF66; font: 100% Arial; font-size: 100%; font-weight: normal;
 }
 header, footer, section, article, nav { display:block;
 }
-#wrapper {position:relative; top:0; left:0; width:950px; margin:auto; 
-text-align:center;
+#wrapper {position:relative; top:0; left:0; width:950px; margin:auto; text-align:center;
 }
-header {width:100%; height:80px; color:black; background-color:#FFCC00; 
-padding-top:10px;
+header {width:100%; height:80px; color:black; background-color:#FFCC00; padding-top:10px;
 }
 h1 { font-size:200%; font-weight:bold; margin-top:20px;
 }
-#main-content {width:950px; margin:60px auto 0 auto; background-color:white; 
-color:black; text-align:center; font-weight:bold;
+#main-content {width:950px; margin:60px auto 0 auto; background-color:white; color:black; text-align:center; font-weight:bold;
 }
-footer {margin:10px auto 0 auto; width:950px; font-weight:bold; 
-text-align:center; background-color:#FFCC00; color:black; clear:both;
+footer {margin:10px auto 0 auto; width:950px; font-weight:bold; text-align:center; background-color:#FFCC00; color:black; clear:both;
 }
-nav {position:absolute; top:100px; left:78px; width: 785px; padding: 5px; 
-list-style: none; height: 35px;
+nav {position:absolute; top:100px; left:78px; width: 785px; padding: 5px; list-style: none; height: 35px;
 }
-nav li { display:inline; padding: 5px; padding-top:15px; margin:5px 0 0 2px; 
-height:25px;
+nav li { display:inline; padding: 5px; padding-top:15px; margin:5px 0 0 2px; height:25px;
 }
-nav a {height:25px; color: #000; font-size:80%; font-size: 100%; 
-font-weight:bold; text-decoration: none; border: 1px solid #000; 
-padding:5px 5px 0 5px; display: inline-block; 
-background-color: white; zoom: 1;
+nav a {height:25px; color: #000; font-size:80%; font-size: 100%; font-weight:bold; text-decoration: none; border: 1px solid #000; padding:5px 5px 0 5px; display: inline-block; background-color: white; zoom: 1;
 }
 nav a:hover { font-weight: bold; background-color:green; color:white;
 }
