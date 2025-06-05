@@ -122,6 +122,12 @@ nav a:hover { font-weight: bold; background-color:green; color:white;
 }
 .clear { clear:both;
 }
+
+/* FÁa better result was achieved by using a different outset color, as follows (also see Figure 4-4): */ 
+/*mouseout state (see Figure 4-4)*/ 
+li.hbtn a { background: #0080a0; border: 4px outset #aabaff; }
+
+
     /*
     clip-path:polygon(20px 0, calc(100% - 20px) 0, 100% 20px, 
     100% calc(100% - 20px), calc(100% - 20px) 100%,
