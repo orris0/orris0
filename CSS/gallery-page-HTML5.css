@@ -39,7 +39,7 @@ ul { padding-left: 0;}
 /* end of style equalisation */
 p { background:white margin:auto; text-align:center;
 }
-#container { margin:auto; text-align:center; width:97%; min-width:800px; 
+#inline-block-container { margin:auto; text-align:center; width:97%; min-width:800px; 
 max-width:1200px;
 }
 a { background: orange; color:navy;
