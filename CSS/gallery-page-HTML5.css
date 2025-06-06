@@ -43,7 +43,7 @@ body { font-size: 100%; font-weight: normal;
 }
 ul { padding-left: 0;}
 /* end of style equalisation */
-p { background:white; margin:auto; text-align:center;
+p { /* background:white; */ margin:auto; text-align:center;
 }
 #inline-block-container { margin:auto; text-align:center; width:97%; min-width:800px; max-width:1200px;
 }
