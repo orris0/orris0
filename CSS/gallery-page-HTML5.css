@@ -36,7 +36,11 @@ header, footer, section, article, nav { display:block;
 div#inlineblockcontainer.data { margin:auto; text-align:center; width:97%; min-width:800px; max-width:1200px;
 }
 
-section#horizontal-section {
+section#inlineblocksection {
+    display: block;
+}
+
+header#inlineblockheader {
     display: block;
 }
 
