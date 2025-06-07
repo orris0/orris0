@@ -42,8 +42,10 @@ section#horizontal-section {
 /* Listing 4-1b. Applying the display:inline-block; Style to the Second Row of Buttons (inline-block.css) - Set styles to equalise the browser rendition*/
 html, body, h1, h2, h3, h4, h5, p, ol, ul, li { padding: 0; margin: 0;
 }
+/*
 body { font-size: 100%; font-weight: normal; display:flex;
 }
+*/
 ul { padding-left: 0;}
 /* end of style equalisation */
 p { background:white;  margin:auto; text-align:center;
