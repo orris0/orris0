@@ -9,9 +9,6 @@ body, header { margin:auto; padding:0; border:0;
 /*add display attributes for the semantic tags*/
 header, footer, section, article, nav { display:block;
 }
-div#inlineblockcontainer.data {
-    display: block;
-}
 /*set attributes for consistent appearance in all browsers*/
 
 .wrapper, wrapper.inline-block-wrapper { 
@@ -68,6 +65,12 @@ header, footer, section, article, nav { display:block;
 #wrapper {position:relative; top:0; left:0;width:950px; margin:auto; text-align:center;
 }
 header {width:100%; height:80px; color:black; background-color:#FFCC00; padding-top:10px;
+}
+header#inlineblockheader {
+    width: 970px;
+    background-image: url("../bda-20.jpg");
+    background-repeat: no-repeat;
+    background-position: top left;
 }
 h1 { font-size:200%; font-weight:bold; margin-top:20px;
 }
