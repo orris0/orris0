@@ -9,6 +9,9 @@ body, header { margin:auto; padding:0; border:0;
 /*add display attributes for the semantic tags*/
 header, footer, section, article, nav { display:block;
 }
+div#inlineblockcontainer.data {
+    display: block;
+}
 /*set attributes for consistent appearance in all browsers*/
 
 .wrapper, wrapper.inline-block-wrapper { 
