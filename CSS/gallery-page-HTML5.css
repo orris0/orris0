@@ -3,9 +3,7 @@
 * {
     box-sizing: border-box;
 }
-/*Listing 3-3. CSS for new style sheet (gradient-pic.css) */
-body {text-align:center; margin: 20px; background: #bee8ff; font: medium arial;
-}
+
 /*add display attributes for the semantic tags*/
 header, footer, section, article, nav { display:block;
 }
@@ -46,12 +44,9 @@ header#inlineblockheader {
 
 
 /* Listing 4-1b. Applying the display:inline-block; Style to the Second Row of Buttons (inline-block.css) - Set styles to equalise the browser rendition*/
-html, body, h1, h2, h3, h4, h5, p, ol, ul, li { padding: 0; margin: 0;
+html, h1, h2, h3, h4, h5, p, ol, ul, li { padding: 0; margin: 0;
 }
-/*
-body { font-size: 100%; font-weight: normal; display:flex;
-}
-*/
+
 ul { padding-left: 0;}
 /* end of style equalisation */
 p { background:white;  margin:auto; text-align:center;
@@ -94,14 +89,6 @@ footer {margin:10px auto 0 auto; width:950px; font-weight:bold; text-align:cente
 .clear { clear:both;
 }
 
-/* Listing 4-3b. The CSS for Listing 4-3a Giving Rollover and Variable Width Buttons (variable-2d.css) */
-/* Set styles to equalise browser renditions*
-html, body, h1, h2, h3, h4, h5, h6, p, ol, ul, li { padding: 0; margin: 0;
-}
-/*
-body { width:960px; margin:auto; background-color:#99FF66; font: 100% Arial; font-size: 100%; font-weight: normal;
-}
-*/
 header, footer, section, article, nav { display:block;
 }
 #wrapper {position:relative; top:0; left:0; width:950px; margin:auto; text-align:center;
@@ -132,12 +119,11 @@ li.hbtn a { background: #0080a0; border: 4px outset #aabaff; }
 
 /* Listing 4-7b. The CSS Listing for Changing the Tab for the five Tab Menu Pages (squaretabs.css)
 /* Set styles to equalise browser rendition*/
-html, body, h1, h2, h3, h4, h5, h6, p, ol, ul, li { padding: 0; margin: 0;
+html, h1, h2, h3, h4, h5, h6, p, ol, ul, li { padding: 0; margin: 0;
 }
 header, footer, section, article, nav { display:block;
 }
-body {text-align:center; margin: 20px; background: #bee8ff; font: medium arial;
-}
+
 #container {width:960px; margin:-10px auto 0 auto;
 }
 header {margin-top:0; height:156px; width:100%; background-image:url('images/bluepan.jpg'); background-repeat:no-repeat; background-position:center; border-bottom:0;
@@ -177,15 +163,6 @@ header, footer, section, article, nav { display:block;
 
 body { margin:auto; background:url(images/green-grad.jpg) repeat-x;
 }
-/*
-body{
-  font-family:'Open-sans', sans-serif;
-  font-size:17px;
-  line-height:1.5em;
-  margin:auto;
-  padding:0;
-}
-/* Gradient background and white border */
 
 /*mouseout state (see Figure 4-4)*/
 li.hbtn a { background: #0080a0; border: 4px outset #aabaff; }
@@ -226,17 +203,7 @@ ol ol ul, ol ul ul, ul ol ul, ul ul ul { list-style-type:square; }
 
 
 /* Listing 2-6b. The CSS Style Sheet for Listing 2-6a (gallery-page.css) */
-/*set attributes for consistent appearance in all browsers*
-html,
-body,
-p,
-ul,
-li,
-h1,
-h2 {
-    margin: auto;
-    padding: 0;
-}
+
 
 /*set images to have no borders*/
 img {
@@ -502,7 +469,6 @@ li {
 
 /* Listing 4-12b. Providing the CSS Styling for all the Pages that Use the cssportal.com Menu (turquoise.css) *
 html,
-body,
 h1,
 h2,
 h3,
@@ -524,13 +490,7 @@ article,
 nav {
     display: block;
 }
-*
-body {
-    background-color: #bbFFaa;
-    color: white;
-    font-family: Arial;
-}
-*
+
 #container {
     width: 97%;
     margin: auto;
@@ -539,7 +499,7 @@ body {
 }
 */
 
-nav ul {
+#inlineblockNav ul {
     /*
     padding-top: 230px;*/
     padding: 0;
@@ -559,14 +519,14 @@ nav ul {
     left: 0;
 }
 
-nav ul li {
+#inlineblockNav ul li {
     display: block;
     float: left;
     margin: 0;
     padding: 0;
 }
 
-nav ul li a {
+#inlineblockNav ul li a {
     display: block;
     float: left;
     color: #874B46;
@@ -576,11 +536,11 @@ nav ul li a {
     background: transparent url("images/bgDIVIDER.gif") no-repeat top right;
 }
 
-nav ul li a:hover {
+#inlineblockNav ul li a:hover {
     background: transparent url("images/bgHOVER.gif") no-repeat top right;
 }
 
-nav ul li a.current,
+#inlineblockNav ul li a.current,
 ul#main-menu li a.current:hover {
     color: #fff;
     background: transparent url("images/bgON.gif") no-repeat top right;
