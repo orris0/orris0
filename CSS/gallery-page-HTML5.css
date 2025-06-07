@@ -3,8 +3,11 @@
 * {
     box-sizing: border-box;
 }
-body {
-    margin: 40px;
+/*Listing 3-3. CSS for new style sheet (gradient-pic.css) */
+body, header { margin:auto; padding:0; border:0;
+}
+/*add display attributes for the semantic tags*/
+header, footer, section, article, nav { display:block;
 }
 /*set attributes for consistent appearance in all browsers*/
 
