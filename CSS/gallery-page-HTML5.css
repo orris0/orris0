@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 /*Listing 3-3. CSS for new style sheet (gradient-pic.css) */
-body, header { margin:auto; padding:0; border:0;
+body {text-align:center; margin: 20px; background: #bee8ff; font: medium arial;
 }
 /*add display attributes for the semantic tags*/
 header, footer, section, article, nav { display:block;
