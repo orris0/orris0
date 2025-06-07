@@ -20,7 +20,7 @@ header, footer, section, article, nav { display:block;
 .wrapper, wrapper.inline-block-wrapper > div {
     border: 2px solid #ffa94d;
     border-radius: 5px;
-    background-color: #ffd8a8;
+    /* background-color: #ffd8a8; */
     padding: 1em;
     color: #d9480f;
 }
