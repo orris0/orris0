@@ -499,7 +499,7 @@ nav {
 }
 */
 
-#inlineblockNav ul {
+Nav ul {
     /*
     padding-top: 230px;*/
     padding: 0;
@@ -519,14 +519,14 @@ nav {
     left: 0;
 }
 
-#inlineblockNav ul li {
+Nav ul li {
     display: block;
     float: left;
     margin: 0;
     padding: 0;
 }
 
-#inlineblockNav ul li a {
+Nav ul li a {
     display: block;
     float: left;
     color: #874B46;
@@ -536,15 +536,24 @@ nav {
     background: transparent url("images/bgDIVIDER.gif") no-repeat top right;
 }
 
-#inlineblockNav ul li a:hover {
+Nav ul li a:hover {
     background: transparent url("images/bgHOVER.gif") no-repeat top right;
 }
 
-#inlineblockNav ul li a.current,
-ul#main-menu li a.current:hover {
+Nav ul li a.current, ul#main-menu li a.current:hover {
     color: #fff;
     background: transparent url("images/bgON.gif") no-repeat top right;
 }
+
+/*set nav block position and width and remove the #menu item*/
+#inlineblockNavnav ul { margin:10px 0 10px 0; width:135px; float:right;
+}
+/*Set un-ordered list style within the menu block only. This removes bullets*/
+#inlineblockNavnav li { list-style-type:none;
+}
+/* set general side button styles */
+#inlineblockNav li.btn { margin-bottom: 3px; text-align: center; width:130px;
+} 
 /*
 #main-content {
     text-align: center;
