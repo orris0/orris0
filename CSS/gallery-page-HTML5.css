@@ -24,7 +24,6 @@ header, footer, section, article, nav { display:block;
     padding: 1em;
     color: #d9480f;
 }
-
 .wrapper wrapper.inline-block-wrapper {
     display: grid;
    /*  grid-template-columns: repeat(3, 100px);
@@ -32,6 +31,9 @@ header, footer, section, article, nav { display:block;
     height: 500px;
     width: 500px;
     gap: 10px; */
+}
+
+div#inlineblockcontainer.data { margin:auto; text-align:center; width:97%; min-width:800px; max-width:1200px;
 }
 
 section#horizontal-section {
@@ -50,8 +52,7 @@ ul { padding-left: 0;}
 /* end of style equalisation */
 p { background:white;  margin:auto; text-align:center;
 }
-#inline-block-container { margin:auto; text-align:center; width:97%; min-width:800px; max-width:1200px;
-}
+
 a { background: orange; color:navy;
 }
 .inline-block a { display:inline-block; width:110px; height:30px; line-height:30px; text-align:center;
