@@ -36,7 +36,7 @@ div#inlineblockcontainer.data { display: flex;
 }
 
 section#inlineblocksection {
-    display: block;
+    display: block
 }
 
 header#inlineblockheader {
