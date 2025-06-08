@@ -60,8 +60,6 @@ a { background: orange; color:navy;
 /* Set styles to equalise browser renditions*
 
 */
-header, footer, section, article, nav { display:block;
-}
 #wrapper {position:relative; top:0; left:0;width:950px; margin:auto; text-align:center;
 }
 header {width:100%; height:80px; color:black; background-color:#FFCC00; padding-top:10px;
@@ -89,14 +87,6 @@ footer {margin:10px auto 0 auto; width:950px; font-weight:bold; text-align:cente
 .clear { clear:both;
 }
 
-header, footer, section, article, nav { display:block;
-}
-#wrapper {position:relative; top:0; left:0; width:950px; margin:auto; text-align:center;
-}
-header {width:100%; height:80px; color:black; background-color:#FFCC00; padding-top:10px;
-}
-h1 { font-size:200%; font-weight:bold; margin-top:20px;
-}
 #main-content {width:950px; margin:60px auto 0 auto; background-color:white; color:black; text-align:center; font-weight:bold;
 }
 footer {margin:10px auto 0 auto; width:950px; font-weight:bold; text-align:center; background-color:#FFCC00; color:black; clear:both;
@@ -207,7 +197,7 @@ ol ol ul, ol ul ul, ul ol ul, ul ul ul { list-style-type:square; }
 
 /*set images to have no borders*/
 img {
-    border: 0; position: relative; top: 40px; left: 3px; padding: 1em;
+    border: 0;
 }
 
 /*add display attributes for the semantic tags*/
