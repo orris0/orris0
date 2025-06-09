@@ -34,8 +34,12 @@ wrapper#inlineblockwrapper.data {
     gap: 10px; */
 }
 
-div#inlineblockcontainer.data { display: flex;
-    margin:auto; text-align:center; width:97%; min-width:800px; max-width:1200px;
+div#inlineblockcontainer.data {
+    margin:auto; 
+    text-align:center; 
+    width:97%; 
+    min-width:800px; 
+    max-width:1200px;
 }
 
 section#inlineblocksection {
