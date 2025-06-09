@@ -72,7 +72,7 @@ nav {
 }
 
 /*remove the # from #header*/
-header {
+header#inlineblockheader {
   width: 920px;
   height: 180px;
   padding: 0;
