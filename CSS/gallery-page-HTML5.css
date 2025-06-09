@@ -69,7 +69,7 @@ header#inlineblockheader {
     width: 970px;
     background-image: url("../bda-20.jpg");
     background-repeat: no-repeat;
-    background-position: top left;
+    background-position: bottom left;
 }
 h1 { font-size:200%; font-weight:bold; margin-top:20px;
 }
