@@ -56,7 +56,7 @@ div body header #content {
   border: 0;
 }
 
-body {display: flex;
+body {
   background: #FFF url(images/green-grad.jpg) repeat-x;
   margin: auto;
 }
