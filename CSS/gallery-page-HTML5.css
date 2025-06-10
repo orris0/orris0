@@ -103,7 +103,7 @@ h1 {
   top: 5px;
 }
 
-#content {
+#inlineblockcontent {
   background-color: transparent;
   border-left: 10px white solid;
   border-right: 10px white solid;
