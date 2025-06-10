@@ -1,5 +1,5 @@
 @import 'https://fonts.googleapis.com/css?family=Alegreya+Sans';
-
+/*
 * {
     box-sizing: border-box;
 }
@@ -7,7 +7,7 @@
 html, h1, h2, h3, h4, h5, p, ol, ul, li { padding: 0; margin: 0;
 }
 
-/*add display attributes for the semantic tags*/
+/*add display attributes for the semantic tags*
 header, footer, section, article, nav { display:block;
 }
 /*set attributes for consistent appearance in all browsers*/
@@ -62,7 +62,7 @@ body {
   margin: auto;
 }
 
-/*add display attributes for the semantic tags*/
+/*add display attributes for the semantic tags*
 header,
 footer,
 section,
@@ -279,9 +279,10 @@ li.hbtn a { background: #0080a0; border: 4px outset #aabaff; }
 
 
 /* Listing 4-7b. The CSS Listing for Changing the Tab for the five Tab Menu Pages (squaretabs.css)
-/* Set styles to equalise browser rendition*/
+/* Set styles to equalise browser rendition*
 html, h1, h2, h3, h4, h5, h6, p, ol, ul, li { padding: 0; margin: 0;
 }
+*/
 header, footer, section, article, nav { display:block;
 }
 
@@ -315,7 +316,7 @@ div#container.data { width:97%; margin:auto; min-width:800px; max-width:1100px; 
     20px 100%, 0 calc(100% - 20px), 0 20px);
 }
 /*PAGE LAYOUT*/
-/*Listing 3-3. CSS for new style sheet (gradient-pic.css) */
+/*Listing 3-3. CSS for new style sheet (gradient-pic.css) *
 body, header { margin:auto; padding:0; border:0;
 }
 /*add display attributes for the semantic tags*/
@@ -371,7 +372,7 @@ img {
     border: 0;
 }
 
-/*add display attributes for the semantic tags*/
+/*add display attributes for the semantic tags*
 header,
 footer,
 section,
