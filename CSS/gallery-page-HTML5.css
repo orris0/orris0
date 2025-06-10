@@ -287,6 +287,7 @@ header, footer, section, article, nav { display:block;
 
 #container {width:960px; margin:-10px auto 0 auto;
 }
+/*
 header {margin-top:0; height:156px; width:100%; background-image:url('images/bluepan.jpg'); background-repeat:no-repeat; background-position:center; border-bottom:0;
 }
 h1 {font-family:Arial; font-size:320%; color:white; font-weight:normal; text-align:center; padding-top:35px; margin-bottom:-10px; height: 94px; margin:auto;
