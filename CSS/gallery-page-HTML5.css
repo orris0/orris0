@@ -15,7 +15,6 @@ header, footer, section, article, nav { display:block;
 wrapper#inlineblockwrapper.data { 
     border:2px solid #f76707;
     border-radius: 5px;
-    background-color: #fff4e6;
 }
 
 wrapper#inlineblockwrapper.data > div {
