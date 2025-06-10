@@ -48,7 +48,7 @@ li.btn a { display: block; color: white; font-weight: bold; text-decoration: non
 #html5style2 li.btn a:hover { background: red;  color:white; border: 5px outset red;
 }
 /*mouse active*/
-#htmlstyle2 li.btn a:active { background:maroon;  border: 5px inset maroon; 
+#html5style2 li.btn a:active { background:maroon;  border: 5px inset maroon; 
 }
 br.clear { 	clear:both; 
 }
