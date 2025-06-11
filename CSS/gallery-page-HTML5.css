@@ -33,7 +33,7 @@ wrapper#inlineblockwrapper.data {
     gap: 10px; */
 }
 
-div#inlineblockcontainer.data {
+div#html5style2container.data {
     margin:auto; 
     text-align:center; 
     width:97%; 
@@ -41,7 +41,7 @@ div#inlineblockcontainer.data {
     max-width:1200px;
 }
 
-section#inlineblocksection {
+section#html5style2section {
     display: block
 }
 
@@ -81,7 +81,7 @@ header#inlineblockheader {
 }
 */
 
-header#inlineblockheader {
+header#html5style2header {
     width: 970px;
     background-image: url("../bda-20.jpg");
     background-repeat: no-repeat;
