@@ -676,7 +676,7 @@ nav {
 
 Nav ul {
     /*
-    padding-top: 230px;*/
+    padding-top: 230px;*
     padding: 0;
     list-style-type: none;
     margin: auto;
@@ -720,13 +720,13 @@ Nav ul li a.current, ul#main-menu li a.current:hover {
     background: transparent url("images/bgON.gif") no-repeat top right;
 }
 
-/*set nav block position and width and remove the #menu item*/
+/*set nav block position and width and remove the #menu item*
 #nav ul { margin:10px 0 10px 0; width:135px; float:right;
 }
-/*Set un-ordered list style within the menu block only. This removes bullets*/
+/*Set un-ordered list style within the menu block only. This removes bullets*
 #nav li { list-style-type:none;
 }
-/* set general side button styles */
+/* set general side button styles *
 #Nav li.btn { margin-bottom: 3px; text-align: center; width:130px;
 } 
 /*
