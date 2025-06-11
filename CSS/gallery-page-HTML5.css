@@ -82,19 +82,7 @@ header#html5style2header {
     background-position: bottom;
     margin: 10px auto;
 }
-/*
 
-header#html5style2header {
-    width: 970px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px;
-    background-image: url("../bda-20.jpg");
-    background-repeat: no-repeat;
-    background-position: bottom left;
-}
-    */
 h1 {
   font-size: 125%;
   color: white;
@@ -341,7 +329,7 @@ body { margin:auto; background:url(images/green-grad.jpg) repeat-x;
 
 /*mouseout state (see Figure 4-4)*/
 li.hbtn a { background: #0080a0; border: 4px outset #aabaff; }
-/*set the position of the content to move it close up to the menu tabs*/
+/*set the position of the content to move it close up to the menu tabs*
 #content {margin-top:10px; font : 0.9em/1.3em "bitstream vera sans", verdana; position:relative; top:0.7em; text-align: left; background: #cfecf5; padding: 20px; border: 1px solid black; border-top: none; z-index: 2;
 }
 /*set the generic tab style--and move menu upwards so that it overlaps the header*
