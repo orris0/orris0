@@ -24,7 +24,7 @@ wrapper#inline-block.data > div {
     padding: 1em;
     color: #d9480f;
 }
-wrapper#html5style2.data {
+wrapper#inline-block.data {
     display: grid;
    /*  grid-template-columns: repeat(3, 100px);
     grid-template-rows: repeat(3, 100px);
