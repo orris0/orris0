@@ -70,8 +70,8 @@ nav {
   display: block;
 }
 
-/*remove the # from #header*
-header#inlineblockheader {
+/*remove the # from #header*/
+header#html5style2header {
   width: 920px;
   height: 180px;
   padding: 0;
@@ -79,7 +79,7 @@ header#inlineblockheader {
   background: url(images/header3.jpg);
   margin: 10px auto;
 }
-*/
+/*
 
 header#html5style2header {
     width: 970px;
@@ -91,6 +91,7 @@ header#html5style2header {
     background-repeat: no-repeat;
     background-position: bottom left;
 }
+    */
 h1 {
   font-size: 125%;
   color: white;
