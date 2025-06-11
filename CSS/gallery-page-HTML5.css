@@ -185,12 +185,12 @@ li.btn a:hover {
   border: 5px outset red;
 }
 
-/*mouse active*/
+/*mouse active*
 li.btn a:active {
   background: maroon;
   border: 5px inset maroon;
 }
-
+*/
 br.clear {
   clear: both;
 }
