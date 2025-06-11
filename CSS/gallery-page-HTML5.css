@@ -236,14 +236,14 @@ a { background: orange; color:navy;
 /*
 header {width:100%; height:80px; color:black; background-color:#FFCC00; padding-top:10px;
 }
-*/
+*
 header#html5style2header {
     width: 970px;
     background-image: url("../bda-20.jpg");
     background-repeat: no-repeat;
     background-position: bottom left;
 }
-
+*/
 h1 { font-size:200%; font-weight:bold; margin-top:20px;
 }
 #main-content {width:950px; margin:50px auto 0 auto; background-color:white; color:black; text-align:center; font-weight:bold;
