@@ -85,6 +85,8 @@ header#html5style2header {
     width: 970px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    padding: 10px;
     background-image: url("../bda-20.jpg");
     background-repeat: no-repeat;
     background-position: bottom left;
