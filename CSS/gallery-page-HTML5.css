@@ -72,12 +72,16 @@ nav {
 
 /*remove the # from #header*/
 header#html5style2header {
-  width: 920px;
-  height: 180px;
-  padding: 0;
-  border: 10px white solid;
-  background: url(images/header3.jpg);
-  margin: 10px auto;
+    width: 970px;
+    height: 180px;
+    padding: 0;
+    border: 10px white solid;
+    padding: 10px;
+    background-image: url("../bda-20.jpg");
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background: url(images/header3.jpg);
+    margin: 10px auto;
 }
 /*
 
