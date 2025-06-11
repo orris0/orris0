@@ -12,19 +12,19 @@ header, footer, section, article, nav { display:block;
 }
 /*set attributes for consistent appearance in all browsers*/
 
-wrapper#html5style2.data { 
+wrapper#inline-block.data { 
     border:2px solid #f76707;
     border-radius: 5px;
 }
 
-wrapper#html5style2.data > div {
+wrapper#inline-block.data > div {
     border: 2px solid #ffa94d;
     border-radius: 5px;
     /* background-color: #ffd8a8; */
     padding: 1em;
     color: #d9480f;
 }
-wrapper#html5style2.data {
+wrapper#inline-block.data {
     display: grid;
    /*  grid-template-columns: repeat(3, 100px);
     grid-template-rows: repeat(3, 100px);
@@ -33,7 +33,7 @@ wrapper#html5style2.data {
     gap: 10px; */
 }
 
-div#html5style2container.data {
+div#inline-block.data {
     margin:auto; 
     text-align:center; 
     width:97%; 
