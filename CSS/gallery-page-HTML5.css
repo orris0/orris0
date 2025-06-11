@@ -74,7 +74,7 @@ nav {
 header#html5style2header {
     width: 970px;
     height: 180px;
-    padding: 0;
+   /* padding: 0; */
     border: 10px white solid;
     padding: 10px;
     background-image: url("../bda-20.jpg");
