@@ -33,6 +33,8 @@ wrapper#inline-block.data {
     gap: 10px; */
 }
 
+
+
 div#html5style2container.data {
     margin:auto; 
     text-align:center; 
@@ -40,27 +42,22 @@ div#html5style2container.data {
     min-width:800px; 
     max-width:1200px;
 }
-
 section#html5style2section {
     display: block
 }
-
 header#html5style2header {
     display: block;
 }
-
 /*equalise for various browsers and change #header to header*/
 div body header #content {
   margin: 0;
   padding: 0;
   border: 0;
 }
-
 body {
   background: #FFF url(images/green-grad.jpg) repeat-x;
   margin: auto;
 }
-
 /*add display attributes for the semantic tags*/
 header,
 footer,
@@ -69,7 +66,6 @@ article,
 nav {
   display: block;
 }
-
 /*remove the # from #header*/
 header#html5style2header {
     width: 970px;
@@ -82,7 +78,6 @@ header#html5style2header {
     background-position: bottom;
     margin: 10px auto;
 }
-
 h1 {
   font-size: 125%;
   color: white;
@@ -91,13 +86,11 @@ h1 {
   top: -3px;
   width: 480px;
 }
-
 #rosette {
   position: relative;
   left: 750px;
   top: 5px;
 }
-
 #html5style2content {
   background-color: transparent;
   border-left: 10px white solid;
@@ -111,26 +104,22 @@ h1 {
   font-size: medium;
   color: maroon;
 }
-
 h2 {
   font-size: x-large;
   color: white;
   margin: 0 0 10px 0;
 }
-
 h3 {
   font-size: large;
   color: white;
   margin: 0 0 6px 0;
 }
-
 #html5style2leftcol {
   float: left;
   width: 310px;
   vertical-align: top;
 }
-
-/*#rightcol { width: 135px; float:right; height: 252px; margin-right:10px;
+#html5style2rightcol { width: 135px; float:right; height: 252px; margin-right:10px;
 }*/
 #html5style2midcol {
   margin-left: 315px;
@@ -168,7 +157,6 @@ li.btn a {
   text-decoration: none;
   zoom: 1;
 }
-
 /* specify mouse state styles */
 /* mouseout (default) */
 li.btn a {
@@ -177,47 +165,45 @@ li.btn a {
   border: 5px outset #559a55;
   padding-bottom: 3px;
 }
-
 /* mouseover */
 li.btn a:hover {
   background: red;
   color: white;
   border: 5px outset red;
 }
-
 /*mouse active*/
 li.btn a:active {
   background: maroon;
   border: 5px inset maroon;
 }
-
 br.clear {
   clear: both;
 }
-
 div#html5style2#midcol img {
   margin-left: 10px;
 }
-
 div#html5style2footer {
   clear: both;
   color: maroon;
   text-align: center;
 }
 
+
+
 /* Listing 4-1b. Applying the display:inline-block; Style to the Second Row of Buttons (inline-block.css) - Set styles to equalise the browser rendition*/
 html, h1, h2, h3, h4, h5, p, ol, ul, li { padding: 0; margin: 0;
 }
-
 ul { padding-left: 0;}
 /* end of style equalisation */
 p { background:white;  margin:auto; text-align:center;
 }
-
 a { background: orange; color:navy;
 }
 .inline-block a { display:inline-block; width:110px; height:30px; line-height:30px; text-align:center;
 }
+
+
+
 /*Listing 4-2b. Styling Equal-width Buttons with Rollover Color Change (equal-2d.css) */
 /* Set styles to equalise browser renditions*
 
