@@ -148,12 +148,12 @@ nav#html5style2nav ul {
   float: right;
 }
 
-/*Set un-ordered list style within the menu block only. This removes bullets*
+/*Set un-ordered list style within the menu block only. This removes bullets*/
 nav#html5style2nav li {
   list-style-type: none;
 }
 
-/* set general side button styles *
+/* set general side button styles */
 li.btn {
   margin-bottom: 3px;
   text-align: center;
