@@ -208,13 +208,13 @@ a { background: orange; color:navy;
 /* Set styles to equalise browser renditions*
 
 */
-#wrapper {position:relative; top:0; left:0;width:950px; margin:auto; text-align:center;
+#wrapper#horizontalequal2dwrapper {position:relative; top:0; left:0;width:950px; margin:auto; text-align:center;
 }
-/*
-header {width:100%; height:80px; color:black; background-color:#FFCC00; padding-top:10px;
+
+header#horizontalequal2dheader {width:100%; height:80px; color:black; background-color:#FFCC00; padding-top:10px;
 }
-*
-header#html5style2header {
+
+header##horizontalequal2dheader {
     width: 970px;
     background-image: url("../bda-20.jpg");
     background-repeat: no-repeat;
@@ -223,36 +223,36 @@ header#html5style2header {
 */
 h1 { font-size:200%; font-weight:bold; margin-top:20px;
 }
-#main-content {width:950px; margin:50px auto 0 auto; background-color:white; color:black; text-align:center; font-weight:bold;
+##horizontalequal2dmain-content {width:950px; margin:50px auto 0 auto; background-color:white; color:black; text-align:center; font-weight:bold;
 }
 footer {margin:10px auto 0 auto; width:950px; font-weight:bold; text-align:center; background-color:#FFCC00; color:black; clear:both;
 }
-#inlineblocknav ul {position:absolute; top:100px; left:9%; width: 780px; list-style: none; height: 36px;
+#horizontalequal2dnav ul {position:absolute; top:100px; left:9%; width: 780px; list-style: none; height: 36px;
 }
-#inlineblocknav li { float: left; width: 120px; margin:0 5px 0 5px;
+#horizontalequal2dnav li { float: left; width: 120px; margin:0 5px 0 5px;
 }
-#inlineblocknav a { color: #000; font-size: 100%; font-weight:bold; text-decoration: none; text-align:center; border: 1px solid #000; padding: 5px; display: block; background-color: white;
+#horizontalequal2dnav a { color: #000; font-size: 100%; font-weight:bold; text-decoration: none; text-align:center; border: 1px solid #000; padding: 5px; display: block; background-color: white;
 }
-#inlineblocknav a:hover { font-weight: bold; background-color:green; color:white;
+#horizontalequal2dnav a:hover { font-weight: bold; background-color:green; color:white;
 }
 .clear { clear:both;
 }
 
-#main-content {width:950px; margin:60px auto 0 auto; background-color:white; color:black; text-align:center; font-weight:bold;
+#horizontalequal2dmain-content {width:950px; margin:60px auto 0 auto; background-color:white; color:black; text-align:center; font-weight:bold;
 }
-footer {margin:10px auto 0 auto; width:950px; font-weight:bold; text-align:center; background-color:#FFCC00; color:black; clear:both;
-}
-/*
-nav {position:absolute; top:100px; left:78px; width: 785px; padding: 5px; list-style: none; height: 35px;
+#horizontalequal2dfooter {margin:10px auto 0 auto; width:950px; font-weight:bold; text-align:center; background-color:#FFCC00; color:black; clear:both;
 }
 
-nav li { display:inline; padding: 5px; padding-top:15px; margin:5px 0 0 2px; height:25px;
+#horizontalequal2dnav {position:absolute; top:100px; left:78px; width: 785px; padding: 5px; list-style: none; height: 35px;
+}
+
+#horizontalequal2dnav li { display:inline; padding: 5px; padding-top:15px; margin:5px 0 0 2px; height:25px;
 }
 *
-nav a {height:25px; color: #000; font-size:80%; font-size: 100%; font-weight:bold; text-decoration: none; border: 1px solid #000; padding:5px 5px 0 5px; display: inline-block; background-color: white; zoom: 1;
+#horizontalequal2dnav a {height:25px; color: #000; font-size:80%; font-size: 100%; font-weight:bold; text-decoration: none; border: 1px solid #000; padding:5px 5px 0 5px; display: inline-block; background-color: white; zoom: 1;
 }
-*/
-nav a:hover { font-weight: bold; background-color:green; color:white;
+
+#horizontalequal2dnav a:hover { font-weight: bold; background-color:green; color:white;
 }
 .clear { clear:both;
 }
