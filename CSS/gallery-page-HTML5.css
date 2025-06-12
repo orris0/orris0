@@ -140,15 +140,15 @@ h3 {
 }
 
 /*set nav block position and width*/
-/*nav { margin:10px 30px 0 10px; width:135px; float:right; 
-}*/
+nav { margin:10px 30px 0 10px; width:135px; float:right; 
+}
 nav#html5style2nav ul {
   margin: 10px 0 10px 0;
   width: 135px;
   float: right;
 }
 
-/*Set un-ordered list style within the menu block only. This removes bullets*/
+/*Set un-ordered list style within the menu block only. This removes bullets*
 nav#html5style2nav li {
   list-style-type: none;
 }
