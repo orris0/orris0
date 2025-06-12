@@ -49,7 +49,7 @@ header#html5style2header {
     display: block;
 }
 /*equalise for various browsers and change #header to header*/
-div body header #content {
+div body header #html5style2content {
   margin: 0;
   padding: 0;
   border: 0;
