@@ -119,7 +119,7 @@ div#html5style2leftcol {
   width: 310px;
   vertical-align: top;
 }
-div#html5style2rightcol { width: 135px; float:right; height: 252px; margin-right:10px;
+div#html5style2rightcol { width: 135px; float:right; height: 252px; margin-right:145px;
 }*/
 div#html5style2midcol {
   margin-left: 315px;
@@ -129,7 +129,7 @@ div#html5style2midcol {
 }
 
 /*set nav block position and width*/
-nav#html5style2 { margin:10px 30px 0 10px; width:135px; float:right; 
+nav#html5style2 { margin:10px 0 10px; width:135px; float:right; 
 }
 nav#html5style2nav ul {
   margin: 10px 0 10px 0;
