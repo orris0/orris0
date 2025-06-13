@@ -91,7 +91,7 @@ h1 {
   left: 750px;
   top: 5px;
 }
-#html5style2content {
+div#html5style2content {
   background-color: transparent;
   border-left: 10px white solid;
   border-right: 10px white solid;
@@ -114,14 +114,14 @@ h3 {
   color: white;
   margin: 0 0 6px 0;
 }
-#html5style2leftcol {
+div#html5style2leftcol {
   float: left;
   width: 310px;
   vertical-align: top;
 }
-#html5style2rightcol { width: 135px; float:right; height: 252px; margin-right:10px;
+div#html5style2rightcol { width: 135px; float:right; height: 252px; margin-right:10px;
 }*/
-#html5style2midcol {
+div#html5style2midcol {
   margin-left: 315px;
   margin-right: 145px;
   margin-top: 10px;
