@@ -212,7 +212,8 @@ a { background: orange; color:navy;
 #wrapper#equal2dwrapper {position:relative; top:0; left:0;width:950px; margin:auto; text-align:center;
 }
 
-header#equal2dheader {width:100%; height:80px; color:black; background-color:#FFCC00; padding-top:10px;
+header#equal2dheader {
+    width:970px; height:80px; color:black; background-color:#FFCC00; padding-top:10px;
 }
 
 header#equal2dheader {
