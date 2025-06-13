@@ -228,7 +228,7 @@ h1 { font-size:200%; font-weight:bold; margin-top:20px;
 }
 footer {margin:10px auto 0 auto; width:950px; font-weight:bold; text-align:center; background-color:#FFCC00; color:black; clear:both;
 }
-#equal2dnav ul {position:absolute; top:100px; left:9%; width: 780px; list-style: none; height: 36px;
+#equal2dnav ul {position:absolute; top:880px; left:9%; width: 780px; list-style: none; height: 36px;
 }
 #equal2dnav li { float: left; width: 120px; margin:0 5px 0 5px;
 }
