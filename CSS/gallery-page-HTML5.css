@@ -131,14 +131,14 @@ div#html5style2midcol {
 /*set nav block position and width*/
 nav#html5style2 { margin:10px 0 10px; width:135px; float:right; 
 }
-nav#html5style2nav ul {
+nav#html5style2Nav ul {
   margin: 10px 0 10px 0;
   width: 135px;
   float: right;
 }
 
 /*Set un-ordered list style within the menu block only. This removes bullets*/
-nav#html5style2nav li {
+nav#html5style2Nav li {
   list-style-type: none;
 }
 
