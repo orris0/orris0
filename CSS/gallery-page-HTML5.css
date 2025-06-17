@@ -824,8 +824,8 @@ li {
 /*set the gallery block 10px further to the right*/
 #gallery-block {
     position: absolute;
-    left: 160px;
-    top: 170px;
+    left: 30px;
+    top: 450px;
 }
 
 /* end-css  */
