@@ -212,7 +212,7 @@ a { background: orange; color:navy;
 #wrapper#equal2dwrapper {position:relative; top:0; left:0;width:950px; margin:auto; text-align:center;
 }
 
-header#equal2dheader {
+header#equal2dheader { display: flex; justify-content: center;
     width:970px; height:180px; color:b#6e4242; background-color:#FFCC00; padding-top:10px;
 }
 
