@@ -10,24 +10,23 @@
         <!-- Describing about the page -->
         <!-- head section is communicating about the page to the browser -->
         <!-- Anything you write under head is not displayed on the browser content page. -->
+        <meta charset="UTF-8">
          
         <title>HTML5 Gallery page Templates</title>
-        <meta charset="utf-8">
         <link href="./CSS/gallery-page-HTML5.css" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="./CSS/inline-block.css"> 
-        <link rel="stylesheet" type="text/css" href="./CSS/html5-style-2.css">
-        <link rel="stylesheet" type="text/css" href="./CSS/flexbox-grid.css"> 
+        <link rel="stylesheet" type="text/css" href="./CSS/html5-style-2.css"> 
         
         
-        <!-- <link href="./CSS/turquoise.css" rel="stylesheet"> -->
+        <link href="./CSS/turquoise.css" rel="stylesheet">
         
-        <!-- <link rel="stylesheet" href="./style.css">
+        <link rel="stylesheet" href="./style.css">
     
         <link rel="stylesheet" type="text/css" href="./CSS/inline-block.css">
         <link rel="stylesheet" type="text/css" href="./CSS/equal-2d.css">
         <link rel="stylesheet" type="text/css" href="./CSS/variable-2d.css">
         <link rel="stylesheet" type="text/css" href="./CSS/variable-3d.css">
-        -->
+        
         <meta name="viewport" content="width-device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         <meta name="format-detection" content="telephone=no">
@@ -102,630 +101,99 @@
         <script>
             document.createElement('nav');
         </script>
-        <!-- [endif lte IE 7]>
-        <link rel="stylesheet" type="text/css=" href="./CSS/gallery-ie7.css">
-        </![endif]-->
-        <!-- conditional Javascript added -->
-        <!-- [if lte IE 8]>
-        <script src="HTML5.js" type="text/Javascript"></script>
-        <![endif]-->
     </head>  
     <body>
-        <div class="data" id="inlineblockcontainer">
-            <header class="data" id="equal2dheader">
-                <!--<link rel=”stylesheet” type=”text/css” href="HTML5-style-2.css"> -->   
-                <!-- Listing 4-1a.Structure for Two Rows of Menu buttons (inline-block.html) --
-                <link rel = "stylesheet" type = "text/css" href = "inline-block.css"> -->
-                <p>&nbsp;</p>
-                <p>MyStory (online-content)</p>
-                <p>
-                    <a href="./index.html">Page 1</a>
-                    <a href="./page2.html">Page 2</a>
-                    <a href="./page3.html">Page 3</a>
-                    <a href="./page5.html">Page 5</a>
-                    <a href="./page6.html">Page 6</a>
-                    <a href="./page7.html">Page 7</a>
-                </p>
-                <p>&nbsp;</p>
-                <p class="inline-block">A full page roll-over gallery of greetings, cards, e.t.c<br>
-                    <a href="./HTML5-Ch1-7.html">Page 1</a>
-                    <a href="#">Page 2</a>
-                    <a href="#">Page 3</a>
-                    <a href="#">Page 4</a>
-                    <a href="#">Page 5</a>
-                    <a href="#">Page 6</a>
-                    <a href="#">Page 7</a>
-                </p><p>&nbsp;</p>
-        
-                <h1>Practical HTML5 Projects for fun and Profit!</h1>
-            </header>
-            <div class="row">
-                <div class="col-12">
-                    <img src="images/kite.png" width="95%" ;>
-                    <nav class="nav">
-		<ul>
-			<li class="btn"><a href="#">Page Two</a></li>
-			<li class="btn"><a href="#">Page Three</a></li>
-			<li class="btn"><a href="#">Page Four</a></li>
-			<li class="btn"><a href="#">Home Page</a></li>
-		</ul>
-	</nav>
-	<div id="rightcol">
-		Secondary information<br>
-		<br>
-		<p><a href="http://validator.w3.org/check?uri=referer">
-				<img src="http://www.w3.org/html/logo/img/mark-word-icon.png" width="64" height="64"
-					alt="Validated HTML5" title="Validated HTML5"></a>
-		</p>
-
-		<p>
-			&nbsp;<a href="http://jigsaw.w3.org/css-validator/"><img src="images/vcss-blue.gif" width="88" height="31"
-					title="Valid CSS!" alt="Valid CSS!"></a>
-			<span class="small"><br>
-				<br>
-				Markup Validated by the World Wide Web Consortium
-			</span>
-		</p>
-		<br class="clear">
-		<p class="advert">Web Design by Orris Baker</p>
-	</div>
-	<div id="midcol">
-		<div id="gallery-block">
-			<ul id="col-1">
-				<li><a href="#"><img src="images/alithumb.jpg" alt="Ali" title="Ali">
-						<img class="hid" src="images/alibig.jpg" alt="">
-					</a>
-				</li>
-				<li><a href="#"><img src="images/catthumb.jpg" alt="Cat" title="Cat">
-						<img class="hid" src="images/catbig.jpg" alt=""></a>
-				</li>
-				<li><a href="#"><img src="images/beachthumb.jpg" alt="Beach" title="Beach">
-						<img class="hid" src="images/beachbig.jpg" alt=""></a>
-				</li>
-			</ul>
-			<ul id="col-2">
-				<li><a href="#"><img src="images/fernsthumb.jpg" alt="Ferns" title="Ferns">
-						<img class="hid" src="images/fernsbig.jpg" alt=""></a>
-				</li>
-				<li><a href="#"><img src="images/nicothumb.jpg" alt="Nico" title="Nico">
-						<img class="hid" src="images/nicobig.jpg" alt=""></a>
-				</li>
-				<li><a href="#"><img src="images/childbeachthumb.jpg" alt="Child and Beach" title="Child and Beach">
-						<img class="hid" src="images/childbeachbig.jpg" alt=""></a>
-				</li>
-			</ul>
-			<ul id="col-3">
-				<li><a href="#"><img src="images/ancientthumb.jpg" alt="Ancient and modern" title="Ancient and Modern">
-						<img class="hid" src="images/ancientbig.jpg" alt=""></a>
-				</li>
-				<li><a href="#"><img src="images/felixthumb.jpg" alt="Felix" title="Felix">
-						<img class="hid" src="images/felixbig.jpg" alt=""></a>
-				</li>
-				<li><a href="#"><img src="images/cliffthumb.jpg" alt="Cliffs" title="Cliffs">
-						<img class="hid" src="images/cliffbig.jpg" alt=""></a>
-				</li>
-			</ul><br class="clear">
-		</div><!--gallery block closed-->
-	</div><!--midcol closed-->
-                    <div class="data" id="left-col"> 
-                        <div class="data" id="navigation-2">
-                            <menu>
-                                <ul>
-                                    <li><a href="index-2.html" title="Mother Love" class="parallel"><div>Welcome</div></a></li>
-                                    <li><a href="index2.html" title="Tracey Baker" class="parallel"><div>QA Engineer</div></a></li>
-                                    <li><a href="simplistic-side-by-side.html" title="Eldrige Smith" class="parallel"><div>SEO_Specialist</div></a></li>
-                                    <li><a href="html5-nav.html" title="Marie Trott" class="parallel"><div>UI/UX_Designer</div></a></li>
-                                    <li><a href="simplistic-html5-java.html" title="Donna Place" class="parallel"><div>Project_manager</div></a></li>
-                                    <li><a href="simplistic-html5.html" title="Orris Baker" class="parallel"><div>CEO_Webdeveloper</div></a></li>
-                                    <li><a href="index.html" title="Larvern Smith" class="parallel"><div>Requirement_Analyst</div></a></li>
-                                    </ul>
-                            </menu><!-- end-nav -->
-                        </div>
-                    </div><!-- end-data -->
-                </div><!-- end-inlineblockcontainer -->
-        
-        
-
-    <div class="row" style="background-color: #3c8BB6; padding: 5% 0 3%;">
-        <div class="col-12">
-            <img src="images/paper.png" width="95%" ;>
-
-        </div><!-- end col-12 -->
-    </div> <!-- end class row -->
-
-    <div id="content">
-        <h2>Award winning accommodation, self catering or bed and breakfast</h2>
-
-        <div id="left-col">
-            <h3>Cottages, converted barns, caravans</h3>
-            <img alt="cottage interior" height="225" src="images/cotdining300.jpg" width="300" /><br />
-            The superb interior of one of our cottages
-        </div>
-        <div id="rightcol">
-            <ul>
-                <li class="btn"><a href="accommodation.html" title="Accommodation">
-                        Accommodation</a>
-                </li>
-                <li class="btn">
-                    <a href="maps.html" title="Location Maps">Maps</a>
-                </li>
-                <li class="btn">
-                    <a href="faqs.html" title="Frequently Asked Questions">Information</a>
-                </li>
-                <li class="btn">
-                    <a href="attractions.html" title="Local attractions">Attractions</a>
-                </li>
-                <li class="btn"><a href="contact.html" title="Contact us">Contact Us</a>
-                </li>
-                <li class="btn"><a href="index.html" title="Return to Home Page">Home Page</a>
-                </li>
-            </ul>
-        </div>
-        <div id="mid-col">
-            <h3>Situated in the BDA's beautiful Aunt Jennings countryside</h3>
-            <img alt="Aunt Jennings countryside" height="229" src="images/devon398.jpg" width="398" />
-            <br class="clear">
-        </div>
-
-        <!-- aside --
-        <section>
-            <h3>Which browser should you design for?</h3>
-            <article>
-                <strong>The answer is all of them.</strong> If you survey a group of computer
-                aficionados you will get very different answers compared with the general
-                public’s answers.&nbsp;
-                I worked as a freelance computer technician for over eleven years, During that
-                period
-                I never came across a single person who was using a browser other than Internet Explorer.
-                <aside>
-                    The great majority of ordinary folk are using IE because it came pre-installed with their
-                    computers.
-                </aside>
-                None had ever heard of Mozilla Firefox, although I did meet one person whose son had put Firefox on
-                his
-                computer,
-                he wanted me to remove it because he did not know what it was.
-                The great majority of ordinary folk are using IE because it came pre-installed
-                with their computers. When reading magazine surveys, it would be safer to increase the survey
-                figures for
-                Internet Explorer.
-                The result would mean that you should make sure that your websites work in IE7 and IE8 because these
-                are the most popular by default. It would be safe to predict that there will be a strong swing
-                towards IE 9 when it is finalised in 2011.
-            </article><br>
-            -- summary-details --
-            <details>
-                <summary><b>A COMPUTER FOR &pound;15?</b></summary>
-                <p>The UK not for profit organization Raspberry Pi is hoping to sell<br> a computer for &pound;15
-                    (or less if the take up is good).<br>
-                    It is no bigger than a USB connector, it has an ARM chipset, <br>a wi-fi chip, a version of the
-                    BASIC progrmming language <br>and it is preloaded with the Linux operating system. The primary
-                    purpose <br>for this innovation is as a teaching tool for UK schools where children <br>are
-                    bored stiff with the current curriculum. You can read more about it at
-                    <br>http://www.wired.co.uk/news/archive//2011-01/20/raspberry-pi-computer
-                </p>
-            </details>
-        </section>
-
-        <footer>
-            -- note that we're programmatically forcing validation and then preventing the form from actually submitting...this is only a test form, and there's no point having it submit to itself for no reason -->
-
-            <!-- <h1>HTML5 forms example</h1> --
-
-            <a href="http://dev.opera.com/articles/view/new-form-features-in-HTML5/">
-                <cite>New form features in HTML5</cite>
-            </a>
-
-            <br>
-
-            <form id="form-order" onsubmit="this.checkValidity(); return false;">
-                <div>
-                    <label for="title">Title</label>
-                    <input type="text" list="mydata" name="title" id="title" placeholder="Select one or enter your own"
-                        required>
-                    <datalist id="mydata">
-                        <option label="Mr" value="Mister">
-                        <option label="Mrs" value="Mistress">
-                        <option label="Ms" value="Miss">
-                    </datalist>
-                </div>
-
-                <div>
-                    <label for="name">Name</label>
-                    <input type="text" name="name" id="name" placeholder="John Doe" required>
-                </div>
-
-                <div>
-                    <label for="phone">Phone number</label>
-                    <input type="tel" name="phone" id="phone" placeholder="+1 23456789" pattern="[0-9]{10}"> (optional)
-                </div>
-
-                <div>
-                    <label for="email">Email address</label>
-                    <input type="email" name="email" id="email" placeholder="foo@bar.com" required>
-                </div>
-
-                <div>
-                    <label for="website">Your website</label>
-                    <input type="url" name="website" id="website" placeholder="www.yoursite.com"> (optional)
-                </div>
-
-                <div>
-                    <label for="numberexample">Nr. of items to order</label>
-                    <input type="number" name="numberexample" id="numberexample" min="1" max="10" value="1" required>
-                    (1-10)
-                </div>
-
-                <div>
-                    <label for="rangeexample">Length</label>
-                    <input type="range" name="rangeexample" id="rangeexample" min="1" max="10" value="1" step="0.1">
-                    <output onforminput="value=rangeexample.value" for="rangeexample">1</output>m (in 10cm increments)
-                </div>
-
-                <div>
-                    <label for="deliverydate">Delivery date</label>
-                    <input type="date" name="deliverydate" id="deliverydate" min="2010-12-16" required> (minimum 16
-                    December 2010)
-                    <!-- with some server-side scripting we'd prefill the min attribute with today's date ... in this static example it's simply hardcoded --
-                </div>
-
-                <div>
-                    <label for="timeexample">Time of delivery</label>
-                    <input type="time" name="timeexample" id="timeexample" step="1800" required> (in 30 min increments)
-                </div>
-
-                <div>
-                    <label for="colorexample">Color of the item</label>
-                    <input type="color" name="colorexample" id="colorexample" value="#ed1c24"> (default red)
-                </div>
-
-                <input type="submit">
-            </form>
-
-
-            <form id="form-search" onsubmit="return false;">
-                <div id="search_demo">
-                    <label for="search">Search</label><input name="search" id="search" type="search"> <button
-                        type="submit">Go</button>
-                </div>
-            </form>
-
-            <form id="form-progress-meter" onsubmit="return false;">
-                <div>
-                    <label for="progress">Progress</label>
-                    <progress id="progress" value="25" max="100"><span>25</span>%</progress>
-                </div>
-
-                <div id="meter_demo">
-                    <label>Disk usage</label>
-                    <meter min="0" value="50.3" max="232.57">50.3 GB used out of 232.57 GB</meter>
-                    <meter min="0" value="193.44" max="232.57">193.44 GB used out of 232.57 GB</meter>
-                    <meter min="0" value="232.57" max="232.57">232.57 GB used out of 232.57 GB</meter>
-                    (3 <code>meter</code> values)
-                </div>
-
-            </form> -->
-            <div class="row" style="background-color: #34495e;">
-
-                <div class="col-11">
-                    <h2>In just 42 hours and 27 minutes.</h2>
-
-                    <div class="col-3">
-                        <img class="circle" src="img/plane.png" width="95%" ;>
-                    </div> <!-- end col-3 -->
-
-                </div><!-- end class col-11 -->
-
-            </div> <!-- end class row --><!-- end class row -->
-
-            <!-- Vendor JS Files -->
-            <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-            <script src="../orris0/aos.css"></script>
-
-            <script src="../orris0/bootstrap.bundle.min.js"></script>
-
-            <script src="../orris0/glightbox.min.js"></script>
-            <script src="../orris0/isotope.pkgd.min.js"></script>
-            <script src="../orris0/swiper-bundle.min.js"></script>
-            <script src="../orris0/validate.js"></script>
-            <!--jQuery JS-->
-            <script src="../orris0/js/"></script>
-            <!-- Template Main JS File -->
-            <script src="../orris0/main.js"></script>
-
-            <div class="row" style="background-color: #00afe1;">
-
-                <div class="col-11">
-
-                    <h2>So come along for the ride.</h2>
-
-                    <div class="col-3">
-                        <img class="circle" src="img/paper-blue.png">
+       <!-- <section class="data" id="html5style2section"> -->
+        <div class="data" id="horizontalequal2dcontainer">
+            <!--<link rel=”stylesheet” type=”text/css” href="HTML5-style-2.css"> -->
+                <header class="data" id="horizontalequal2dheader"><br>    
+                   <!-- Listing 4-1a.Structure for Two Rows of Menu buttons                                                 .     
+                   (inline-block.html) --
+                   <br>
+                   <link rel = "stylesheet" type = "text/css" href = "inline-block.css"> -->
+                    <p>
+                        <a href="./index.html">Page 1</a>
+                        <a href="./page2.html">Page 2</a>
+                        <a href="./page3.html">Page 3</a>
+                        <a href="./page5.html">Page 5</a>
+                        <a href="./page6.html">Page 6</a>
+                        <a href="./page7.html">Page 7</a>
+                    </p>
+                    <p>&nbsp;</p>
+                    <p class="inline-block">Practical HTML5 Projects for fun and Profit (Default)<br>
+                        <a href="./HTML5-Ch1-7.html">Page 1</a>
+                        <a href="#">Page 2</a>
+                        <a href="#">Page 3</a>
+                        <a href="#">Page 4</a>
+                        <a href="#">Page 5</a>
+                        <a href="#">Page 6</a>
+                        <a href="#">Page 7</a>
+                        <br>
+                    </p>
+                    <br>
+                    <nav id="html5style2Nav"><!--use the semantic tag <nav>-->
+                        <ul><!--start of menu list--> 
+                            <li class="btn"> <a href="accommodation.html" title="Accommodation">Accommodation</a></li> 
+                            <li class="btn"><a href="maps.html" title="Location Maps">Maps</a></li>
+                            <li class="btn"><a href="faqs.html" title="Frequently Asked Questions">Information</a></li> 
+                            <li class="btn"><a href="attractions.html" title="Local attractions">Attractions</a></li> 
+                            <li class="btn"><a href="contact.html" title="Contact us">Contact Us</a></li> 
+                            <li class="btn"><a href="index.html" title="Return to Home Page">Home Page</a></li> 
+                        </ul><!--end of menu list--> 
+                    </nav><!--</div> removed and replaced with </nav>-->
+                    <div id="html5style2midcol">            
+                        <h3>Situated in the BDA's beautiful Aunt Jennings countryside</h3> 
+                        <img title="Jennings countryside" alt="Devon countryside" src="images/devon398.jpg" height="229" width="398"> 
                     </div>
-
-                </div>
-
-                <footer role="contentinfo" class="row">
-                    <div class="footer-inner">
-                        <div class="col-12">
-                            <img class="circle" src="img/plane-background.png" width="95%" ;>
-
-                            <div class="company-details">
-                                <p class="copyright"> &copy; <time datetime="2013">2024</time> MJ&#39;s
-                                    Practical
-                                    HTML5 Project&#39;s for Fun<span class="amp">&amp;</span>Profit</p>
-
-                                <p class="distributor">Distributor: Findlater The Kelly Transitional Housing
-                                    Program</p>
-
-                                <p class="address">414 W 127th, New York, NY 10027</p>
-
-                                <p class="telephone-number">Tel: 212-665-1678</p>
-                            </div>
-
-                            <hr class="full">
-
-                            <div class="footer-nav">
-                                <ul>
-                                    <li
-                                        class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-6 current_page_item menu-item-106">
-                                        <a href="index.html">Our Story</a></li>
-                                    <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-105">
-                                        <a href="#">Our Flowers</a>
-                                    </li>
-
-                                    <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-104">
-                                        <a href="#">Where To Buy</a>
-                                    </li>
-
-                                    <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-116">
-                                        <a href="#"> Blog Competition</a>
-                                    </li>
-
-                                    <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-101">
-                                        <a href="#">Contact</a>
-                                    </li>
-                                </ul>
-                                <a href=" #" class="drinkaware">Live Life Sensibly</a>
-                            </div>
-
-                            <hr class="full">
-
-                        </div> <!-- end col-12 -->
-                    </div> <!-- end class row -->
-
-                    <div class="row" style="background-color: #66d4ff;">
-                        <div class="col-12">
-                            <h2>Follow Us</h2>
-                        </div>
-                        <div class="row" style="background-color: #34495e; border-top: 2px solid #f6931e">
-
-                            <p>&copy; Kite-It.</p>
-
-                        </div>
-                        <div class="container subscribe">
-
-                            <form class="subscribe-form mt-10" id="subscribe-form" method="POST"
-                                action="/Myjourneyonline.com.html/">
-
-                                <div class="d-none overlay">
-
-                                    <div class="text-center middle">
-
-                                        <div class="lds-ellipsis">
-                                            <div></div>
-                                            <div></div>
-                                            <div></div>
-                                            <div></div>
-                                            <div></div>
-                                            <div></div>
-                                        </div>
-
-                                    </div>
-
-                                </div>
-
-                                <div class="row">
-
-                                    <div class="offset-lg-4 col-lg-4 offset-md-2 col-md-8">
-
-                                        <div class="form-group">
-
-                                            <input class="form-control" type="email" name="subscribe_email"
-                                                placeholder="Enter your email address" required="required">
-
-                                        </div>
-
-                                    </div>
-
-                                </div>
-
-                                <div class="row">
-
-                                    <div class=" col-lg-12 col-md-12  col-sm-12">
-
-                                        <div class="subscribe-accept">
-
-                                            <input type="checkbox" name="subscribe_accept" required="required">
-
-                                            I agree to the
-
-                                            <a href="./Myjourneyonline.com.html/privacy.html">Privacy
-                                                Policy</a>,
-
-                                            <a href="./Myjourneyonline.com.html/disclaimer.html">Disclaimer</a>
-
-                                            and to receive newsletters from Myjourneyonline.html
-
-                                        </div>
-
-                                    </div>
-
-                                </div>
-                        </div> <!-- end col-3 -->
-                        <div id="container">
-                            <p>&nbsp;</p>
-                            <p>Tour Orris (default)</p>
-                            <p>
-                                <a href="../orris0/HTML5-Ch1-7.html">Page 1</a>
-                                <a href="html5-nav.html">Page 2</a>
-                                <a href="simplistic-side-by-side.html">Page 3</a>
-                                <a href="simplistic-html5-java.html">Page 4</a>
-                                <a href="simplistic-html5.html">Page 5</a>
-                                <a href="gallery-one-col.html">Page 6</a>
-                                <a href="gallery-2col.html">Page 7</a>
-                            </p>
-                            <p>&nbsp;</p>
-                            <p class="inline-block">Practical HTML5 Project&#39;s<br>
-                                <a href="gallery-3col-mix.html">Page 1</a>
-                                <a href="gallery-page-validated.html">Page 2</a>
-                                <a href="squares-html5.html">Page 3</a>
-                                <a href="horiz-vert-menu.html">Page 4</a>
-                                <a href="fig2-nifty.html">Page 5</a>
-                                <a href="starter-page.html">Page 6</a>
-                                <a href="index2.html">Page 7</a>
-                            </p>
-                            <p>&nbsp;</p>
-                        </div>
-
-                        <section id="unsubscribe" class="unsubscribe-form content-section text-center">
-                            <div class="block text-center">
-                                <div class="container">
-                                    <div class="row">
-                                        <div class="col-lg-12">
-                                            <h2>Unsubscribe in just 42 hours and 27 minutes.</h2>
-                                            <form class="form" id="unsubscribe-form" method="POST"
-                                                action="https://orris0.github.io/orris0/index.html">
-                                                <div class="d-none overlay">
-                                                    <div class="text-center middle">
-                                                        <div class="lds-ellipsis">
-                                                            <div></div>
-                                                            <div></div>
-                                                            <div></div>
-                                                            <div></div>
-                                                            <div></div>
-                                                            <div></div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="messages">
-                                                </div>
-
-                                                <div class="col-lg-12 col-md-12">
-
-                                                    <h5 class="text-center unsub_subheader">We will be very sad
-                                                        if
-                                                        you
-                                                        decide to go!</h5>
-
-                                                </div>
-
-                                                <div class="row">
-
-                                                    <div class="col-lg-3 col-md-2 col-sm-1"></div>
-
-                                                    <div class="col-lg-6 col-md-8 col-sm-10 text-center">
-
-                                                        <div class="form-group element">
-
-                                                            <input class="form-control" type="email" name="email"
-                                                                placeholder="Enter your email address"
-                                                                required="required">
-
-                                                        </div>
-
-                                                    </div>
-                                                </div>
-
-                                                <div class="col-lg-12 col-md-12">
-
-                                                    <div style="text-align:center;">
-
-                                                    </div>
-
-                                                </div>
-
-                                                <div class="row">
-
-                                                    <div class="col-lg-3 col-md-2 col-sm-1"></div>
-
-                                                    <div class="col-lg-6 col-md-8 col-sm-10 text-center">
-
-                                                        <button class="btn btn-danger-2" type="submit"><span>
-                                                                Unsubscribe
-                                                            </span></button>
-
-                                                    </div>
-
-                                                </div>
-                                            </form>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </section>
-                    </div>
-
-                    <div class="row" style="background-color: #66d4ff;">
-                        <div class="col-12">
-                            <ul class="social">
-                                <li><a href="#"><i class="fa fa-facebook"></i></i></a></li>
-                                <li><a href="#"><i class="fa fa-google-plus"></i></i></a></li>
-                                <li><a href="#"><i class="fa fa-twitter"></i></i></a></li>
-                                <li><a href="#"><i class="fa fa-youtube"></i></i></a></li>
-                                <li><a href="#"><i class="instagram"></i></i></a></li>
-                            </ul>
-                        </div> <!-- end col-3 -->
-                    </div> <!-- end class row -->
-                    <a href="https://orris0.github.io/orris0/index.html"
-                        class="back-to-top d-flex align-items-center justify-content-center"><i
-                            class="bi bi-arrow-up-short"></i></a>
-                    <div class="col-12">
-                        <div class="row" style="background-color: #34495e; border-top: 2px solid #f6931e">
-                            <p>&copy; Kite-It.</p>
-                        </div>
-                    </div>
-                </footer>
-            </div><!-- main-content -->
-    </div><!-- end wrapper -->
-        
             
-           
+                    <br class="clear">
+                    
+                                <div class="company-details">
+                                    <p class="copyright"> &copy; <time datetime="2013">2024</time> MJ&#39;s Practical HTML5 Project&#39;s for Fun<span class="amp">&amp;</span>Profit</p>
+                                    <p class="distributor">Distributor: Findlater @ The Kelly Transitional Housing Program</p>
+                                    <p class="address">414 W 127th, New York, NY 10027</p>
+                                    <p class="telephone-number">Tel: 212-665-1678</p>
+                                    <hr class="full">
+                                    <div class="footer-nav">
+                                        <ul>
+                                            <li class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-6 current_page_item menu-item-106">
+                                                <a href="index.html">Our Story</a>
+                                            </li>
+                                            <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-105">
+                                                <a href="#">Our Flowers</a>
+                                            </li>
+                                            <li 
+                                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-104">
+                                                <a href="#">Where To Buy</a>
+                                        </li>
+                                        <li 
+                                            class="menu-item menu-item-type-custom menu-item-object-custom menu-item-116"><a href="#"> Blog Competition</a>
+                                        </li>
+
+                                        <li 
+                                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-101"><a href="#">Contact</a>
+                                        </li>
+                                    </ul>
+                                    <a href=" #" class="drinkaware">Live Life Sensibly</a>
+                                </div>
+                    </div>
+        </section><!-- end html5style2section --
+>>>>>>> 3abd89812eb857398a75449e074ec8d7a7d1f598
+    
+                        <hr class="full">
+                        <!--close top section - content area starts -->
+                    <!-- end-inlineblocksection --
+                <p>&nbsp;</p>
+                <p>&nbsp;</p>
+                <p>&nbsp;</p> -->
 
                 <section id="equal2dsection">
 
                     <!-- Listing 4-2a. Creating a row of equal-width menu buttons (horizontal-equal-2d.html) -->
 
-                    <wrapper class="data" id="equal2dwrapper">
-                        <header>
-                        <!-- svg-text-embed --
-                        <svg version="1.1" baseProfile="full" xmlns="http://www.w3.org/2000/svg" width="500px" height="60px">
-                            <text x="20" y="50" style="font-family:times new roman; font-size:20pt; font-weight:bold; letter-spacing:1px; stroke:black; fill:white;">Tour Orris</text>
-                        </svg>
-                        <h1>Practical HTML5 Project&#39;s for Fun and Profit!</h1>
-                        <nav>
-                            <ul>
-                                <li><a href="about.html" title="">About Us</a></li>
-                                <li><a href="news.html" title="">News</a></li>
-                                <li><a href="events.html" title="">Events</a></li>
-                                <li><a href="volunteers.html" title="">Volunteers</a></li>
-                                <li><a href="services.html" title="">Services</a></li>
-                                <li><a href="membership.html" title="">Membership</a></li>
-                                <li><a href="index.html" title="" class="current">Home</a></li>
-                            </ul>
-                        </nav>
-                            <noscript>
-                            <p>
-                                Hey, your browser has JavaScript turned off!
-                            </p>
-                            <p>
-                                Okay, cool, perhaps you'll prefer this 
-                                <a href="no-js.html">non-JavaScript version</a> of the page.
-                                </p>
-                            </noscript>
-                        </header><!-- end-header --
-                        <header class="data" id="equal2dheader">
-                            <h1>Practical HTML5 Projects for fun and Profit!</h1>
+                    <wrapper id="equal2dwrapper">
+                        <header id="equal2dheader">
+                            <h1></h1>
                         </header>
                         <nav id="equal2dnav">
                             <ul>
@@ -734,17 +202,17 @@
                                 <li><a href="#" title="Page Four">Page Four</a></li>
                                 <li><a href="#" title="Page Five">Page Five</a></li>
                                 <li><a href="#" title="Page Six">Page Six</a></li>
-                                <li><a href="#" title="Return to Home Page">Home Page</a></lhhi>
+                                <li><a href="#" title="Return to Home Page">Home Page</a></li>
                             </ul>
                         </nav>
                         <div id="equal2d">
                             <br>A full page roll-over gallery of greetings, cards, e.t.c<br /><br>
-                        </div> -->
-                           
-  <!--6  <div class="wrapper"> -->
+                        </div>
+                            <body>
+    <div class="wrapper">
         <div class="data" id="container">
-            <!-- <header>
-                <!-- svg-text-embed --
+            <header>
+                <!-- svg-text-embed -->
                 <svg version="1.1" baseProfile="full" xmlns="http://www.w3.org/2000/svg" width="500px" height="60px">
                     <text x="20" y="50" style="font-family:times new roman; font-size:20pt; font-weight:bold; letter-spacing:1px; stroke:black; fill:white;">
                         Tour Orris
@@ -767,22 +235,21 @@
                         Hey, your browser has JavaScript turned off!
                     </p>
                     <p>
-                        Okay, cool, perhaps you'll prefer this 
-                        <a href="no-js.html">non-JavaScript version</a> of the page.
+                        Okay, cool, perhaps you'll prefer this <a href="no-js.html">non-JavaScript version</a> of the page.
                     </p>
                 </noscript>
             </header><!-- end-header -->
             <br class="clear">
-            <div class="col-12"> <!-- close top section - content area starts -->
-                <div id="hnav">
-                    <ul>
-                        <li><a class="active" href="index2.html/">Home Page</a></li>
-                        <li><a href="./page2.html">Page Two</a></li>
-                        <li><a href="./page3.html">Page Three with a long label</a></li>
-                        <li><a href="./page4.html">Page Four</a></li>
-                        <li><a href="./page5.html">Page Five</a></li>
-                    </ul>
-                </div>
+        <div class="col-12"> <!-- close top section - content area starts -->
+                    <div id="hnav">
+                <ul>
+                    <li><a class="active" href="index2.html/">Home Page</a></li>
+                    <li><a href="./page2.html">Page Two</a></li>
+                    <li><a href="./page3.html">Page Three with a long label</a></li>
+                    <li><a href="./page4.html">Page Four</a></li>
+                    <li><a href="./page5.html">Page Five</a></li>
+                </ul>
+            </div>
             </div><!-- end col-12 -->
             <div id="content">
                 <b>A full page roll-over gallery of greetings cards</b>
@@ -1092,6 +559,8 @@
 
             </div><!-- "data" id="inline-block-container" -->    
         </wrapper><!-- end wrapper -->
+    </body><!-- end body  -->
+</html>
 
 <!--<div class="box header">
                 <h1>Practical HTML5 Project&#39;s for Fun and Profit!</h1>
