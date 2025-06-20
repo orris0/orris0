@@ -16,7 +16,7 @@ header, footer, section, article, nav { display:block;
 }
 /*remove the # from #header*/
 header {width:920px; height:180px; padding:0; border:10px white solid; 
-background: url(images/header3.jpg); margin:10px auto;
+background: url(../images/bda.jpg); margin:10px auto;
 }
 ul { padding-left: 0;}
 /* end of style equalisation */
