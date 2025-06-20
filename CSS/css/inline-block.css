@@ -61,7 +61,7 @@ width:480px;
 }
 #rosette { position:relative; left:750px; top:5px;
 }
-#content { background-color:transparent; border-left:10px white solid; 
+div#content { background-color:transparent; border-left:10px white solid; 
 border-right:10px white solid; border-bottom:10px white solid; width: 904px; 
 margin-top:10px; margin-left:auto; margin-right:auto; padding:8px; 
 font-size:medium; color:maroon;
@@ -70,11 +70,11 @@ h2 { font-size:x-large; color:white; margin:0 0 10px 0;
 }
 h3 { font-size:large; color:white; margin:0 0 6px 0;
 }
-#leftcol { float:left; width: 310px; vertical-align:top;
+div#leftcol { float:left; width: 310px; vertical-align:top;
 }
-#rightcol { width: 135px; float:right; height: 252px; margin-right:10px;
+div#rightcol { width: 135px; float:right; height: 252px; margin-right:10px;
 }
-#midcol { margin-left:315px; margin-right:145px; margin-top:10px; 
+div#midcol { margin-left:315px; margin-right:145px; margin-top:10px; 
 vertical-align:top;
 }
 /*set nav block position and width and remove the #menu item*/
