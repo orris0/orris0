@@ -20,7 +20,7 @@ background: url(../images/bda.jpg); margin:10px auto;
 }
 ul { padding-left: 0;}
 /* end of style equalisation */
-p { background:white; margin:auto; text-align:center;
+p { background:transparent; margin:auto; text-align:center;
 }
 div#container { margin:auto; text-align:center; width:97%; min-width:800px; 
 max-width:1200px;
