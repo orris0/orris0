@@ -202,19 +202,54 @@ Listing 4-1a. Creating the Structure for Two Rows of Menu buttons (inline-block.
                 <a href=" #" class="designed-by">Website design by <span>Orris Baker Jr</span></a>
             </div>
         </div>
-    </footer><!-- end-footer -->
+    </footer><!-- end-footer --
 
 </html>
-<!-- The # symbol in the href items must be replaced by your own page URLs.
-Listing 4-1b is the style sheet that targets the second row of menu buttons and applies the style
-display:inline-block; to enable the width of the buttons to be adjusted. -->
-</head>
-<body>
-    <div id="container">
-        <header>
-            <h1>This is a tab menu</h1>
-        </header>
-
+<!--
+Figure 4-2. A simple, horizontal, rollover menu. The cursor is hovering over the Page Six button.
+When the cursor hovers over a button, the color changes and a tool tip appears.
+Listing 4-2a displays the equal width buttons shown in Figure 4-2. It works in all browsers including IE 7
+and IE 8—provided the Remy Sharp JavaScript snippet is included.
+Listing 4-2a. Creating a row of equal-width menu buttons (horizontal-equal-2d.html)
+--
+<!doctype html>
+<html lang=en>
+<head>
+<title>Equal width buttons horizontal menu</title>
+<meta charset=utf-8>
+<meta details go here>
+<link rel="stylesheet" type="text/css" href="equal-2d.css">
+<!--Add conditional Javascript-->
+<!--[if lte IE 8]>
+<script src="html5.js" type="text/javascript">
+</script>
+<![endif]--
+</head> --
+<body> -->
+<div id="wrapper">
+<header>
+<h1>This is the header</h1>
+</header>
+<nav>
+<ul>
+<li><a href="#" title="Page Two">Page Two</a></li>
+<li><a href="#" title="page Three">Page Three</a></li>
+<li><a href="#" title="Page Four">Page Four</a></li>
+<li><a href="#" title="Page Five">Page Five</a></li>
+<li><a href="#" title="Page Six">Page Six</a></li>
+<li><a href="#" title="Return to Home Page">Home Page</a></li>
+</ul>
+</nav>
+<!--[if lte IE 7]><br>
+<![endif]-->
+<div id="main-content">
+<br>This content panel can contain several columns<br/><br>
+</div>
+<footer>A footer goes here
+</footer>
+</div>
+</body>
+</html>
 
 
         <body
