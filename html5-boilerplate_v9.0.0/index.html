@@ -1,91 +1,51 @@
+<!--
+Figure 4-1. The top row of this basic menu shows the unsatisfactory appearance of display:inline. In the
+second row, the display:inline-block buttons can be given height, line-height, and padding.
+The very basic menus shown in Figure 4-1 are not a rollover menus; that is, they do not change
+color when the cursor hovers over the buttons. Also, they use paragraphs instead of the traditional
+unordered lists.
+Listing 4-1a contains two rows of menu buttons. The top row is unaffected by the CSS style sheet.
+The CSS style sheet 4-1b, is linked only to the bottom row of buttons and the style gives the text plenty of
+horizontal space. This demonstrates the value of the display:inline-block code compared with the
+default display:inline;.
+Listing 4-1a. Creating the Structure for Two Rows of Menu buttons (inline-block.html)
+-->
 <!doctype html>
-    <html lang=en>
-        <head>
-            <title>The home page. Square tabs</title>
-            <meta name="author" content="Ian Andolina">
+<html lang=en>
+<head>
+<title>Inline-block content</title>
+<meta charset=utf-8>
 meta details go here
-<link rel="stylesheet" type="text/css" href="squaretabs.css">
-<!--Add conditional JavaScript-->
-<!--[if lte IE 8]>
-<script src="html5.js" type="text/javascript">
-</script>
-<![endif]-->
+<link rel = "stylesheet" type = "text/css" href = "./CSS/inline-block.css">
 </head>
 <body>
 <div id="container">
-<header>
-<h1>This is a tab menu</h1>
-</header>
-<nav>
-<ul>
-<li><a class="active" href="index.html">Home Page</a></li>
-<li><a href="page2.html">Page Two</a></li>
-<li><a href="page3.html">Page Three with a long label</a></li>
-<li><a href="page4.html">Page Four</a></li>
-<li><a href="page5.html">Page Five</a></li>
-</ul>
-</nav>
-<div id="content">
-<b>This is the home page</b>
-<p><img title="Koala" alt="Koala" height="165" src="images/Koalasmall.jpg" 
-width="220"></p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p>
-</div></div>
+<p>&nbsp;</p>
+<p>inline content (default)</p>
+<p>
+<a href = "#">Page 1</a>
+<a href = "#">Page 2</a>
+<a href = "#">Page 3</a>
+<a href = "#">Page 4</a>
+<a href = "#">Page 5</a>
+<a href = "#">Page 6</a>
+<a href = "#">Page 7</a>
+</p><p>&nbsp;</p>
+<p class = "inline-block">inline-block content<br>
+<a href = "#">Page 1</a>
+<a href = "#">Page 2</a>
+<a href = "#">Page 3</a>
+<a href = "#">Page 4</a>
+<a href = "#">Page 5</a>
+<a href = "#">Page 6</a>
+<a href = "#">Page 7</a>
+</p><p>&nbsp;</p>
+</div>
 </body>
 </html>
-The middle block of code in Listing 4-8 would change as shown in bold.
-Listing 4-8a. (page4.html)
-<!doctype html>
-<html lang=en>
-<head>
-<title>Page four. Square tabs</title>
-<meta charset=utf-8>
-<meta name="author" content="Ian Andolina">
-meta details go here
-<link rel="stylesheet" type="text/css" href="squaretabs-.css">
-<!--Add conditional JavaScript-->
-<!--[if lte IE 8]>
-<script src="html5.js" type="text/javascript">
-</script>
-<![endif]-->
-</head>
-<body>
-<div id="container">
-<header>
-<h1>This is a tab menu</h1>
-</header>
-            
-                <nav>
-                    <ul>
-                        <li><a class="active" href="index.html">Home Page</a></li>
-                        <li><a href="page2.html">Page Two</a></li>
-                        <li><a href="page3.html">Page Three with a long label</a></li>
-                        <li><a href="page4.html">Page Four</a></li>
-                        <li><a href="page5.html">Page Five</a></li>
-                    </ul>
-                </nav>
-                <div id="content">
-                    <b>This is the home page</b>
-                    <p><img title="Koala" alt="Koala" height="165" src="images/Koalasmall.jpg" width="220"></p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p>
-                </div>
-            </div>
-       </body>
-</html>
-<!--
-The middle block of code in Listing 4-8 would change as shown in bold.
-Listing 4-8a. (page4.html)
-<!doctype html>
-<html lang=en>
-<head>
-<title>Page four. Square tabs</title>
-<meta charset=utf-8>
-<meta name="author" content="Ian Andolina">
-meta details go here
-<link rel="stylesheet" type="text/css" href="squaretabs-.css">
-<!--Add conditional JavaScript-->
-<!--[if lte IE 8]>
-<script src="html5.js" type="text/javascript">
-</script>
-<![endif]-->
+<!-- The # symbol in the href items must be replaced by your own page URLs.
+Listing 4-1b is the style sheet that targets the second row of menu buttons and applies the style
+display:inline-block; to enable the width of the buttons to be adjusted. -->
 </head>
 <body>
 <div id="container">
