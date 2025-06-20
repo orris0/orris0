@@ -14,7 +14,7 @@ body { background:#FFF url(images/green-grad.jpg) repeat-x; margin:auto;
 /*add display attributes for the semantic tags*/
 header, footer, section, article, nav { display:block;
 }
-/*remove the # from #header*/
+/*remove the # from #header*
 
 header {width:920px; height:180px; padding:0; border:10px white solid; 
 background: url(../images/bda.jpg); margin:10px auto;
