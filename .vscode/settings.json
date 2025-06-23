@@ -19,5 +19,5 @@
     "workbench.editor.enablePreviewFromQuickOpen": true,
     "workbench.editor.highlightModifiedTabs": true,
     "notebook.output.fontSize": 15,
-    "editor.inlayHints.fontSize": 15
+    "editor.inlayHints.fontSize": 20
 }
