@@ -10,18 +10,22 @@ horizontal space. This demonstrates the value of the display:inline-block code c
 default display:inline;.
 Listing 4-1a. Creating the Structure for Two Rows of Menu buttons (inline-block.html)
 -->
-<!doctype html>
+<!doctype html><!-- HTML5 -->
 <html ng-app lang="en">
 
     <head>
+
         <!--
         The following 2 meta tags *must* come first in the <head>
 	        to consistently ensure proper document rendering.
         Any other head element should come *after* these tags.
         -->
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
 
+        <!-- Set character encoding for the document -->
+        <meta charset="utf-8">
+        <!-- Viewport for responsive web design -->
+        <meta name="viewport" content="width=device-width, initial-scale=1, Viewport-fit-cover">
+        <title></title>
         <!--
         Allows control over where resources are loaded from.
         Place as early in the <head> as possible, as the tag  
@@ -230,7 +234,6 @@ Listing 4-1a. Creating the Structure for Two Rows of Menu buttons (inline-block.
                 width="398">
         </div>
         <br class="clear">
-   ,
     <P>&nbsp;</p>
   <!-- <div id=footer"> changed to <footer>-->
     <footer id="html5style2footer"> 
@@ -243,11 +246,11 @@ Listing 4-1a. Creating the Structure for Two Rows of Menu buttons (inline-block.
             </div>
             <hr class="full">   
           
-        </div> -->
-    </footer><!-- end-footer --
+        </div>
+    </footer><!-- end-footer -->
 
 </html>
---
+<!--
 Figure 4-2. A simple, horizontal, rollover menu. The cursor is hovering over the Page Six button.
 When the cursor hovers over a button, the color changes and a tool tip appears.
 Listing 4-2a displays the equal width buttons shown in Figure 4-2. It works in all browsers including IE 7

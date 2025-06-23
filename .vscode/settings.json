@@ -18,6 +18,9 @@
     "workbench.editor.enablePreviewFromCodeNavigation": true,
     "workbench.editor.enablePreviewFromQuickOpen": true,
     "workbench.editor.highlightModifiedTabs": true,
-    "notebook.output.fontSize": 30,
-    "editor.inlayHints.fontSize": 30
+    "notebook.output.fontSize": 75,
+    "editor.inlayHints.fontSize": 75,
+    "editor.codeLensFontSize": 75,
+    "editor.fontSize": 28,
+    "editor.suggestFontSize": 24
 }
