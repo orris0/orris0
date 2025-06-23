@@ -106,7 +106,7 @@ button {
 button, select {
 	text-transform: none;
 }
-button, html input[type="button"], input[type="reset"], input[type="submit"] {
+button html input[type="button"], input[type="reset"], input[type="submit"] {
 	-webkit-appearance: button;
 	cursor: pointer;
 }
@@ -11490,7 +11490,6 @@ p i {
 @media screen and (768px) {
  .sb-slider-section.default.custom-bullet .ms-bullets.ms-dir-h {
  bottom: 40px;
-}
 }
 .sb-slider-section.default .with-custom-bullet .ms-bullets.ms-dir-h {
 	bottom: 31%;
