@@ -1,0 +1,23 @@
+{
+    "workbench.editor.alwaysShowEditorActions": true,
+    "workbench.editor.autoLockGroups": {
+        "default": true,
+        "workbench.editors.gettingStartedInput": true,
+        "workbench.editorinputs.searchEditorInput": true,
+        "notebookOutputEditor": true,
+        "jupyter-notebook": true,
+        "workbench.input.interactive": true,
+        "mainThreadWebview-markdown.preview": true,
+        "vscode.videoPreview": true,
+        "vscode.audioPreview": true,
+        "imagePreview.previewEditor": true,
+        "repl": true
+    },
+    "workbench.editor.centeredLayoutFixedWidth": true,
+    "workbench.editor.defaultBinaryEditor": "imagePreview.previewEditor",
+    "workbench.editor.enablePreviewFromCodeNavigation": true,
+    "workbench.editor.enablePreviewFromQuickOpen": true,
+    "workbench.editor.highlightModifiedTabs": true,
+    "notebook.output.fontSize": 15,
+    "editor.inlayHints.fontSize": 15
+}
