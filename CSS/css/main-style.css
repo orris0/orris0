@@ -5046,7 +5046,6 @@ to {
 	position: relative;
 	display: block;
 	float: left;
-	vertical-align: middle;
 }
 .mejs-controls .mejs-horizontal-volume-slider .mejs-horizontal-volume-total {
 	position: absolute;
@@ -5138,7 +5137,7 @@ to {
 	position: absolute;
 	top: 0;
 	left: 0;
-	-xborder-right: solid 1px #fff;
+	border-right: solid 1px #fff;
 	width: 10000px;
 	z-index: 1;
 }
@@ -5645,7 +5644,7 @@ div.mejs-speed-button {
 /* PORTFOLIO */
 .uou-portfolio {
 	position: relative;
-	widht: 100%;
+	width: 100%;
 }
 .uou-portfolio .portfolio {
 	position: relative;
@@ -11487,7 +11486,7 @@ p i {
 .sb-slider-section.default.custom-bullet .ms-bullets.ms-dir-h {
 	bottom: 38%;
 }
-@media screen and (768px) {
+@media screen and (max-width: 768px) {
  .sb-slider-section.default.custom-bullet .ms-bullets.ms-dir-h {
  bottom: 40px;
 }
@@ -18166,3 +18165,4 @@ input[type="checkbox"] .styled:checked + label::after, input[type="radio"] .styl
 
 
 
+}
