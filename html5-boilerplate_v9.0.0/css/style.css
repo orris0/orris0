@@ -121,7 +121,7 @@ nav {
 }
 
 /*remove the # from #header*/
-header {
+header#html5style2header {
   width: 920px;
   height: 180px;
   padding: 0;
