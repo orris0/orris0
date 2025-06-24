@@ -16,7 +16,7 @@ header, footer, section, article, nav { display:block;
 }
 /*remove the # from #header*/
 
-header {width:920px; 
+header { /* width:920px; */ 
     height: 180px;
     border: 10px white solid;
     padding: 10px;
