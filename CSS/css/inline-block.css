@@ -16,8 +16,14 @@ header, footer, section, article, nav { display:block;
 }
 /*remove the # from #header*/
 
-header {width:920px; height:180px; padding:0; border:10px white solid; 
-background: url(../images/bda.jpg); margin:10px auto;
+header {width:920px; 
+    height: 180px;
+    border: 10px white solid;
+    padding: 10px;
+    background-image: url("../../bda-20.jpg");
+    background-repeat: no-repeat;
+    background-position: bottom;
+    margin: 10px auto;
 }
 /*remove the # from #header*/
 header#inlineblockheader { width: 920px;
