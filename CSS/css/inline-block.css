@@ -14,18 +14,7 @@ body { background:#FFF url(images/green-grad.jpg) repeat-x; margin:auto;
 /*add display attributes for the semantic tags*/
 header, footer, section, article, nav { display:block;
 }
-/*remove the # from #header*
 
-header { 
-    width:90%; 
-    height: 180px;
-    border: 10px white solid;
-    padding: 10px;
-    background-image: url("../../bda-20.jpg");
-    background-repeat: no-repeat;
-    background-position: bottom;
-    margin: 10px auto;
-}
 /*remove the # from #header*/
 header#inlineblockheader {  
     width: 920px; 
@@ -39,7 +28,7 @@ header#inlineblockheader {
 }
 ul { padding-left: 0;}
 /* end of style equalisation */
-p { background: white; margin:auto; text-align:center;
+p { background: rgba(225,225,225.05); margin:auto; text-align:center;
 }
 div#html5style2content { margin:auto; text-align:center; width:97%; min-width:800px; 
 max-width:1200px;
