@@ -16,7 +16,7 @@ header, footer, section, article, nav { display:block;
 }
 
 /*remove the # from #header*/
-header#inlineblockheader {  
+header#inlineblockheader.data {  
     width: 90%; 
     height: 100%;
     border: 10px white solid;
