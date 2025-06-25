@@ -17,7 +17,7 @@ header, footer, section, article, nav { display:block;
 
 /*remove the # from #header*/
 header#inlineblockheader {  
-    width: 920px; 
+    width: 90%; 
     height: 180px;
     border: 10px white solid;
     padding: 10px;
