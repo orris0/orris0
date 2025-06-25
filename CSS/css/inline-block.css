@@ -45,7 +45,7 @@ border-bottom:10px white solid; width: 904px; margin-top:-10px; margin-left:auto
 border-bottom:10px white solid; width: 904px; margin-top:-10px; margin-left:auto; margin-right:auto; padding:8px; font-size:medium; color:maroon; 
 }
 div#inlineblockcontent.data { margin:auto; text-align:center; width:97%; min-width:800px; 
-max-width:1200px;
+max-width:70%;
 }
 a { background: orange; color:white;
 }
