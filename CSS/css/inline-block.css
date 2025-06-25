@@ -28,7 +28,10 @@ header#inlineblockheader.data {
 }
 ul { padding-left: 0;}
 /* end of style equalisation */
-p { background: rgba(225,225,225,.3); margin:auto; text-align:center;
+p { 
+  background: rgba(225,225,225,.3); 
+  margin:auto; 
+  text-align:center;
 }
 div#inlineblockcontainer {
   margin: auto;
