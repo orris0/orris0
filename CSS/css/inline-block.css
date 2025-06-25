@@ -37,7 +37,7 @@ header#inlineblockheader { /* width: 920px; */
 }
 ul { padding-left: 0;}
 /* end of style equalisation */
-p { background:transparent; margin:auto; text-align:center;
+p { background: white; margin:auto; text-align:center;
 }
 div#html5style2content { margin:auto; text-align:center; width:97%; min-width:800px; 
 max-width:1200px;
