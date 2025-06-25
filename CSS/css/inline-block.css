@@ -14,9 +14,10 @@ body { background:#FFF url(images/green-grad.jpg) repeat-x; margin:auto;
 /*add display attributes for the semantic tags*/
 header, footer, section, article, nav { display:block;
 }
-/*remove the # from #header*/
+/*remove the # from #header*
 
-header { /* width:920px; */ 
+header { 
+    width:90%; 
     height: 180px;
     border: 10px white solid;
     padding: 10px;
@@ -26,7 +27,8 @@ header { /* width:920px; */
     margin: 10px auto;
 }
 /*remove the # from #header*/
-header#inlineblockheader { /* width: 920px; */
+header#inlineblockheader {  
+    width: 920px; 
     height: 180px;
     border: 10px white solid;
     padding: 10px;
