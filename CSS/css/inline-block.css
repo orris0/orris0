@@ -104,7 +104,7 @@ p {
   margin:auto; 
   text-align:center;
 }
-div#inlineblockcontainer {
+div#inlineblockcontainer { border: 10px solid hsla(0,0%,100%,.5); background: white; background-clip: padding-box;
   margin: auto;
   text-align: center;
   max-width: 1200px;;
