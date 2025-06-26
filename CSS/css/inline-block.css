@@ -224,8 +224,8 @@ body { background:#FFF url(images/green-grad.jpg) repeat-x; margin:auto;
 header, footer, section, article, nav { display:block;
 }
 
-h1 { font-size:300%; color :white; position: relative; left:90px; top: 55px;
-width:480px;
+h1 { font-size:200%; color :maroon; position: relative; left:90px; top: 0px;
+width:730px;
 }
 #htnl5style2rosette { position:relative; left:750px; top:5px;
 }
