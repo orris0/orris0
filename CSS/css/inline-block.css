@@ -16,7 +16,7 @@ header#inlineblockheader.data {
     background-position: bottom;
     margin: 10px auto; 
 }
-h1 { font-size:300%; color :white; position: relative; left:90px; top: 55px; width:480px; 
+h1 { font-size:300%; color :white; position: relative; left:90px; top: 0px; width:480px; 
 }
 #rosette { position:relative; left:750px; top:5px; }
 
