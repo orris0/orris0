@@ -173,7 +173,7 @@ header#html5style2header {width:920px; height:180px; padding:0; border:10px whit
 
 */
 
-h1 { font-size:200%; color :white; position: relative; left:90px; top: 55px; width:480px; 
+h1 { font-size:200%; color :white; position: relative; left:90px; top: -10px; width:480px; 
 }
 div#rosette { position:relative; left:750px; top:5px; }
 div#html5style2content { background-color:transparent; border-left:10px white solid; border-right:10px white solid; 
