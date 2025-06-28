@@ -18,7 +18,7 @@ header, footer, section, article, nav { display:block;
 header#inlineblockheader.data {
   width: 70%; 
     height: 100%;
-    border: 10px white solid;
+    border: 10px rgba(255,255,255,.3);
     padding: 10px;
     background-image: url("../../bda-20.jpg");
     background-repeat: no-repeat;
