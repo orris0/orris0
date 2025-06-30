@@ -269,7 +269,7 @@ div body header #content {
 }
 body {
   background: #FFF url(images/green-grad.jpg) repeat-x;
-  /* margin: auto; */
+  margin: auto; 
 }
 /*add display attributes for the semantic tags*/
 header,
