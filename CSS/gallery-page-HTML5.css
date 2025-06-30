@@ -21,7 +21,10 @@ h1 { font-size:x-large; font-family:"times new roman"; text-align:center;
 h2 {font-size:large; font-family:"times new roman"; text-align:center;
 }
 /*PAGE LAYOUT*/
-body {margin:auto; width:970px; 
+body {
+  background: #FFF url(images/green-grad.jpg) repeat-x;
+  margin: auto; 
+  width:970px; 
 }
 header {
 	width:970px;
@@ -267,10 +270,7 @@ div body header #content {
   padding: 0;
   border: 0;
 }
-body {
-  background: #FFF url(images/green-grad.jpg) repeat-x;
-  margin: auto; 
-}
+
 /*add display attributes for the semantic tags*/
 header,
 footer,
