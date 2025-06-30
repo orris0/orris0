@@ -20,7 +20,7 @@ body {margin:auto; width:970px;
 header {
 	width:970px;
 }
-
+div#inlineblockcontainer.data
 .nav { float:left; margin-left:10px; width:129px;
 }
 .nav ul { margin-left:0; border:0; width:115px;
@@ -136,7 +136,7 @@ wrapper#horizontalequal2dwrapper.data {
 
 
 
-.container#inlineblockcontainer.data {
+div#inlineblockcontainer.data {
     margin:auto; 
     text-align:center; 
     width:97%; 
