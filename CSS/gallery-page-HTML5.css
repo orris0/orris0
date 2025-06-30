@@ -206,14 +206,14 @@ section#html5style2section {
 header#html5style2header {
     display: block;
 }
-/*equalise for various browsers and change #header to header*/
+/*equalise for various browsers and change #header to header*
 div body header #content {
   margin: 0;
   padding: 0;
   border: 0;
 }
 
-/*add display attributes for the semantic tags*/
+/*add display attributes for the semantic tags*
 header,
 footer,
 section,
@@ -363,7 +363,7 @@ a { background: orange; color:navy;
 /*Listing 4-2b. Styling Equal-width Buttons with Rollover Color Change (equal-2d.css) */
 /* Set styles to equalise browser renditions*
 
-*/
+*
 #wrapper#equal2dwrapper {position:relative; top:0; left:0;width:950px; margin:auto; text-align:center;
 }
 
@@ -423,10 +423,10 @@ li.hbtn a { background: #0080a0; border: 4px outset #aabaff; }
 /* Set styles to equalise browser rendition*
 html, h1, h2, h3, h4, h5, h6, p, ol, ul, li { padding: 0; margin: 0;
 }
-*/
+*
 header, footer, section, article, nav { display:block;
 }
-
+*/
 #container {width:960px; margin:-10px auto 0 auto;
 }
 /*
