@@ -35,7 +35,7 @@ body {background:#FFF url(../images/green-grad.jpg) repeat-x; margin:auto; width
 }
 */
 header {
-	width:970px;height:50px;border:10px solid white ; margin:10px auto; color:black; background-color:#FFCC00; background-position:35% top; background-image:url('../bda-20.jpg'); background-repeat:no-repeat;
+	width:970px;height:50px;border:10px solid white ; margin:10px auto; color:black; background-color:#FFCC00; background-position:0% bottom; background-image:url('../bda-20.jpg'); background-repeat:no-repeat;
 }
 /*
 nav { float:left; margin-left:10px; width:115px;
