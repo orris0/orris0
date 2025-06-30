@@ -220,7 +220,7 @@ li	{ margin: 5px; list-style-type:none;
 #col-3 a:hover img.hid { visibility:visible; 
 }
 /* Listing 4-1b. Applying the display:inline-block; Style to the Second Row of Buttons (inline-block.css) - Set styles to equalise the browser rendition*/
-html, body, h1, h2, h3, h4, h5, p, ol, ul, li { padding: 0; margin: 0;
+html, h1, h2, h3, h4, h5, p, ol, ul, li { padding: 0; margin: 0;
 }
 
 /*add display attributes for the semantic tags*
