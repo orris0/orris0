@@ -30,9 +30,10 @@ h1 { font-size:150%; color :white; position: relative; left:90px; top:15px; widt
 }
 h2 {font-size:75%; font-family:"times new roman"; line-height:3.4rem; text-align:center;
 }
-/*PAGE LAYOUT*/
+/*PAGE LAYOUT*
 body {background:#FFF url(../images/green-grad.jpg) repeat-x; margin:auto; width:970px; 
 }
+*/
 header {
 	width:970px;height:50px;border:10px solid white ; margin:10px auto; color:black; background-color:#FFCC00; background-position:35% top; background-image:url('../images/compbkgcrop.jpg'); background-repeat:no-repeat;
 }
