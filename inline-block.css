@@ -32,11 +32,7 @@ width:480px;
 } 
 #content { background-color:transparent; border-left:10px white solid;
 border-right:10px white solid; border-bottom:10px white solid; width: 904px; 
-}
-
 margin-top:10px; margin-left:auto; margin-right:auto; padding:8px; 
-}
-
 font-size:medium; color:maroon; 
 } 
 h2 { font-size:x-large; color:white; margin:0 0 10px 0; 
@@ -48,8 +44,6 @@ h3 { font-size:large; color:white; margin:0 0 6px 0;
 #rightcol { width: 135px; float:right; height: 252px; margin-right:10px; 
 } 
 #midcol { margin-left:315px; margin-right:145px; margin-top:10px; 
-}
-
 vertical-align:top; 
 } 
 /*set nav block position and width and remove the #menu item*/ 
@@ -63,15 +57,11 @@ li.btn { margin-bottom: 3px; text-align: center; width:130px;
 }
 /* set general anchor styles and include the zoom fix for IE6*/ 
 li.btn a { display: block; color: white; font-weight: bold; 
-}
-
 text-decoration: none; zoom:1; 
 } 
 /* specify mouse state styles */ 
 /* mouseout (default) */ 
 li.btn a { background:#559a55; color: white; border: 5px outset #559a55; 
-}
-
 padding-bottom:3px; 
 } 
 /* mouseover */ 
