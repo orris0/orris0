@@ -23,7 +23,7 @@ body { background:#FFF url(images/green-grad.jpg) repeat-x; margin:auto;
 header, footer, section, article, nav { display:block; 
 } 
 /*remove the # from #header*/ 
-header {width:920px; height:180px; padding:0; border:10px white solid;background: url( ./bda-20.png); margin:10px auto; 
+header {width:920px; height:180px; padding:0; border:10px white solid;background: url(./bda-20.jpg); margin:10px auto; 
 }
 header {
 	width:970px;height:180px;border:10px solid white ; margin:10px auto; color:black; background-color:#FFCC00; background-position:35% bottom; background-image:url('../bda-20.jpg'); background-repeat:no-repeat;
