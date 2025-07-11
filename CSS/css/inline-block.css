@@ -1,10 +1,10 @@
 /* Set styles to equalise the browser rendition*/
-html, body, h1, h2, h3, h4, h5, p, ol, ul, li { padding: 0; margin: 0;
+html, h1, h2, h3, h4, h5, p, ol, ul, li { padding: 0; margin: 0;
 }
 #wrapper { position: relative; top: 0; left: 0; width: 950px; margin: auto; 
 }
 /*equalise all the margins, paddings and borders built into various browsers*/  
-div body header #content { margin:0; padding:0; border:0; 
+div header #content { margin:0; padding:0; border:0; 
 }
 body { background:#FFF url(images/green-grad.jpg) repeat-x; margin:auto;
     font-size: 100%; font-weight: normal;
