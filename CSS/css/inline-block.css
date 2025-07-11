@@ -28,10 +28,10 @@ div#inlineblockcontainer { border: 10px solid rgba(000,000,000,.05);  background
 header, footer, section, article, nav { display:block; 
 }
 header#inlineblockheader.data {
-  width: 70%; 
-    height: 100%;
+  width: 920px; 
+    height: 180px;
     border: 10px rgba(255,255,255,.3);
-    padding: 10px;
+    padding: 0px;
     background-image: url("../../bda-20.jpg");
     background-repeat: no-repeat;
     background-position: bottom;
