@@ -9,6 +9,21 @@ div body header #content { margin:0; padding:0; border:0;
 body { background:#FFF url(images/green-grad.jpg) repeat-x; margin:auto;
     font-size: 100%; font-weight: normal;
 }
+ul { padding-left: 0;
+}
+/* end of style equalisation */
+p { 
+    background: white;
+    margin:auto; 
+    text-align:center;
+}
+div#inlineblockcontainer { border: 10px solid rgba(000,000,000,.05);  background-clip: padding-box;
+    margin: auto;
+    text-align: center;
+    width: 97%;
+    min-width: 800px;
+  max-width: 1200px;;
+}
 /*add display attributes for the semantic tags*/
 header, footer, section, article, nav { display:block; 
 }
