@@ -115,8 +115,10 @@ p {
   text-align:center;
 }
 div#inlineblockcontainer { border: 10px solid rgba(000,000,000,.05);  background-clip: padding-box;
-  margin: auto;
-  text-align: center;
+    margin: auto;
+    text-align: center;
+    width: 97%;
+    min-width: 800px;
   max-width: 1200px;;
 }
 div#inlineblockcontent.data { background-color:transparent; border-left:10px white solid; border-right:10px white solid; 
