@@ -143,9 +143,9 @@ p {
   text-align:center;
 }
 div#inlineblockcontainer { border: 10px solid rgba(000,000,000,.05);  background-clip: padding-box;
-    margin: auto;
+    margin-top: -96px;
     text-align: center;
-    width: 97%;
+    width: 100%;
     min-width: 800px;
   max-width: 1200px;;
 }
