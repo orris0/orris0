@@ -1,7 +1,13 @@
 /* Set styles to equalise the browser rendition*/
 html, h1, h2, h3, h4, h5, p, ol, ul, li { padding: 0; margin: 0;
 }
-#wrapper { position: relative; top: 0; left: 0; width: 950px; margin: auto; text-align: center;
+div.wrapper { 
+    position: relative; 
+    top: 0; 
+    left: 0; 
+    width: 950px; 
+    margin: auto; 
+    text-align: center;
 }
 /*equalise all the margins, paddings and borders built into various browsers*/  
 div header #content { margin:0; padding:0; border:0; 
@@ -304,9 +310,9 @@ footer { clear:both; color:maroon; text-align:center;
 
 
 
-Listing 2-6b provides the CSS presentation instructions for a 3 column gallery set in a real world page.
+/*Listing 2-6b provides the CSS presentation instructions for a 3 column gallery set in a real world page.
 Listing 2-6b. The CSS Style Sheet for Listing 2-6a (gallery-page.css)
-/*set attributes for consistent appearance in all browsers
+set attributes for consistent appearance in all browsers
 html, body, p, ul, li, h1, h2 { margin:0; padding:0; 
 }
 */
