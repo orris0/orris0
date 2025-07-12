@@ -44,6 +44,7 @@ div#header.row {
     background-position: bottom;
     margin: 10px auto; 
 }
+
 h1 { font-size:200%; color :white; position: relative; left:90px; top: -5px; width:480px; 
 }
 #rosette { position:relative; left:750px; top:5px; }
