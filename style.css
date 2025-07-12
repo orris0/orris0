@@ -142,7 +142,7 @@ p {
   margin:auto; 
   text-align:center;
 }
-div#inlineblockcontainer { border: 10px solid rgba(000,000,000,.05);  background-clip: padding-box;
+div#inlineblockcontainer { border: 10px solid white;  background-clip: padding-box;
     margin-top: -96px;
     text-align: center;
     width: 100%;
