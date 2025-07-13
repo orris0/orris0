@@ -36,7 +36,7 @@ header, footer, section, article, nav { display:block;
 }
 div#header.row {
   width: 905px; 
-    height: 180px;
+    height: 280px;
     border: 10px rgba(255,255,255,.3);
     padding: 0px;
     background-image: url("../orris0/bda-20.jpg");
