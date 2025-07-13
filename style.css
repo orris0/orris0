@@ -25,7 +25,9 @@ p {
     text-align:center;
 }
 
-div#html5style2container { margin:auto; text-align:center; width:97%; min-width:800px; max-width:1200px;
+div#html5style2container { position: relative; 
+    top: 0; 
+    left: 0; margin:auto; text-align:center; width:97%; min-width:800px; max-width:1200px;
 }
 
 div#html5style2container { border: 10px solid rgba(000,000,000,.05);  background-clip: padding-box;
