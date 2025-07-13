@@ -39,7 +39,7 @@ div#html5style2container { border: 10px solid rgba(000,000,000,.05);  background
 header, footer, section, article, nav { display:block; 
 }
 header#html5style2header, header.row {
-  width: 905px; 
+  width: 970px; 
     height: 180px;
     border: 10px rgba(255,255,255);
     padding: 0px;
