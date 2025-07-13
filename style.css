@@ -27,7 +27,7 @@ p {
 
 div#html5style2container { position: relative; 
     top: 0px; 
-    left: 0; margin:auto; text-align:center; width:97%; min-width:800px; max-width:1200px;
+    left: 0; margin:auto; text-align:center; width:97%; min-width:800px; max-width:970px;
 }
 
 div#html5style2container { border: 10px solid rgba(000,000,000,.05);  background-clip: padding-box;
