@@ -26,7 +26,7 @@ p {
 }
 
 div#html5style2container { position: relative; 
-    top: 0; 
+    top: 50px; 
     left: 0; margin:auto; text-align:center; width:97%; min-width:800px; max-width:1200px;
 }
 
@@ -622,7 +622,7 @@ header .logo a {
   color: #fff;
 }
 
-#header .logo img {
+header .logo img {
   max-height: 40px;
 }
 
