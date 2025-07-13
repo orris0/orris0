@@ -128,7 +128,7 @@ header, footer, section, article, nav { display:block;
 }
 
 /*remove the # from #header*/
-header#inlineblockheader.data {  
+header#html5style2header.data {  
     width: 70%; 
     height: 180px;
     border: 10px white solid;
