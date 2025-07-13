@@ -36,7 +36,7 @@ header, footer, section, article, nav { display:block;
 }
 div#header.row {
   width: 905px; 
-    height: 280px;
+    height: 180px;
     border: 10px rgba(255,255,255,.3);
     padding: 0px;
     background-image: url("../orris0/bda-20.jpg");
@@ -44,7 +44,7 @@ div#header.row {
     background-position: bottom;
     margin: 10px auto; 
 }
-/*SET FONTS*/
+/*SET FONTS*
 span.small { font-size:small;
 }
 h1 { font-size:x-large; font-family:"times new roman"; text-align:center;
@@ -127,7 +127,7 @@ header, footer, section, article, nav { display:block;
 /*remove the # from #header*/
 header#inlineblockheader.data {  
     width: 70%; 
-    height: 100%;
+    height: 180px;
     border: 10px white solid;
     padding: 10px;
     background-image: url("../../bda-20.jpg");
