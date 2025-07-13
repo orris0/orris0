@@ -601,11 +601,11 @@ header {
   height: 70px;
 }
 
-#header.fixed-top {
+header.fixed-top {
   background: #07062f;
 }
 
-#header .logo {
+header .logo {
   font-size: 30px;
   margin-top: -170px;
   padding: 0;
@@ -615,7 +615,7 @@ header {
   text-transform: uppercase;
 }
 
-#header .logo a {
+header .logo a {
   color: #fff;
 }
 
