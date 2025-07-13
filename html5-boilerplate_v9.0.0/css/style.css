@@ -84,7 +84,7 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
-/* Set styles to equalise the browser rendition*/
+/* Set styles to equalise the browser rendition*
 html, h1, h2, h3, h4, h5, p, ol, ul, li { padding: 0; margin: 0;
 }
 div.wrapper { 
@@ -94,7 +94,7 @@ div.wrapper {
     width: 970px; 
     margin: auto; 
 }
-/*equalise all the margins, paddings and borders built into various browsers*/  
+/*equalise all the margins, paddings and borders built into various browsers*  
 div header #content { margin:0; padding:0; border:0; 
 }
 body { background:#FFF url(../orris0/images/green-grad.jpg) repeat-x; margin:auto;
@@ -143,7 +143,7 @@ h2 {font-size:large; font-family:"times new roman"; text-align:center;
 /*
 h1 { font-size:200%; color :white; position: relative; left:90px; top: -5px; width:480px; 
 }
-*/
+*
 #rosette { position:relative; left:750px; top:5px; }
 
 
@@ -234,7 +234,7 @@ nav {
   display: block;
 }
 
-/*remove the # from #header*
+/*remove the # from #header*/
 header#html5style2header {
   width: 920px;
   height: 180px;
