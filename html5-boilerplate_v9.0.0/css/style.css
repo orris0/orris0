@@ -120,10 +120,10 @@ div#html5style2container { border: 10px solid rgba(000,000,000,.05);  background
     text-align: center;
     width: 97%;  
 }
-/*add display attributes for the semantic tags*
+/*add display attributes for the semantic tags*/
 header, footer, section, article, nav { display:block; 
 }
-header#html5style2header, header.row {
+header#html5style2header.row header.row {
   width: 970px; 
     height: 180px;
     border: 10px rgba(255,255,255);
