@@ -93,7 +93,7 @@ div.wrapper {
     left: 0; 
     width: 950px; 
     margin: auto; 
-    /* text-align: center; */
+    text-align: center;
 }
 /*equalise all the margins, paddings and borders built into various browsers*/  
 div header #content { margin:0; padding:0; border:0; 
