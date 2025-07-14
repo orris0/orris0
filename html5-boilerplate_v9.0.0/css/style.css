@@ -199,7 +199,7 @@ footer { clear:both; color:maroon; text-align:center;
 /* Set styles to equalise browser rendition*/
 html, body, h1, h2, h3, h4, h5, p, ol, ul, li { padding: 0; margin: 0; 
 }
-/*equalise for various browsers and change #header to header*/
+/*equalise for various browsers and change #header to header*
 div body header div#HTML5style2content {
   margin: 0;
   padding: 0;
