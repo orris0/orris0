@@ -3657,7 +3657,7 @@ h3 { font-size:large; color:black; margin:0 0 6px 0;
 #html5style2midcol { 	margin-left:315px; margin-right:145px; margin-top:10px; vertical-align:top; 
 }
 /* set side menu block position and width*/
-nav { margin:0px 9px 0 8px; width:135px; float:right; 
+nav { margin:-266px 9px 0 8px; width:135px; 
 }
 /*Set list style within the menu block only. This removes bullets*/
 nav li { list-style-type:none; 
