@@ -98,7 +98,7 @@ div.wrapper {
 /*equalise all the margins, paddings and borders built into various browsers*/  
 div header #content { margin:0; padding:0; border:0; 
 }
-body { background:#FFF url(../orris0/images/green-grad.jpg) repeat-x; margin:auto;
+body { background:#FFF url(../orris0/html5boilerplateimages/green-grad.jpg) repeat-x; margin:auto;
     font-size: 100%; font-weight: normal;
 }
 ul { padding-left: 0;
@@ -141,7 +141,7 @@ header#html5style2header.data header#header.row {
     height: 180px;
     /* border: 10px rgba(255,255,255,.3); */
     padding: 0px;
-    background-image: url("./orris0/bda-20.jpg");
+    background-image: url("../../../orris0/bda-20.jpg");
     background-repeat: no-repeat;
     background-position: bottom;
     margin: 10px auto; 
