@@ -128,7 +128,7 @@ header, footer, section, article, nav { display:block;
 header#html5style2header header#header.row {
   width: 970px; 
     height: 180px;
-    border: 10px rgba(255,255,255);
+    /* border: 10px rgba(255,255,255); */
     padding: 0px;
     background-image: url("../");
     background-repeat: no-repeat;
