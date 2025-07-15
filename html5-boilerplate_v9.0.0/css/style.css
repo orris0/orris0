@@ -158,8 +158,6 @@ h1 { font-size:200%; color :white; position: relative; left:90px; top: -5px; wid
 }
 */
 #rosette { position:relative; left:750px; top:5px; }
-
-
 #html5style2content { background-color:transparent; border-left:10px white solid; border-right:10px white solid; 
 border-bottom:10px white solid; width: 904px; margin-top:-20px; margin-left:auto; margin-right:auto; padding:8px; font-size:medium; color:maroon; 
 }
@@ -177,13 +175,13 @@ h3 { font-size:large; color:white; margin:0 0 6px 0;
 nav#nav { margin:-171px 9px 0 8px; width:135px; 
 }
 /*Set list style within the menu block only. This removes bullets*/
-nav li { list-style-type:none; 
+nav#nav li { list-style-type:none; 
 }	
 /* set general side button styles */
-nav li { margin-bottom: 3px; text-align: center; width:130px;
+nav#nav li { margin-bottom: 3px; text-align: center; width:130px;
 }
 /* set general anchor styles and include the zoom fix for IE6*/
-nav li a { display: block; color: white; font-weight: bold; text-decoration: none; zoom:1;
+nav#nav li a { display: block; color: white; font-weight: bold; text-decoration: none; zoom:1;
 }
 /* specify mouse state styles */
 /* mouseout (default) */
@@ -191,13 +189,13 @@ nav li a { background:#559a55; color: white; border: 5px outset #559a55; padding
 }
 /* mouseover */
 nav li a:hover { background: red;  color:white; border: 5px outset red;
-  }
+}
 /*mouse active*/
 nav li a:active { background:maroon;  border: 5px inset maroon; 
 }
-br.clear { 	clear:both; 
+br.clear { clear:both; 
 }
-#midcol img { margin-left:10px; 
+#html5style2midcol img { margin-left:10px; 
 }
 footer { clear:both; color:maroon; text-align:center; 
 }
