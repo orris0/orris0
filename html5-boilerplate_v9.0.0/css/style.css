@@ -124,18 +124,18 @@ div#html5style2container { border: 10px solid rgba(000,000,000,.05);  background
 /*add display attributes for the semantic tags*/
 header, footer, section, article, nav { display:block; 
 }
-/*
+
 header#html5style2header header#header.row {
   width: 970px; 
     height: 180px;
-    /* border: 10px rgba(255,255,255); */
+    border: 10px rgba(255,255,255);
     padding: 0px;
     background-image: url("../");
     background-repeat: no-repeat;
     background-position: bottom;
     margin: 10px auto; 
 }
-*/
+
 header#html5style2header.data header#header.row {
   width: 970px; 
     height: 180px;
