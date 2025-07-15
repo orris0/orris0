@@ -3730,6 +3730,9 @@ nav {
 header#header.row {
   width: 920px;
   height: 180px;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  margin: 10px auto;
   padding: 0;
   border: 10px white solid;
   background: url(../../bda-20.jpg);
