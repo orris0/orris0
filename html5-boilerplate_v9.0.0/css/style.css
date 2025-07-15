@@ -139,7 +139,7 @@ header#html5style2header header#header.row {
 header#html5style2header.data header#header.row {
   width: 970px; 
     height: 180px;
-    border: 10px rgba(255,255,255,.3);
+    /* border: 10px rgba(255,255,255,.3); */
     padding: 0px;
     background-image: url("../../bda-20.jpg");
     background-repeat: no-repeat;
