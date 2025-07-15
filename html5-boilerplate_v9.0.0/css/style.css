@@ -158,7 +158,7 @@ h1 { font-size:200%; color :white; position: relative; left:90px; top: -5px; wid
 }
 */
 #rosette { position:relative; left:750px; top:5px; }
-#html5style2content { background-color:transparent; border-left:10px white solid; border-right:10px white solid; 
+#html5style2content { background-color:transparent; border-left:10px black solid; border-right:10px white solid; 
 border-bottom:10px white solid; width: 904px; margin-top:-20px; margin-left:auto; margin-right:auto; padding:8px; font-size:medium; color:maroon; 
 }
 h2 { font-size:x-large; color:white; margin:0 0 10px 0; 
@@ -172,7 +172,7 @@ h3 { font-size:large; color:white; margin:0 0 6px 0;
 #html5style2midcol { 	margin-left:315px; margin-right:145px; margin-top:10px; vertical-align:top; 
 }
 /* set side menu block position and width*/
-nav#nav { margin:-271px 9px 0 8px; width:135px; 
+nav#nav { margin:271px 9px 0 8px; width:135px; 
 }
 /*Set list style within the menu block only. This removes bullets*/
 nav#nav li { list-style-type:none; 
