@@ -3575,9 +3575,9 @@ li { margin: 5px; list-style-type:none;
 /* MouseOver state (hover)- reveal larger picture */
 #gallerypagecol-3a:hover { background: white;
 }
-#col-3 a:hover img.hid { visibility:visible;
+#gallerypagecol-3 a:hover img.hid { visibility:visible;
 }
-/* Set styles to equalise the browser rendition*
+/* Set styles to equalise the browser rendition*/
 html, h1, h2, h3, h4, h5, p, ol, ul, li { padding: 0; margin: 0;
 }
 div.wrapper { 
