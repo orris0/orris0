@@ -443,10 +443,10 @@ nav ul { margin-left:0; border:0; width:115px;
 }
 #gallerypagerightcol p.advert {font-size:small; margin-top:190px;
 }
-/*set middle column for main content*
+/*set middle column for main content*/
 #gallerypagemidcol { margin-left:135px; margin-right:155px;
 }
-/*set gallery block position*
+/*set gallery block position*/
 #gallery-pagegallery-block { position:relative; left: 30px; top:10px;
 }
 /*set footer*
@@ -473,11 +473,11 @@ li { margin: 5px; list-style-type:none;
 }
 /*remove bullets from the un-ordered list elements and create the 
 MouseOut state (default) - create and position a space for the larger images and 
-hide them*
+hide them*/
 #gallery-pagecol-1 a img.hid { width: 260px; height:390px; position: 
 absolute; top: 10px; left: 330px; visibility: hidden;
 }
-/* MouseOver state (hover)- this reveals larger picture *
+/* MouseOver state (hover)- this reveals larger picture */
 #gallerypagecol-1 a:hover { background: white; }
 #gallerypagecol-1 a:hover img.hid { visibility:visible;
 }
@@ -487,7 +487,7 @@ absolute; top: 10px; left: 330px; visibility: hidden;
 }
 li { margin: 5px; list-style-type:none;
 }
-/* MouseOut state (default) - hide larger picture *
+/* MouseOut state (default) - hide larger picture */
 #col-2 a img.hid { width: 260px; height:390px; 
 position: absolute; top: 10px; left: 245px; margin-left:0;visibility: hidden;
 }
