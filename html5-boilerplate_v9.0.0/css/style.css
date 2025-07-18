@@ -135,7 +135,7 @@ header#html5style2header.data header#header.row {
     background-position: bottom;
     margin: 10px auto; 
 }
-#main-content {width:950px; margin:60px auto 0 auto; background-color:white; color:black; text-align:center; font-weight:bold;
+#main-content {width:950px; margin:35px auto 0 auto; background-color:white; color:black; text-align:center; font-weight:bold;
 }
 /*SET FONTS*/
 span.small { font-size:small;
