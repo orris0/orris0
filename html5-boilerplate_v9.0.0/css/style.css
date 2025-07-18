@@ -124,18 +124,7 @@ div#html5style2container { border: 10px solid rgba(000,000,000,.05);  background
 /*add display attributes for the semantic tags*/
 header, footer, section, article, nav { display:block; 
 }
-/*
-header#html5style2header header#header.row {
-  width: 970px; 
-    height: 180px;
-    border: 10px rgba(000,000,000);
-    padding: 0px;
-    background-image: url("../");
-    background-repeat: no-repeat;
-    background-position: bottom;
-    margin: 10px auto; 
-}
-*/
+
 header#html5style2header.data header#header.row {
   width: 970px; 
     height: 180px;
@@ -163,10 +152,7 @@ nav#equal2dnav {position:absolute; top:-285px; left:0px; width: 1876px; padding:
 
 nav#equal2dnav li { display:inline; padding: 5px; padding-top:15px; margin:5px 0 0 2px; height:25px;
 }
-/*
-#main-content {width:950px; margin:60px auto 0 auto; background-color:white; color:black; text-align:center; font-weight:bold;
-}
-*/
+
 #rosette { position:relative; left:750px; top:5px; }
 #html5style2content { background-color:transparent; border-left:10px black solid; border-right:10px white solid; 
 border-bottom:10px white solid; width: 904px; margin-top:-20px; margin-left:auto; margin-right:auto; padding:8px; font-size:medium; color:maroon; 
