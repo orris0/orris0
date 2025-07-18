@@ -158,7 +158,7 @@ h2 {font-size:large; font-family:"times new roman"; text-align:center;
 
 h1 { font-size:200%; color :white; position: relative; left:90px; top: -5px; width:480px; 
 }
-nav#equal2dnav {position:absolute; top:100px; left:78px; width: 785px; padding: 5px; list-style: none; height: 35px;
+nav#equal2dnav {position:absolute; top:-285px; left:0px; width: 1876px; padding: 5px; list-style: none; height: 35px;
 }
 
 nav#equal2dnav li { display:inline; padding: 5px; padding-top:15px; margin:5px 0 0 2px; height:25px;
