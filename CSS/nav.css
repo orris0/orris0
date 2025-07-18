@@ -16,6 +16,8 @@ body {
 
 nav#equal2dnav {
   position: relative;
+  right: .2em;
+  top: .1em;
 }
 nav#equal2dnav ul {
   display: none;
