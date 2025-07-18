@@ -146,6 +146,9 @@ header#html5style2header.data header#header.row {
     background-position: bottom;
     margin: 10px auto; 
 }
+#main-content {width:950px; margin:60px auto 0 auto; background-color:white; 
+color:black; text-align:center; font-weight:bold;
+}
 /*SET FONTS*/
 span.small { font-size:small;
 }
@@ -156,7 +159,9 @@ h2 {font-size:large; font-family:"times new roman"; text-align:center;
 
 h1 { font-size:200%; color :white; position: relative; left:90px; top: -5px; width:480px; 
 }
-
+#main-content {width:950px; margin:60px auto 0 auto; background-color:white; 
+color:black; text-align:center; font-weight:bold;
+}
 #rosette { position:relative; left:750px; top:5px; }
 #html5style2content { background-color:transparent; border-left:10px black solid; border-right:10px white solid; 
 border-bottom:10px white solid; width: 904px; margin-top:-20px; margin-left:auto; margin-right:auto; padding:8px; font-size:medium; color:maroon; 
