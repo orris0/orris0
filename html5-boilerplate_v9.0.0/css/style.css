@@ -153,10 +153,10 @@ h1 { font-size:x-large; font-family:"times new roman"; text-align:center;
 }
 h2 {font-size:large; font-family:"times new roman"; text-align:center;
 }
-/*
+
 h1 { font-size:200%; color :white; position: relative; left:90px; top: -5px; width:480px; 
 }
-*/
+
 #rosette { position:relative; left:750px; top:5px; }
 #html5style2content { background-color:transparent; border-left:10px black solid; border-right:10px white solid; 
 border-bottom:10px white solid; width: 904px; margin-top:-20px; margin-left:auto; margin-right:auto; padding:8px; font-size:medium; color:maroon; 
