@@ -194,7 +194,7 @@ nav#nav li { margin-bottom: 3px; text-align: center; width:130px;
 nav#nav li a { display: block; color: white; font-weight: bold; text-decoration: none; zoom:1;
 }
 /* specify mouse state styles */
-/* mouseout (default) */
+/* mouseout (default) *
 nav li a { background:#559a55; color: white; border: 5px outset #559a55; padding-bottom:3px;
 }
 /* mouseover */
@@ -3668,11 +3668,11 @@ nav li { list-style-type:none;
 /* set general side button styles */
 nav li { margin-bottom: 3px; text-align: center; width:130px;
 }
-/* set general anchor styles and include the zoom fix for IE6*/
+/* set general anchor styles and include the zoom fix for IE6*
 nav li a { display: block; color: white; font-weight: bold; text-decoration: none; zoom:1;
 }
 /* specify mouse state styles */
-/* mouseout (default) */
+/* mouseout (default) *
 nav li a { background:#559a55; color: white; border: 5px outset #559a55; padding-bottom:3px;
 }
 /* mouseover */
@@ -3713,9 +3713,9 @@ p { background: rgba(255,255,255,0.5);  margin:auto; text-align:center;
 /*
 div#html5style2container { margin:auto; text-align:center; width:97%; min-width:800px; max-width:1200px;
 }
-*/
+
 a { background: orange; color:navy;
-}
+}*/
 .inline-block a { display:inline-block; width:110px; height:30px; line-height:30px; text-align:center;
 }
 
