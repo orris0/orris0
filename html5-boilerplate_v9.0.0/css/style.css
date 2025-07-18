@@ -106,7 +106,7 @@ ul { padding-left: 0;
 /* end of style equalisation */
 p { 
 
-    color: white;
+    color: #000;
     margin:auto; 
     text-align:center;
 }
@@ -3604,7 +3604,7 @@ ul { padding-left: 0;
 /* end of style equalisation */
 p { 
 
-    color: white;
+    color: #000;
     margin:auto; 
     text-align:center;
 }
@@ -3758,7 +3758,7 @@ div#rosette {
   left: 750px;
   top: -25px;
 }
-
+/*
 div#html5style2content {
   background-color: transparent;
   border-left: 10px white solid;
@@ -3772,7 +3772,7 @@ div#html5style2content {
   font-size: medium;
   color: maroon;
 }
-
+*/
 h2 {
   font-size:x-large;
   color: black;
