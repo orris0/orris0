@@ -1669,7 +1669,8 @@ header {
   padding-left: 20px;
   padding-right: 20px;
   position: fixed;
-  top: 0px; 
+  top: .1em;
+  left: 0; 
   z-index: 6060;
   width: 100%; }
   header h1 a {
