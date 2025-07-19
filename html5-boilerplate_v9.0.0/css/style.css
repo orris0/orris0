@@ -3786,13 +3786,13 @@ div#html5style2content {
 }
 */
 h2 {
-  font-size:x-large;
+  font-size: 100%;
   color: black;
   margin: 0 0 10px 0;
 }
 
 h3 {
-  font-size: large;
+  font-size: 100%;
   color: #333;
   margin: 0 0 6px 0;
 }
