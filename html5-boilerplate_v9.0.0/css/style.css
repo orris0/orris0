@@ -153,11 +153,12 @@ h1 { font-size:100%; font-family:"times new roman"; text-align:center;
 h2 {font-size:100%; font-family:"times new roman"; text-align:center;
 }
 
-h1 { font-size:200%; color :rgba(0, 0, 0, 0.6); position: relative; left:90px; top: -5px; width:480px; 
+h1 { font-size:200%; color :rgba(0, 0, 0, 0.6); position: relative; leftwidth:; top:padding: 5px; width:480px; 
+}
+nav#equal2dnav.data { position: absolute; padding: 5px; padding-top:15px; margin:5px 0 0 2px;list-style: none; height:35px;
 }
 
-
-nav#equal2dnav li { display:inline; padding: 5px; padding-top:15px; margin:5px 0 0 2px; height:25px;
+nav#equal2dnav.data li { display:inline; padding: 5px; padding-top:15px; margin:5px 0 0 2px; height:25px;
 }
 
 #rosette { position:relative; left:750px; top:5px; }
