@@ -3781,9 +3781,9 @@ div#html5style2content {
 }
 */
 h2 {
-  font-size: 150%;
+  font-size: 100%;
   color: #551616;
-  margin: 0 0 10px 0;
+  margin: 5px 0 10px 0;
 }
 
 h3 {
