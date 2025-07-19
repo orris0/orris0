@@ -119,6 +119,8 @@ div#html5style2container { position: relative;
 div#html5style2container { border: 10px solid rgba(000,000,000,.05);  background-clip: padding-box;
     margin: auto;
     text-align: center;
+    position:relative;
+    top: 0px;
     width: 97%;  
 }
 /*add display attributes for the semantic tags*/
@@ -153,15 +155,7 @@ h2 {font-size:100%; font-family:"times new roman"; text-align:center;
 
 h1 { font-size:200%; color :rgba(0, 0, 0, 0.6); position: relative; left:90px; top: -5px; width:480px; 
 }
-nav#equal2dnav {
-    position:absolute; 
-    top:-0em; 
-    left:0px; 
-    width: 1876px; 
-    padding: 5px; 
-    list-style: none; 
-    height: 35px;
-}
+
 
 nav#equal2dnav li { display:inline; padding: 5px; padding-top:15px; margin:5px 0 0 2px; height:25px;
 }
