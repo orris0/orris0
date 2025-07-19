@@ -153,7 +153,7 @@ h1 { font-size:100%; font-family:"times new roman"; text-align:center;
 h2 {font-size:100%; font-family:"times new roman"; text-align:center;
 }
 
-h1 { font-size:200%; color :rgba(0, 0, 0, 0.6); position: relative; leftwidth:; top:padding: 5px; width:480px; 
+h1 { font-size:200%; color :rgba(0, 0, 0, 0.6); position: relative; width: 785px; padding: 5px; width:480px; 
 }
 nav#equal2dnav.data { position: absolute; padding: 5px; padding-top:15px; margin:5px 0 0 2px;list-style: none; height:35px;
 }
