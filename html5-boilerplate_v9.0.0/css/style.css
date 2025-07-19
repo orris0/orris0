@@ -461,7 +461,7 @@ nav ul { margin-left:0; border:0; width:115px;
 #gallerypagerightcol p.advert {font-size:small; margin-top:190px;
 }
 /*set middle column for main content*/
-#gallerypagemidcol { margin-left:135px; margin-top: 1em; margin-right:155px;
+#gallerypagemidcol { margin-left:135px; margin-top: -7em; margin-right:155px;
 }
 /*set gallery block position*/
 #gallerypagegallery-block { position:relative; left: 27%; top:-35em;
