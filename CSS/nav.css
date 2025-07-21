@@ -61,6 +61,7 @@ nav#equal2dnav input.trigger:checked ~ ul, nav#equal2dnav input.trigger:checked 
 }
 nav#equal2dnav label {
   position: relative;
+  top: 0;
   display: block;
   min-height: 2em;
   padding: .45em;
