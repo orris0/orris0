@@ -94,9 +94,9 @@ html.ui-mobile {
 }
 div.wrapper { 
     position: relative; 
-    top: 32em; 
+    top: 3.6em; 
     left: 0; 
-    width: 970px; 
+    width: 950px; 
     margin: auto; 
     text-align: center;
 }
