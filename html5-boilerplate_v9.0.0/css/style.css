@@ -11,7 +11,7 @@
    Base styles: opinionated defaults
    ========================================================================== */
 
-html {
+html.ui-mobile {
   color: black;
   font-size: 1em;
   line-height: 1.4;
