@@ -3591,7 +3591,7 @@ li { margin: 5px; list-style-type:none;
 /* MouseOut state (default) - hide larger picture */
 #gallerypagecol-3 a img.hid { width: 260px; height:390px; position: absolute; top: 10px; left: 155px; margin-left:0; visibility: hidden;
 }
-/* MouseOver state (hover)- reveal larger picture */
+/* MouseOver state (hover)- reveal larger picture *
 #gallerypagecol-3a:hover { background: white;
 }
 #gallerypagecol-3 a:hover img.hid { visibility:visible;
