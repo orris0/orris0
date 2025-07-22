@@ -142,6 +142,10 @@ header#html5style2header.data header#header.row {
     background-position: bottom;
     margin: 10px auto; 
 }
+#main-content {width:950px; margin:50px auto 0 auto; background-color:white; 
+color:black; text-align:center; font-weight:bold;
+}
+/*
 #main-content {
     width:970px; 
     margin:1px auto 0 auto; 
