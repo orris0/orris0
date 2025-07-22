@@ -260,7 +260,7 @@ p {
   text-align:center;
 }
 div#inlineblockcontainer { border: 10px solid white;  background-clip: padding-box;
-    margin: 20px auto;
+    margin: 10px auto;
     text-align: center;
     width: 100%;
     min-width: 800px;
