@@ -3732,7 +3732,7 @@ a { background: orange; color:navy;
 }*/
 .inline-block a { display:inline-block; width:110px; height:30px; line-height:30px; text-align:center;
 }
-/*add display attributes for the semantic tags*/
+/*add display attributes for the semantic tags*
 header,
 footer,
 section,
@@ -3741,7 +3741,7 @@ nav {
   display: block;
 }
 
-/*remove the # from #header*/
+/*remove the # from #header*
 header#header.row {
   width: 920px;
   height: 180px;
