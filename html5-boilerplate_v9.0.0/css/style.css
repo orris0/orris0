@@ -1525,12 +1525,12 @@ a:focus {
 a:active,
 a:hover {
   outline: 0; }
-
+/*
 hgroup, ul, ol, dd, menu, dl, figure, pre, table, fieldset, legend, hr,
 h1, h2, h3, h4, h5, h6, p, a {
   margin: 5px;
   padding: 0; }
-
+*/
 b, strong {
   font-weight: bold; }
 
@@ -3617,7 +3617,7 @@ li { margin: 5px; list-style-type:none;
 }
 #gallerypagecol-3 a:hover img.hid { visibility:visible;
 }
-/* Set styles to equalise the browser rendition*/
+/* Set styles to equalise the browser rendition*
 html, h1, h2, h3, h4, h5, p, ol, ul, li { padding: 0; margin: 0;
 }
 /*
@@ -3637,7 +3637,7 @@ body { background:#FFF url(../orris0/images/green-grad.jpg) repeat-x !important;
 }
 ul { padding-left: 0;
 }
-/* end of style equalisation */
+/* end of style equalisation *
 p { 
 
     color: #000;
