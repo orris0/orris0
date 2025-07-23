@@ -85,7 +85,7 @@ textarea {
    Author's custom styles
    ========================================================================== *
 /* Set styles to equalise the browser rendition*/
-html, h1, h2, h3, h4, h5, p, ol, ul, li { padding: 0; margin: 0;
+html, h1, h2, h3, h4, h5, p, ol, ul, li { padding: 0; margin: 2em;
 }
 html.ui-mobile {
   color: black;
