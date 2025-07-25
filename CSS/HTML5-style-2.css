@@ -7,6 +7,10 @@ body { background:#FFF url(images/green-grad.jpg) repeat-x; margin:auto !importa
 header, footer, section, article, nav { display:block; 
 }
 /*remove the # from #header*/
+header {width:920px; height:180px; padding:0; border:10px white solid; 
+background: url(images/header3.jpg); margin:10px auto;
+}
+/*remove the # from #header*/
 header {width:920px; height:180px; padding:0; border:10px white solid; 
   background: url(../bda-20.jpg); margin:10px auto; 
 }
