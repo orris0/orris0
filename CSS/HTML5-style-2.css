@@ -53,5 +53,5 @@ br.clear { 	clear:both;
 }
 img { margin-left:10px; 
 }
-footer { clear:both; color:maroon; text-align:center; 
+footer { clear:both; color:maroon; text-align:center; border: 2px solid black;
 }
