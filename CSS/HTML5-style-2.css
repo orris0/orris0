@@ -73,9 +73,10 @@ span.small { font-size:small;
 #gallerypage h2
 {font-size:large; font-family:"times new roman"; text-align:center;
 }
-/*PAGE LAYOUT*/
+/*PAGE LAYOUT*
 body {margin:auto; width:970px; 
 }
+*/
 header {
         width:970px;
 }
