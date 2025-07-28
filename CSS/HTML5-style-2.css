@@ -1,7 +1,8 @@
 /*equalise for various browsers and change #header to header*/
 div body header #content { margin:0; padding:0; border:0; 
 }
-body { background:#FFF url(images/green-grad.jpg) repeat-x; margin:auto !important;
+/*PAGE LAYOUT*/
+body { background:#FFF url(images/green-grad.jpg) repeat-x; margin:auto; width:970px !important;
 }
 /*add display attributes for the semantic tags*/
 header, footer, section, article, nav { display:block; 
@@ -67,9 +68,9 @@ header, footer, section, article, nav { display:block;
 /*SET FONTS*/
 span.small { font-size:small;
 }
-h1#gallerypageh1 { font-size:x-large; font-family:"times new roman"; text-align:center;
+#gallerypage h1 { font-size:x-large; font-family:"times new roman"; text-align:center;
 }
-h2#gallerypage
+#gallerypage h2
 {font-size:large; font-family:"times new roman"; text-align:center;
 }
 /*PAGE LAYOUT*/
@@ -106,6 +107,7 @@ footer {         clear:both; color:black; text-align:center; width:970px;
 }
 .clear { clear:both;
 }
+
 /*set menu buttons*/
 li.btn a { display:block; background-color :#66CCFF; color:black; font-weight:bold; padding:4px;
         margin-left:0; text-align:center; list-style-type:none; text-decoration:none; width:110px;
