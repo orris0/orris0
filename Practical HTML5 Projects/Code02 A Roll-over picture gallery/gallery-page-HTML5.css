@@ -2,7 +2,7 @@
 html, body, p, ul, li, h1, h2 {	margin:0; padding:0; 
 }
 /*set images to have no borders*/
-img { 	border:0;
+img { 	border:0; max-width: 100%;
 }
 /*add display attributes for the semantic tags*/
 header, footer, section, article, nav { display:block; 
