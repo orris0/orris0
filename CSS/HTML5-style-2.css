@@ -2,7 +2,7 @@
 div body header #content { margin:0; padding:0; border:0; 
 }
 /*PAGE LAYOUT*/
-body { background:#FFF url(images/green-grad.jpg) repeat-x; margin:auto; width:970px !important;
+body { background:#FFF url(images/green-grad.jpg) repeat-x; margin:auto; !important;
 }
 /*add display attributes for the semantic tags*/
 header, footer, section, article, nav { display:block; 
