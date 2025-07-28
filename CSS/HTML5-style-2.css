@@ -80,14 +80,14 @@ header {
         width:970px;
 }
 
-.nav { float:left; margin-left:10px; width:129px;
+#gallerypagenav { float:left; margin-left:10px; width:129px;
 }
-.nav ul { margin-left:0; border:0; width:115px;
+#gallerypagenav ul { margin-left:0; border:0; width:115px;
 }
-.nav {
+#gallerypagenav {
         color: red
         }
-         nav {
+         #gallerypagenav {
         display: block;
         background-color: blue
         }
@@ -109,12 +109,12 @@ footer {         clear:both; color:black; text-align:center; width:970px;
 }
 
 /*set menu buttons*/
-li.btn a { display:block; background-color :#66CCFF; color:black; font-weight:bold; padding:4px;
+#gallerypagenav li.btn a { display:block; background-color :#66CCFF; color:black; font-weight:bold; padding:4px;
         margin-left:0; text-align:center; list-style-type:none; text-decoration:none; width:110px;
 }
-li.btn a:hover { background-color:blue; color:white;
+#gallerypagenav li.btn a:hover { background-color:blue; color:white;
 }
-li.btn { width:110px;
+#gallerypagenav li.btn { width:110px;
 }
 /*SET THUMBNAIL GALLERY BLOCK*/  
 /* Set general thumbnail styles */
