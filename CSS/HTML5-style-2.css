@@ -35,24 +35,24 @@ nav { margin:10px 30px 0 10px; width:135px; float:right;
 nav li { list-style-type:none; 
 }	
 /* set general side button styles */
-#HTML5style2nav li.btn { margin-bottom: 3px; text-align: center; width:130px;
+nav li.btn { margin-bottom: 3px; text-align: center; width:130px;
 }
 /* set general anchor styles and include the zoom fix for IE6*/
-#HTML5style2nav li.btn a { display: block; color: white; font-weight: bold; text-decoration: none; zoom:1;
+nav li.btn a { display: block; color: white; font-weight: bold; text-decoration: none; zoom:1;
 }
 /* specify mouse state styles */
 /* mouseout (default) */
-#HTML5style2nav li.btn a { background:#559a55; color: white; border: 5px outset #559a55; padding-bottom:3px;
+nav li.btn a { background:#559a55; color: white; border: 5px outset #559a55; padding-bottom:3px;
 }
 /* mouseover */
-#HTML5style2nav li.btn a:hover { background: red;  color:white; border: 5px outset red;
+nav li.btn a:hover { background: red;  color:white; border: 5px outset red;
 }
 /*mouse active*/
-#HTML5style2nav li.btn a:active { background:maroon;  border: 5px inset maroon; 
+nav li.btn a:active { background:maroon;  border: 5px inset maroon; 
 }
 br.clear { 	clear:both; 
 }
-img { margin-left:10px; 
+img { margin-left:10px;
 }
 footer { clear:both; color:maroon; text-align:center; border: 2px solid black;
 }
