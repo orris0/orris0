@@ -29,26 +29,26 @@ h3 { font-size:large; color:white; margin:0 0 6px 0;
 #midcol img { margin-left:10px;
 }
 /*set nav block position and width*/
-HTML5style2nav { margin:10px 30px 0 10px; width:135px; float:right; 
+#HTML5style2nav { margin:10px 30px 0 10px; width:135px; float:right; 
 }
 /*Set un-ordered list style within the menu block only. This removes bullets*/
-HTML5style2nav li { list-style-type:none; 
+#HTML5style2nav li { list-style-type:none; 
 }	
 /* set general side button styles */
-HTML5style2nav li.btn { margin-bottom: 3px; text-align: center; width:130px;
+#HTML5style2nav li.btn { margin-bottom: 3px; text-align: center; width:130px;
 }
 /* set general anchor styles and include the zoom fix for IE6*/
-li.btn a { display: block; color: white; font-weight: bold; text-decoration: none; zoom:1;
+#HTML5style2nav li.btn a { display: block; color: white; font-weight: bold; text-decoration: none; zoom:1;
 }
 /* specify mouse state styles */
 /* mouseout (default) */
 li.btn a { background:#559a55; color: white; border: 5px outset #559a55; padding-bottom:3px;
 }
 /* mouseover */
-HTML5style2nav li.btn a:hover { background: red;  color:white; border: 5px outset red;
+#HTML5style2nav li.btn a:hover { background: red;  color:white; border: 5px outset red;
 }
 /*mouse active*/
-HTML5style2nav li.btn a:active { background:maroon;  border: 5px inset maroon; 
+#HTML5style2nav li.btn a:active { background:maroon;  border: 5px inset maroon; 
 }
 br.clear { 	clear:both; 
 }
