@@ -205,7 +205,7 @@ div#html5style2container { border: 10px solid rgba(000,000,000,.05);  background
     top: -26em;
     width: 97%;  
 }
-add display attributes for the semantic tags*/
+add display attributes for the semantic tags*
 header, footer, section, article, nav { display:block; 
 }
 /*
