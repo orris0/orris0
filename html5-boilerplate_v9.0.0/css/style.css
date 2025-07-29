@@ -144,11 +144,7 @@ img { margin-left:10px;
 }
 footer { clear:both; color:maroon; text-align:center; border: 2px solid black;
 }
-html.ui-mobile {
-  color: black;
-  font-size: 1em;
-  line-height: 1.4;
-}
+
 /*
 div.wrapper { 
     position: relative; 
