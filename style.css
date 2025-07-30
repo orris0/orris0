@@ -1590,6 +1590,7 @@ header {
   padding-left: 20px;
   padding-right: 20px;
   position: fixed;
+  top: 1em
   z-index: 6060;
   width: 100%; }
   header h1 a {
