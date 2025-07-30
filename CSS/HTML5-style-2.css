@@ -8,11 +8,12 @@ body { background:#FFF url(images/green-grad.jpg) repeat-x; margin:auto;
 /*add display attributes for the semantic tags*/ 
 header, footer, section, article, nav { display:block; 
 } 
-/*remove the # from #header*/ 
+/*remove the # from #header*
 header {width:920px; height:180px; padding:0; border:10px white solid; -
 
 background: url(images/header3.jpg); margin:10px auto; 
-} 
+}
+*/
 h1 { font-size:300%; color :white; position: relative; left:90px; top: 55px; 
 width:480px; 
 } 
@@ -55,7 +56,7 @@ div body header #content { margin:0; padding:0; border:0;
 /*PAGE LAYOUT*/
 body { background:#FFF url(images/green-grad.jpg) repeat-x; margin:auto; !important;
 }
-/*add display attributes for the semantic tags*/
+/*add display attributes for the semantic tags*
 header, footer, section, article, nav { display:block; 
 }
 /*remove the # from #header*/
