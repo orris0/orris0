@@ -93,7 +93,7 @@ body { background:#FFF url(images/green-grad.jpg) repeat-x; margin:auto; !import
 /*add display attributes for the semantic tags*/
 header, footer, section, article, nav { display:block; 
 }
-/*remove the # from #header*/
+/*remove the # from #header*
 header {width:920px; height:180px; padding:0; border:10px white solid; background:  url(../bda-20.jpg); background-position: 35% bottom; margin:10px auto;
 }
 
@@ -512,7 +512,7 @@ html, body, p, ul, li, h1, h2 { margin:0; padding:0;
 img {
 border:0;
 }
-/*add display attributes for the semantic tags*/
+/*add display attributes for the semantic tags
 header, footer, section, article, nav { display:block;
 }
 
