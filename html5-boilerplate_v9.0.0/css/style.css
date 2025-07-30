@@ -193,7 +193,7 @@ div#html5style2container { position: relative;
     left: 0; margin:auto; text-align:center; width:97%; min-width:800px; max-width:970px;
 }
 
-div#html5style2container { border: 10px solid rgba(000,000,000,.05);  background-clip: padding-box;
+div#html5style2container { border: 10px solid;  background-clip: padding-box;
     margin: auto;
     text-align: center;
     position:relative;
@@ -207,7 +207,7 @@ header, footer, section, article, nav { display:block;
 header#html5style2header.data header#header.row {
   width: 970px; 
     height: 180px;
-     border: 10px rgba(255,255,255,.3); 
+    border: 10px rgba(255,255,255,.3); 
     padding: 0px;
     background-image: url("../../../orris0/bda-20.jpg");
     background-repeat: no-repeat;
