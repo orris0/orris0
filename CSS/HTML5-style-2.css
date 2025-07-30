@@ -103,7 +103,7 @@ nav li.btn a:hover { background: red;  color:white; border: 5px outset red;
 /*mouse active*/
 nav li.btn a:active { background:maroon;  border: 5px inset maroon; 
 }
-br.clear { 	clear:both; 
+br.clear { clear:both; 
 }
 img { margin-left:10px;
 }
