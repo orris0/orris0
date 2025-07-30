@@ -90,7 +90,7 @@ div body header #content { margin:0; padding:0; border:0;
 /*PAGE LAYOUT*/
 body { background:#FFF url(images/green-grad.jpg) repeat-x; margin:auto; !important;
 }
-/*add display attributes for the semantic tags*/
+/*add display attributes for the semantic tags*
 header, footer, section, article, nav { display:block; 
 }
 /*remove the # from #header*
