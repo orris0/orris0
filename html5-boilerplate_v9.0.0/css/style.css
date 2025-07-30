@@ -116,7 +116,7 @@ h3 { font-size:large; color:white; margin:0 0 6px 0;
 #midcol img { margin-left:10px;
 }
 /*set nav block position and width*/
-nav { margin:10px 30px 0 10px; width:135px; float:right; 
+nav { margin:10px 0px 10 0px; width:135px; float:right; 
 }
 /*Set un-ordered list style within the menu block only. This removes bullets*/
 nav li { list-style-type:none; 
