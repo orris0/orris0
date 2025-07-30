@@ -1749,7 +1749,7 @@ html, body {
 
 .js .home {
   background: #000000; }
-
+/*
 header {
   padding-top: 14px;
   padding-top: 0.875rem;
@@ -1763,7 +1763,9 @@ header {
   top: .1em;
   left: 0em; 
   z-index: 6060;
-  width: 100%; }
+  width: 100%; 
+  }
+  */
   header h1 a {
     display: block; }
   .no-js header {
