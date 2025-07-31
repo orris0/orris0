@@ -40,7 +40,7 @@ header, footer, section, article, nav { display:block;
 }
 header {
   width: 970px; 
-    height: 180px;
+    
     border: 10px rgba(255,255,255);
     padding: 0px;
     background-image: url("../orris0/bda-20.jpg");
