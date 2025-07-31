@@ -57,9 +57,7 @@ div body header #content { margin:0; padding:0; border:0;
 /*PAGE LAYOUT*/
 body { background:#FFF url(images/green-grad.jpg) repeat-x; margin:auto; !important;
 }
-/*add display attributes for the semantic tags*
-header, footer, section, article, nav { display:block; 
-}
+
 /*remove the # from #header*/
 header {width:920px; height:180px; padding:0; border:10px white solid; background:  url(../bda-20.jpg); background-position: 35% bottom; margin:10px auto;
 }
