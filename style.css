@@ -216,7 +216,7 @@ h3 { font-size:large; color:white; margin:0 0 6px 0;
 /* set side menu block position and width*
 nav { margin:10px 30px 0 10px; width:135px; float:right; 
 }
-/*Set list style within the menu block only. This removes bullets*/
+/*Set list style within the menu block only. This removes bullets*
 nav li { list-style-type:none; 
 }	
 /* set general side button styles *
