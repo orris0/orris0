@@ -48,6 +48,93 @@ header {
     background-position: bottom;
     margin: 10px auto; 
 }
+header {
+  padding-top: 14px;
+  padding-top: 0.875rem;
+  -webkit-transition: background 0.3s ease-in;
+  -moz-transition: background 0.3s ease-in;
+  -o-transition: background 0.3s ease-in;
+  transition: background 0.3s ease-in;
+  padding-left: 20px;
+  padding-right: 20px;
+  position: fixed;
+  top: 1em
+  z-index: 6060;
+  width: 100%; }
+  header h1 a {
+    display: block; }
+  .no-js header {
+    background-color: #000;
+    background: rgba(0, 0, 0, 0.5); }
+  header .header-inner {
+    max-width: 960px;
+    margin: 0 auto; }
+    header .header-inner h1 {
+      float: left;
+      margin-bottom: 28px;
+      margin-bottom: 1.75rem; }
+  @media screen and (min-width: 48em) {
+    header {
+      padding-top: 28px;
+      padding-top: 1.75rem;
+      height: unset; } }
+  @media screen and (min-width: 62.5em) {
+    header {
+      position: fixed; }
+      header .inner {
+        padding-left: 0;
+        padding-right: 0; } }
+
+@media screen and (min-width: 62.5em) {
+  .header-bg {
+    background-color: #000;
+    background: rgba(0, 0, 0, 0.5); } }
+.lt-ie9 .home .header-bg {
+  background-image: url("img/nav-bg-black.png"); }
+
+/* Header Logo background image replacement */
+.svg header .header-inner h1 {
+  color: transparent;
+  font: 0/0 a;
+  text-shadow: none; }
+
+.no-svg header .header-inner h1 {
+  color: transparent;
+  font: 0/0 a;
+  text-shadow: none; }
+
+.no-js header .header-inner h1 {
+  color: transparent;
+  font: 0/0 a;
+  text-shadow: none; }
+
+.svg .page header .header-inner h1 {
+  color: transparent;
+  font: 0/0 a;
+  text-shadow: none; }
+
+.no-svg .page header .header-inner h1 {
+  color: transparent;
+  font: 0/0 a;
+  text-shadow: none; }
+
+.no-js .page header .header-inner h1 {
+  color: transparent;
+  font: 0/0 a;
+  text-shadow: none; }
+
+header .header-inner h1 {
+  -webkit-background-size: 241px 45px;
+  -o-background-size: 241px 45px;
+  background-size: 241px 45px;
+  width: 241px;
+  height: 45px; }
+  @media screen and (max-width: 29.9375em) {
+    header .header-inner h1 {
+      -webkit-background-size: 150px;
+      -o-background-size: 150px;
+      background-size: 150px;
+      width: 150px; } }
 /*SET FONTS*/
 span.small { font-size:small;
 }
