@@ -3,7 +3,7 @@ html, h1, h2, h3, h4, h5, p, ol, ul, li { padding: 0; margin: 0;
 }
 div.wrapper { 
     position: relative; 
-    top: -16em; 
+    top: 0em; 
     left: 0; 
     width: 950px; 
     margin: auto; 
