@@ -27,7 +27,7 @@ h2 {font-size:large; font-family:"times new roman"; text-align:center;color:maro
 }
 
 h1 { font-size:150%; color :white; position: relative; left:90px; top:15px; width:480px; font-family:"times new roman"; text-align:center;
-}*/
+}*
 h2 {font-size:75%; font-family:"times new roman"; line-height:3.4rem; text-align:center;
 }
 /*PAGE LAYOUT*/
@@ -115,7 +115,7 @@ p {  background-image: url("images/cheqflags.jpg"); background-attachment: fixed
 }
 /*
 #container {width:960px;padding:10px; margin:20px auto 0 auto;}
-*/
+
 #container {width:1850px; margin-left:-450px; padding:5px;
 }
 a { background: orange; color:navy;
