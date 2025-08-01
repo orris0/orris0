@@ -94,7 +94,7 @@ li.btn a { background:#559a55; color: white; border: 5px outset #559a55; padding
 li.btn a:hover { background: red;  color:white; border: 5px outset red;
 }
 /*mouse active*/
-nav#style-nav, li.btn a:active { background:maroon;  border: 5px inset maroon; 
+li.btn a:active { background:maroon;  border: 5px inset maroon; 
 }
 br.clear { clear:both; 
 }
