@@ -39,7 +39,7 @@ div#html5style2container { border: 10px solid rgba(000,000,000,.05);  background
 header, footer, section, article, nav { display:block; 
 }
 header {
-  width: 970px; 
+  width: 920px; 
     
     border: 10px rgba(255,255,255);
     padding: 0px;
@@ -48,6 +48,7 @@ header {
     background-position: bottom;
     margin: 10px auto; 
 }
+/*
 header {
   padding-top: 14px;
   padding-top: 0.875rem;
@@ -73,6 +74,7 @@ header {
       float: left;
       margin-bottom: 28px;
       margin-bottom: 1.75rem; }
+*/
   @media screen and (min-width: 48em) {
     header {
       padding-top: 28px;
