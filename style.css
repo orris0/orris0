@@ -12,8 +12,8 @@ div.wrapper {
 /*equalise all the margins, paddings and borders built into various browsers*/  
 div header #content { margin:0; padding:0; border:0; 
 }
-body { background:#FFF url(../orris0/images/green-grad.jpg) repeat-x; margin:auto;
-    font-size: 100%; font-weight: normal;
+
+body { background:#FFF url(../orris0/images/green-grad.jpg) repeat-x; margin:auto; 
 }
 ul { padding-left: 0;
 }
