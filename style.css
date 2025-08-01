@@ -126,15 +126,15 @@ header {
 /*set middle column for main content*/
 #midcol { margin-left:135px; margin-right:155px;
 }
-/*set gallery block position*/ 
+/*set gallery block position* 
 #gallery-block { position:relative; left: 30px; top:10px; 
 }
-/*set footer*/
+/*set footer*
 footer { 	clear:both; color:black; text-align:center; width:970px;
 }
 .clear { clear:both;
 }
-/*set menu buttons*/
+/*set menu buttons*
 li.btn a { display:block; background-color :#66CCFF; color:black; font-weight:bold; padding:4px;
 	margin-left:0; text-align:center; list-style-type:none; text-decoration:none; width:110px;
 }
@@ -143,49 +143,49 @@ li.btn a:hover { background-color:blue; color:white;
 li.btn { width:110px;
 }
 /*SET THUMBNAIL GALLERY BLOCK*/  
-/* Set general thumbnail styles */
+/* Set general thumbnail styles *
 #col-1	{ position: absolute; top: 0; left: 0; width:85px;
 } 
-/*place the column on the page*/
+/*place the column on the page*
 li	{ margin: 5px; list-style-type:none; 
 } 
 /*remove bullets from the un-ordered list elements and create the
-MouseOut state (default) - create and position a space for the larger images and hide them*/
+MouseOut state (default) - create and position a space for the larger images and hide them*
 #col-1 a img.hid { width: 260px; height:390px; position: absolute; top: 10px; left: 330px;
 	visibility: hidden;
 }
-/* MouseOver state (hover)- this reveals larger picture */
+/* MouseOver state (hover)- this reveals larger picture *
 #col-1 a:hover { background: white; }
 #col-1 a:hover img.hid { visibility:visible; }
 
 /*----------------------------------------------------*/
 
-/* set 2nd column of thumbnails 85px further over to right*/
+/* set 2nd column of thumbnails 85px further over to right*
 #col-2	{ position: absolute; top: 0; left: 85px; width:85px; }
 li	{ margin: 5px; list-style-type:none;	
 }
-/* MouseOut state (default) - hide larger picture */
+/* MouseOut state (default) - hide larger picture *
 #col-2 a img.hid { width: 260px; height:390px;
 	position: absolute; top: 10px; left: 245px; margin-left:0;
 	visibility: hidden;
 	}
-/* MouseOver state (hover)- reveal larger picture */
+/* MouseOver state (hover)- reveal larger picture *
 #col-2 a:hover { background: white; }
 #col-2 a:hover img.hid { visibility:visible; }
 
 /*----------------------------------------------------*/
 
-/* set 3nd column of thumbnails 170px further over to right*/
+/* set 3nd column of thumbnails 170px further over to right*
 #col-3	{ position: absolute; top: 0; left: 175px; width:95px; }
 li	{ margin: 5px; list-style-type:none;	
 }
-/* MouseOut state (default) - hide larger picture */
+/* MouseOut state (default) - hide larger picture *
 #col-3 a img.hid {
 	width: 260px; height:390px;
 	position: absolute; top: 10px; left: 155px; margin-left:0;
 	visibility: hidden;
 	}
-/* MouseOver state (hover)- reveal larger picture */
+/* MouseOver state (hover)- reveal larger picture *
 #col-3a:hover { background: white; 
 }
 #col-3 a:hover img.hid { visibility:visible; 
@@ -200,7 +200,7 @@ div body header #content { margin:0; padding:0; border:0;
 }
 body { background:#FFF url(images/green-grad.jpg) repeat-x; margin:auto;
 }
-/*add display attributes for the semantic tags*/
+/*add display attributes for the semantic tags*
 header, footer, section, article, nav { display:block; 
 }
 header {width:920px; height:180px; padding:0; border:10px white solid; 
@@ -279,7 +279,7 @@ header .header-inner h1 {
       -o-background-size: 150px;
       background-size: 150px;
       width: 150px; } }
-/*SET FONTS*/
+/*SET FONTS*
 span.small { font-size:small;
 }
 h1 { font-size:x-large; font-family:"times new roman"; text-align:center;
@@ -290,7 +290,7 @@ h2 {font-size:large; font-family:"times new roman"; text-align:center;
 /*
 h1 { font-size:200%; color :white; position: relative; left:90px; top: -5px; width:480px; 
 }
-*/
+*
 #rosette { position:relative; left:750px; top:5px; }
 
 /*
@@ -299,7 +299,7 @@ border-bottom:10px white solid; width: 904px; margin-top:0px; margin-left:auto; 
 }
 h2 { font-size:x-large; color:white; margin:0 0 10px 0; 
 }
-*/
+*
 h3 { font-size:large; color:white; margin:0 0 6px 0; 
 }
 #html5style2leftcol { float:left; width: 310px; vertical-align:top; 
@@ -308,23 +308,23 @@ h3 { font-size:large; color:white; margin:0 0 6px 0;
 }
 #html5style2midcol { 	margin-left:315px; margin-right:145px; margin-top:10px; vertical-align:top; 
 }
-/* set side menu block position and width*/
+/* set side menu block position and width*
 nav { margin:-271px 9px 0 8px; width:135px; float:right; 
 }
-/*Set list style within the menu block only. This removes bullets*/
+/*Set list style within the menu block only. This removes bullets*
 nav li { list-style-type:none; 
 }	
-/* set general side button styles */
+/* set general side button styles *
 nav li { margin-bottom: 3px; text-align: center; width:130px;
 }
-/* set general anchor styles and include the zoom fix for IE6*/
+/* set general anchor styles and include the zoom fix for IE6*
 nav li a { display: block; color: white; font-weight: bold; text-decoration: none; zoom:1;
 }
 /* specify mouse state styles */
-/* mouseout (default) */
+/* mouseout (default) *
 nav li a { background:#559a55; color: white; border: 5px outset #559a55; padding-bottom:3px;
 }
-/* mouseover */
+/* mouseover *
 nav li a:hover { background: red;  color:white; border: 5px outset red;
     width: 70%; 
     height: 100%;
@@ -335,7 +335,7 @@ nav li a:hover { background: red;  color:white; border: 5px outset red;
     background-position: bottom;
     margin: 10px auto; 
   }
-/*mouse active*/
+/*mouse active*
 nav li a:active { background:maroon;  border: 5px inset maroon; 
 }
 br.clear { 	clear:both; 
