@@ -73,19 +73,19 @@ footer { clear:both; color:maroon; text-align:center;
 
 
 
-/*equalise all the margins, paddings and borders built into various browsers*/  
+/*equalise all the margins, paddings and borders built into various browsers*  
 div header #content { margin:0; padding:0; border:0; 
 }
 
 body { background:#FFF url(../orris0/images/green-grad.jpg) repeat-x; margin:auto; 
 }
 
-/*add display attributes for the semantic tags*/
+/*add display attributes for the semantic tags*
 header, footer, section, article, nav { display:block; 
 }
 ul { padding-left: 0;
 }
-/* end of style equalisation */
+/* end of style equalisation *
 p { 
 
     color: white;
@@ -259,12 +259,12 @@ li	{ margin: 5px; list-style-type:none;
 html, h1, h2, h3, h4, h5, p, ol, ul, li { padding: 0; margin: 0;
 }
 /* **************************************************************************** */
-/*equalise all the margins, paddings and borders built into various browsers*/ 
+/*equalise all the margins, paddings and borders built into various browsers* 
 div body header #content { margin:0; padding:0; border:0; 
 }
 body { background:#FFF url(images/green-grad.jpg) repeat-x; margin:auto;
 }
-/*add display attributes for the semantic tags*/
+/*add display attributes for the semantic tags*
 header, footer, section, article, nav { display:block; 
 }
 header {width:920px; height:180px; padding:0; border:10px white solid; 
@@ -288,26 +288,26 @@ h3 { font-size:large; color:white; margin:0 0 6px 0;
 }
 #midcol { 	margin-left:315px; margin-right:145px; margin-top:10px; vertical-align:top; 
 }
-/* set side menu block position and width*/
+/* set side menu block position and width*
 nav { margin:10px 30px 0 10px; width:135px; float:right; 
 }
-/*Set list style within the menu block only. This removes bullets*/
+/*Set list style within the menu block only. This removes bullets*
 nav li { list-style-type:none; 
 }	
-/* set general side button styles */
+/* set general side button styles *
 nav li { margin-bottom: 3px; text-align: center; width:130px;
 }
-/* set general anchor styles and include the zoom fix for IE6*/
+/* set general anchor styles and include the zoom fix for IE6*
 nav li a { display: block; color: white; font-weight: bold; text-decoration: none; zoom:1;
 }
 /* specify mouse state styles */
-/* mouseout (default) */
+/* mouseout (default) *
 nav li a { background:#559a55; color: white; border: 5px outset #559a55; padding-bottom:3px;
 }
-/* mouseover */
+/* mouseover *
 nav li a:hover { background: red;  color:white; border: 5px outset red;
 }
-/*mouse active*/
+/*mouse active*
 nav li a:active { background:maroon;  border: 5px inset maroon; 
 }
 br.clear { 	clear:both; 
@@ -516,7 +516,7 @@ border-bottom:10px white solid; width: 904px; margin-top:0px; margin-left:auto; 
 *
 h2 { font-size:x-large; color:white; margin:0 0 10px 0; 
 }
-*/
+*
 h3 { font-size:large; color:white; margin:0 0 6px 0; 
 }
 div#html5style2leftcol { float:left; width: 310px; vertical-align:top; 
@@ -525,28 +525,28 @@ div#html5style2rightcol { width: 135px; float:right; height: 252px; margin-right
 }*
 div#html5style2midcol {         margin-left:315px; margin-right:145px; margin-top:10px; vertical-align:top; 
 }
-/*set nav block position and width*/
+/*set nav block position and width*
 /*nav { margin:10px 30px 0 10px; width:135px; float:right; 
-}*/
+}*
 div#html5style2nav ul { margin:10px 0 10px 0; width:135px; float:right;
 }
-/*Set un-ordered list style within the menu block only. This removes bullets*/
+/*Set un-ordered list style within the menu block only. This removes bullets*
 div#html5style2nav li { list-style-type:none; 
 }        
-/* set general side button styles */
+/* set general side button styles *
 div#html5style2 li.btn { margin-bottom: 3px; text-align: center; width:130px;
 }
-/* set general anchor styles and include the zoom fix for IE6*/
+/* set general anchor styles and include the zoom fix for IE6*
 li.btn a { display: block; color: white; font-weight: bold; text-decoration: none; zoom:1;
 }
 /* specify mouse state styles */
-/* mouseout (default) */
+/* mouseout (default) *
 div#html5style2 li.btn a { background:#559a55; color: white; border: 5px outset #559a55; padding-bottom:3px;
 }
-/* mouseover */
+/* mouseover *
 div#html5style2 li.btn a:hover { background: red;  color:white; border: 5px outset red;
 }
-/*mouse active*/
+/*mouse active*
 div#html5style2 li.btn a:active { background:maroon;  border: 5px inset maroon; 
 }
 br.clear {         clear:both; 
