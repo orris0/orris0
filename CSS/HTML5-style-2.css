@@ -39,7 +39,7 @@ nav#style-nav ul { margin:10px 0 10px 0; width:135px; float:right;
 /*Set un-ordered list style within the menu block only. This removes bullets*/ 
 nav#style-nav, li { list-style-type:none; 
 } 
-/* set general side button styles */ 
+/* set general side button styles * 
 nav#style-nav, li.btn { margin-bottom: 3px; text-align: center; width:130px; 
 }
 
