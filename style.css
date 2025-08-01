@@ -50,6 +50,12 @@ header {
     background-position: bottom;
     margin: 10px auto; 
 }
+
+h1 { font-size:300%; color :white; position: relative; left:90px; top: -5px; width:480px; 
+}
+
+
+
 /*
 header {
   padding-top: 14px;
