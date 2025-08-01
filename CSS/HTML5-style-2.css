@@ -82,26 +82,26 @@ h3 { font-size:large; color:white; margin:0 0 6px 0;
 }
 #midcol img { margin-left:10px;
 }
-/*set nav block position and width*/
+/*set nav block position and width*
 nav { margin:10px 0px 10 0px; width:135px; float:right; 
 }
-/*Set un-ordered list style within the menu block only. This removes bullets*/
+/*Set un-ordered list style within the menu block only. This removes bullets*
 nav li { list-style-type:none; 
 }	
-/* set general side button styles */
+/* set general side button styles *
 nav li.btn { margin-bottom: 3px; text-align: center; width:130px;
 }
-/* set general anchor styles and include the zoom fix for IE6*/
+/* set general anchor styles and include the zoom fix for IE6*
 nav li.btn a { display: block; color: white; font-weight: bold; text-decoration: none; zoom:1;
 }
 /* specify mouse state styles */
-/* mouseout (default) */
+/* mouseout (default) *
 nav li.btn a { background:#559a55; color: white; border: 5px outset #559a55; padding-bottom:3px;
 }
-/* mouseover */
+/* mouseover *
 nav li.btn a:hover { background: red;  color:white; border: 5px outset red;
 }
-/*mouse active*/
+/*mouse active*
 nav li.btn a:active { background:maroon;  border: 5px inset maroon; 
 }
 br.clear { clear:both; 
@@ -113,13 +113,13 @@ footer { clear:both; color:maroon; text-align:center; border: 2px solid black;
 ﻿/*set attributes for consistent appearance in all browsers*/
 html, body, p, ul, li, h1, h2 {        margin:0; padding:0; 
 }
-/*set images to have no borders*/
+/*set images to have no borders*
 img {         border:0; image-size: cover;
 }
-/*add display attributes for the semantic tags*/
+/*add display attributes for the semantic tags*
 header, footer, section, article, nav { display:block; 
 }
-/*SET FONTS*/
+/*SET FONTS*
 span.small { font-size:small;
 }
 #gallerypage h1 { font-size:x-large; font-family:"times new roman"; text-align:center;
