@@ -15,6 +15,10 @@ div header #content { margin:0; padding:0; border:0;
 
 body { background:#FFF url(../orris0/images/green-grad.jpg) repeat-x; margin:auto; 
 }
+
+/*add display attributes for the semantic tags*/
+header, footer, section, article, nav { display:block; 
+}
 ul { padding-left: 0;
 }
 /* end of style equalisation */
@@ -35,12 +39,10 @@ div#html5style2container { border: 10px solid rgba(000,000,000,.05);  background
     text-align: center;
     width: 97%;  
 }
-/*add display attributes for the semantic tags*/
-header, footer, section, article, nav { display:block; 
-}
+
 header {
-  width: 920px; 
-    
+    width: 920px; 
+    height: 180px;
     border: 10px rgba(255,255,255);
     padding: 0px;
     background-image: url("../orris0/bda-20.jpg");
