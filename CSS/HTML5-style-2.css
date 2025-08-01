@@ -54,7 +54,8 @@ body { background:#FFF url(images/green-grad.jpg) repeat-x; margin:auto;
 /*remove the # from #header*/
 header {width:920px; height:180px; padding:0; border:10px white solid; background:  url(../bda-20.jpg); background-position: 35% bottom; margin:10px auto;
 }
-
+div#inline-block-container { margin:auto; text-align:center; width:97%; min-width:800px; max-width:1200px;
+}
 h1 { font-size:200%; color :white; position: relative; left:50px; top: 55px; width:15em; 
 }
 #rosette { position:relative; left:750px; top:5px; }
