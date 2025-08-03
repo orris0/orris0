@@ -130,9 +130,10 @@ h1 { font-size:x-large; font-family:"times new roman"; text-align:center;
 }
 h2 {font-size:large; font-family:"times new roman"; text-align:center;
 }
-/*PAGE LAYOUT*/
+/*PAGE LAYOUT*
 body {margin:auto; width:970px; 
 }
+*/
 header {
 	width:970px;
 }
@@ -160,9 +161,9 @@ footer { clear:both; color:black; text-align:center; width:970px;
 nav#gallerypagenav, li.btn a { display:block; background-color :#66CCFF; color:black; font-weight:bold; padding:4px;
 	margin-left:0; text-align:center; list-style-type:none; text-decoration:none; width:110px;
 }
-nav#gallerypagenav, li.btn a:hover { background-color:blue; color:white;
+nav#gallerypagenav li.btn a:hover { background-color:blue; color:white;
 }
-nav#gallerypagenav, li.btn { width:110px;
+nav#gallerypagenav li.btn { width:110px;
 }
 /*SET THUMBNAIL GALLERY BLOCK*/  
 /* Set general thumbnail styles */
