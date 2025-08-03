@@ -228,9 +228,9 @@ header, footer, section, article, nav { display:block;
 /*SET FONTS*
 span.small { font-size:small;
 }
-#gallerypage h1 { font-size:x-large; font-family:"times new roman"; text-align:center;
+#gallerypageh1 { font-size:x-large; font-family:"times new roman"; text-align:center;
 }
-#gallerypage h2
+#gallerypageh2
 {font-size:large; font-family:"times new roman"; text-align:center;
 }
 /*PAGE LAYOUT*
