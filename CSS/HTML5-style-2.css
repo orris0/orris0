@@ -136,9 +136,9 @@ body {margin:auto; width:970px;
 header {
 	width:970px;
 }
-nav { float:left; margin-left:10px; width:115px;
+nav#gallerypagenav { float:left; margin-left:10px; width:115px;
 }
-nav ul { margin-left:-150px; border:0; width:115px;
+nav#gallerypagenav ul { margin-left:-150px; border:0; width:115px;
 }
 /*set far right column for ads*/
 #rightcol { width:150px; float:right; text-align:center;	
@@ -152,24 +152,24 @@ nav ul { margin-left:-150px; border:0; width:115px;
 #gallery-block { position:relative; left: 30px; top:10px; 
 }
 /*set footer*/
-footer { 	clear:both; color:black; text-align:center; width:970px;
+footer { clear:both; color:black; text-align:center; width:970px;
 }
 .clear { clear:both;
 }
 /*set menu buttons*/
-li.btn a { display:block; background-color :#66CCFF; color:black; font-weight:bold; padding:4px;
+nav#gallerypagenav, li.btn a { display:block; background-color :#66CCFF; color:black; font-weight:bold; padding:4px;
 	margin-left:0; text-align:center; list-style-type:none; text-decoration:none; width:110px;
 }
-li.btn a:hover { background-color:blue; color:white;
+nav#gallerypagenav, li.btn a:hover { background-color:blue; color:white;
 }
-li.btn { width:110px;
+nav#gallerypagenav, li.btn { width:110px;
 }
 /*SET THUMBNAIL GALLERY BLOCK*/  
 /* Set general thumbnail styles */
 #col-1	{ position: absolute; top: 0; left: 0; width:85px;
 } 
 /*place the column on the page*/
-li	{ margin: 5px; list-style-type:none; 
+nav#gallerypagenav li	{ margin: 5px; list-style-type:none; 
 } 
 /*remove bullets from the un-ordered list elements and create the
 MouseOut state (default) - create and position a space for the larger images and hide them*/
@@ -239,7 +239,7 @@ body {margin:auto; width:970px;
 header {
         width:970px;
 }
-*/
+*
 #gallerypagenav { float:left; margin-left:10px; width:129px;
 }
 #gallerypagenav ul { margin-left:0; border:0; width:115px;
