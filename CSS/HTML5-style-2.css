@@ -163,10 +163,11 @@ footer { clear:both; color:black; text-align:center; width:970px;
 }
 .clear { clear:both;
 }
-/*set menu buttons*/
+/*set menu buttons*
 nav#gallerypagenav, li.btn a { display:block; background-color :#66CCFF; color:black; font-weight:bold; padding:4px;
 	margin-left:30px; text-align:center; list-style-type:none; text-decoration:none; width:110px;
 }
+        */
 nav#gallerypagenav li.btn a:hover { background-color:blue; color:white;
 }
 nav#gallerypagenav li.btn { width:110px;
