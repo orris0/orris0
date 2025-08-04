@@ -17,9 +17,11 @@ a { background: orange; color:navy;
 }
 .inline-block a { display:inline-block; width:110px; height:30px; line-height:30px; text-align:center;
 }
+/*
 h1 { font-size:300%; color :white; /* position: relative; left:90px; top: 35px; 
-width:480px; */
+width:480px; 
 } 
+*/
 #rosette { position:relative; left:750px; top:5px; 
 } 
 #content { background-color:transparent; border-left:10px white solid; border-right:10px white solid; 
@@ -59,8 +61,10 @@ header {width:920px; height:180px; padding:0; border:10px white solid; backgroun
 }
 div#inline-block-container { margin:auto; text-align:center; width:97%; min-width:800px; max-width:1200px;
 }
+
 h1 { font-size:200%; color :white; position: relative; left:50px; top: 55px; width:15em; 
 }
+
 #rosette { position:relative; left:750px; top:5px; }
 
 /*
@@ -126,6 +130,7 @@ header, footer, section, article, nav { display:block;
 /*SET FONTS*/
 span.small { font-size:small;
 }
+/*
 h1 { font-size:x-large; font-family:"times new roman"; text-align:center;
 }
 /*
