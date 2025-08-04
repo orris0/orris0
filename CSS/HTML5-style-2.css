@@ -9,7 +9,7 @@ body { background:#FFF url(images/green-grad.jpg) repeat-x; margin:auto;
 header, footer, section, article, nav { display:block; 
 } 
 /* end of style equalisation */
-p { background: transparent;  margin:auto; text-align:center; 
+p { background: transparent;  margin:auto; text-align:center; color: white; 
 }
 div#inline-block-container { margin:auto; text-align:center; width:97%; min-width:800px; max-width:1200px;
 }
