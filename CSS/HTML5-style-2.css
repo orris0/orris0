@@ -1,6 +1,5 @@
-/* Listing 1-7b. The Revised CSS Sheet for Figure 1-7 (html5-style-2.css / HTML5-Ch1-7.html) 
-(The key items are picked out in bold type.) */
-/*equalise for various browsers and change #header to header*/ 
+/* Listing 1-7b. The Revised CSS Sheet for Figure 1-7 (html5-style-2.css) 
+(The key items are picked out in bold type.) equalise for various browsers and change #header to header*/ 
 div body header #content { margin:0; padding:0; border:0; 
 } 
 body { background:#FFF url(images/green-grad.jpg) repeat-x; margin:auto; 
@@ -8,26 +7,24 @@ body { background:#FFF url(images/green-grad.jpg) repeat-x; margin:auto;
 /*add display attributes for the semantic tags*/ 
 header, footer, section, article, nav { display:block; 
 } 
-/* end of style equalisation */
-p { background: transparent;  margin:auto; text-align:center; color: white; 
-}
-div#inline-block-container { margin-top: -10px; text-align:center; width:97%; min-width:800px; max-width:1200px;
-}
-a { background: orange; color:navy;
-}
-.inline-block a { display:inline-block; width:110px; height:30px; line-height:30px; text-align:center;
-}
-/*
-h1 { font-size:300%; color :white; /* position: relative; left:90px; top: 35px; 
+/*remove the # from #header*/ 
+header {width:920px; height:180px; padding:0; border:10px white solid; -
+
+background: url(images/header3.jpg); margin:10px auto; 
+} 
+h1 { font-size:300%; color :white; position: relative; left:90px; top: 55px; 
 width:480px; 
 } 
-*/
 #rosette { position:relative; left:750px; top:5px; 
 } 
-#content { background-color:transparent; border-left:10px white solid; border-right:10px white solid; 
-          border-bottom:10px white solid; width: 904px; margin-top:10px; margin-left:auto; margin-right:auto; padding:8px; font-size:medium; color:maroon; 
-}  
+#content { background-color:transparent; border-left:10px white solid; -
 
+border-right:10px white solid; border-bottom:10px white solid; width: 904px; -
+
+margin-top:10px; margin-left:auto; margin-right:auto; padding:8px; -
+
+font-size:medium; color:maroon; 
+} 
 h2 { font-size:x-large; color:white; margin:0 0 10px 0; 
 } 
 h3 { font-size:large; color:white; margin:0 0 6px 0; 
@@ -36,6 +33,22 @@ h3 { font-size:large; color:white; margin:0 0 6px 0;
 } 
 #rightcol { width: 135px; float:right; height: 252px; margin-right:10px; 
 } 
+#midcol { margin-left:315px; margin-right:145px; margin-top:10px; -
+
+vertical-align:top; 
+} 
+/*set nav block position and width and remove the #menu item*/ 
+nav ul { margin:10px 0 10px 0; width:135px; float:right; 
+} 
+/*Set un-ordered list style within the menu block only. This removes bullets*/ 
+nav li { list-style-type:none; 
+} 
+/* set general side button styles */ 
+li.btn { margin-bottom: 3px; text-align: center; width:130px; 
+}
+
+/* Listing 1-7b. The Revised CSS Sheet for Figure 1-7 (html5-style-2.css / HTML5-Ch1-7.html) */
+
 #midcol { margin-left:315px; margin-right:145px; margin-top:10px; vertical-align:top; 
 } 
 /*set nav block position and width and remove the #menu item*/ 
