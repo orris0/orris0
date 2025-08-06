@@ -11,7 +11,7 @@ header, footer, section, article, nav { display:block;
 /* end of style equalisation */
 p { background: transparent;  margin:auto; text-align:center; color: white; 
 }
-div#inline-block-container { margin-top: 0px; text-align:center; width:97%; min-width:800px; max-width:1200px;
+div#inline-block-container { margin-top: -10px; text-align:center; width:97%; min-width:800px; max-width:1200px;
 }
 a { background: orange; color:navy;
 }
