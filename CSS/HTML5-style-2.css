@@ -10,9 +10,9 @@ header, footer, section, article, nav { display:block;
 /*remove the # from #header*/ 
 header {width:920px; height:180px; padding:0; border:10px white solid; -
 
-background: url(images/header3.jpg); margin:10px auto; 
+background: url(../CSS/images/bda.jpg); margin:10px auto; 
 } 
-h1 { font-size:300%; color :white; position: relative; left:90px; top: 0px; 
+h1 { font-size:200%; color :white; position: relative; left:90px; top: 0px; 
 width:480px; 
 } 
 #rosette { position:relative; left:750px; top:5px; 
@@ -68,6 +68,7 @@ br.clear { clear:both;
 } 
 /*change #footer to footer */ 
 footer { clear:both; color:maroon; text-align:center; 
+
 }
 
 
