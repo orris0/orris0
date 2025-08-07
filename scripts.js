@@ -1,5 +1,10 @@
-l//
+//
 // Scripts
+// Reading css
+$(document).ready(function(){
+  var fontSize = $('#celebs tbody tr:first').css('font-size');
+  alert(fontSize);
+});
 
 //filters
 $(document).ready(function(){
