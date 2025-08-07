@@ -7,7 +7,7 @@ $(document).ready(function(){
   alert($('#celebs tr').length + ' elements!');
 });
 
-// Scripts-2
+// documment ready
 
 $(function(){
   //alert('Welcome to StarTrackr! Now no longer under police investigation!');
