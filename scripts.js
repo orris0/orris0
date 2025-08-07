@@ -1,6 +1,6 @@
 //
 // Scripts
-// Reading css
+// reading_css_properties
 $(document).ready(function(){
   var fontSize = $('#celebs tbody tr:first').css('font-size');
   alert(fontSize);
