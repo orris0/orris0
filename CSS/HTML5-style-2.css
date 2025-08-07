@@ -18,7 +18,7 @@ h1 { font-size:300%; color :white; position: relative; left:90px; top: 0px; widt
 } 
 h2 { font-size: 150%; color:white; margin:0 0 10px 0; 
 } 
-h3 { font-size: 80%; color:white; margin:0 0 6px 0; 
+h3 { font-size: 75%; color:white; margin:0 0 6px 0; 
 } 
 #leftcol { float:left; width: 310px; vertical-align:top; 
 } 
@@ -64,6 +64,7 @@ footer { clear:both; color:maroon; text-align:center;
 tr.zebraHover {
   background-color: #FFFACD;
 }
+
 
 
 
