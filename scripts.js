@@ -1,6 +1,7 @@
 //
 // Scripts
-// 
+
+// client side templating
             function template(row, cart) {
   row.find('.item_name').text(cart.name);
   row.find('.item_qty').text(cart.qty);
