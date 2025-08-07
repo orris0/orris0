@@ -1,14 +1,12 @@
-//
+l//
 // Scripts
 
-// scripts-3
-
+// scripts-selecting
 $(document).ready(function(){
   alert($('#celebs tr').length + ' elements!');
 });
 
 // documment ready
-
 $(function(){
   //alert('Welcome to StarTrackr! Now no longer under police investigation!');
   //alert($('#celebs tbody tr:even').length + ' elements!');
