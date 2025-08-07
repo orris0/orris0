@@ -55,7 +55,14 @@ br.clear { clear:both;
 } 
 /*change #footer to footer */ 
 footer { clear:both; color:maroon; text-align:center; 
+}
+.zebra {
+  background-color: #dddddd;
+  color: #666666;
+}
 
+tr.zebraHover {
+  background-color: #FFFACD;
 }
 
 
