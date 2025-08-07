@@ -1,6 +1,8 @@
 //
 // Scripts
 
+// scripts-3
+
 $(document).ready(function(){
   alert($('#celebs tr').length + ' elements!');
 });
