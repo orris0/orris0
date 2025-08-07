@@ -1,7 +1,7 @@
 l//
 // Scripts
 
-// scripts-selecting
+// narrowing_selection
 $(document).ready(function(){
   alert($('#celebs tr').length + ' elements!');
 });
