@@ -18,7 +18,7 @@ h1 { font-size:200%; color :white; position: relative; left:90px; top: 0px; widt
 } 
 h2 { font-size: 150%; color:white; margin:0 0 10px 0; 
 } 
-h3 { font-size: 90%; color:white; margin:0 0 6px 0; 
+h3 { font-size: 80%; color:white; margin:0 0 6px 0; 
 } 
 #leftcol { float:left; width: 310px; vertical-align:top; 
 } 
@@ -59,6 +59,7 @@ br.clear { clear:both;
 footer { clear:both; color:maroon; text-align:center; 
 
 }
+
 
 
 
