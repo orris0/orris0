@@ -56,7 +56,7 @@ $(document).ready(function() {
     .fadeIn();  
 });
 
-            $(function () {
+           /* $(function () {
                 alert('Welcome to StarTracker! Now no longer under police investigation!');
             });
 
@@ -64,7 +64,7 @@ $(document).ready(function() {
                 alert('Ready to do your bidding!');
             });
 
-            $('p,div,h1,input')
+            $('p,div,h1,input') */
     
 window.addEventListener('DOMContentLoaded', event => {
 
