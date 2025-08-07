@@ -3,7 +3,7 @@ l//
 
 // narrowing_selection
 $(document).ready(function(){
-  alert($('#celebs tr').length + ' elements!');
+  alert($('#celebs tbody tr').length + ' elements!');
 });
 
 // documment ready
