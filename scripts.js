@@ -2,6 +2,9 @@ l//
 // Scripts
 
 //filters
+$(document).ready(function(){
+  alert($('#celebs tbody tr:even').length + ' elements!');
+});
 
 // narrowing_selection
 $(document).ready(function(){
