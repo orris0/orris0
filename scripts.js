@@ -1,5 +1,10 @@
 // Scripts
-// Scripts
+// hiding
+$(document).ready(function() {
+  $('#hideButton').click(function(){
+    $('#disclaimer').hide();
+  });
+});
 
 // adding_classes
 $(document).ready(function(){
