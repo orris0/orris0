@@ -1,4 +1,13 @@
 // Scripts
+//
+
+// this
+$(document).ready(function() {
+  $('#hideButton').click(function(){
+    $(this).hide();
+  });
+});
+
 // hiding
 $(document).ready(function() {
   $('#hideButton').click(function(){
