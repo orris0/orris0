@@ -1,5 +1,5 @@
 // Scripts
-// Scripts
+// zebra_striping
 $(document).ready(function(){
   $('#celebs tbody tr:even').css('background-color','#dddddd');
 });
