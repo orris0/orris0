@@ -1,4 +1,9 @@
 // Scripts
+// 
+$(document).ready(function(){
+  $('#celebs tbody tr:even').css('background-color','#dddddd');
+  $('#celebs tbody tr:even').css('color', '#666666');
+});
 // zebra_striping
 $(document).ready(function(){
   $('#celebs tbody tr:even').css('background-color','#dddddd');
