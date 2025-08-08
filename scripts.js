@@ -1,5 +1,10 @@
-//
 // Scripts
+// Scripts
+$(document).ready(function(){
+  $('#celebs tbody tr:even').css('background-color','#dddddd');
+});
+
+
 // reading_css_properties
 $(document).ready(function(){
   var fontSize = $('#celebs tbody tr:first').css('font-size');
