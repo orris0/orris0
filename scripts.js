@@ -1,4 +1,10 @@
 // Scripts
+// Scripts
+//
+$(document).ready(function(){
+  $('#celebs tbody tr:even').addClass('zebra');
+});
+
 // multiple_properties_3
 $(document).ready(function(){
   $('#celebs tbody tr:even').css({
