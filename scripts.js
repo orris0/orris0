@@ -1,4 +1,14 @@
 // Scripts
+// Scripts
+
+// multiple_properties_2
+$(document).ready(function(){
+  $('#celebs tbody tr:even').css( 
+    {'background-color': '#dddddd', 'color': '#666666'}  
+  );
+});
+
+
 // multiple_properties_1
 $(document).ready(function(){
   $('#celebs tbody tr:even').css('background-color','#dddddd');
