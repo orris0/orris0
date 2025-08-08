@@ -8,7 +8,7 @@ body { background:#FFF url(images/green-grad.jpg) repeat-x; margin:auto;
 header, footer, section, article, nav { display:block; 
 } 
 /*remove the # from #header*/ 
-header {width:920px; height:180px; padding:0; border:10px white solid; background: url(../images/bda.jpg); margin:10px auto; 
+header {width:920px; height:180px; padding:0; border:10px white solid; background: url(../images/bda.jpg) no-repeat top center ; margin:10px auto; 
 } 
 h1 { font-size:300%; color :white; position: relative; left:90px; top: 0px; width:480px; 
 } 
@@ -64,6 +64,7 @@ footer { clear:both; color:maroon; text-align:center;
 tr.zebraHover {
   background-color: #FFFACD;
 }
+
 
 
 
