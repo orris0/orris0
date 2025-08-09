@@ -1,5 +1,7 @@
 // Scripts
 //
+
+// toggle_1
 $(document).ready(function(){
     $('#toggleButton').click(function(){
     if($('#disclaimer').is(':visible')) {
