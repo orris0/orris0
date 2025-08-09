@@ -2,6 +2,7 @@
 (The key items are picked out in bold type.) equalise for various browsers and change #header to header*/ 
 html.ui-mobile {
   height: 99.9%;
+  font-size: 100%;
 }
 div body header #content { margin:0; padding:0; border:0; 
 } 
