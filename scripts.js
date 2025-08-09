@@ -1,6 +1,6 @@
 // Scripts
-//
 
+// insert_after
 $(document).ready(function(){
   $('<input type="button" value="toggle" id="toggleButton">').insertAfter('#disclaimer');
   $('#toggleButton').click(function(){
