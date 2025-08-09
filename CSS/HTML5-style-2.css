@@ -4,6 +4,11 @@ html.ui-mobile {
   height: 99.9%;
   font-size: 100%;
 }
+
+div.wrapper {
+  background: transparent;
+  color: #333;
+}
 div body header #content { margin:0; padding:0; border:0; 
 } 
 body.ui-mobile-viewport.ui-overlay-a {
