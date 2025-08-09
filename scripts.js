@@ -1,6 +1,13 @@
 // Scripts
 //
 
+// toggle_2
+$(document).ready(function(){
+  $('#toggleButton').click(function(){
+    $('#disclaimer').toggle();
+  });
+});
+
 // toggle_1
 $(document).ready(function(){
     $('#toggleButton').click(function(){
