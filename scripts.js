@@ -1,4 +1,8 @@
 // Scripts
+// prepend_append
+$(document).ready(function(){
+  $('#no-script').remove();
+});
 
 // prepend_append
 $(document).ready(function(){
