@@ -21,15 +21,15 @@ header, footer, section, article, nav { display:block;
 /*remove the # from #header*/ 
 header#html5styleheader.data {width:920px; height:180px; padding:0; border:10px white solid; background: url(../images/bda.jpg) no-repeat top center ; margin:10px auto; 
 } 
-h1 { font-size:300%; color :#7e2c2c; position: relative; left:90px; top: 0px; width:480px; 
+h1 { font-size:300%; color :#f1efef; position: relative; left:90px; top: 0px; width:480px; 
 } 
 #rosette { position:relative; left:750px; top:5px; 
 } 
 #html5stylecontent { background-color:transparent; border-left:10px white solid; border-right:10px white solid; border-bottom:10px white solid; width: 904px; margin-top:10px; margin-left:auto; margin-right:auto; padding:8px; font-size:medium; color:maroon; 
 } 
-h2 { font-size: 150%; color:white; margin:0 0 10px 0; 
+h2 { font-size: 150%; color:rgb(241, 4, 4); margin:0 0 10px 0; 
 } 
-h3 { font-size: 75%; color:white; margin:0 0 6px 0; 
+h3 { font-size: 75%; color:rgb(27, 1, 1); margin:0 0 6px 0; 
 } 
 #html5styleleftcol { float:left; width: 310px; vertical-align:top; 
 } 
@@ -48,7 +48,7 @@ nav li { list-style-type:none;
 li.btn { margin-bottom: 3px; text-align: center; width:130px; 
 }
 /* set general anchor styles and include the zoom fix for IE6*/ 
-li.btn a { display: block; color: white; font-weight: bold; font-size: 80%; text-decoration: none; zoom:1; 
+li.btn a { display: block; color: rgb(22, 22, 22); font-weight: bold; font-size: 80%; text-decoration: none; zoom:1; 
 } 
 /* specify mouse state styles */ 
 /* mouseout (default) */ 
