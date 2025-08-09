@@ -1,6 +1,13 @@
 // Scripts
 //
 
+$(document).ready(function(){
+  $('<input type="button" value="toggle" id="toggleButton">').insertAfter('#disclaimer');
+  $('#toggleButton').click(function(){
+    $('#disclaimer').toggle();
+  });
+});
+
 // toggle_text
 $(document).ready(function(){
   $('#toggleButton').click(function(){
