@@ -1,6 +1,7 @@
 // Scripts
 
 // text_vs_html
+/*
 $(document).ready(function(){
   $('p').html('<strong>Warning!</strong> Text has been replaced for your safety.');
   $('h2').text('<strong>Warning!</strong> Title elements can be hazardous to your health.');
@@ -174,8 +175,6 @@ $(function(){
   $('#celebs tr').mouseover(function() {
     $(this).removeClass('zebraHover');
   });
-
-});
 
 // client side templating
             function template(row, cart) {
