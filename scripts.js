@@ -1,6 +1,6 @@
 // Scripts
 
-// insert_before
+// prepend_append
 $(document).ready(function(){
   $('<strong>START!</strong>').prependTo('#disclaimer');
   $('<strong>END!</strong>').appendTo('#disclaimer');
