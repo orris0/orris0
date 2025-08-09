@@ -6,7 +6,7 @@ html.ui-mobile {
 }
 
 div.wrapper {
-  background: transparent;
+  background: transparent !important;
   color: #333;
 }
 div body header #content { margin:0; padding:0; border:0; 
