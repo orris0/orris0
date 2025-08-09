@@ -2,6 +2,12 @@
 
 // insert_before
 $(document).ready(function(){
+  $('<strong>START!</strong>').prependTo('#disclaimer');
+  $('<strong>END!</strong>').appendTo('#disclaimer');
+});
+
+// insert_before
+$(document).ready(function(){
   $('<input type="button" value="toggle" id="toggleButton">').insertBefore('#disclaimer');
   $('#toggleButton').click(function(){
     $('#disclaimer').toggle();
