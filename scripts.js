@@ -1,5 +1,5 @@
 // Scripts
-// removing_elements
+// removing_with_selector
 $(document).ready(function(){
   $('#celebs tr').remove(':contains("Singer")');
 });
