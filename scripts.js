@@ -1,5 +1,8 @@
 // Scripts
 // removing_elements
+$(document).ready(function(){
+  $('#celebs tr').remove(':contains("Singer")');
+});
 
 // removing_elements
 $(document).ready(function(){
