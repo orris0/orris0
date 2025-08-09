@@ -1,5 +1,7 @@
 // Scripts
-// prepend_append
+// removing_elements
+
+// removing_elements
 $(document).ready(function(){
   $('#no-script').remove();
 });
