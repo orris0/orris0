@@ -21,7 +21,7 @@ header, footer, section, article, nav { display:block;
 /*remove the # from #header*/ 
 header#html5styleheader.data {width:920px; height:180px; padding:0; border:10px white solid; background: url(../images/bda.jpg) no-repeat top center ; margin:10px auto; 
 } 
-h1 { font-size:300%; color :white; position: relative; left:90px; top: 0px; width:480px; 
+h1 { font-size:300%; color :#333; position: relative; left:90px; top: 0px; width:480px; 
 } 
 #rosette { position:relative; left:750px; top:5px; 
 } 
