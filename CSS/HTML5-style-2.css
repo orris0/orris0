@@ -19,7 +19,9 @@ body.ui-mobile-viewport.ui-overlay-a {
 header, footer, section, article, nav { display:block; 
 } 
 /*remove the # from #header*/ 
-header#html5styleheader.data {width:920px; height:180px; padding:0; border:10px white solid; background: url(../images/bda.jpg) no-repeat top center ; margin:10px auto; 
+header#html5styleheader.data {width:920px; height:180px; padding:0; border:10px white solid; background: url(../images/bda.jpg);  background-size: cover; /* Or contain, or other options */
+  background-position: center; /* Adjust as needed */
+  background-repeat: no-repeat; margin:10px auto; 
 } 
 h1 { font-size:300%; color :#f1efef; position: relative; left:90px; top: 0px; width:480px; 
 } 
