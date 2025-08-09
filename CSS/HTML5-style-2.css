@@ -25,17 +25,17 @@ h1 { font-size:300%; color :white; position: relative; left:90px; top: 0px; widt
 } 
 #rosette { position:relative; left:750px; top:5px; 
 } 
-#content { background-color:transparent; border-left:10px white solid; border-right:10px white solid; border-bottom:10px white solid; width: 904px; margin-top:10px; margin-left:auto; margin-right:auto; padding:8px; font-size:medium; color:maroon; 
+#html5stylecontent { background-color:transparent; border-left:10px white solid; border-right:10px white solid; border-bottom:10px white solid; width: 904px; margin-top:10px; margin-left:auto; margin-right:auto; padding:8px; font-size:medium; color:maroon; 
 } 
 h2 { font-size: 150%; color:white; margin:0 0 10px 0; 
 } 
 h3 { font-size: 75%; color:white; margin:0 0 6px 0; 
 } 
-#leftcol { float:left; width: 310px; vertical-align:top; 
+#html5styleleftcol { float:left; width: 310px; vertical-align:top; 
 } 
-#rightcol { width: 135px; float:right; height: 252px; margin-right:10px; 
+#html5stylerightcol { width: 135px; float:right; height: 252px; margin-right:10px; 
 } 
-#midcol { margin-left:315px; margin-right:145px; margin-top:10px; 
+#html5stylemidcol { margin-left:315px; margin-right:145px; margin-top:10px; 
 vertical-align:top; 
 } 
 /*set nav block position and width and remove the #menu item*/ 
