@@ -6,13 +6,15 @@ html.ui-mobile {
 }
 div body header #content { margin:0; padding:0; border:0; 
 } 
-body { background:#FFF url(images/green-grad.jpg) repeat-x !important; margin:auto; 
+body.ui-mobile-viewport.ui-overlay-a {
+   background:#FFF url(images/green-grad.jpg) repeat-x !important; margin:auto; 
+   overflow-x: hidden; height: 99.9%;
 } 
 /*add display attributes for the semantic tags*/ 
 header, footer, section, article, nav { display:block; 
 } 
 /*remove the # from #header*/ 
-header {width:920px; height:180px; padding:0; border:10px white solid; background: url(../images/bda.jpg) no-repeat top center ; margin:10px auto; 
+header#html5styleheader.data {width:920px; height:180px; padding:0; border:10px white solid; background: url(../images/bda.jpg) no-repeat top center ; margin:10px auto; 
 } 
 h1 { font-size:300%; color :white; position: relative; left:90px; top: 0px; width:480px; 
 } 
