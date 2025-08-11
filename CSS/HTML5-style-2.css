@@ -34,9 +34,9 @@ h1 { font-size:300%; color :#f1efef; position: relative; left:90px; top: 0px; wi
 } 
 #html5stylecontent { background:#FFF url(images/green-grad.jpg) repeat-x!important; border-left:10px white solid; border-right:10px white solid; border-bottom:10px white solid; width: 904px; margin-top:10px; margin-left:auto; margin-right:auto; padding:8px; font-size:medium; color:maroon; 
 } 
-h2 { font-size: 150%; color:rgb(241, 4, 4); margin:0 0 10px 0; text-align: center; 
+h2 { font-size: x-large; color:rgb(241, 4, 4); margin:0 0 10px 0; text-align: center; 
 } 
-h3 { font-size: 75%; color:rgb(27, 1, 1); margin:0 0 6px 0; text-align: center 
+h3 { font-size: large; color:rgb(27, 1, 1); margin:0 0 6px 0; text-align: center 
 } 
 #html5styleleftcol { float:left; width: 310px; vertical-align:top; 
 } 
@@ -82,6 +82,7 @@ footer { clear:both; color:maroon; text-align:center;
 tr.zebraHover {
   background-color: #FFFACD;
 }
+
 
 
 
