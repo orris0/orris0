@@ -36,7 +36,7 @@ h1 { font-size: xx-large; color :#333; position: relative; left:90px; top: 0px; 
 } 
 h2 { font-size: 100%; color: #333; margin:0 0 10px 0; text-align: center; 
 } 
-h3 { font-size: large; color: #333; margin:0 0 6px 0; text-align: center 
+h3 { font-size:100% ; color: #333; margin:0 0 6px 0; text-align: center 
 } 
 #html5styleleftcol { float:left; width: 310px; vertical-align:top; 
 } 
