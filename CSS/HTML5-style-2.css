@@ -28,7 +28,7 @@ header#html5styleheader.data {width:920px; height:180px; padding:0; border:10px 
   background-position: center; /* Adjust as needed */
   background-repeat: no-repeat; margin:10px auto; 
 } 
-h1 { font-size:300%; color :#f1efef; position: relative; left:90px; top: 0px; width:480px; 
+h1 { font-size:300%; color :#333; position: relative; left:90px; top: 0px; width:480px; 
 } 
 #rosette { position:relative; left:750px; top:5px; 
 } 
@@ -82,6 +82,7 @@ footer { clear:both; color:maroon; text-align:center;
 tr.zebraHover {
   background-color: #FFFACD;
 }
+
 
 
 
