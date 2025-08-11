@@ -12,7 +12,7 @@ div.row {
   display: block;
 }
 div.col-12 {
-  display: block; color #333;
+  display: block; color: #333;
 }
 div body header #content { margin:0; padding:0; border:0; 
 } 
