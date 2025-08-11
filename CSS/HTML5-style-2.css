@@ -6,7 +6,8 @@ html.ui-mobile {
 }
 
 div.wrapper {
-  background: transparent !important;
+ /* background: transparent !important; */
+  background:#FFF url(images/green-grad.jpg) repeat-x!important;
   color: #333;
 }
 div body header #content { margin:0; padding:0; border:0; 
@@ -27,7 +28,7 @@ h1 { font-size:300%; color :#f1efef; position: relative; left:90px; top: 0px; wi
 } 
 #rosette { position:relative; left:750px; top:5px; 
 } 
-#html5stylecontent { background-color:transparent; border-left:10px white solid; border-right:10px white solid; border-bottom:10px white solid; width: 904px; margin-top:10px; margin-left:auto; margin-right:auto; padding:8px; font-size:medium; color:maroon; 
+#html5stylecontent { background:#FFF url(images/green-grad.jpg) repeat-x!important; border-left:10px white solid; border-right:10px white solid; border-bottom:10px white solid; width: 904px; margin-top:10px; margin-left:auto; margin-right:auto; padding:8px; font-size:medium; color:maroon; 
 } 
 h2 { font-size: 150%; color:rgb(241, 4, 4); margin:0 0 10px 0; text-align: center; 
 } 
@@ -77,6 +78,7 @@ footer { clear:both; color:maroon; text-align:center;
 tr.zebraHover {
   background-color: #FFFACD;
 }
+
 
 
 
