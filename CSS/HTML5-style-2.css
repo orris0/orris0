@@ -7,6 +7,9 @@ html {
 div.wrapper {
   color: #333;
 }
+div.row {
+  display: block;
+}
 div body header #content { margin:0; padding:0; border:0; 
 } 
 body.ui-mobile-viewport.ui-overlay-a {
@@ -75,6 +78,7 @@ footer { clear:both; color:maroon; text-align:center;
 tr.zebraHover {
   background-color: #FFFACD;
 }
+
 
 
 
