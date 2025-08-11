@@ -28,15 +28,15 @@ header#html5styleheader.data {width:920px; height:180px; padding:0; border:10px 
   background-position: center; /* Adjust as needed */
   background-repeat: no-repeat; margin:10px auto; 
 } 
-h1 { font-size:300%; color :#333; position: relative; left:90px; top: 0px; width:480px; 
+h1 { font-size: xx-large; color :#333; position: relative; left:90px; top: 0px; width:480px; 
 } 
 #rosette { position:relative; left:750px; top:5px; 
 } 
 #html5stylecontent { background:#FFF url(images/green-grad.jpg) repeat-x!important; border-left:10px white solid; border-right:10px white solid; border-bottom:10px white solid; width: 904px; margin-top:10px; margin-left:auto; margin-right:auto; padding:8px; font-size:medium; color:maroon; 
 } 
-h2 { font-size: x-large; color:rgb(241, 4, 4); margin:0 0 10px 0; text-align: center; 
+h2 { font-size: x-large; color:rgb( #333; margin:0 0 10px 0; text-align: center; 
 } 
-h3 { font-size: large; color:rgb(27, 1, 1); margin:0 0 6px 0; text-align: center 
+h3 { font-size: large; color: #333; margin:0 0 6px 0; text-align: center 
 } 
 #html5styleleftcol { float:left; width: 310px; vertical-align:top; 
 } 
@@ -82,6 +82,7 @@ footer { clear:both; color:maroon; text-align:center;
 tr.zebraHover {
   background-color: #FFFACD;
 }
+
 
 
 
