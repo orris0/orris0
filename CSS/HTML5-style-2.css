@@ -5,8 +5,6 @@ html {
 }
 
 div.wrapper {
- /* background: transparent !important; */
-  background:#FFF url(images/green-grad.jpg) repeat-x!important;
   color: #333;
 }
 div body header #content { margin:0; padding:0; border:0; 
@@ -77,6 +75,7 @@ footer { clear:both; color:maroon; text-align:center;
 tr.zebraHover {
   background-color: #FFFACD;
 }
+
 
 
 
