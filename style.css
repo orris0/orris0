@@ -10,18 +10,18 @@ div.wrapper {
     /* text-align: center; */
 }
 /* **************************************************************************** */
-/*equalise all the margins, paddings and borders built into various browsers*/ 
+/*equalise all the margins, paddings and borders built into various browsers* 
 div body header #content { margin:0; padding:0; border:0; 
 }
 body { background:#FFF url(images/green-grad.jpg) repeat-x; margin:auto;
 }
-/*add display attributes for the semantic tags*/
+/*add display attributes for the semantic tags*
 header, footer, section, article, nav { display:block; 
 }
 header {width:920px; height:180px; padding:0; border:10px white solid; 
   background: url(../bda-20.jpg); margin:10px auto; 
 }
-h1 { font-size:300%; color :white; /* position: relative; left:90px; top: 55px; width:480px; */
+h1 { font-size:300%; color :white; /* position: relative; left:90px; top: 55px; width:480px; *
 }
 #rosette { position:relative; left:750px; top:5px; 
 }
