@@ -55,49 +55,49 @@ li.btn a:hover { background-color:blue; color:white;
 li.btn { width:110px;
 }
 /*SET THUMBNAIL GALLERY BLOCK*/  
-/* Set general thumbnail styles */
+/* Set general thumbnail styles *
 #col-1	{ position: absolute; top: 0; left: 0; width:85px;
 } 
-/*place the column on the page*/
+/*place the column on the page*
 li	{ margin: 5px; list-style-type:none; 
 } 
 /*remove bullets from the un-ordered list elements and create the
-MouseOut state (default) - create and position a space for the larger images and hide them*/
+MouseOut state (default) - create and position a space for the larger images and hide them*
 #col-1 a img.hid { width: 260px; height:390px; position: absolute; top: 10px; left: 330px;
 	visibility: hidden;
 }
-/* MouseOver state (hover)- this reveals larger picture */
+/* MouseOver state (hover)- this reveals larger picture *
 #col-1 a:hover { background: white; }
 #col-1 a:hover img.hid { visibility:visible; }
 
 /*----------------------------------------------------*/
 
-/* set 2nd column of thumbnails 85px further over to right*/
+/* set 2nd column of thumbnails 85px further over to right*
 #col-2	{ position: absolute; top: 0; left: 85px; width:85px; }
 li	{ margin: 5px; list-style-type:none;	
 }
-/* MouseOut state (default) - hide larger picture */
+/* MouseOut state (default) - hide larger picture *
 #col-2 a img.hid { width: 260px; height:390px;
 	position: absolute; top: 10px; left: 245px; margin-left:0;
 	visibility: hidden;
 	}
-/* MouseOver state (hover)- reveal larger picture */
+/* MouseOver state (hover)- reveal larger picture *
 #col-2 a:hover { background: white; }
 #col-2 a:hover img.hid { visibility:visible; }
 
 /*----------------------------------------------------*/
 
-/* set 3nd column of thumbnails 170px further over to right*/
+/* set 3nd column of thumbnails 170px further over to right*
 #col-3	{ position: absolute; top: 0; left: 175px; width:95px; }
 li	{ margin: 5px; list-style-type:none;	
 }
-/* MouseOut state (default) - hide larger picture */
+/* MouseOut state (default) - hide larger picture *
 #col-3 a img.hid {
 	width: 260px; height:390px;
 	position: absolute; top: 10px; left: 155px; margin-left:0;
 	visibility: hidden;
 	}
-/* MouseOver state (hover)- reveal larger picture */
+/* MouseOver state (hover)- reveal larger picture *
 #col-3a:hover { background: white; 
 }
 #col-3 a:hover img.hid { visibility:visible; 
@@ -106,7 +106,7 @@ li	{ margin: 5px; list-style-type:none;
 html, h1, h2, h3, h4, h5, p, ol, ul, li { padding: 0; margin: 0;
 }
 /* **************************************************************************** */
-/*equalise all the margins, paddings and borders built into various browsers*/  
+/*equalise all the margins, paddings and borders built into various browsers* 
 div body header #content { margin:0; padding:0; border:0; 
 }
 body { background:#FFF url(images/green-grad.jpg) repeat-x; margin:auto;
