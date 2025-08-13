@@ -17,6 +17,7 @@ body {margin:auto; width:970px;
 header {
 	width:970px;
 }
+
 div#inlineblockcontainer.data
 .nav { float:left; margin-left:10px; width:129px;
 }
@@ -27,7 +28,7 @@ div#inlineblockcontainer.data
 	}
 	 nav {
 	display: block;
-	background-color: blue
+	background-color: transparent;
 	}
 /*set far right column for ads*/
 #rightcol { width:150px; float:right; text-align:center;	
