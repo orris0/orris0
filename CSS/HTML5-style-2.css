@@ -88,7 +88,9 @@ tr.zebraHover {
   background-color: #FFFACD;
 }
 
-
+/*set gallery block position*/
+div#gallerypage-block { position:relative; left: 30px; top:10px; 
+}
 
 
 
