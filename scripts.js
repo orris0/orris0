@@ -2,8 +2,8 @@
 // Animating CSS Properties 
 $(document).ready(function(){
   $('p').animate({ 
-    padding: '20px',
-    fontSize: '30px'
+    padding: '2px',
+    fontSize: '13px'
   }, 2000);
 });
 
