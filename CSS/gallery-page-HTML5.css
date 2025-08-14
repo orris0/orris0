@@ -116,6 +116,7 @@ html, h1, h2, h3, h4, h5, p, ol, ul, li { padding: 0; margin: 0;
 /*equalise all the margins, paddings and borders built into various browsers*/
 div body header #content { margin:0; padding:0; border:0; 
 }
+
 body { background:#FFF url(images/green-grad.jpg) repeat-x; margin:auto;
 }
 /*add display attributes for the semantic tags*/
