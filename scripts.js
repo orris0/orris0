@@ -1,4 +1,6 @@
 // Scripts
+//
+
 // Animating CSS Properties 
 $(document).ready(function(){
   $('p').animate({ 
@@ -6,8 +8,6 @@ $(document).ready(function(){
     fontSize: '13px'
   }, 2000);
 });
-
-
 
 // text_vs_html
 
