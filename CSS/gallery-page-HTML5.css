@@ -356,7 +356,7 @@ html, h1, h2, h3, h4, h5, p, ol, ul, li { padding: 0; margin: 0;
 }
 ul { padding-left: 0;}
 /* end of style equalisation */
-p { background:rgba(255, 255, 255, .5);  margin-right: 40px; color: navy; text-align:center;
+p { background:rgba(255, 255, 255, .1);  margin-right: 40px; color: navy; text-align:center;
 }
 a { background: orange; color:navy;
 }
