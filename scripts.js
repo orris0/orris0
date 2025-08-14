@@ -205,7 +205,7 @@ $(document).ready(function() {
     .fadeIn();  
 });
 
-           /* $(function () {
+            $(function () {
                 alert('Welcome to StarTracker! Now no longer under police investigation!');
             });
 
