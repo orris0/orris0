@@ -165,7 +165,7 @@ $(function(){
   alert($('#celebs tbody tr:even').length + ' elements!');
  $('#celebs tbody  tr:even').addClass('zebra');
   
-  /*$('<input type="button" value="toggle"  id="toggleButton">').insertBefore('#disclaimer');
+  $('<input type="button" value="toggle"  id="toggleButton">').insertBefore('#disclaimer');
   $('#toggleButton').click(function() {
     $('#disclaimer').slideToggle('slow',function() {
       $('#toggleButton').fadeOut();
@@ -213,7 +213,7 @@ $(document).ready(function() {
                 alert('Ready to do your bidding!');
             });
 
-            $('p,div,h1,input') */
+            $('p,div,h1,input') 
     
 window.addEventListener('DOMContentLoaded', event => {
 
