@@ -113,7 +113,7 @@ li	{ margin: 5px; list-style-type:none;
 html, h1, h2, h3, h4, h5, p, ol, ul, li { padding: 0; margin: 0;
 }
 /* **************************************************************************** */
-/*equalise all the margins, paddings and borders built into various browsers*/
+/*equalise all the margins, paddings and borders built into various browsers*
 div body header #content { margin:0; padding:0; border:0; 
 }
 /*add display attributes for the semantic tags*/
