@@ -12,8 +12,15 @@ h1 { font-size:x-large; font-family:"times new roman"; text-align:center;
 h2 {font-size:large; font-family:"times new roman"; text-align:center;
 }
 /*PAGE LAYOUT*/
+/*equalise all the margins, paddings and borders built into various browsers*/
+div body header #content { margin:0; padding:0; border:0; 
+}
+body { background:#FFF url(images/green-grad.jpg) repeat-x; margin:auto;
+}
+/*
 body {margin:auto; width:970px; 
 }
+*/
 header {
 	width:970px;
 }
