@@ -82,8 +82,10 @@ br.clear { clear:both;
 #midcol img { margin-left:10px; 
 } 
 /*change #footer to footer */ 
-footer { clear:both; color:maroon; text-align:center; 
+footer { clear:both; color:rgba(105, 13, 13,.5); text-align:center; 
 }
+footer { border: 2px solid black }
+.warning { color: maroon }
 .zebra {
   background-color: #dddddd;
   color: #666666;
