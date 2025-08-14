@@ -10,7 +10,7 @@ $(document).ready(function(){
 
 
 // text_vs_html
-/*
+
 $(document).ready(function(){
   $('p').html('<strong>Warning!</strong> Text has been replaced for your safety.');
   $('h2').text('<strong>Warning!</strong> Title elements can be hazardous to your health.');
@@ -173,7 +173,7 @@ $(function(){
   });
   
   $('<strong>START!</strong>').prependTo('#disclaimer');
-  $('<strong>END!</strong>').appendTo('#disclaimer');*/
+  $('<strong>END!</strong>').appendTo('#disclaimer');
   
   $('#no-script').remove();
   
