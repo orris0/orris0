@@ -75,15 +75,15 @@ $(document).ready(function(){
 });
 
 // toggle_1
-$(document).ready(function(){
-    $('#toggleButton').click(function(){
-    if($('#disclaimer').is(':visible')) {
-      $('#disclaimer').hide();
-    } else {
-      $('#disclaimer').show();
-    }
-  });
-});
+// $(document).ready(function(){
+   // $('#toggleButton').click(function(){
+   // if($('#disclaimer').is(':visible')) {
+     // $('#disclaimer').hide();
+   // } else {
+     // $('#disclaimer').show();
+   // }
+ // });
+// });
 
 // revealing
 $(document).ready(function(){
@@ -254,4 +254,4 @@ window.addEventListener('DOMContentLoaded', event => {
      //   elements: '#portfolio a.portfolio-box'
    // });
 
-
+});
