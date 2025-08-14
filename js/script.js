@@ -1,4 +1,15 @@
 //-----window.load start here
+// hover action
+$(document).ready(function(){
+  $('#celebs tbody tr:even').addClass('zebra');
+  $('#celebs tbody tr').hover(function(){
+    $(this).addClass('zebraHover');
+  }, function(){
+    $(this).removeClass('zebraHover');
+  });
+});
+
+// document ready
 $(function(){
   //alert('Welcome to StarTrackr! Now no longer under police investigation!');
   //alert($('#celebs tbody tr:even').length + ' elements!');
