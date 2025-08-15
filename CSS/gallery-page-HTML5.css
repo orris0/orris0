@@ -115,9 +115,7 @@ li	{ margin: 5px; list-style-type:none;
 html, h1, h2, h3, h4, h5, p, ol, ul, li { padding: 0; margin: 0;
 }
 /* **************************************************************************** */
-/*equalise all the margins, paddings and borders built into various browsers*
-div body header #content { margin:0; padding:0; border:0; 
-}
+
 /*add display attributes for the semantic tags*/
 header, footer, section, article, nav { display:block; 
 }
@@ -172,16 +170,6 @@ br.clear { 	clear:both;
 }
 footer { clear:both; color:maroon; text-align:center; 
 }
-/*add display attributes for the semantic tags*
-header, footer, section, article, nav { display:block;
-}
-/*set attributes for consistent appearance in all browsers*/
-
-wrapper#horizontalequal2dwrapper.data { 
-    border:2px solid #f76707;
-    border-radius: 5px;
-}
-
 wrapper#horizonequal2dwrapper.data > div {
     border: 2px solid #ffa94d;
     border-radius: 5px;
@@ -197,9 +185,6 @@ wrapper#horizontalequal2dwrapper.data {
     width: 500px;
     gap: 10px; */
 }
-
-
-
 div#inlineblockcontainer.data {
     margin:auto; 
     text-align:center; 
@@ -213,21 +198,6 @@ section#html5style2section {
 header#html5style2header {
     display: block;
 }
-/*equalise for various browsers and change #header to header*
-div body header #content {
-  margin: 0;
-  padding: 0;
-  border: 0;
-}
-
-/*add display attributes for the semantic tags*
-header,
-footer,
-section,
-article,
-nav {
-  display: block;
-}
 /*remove the # from #header*/
 header#html5style2header {
     width: 920px;
@@ -239,16 +209,6 @@ header#html5style2header {
     background-position: bottom;
     margin: 10px auto;
 }
-/*
-h1 {
-  font-size: 300%;
-  color: rgb(110, 14, 14);
-  position: relative;
-  left: 90px;
-  top: -3px;
-  width: 480px;
-}
-  */
 #rosette {
   position: relative;
   left: 750px;
@@ -267,18 +227,6 @@ div#html5style2content {
   font-size: medium;
   color: maroon;
 }
-/*
-h2 {
-  font-size: x-large;
-  color: white;
-  margin: 0 0 10px 0;
-}
-h3 {
-  font-size: large;
-  color: white;
-  margin: 0 0 6px 0;
-}
-  */
 div#html5style2leftcol {
   float: left;
   width: 310px;
@@ -354,13 +302,6 @@ div#html5style2footer {
   color: maroon;
   text-align: center;
 }
-
-
-
-/* Listing 4-1b. Applying the display:inline-block; Style to the Second Row of Buttons (inline-block.css) - Set styles to equalise the browser rendition*
-html, h1, h2, h3, h4, h5, p, ol, ul, li { padding: 0; margin: 0;
-}
-ul { padding-left: 0;}
 /* end of style equalisation */
 p { background:rgba(255, 255, 255, .1);  margin-right: 40px; color: white; text-align:center;
 }
@@ -369,125 +310,29 @@ a { background: orange; color:navy;
 .inline-block a { display:inline-block; width:110px; height:30px; line-height:30px; text-align:center;
 }
 
-
-
 /*Listing 4-2b. Styling Equal-width Buttons with Rollover Color Change (equal-2d.css) */
 /* Set styles to equalise browser renditions*
 
-*
-#wrapper#equal2dwrapper {position:relative; top:0; left:0;width:950px; margin:auto; text-align:center;
-}
-
-header#equal2dheader { display: flex; justify-content: center;
-    width:970px; height:180px; color:b#6e4242; background-color:#FFCC00; padding-top:10px;
-}
-
-header#equal2dheader {
-    width: 970px;
-    background-image: url("../bda-20.jpg");
-    background-repeat: no-repeat;
-    background-position: bottom left;
-}
-
-h1 { font-size:200%; font-weight:bold; margin-top:20px;
-}
-#equal2dmain-content { width:950px; margin:50px auto 0 auto; background-color:white; color:black; text-align:center; font-weight:bold;
-}
-footer {margin:10px auto 0 auto; width:950px; font-weight:bold; text-align:center; background-color:#FFCC00; color:black; clear:both;
-}
-#equal2dnav ul {position:absolute; top:880px; left:9%; width: 780px; list-style: none; height: 36px;
-}
-#equal2dnav li { float: left; width: 120px; margin:0 5px 0 5px;
-}
-#equal2dnav a { color: #000; font-size: 100%; font-weight:bold; text-decoration: none; text-align:center; border: 1px solid #000; padding: 5px; display: block; background-color: white;
-}
-#equal2dnav a:hover { font-weight: bold; background-color:green; color:white;
-}
-.clear { clear:both;
-}
-
-#equal2dmain-content {width:950px; margin:60px auto 0 auto; background-color:white; color:black; text-align:center; font-weight:bold;
-}
-#equal2dfooter {margin:10px auto 0 auto; width:950px; font-weight:bold; text-align:center; background-color:#FFCC00; color:black; clear:both;
-}
-
-#equal2dnav {position:absolute; top:100px; left:78px; width: 785px; padding: 5px; list-style: none; height: 35px;
-}
-
-#equal2dnav li { display:inline; padding: 5px; padding-top:15px; margin:5px 0 0 2px; height:25px;
-}
-
-#equal2dnav a {height:25px; color: #000; font-size:80%; font-size: 100%; font-weight:bold; text-decoration: none; border: 1px solid #000; padding:5px 5px 0 5px; display: inline-block; background-color: white; zoom: 1;
-}
-
-#equal2dnav a:hover { font-weight: bold; background-color:green; color:white;
-}
-.clear { clear:both;
-}
 
 /* FÁa better result was achieved by using a different outset color, as follows (also see Figure 4-4): */ 
 /*mouseout state (see Figure 4-4)*/ 
 li.hbtn a { background: #0080a0; border: 4px outset #aabaff; }
 
 
-/* Listing 4-7b. The CSS Listing for Changing the Tab for the five Tab Menu Pages (squaretabs.css)
-/* Set styles to equalise browser rendition*
-html, h1, h2, h3, h4, h5, h6, p, ol, ul, li { padding: 0; margin: 0;
-}
-*
-header, footer, section, article, nav { display:block;
-}
-*/
+/* Listing 4-7b. The CSS Listing for Changing the Tab for the five Tab Menu Pages (squaretabs.css) */
+
 #container {width:960px; margin:-10px auto 0 auto;
 }
-/*
-header {margin-top:0; height:156px; width:100%; background-image:url('images/bluepan.jpg'); background-repeat:no-repeat; background-position:center; border-bottom:0;
-}
-h1 {font-family:Arial; font-size:320%; color:white; font-weight:normal; text-align:center; padding-top:35px; margin-bottom:-10px; height: 94px; margin:auto;
-}
-/*set the generic tab style--and move menu upwards so that it overlaps the header*
-nav {position:relative; top:-13px; color: navy; border-bottom: 1px solid black; margin: -25px 0 0 0; padding: 0px; padding-left: 10px; z-index: 1; }
 /* use display:inline to remove IE6 double margin bug*/
 nav li { display: inline; overflow: hidden; list-style-type: none;
 }
 
-    /*
-    clip-path:polygon(20px 0, calc(100% - 20px) 0, 100% 20px, 
-    100% calc(100% - 20px), calc(100% - 20px) 100%,
-    20px 100%, 0 calc(100% - 20px), 0 20px);*
-
-
-
-header {
-    width: 970px;
-    background-image: url("images/panew.jpg");
-    background-repeat: no-repeat;
-    background-position: top left;
-}
-*/
 div#container.data { width:97%; margin:auto; min-width:800px; max-width:1100px; clip-path:polygon(20px 0, calc(100% - 20px) 0, 100% 20px, 
     100% calc(100% - 20px), calc(100% - 20px) 100%,
     20px 100%, 0 calc(100% - 20px), 0 20px);
 }
-/*PAGE LAYOUT*/
-/*Listing 3-3. CSS for new style sheet (gradient-pic.css) *
-body, header { margin:auto; padding:0; border:0;
-}
-/*add display attributes for the semantic tags*
-header, footer, section, article, nav { display:block;
-}
-
-body { margin:auto; background:url(images/green-grad.jpg) repeat-x;
-}
-
 /*mouseout state (see Figure 4-4)*/
 li.hbtn a { background: #0080a0; border: 4px outset #aabaff; }
-/*set the position of the content to move it close up to the menu tabs*
-#content {margin-top:10px; font : 0.9em/1.3em "bitstream vera sans", verdana; position:relative; top:0.7em; text-align: left; background: #cfecf5; padding: 20px; border: 1px solid black; border-top: none; z-index: 2;
-}
-/*set the generic tab style--and move menu upwards so that it overlaps the header*
-div#hnav {position:relative; top:-280em; left: 5px; color: navy; border-bottom: 1px solid black; margin: -25px 0 0 0; padding: 0px; padding-left: 10px; z-index: 1; }
-
 
 /* TABLE ELEMENTS */
 table { border-spacing:2px; border-collapse:separate;
@@ -526,47 +371,6 @@ img {
     border: 0;
 }
 
-/*add display attributes for the semantic tags*
-header,
-footer,
-section,
-article,
-nav {
-    display: block;
-}
-
-/*SET FONTS*
-span.small {
-    font-size: small;
-}
-
-h1 {
-    font-size: 125%;
-    font-family: "times new roman";
-    text-align: center;
-    color: #fff; 
-}
-/*
-h2 {
-    font-size: large;
-    font-family: "times new roman";
-    text-align: center;
-}
-
-/*
-nav {
-    float: left;
-    margin-left: 10px;
-    width: 115px;
-}
-
-nav ul {
-    margin-left: 0;
-    border: 0;
-    width: 115px;
-}
-#banner h1 {text-shadow: 0.1em 0.1em 0.2em blue; font-family:Arial; font-size:125%; color:white; font-weight:normal; text-align:center; padding-top:2em; margin-bottom:-10px; margin:auto; 
-}
 /*set the generic tab style--and move menu upwards so that it overlaps the header*/ 
 div#hnav {
   position:relative; 
@@ -600,7 +404,6 @@ div.picture > img {
 max-width: 100%;
 transform: rotate(-45deg);
 }
-
 
 .parallel {
 position: relative;
@@ -649,20 +452,6 @@ footer {
     clear: both;
 }
 
-/*set menu buttons*
-li.btn a {
-    display: block;
-    background-color: #66CCFF;
-    color: black;
-    font-weight: bold;
-    padding: 4px;
-    margin-left: 0;
-    text-align: center;
-    list-style-type: none;
-    text-decoration: none;
-    width: 110px;
-}
-*/
 li.btn a:hover {
     background-color: blue;
     color: white;
@@ -783,156 +572,12 @@ li {
 
 /* end-css  */
 
-/* Listing 4-12b. Providing the CSS Styling for all the Pages that Use the cssportal.com Menu (turquoise.css) *
-html,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-ol,
-ul,
-li {
-    padding: 0;
-    /* margin: 0; *
-}
-
-header,
-footer,
-section,
-article,
-nav {
-    display: block;
-}
-
-#container {
-    width: 97%;
-    margin: auto;
-    min-width: 800px;
-    max-width: 1100px;
-}
-*
-
-Nav ul {
-    /*
-    padding-top: 230px;*
-    padding: 0;
-    list-style-type: none;
-    margin: auto;
-    display: block;
-    height: 36px;
-    text-transform: uppercase;
-    font-size: 12px;
-    font-weight: bold;
-    background: url('images/bgOFF.gif') repeat-x left top;
-    font-family: Helvetica, Arial, Verdana, sans-serif;
-    border-bottom: 4px solid #336666;
-    border-top: 1px solid #C0E2D4;
-    position: relative;
-    top: 0px;
-    left: 0;
-}
-
-Nav ul li {
-    display: block;
-    float: left;
-    margin: 0;
-    padding: 0;
-}
-
-Nav ul li a {
-    display: block;
-    float: left;
-    color: #874B46;
-    text-decoration: none;
-    padding: 12px 20px 0 20px;
-    height: 24px;
-    background: transparent url("images/bgDIVIDER.gif") no-repeat top right;
-}
-
-Nav ul li a:hover {
-    background: transparent url("images/bgHOVER.gif") no-repeat top right;
-}
-
-Nav ul li a.current, ul#main-menu li a.current:hover {
-    color: #fff;
-    background: transparent url("images/bgON.gif") no-repeat top right;
-}
-
-/*set nav block position and width and remove the #menu item*
-#nav ul { margin:10px 0 10px 0; width:135px; float:right;
-}
-/*Set un-ordered list style within the menu block only. This removes bullets*
-#nav li { list-style-type:none;
-}
-/* set general side button styles *
-#Nav li.btn { margin-bottom: 3px; text-align: center; width:130px;
-} 
-/*
-#main-content {
-    text-align: center;
-    background-color: white;
-    color: black;
-    margin-top: 35px;
-    border-bottom: 4px solid #336666;
-    border-left: 4px solid #336666;
-    border-right: 4px solid #336666;
-    border-top: none;
-}
-/*
-#left-col {
-    float: left;
-    width: 180px;
-}
-
-#right-col {
-    float: right;
-    width: 180px;
-}
-
-#mid-col {
-    margin-left: 185px;
-    margin-right: 185px;
-}
-/*
-h1 {
-    font-family: Arial;
-    font-size: 300%;
-    padding-top: 60px;
-    padding-left: 60px;
-    margin-top: 0;
-    margin-bottom: 0;
-    color: white;
-}
-
-h2 {
-    font-size: 150%;
-    margin-top: 0;
-    margin-bottom: 5px;
-    color: black;
-}
-*/
+/* Listing 4-12b. Providing the CSS Styling for all the Pages that Use the cssportal.com Menu (turquoise.css) */
 br .clear {
     clear: both;
 }
 
 /* Listing 4-7b. The CSS Listing for Changing the Tab for the five Tab Menu Pages (squaretabs.css) */
-/* Set styles to equalise browser rendition*
-html, body, h1, h2, h3, h4, h5, h6, p, ol, ul, li { padding: 0; margin: 0;
-}
-header, footer, section, article, nav { display:block;
-}
-/* body {text-align:center; margin: 20px; background: #bee8ff; font: medium arial; 
-}
-#container {width:960px; margin:-10px auto 0 auto;
-}
-*/
-
-/*
-h1 {font-family:Arial; font-size:320%; color:white; font-weight:normal; text-align:center; padding-top:35px; margin-bottom:-10px; height: 94px; margin:auto;
-}
 
 /* use display:inline to remove IE6 double margin bug*/
 #hnav li { display: inline; overflow: hidden; list-style-type: none;
