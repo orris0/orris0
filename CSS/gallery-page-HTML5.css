@@ -597,7 +597,7 @@ div#hnav a:visited { color: navy;
 div#hnav a.active:hover { background: #cfecf5; color: navy;
 }
 /* **************** one-col************************** */
-﻿/* Set general thumbnail styles */
+/* Set general thumbnail styles */
 #col-1 {
 	position: absolute;
 	top: 0;
