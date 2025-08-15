@@ -7,8 +7,10 @@ header, footer, section, article, nav { display:block;
 /*SET FONTS*/
 span.small { font-size:small;
 }
+/*
 h1 { font-size:x-large; font-family:"times new roman"; text-align:center;
 }
+*/
 h2 {font-size:large; font-family:"times new roman"; text-align:center;
 }
 /*PAGE LAYOUT*/
@@ -122,8 +124,10 @@ header, footer, section, article, nav { display:block;
 header {width:920px; height:180px; padding:0; border:10px white solid; 
   background: url(../bda-20.jpg); margin:10px auto; 
 }
+/*
 h1 { font-size:300%; color :white; position: relative; left:90px; top: 55px; width:480px; 
 }
+*/
 #rosette { position:relative; left:750px; top:5px; }
 
 
@@ -235,6 +239,7 @@ header#html5style2header {
     background-position: bottom;
     margin: 10px auto;
 }
+/*
 h1 {
   font-size: 300%;
   color: rgb(110, 14, 14);
@@ -243,6 +248,7 @@ h1 {
   top: -3px;
   width: 480px;
 }
+  */
 #rosette {
   position: relative;
   left: 750px;
