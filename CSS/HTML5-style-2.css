@@ -34,7 +34,7 @@ body.ui-mobile-viewport.ui-overlay-a {
 header, footer, section, article, nav { display:block; 
 } 
 /*remove the # from #header*/ 
-header#html5styleheader.data {width:920px; height:180px; padding:0; border:10px white solid; background: url(../images/bda.jpg);  background-size: cover; /* Or contain, or other options */
+.header#html5styleheader.data {width:920px; height:180px; padding:0; border:10px white solid; background: url(../images/bda.jpg);  background-size: cover; /* Or contain, or other options */
   background-position: center; /* Adjust as needed */
   background-repeat: no-repeat; margin:10px auto; 
 } 
