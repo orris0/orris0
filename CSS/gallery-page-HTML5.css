@@ -119,7 +119,7 @@ html, h1, h2, h3, h4, h5, p, ol, ul, li { padding: 0; margin: 0;
 /*add display attributes for the semantic tags*/
 header, footer, section, article, nav { display:block; 
 }
-header {width:920px; height:180px; padding:0; border:10px white solid; 
+header#gallerypageheader.data {width:920px; height:180px; padding:0; border:10px white solid; 
   background: url(../bda-20.jpg); margin:10px auto; 
 }
 /*
