@@ -14,12 +14,18 @@
 
     <title>A Basic MT Template #2 </title>
 
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta property="og:title" content="A Basic HTML5 Template" />
-    <meta property="og:type" content="video.movie" />
-    <meta property="og:url" content="https://www.imdb.com/title/tt0117500/" />
-    <meta property="og:image" content="https://ia.media-imdb.com/images/rock.jpg" />
+    <meta charset="utf-8">    
+    <link rel="stylesheet" href="../jQuery-novice-to-ninja/css/base.css" type="text/css" media="screen" charset="utf-8">
+    <script src="../jQuery-novice-to-ninja/lib/jquery-1.7.1.min.js" type="text/javascript" charset="utf-8"></script>
+    <script type="text/javascript" src="scripts.js"></script>
+    <meta charset="UTF-8">
+
+    <script type="text/javascript" src="js/jquery-1.7.js"></script>
+    <script type="text/javascript" src="../orris0/js/script.js"></script>
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="format-detection" content="telephone=no">
+    <meta property="og:title" content="A Basic HTML5 Template">
     <meta name="description" content="A simple HTML5 Template for new projects.">
     <meta name="author" content="Orris A BakerJr">
     <meta name="google-adsense-account" content="ca-pub-9639638377144073">
@@ -31,160 +37,40 @@
     <meta name="theme-color" content="#712cf9">
     <meta name="keywords" content="HTML5, Node.js, Jquery">
     <meta name="author" content="Ian Andolina">
-
-    <!-- Optional Metadata-->
-    <meta property="og:audio" content="https://example.com/sound.mp3" />
-    <meta property="og:audio:secure_url" content="https://secure.example.com/sound.mp3" />
-    <meta property="og:audio:type" content="audio/mpeg" />
-
-    <meta property="og:audio" content="https://example.com/bond/theme.mp3" />
-    <meta property="og:description"
-        content="Sean Connery found fame and fortune as the suave, sophisticated British agent, James Bond." />
-    <meta property="og:determiner" content="the" />
-    <meta property="og:locale" content="en_GB" />
-    <meta property="og:locale:alternate" content="fr_FR" />
-    <meta property="og:locale:alternate" content="es_ES" />
-    <meta property="og:site_name" content="IMDb" />
-
-    <!--og: video example:-->
-
-    <meta property="og:video" content="https://example.com/bond/trailer.swf" />
-    <meta property="og:video" content="https://example.com/movie.swf" />
-    <meta property="og:video:secure_url" content="https://secure.example.com/movie.swf" />
-    <meta property="og:video:type" content="application/x-shockwave-flash" />
-    <meta property="og:video:width" content="400" />
-    <meta property="og:video:height" content="300" />
-
-    <!-- A full image example:-->
-
-    <meta property="og:image" content="https://example.com/ogp.jpg" />
-    <meta property="og:image:secure_url" content="https://secure.example.com/ogp.jpg" />
-    <meta property="og:image:type" content="image/jpeg" />
-    <meta property="og:image:width" content="400" />
-    <meta property="og:image:height" content="300" />
-    <meta property="og:image:alt" content="A shiny red apple with a bite taken out" />
-    <meta property="og:image" content="https://example.com/rock.jpg" />
-    <meta property="og:image:width" content="300" />
-    <meta property="og:image:height" content="300" />
-    <meta property="og:image" content="https://example.com/rock2.jpg" />
-    <meta property="og:image" content="https://example.com/rock3.jpg" />
-    <meta property="og:image:height" content="1000" />
-
-    <!-- Favicon-->
-
-    <!--<link rel="icon" href="images/favicon.ico">-->
-
+    <!-- Optional Metadata -->
+    <!-- <link rel="stylesheet" href="../../orris0/CSS/flexboxgrid.css"> -->
+    <link rel="stylesheet" type="text/css" href="./CSS/HTML5-style-2.css">
+    <link href="./CSS/gallery-page-HTML5.css" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="../../css/base.css" type="text/css" media="screen" charset="utf-8" />
+        <link rel="stylesheet" type="text/css" href="CSS/css/nav.css">
+        <link rel="stylesheet" href="./html5-boilerplate_v9.0.0/css/style.css">
+        <link rel="stylesheet" type="text/css" href="./CSS/css/inline-block.css"> -->
+    <link rel="stylesheet" href="./CSS/nav.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.8.0/normalize.min.css">
+    <link rel="stylesheet" href="../orris0/CSS/css/font-awesome.min.css">
     <link rel="apple-touch-icon" href="./images/apple-touch-icon.png">
-    <!--<link rel="stylesheet" href="css/styles.css?v=1.0">-->
-
+    <!-- <link rel="stylesheet" href="./style.css"> -->
     <link rel="alternate" type="application/pdf" href="MainPage.pdf">
-    <link rel="author" href="mailto:internetearnings@live.com">
-    <link rel="author" type="text/html" href="https://orrisb.github.io">
+    <link rel="author" href="mailto:bakerorris0@gmail.com">
+    <link rel="author" type="text/html" href="https://orris0.github.io/orris0/index.html">
     <!-- Bootstrap Icons-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet">
     <!-- Google fonts-->
-    <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic"
-        rel="stylesheet" type="text/css" />
+        rel="stylesheet" type="text/css">
     <!-- SimpleLightbox plugin CSS-->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.css" rel="stylesheet" />
-    <!-- Core theme CSS (includes Bootstrap)-->
-    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.0/jquery.mobile-1.0.min.css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.css" rel="stylesheet">
 
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9639638377144073"
-        crossorigin="anonymous"></script>
-    <style>
-        header,
-        nav,
-        article,
-        footer {
-            display: block;
-        }
-
-        body {
-            width: 500px;
-            margin: auto;
-            border: 1px solid rgba(0, 0, 0, .1);
-            background: #58a linear-gradient(#FF9966, #58a);
-            border-radius: .2em;
-            box-shadow: 0 .05em .25em rgba(0, 0, 0, .5);
-            color: white;
-            text-shadow: 0 -.05em .05em rgba(0, 0, 0, .5);
-            font-size: 125%;
-            line-height: 1.5;
-            border-width: 10px;
-            border-left-width: 0;
-        }
-
-        h1 {
-            margin-bottom: 10px;
-        }
-
-        article {
-            display: inline;
-        }
-
-        h2 {
-            font-size: 100%;
-            font-weight: bold;
-            background: rgba(0, 0, 0, .5);
-            margin-top: 0;
-            margin-bottom: 0;
-        }
-
-        footer {
-            clear: both;
-            background-color: #FF9966;
-            text-align: center;
-        }
-
-        header {
-            width: 500px;
-            background-color: #FF9966;
-            text-align: center;
-            margin: auto;
-        }
-
-        nav {
-            float: left;
-            width: 25%;
-            background-color: #FF9966;
-            margin-bottom: 10px;
-        }
-
-        article {
-            float: left;
-            width: 33%;
-            background-color: #FF9966;
-            margin: 0 0 0 10px;
-            padding: 6px;
-        }
-
-        footer {
-            clear: both;
-            background-color: #FF9966;
-            text-align: center;
-        }
-
-        h2 {
-            font-size: 50%;
-            font-weight: bold;
-            margin-top: 0;
-            margin-bottom: 0;
-        }
-    </style>
-    <!--[if lte IE 8]>
-<script src="html5.js">
-</script>
-<![endif]-->
 </head>
+
 <body>
     <div class="wrapper">
         <div class="row">
             <div class="col-12">
                 <header class="data" id="gallerypageheader">
-                    <h1>TourOrris's (Rural Retreats)</h1>
-                    <div id="container">
+                    <h1>Practical HTML5 Project's for Fun & Profit</h1>
+                    <div class="data" id="container">
                         <p>&nbsp;</p>
                         <p>Tour Orris (default)</p>
                         <p>
@@ -211,6 +97,17 @@
                 </header>
                 <br class="clear">
                 <div class="col-12"> <!-- close top section - content area starts -->
+                    <div id="hnav">
+                        <ul>
+                            <li><a href="index.html">Home Page</a></li>
+                            <li><a href="./page2.html">Page Two</a></li>
+                            <li><a href="./page3.html">Page Three with a long label</a></li>
+                            <li><a href="./page4.html">Page Four</a></li>
+                            <li><a href="./page5.html">Page Five</a></li>
+                        </ul>
+                    </div>
+                </div><!-- end col-12 -->
+                <!--close top section - content area starts -->
                     <div id="hnav">
                         <ul>
                             <li><a href="index.html">Home Page</a></li>
