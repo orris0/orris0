@@ -134,7 +134,7 @@ border-bottom:10px white solid; width: 904px; margin-top:-10px; margin-left:auto
 }
 h2 { font-size:x-large; color:white; margin:0 0 10px 0; 
 }
-h3 { font-size:large; color:white; margin:0 0 6px 0; 
+h3 { font-size: 110%; color:white; margin:0 0 6px 0; 
 }
 #leftcol { float:left; width: 310px; vertical-align:top; 
 }
