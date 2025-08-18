@@ -1,3 +1,12 @@
+div.wrapper {
+    position: relative; 
+    top: 0em; 
+    left: 0; 
+    width: 61em; 
+    margin: auto;
+    background:#FFF url(images/green-grad.jpg) repeat-x!important;
+    color: #333;
+}
 /*set images to have no borders*/
 img { 	border:0;
 }
