@@ -46,7 +46,7 @@ h1 { font-size: 125%; color : maroon; position: relative; left:90px; top: 0px; w
 } 
 h2 { font-size: 150%; color: #333; margin:0 0 10px 0; text-align: center; 
 } 
-h3 { font-size:75% ; color: #333; margin:0 0 6px 0; text-align: center 
+h3 { font-size:75% ; color: #333; margin:0 0 6px 0; 
 } 
 #html5styleleftcol { float:left; width: 310px; vertical-align:top; 
 } 
