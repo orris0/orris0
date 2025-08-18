@@ -53,7 +53,8 @@ text-shadow: 0.1em 0.1em 0.2em black;
 header {
 	width:970px;
 }
-
+div#container.data {width: 105%; margin:-6% auto 0 auto;
+}
 div#inlineblockcontainer.data
 .nav { float:left; margin-left:10px; width:129px;
 }
