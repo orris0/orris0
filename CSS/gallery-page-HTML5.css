@@ -323,12 +323,12 @@ li.hbtn a { background: #0080a0; border: 4px outset #aabaff; }
 
 /* Listing 4-7b. The CSS Listing for Changing the Tab for the five Tab Menu Pages (squaretabs.css) */
 
-div#container.data {width:960px; margin:-10px auto 0 auto;
+div#container.data {width: 105%; margin:-125px auto 0 auto;
 }
 /* use display:inline to remove IE6 double margin bug*/
 nav li { display: inline; overflow: hidden; list-style-type: none;
 }
-
+/*
 div#container.data { width:97%; margin:auto; min-width:800px; max-width:1100px; clip-path:polygon(20px 0, calc(100% - 20px) 0, 100% 20px, 
     100% calc(100% - 20px), calc(100% - 20px) 100%,
     20px 100%, 0 calc(100% - 20px), 0 20px);
