@@ -428,12 +428,12 @@ div#hnav {
 
 div.picture {
 width: 200px;
-transform: rotate(45deg);
+/* transform: rotate(45deg);*/ 
 overflow: hidden;
 }
 div.picture > img {
 max-width: 100%;
-transform: rotate(-45deg);
+transform: rotate(-45deg); 
 }
 
 .parallel {
