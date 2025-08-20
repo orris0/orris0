@@ -9,8 +9,7 @@ div.wrapper {
     color: #333;
 }
 
-header {width: 920px; height:180px; color:black; background-color:#FFCC00;
-padding-top:10px;
+header {width:920px; height:180px; padding:0; border:10px white solid;background-color: #FFCC00;background:url(images/header3.jpg); margin: 10px auto;
 }
 h1 { font-size:200%; font-weight:bold; margin-top:20px;
 }
