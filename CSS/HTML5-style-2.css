@@ -37,9 +37,7 @@ header, footer, section, article, nav { display:block;
 .header#html5styleheader.data {width:920px; height:180px; padding:0; border:10px white solid; background: url(../images/bda.jpg);  background-size: cover; /* Or contain, or other options */
   background-position: center; /* Adjust as needed */
   background-repeat: no-repeat; margin:10px auto; 
-} 
-h1 { font-size: 125%; color : maroon; position: relative; left:90px; top: 0px; width:480px; 
-} 
+}  
 /* Listing 8-5b. The CSS Style Sheet for Listing 8-5a (css3-text-shadow.css) */
 body {background-color:#99CCFF;
 }
