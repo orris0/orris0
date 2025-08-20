@@ -1,10 +1,11 @@
 div.wrapper {
     position: relative; 
-    top: 4em; 
+    top: 0; 
     left: 0; 
-    width: 61em; 
+    width: 950px; 
     margin: auto;
     background:#FFF url(images/green-grad.jpg) repeat-x!important;
+    background-position: bottom;
     color: #333;
 }
 
