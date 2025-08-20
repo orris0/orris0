@@ -43,7 +43,7 @@ $(function(){
   });
   
   $('<strong>START!</strong>').prependTo('#disclaimer');
-  $('<strong>END!</strong>').appendTo('#disclaimer');*/
+  $('<strong>END!</strong>').appendTo('#disclaimer');
   
   $('#no-script').remove();
   
