@@ -46,7 +46,7 @@ text-shadow: 0.1em 0.1em 0.2em black;
 }
 #rosette { position:relative; left:750px; top:.6em; 
 } 
-#html5stylecontent { background:#81d9f6; border-left:10px white solid; border-right:10px white solid; border-bottom:10px white solid; width: 904px; margin: top -360px; margin-left:auto; margin-right:auto; padding:8px; font-size:medium; color:maroon; 
+#html5stylecontent { background:#81d9f6; border-left:10px white solid; border-right:10px white solid; border-bottom:10px white solid; width: 904px; position: relative; top 1em; margin: top -360px; margin-left:auto; margin-right:auto; padding:8px; font-size:medium; color:maroon; 
 } 
 h2 { font-size: 150%; color: #333; margin:0 0 10px 0; text-align: center; 
 } 
