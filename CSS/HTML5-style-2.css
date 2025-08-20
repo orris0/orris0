@@ -44,7 +44,7 @@ body {background-color:#99CCFF;
 #banner h1 { color: #fff; padding: 50px 0 0 20px; margin: 0; font-size: 300%; 
 text-shadow: 0.1em 0.1em 0.2em black;
 }
-#rosette { position:relative; left:750px; top:.6em; 
+#rosette { position:relative; left:750px; top: -359px; 
 } 
 #html5stylecontent { 
 	background:#81d9f6; 
