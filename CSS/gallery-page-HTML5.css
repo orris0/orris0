@@ -46,7 +46,7 @@ body {background-color:#99CCFF;
 text-shadow: 0.1em 0.1em 0.2em black;
 }
 header {
-	width:970px;
+	width: 74.5%;
 }
 div#container.data {width: 105%; margin:-6% auto 0 auto;
 }
