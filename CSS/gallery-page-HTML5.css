@@ -8,11 +8,11 @@ div.wrapper {
     color: #333;
 }
 
-header {width: 74.5%; height:180px; padding:0; border:10px white solid;background-color: #FFCC00;background:url(images/header3.jpg); margin: 10px auto;
+div#gallerpageheader {width: 74.5%; height:180px; padding:0; border:10px white solid;background-color: #FFCC00;background:url(images/header3.jpg); margin: 10px auto;
 }
-h1 { font-size:200%; font-weight:bold; margin-top:20px;
+h1 { font-size:100%; font-weight:bold; margin-top:20px;
 }
-#main-content {width:950px; margin:50px auto 0 auto; background-color:white;
+div#gallerpagemain-content {width:950px; margin:50px auto 0 auto; background-color:white;
 color:black; text-align:center; font-weight:bold;
 }
 footer {margin:10px auto 0 auto; width:950px; font-weight:bold;
@@ -52,9 +52,9 @@ div#container.data {width: 105%; margin:-6% auto 0 auto;
 div#inlineblockcontainer.data
 .nav { float:left; margin-left:10px; width:129px;
 }
-.nav ul { margin-left:0; border:0; width:115px;
+.nav#gallerpagenav ul { margin-left:0; border:0; width:115px;
 }
-.nav {
+.nav#gallerpagenav {
 	color: red
 	}
 	 nav {
@@ -62,15 +62,15 @@ div#inlineblockcontainer.data
 	background-color: transparent;
 	}
 /*set far right column for ads*/
-#rightcol { width:150px; float:right; text-align:center;	
+div#gallerpagerightcol { width:150px; float:right; text-align:center;	
 }
-#rightcol p.advert {font-size:small; margin-top:190px;
+div#gallerpagerightcol p.advert {font-size:small; margin-top:190px;
 } 
 /*set middle column for main content*/
-#midcol { margin-left:135px; margin-right:155px;
+div#gallerpagemidcol { margin-left:135px; margin-right:155px;
 }
 /*set gallery block position*/
-#gallery-block { position:relative; left: 30px; top:10px; 
+div#gallerpagegallery-block { position:relative; left: 30px; top:10px; 
 }
 /*set footer*/
 footer { 	clear:both; color:black; text-align:center; width:970px;
