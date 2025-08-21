@@ -11,12 +11,12 @@ html {
 
 div.wrapper {
     position: relative; 
-    top: 0; 
+    top: -2.5em; 
     left: 0; 
-    width: 950px; 
+    width: 77em; 
     margin: auto;
     background:#FFF url(images/green-grad.jpg) repeat-x!important;
-    color: #333;
+	color: #333;
 }
 div.row {
   display: block;
