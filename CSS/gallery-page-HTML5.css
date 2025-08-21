@@ -459,7 +459,7 @@ div#rightcol p.advert {font-size:small; margin-top:35px;
 #midcol { margin-left:135px; margin-right:155px;
 }
 /*set gallery block position*/
-#gallery-block { position:relative; left: 30px; top:200px;
+#gallery-block { position:relative; left: 30px; top:10px;
 }
 
 /*set footer*/
