@@ -397,8 +397,8 @@ img {
 /*set the generic tab style--and move menu upwards so that it overlaps the header*/ 
 div#hnav {
   position:relative; 
-  top: -22.5em; 
-  left: 2%;
+  top: -22.1em; 
+  left: 3%;
   color: navy; margin: -25px 0 0 0; padding: 0px; padding-left: 3em; z-index: 1;
 }
 /* use display:inline to remove IE6 double margin bug*/
