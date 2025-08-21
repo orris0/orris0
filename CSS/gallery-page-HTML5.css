@@ -5,11 +5,10 @@ div.wrapper {
     width: 77em; 
     margin: auto;
     background:#FFF url(images/green-grad.jpg) repeat-x!important;
-    background-position: bottom;
     color: #333;
 }
 
-header {width:920px; height:180px; padding:0; border:10px white solid;background-color: #FFCC00;background:url(images/header3.jpg); margin: 10px auto;
+header {width: 74.5%; height:180px; padding:0; border:10px white solid;background-color: #FFCC00;background:url(images/header3.jpg); margin: 10px auto;
 }
 h1 { font-size:200%; font-weight:bold; margin-top:20px;
 }
