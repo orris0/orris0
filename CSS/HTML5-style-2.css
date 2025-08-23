@@ -120,8 +120,9 @@ div body header #content { margin:0; padding:0; border:0;
 } 
 body.ui-mobile-viewport.ui-overlay-a {
    background:#FFF url(images/green-grad.jpg) repeat-x!important; margin: auto; 
-  /* overflow-x: hidden; height: 99.9%; */
+  /* overflow-x: hidden; height: 99.9%; 
 } 
+  */
 /*add display attributes for the semantic tags* 
 header, footer, section, article, nav { display:block; 
 } 
