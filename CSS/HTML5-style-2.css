@@ -3,8 +3,8 @@
 /*set attributes for consistent appearance in all browsers*/
 div.wrapper { 
     position: relative;
-    top: -0.5em;
-    left: 1.4%;
+    top: 0em;
+    left: 0em;
     border: 1px solid rgba(0, 0, 0, .1);
     border-left-width: 0 !important;
     border-width: 10px;
@@ -250,6 +250,7 @@ li {
 #col-3 a:hover img.hid {
 	visibility: visible;
 }
+
 
 
 
