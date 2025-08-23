@@ -1,6 +1,55 @@
+Listing 1-7b. The Revised CSS Sheet for Figure 1-7 (html5-style-2.css)
+(The key items are picked out in bold type.)
+/*equalise for various browsers and change #header to header*/
+div body header #content { margin:0; padding:0; border:0;
+}
+body { background:#FFF url(images/green-grad.jpg) repeat-x; margin:auto;
+}
+/*add display attributes for the semantic tags*/
+header, footer, section, article, nav { display:block;
+}
+/*remove the # from #header*/
+header {width:920px; height:180px; padding:0; border:10px white solid; 
+background: url(images/header3.jpg); margin:10px auto;
+}
+h1 { font-size:300%; color :white; position: relative; left:90px; top: 55px;
+width:480px;
+}
+#rosette { position:relative; left:750px; top:5px;
+}
+#content { background-color:transparent; border-left:10px white solid; 
+border-right:10px white solid; border-bottom:10px white solid; width: 904px; 
+margin-top:10px; margin-left:auto; margin-right:auto; padding:8px; 
+font-size:medium; color:maroon;
+}
+h2 { font-size:x-large; color:white; margin:0 0 10px 0;
+}
+h3 { font-size:large; color:white; margin:0 0 6px 0;
+}
+#leftcol { float:left; width: 310px; vertical-align:top;
+}
+#rightcol { width: 135px; float:right; height: 252px; margin-right:10px;
+}
+#midcol { margin-left:315px; margin-right:145px; margin-top:10px; 
+vertical-align:top;
+}
+/*set nav block position and width and remove the #menu item*/
+nav ul { margin:10px 0 10px 0; width:135px; float:right;
+}
+/*Set un-ordered list style within the menu block only. This removes bullets*/
+nav li { list-style-type:none;
+}
+/* set general side button styles */
+li.btn { margin-bottom: 3px; text-align: center; width:130px;
+}
+
+
+
+/*
+
 @import 'https://fonts.googleapis.com/css?family=Alegreya+Sans';
 
-/*set attributes for consistent appearance in all browsers*/
+/*set attributes for consistent appearance in all browsers*
 div.wrapper { 
     position: relative;
     top: 0em;
@@ -25,7 +74,7 @@ div.wrapper {
 }
 
 /* Listing 1-7b. The Revised CSS Sheet for Figure 1-7 (html5-style-2.css) 
-(The key items are picked out in bold type.) equalise for various browsers and change #header to header*/ 
+(The key items are picked out in bold type.) equalise for various browsers and change #header to header* 
 html {
     font-size: 100%;
     display: block;
@@ -44,7 +93,7 @@ div.wrapper {
     background:#FFF url(images/green-grad.jpg) repeat-x!important;
 	color: #333;
 }
-*/
+*
 div.row {
   display: block;
 }
@@ -57,15 +106,15 @@ body.ui-mobile-viewport.ui-overlay-a {
    background:#FFF url(images/green-grad.jpg) repeat-x!important; margin: auto; 
   /* overflow-x: hidden; height: 99.9%; */
 } 
-/*add display attributes for the semantic tags*/ 
+/*add display attributes for the semantic tags* 
 header, footer, section, article, nav { display:block; 
 } 
-/*remove the # from #header*/ 
-.header#html5styleheader.data {width:920px; height:180px; padding:0; border:10px white solid; background: url(../images/bda.jpg);  background-size: cover; /* Or contain, or other options */
-  background-position: center; /* Adjust as needed */
+/*remove the # from #header*
+.header#html5styleheader.data {width:920px; height:180px; padding:0; border:10px white solid; background: url(../images/bda.jpg);  background-size: cover; /* Or contain, or other options *
+  background-position: center; /* Adjust as needed *
   background-repeat: no-repeat; margin:10px auto; 
 }  
-/* Listing 8-5b. The CSS Style Sheet for Listing 8-5a (css3-text-shadow.css) */
+/* Listing 8-5b. The CSS Style Sheet for Listing 8-5a (css3-text-shadow.css) *
 body {background-color:#99CCFF;
 }
 #banner h1 { color: #fff; padding: 50px 0 0 20px; margin: 0; font-size: 300%; 
@@ -97,33 +146,33 @@ h3 { font-size:75% ; color: #333; margin:0 0 6px 0;
 #html5stylemidcol { margin-left:315px; margin-right:145px; margin-top:10px; 
 vertical-align:top; 
 } 
-/*set nav block position and width and remove the #menu item*/ 
+/*set nav block position and width and remove the #menu item* 
 nav ul { margin: 35px 0 10px 0; width:135px; float:right; 
 } 
-/*Set un-ordered list style within the menu block only. This removes bullets*/ 
+/*Set un-ordered list style within the menu block only. This removes bullets*
 nav li { list-style-type:none; 
 } 
-/* set general side button styles */ 
+/* set general side button styles * 
 li.btn { margin-bottom: 3px; text-align: center; width:130px; 
 }
-/* set general anchor styles and include the zoom fix for IE6*/ 
+/* set general anchor styles and include the zoom fix for IE6*
 li.btn a { display: block; color: rgb(22, 22, 22); font-weight: bold; font-size: 100%; text-decoration: none; zoom:1; 
 } 
 /* specify mouse state styles */ 
-/* mouseout (default) */ 
+/* mouseout (default) *
 li.btn a { background:#559a55; color: white; border: 5px outset #559a55; padding-bottom:3px; 
 } 
-/* mouseover */ 
+/* mouseover *
 li.btn a:hover { background: red; color:white; border: 5px outset red; 
 } 
-/*mouse active*/ 
+/*mouse active* 
 li.btn a:active { background:maroon; border: 5px inset maroon; 
 } 
 br.clear { clear:both; 
 } 
 #midcol img { margin-left:10px; 
 } 
-/*change #footer to footer */ 
+/*change #footer to footer * 
 footer { clear:both; color:rgba(105, 13, 13,.5); text-align:center; 
 }
 footer { border: 2px solid black }
@@ -137,16 +186,16 @@ tr.zebraHover {
   background-color: #FFFACD;
 }
 
-/*set gallery block position*/
+/*set gallery block position*
 div#gallerypage-block { position:relative; left: 30px; top:10px; 
 }
 
-/*set images to have no borders*/
+/*set images to have no borders*
 img {
 	border: none;
 }
 
-/* Set general thumbnail styles */
+/* Set general thumbnail styles *
 #col-1 {
 	position: absolute;
 	top: 0;
@@ -154,14 +203,14 @@ img {
 	width: 85px;
 }
 
-/*place the column on the page*/
+/*place the column on the page*
 li {
 	margin: 5px;
 	list-style-type: none;
 }
 
-/*remove bullets from the list elements*/
-/* MouseOut state (default) - create and position a space for the larger images and hide them*/
+/*remove bullets from the list elements*
+/* MouseOut state (default) - create and position a space for the larger images and hide them*
 #col-1 a img.hid {
 	width: 250px;
 	height: 340px;
@@ -171,7 +220,7 @@ li {
 	visibility: hidden;
 }
 
-/* MouseOver state (hover)- reveal larger picture */
+/* MouseOver state (hover)- reveal larger picture *
 #col-1 a:hover {
 	background: white;
 }
@@ -180,9 +229,9 @@ li {
 	visibility: visible;
 }
 
-/*----------------------------------------------------*/
+/*----------------------------------------------------*
 
-/* set 2nd column of thumbnails 85px further over to right*/
+/* set 2nd column of thumbnails 85px further over to right*
 #col-2 {
 	position: absolute;
 	top: 0;
@@ -195,7 +244,7 @@ li {
 	list-style-type: none;
 }
 
-/* MouseOut state (default) - hide larger picture */
+/* MouseOut state (default) - hide larger picture *
 #col-2 a img.hid {
 	width: 350px;
 	height: 265px;
@@ -206,7 +255,7 @@ li {
 	visibility: hidden;
 }
 
-/* MouseOver state (hover)- reveal larger picture */
+/* MouseOver state (hover)- reveal larger picture *
 #col-2 a:hover {
 	background: white;
 }
@@ -215,10 +264,10 @@ li {
 	visibility: visible;
 }
 
-/*----------------------------------------------------*/
+/*----------------------------------------------------*
 
 
-/* set 3rd column of thumbnails 170px further over to right*/
+/* set 3rd column of thumbnails 170px further over to right*
 #col-3 {
 	position: absolute;
 	top: 0;
@@ -231,7 +280,7 @@ li {
 	list-style-type: none;
 }
 
-/* MouseOut state (default) - hide larger picture */
+/* MouseOut state (default) - hide larger picture *
 #col-3 a img.hid {
 	width: 260px;
 	height: 260px;
@@ -242,7 +291,7 @@ li {
 	visibility: hidden;
 }
 
-/* MouseOver state (hover)- reveal larger picture */
+/* MouseOver state (hover)- reveal larger picture *
 #col-3 a:hover {
 	background: white;
 }
@@ -251,6 +300,7 @@ li {
 	visibility: visible;
 }
 
+*/
 
 
 
