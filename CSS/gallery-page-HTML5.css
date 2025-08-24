@@ -488,14 +488,14 @@ div#container.data { width:97%; margin:auto; min-width:800px; max-width:1100px; 
 /*mouseout state (see Figure 4-4)*
 li.hbtn a { background: #0080a0; border: 4px outset #aabaff; }
 
-/* TABLE ELEMENTS */
+/* TABLE ELEMENTS *
 table { border-spacing:2px; border-collapse:separate;
  margin-top:0; margin-bottom:0; text-indent:0; }
 caption { text-align:center; }
 td { padding:1px; }
 th { font-weight:bold; padding:1px; }
 tbody, thead, tfoot { vertical-align:middle; }
-/* INLINE ELEMENTS */
+/* INLINE ELEMENTS *
 strong { font-weight:bold; }
 cite, em, var, dfn { font-style:italic; }
 code, kbd, samp { font-family:monospace; }
@@ -507,12 +507,12 @@ abbr[title] { border-bottom:dotted 1px; }
 /* LIST ELEMENTS *
 ul { list-style-type:disc; margin:1em 0; margin-left:40px; padding-left:0;}
 ol { list-style-type:decimal; margin:1em 0; margin-left:40px; padding-left:0;}
-/* remove top & bottom margins for nested lists */
+/* remove top & bottom margins for nested lists *
 ul ul, ul ol, ul dl, ol ul, ol ol, ol dl, dl ul, dl ol, dl dl
 { margin-top:0; margin-bottom:0; }
-/* use circle when ul nested 2 deep */
+/* use circle when ul nested 2 deep *
 ol ul, ul ul { list-style-type:circle; }
-/* use square when ul nested 3 deep */
+/* use square when ul nested 3 deep *
 ol ol ul, ol ul ul, ul ol ul, ul ul ul { list-style-type:square; } 
 
 
@@ -616,7 +616,7 @@ li.btn {
 }
 
 /*SET THUMBNAIL GALLERY BLOCK*/
-/* Set general thumbnail styles */
+/* Set general thumbnail styles *
 #col-1 {
     position: absolute;
     top: 0;
@@ -684,7 +684,7 @@ li {
 }
 
 /*----------------------------------------------------*/
-/* set 3rd column of thumbnails 170px further over to right*/
+/* set 3rd column of thumbnails 170px further over to right*
 #col-3 {
     position: absolute;
     top: 0;
