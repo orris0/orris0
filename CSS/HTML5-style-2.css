@@ -127,9 +127,9 @@ body.ui-mobile-viewport.ui-overlay-a {
 /*add display attributes for the semantic tags* 
 header, footer, section, article, nav { display:block; 
 } 
-/*remove the # from #header*
-.header#html5styleheader.data {width:920px; height:180px; padding:0; border:10px white solid; background: url(../images/bda.jpg);  background-size: cover; /* Or contain, or other options *
-  background-position: center; /* Adjust as needed *
+/*remove the # from #header*/
+.header#html5styleheader.data {width:920px; height:180px; padding:0; border:10px white solid; background: url(../images/bda.jpg);  background-size: cover; /* Or contain, or other options */
+  background-position: center; /* Adjust as needed */
   background-repeat: no-repeat; margin:10px auto; 
 }  
 /* Listing 8-5b. The CSS Style Sheet for Listing 8-5a (css3-text-shadow.css) *
