@@ -12,7 +12,7 @@ header, footer, section, article, nav { display:block;
 header#html5styleheader.data {width:920px; height:180px; padding:0; border:10px white solid; background: url(../../orris0/bda-20.jpg); margin:10px auto; background-position: bottom; /* Adjust as needed */
   background-repeat: no-repeat; margin:10px auto;
 }
-h1 { font-size:300%; color :white; position: relative; left:90px; top: 55px; width:5500px;
+h1 { font-size:300%; color :white; position: relative; left:90px; top: 15px; width:5500px;
 }
 #rosette { position:relative; left:750px; top:5px;
 }
@@ -135,7 +135,7 @@ header, footer, section, article, nav { display:block;
 /* Listing 8-5b. The CSS Style Sheet for Listing 8-5a (css3-text-shadow.css) */
 body {background-color:#99CCFF;
 }
-#banner h1 { color: #fff; padding: 50px 0 0 20px; margin: 2em; font-size: 300%; 
+#banner h1 { color: #fff; padding: 50px 0 0 20px; font-size: 300%; 
 text-shadow: 0.1em 0.1em 0.2em black;
 }
 #rosette { position:relative; left:750px; top: -359px; 
