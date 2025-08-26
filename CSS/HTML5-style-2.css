@@ -61,6 +61,9 @@ br.clear { clear:both;
 footer { clear:both; color:maroon; text-align:center;
 }
 
+
+
+
 /* Listing 2-6b. The CSS Style Sheet for Listing 2-6a (gallery-page.css) */
 /*set attributes for consistent appearance in all browsers*/
 html, body, p, ul, li, h1, h2 { margin:0; padding:0;
@@ -84,20 +87,20 @@ body {margin:auto; width:970px;
 }
 header { width:970px;
 }
-nav { float:left; margin-left:10px; width:115px;
+nav#gallerypagenav { float:left; margin-left:10px; width:115px;
 }
-nav ul { margin-left:0; border:0; width:115px;
+nav#gallerypagenav ul { margin-left:0; border:0; width:115px;
 }
 /*set far right column for ads*/
-#rightcol { width:150px; float:right; text-align:center;
+#gallerypagerightcol { width:150px; float:right; text-align:center;
 }
-#rightcol p.advert {font-size:small; margin-top:190px;
+#gallerypagerightcol p.advert {font-size:small; margin-top:190px;
 }
 /*set middle column for main content*/
-#midcol { margin-left:135px; margin-right:155px;
+#gallerypagemidcol { margin-left:135px; margin-right:155px;
 }
 /*set gallery block position*/
-#gallery-block { position:relative; left: 30px; top:10px;
+#gallerypagegallery-block { position:relative; left: 30px; top:10px;
 }
 /*set footer*/
 footer { clear:both; color:black; text-align:center; width:970px;
@@ -360,6 +363,7 @@ li {
 }
 
 */
+
 
 
 
