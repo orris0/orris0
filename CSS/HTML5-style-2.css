@@ -135,7 +135,7 @@ header, footer, section, article, nav { display:block;
 /* Listing 8-5b. The CSS Style Sheet for Listing 8-5a (css3-text-shadow.css) */
 body {background-color:#99CCFF;
 }
-#banner h1 { color: #fff; padding: 50px 0 0 20px; margin: 0; font-size: 300%; 
+#banner h1 { color: #fff; padding: 50px 0 0 20px; margin: 2em; font-size: 300%; 
 text-shadow: 0.1em 0.1em 0.2em black;
 }
 #rosette { position:relative; left:750px; top: -359px; 
