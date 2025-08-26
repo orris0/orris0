@@ -61,7 +61,7 @@ br.clear { clear:both;
 footer { clear:both; color:maroon; text-align:center;
 }
 
-Listing 2-6b. The CSS Style Sheet for Listing 2-6a (gallery-page.css)
+/* Listing 2-6b. The CSS Style Sheet for Listing 2-6a (gallery-page.css) */
 /*set attributes for consistent appearance in all browsers*/
 html, body, p, ul, li, h1, h2 { margin:0; padding:0;
 }
@@ -360,6 +360,7 @@ li {
 }
 
 */
+
 
 
 
