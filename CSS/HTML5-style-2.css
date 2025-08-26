@@ -20,7 +20,7 @@ h1 { font-size:300%; color :white; position: relative; left:90px; top: 55px; wid
 }
 h2 { font-size:x-large; color:white; margin:0 0 10px 0;
 }
-h3 { font-size:large; color:white; margin:0 0 6px 0; padding: auto;
+h3 { font-size:large; color:white; margin:0 0 6px 0; padding: ;
 }
 #leftcol { float:left; width: 310px; vertical-align:top;
 }
@@ -155,7 +155,7 @@ text-shadow: 0.1em 0.1em 0.2em black;
 } 
 h2 { font-size: 150%; color: #333; margin:0 0 10px 0; text-align: center; 
 } 
-h3 { font-size: 100% ; color: #333; margin:0 0 6px 0; 
+h3 { font-size: 120% ; color: #333; margin:0 0 6px 0; 
 } 
 #html5styleleftcol { float:left; width: 310px; vertical-align:top; 
 } 
