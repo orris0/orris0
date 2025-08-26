@@ -20,7 +20,7 @@ h1 { font-size:300%; color :white; position: relative; left:90px; top: 55px; wid
 }
 h2 { font-size:x-large; color:white; margin:0 0 10px 0;
 }
-h3 { font-size:large; color:white; margin:0 0 6px 0;
+h3 { font-size:large; color:white; margin:0 0 6px 0; padding: auto;
 }
 #leftcol { float:left; width: 310px; vertical-align:top;
 }
