@@ -3,6 +3,7 @@
 /*set attributes for consistent appearance in all browsers*/
 html, body, p, ul, li, h1, h2 { margin:0; padding:0;
 }
+#kite { width: 960px;}
 /*set images to have no borders*/
 img {
 border:0;
