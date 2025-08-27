@@ -93,8 +93,6 @@ li { margin: 5px; list-style-type:none;
 /* Listing 2-6c. Conditional CSS for Listing 2-6a to Support Browser IE 7 (gallery-ie7.css)
 set the gallery block 10px further to the right
 */
-#gallerypagegallery-block { position:absolute; left: 165px; top:50px;
-}
 
 
 
