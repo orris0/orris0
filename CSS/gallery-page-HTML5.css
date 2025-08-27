@@ -35,7 +35,7 @@ nav#gallerypagenav ul { margin-left:0; border:0; width:115px;
 #gallerypagemidcol { margin-left:135px; margin-right:155px;
 }
 /*set gallery block position*/
-#gallerypagegallery-block { position:relative; left: 430px; top:10px;
+#gallerypagegallery-block { position:relative; left: 30px; top:10px;
 }
 /*set footer*/
 footer { clear:both; color:black; text-align:center; width:970px;
