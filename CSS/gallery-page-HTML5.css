@@ -33,9 +33,9 @@ nav#gallerypagenav { float:left; margin-left:10px; width:115px;
 nav#gallerypagenav ul { margin-left:0; border:0; width:115px;
 }
 /*set far right column for ads*/
-#gallerypagerightcol { width: 12em; float:right; text-align:center;
+div#gallerypagerightcol { width: 12em; float:right; text-align:center;
 }
-#gallerypagerightcol p.advert {font-size:small; margin-top:190px;
+div#gallerypagerightcol p.advert {font-size:small; margin-top:190px;
 }
 /*set middle column for main content*/
 div#gallerypagemidcol.data { margin-left:135px; margin-right:155px;
