@@ -3,7 +3,12 @@
 /*equalise for various browsers and change #header to header*/
 div body header #content { margin:0; padding:0; border:0;
 }
-#kite #paper  { width: 960px;}
+img#kite { width: 960px;}
+img#paper { width: 960px;}
+img#take-off { width: 960px;}
+img#orange-globe { width: 960px;}
+img#waves { width: 960px;}
+img#plane { width: 960px;}
 body { background:#FFF url(images/green-grad.jpg) repeat-x; margin:auto;
 }
 /*add display attributes for the semantic tags*/
