@@ -347,7 +347,7 @@ section#html5style2section {
 header#html5style2header {
     display: block;
 }
-/*remove the # from #header*
+/*remove the # from #header*/
 header#html5style2header {
     width: 920px;
     height: 180px;
@@ -363,6 +363,7 @@ header#html5style2header {
   left: 750px;
   top: 5px;
 }
+/*
 div#html5style2content {
   background-color: transparent;
   border-left: 10px white solid;
