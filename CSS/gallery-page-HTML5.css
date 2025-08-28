@@ -61,6 +61,7 @@ padding-bottom:3px;
 /* mouseover */
 li.btn a:hover { background: red; color:white; border: 5px outset red;
 }
+
 /*mouse active*/
 li.btn a:active { background:maroon; border: 5px inset maroon;
 }
