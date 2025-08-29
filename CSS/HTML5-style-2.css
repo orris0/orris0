@@ -1,4 +1,4 @@
-/* Listing 1-7b. The Revised CSS Sheet for Figure 1-7 (html5-style-2.css)8
+/* Listing 1-7b. The Revised CSS Sheet for Figure 1-7 (html5-style-2.css)9
 /* (The key items are picked out in bold type.) */
 /*equalise for various browsers and change #header to header*/
 div body header #content { margin:0; padding:0; border:0;
@@ -8,7 +8,7 @@ img#paper { width: 960px;}
 img#take-off { width: 960px;}
 img#orange-globe { width: 960px;}
 img#waves { width: 960px;}
-img#plane { width: 928px;}
+img#plane { width: 929px;}
 body { background:#FFF url(images/green-grad.jpg) repeat-x; margin:auto;
 }
 /*add display attributes for the semantic tags*/
@@ -369,6 +369,7 @@ li {
 }
 
 */
+
 
 
 
