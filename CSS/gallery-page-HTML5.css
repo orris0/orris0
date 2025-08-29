@@ -23,7 +23,7 @@ header, footer, section, article, nav { display:block;
 header#html5styleheader.data {width:920px; height:180px; padding:0; border:10px white solid; background: url(../../orris0/bda-20.jpg); margin:10px auto; background-position: bottom; /* Adjust as needed */
   background-repeat: no-repeat; margin:10px auto;
 }
-h1 { font-size:300%; color :white; position: relative; left:90px; top: 15px; width:5500px;
+h1 { font-size:300%; color :white; /* position: relative; left:90px; top: 15px; width:5500px; */
 }
 div#rosette { position:relative; left:750px; top:5px;
 }
