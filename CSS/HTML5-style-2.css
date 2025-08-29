@@ -201,7 +201,7 @@ text-shadow: 0.1em 0.1em 0.2em black;
 	margin-left:auto; 
 	margin-right:auto; 
 	padding:8px; 
-	font-size: 100%; color:maroon; 
+	font-size: large; color:maroon; 
 } 
 h2 { font-size: 150%; color: #333; margin:0 0 10px 0; text-align: center; 
 } 
