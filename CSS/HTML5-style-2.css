@@ -93,7 +93,7 @@ body {margin:auto; width:970px;
 }
 header { width:970px;
 }
-nav#gallerypagenav { margin-left:10px; width:115px;
+nav#gallerypagenav.data { margin-left:10px; width:115px;
 }
 nav#gallerypagenav ul { margin-left:0; border:0; width:115px;
 }
