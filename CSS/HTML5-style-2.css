@@ -74,7 +74,7 @@ footer { clear:both; color:maroon; text-align:center;
 
 /* Listing 1-7b. The Revised CSS Sheet for Figure 1-7 (html5-style-2.css)9
 /* (The key items are picked out in bold type.) */
-/*equalise for various browsers and change #header to header*/
+/*equalise for various browsers and change #header to header*
 div body header #content { margin:0; padding:0; border:0;
 }
 img#kite { width: 960px;}
@@ -85,14 +85,14 @@ img#waves { width: 960px;}
 img#plane { width: 930px;}
 body { background:#FFF url(images/green-grad.jpg) repeat-x; margin:auto;
 }
-/*add display attributes for the semantic tags*/
+/*add display attributes for the semantic tags*
 header, footer, section, article, nav { display:block;
 }
-/*remove the # from #header*/
-header#html5style2header.data {width:920px; height:180px; padding:0; border:10px white solid; background: url(../../orris0/bda-20.jpg); margin:10px auto; background-position: bottom; /* Adjust as needed */
+/*remove the # from #header*
+header#html5style2header.data {width:920px; height:180px; padding:0; border:10px white solid; background: url(../../orris0/bda-20.jpg); margin:10px auto; background-position: bottom; /* Adjust as needed *
   background-repeat: no-repeat; margin:10px auto;
 }
-h1 { font-size:300%; color :white; /* position: relative; left:90px; top: 15px; width:5500px; */
+h1 { font-size:300%; color :white; /* position: relative; left:90px; top: 15px; width:5500px; *
 }
 #rosette { position:relative; left:750px; top:5px;
 }
@@ -109,42 +109,42 @@ div#html5style2rightcol { width: 135px; float:right; height: 252px; margin-right
 #html5style2midcol { margin-left:315px; margin-right:145px; margin-top:10px; 
 vertical-align:top;
 }
-/*set nav block position and width and remove the #menu item*/
+/*set nav block position and width and remove the #menu item*
 nav#html5style2nav ul { margin:10px 0 10px 0; width:135px; float:right;
 }
-/*Set un-ordered list style within the menu block only. This removes bullets*/
+/*Set un-ordered list style within the menu block only. This removes bullets*
 nav#html5style2nav li { list-style-type:none;
 }
-/* set general side button styles */
+/* set general side button styles *
 li.btn { margin-bottom: 3px; text-align: center; width:130px;
 }
-/* set general anchor styles and include the zoom fix for IE6*/
+/* set general anchor styles and include the zoom fix for IE6*
 li.btn a { display: block; color: white; font-weight: bold; 
 text-decoration: none; zoom:1;
 }
 /* specify mouse state styles */
-/* mouseout (default) */
+/* mouseout (default) *
 li.btn a { background:#559a55; color: white; border: 5px outset #559a55; 
 padding-bottom:3px;
 }
-/* mouseover */
+/* mouseover *
 li.btn a:hover { background: red; color:white; border: 5px outset red;
 }
-/*mouse active*/
+/*mouse active*
 li.btn a:active { background:maroon; border: 5px inset maroon;
 }
 br.clear { clear:both;
 }
 div#html5stylemidcol img { margin-left:10px;
 }
-/*change #footer to footer */
+/*change #footer to footer *
 footer { clear:both; color:maroon; text-align:center;
 }
 
 /*add display attributes for the semantic tags*/
 header, footer, section, article, nav { display:block;
 }
-/*SET FONTS*/
+/*SET FONTS*
 span.small { font-size:small;
 }
 /*
@@ -152,7 +152,7 @@ h1 { font-size:x-large; font-family:"times new roman"; text-align:center;
 }
 h2 {font-size:large; font-family:"times new roman"; text-align:center;
 }
-/*PAGE LAYOUT*/
+/*PAGE LAYOUT*
 body {margin:auto; width:970px;
 }
 header { width:970px;
@@ -161,23 +161,23 @@ nav#gallerypagenav.data { float:left; margin-left:10px; width:115px;
 }
 nav#gallerypagenav.data ul { margin-left:0; border:0; width:115px;
 }
-/*set far right column for ads*/
+/*set far right column for ads*
 div#gallerypagerightcol { width: 12em; float:right; text-align:center;
 }
 div#gallerypagerightcol p.advert {font-size:small; margin-top:190px;
 }
-/*set middle column for main content*/
+/*set middle column for main content*
 div#gallerypagemidcol.data { margin-left:135px; margin-right:155px;
 }
 /*set gallery block position*
 div#gallerypagegallery-block.data { position:relative; left: 6em; top: 10px;
 }
-/*set footer*/
+/*set footer*
 footer { clear:both; color:black; text-align:center; width:970px;
 }
 .clear { clear:both;
 }
-/*set menu buttons*/
+/*set menu buttons*
 li.btn a { display:block; background-color :#66CCFF; color:black; font-weight:bold; padding:4px; margin-left:0; text-align:center; list-style-type:none; text-decoration:none; width:110px;
 }
 li.btn a:hover { background-color:blue; color:white;
@@ -185,42 +185,42 @@ li.btn a:hover { background-color:blue; color:white;
 li.btn { width:110px;
 }
 /*SET THUMBNAIL GALLERY BLOCK*/
-/* Set general thumbnail styles */
+/* Set general thumbnail styles *
 #col-1 { position: absolute; top: 0; left: 0; width:85px;
 }
-/*place the first column on the page*/
+/*place the first column on the page*
 li { margin: 5px; list-style-type:none;
 }
 /*remove bullets from the un-ordered list elements and create the 
 MouseOut state (default) - create and position a space for the larger images and 
-hide them*/
+hide them*
 #col-1 a img.hid { width: 260px; height:390px; position: absolute; top: 10px; left: 330px; visibility: hidden;
 }
-/* MouseOver state (hover)- this reveals larger picture */
+/* MouseOver state (hover)- this reveals larger picture *
 #col-1 a:hover { background: white; }
 #col-1 a:hover img.hid { visibility:visible;
 }
 /*----------------------------------------------------*/
-/* set 2nd column of thumbnails 85px further over to right*/
+/* set 2nd column of thumbnails 85px further over to right*
 #col-2 { position: absolute; top: 0; left: 85px; width:85px;
 }
 li { margin: 5px; list-style-type:none;
 }
-/* MouseOut state (default) - hide larger picture */
+/* MouseOut state (default) - hide larger picture *
 #col-2 a img.hid { width: 260px; height:390px; position: absolute; top: 10px; left: 245px; margin-left:0;visibility: hidden;
 }
-/* MouseOver state (hover)- reveal larger picture */
+/* MouseOver state (hover)- reveal larger picture *
 #col-2 a:hover { background: white; }
 #col-2 a:hover img.hid { visibility:visible; }
 /*----------------------------------------------------*/
-/* set 3rd column of thumbnails 170px further over to right*/
+/* set 3rd column of thumbnails 170px further over to right*
 #col-3 { position: absolute; top: 0; left: 175px; width:95px; }
 li { margin: 5px; list-style-type:none;
 }
-/* MouseOut state (default) - hide larger picture */
+/* MouseOut state (default) - hide larger picture *
 #col-3 a img.hid { width: 260px; height:390px; position: absolute; top: 10px; left: 155px; margin-left:0; visibility: hidden;
 }
-/* MouseOver state (hover)- reveal larger picture */
+/* MouseOver state (hover)- reveal larger picture *
 #col-3a:hover { background: white;
 }
 #col-3 a:hover img.hid { visibility:visible;
@@ -623,6 +623,7 @@ li {
 }
 
 */
+
 
 
 
