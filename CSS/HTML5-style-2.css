@@ -15,31 +15,31 @@ body { background:#FFF url(images/green-grad.jpg) repeat-x; margin:auto;
 header, footer, section, article, nav { display:block;
 }
 /*remove the # from #header*/
-header#html5styleheader.data {width:920px; height:180px; padding:0; border:10px white solid; background: url(../../orris0/bda-20.jpg); margin:10px auto; background-position: bottom; /* Adjust as needed */
+header#html5style2header.data {width:920px; height:180px; padding:0; border:10px white solid; background: url(../../orris0/bda-20.jpg); margin:10px auto; background-position: bottom; /* Adjust as needed */
   background-repeat: no-repeat; margin:10px auto;
 }
 h1 { font-size:300%; color :white; /* position: relative; left:90px; top: 15px; width:5500px; */
 }
 #rosette { position:relative; left:750px; top:5px;
 }
-#content { background-color:transparent; border-left:10px white solid; border-right:10px white solid; border-bottom:10px white solid; width: 904px; margin-top: -30px; margin-left:auto; margin-right:auto; padding:8px; font-size:medium; color:maroon;
+#html5style2content { background-color:transparent; border-left:10px white solid; border-right:10px white solid; border-bottom:10px white solid; width: 904px; margin-top: -30px; margin-left:auto; margin-right:auto; padding:8px; font-size:medium; color:maroon;
 }
 h2 { font-size:x-large; color:white; margin:0 0 10px 0;
 }
 h3 { font-size:large; color:white; margin:0 0 6px 0; padding: 2%;
 }
-#leftcol { float:left; width: 310px; vertical-align:top;
+#html5style2leftcol { float:left; width: 310px; vertical-align:top;
 }
-#rightcol { width: 135px; float:right; height: 252px; margin-right:10px;
+#html5style2rightcol { width: 135px; float:right; height: 252px; margin-right:10px;
 }
-#midcol { margin-left:315px; margin-right:145px; margin-top:10px; 
+#html5style2midcol { margin-left:315px; margin-right:145px; margin-top:10px; 
 vertical-align:top;
 }
 /*set nav block position and width and remove the #menu item*/
 nav ul { margin:10px 0 10px 0; width:135px; float:right;
 }
 /*Set un-ordered list style within the menu block only. This removes bullets*/
-nav li { list-style-type:none;
+nav#html5style2nav li { list-style-type:none;
 }
 /* set general side button styles */
 li.btn { margin-bottom: 3px; text-align: center; width:130px;
@@ -549,6 +549,7 @@ li {
 }
 
 */
+
 
 
 
