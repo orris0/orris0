@@ -95,7 +95,7 @@ div#gallerypagerightcol p.advert {font-size:small; margin-top:190px;
 /*set middle column for main content*/
 div#gallerypagemidcol.data { margin-left:135px; margin-right:155px;
 }
-/*set gallery block position*/
+/*set gallery block position*
 div#gallerypagegallery-block.data { position:relative; left: 6em; top: 10px;
 }
 /*set footer*/
@@ -197,7 +197,7 @@ div#gallerypagerightcol p.advert {font-size:small; margin-top:190px;
 /*set middle column for main content*/
 div#gallerypagemidcol { margin-left:135px; margin-right:155px;
 }
-/*set gallery block position*/
+/*set gallery block position*
 div#gallerypagegallery-block { position:relative; left: 8em; top: -10px;
 }
 
@@ -239,7 +239,7 @@ div#gallerypagerightcol p.advert {font-size:small; margin-top:190px;
 /*set middle column for main content*/
 div#gallerypagemidcol.data { margin-left:135px; margin-right:155px;
 }
-/*set gallery block position*/
+/*set gallery block position*
 div#gallerypagegallery-block { position:relative; left: 8em; top: -170px;
 }
 /*set footer*/
@@ -549,6 +549,7 @@ li {
 }
 
 */
+
 
 
 
