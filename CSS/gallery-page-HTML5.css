@@ -86,11 +86,11 @@ h2 {font-size:large; font-family:"times new roman"; text-align:center;
 /*PAGE LAYOUT*/
 body {margin:auto; width:970px;
 }
-header { width:970px;
+header#gallerypageheader.data { width:970px;
 }
 nav#gallerypagenav.data { float:left; margin-left:10px; width:115px;
 }
-nav#gallerypagenav.data ul { margin-left:0; border:0; width:115px;
+header#gallerypageheader.data ul { margin-left:0; border:0; width:115px;
 }
 /*set far right column for ads*/
 div#gallerypagerightcol { width: 12em; float:right; text-align:center;
