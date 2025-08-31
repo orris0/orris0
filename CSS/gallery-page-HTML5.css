@@ -101,7 +101,7 @@ div#gallerypagerightcol p.advert {font-size:small; margin-top:190px;
 div#gallerypagemidcol.data { margin-left:135px; margin-right:155px;
 }
 /*set gallery block position*/
-div#gallerypagegallery-block.data { position:relative; left: 8em; top: 10px;
+div#gallerypagegallery-block.data { position:relative; left: 6em; top: 10px;
 }
 /*set footer*/
 footer { clear:both; color:black; text-align:center; width:970px;
