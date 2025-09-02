@@ -71,7 +71,7 @@ footer { clear:both; color:maroon; text-align:center;
 /*equalise for various browsers and change #header to header*/
 div body header #content { margin:0; padding:0; border:0;
 }
-img#kite { image-size: 1265px;}
+img#kite { width: 1265px;}
 img#paper { image-size: 960px;}
 img#take-off { image-size: cover;}
 img#orange-globe { image-size: cover;}
