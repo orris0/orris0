@@ -70,11 +70,11 @@ footer { clear:both; color:maroon; text-align:center;
 div body header #content { margin:0; padding:0; border:0;
 }
 img#kite { image-size: cover;}
-img#paper { image-size: cover;}
+img#paper { image-size: 960px;}
 img#take-off { image-size: cover;}
 img#orange-globe { image-size: cover;}
 img#waves { image-size: cover;}
-img#plane { image-size: cover;}
+img#plane { image-size: 960px;}
 body { background:#FFF url(images/green-grad.jpg) repeat-x; margin:auto;
 }
 /*add display attributes for the semantic tags*
@@ -615,6 +615,7 @@ li {
 }
 
 */
+
 
 
 
