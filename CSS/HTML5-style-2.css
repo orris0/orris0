@@ -21,7 +21,7 @@ div#html5style2content { background-color:transparent; border-left:10px white so
 }
 h2 { font-size: 125%; color:white; margin:0 0 10px 0;
 }
-h3 { font-size:large; color:white; margin:0 0 6px 0;
+h3 { font-size:large; color: burlywood; margin:0 0 6px 0;
 }
 div#html5style2leftcol { float:left; width: 310px; vertical-align:top;
 }
@@ -92,7 +92,7 @@ h1 { font-size:300%; color :white; /* position: relative; left:90px; top: 15px; 
 }
 #html5style2content { background-color:transparent; border-left:10px white solid; border-right:10px white solid; border-bottom:10px white solid; width: 904px; margin-top: -30px; margin-left:auto; margin-right:auto; padding:8px; font-size:medium; color:maroon;
 }
-h2 { font-size:x-large; color:white; margin:0 0 10px 0;
+h2 { font-size:x-large; color: burlywood; margin:0 0 10px 0;
 }
 h3 { font-size:large; color:white; margin:0 0 6px 0; padding: 2%;
 }
