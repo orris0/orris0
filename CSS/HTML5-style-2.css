@@ -65,10 +65,10 @@ footer { clear:both; color:maroon; text-align:center;
 div body header #content { margin:0; padding:0; border:0;
 }
 img#kite { width: 119em; height: 41em;}
-img#paper { width: 960px;}
-img#take-off { width: cover;}
-img#orange-globe { width: cover;}
-img#waves { width: 960px;}
+img#paper { width: 903px;}
+img#take-off { width: 903;}
+img#orange-globe { width: 903;}
+img#waves { width: 903px;}
 img#plane { width: 903px;}
 body { background:#FFF url(images/green-grad.jpg) repeat-x; margin:auto;
 }
