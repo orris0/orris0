@@ -104,7 +104,7 @@ div#html5style2rightcol { width: 135px; float:right; height: 252px; margin-right
 vertical-align:top;
 }
 /*set nav block position and width and remove the #menu item*/
-nav#html5style2nav ul { margin:100px 0 10px 0; width:135px; float:right;
+nav#html5style2nav ul { margin: 40px 0 10px 0; width:135px; float:right;
 }
 /*Set un-ordered list style within the menu block only. This removes bullets*/
 nav#html5style2nav li { list-style-type:none;
