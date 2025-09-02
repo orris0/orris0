@@ -69,11 +69,11 @@ footer { clear:both; color:maroon; text-align:center;
 /*equalise for various browsers and change #header to header*/
 div body header #content { margin:0; padding:0; border:0;
 }
-img#kite { width: 960px;}
-img#paper { width: 960px;}
-img#take-off { width: 960px;}
-img#orange-globe { width: 960px;}
-img#waves { width: 960px;}
+img#kite { width: 930px;}
+img#paper { width: 930px;}
+img#take-off { width: 930px;}
+img#orange-globe { width: 930px;}
+img#waves { width: 930px;}
 img#plane { width: 930px;}
 body { background:#FFF url(images/green-grad.jpg) repeat-x; margin:auto;
 }
@@ -615,6 +615,7 @@ li {
 }
 
 */
+
 
 
 
