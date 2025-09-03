@@ -64,7 +64,7 @@ footer { clear:both; color:maroon; text-align:center;
 /*equalise for various browsers and change #header to header*/
 div body header #content { margin:0; padding:0; border:0;
 }
-img#kite { margin-left: auto; width: 960px; height: 43em;}
+img#kite { margin-left: auto; width: 10.2em; height: 19em;}
 img#paper { width: 903px;}
 img#take-off { width: 903;}
 img#orange-globe { width: 903;}
