@@ -11,7 +11,10 @@ body { background:#FFF url(images/green-grad.jpg) repeat-x; margin:auto;
 header, footer, section, article, nav { display:block;
 }
 /*remove the # from #header*/
-header#html5style2header.data {width:920px; height:180px; padding:0; border:10px white solid; background: url(./bda-20.jpg); margin:10px auto; background-position: bottom;
+header#html5style2header.data {width: 18em; height:90px; padding:0; border:10px white solid; background: url(./bda-20.jpg); margin:10px auto; background-position: bottom;
+}
+/* banner css*/
+div#html5style2banner.data {width:920px; height:180px; padding:0; border:10px white solid; background: url(./bda-20.jpg); margin:10px auto; background-position: bottom;
 }
 h1 { font-size:300%; color :white; position: relative; left:90px; top: 55px; width:480px;
 }
