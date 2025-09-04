@@ -20,7 +20,7 @@ h1 { font-size:300%; color :white; position: relative; left:100px; top: 25px; wi
 }
 #rosette { position:relative; left:750px; top:5px;
 }
-div#html5style2content { background-color:transparent; border-left:5px white solid; border-right:10px white solid; border-bottom:5px white solid; width: 904px; margin-top: -28px; padding:8px; font-size:medium; color:maroon;
+div#html5style2content { background-color:transparent; border-left:5px white solid; border-right:5px white solid; border-bottom:5px white solid; width: 904px; margin-top: -28px; padding:8px; font-size:medium; color:maroon;
 }
 h2 { font-size: 125%; color:white; margin:0 0 10px 0;
 }
