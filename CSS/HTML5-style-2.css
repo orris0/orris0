@@ -11,16 +11,16 @@ body { background:#FFF url(images/green-grad.jpg) repeat-x; margin:auto;
 header, footer, section, article, nav { display:block;
 }
 /*remove the # from #header*/
-header#html5style2header.data { margin-top: 3em; margin-left: 2em; height:90px; padding:0; border:10px white solid; background: url(./bda-20.jpg); margin:10px auto; background-position: bottom;
+header#html5style2header.data { margin-top: 3em; margin-left: 2em; height:90px; padding:0; border:5px white solid; background: url(./bda-20.jpg); margin:10px auto; background-position: bottom;
 }
 /* banner css*/
-div#html5style2banner.data {width:450px; height:100px; padding:0; border:10px white solid; background: url(./bda-20.jpg); margin:25px auto; background-position: bottom;
+div#html5style2banner.data {width:450px; height:100px; padding:0; border:5px white solid; background: url(./bda-20.jpg); margin:25px auto; background-position: bottom;
 }
 h1 { font-size:300%; color :white; position: relative; left:100px; top: 5px; width:480px;
 }
 #rosette { position:relative; left:750px; top:5px;
 }
-div#html5style2content { background-color:transparent; border-left:10px white solid; border-right:10px white solid; border-bottom:10px white solid; width: 904px; margin-top: -28px; padding:8px; font-size:medium; color:maroon;
+div#html5style2content { background-color:transparent; border-left:5px white solid; border-right:10px white solid; border-bottom:5px white solid; width: 904px; margin-top: -28px; padding:8px; font-size:medium; color:maroon;
 }
 h2 { font-size: 125%; color:white; margin:0 0 10px 0;
 }
