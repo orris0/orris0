@@ -60,7 +60,7 @@ footer { clear:both; color:maroon; text-align:center;
 }
 
 /* Listing 1-7b. The Revised CSS Sheet for Figure 1-7 (html5-style-2.css)9
-/* (The key items are picked out in bold type.) */
+(The key items are picked out in bold type.) */
 /*equalise for various browsers and change #header to header*/
 div body header #content { margin:0; padding:0; border:0;
 }
@@ -165,11 +165,11 @@ footer { clear:both; color:black; text-align:center; width:970px;
 .clear { clear:both;
 }
 /*set menu buttons*
-li.btn a { display:block; background-color :#66CCFF; color:black; font-weight:bold; padding:4px; margin-left:0; text-align:center; list-style-type:none; text-decoration:none; width:110px;
+#gallerypagenav li.btn a { display:block; background-color :#66CCFF; color:black; font-weight:bold; padding:4px; margin-left:0; text-align:center; list-style-type:none; text-decoration:none; width:110px;
 }
-li.btn a:hover { background-color:blue; color:white;
+#gallerypagenav li.btn a:hover { background-color:blue; color:white;
 }
-li.btn { width:110px;
+#gallerypagenav li.btn { width:110px;
 }
 /*SET THUMBNAIL GALLERY BLOCK*/
 /* Set general thumbnail styles *
@@ -610,6 +610,7 @@ li {
 }
 
 */
+
 
 
 
