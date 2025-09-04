@@ -16,7 +16,7 @@ header#html5style2header.data { margin-top: 3em; margin-left: 2em; height:90px; 
 /* banner css*/
 div#html5style2banner.data {width:450px; height:100px; padding:0; border:10px white solid; background: url(./bda-20.jpg); margin:25px auto; background-position: bottom;
 }
-h1 { font-size:300%; color :white; position: relative; left:100px; top: 0px; width:480px;
+h1 { font-size:300%; color :white; position: relative; left:100px; top: 5px; width:480px;
 }
 #rosette { position:relative; left:750px; top:5px;
 }
