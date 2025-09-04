@@ -248,6 +248,10 @@ h2 {font-size:large; font-family:"times new roman"; text-align:center;
 }
 /*PAGE LAYOUT*/
 body {margin:auto; width:970px;
+	font-family:'Open-sans', sans-serif;
+    font-size:medium;
+    line-height:1.5em;
+    padding:0;
 }
 header { width:970px;
 }
