@@ -44,7 +44,7 @@ vertical-align:top;
 nav#gallerypagenav ul { margin:10px 0 10px 0; width:135px; float:right;
 }
 /*Set un-ordered list style within the menu block only. This removes bullets*/
-nav#gallerypage2nav  li { list-style-type:none;
+nav#gallerypagenav  li { list-style-type:none;
 }
 /* set general side button styles */
 li.btn { margin-bottom: 3px; text-align: center; width:130px;
