@@ -90,7 +90,7 @@ h1 { font-size:300%; color :white; /* position: relative; left:90px; top: 15px; 
 }
 h2 { font-size: 157%; color: rgb(17, 16, 16); margin:0 0 10px 0;
 }
-h3 { font-size: 120%; color:white; margin:0 0 6px 0; padding: 2%;
+h3 { font-size: 120%; color:rgb(24, 19, 19); margin:0 0 6px 0; padding: 2%;
 }
 div#html5style2leftcol { float:left; width: 310px; vertical-align:top;
 }
