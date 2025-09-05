@@ -38,20 +38,20 @@ h3 { font-size:large; color:white; margin:0 0 6px 0;
 #html5style2nav li { list-style-type:none; 
 }	
 /* set general side button styles */
-#html5style2 li.btn { margin-bottom: 3px; text-align: center; width:130px;
+#html5style2nav li.btn { margin-bottom: 3px; text-align: center; width:130px;
 }
 /* set general anchor styles and include the zoom fix for IE6*/
-li.btn a { display: block; color: white; font-weight: bold; text-decoration: none; zoom:1;
+#html5style2nav li.btn a { display: block; color: white; font-weight: bold; text-decoration: none; zoom:1;
 }
 /* specify mouse state styles */
 /* mouseout (default) */
-#html5style2 li.btn a { background:#559a55; color: white; border: 5px outset #559a55; padding-bottom:3px;
+#html5style2nav li.btn a { background:#559a55; color: white; border: 5px outset #559a55; padding-bottom:3px;
 }
 /* mouseover */
-#html5style2 li.btn a:hover { background: red;  color:white; border: 5px outset red;
+#html5style2nav li.btn a:hover { background: red;  color:white; border: 5px outset red;
 }
 /*mouse active*/
-#html5style2 li.btn a:active { background:maroon;  border: 5px inset maroon; 
+#html5style2nav li.btn a:active { background:maroon;  border: 5px inset maroon; 
 }
 br.clear { 	clear:both; 
 }
