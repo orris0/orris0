@@ -24,14 +24,16 @@ header, footer, section, article, nav { display:block;
 header#html5style2header.data { margin-top: 3em; margin-left: 2em; height:90px; padding:0; border:5px white solid; background: url(./bda-20.jpg); margin-left:11px; background-position: bottom;
 }
 /* banner css*/
-div#html5style2banner.data {width:362px; height:161px; padding:0; border:5px white solid; background: url(./bda-20.jpg); margin:10px auto; background-position: bottom;
+div#html5style2banner.data { width:362px; height:161px; padding:0; border:5px white solid; background: url(./bda-20.jpg); margin:10px auto; background-position: bottom;
 }
 h1 { font-size:300%; color :white; position: relative; left:36px; top: 13px; width:480px;
 }
 #rosette { position:relative; left:750px; top:5px;
 }
-div#html5style2content { background-color:transparent; border-left:5px white solid; border-right:5px white solid; border-bottom:5px white solid; width: 904px; margin-top: 170px; padding:8px; font-size:medium; color:maroon;
+/*
+div#html5style2content { background-color:transparent; border-left:5px white solid; border-right:5px white solid; border-bottom:5px white solid; width: 904px; margin-left: 20px; margin-top: 170px; padding:8px; font-size:medium; color:maroon;
 }
+*/
 h2 { font-size: 100%; color:white; margin:0 0 10px 0;
 }
 h3 { font-size:100%; color: burlywood; margin:0 0 6px 0;
@@ -629,6 +631,7 @@ li {
 }
 
 */
+
 
 
 
