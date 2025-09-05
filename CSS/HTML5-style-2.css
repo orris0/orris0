@@ -1,18 +1,59 @@
 @import 'https://fonts.googleapis.com/css?family=Alegreya+Sans';
 
 * {
-	margin: 0;
-	border: 0;
-	padding: 0;
+	margin: 0; border: 0; padding: 0;
 }
-
-
-
 /* Listing 1-7b. The Revised CSS Sheet for Figure 1-7 (html5-style-2.css) 
 (The key items are picked out in bold type.)
 equalise for various browsers and change #header to header*/
+
 div body header #content { margin:0; padding:0; border:0;
 }
+/*set attributes for consistent appearance in all browsers*/
+html, body, p, ul, li, h1, h2 { margin:0; padding:0;
+}
+/*set images to have no borders*
+img {
+border:0;
+}
+/*add display attributes for the semantic tags*
+header, footer, section, article, nav { display:block;
+}
+/*SET FONTS*/
+span.small { font-size:small;
+}
+html {
+    font-size: 100%;
+    display: block;
+}
+
+.ui-mobile, .ui-mobile body{
+    height: 99.9%;
+}
+/*
+div.wrapper {
+    position: relative; 
+    top: -0.5em; 
+    left: 0; 
+    width: 77em; 
+    margin: auto;
+    background:#FFF url(images/green-grad.jpg) repeat-x!important;
+	color: #333;
+}
+*
+div.row {
+  display: block;
+}
+div.col-12 {
+  display: block; color: #333;
+}
+div body header #content { margin:0; padding:0; border:0; 
+} 
+body.ui-mobile-viewport.ui-overlay-a {
+   background:#FFF url(images/green-grad.jpg) repeat-x!important; margin: auto; 
+  /* overflow-x: hidden; height: 99.9%; 
+} 
+/*
 
 body { background:#FFF url(images/green-grad.jpg) repeat-x; margin:auto;
 }
@@ -404,37 +445,7 @@ div.wrapper {
 
 /* Listing 1-7b. The Revised CSS Sheet for Figure 1-7 (html5-style-2.css) 
 (The key items are picked out in bold type.) equalise for various browsers and change #header to header* 
-html {
-    font-size: 100%;
-    display: block;
-}
 
-.ui-mobile, .ui-mobile body{
-    height: 99.9%;
-}
-/*
-div.wrapper {
-    position: relative; 
-    top: -0.5em; 
-    left: 0; 
-    width: 77em; 
-    margin: auto;
-    background:#FFF url(images/green-grad.jpg) repeat-x!important;
-	color: #333;
-}
-*
-div.row {
-  display: block;
-}
-div.col-12 {
-  display: block; color: #333;
-}
-div body header #content { margin:0; padding:0; border:0; 
-} 
-body.ui-mobile-viewport.ui-overlay-a {
-   background:#FFF url(images/green-grad.jpg) repeat-x!important; margin: auto; 
-  /* overflow-x: hidden; height: 99.9%; 
-} 
   */
 /*add display attributes for the semantic tags* 
 header, footer, section, article, nav { display:block; 
@@ -631,6 +642,7 @@ li {
 }
 
 */
+
 
 
 
