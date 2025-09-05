@@ -310,7 +310,7 @@ header, footer, section, article, nav { display:block;
 }
 /*remove the # from #header*/
 header#html5style2header.data {width:920px; height:180px; padding:0; border:5px white solid; background: url(../../orris0/bda-20.jpg); margin:10px auto; background-position: bottom; /* Adjust as needed */
-  background-repeat: no-repeat; margin-left: 31.5em;
+  background-repeat: no-repeat; margin-left: 30em;
 }
 h1 { font-size:300%; color :white; /* position: relative; left:90px; top: 15px; width:5500px; */
 }
