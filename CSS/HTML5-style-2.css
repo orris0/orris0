@@ -120,7 +120,7 @@ footer { clear:both; color:maroon; text-align:center;
 /*equalise for various browsers and change #header to header*/
 div body header #content { margin:0; padding:0; border:0;
 }
-img#kite { width: 900px; height: 500px */;}
+img#kite { width: 900px; height: 500px;}
 img#paper { width: 900px;}
 img#take-off { width: 900;}
 img#orange-globe { width: 900;}
@@ -642,6 +642,7 @@ li {
 }
 
 */
+
 
 
 
