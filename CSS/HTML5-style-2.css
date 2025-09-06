@@ -30,7 +30,7 @@ html {
 .ui-mobile, .ui-mobile body{
     height: 99.9%;
 }
-/*
+
 div.wrapper {
     position: relative; 
     top: -0.5em; 
@@ -40,7 +40,7 @@ div.wrapper {
     background:#FFF url(images/green-grad.jpg) repeat-x!important;
 	color: #333;
 }
-*
+
 div.row {
   display: block;
 }
@@ -642,6 +642,7 @@ li {
 }
 
 */
+
 
 
 
