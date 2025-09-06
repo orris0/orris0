@@ -125,7 +125,7 @@ img#paper { width: 903px;}
 img#take-off { width: 903;}
 img#orange-globe { width: 903;}
 img#waves { width: 903px;}
-img#plane { width: 930px;}
+img#plane { width: 930px; margin-left: 33.2em;}
 body { background:#FFF url(images/green-grad.jpg) repeat-x; margin:auto;
 }
 /*add display attributes for the semantic tags*
@@ -642,6 +642,7 @@ li {
 }
 
 */
+
 
 
 
