@@ -58,7 +58,7 @@ body.ui-mobile-viewport.ui-overlay-a {
 body { background:#FFF url(images/green-grad.jpg) repeat-x; margin:auto;
 }
 
-/*add display attributes for the semantic tags*/
+/*add display attributes for the semantic tags*
 header, footer, section, article, nav { display:block;
 }
 /*remove the # from #header*/
@@ -642,6 +642,7 @@ li {
 }
 
 */
+
 
 
 
