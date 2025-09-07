@@ -62,7 +62,7 @@ body { background:#FFF url(images/green-grad.jpg) repeat-x; margin:auto;
 header, footer, section, article, nav { display:block;
 }
 /*remove the # from #header*/
-header#html5style2header.data { margin-top: 0em; margin-left: 10em; height:90px; padding:0; border:5px white solid; background: url(./bda-20.jpg); margin-left:11px; background-position: bottom;
+header#html5style2header.data { margin-top: 0em; margin-left: 1em; height:90px; padding:0; border:5px white solid; background: url(./bda-20.jpg); margin-left:11px; background-position: bottom;
 }
 /* banner css*/
 div#html5style2banner.data { width:362px; height:161px; padding:0; border:5px white solid; background: url(./bda-20.jpg); margin:10px auto; background-position: bottom;
@@ -642,6 +642,7 @@ li {
 }
 
 */
+
 
 
 
