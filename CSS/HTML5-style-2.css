@@ -61,7 +61,7 @@ body { background:#FFF url(images/green-grad.jpg) repeat-x; margin:auto;
 /*add display attributes for the semantic tags*
 header, footer, section, article, nav { display:block;
 }
-/*remove the # from #header*/
+/*remove the # from #header*
 header#html5style2header.data { margin-top: 0em; margin-left: 50px; height:90px; padding:0; border:5px white solid; background: url(./bda-20.jpg); background-position: bottom;
 }
 /* banner css*/
@@ -642,6 +642,7 @@ li {
 }
 
 */
+
 
 
 
