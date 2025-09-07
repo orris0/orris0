@@ -300,7 +300,7 @@ border:0;
 /*add display attributes for the semantic tags*
 header, footer, section, article, nav { display:block;
 }
-/*SET FONTS*/
+/*SET FONTS*
 span.small { font-size:small;
 }
 
@@ -461,14 +461,15 @@ div.wrapper {
 /*add display attributes for the semantic tags* 
 header, footer, section, article, nav { display:block; 
 } 
-/*remove the # from #header*
+/*remove the # from #header*/
 .header#html5styleheader.data {width:920px; height:180px; padding:0; border:10px white solid; background: url(../images/bda.jpg);  background-size: cover;  Or contain, or other options *
-  background-position: center; /* Adjust as needed *
+  background-position: center; /* Adjust as needed */
   background-repeat: no-repeat; margin:10px auto; 
 }  
-/* Listing 8-5b. The CSS Style Sheet for Listing 8-5a (css3-text-shadow.css) */
+/* Listing 8-5b. The CSS Style Sheet for Listing 8-5a (css3-text-shadow.css) 
 body {background-color:#99CCFF;
 }
+		   */
 #banner h1 { color: #fff; padding: 50px 0 0 20px; font-size: 300%; 
 text-shadow: 0.1em 0.1em 0.2em black;
 }
@@ -653,6 +654,7 @@ li {
 }
 
 */
+
 
 
 
