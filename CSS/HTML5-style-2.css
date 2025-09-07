@@ -19,7 +19,7 @@ border:0;
 /*add display attributes for the semantic tags*/
 header, footer, section, article, nav { display:block;
 }
-/*SET FONTS*
+/*SET FONTS*/
 span.small { font-size:small;
 }
 html {
@@ -47,6 +47,7 @@ div.row {
 div.col-12 {
   display: block; color: #333;
 }
+/*
 div body header #content { margin:0; padding:0; border:0; 
 } 
 body.ui-mobile-viewport.ui-overlay-a {
@@ -642,6 +643,7 @@ li {
 }
 
 */
+
 
 
 
