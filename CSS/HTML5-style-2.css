@@ -19,7 +19,7 @@ border:0;
 /*add display attributes for the semantic tags*/
 header, footer, section, article, nav { display:block;
 }
-/*SET FONTS*/
+/*SET FONTS*
 span.small { font-size:small;
 }
 html {
@@ -642,6 +642,7 @@ li {
 }
 
 */
+
 
 
 
