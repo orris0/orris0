@@ -129,7 +129,7 @@ img#waves { width: 900px;}
 img#plane { width: 930px;}
 body { background:#FFF url(images/green-grad.jpg) repeat-x; margin:auto;
 }
-/*add display attributes for the semantic tags*
+/*add display attributes for the semantic tags*/
 header, footer, section, article, nav { display:block;
 }
 /*remove the # from #header*/
@@ -183,6 +183,16 @@ div#html5stylemidcol img { margin-left:10px;
 /*change #footer to footer *
 footer { clear:both; color:maroon; text-align:center;
 }
+
+
+
+
+
+
+
+
+
+
 
 /*add display attributes for the semantic tags*
 header, footer, section, article, nav { display:block;
@@ -293,7 +303,7 @@ header, footer, section, article, nav { display:block;
 /*SET FONTS*/
 span.small { font-size:small;
 }
-/*
+
 h1 { font-size:x-large; font-family:"times new roman"; text-align:center;
 }
 
@@ -306,7 +316,7 @@ body {margin:auto; width:970px;
     line-height:1.5em;
     padding:0;
 }
-*/
+
 header { width:970px;
 }
 nav#gallerypagenav.data { margin-left:10px; width:115px;
@@ -643,6 +653,7 @@ li {
 }
 
 */
+
 
 
 
