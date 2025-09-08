@@ -77,12 +77,7 @@ footer { clear:both; color:maroon; text-align:center;
 /*equalise for various browsers and change #header to header*/
 div body header #content { margin:0; padding:0; border:0;
 }
-img#kite { width: 95%;}
-img#paper { 920px;}
-img#take-off { #;}
-img#orange-globe { #;}
-img#waves { #;}
-img#plane { }
+
 body { background:#FFF url(images/green-grad.jpg) repeat-x; margin:auto;
 }
 /*remove the # from #header*/
@@ -415,7 +410,7 @@ div.wrapper {
 header, footer, section, article, nav { display:block; 
 } 
 /*remove the # from #header*/
-.header#html5styleheader.data {width:920px; height:180px; padding:0; border:10px white solid; background: url(../images/bda.jpg);  background-size: cover;  Or contain, or other options *
+.header#html5styleheader.data {width:920px; height:180px; padding:0; border:10px white solid; 
   background-position: center; /* Adjust as needed */
   background-repeat: no-repeat; margin:10px auto; 
 }  
