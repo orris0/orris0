@@ -19,51 +19,7 @@ border:0;
 /*add display attributes for the semantic tags*/
 header, footer, section, article, nav { display:block;
 }
-/*SET FONTS*
-span.small { font-size:small;
-}
-html {
-    font-size: 100%;
-    display: block;
-}
-
-.ui-mobile, .ui-mobile body{
-    height: 99.9%;
-}
-/*
-div.wrapper {
-    position: relative; 
-    top: -0.5em; 
-    left: 0; 
-    width: 77em; 
-    margin: auto;
-    background:#FFF url(images/green-grad.jpg) repeat-x!important;
-	color: #333;
-}
-
-div.row {
-  display: block;
-}
-div.col-12 {
-  display: block; color: #333;
-}
-/*
-div body header #content { margin:0; padding:0; border:0; 
-} 
-body.ui-mobile-viewport.ui-overlay-a {
-   background:#FFF url(images/green-grad.jpg) repeat-x!important; margin: auto; 
-  /* overflow-x: hidden; height: 99.9%; 
-} 
-/*
-
-body { background:#FFF url(images/green-grad.jpg) repeat-x; margin:auto;
-}
-
-/*add display attributes for the semantic tags*
-header, footer, section, article, nav { display:block;
-}
-/*remove the # from #header*
-header#html5style2header.data { margin-top: 0em; margin-left: 50px; height:90px; padding:0; border:5px white solid; background: url(./bda-20.jpg); background-position: bottom;
+er#html5style2header.data { margin-top: 0em; margin-left: 50px; height:90px; padding:0; border:5px white solid; background: url(./bda-20.jpg); background-position: bottom;
 }
 /* banner css*/
 div#html5style2banner.data { width:362px; height:161px; padding:0; border:5px white solid; background: url(./bda-20.jpg); margin:10px auto; background-position: bottom;
@@ -128,9 +84,6 @@ img#orange-globe { #;}
 img#waves { #;}
 img#plane { #;}
 body { background:#FFF url(images/green-grad.jpg) repeat-x; margin:auto;
-}
-/*add display attributes for the semantic tags*/
-header, footer, section, article, nav { display:block;
 }
 /*remove the # from #header*/
 header#html5style2header.data { width:920px; height:180px; padding:0; border:5px white solid; background: url(../../orris0/bda-20.jpg); margin:20px; background-position: bottom; /* Adjust as needed */ background-repeat: no-repeat; margin-left: 31em;
@@ -654,6 +607,7 @@ li {
 }
 
 */
+
 
 
 
