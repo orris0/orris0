@@ -78,7 +78,7 @@ footer { clear:both; color:maroon; text-align:center;
 div body header #content { margin:0; padding:0; border:0;
 }
 img#kite { width: #; height: #;}
-img#paper { #;}
+img#paper { 920px;}
 img#take-off { #;}
 img#orange-globe { #;}
 img#waves { #;}
@@ -607,6 +607,7 @@ li {
 }
 
 */
+
 
 
 
