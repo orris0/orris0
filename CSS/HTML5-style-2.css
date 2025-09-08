@@ -77,12 +77,12 @@ footer { clear:both; color:maroon; text-align:center;
 /*equalise for various browsers and change #header to header*/
 div body header #content { margin:0; padding:0; border:0;
 }
-img#kite { width: #; height: #;}
+img#kite { width: 95%; height: #;}
 img#paper { 920px;}
 img#take-off { #;}
 img#orange-globe { #;}
 img#waves { #;}
-img#plane { #;}
+img#plane { }
 body { background:#FFF url(images/green-grad.jpg) repeat-x; margin:auto;
 }
 /*remove the # from #header*/
