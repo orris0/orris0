@@ -24,8 +24,10 @@ header#html5style2header.data { margin-top: 0em; margin-left: 50px; height:90px;
 /* banner css*/
 div#html5style2banner.data { width:362px; height:161px; padding:0; border:5px white solid; background: url(./bda-20.jpg); margin:10px auto; background-position: bottom;
 }
+/*
 h1 { font-size:300%; color :white; position: relative; left:36px; top: 13px; width:480px;
 }
+*/
 #rosette { position:relative; left:750px; top:5px;
 }
 /*
