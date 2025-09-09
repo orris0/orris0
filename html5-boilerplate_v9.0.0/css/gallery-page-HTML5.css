@@ -10,7 +10,7 @@ header, footer, section, article, nav { display:block;
 /*SET FONTS*/
 span.small { font-size:small;
 }
-#banner h1 { 
+#gallerypagebanner h1 { 
     font-family:"times new roman"; 
 	font-size:x-large; 
 	color:white;  
