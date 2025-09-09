@@ -85,8 +85,10 @@ body { background:#FFF url(images/green-grad.jpg) repeat-x; margin:auto;
 /*remove the # from #header*/
 header#html5style2header.data { width:920px; height:180px; padding:0; border:5px white solid; background: url(../../orris0/bda-20.jpg); margin:20px; background-position: bottom; /* Adjust as needed */ background-repeat: no-repeat; margin-left: 490px;
 }
-h1 { font-size:300%; color :white; /* position: relative; left:90px; top: 15px; width:5500px; */
+/*
+h1 { font-size:300%; color :white; /* position: relative; left:90px; top: 15px; width:5500px; 
 }
+*/
 #rosette { position:relative; left:750px; top:5px;
 }
 #html5style2content { background-color:transparent; 
