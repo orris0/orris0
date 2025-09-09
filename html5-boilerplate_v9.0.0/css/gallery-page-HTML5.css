@@ -67,12 +67,12 @@ padding-bottom:3px; background:#744035; border-top: 4px #5e2100 solid;
 border-left: 4px #5e2100 solid; border-right:3px #bfa5a2 solid; border-bottom:3px #bfa5a2 solid;
 }
 /*set far right column for ads*/
-#rightcol { width:250px; float:right; text-align:center;	
+#gallerypagerightcol { width:250px; float:right; text-align:center;	
 }
-#rightcol p.advert {font-size:small; margin-top:30px;margin-left:0px;
+#gallerypagerightcol p.advert {font-size:small; margin-top:30px;margin-left:0px;
 } 
 /*set middle column for main content*/
-#midcol { margin-left:135px; margin-right:155px;
+#gallerypagemidcol { margin-left:135px; margin-right:155px;
 }
 /*set gallery block position*/ 
 #gallery-block { position:relative; left: -115px; top:190px; 
