@@ -10,7 +10,7 @@ header, footer, section, article, nav { display:block;
 header#html5style2header {width:920px; height:180px; padding:0; border:10px white solid; 
   background: url(images/header3.jpg); margin:10px auto; 
 }
-h1 { font-size:125%; color :maroon; position: relative; left:15em; top: 3px; width:480px; 
+h1 { font-size:125%; color :maroon; position: relative; left:13em; top: 24px; width:480px; 
 }
 #rosette { position:relative; left:750px; top:5px; }
 #html5style2content { background-color:transparent; border-left:10px white solid; border-right:10px white solid; 
