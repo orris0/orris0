@@ -205,7 +205,7 @@ li { margin: 5px; list-style-type:none;
 }
 /*remove bullets from the un-ordered list elements and create the 
 MouseOut state (default) - create and position a space for the larger images and 
-hide them*
+hide them*/
 #col-1 a img.hid { width: 260px; height:390px; position: absolute; top: 10px; left: 330px; visibility: hidden;
 }
 /* MouseOver state (hover)- this reveals larger picture */
