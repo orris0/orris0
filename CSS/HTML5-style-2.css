@@ -19,7 +19,7 @@ border:0;
 /*add display attributes for the semantic tags*/
 header, footer, section, article, nav { display:block;
 }
-er#html5style2header.data { margin-top: 0em; margin-left: 50px; height:90px; padding:0; border:5px white solid; background: url(./bda-20.jpg); background-position: bottom;
+header#html5style2header.data { margin-top: 0em; margin-left: 50px; height:90px; padding:0; border:5px white solid; background: url(./bda-20.jpg); background-position: bottom;
 }
 /* banner css*/
 div#html5style2banner.data { width:362px; height:161px; padding:0; border:5px white solid; background: url(./bda-20.jpg); margin:10px auto; background-position: bottom;
@@ -87,7 +87,14 @@ h1 { font-size:300%; color :white; /* position: relative; left:90px; top: 15px; 
 }
 #rosette { position:relative; left:750px; top:5px;
 }
-#html5style2content { background-color:transparent; border-left:10px white solid; border-right:10px white solid; border-bottom:10px white solid; width: 904px; margin-top: 180px; margin-left:490px; margin-right:auto; padding:8px; font-size:medium; color:maroon;
+#html5style2content { background-color:transparent; 
+					 border-left:10px white solid; 
+					 border-right:10px white solid; 
+					 border-bottom:10px white solid; 
+					 width: 904px; 
+					 margin-top: 180px; 
+					 margin-left:490px; 
+					 margin-right:auto; padding:8px; font-size:medium; color:maroon;
 }
 h2 { font-size: 157%; color: rgb(17, 16, 16); margin:0 0 10px 0;
 }
@@ -602,6 +609,7 @@ li {
 }
 
 */
+
 
 
 
