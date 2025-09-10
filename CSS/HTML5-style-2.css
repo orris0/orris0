@@ -19,7 +19,7 @@ border:0;
 /*add display attributes for the semantic tags*/
 header, footer, section, article, nav { display:block;
 }
-header#html5style2header.data { margin-top: 0em; margin-left: 50px; height:90px; padding:0; border:5px white solid; background: url(./bda-20.jpg); background-position: bottom;
+header#html5style2header.data { margin-top: 0em; margin-left: 50px; height:90px; padding:0; border:5px white solid; background: url(../../orris0/bda-20.jpg); background-position: bottom;
 }
 /* banner css*/
 div#html5style2banner.data { width:362px; height:161px; padding:0; border:5px white solid; background: url(./bda-20.jpg); margin:10px auto; background-position: bottom;
