@@ -165,7 +165,7 @@ h1 { font-size:x-large; font-family:"times new roman"; text-align:center;
 h2 {font-size:large; font-family:"times new roman"; text-align:center;
 }
 /*PAGE LAYOUT*/
-body {margin:auto; line-height: 1.5em ; width:970px;
+body { margin:auto; line-height: 1.5em; width:970px;
 }
 header { width:970px;
 }
