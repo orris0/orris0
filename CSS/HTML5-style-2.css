@@ -141,7 +141,7 @@ br.clear { clear:both;
 }
 div#html5stylemidcol img { margin-left:10px;
 }
-/*change #footer to footer *
+/*change #footer to footer */
 footer { clear:both; color:maroon; text-align:center;
 }
 
@@ -4714,6 +4714,7 @@ footer#html5style2footer {
     page-break-after: avoid;
   }
 }
+
 
 
 
