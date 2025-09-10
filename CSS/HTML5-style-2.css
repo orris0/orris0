@@ -79,7 +79,9 @@ footer { clear:both; color:maroon; text-align:center;
 /*equalise for various browsers and change #header to header*/
 div body header #content { margin:0; padding:0; border:0;
 }
-
+/*PAGE LAYOUT*/
+body { margin:auto; line-height: 1.5em; width:970px;
+}
 body { background:#FFF url(images/green-grad.jpg) repeat-x; margin:auto;
 }
 /*remove the # from #header*/
@@ -164,9 +166,7 @@ h1 { font-size:x-large; font-family:"times new roman"; text-align:center;
 }
 h2 {font-size:large; font-family:"times new roman"; text-align:center;
 }
-/*PAGE LAYOUT*/
-body { margin:auto; line-height: 1.5em; width:970px;
-}
+
 header { width:970px;
 }
 nav#gallerypagenav.data { float:left; margin-left:10px; width:115px;
