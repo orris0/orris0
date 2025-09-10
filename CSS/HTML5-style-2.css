@@ -74,85 +74,6 @@ br.clear { clear:both;
 footer { clear:both; color:maroon; text-align:center;
 }
 
-/* Listing 1-7b. The Revised CSS Sheet for Figure 1-7 (html5-style-2.css)9
-(The key items are picked out in bold type.) */
-/*equalise for various browsers and change #header to header*/
-div body header #content { margin:0; padding:0; border:0;
-}
-/*PAGE LAYOUT*/
-body { margin:auto; line-height: 1.5em; width:970px;
-}
-body { background:#FFF url(images/green-grad.jpg) repeat-x; margin:auto;
-}
-/*remove the # from #header*/
-header#html5style2header.data { width:970px; height:180px; padding:0; border:5px white solid; background: url(../../orris0/bda-20.jpg); margin:20px; background-position: bottom; /* Adjust as needed */ background-repeat: no-repeat; margin-left: 490px;
-}
-/*
-h1 { font-size:300%; color :white; /* position: relative; left:90px; top: 15px; width:5500px; 
-}
-*/
-#rosette { position:relative; left:750px; top:5px;
-}
-#html5style2content { background-color:transparent; 
-					 border-left:10px white solid; 
-					 border-right:10px white solid; 
-					 border-bottom:10px white solid; 
-					 width: 904px; 
-					 margin-top: 0px; 
-					 margin-left:20px; 
-					 margin-right:auto; padding:8px; font-size:medium; color:maroon;
-}
-h2 { font-size: 157%; color: rgb(17, 16, 16); margin:0 0 10px 0;
-}
-h3 { font-size: 120%; color: maroon; margin:0 0 6px 0; padding: 2%;
-}
-div#html5style2leftcol { float:left; width: 310px; vertical-align:top;
-}
-div#html5style2rightcol { width: 135px; float:right; height: 252px; margin-right:10px;
-}
-#html5style2midcol { margin-left:315px; margin-right:145px; margin-top:10px; 
-vertical-align:top;
-}
-/*set nav block position and width and remove the #menu item*/
-nav#html5style2nav ul { margin: 10px 0 10px 0; width:135px; float:right;
-}
-/*Set un-ordered list style within the menu block only. This removes bullets*/
-nav#html5style2nav li { list-style-type:none;
-}
-/* set general side button styles */
-li.btn { margin-bottom: 3px; text-align: center; width:130px;
-}
-/* set general anchor styles and include the zoom fix for IE6*/
-li.btn a { display: block; color: white; font-weight: bold; 
-text-decoration: none; zoom:1;
-}
-/* specify mouse state styles */
-/* mouseout (default) */
-li.btn a { background:#559a55; color: white; border: 5px outset #559a55; 
-padding-bottom:3px;
-}
-/* mouseover */
-li.btn a:hover { background: red; color:white; border: 5px outset red;
-}
-/*mouse active*/
-li.btn a:active { background:maroon; border: 5px inset maroon;
-}
-br.clear { clear:both;
-}
-div#html5stylemidcol img { margin-left:10px;
-}
-/*change #footer to footer */
-footer { clear:both; color:maroon; text-align:center;
-}
-
-
-
-
-
-
-
-
-
 
 
 /*add display attributes for the semantic tags*
@@ -738,7 +659,83 @@ textarea {
 
 /* ==========================================================================
    Author's custom styles
-   ========================================================================== *
+   ========================================================================== */
+@import 'https://fonts.googleapis.com/css?family=Alegreya+Sans'; 
+
+* {
+	margin: 0; border: 0; padding: 0;
+}
+/* Listing 1-7b. The Revised CSS Sheet for Figure 1-7 (html5-style-2.css) 
+(The key items are picked out in bold type.)
+equalise for various browsers and change #header to header*/
+
+div body header #content { margin:0; padding:0; border:0;
+}
+/*set attributes for consistent appearance in all browsers*/
+html, body, p, ul, li, h1, h2 { margin:0; padding:0;
+}
+/*set images to have no borders*/
+img {
+border:0;
+}
+/*add display attributes for the semantic tags*/
+header, footer, section, article, nav { display:block;
+}
+header#html5style2header.data { margin-top: 0em; margin-left: 50px; height:90px; padding:0; border:5px white solid; background: url(../../orris0/bda-20.jpg); background-position: bottom;
+}
+/* banner css*/
+div#html5style2banner.data { width:362px; height:161px; padding:0; border:5px white solid; background: url(./bda-20.jpg); margin:10px auto; background-position: bottom;
+}
+/*
+h1 { font-size:300%; color :white; position: relative; left:36px; top: 13px; width:480px;
+}
+*/
+#rosette { position:relative; left:750px; top:5px;
+}
+/*
+div#html5style2content { background-color:transparent; border-left:5px white solid; border-right:5px white solid; border-bottom:5px white solid; width: 904px; margin-left: 20px; margin-top: 170px; padding:8px; font-size:medium; color:maroon;
+}
+*/
+h2 { font-size: 100%; color:white; margin:0 0 10px 0;
+}
+h3 { font-size:100%; color: burlywood; margin:0 0 6px 0;
+}
+div#html5style2leftcol { float:left; width: 310px; vertical-align:top;
+}
+div#html5style2rightcol { width: 135px; float:right; height: 252px; margin-right:10px;
+}
+div#html5style2midcol { margin-left:315px; margin-right:145px; margin-top:10px; vertical-align:top;
+}
+/*set nav block position and width and remove the #menu item*/
+nav#html5style2nav,data ul { margin: -269px 0 10px 0; width:135px; float:right;
+}
+/*Set un-ordered list style within the menu block only. This removes bullets*/
+nav#html5style2nav.data li { list-style-type:none;
+}
+/* set general side button styles */
+li.btn { margin-bottom: 3px; text-align: center; width:130px;
+}
+/* set general anchor styles and include the zoom fix for IE6*/
+li.btn a { display: block; color: white; font-weight: bold; text-decoration: none; zoom:1;
+}
+/* specify mouse state styles */
+/* mouseout (default) */
+li.btn a { background:#559a55; color: white; border: 5px outset #559a55; padding-bottom:3px;
+}
+/* mouseover */
+li.btn a:hover { background: red; color:white; border: 5px outset red;
+}
+/*mouse active*/
+li.btn a:active { background:maroon; border: 5px inset maroon;
+}
+br.clear { clear:both;
+}
+#html5style2midcol img { margin-left:10px;
+}
+/*change #footer to footer */
+footer { clear:both; color:maroon; text-align:center;
+}
+
 /*equalise for various browsers and change #header to header*
 div body header #content { margin:0; padding:0; border:0; 
 }
@@ -4714,6 +4711,7 @@ footer#html5style2footer {
     page-break-after: avoid;
   }
 }
+
 
 
 
