@@ -10,8 +10,9 @@ header, footer, section, article, nav { display:block;
 header#html5style2header {width:920px; height:180px; padding:0; border:10px white solid; 
   background: url(images/header3.jpg); margin:10px auto; 
 }
+/*
 h1 { font-size:150%; color :black; position: relative; text-align:center; top: 2px; width:480px; 
-}
+*/
 #rosette { position:relative; left:750px; top:5px; }
 #html5style2content { background-color:transparent; border-left:10px white solid; border-right:10px white solid; 
 border-bottom:10px white solid; width: 904px; margin-top:195px; margin-left:484px; margin-right:auto; padding:8px; font-size:medium; color:maroon; 
