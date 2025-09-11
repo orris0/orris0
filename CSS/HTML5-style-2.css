@@ -292,7 +292,7 @@ div.wrapper {
     margin: 0 auto;
 	padding: .3em .8em;	 
     text-shadow: 0 -.05em .05em rgba(0, 0, 0, .5);
-    width: 100%;
+    width: 200%;
     background: #58a linear-gradient(#FF9966, #58a);
 
     clip-path:polygon(20px 0, calc(100% - 20px) 0, 100% 20px, 
@@ -4637,6 +4637,7 @@ footer#html5style2footer {
     page-break-after: avoid;
   }
 }
+
 
 
 
