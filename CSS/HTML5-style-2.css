@@ -313,7 +313,7 @@ div.wrapper {
     position: relative; 
     top: 40em; 
     left: 0; 
-    width: 950px; 
+    width: 970px; 
     margin: auto; 
     text-align: center;
 }
@@ -4223,6 +4223,7 @@ footer#html5style2footer {
     page-break-after: avoid;
   }
 }
+
 
 
 
