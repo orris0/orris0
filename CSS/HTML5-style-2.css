@@ -308,7 +308,7 @@ img { margin-left:10px;
 footer { clear:both; color:maroon; text-align:center; border: 2px solid black;
 }
 
-/*
+*/
 div.wrapper { 
     position: relative; 
     top: 40em; 
@@ -317,7 +317,7 @@ div.wrapper {
     margin: auto; 
     text-align: center;
 }
-    */
+
 /*equalise all the margins, paddings and borders built into various browsers* 
 div header #content { margin:0; padding:0; border:0; 
 }
@@ -4223,6 +4223,7 @@ footer#html5style2footer {
     page-break-after: avoid;
   }
 }
+
 
 
 
