@@ -9,7 +9,7 @@ I'm/*! HTML5 Boilerplate v9.0.0-RC1 | MIT License | https://html5boilerplate.com
 
 /* ==========================================================================
    Base styles: opinionated defaults
-   ========================================================================== *
+   ========================================================================== */
 
 html.ui-mobile {
   color: black;
@@ -23,7 +23,7 @@ html.ui-mobile {
  * https://twitter.com/miketaylr/status/12228805301
  *
  * Customize the background color to match your design.
- *
+ */
 
 ::-moz-selection {
   background: #b3d4fc;
@@ -37,7 +37,7 @@ html.ui-mobile {
 
 /*
  * A better looking default horizontal rule
- */
+ 
 
 hr {
   display: block;
@@ -4223,6 +4223,7 @@ footer#html5style2footer {
     page-break-after: avoid;
   }
 }
+
 
 
 
