@@ -89,6 +89,14 @@ textarea {
 * {
 	margin: 0; border: 0; padding: 0;
 }
+div.wrapper { 
+    position: relative; 
+    top: 0; 
+    left: 0; 
+    width: 970px; 
+    margin: auto; 
+    text-align: center;
+}
 /* Listing 1-7b. The Revised CSS Sheet for Figure 1-7 (html5-style-2.css) 
 (The key items are picked out in bold type.)
 equalise for various browsers and change #header to header*/
