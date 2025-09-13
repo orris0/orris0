@@ -10,7 +10,8 @@
 /* ==========================================================================
    Base styles: opinionated defaults
    ========================================================================== */
-
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400');
+@import url('https://fonts.googleapis.com/css?family=Raleway:300');
 html.ui-mobile {
   color: black;
   font-size: 1em;
