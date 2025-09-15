@@ -128,7 +128,7 @@ h1#html5style2-h1 { font-size:300%; color :white; position: relative; left:36px;
 div#html5style2content { background-color:transparent; border-left:5px white solid; border-right:5px white solid; border-bottom:5px white solid; width: 904px; margin-left: 20px; margin-top: 170px; padding:8px; font-size:medium; color:maroon;
 }
 
-h2#html5style2-h2 { font-size: 75%; color:white; margin-left:0px;
+h2#html5style2-h2 { font-size: 125%; color: maroon; margin-left:0px;
 }
 h3#html5style2-h3 { font-size:100%; color: burlywood; margin:0 0 6px 0;
 }
@@ -4229,6 +4229,7 @@ footer#html5style2footer {
     page-break-after: avoid;
   }
 }
+
 
 
 
