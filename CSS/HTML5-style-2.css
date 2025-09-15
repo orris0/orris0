@@ -116,7 +116,7 @@ header, footer, section, article, nav { display:block;
 header#html5style2header.data { margin-top: 0em; margin-left: 50px; height:90px; padding:0; border:5px white solid; background: url(../../orris0/bda-20.jpg); background-position: bottom;
 }
 /* banner css*/
-div#html5style2banner { width:180px; height:40px; padding:0; border:5px white solid; background: url(./bda-20.jpg); margin:10px auto; background-position: bottom;
+div#html5style2banner { width:320px; height:65px; padding:0; border:5px white solid; background: url(./bda-20.jpg); margin:10px auto; background-position: bottom;
 }
 /*
 h1#html5style2-h1 { font-size:300%; color :white; position: relative; left:36px; top: 13px; width:480px;
