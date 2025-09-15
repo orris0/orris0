@@ -197,7 +197,7 @@ div#gallerypagerightcol p.advert {font-size:small; margin-top:190px;
 div#gallerypagemidcol.data { margin-left:135px; margin-right:155px;
 }
 /*set gallery block position*/
-div#gallerypagegallery-block.data { position:relative; left: 30px; top: -39em;
+div#gallerypagegallery-block.data { position:relative; left: 30px; top: -31em;
 }
 /*set footer*/
 footer { clear:both; color:black; text-align:center; width:970px;
@@ -4229,6 +4229,7 @@ footer#html5style2footer {
     page-break-after: avoid;
   }
 }
+
 
 
 
