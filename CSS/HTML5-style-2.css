@@ -3844,9 +3844,11 @@ div.wrapper {
 /*equalise all the margins, paddings and borders built into various browsers*/  
 div header #content { margin:0; padding:0; border:0; 
 }
+/*
 body { background:#FFF url(../orris0/images/green-grad.jpg) repeat-x !important; margin:auto;
     font-size: 75%; font-weight: normal;
 }
+*/
 ul { padding-left: 0;
 }
 /* end of style equalisation *
@@ -4227,6 +4229,7 @@ footer#html5style2footer {
     page-break-after: avoid;
   }
 }
+
 
 
 
