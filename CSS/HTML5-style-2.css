@@ -165,7 +165,7 @@ br.clear { clear:both;
 #html5style2midcol img { margin-left:10px;
 }
 /*change #footer to footer */
-footer { clear:both; color:maroon; text-align:center;
+footer class="data" id="html5style2footer"> { clear:both; color:maroon; text-align:center;
 }
 
 
@@ -259,7 +259,7 @@ set the gallery block 10px further to the right
 /*equalise for various browsers and change #header to header*
 div body header #content { margin:0; padding:0; border:0; 
 }
-/*PAGE LAYOUT*
+/*PAGE LAYOUT*/
 body { background:#FFF url(images/green-grad.jpg) repeat-x; margin:auto;
 }
 /*add display attributes for the semantic tags*
@@ -4227,6 +4227,7 @@ footer#html5style2footer {
     page-break-after: avoid;
   }
 }
+
 
 
 
