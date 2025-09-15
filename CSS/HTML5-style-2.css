@@ -173,10 +173,10 @@ footer class="data" id="html5style2footer"> { clear:both; color:maroon; text-ali
 /*add display attributes for the semantic tags*
 header, footer, section, article, nav { display:block;
 }
-/*SET FONTS*
+/*SET FONTS*/
 span.small { font-size:small;
 }
-/*
+
 h1 { font-size:x-large; font-family:"times new roman"; text-align:center;
 }
 h2 {font-size:large; font-family:"times new roman"; text-align:center;
@@ -4227,6 +4227,7 @@ footer#html5style2footer {
     page-break-after: avoid;
   }
 }
+
 
 
 
