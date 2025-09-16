@@ -126,14 +126,7 @@ h1#html5style2-h1 { font-size:300%; color :white; position: relative; left:36px;
 /*Listing 3-6b. The Revised CSS for Re-positioning the Rosette (rosette.css) */
 body { background: #FFF url(images/green-grad.jpg) repeat-x; margin:auto;
 }
-header, nav, footer, article section { display:block;
-}
 
-/*
-h1 { font-size:300%; color :white; position: relative; left:90px; top: 55px; 
-width:480px;
-}
-*/
 #rosette { position:relative; left:750px; top:5px;
 }
 
@@ -4241,6 +4234,7 @@ footer#html5style2footer {
     page-break-after: avoid;
   }
 }
+
 
 
 
