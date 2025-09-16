@@ -113,21 +113,21 @@ border:0;
 /*add display attributes for the semantic tags*/
 header, footer, section, article, nav { display:block;
 }
-header#html5style2header.data { width:920px; height:180px; padding:0; border:10px white solid; 
+header#html5style2header.data { width:95%; max-width:1024px; min-width:900px; height:180px; padding:0; border:10px white solid; 
 background:url(images/header3.jpg); margin: 20px auto;
 }
 /* banner css*/
 div#html5style2banner { width:320px; height:65px; padding:0; border:5px white solid; background: url(./bda-20.jpg); margin:10px auto; background-position: bottom;
 }
 
-h1#html5style2-h1 { font-size:300%; color :white; position: relative; left:90px; top: 55px; width:480px;
+h1#html5style2-h1 { font-size:300%; color :white; position: relative; left:15%; top: 55px; width:480px;
 }
 
 /*Listing 3-6b. The Revised CSS for Re-positioning the Rosette (rosette.css) */
 body { background: #FFF url(images/green-grad.jpg) repeat-x; margin:auto;
 }
 
-#rosette { position:relative; left:750px; top:5px;
+#rosette { position:relative; left:85%; top:120px;
 }
 
 div#html5style2content { background-color:transparent; border-left:5px white solid; border-right:5px white solid; border-bottom:5px white solid; width: 904px; margin-left: 20px; margin-top: 170px; padding:8px; font-size:medium; color:maroon;
@@ -4234,6 +4234,7 @@ footer#html5style2footer {
     page-break-after: avoid;
   }
 }
+
 
 
 
