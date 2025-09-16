@@ -130,7 +130,7 @@ body { background: #FFF url(images/green-grad.jpg) repeat-x; margin:auto;
 #rosette { position:relative; left:85%; top:120px;
 }
 
-div#html5style2content { background-color:transparent; border-left:5px white solid; border-right:5px white solid; border-bottom:5px white solid; width: 904px; margin-left: 20px; margin-top: 170px; padding:8px; font-size:medium; color:maroon;
+div#html5style2content { background-color:transparent; border-left:10px white solid; border-right:10px white solid; border-bottom:10px white solid; width: 904px; margin-left: 20px; margin-top: 170px; padding:8px; font-size:medium; color:maroon;
 }
 
 h2#html5style2-h2 { font-size: 125%; color: maroon; margin-left:-175px;
@@ -4234,6 +4234,7 @@ footer#html5style2footer {
     page-break-after: avoid;
   }
 }
+
 
 
 
