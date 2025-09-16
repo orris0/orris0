@@ -106,7 +106,7 @@ div body header #content { margin:0; padding:0; border:0;
 /*set attributes for consistent appearance in all browsers*
 html, body, p, ul, li, h1, h2 { margin:0; padding:0;
 }
-/*set images to have no borders*
+/*set images to have no borders*/
 img {
 border:0;
 }
@@ -4229,6 +4229,7 @@ footer#html5style2footer {
     page-break-after: avoid;
   }
 }
+
 
 
 
