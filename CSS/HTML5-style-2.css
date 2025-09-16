@@ -94,7 +94,7 @@ div.wrapper {
     position: relative; 
     top: 0; 
     left: 0; 
-    width: 904px; 
+    width: 970px; 
     margin: auto; 
 }
 /* Listing 1-7b. The Revised CSS Sheet for Figure 1-7 (html5-style-2.css) 
@@ -4234,6 +4234,7 @@ footer#html5style2footer {
     page-break-after: avoid;
   }
 }
+
 
 
 
