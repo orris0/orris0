@@ -113,7 +113,7 @@ border:0;
 /*add display attributes for the semantic tags*/
 header, footer, section, article, nav { display:block;
 }
-header#html5style2header.data { width:95%; max-width:1024px; min-width:900px; height:180px; padding:0; border:10px white solid; 
+header#html5style2header.data { width:90%; max-width:1024px; min-width:900px; height:180px; padding:0; border:10px white solid; 
 background:url(images/header3.jpg); margin: 20px auto;
 }
 /* banner css*/
@@ -4234,6 +4234,7 @@ footer#html5style2footer {
     page-break-after: avoid;
   }
 }
+
 
 
 
