@@ -485,7 +485,7 @@ body { background:#FFF url(images/green-grad.jpg) repeat-x; margin:auto;
 header, footer, section, article, nav { display:block;
 }
 
-/*remove the # from #header*/
+/*remove the # from #header*
 header#html5style2header.data {  
     width: 70%; 
     height: 180px;
@@ -4239,6 +4239,7 @@ footer#html5style2footer {
     page-break-after: avoid;
   }
 }
+
 
 
 
