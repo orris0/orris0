@@ -138,9 +138,9 @@ div#html5style2content {
 	width: 904px; margin-top:-10px; margin-left: auto; margin-right:auto; /* margin-left: 20px; margin-top: 170px; */ padding:8px; font-size:medium; color:maroon;
 }
 
-h2#html5style2-h2 { font-size: x-large; color: white; margin: 0 0 10px 0; /* margin-left:-175px; */
+h2#html5style2h2 { font-size: x-large; color: white; margin: 0 0 10px 0; /* margin-left:-175px; */
 }
-h3#html5style2-h3 { font-size:large; color: white; margin:0 0 6px 0;
+h3#html5style2h3 { font-size:large; color: white; margin:0 0 6px 0;
 }
 div#html5style2leftcol { float:left; width: 310px; vertical-align:top;
 }
@@ -4239,6 +4239,7 @@ footer#html5style2footer {
     page-break-after: avoid;
   }
 }
+
 
 
 
