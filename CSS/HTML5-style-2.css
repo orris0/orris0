@@ -471,17 +471,17 @@ footer { clear:both; color:maroon; text-align:center;
 /*
 Listing 4-1b. Applying the display:inline-block; Style to the Second Row of Buttons (inline-block.css)
 */
-/* Set styles to equalise the browser rendition*/
+/* Set styles to equalise the browser rendition*
 html, body, h1, h2, h3, h4, h5, p, ol, ul, li { padding: 0; margin: 0;
 }
 body { font-size: 100%; font-weight: normal;
 }
-/*equalise for various browsers and change #header to header*/
+/*equalise for various browsers and change #header to header*
 div body header #content { margin:0; padding:0; border:0;
 }
 body { background:#FFF url(images/green-grad.jpg) repeat-x; margin:auto;
 }
-/*add display attributes for the semantic tags*/
+/*add display attributes for the semantic tags*
 header, footer, section, article, nav { display:block;
 }
 
@@ -4239,6 +4239,7 @@ footer#html5style2footer {
     page-break-after: avoid;
   }
 }
+
 
 
 
