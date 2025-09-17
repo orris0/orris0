@@ -120,7 +120,7 @@ background:url(images/header3.jpg); margin: 20px auto;
 div#html5style2banner { width:320px; height:65px; padding:0; border:5px white solid; background: url(./bda-20.jpg); margin:10px auto; background-position: bottom;
 }
 
-h1#html5style2-h1 { font-size:300%; color :white; position: relative; left:15%; top: 55px; width:480px;
+h1#html5style2h1 { font-size:300%; color :white; position: relative; left:15%; top: 55px; width:480px;
 }
 
 /*Listing 3-6b. The Revised CSS for Re-positioning the Rosette (rosette.css) */
@@ -4234,6 +4234,7 @@ footer#html5style2footer {
     page-break-after: avoid;
   }
 }
+
 
 
 
