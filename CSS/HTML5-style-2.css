@@ -114,7 +114,7 @@ border:0;
 header, footer, section, article, nav { display:block;
 }
 header#html5style2header.data { width:970px; max-width:970px; min-width:900px; height:180px; padding:0; border:10px white solid; 
-background:url(images/header3.jpg); margin-left:20px;
+background:url(images/header3.jpg); margin-left:40px;
 }
 /* banner css*/
 div#html5style2banner { width:320px; height:65px; padding:0; border:5px white solid; background: url(./bda-20.jpg); margin:10px auto; background-position: bottom;
@@ -4239,6 +4239,7 @@ footer#html5style2footer {
     page-break-after: avoid;
   }
 }
+
 
 
 
