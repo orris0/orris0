@@ -132,7 +132,7 @@ div#html5style2content {
 	border-left:10px white solid; 
 	border-right:10px white solid; 
 	border-bottom:10px white solid; 
-	width: 904px; margin-top:-10px; margin-left: auto; margin-right:auto; /* margin-left: 20px; margin-top: 170px; */ padding:8px; font-size:medium; color:maroon;
+	width: 970px; margin-top:-10px; margin-left: auto; margin-right:auto; /* margin-left: 20px; margin-top: 170px; */ padding:8px; font-size:medium; color:maroon;
 }
 
 h2#html5style2h2 { font-size: x-large; color: white; margin: 0 0 10px 0; /* margin-left:-175px; */
@@ -4236,6 +4236,7 @@ footer#html5style2footer {
     page-break-after: avoid;
   }
 }
+
 
 
 
