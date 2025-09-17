@@ -116,9 +116,6 @@ header, footer, section, article, nav { display:block;
 header#html5style2header.data { width:970px; max-width:970px; min-width:900px; height:180px; padding:0; border:10px white solid; 
 background:url(images/header3.jpg); margin-left:10px;
 }
-/* banner css*/
-div#html5style2banner { width:320px; height:65px; padding:0; border:5px white solid; background: url(./bda-20.jpg); margin:10px auto; background-position: bottom;
-}
 
 h1#html5style2h1 { font-size:300%; color :white; position: relative; left:15%; top: 55px; width:480px;
 }
@@ -4239,6 +4236,7 @@ footer#html5style2footer {
     page-break-after: avoid;
   }
 }
+
 
 
 
