@@ -114,7 +114,7 @@ border:0;
 header, footer, section, article, nav { display:block;
 }
 header#html5style2header.data { width:970px; max-width:970px; min-width:900px; height:180px; padding:0; border:10px white solid; 
-background:url(images/header3.jpg); margin-left: -5px;
+background:url(images/header3.jpg); margin-left: 0px;
 }
 
 h1#html5style2h1 { font-size:300%; color :white; position: relative; left:15%; top: 55px; width:480px;
@@ -4236,6 +4236,7 @@ footer#html5style2footer {
     page-break-after: avoid;
   }
 }
+
 
 
 
