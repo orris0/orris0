@@ -139,10 +139,10 @@ div#html5style2rightcol { width: 135px; float:right; height: 252px; margin-right
 div#html5style2midcol { margin-left:315px; margin-right:145px; margin-top:-20px; vertical-align:top;
 }
 /*set nav block position and width and remove the #menu item*/
-nav#html5style2nav.data ul { margin: 10px 0 10px 0; width:135px; float:right;
+.nav#html5style2nav.data ul { margin: 10px 0 10px 0; width:135px; float:right;
 }
 /*Set un-ordered list style within the menu block only. This removes bullets*/
-nav#html5style2nav.data li { list-style-type:none;
+.nav#html5style2nav.data li { list-style-type:none;
 }
 /* set general side button styles */
 nav#html5style2nav.data li.btn { margin-bottom: 3px; text-align: center; width:130px;
