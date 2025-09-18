@@ -322,7 +322,7 @@ img { margin-left:10px;
 footer { clear:both; color:maroon; text-align:center; border: 2px solid black;
 }
 
-*
+*/
 div.wrapper { 
     position: relative; 
     top: 0; 
@@ -4235,6 +4235,7 @@ footer#html5style2footer {
     page-break-after: avoid;
   }
 }
+
 
 
 
