@@ -107,13 +107,12 @@ div body header #content { margin:0; padding:0; border:0;
 html, body, p, ul, li, h1, h2 { margin:0; padding:0;
 }
 /*set images to have no borders*/
-img {
-border:0;
+img { border:0;
 }
 /*add display attributes for the semantic tags*/
 header, footer, section, article, nav { display:block;
 }
-header#inlineblockheader.data header#header.row {width:100%; height:80px; color:black; background-color:#FFCC00; padding-top:10px;
+header#inlineblockheader.data header#header.row {width: 920px; height:80px; color:black; background-color:#FFCC00; padding-top:10px;
 }
 
 h1#html5style2h1 { font-size:300%; color :white; position: relative; left:15%; top: 55px; width:480px;
@@ -4235,6 +4234,7 @@ footer#html5style2footer {
     page-break-after: avoid;
   }
 }
+
 
 
 
