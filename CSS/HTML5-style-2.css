@@ -332,7 +332,7 @@ div.wrapper {
     text-align: center;
 }
 
-/*equalise all the margins, paddings and borders built into various browsers* 
+/*equalise all the margins, paddings and borders built into various browsers*/ 
 div header #content { margin:0; padding:0; border:0; 
 }
 header, footer, section, article, nav { display:block;
@@ -4235,6 +4235,7 @@ footer#html5style2footer {
     page-break-after: avoid;
   }
 }
+
 
 
 
