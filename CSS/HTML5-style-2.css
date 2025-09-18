@@ -510,7 +510,7 @@ border-bottom:10px white solid; width: 904px; margin-top:-10px; margin-left:auto
 }
 *
 div#html5style2content.data { background-color:transparent; border-left:10px white solid; border-right:10px white solid; 
-border-bottom:10px white solid; width: 970px; margin-top:-29px; margin-left:auto; margin-right:auto; padding:8px; font-size:medium; color:maroon; 
+border-bottom:10px white solid; width: 946px; margin-top:-29px; margin-left:auto; margin-right:auto; padding:8px; font-size:medium; color:maroon; 
 }
 /*
 div#inlineblockcontent.data { margin:auto; text-align:center; width:97%; min-width:800px; 
@@ -4234,6 +4234,7 @@ footer#html5style2footer {
     page-break-after: avoid;
   }
 }
+
 
 
 
