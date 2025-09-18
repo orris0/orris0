@@ -113,8 +113,7 @@ border:0;
 /*add display attributes for the semantic tags*/
 header, footer, section, article, nav { display:block;
 }
-header#html5style2header.data { width:970px; max-width:970px; min-width:900px; height:180px; padding:0; border:10px white solid; 
-background:url(images/header3.jpg); margin-left: 2px;
+header#html5style2header.data { width:970px; max-width:970px; min-width:900px; height:180px; padding:0; border:10px white solid; background:url(images/header3.jpg); margin-left: 2px;
 }
 
 h1#html5style2h1 { font-size:300%; color :white; position: relative; left:15%; top: 55px; width:480px;
@@ -272,7 +271,7 @@ body { background:#FFF url(images/green-grad.jpg) repeat-x; margin:auto;
 /*add display attributes for the semantic tags*
 header, footer, section, article, nav { display:block; 
 }
-/*remove the # from #header*
+/*remove the # from #header*/
 header {width:920px; height:180px; padding:0; border:10px white solid; background:  url(../bda-20.jpg); background-position: 35% bottom; margin:10px auto;
 }
 
@@ -4236,6 +4235,7 @@ footer#html5style2footer {
     page-break-after: avoid;
   }
 }
+
 
 
 
