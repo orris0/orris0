@@ -112,9 +112,23 @@ img { border:0;
 /*add display attributes for the semantic tags*/
 header, footer, section, article, nav { display:block;
 }
-header#html5style2header.data { width: 920px; height:180px; color:black; background-color:#FFCC00; padding-top:10px;
+header#html5style2header.data { width: 920px; height:180px; color:black; background-color:#FFCC00; padding-top:10px;background-image: url("../../../orris0/bda-20.jpg");
+    background-repeat: no-repeat;
+    background-position: bottom;
+    margin: 10px auto;
 }
-
+/*
+header#html5style2header.data  {
+  width: 970px; 
+    height: 180px;
+    border: 10px rgba(255,255,255,.3); 
+    padding: 0px;
+    background-image: url("../../../orris0/bda-20.jpg");
+    background-repeat: no-repeat;
+    background-position: bottom;
+    margin: 10px auto; 
+}
+*/
 h1#html5style2h1 { font-size:300%; color :white; position: relative; left:15%; top: 55px; width:480px;
 }
 
@@ -354,7 +368,7 @@ body.ui-mobile-viewport.ui-overlay-a { background:#FFF url(..//images/green-grad
 }
 ul { padding-left: 0;
 }
-/* end of style equalisation *
+/* end of style equalisation */
 p { 
 
     color: #000;
@@ -4231,6 +4245,7 @@ footer#html5style2footer {
     page-break-after: avoid;
   }
 }
+
 
 
 
