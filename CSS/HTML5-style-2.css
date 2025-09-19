@@ -569,13 +569,13 @@ header#html5style2header.data {width:920px; height:180px; padding:0; border:10px
 
 h1 { font-size:200%; color :white; position: relative; left:-150px; top: -10px; width:480px; 
 }
-*
+
 div#rosette { position:relative; left:750px; top:5px; }
-/*
+
 div#html5style2content { background-color:transparent; border-left:10px white solid; border-right:10px white solid; 
 border-bottom:10px white solid; width: 904px; margin-top:0px; margin-left:auto; margin-right:auto; padding:8px; font-size:medium; color:maroon; 
 }
-*
+
 h2 { font-size:x-large; color:rgba(196, 31, 31,0.7); margin:0 0 10px 0; 
 }
 h3 { font-size:large; color:white; margin:0 0 6px 0; 
@@ -583,7 +583,7 @@ h3 { font-size:large; color:white; margin:0 0 6px 0;
 div#html5style2leftcol { float:left; width: 310px; vertical-align:top; 
 }
 div#html5style2rightcol { width: 135px; float:right; height: 252px; margin-right:10px;
-}*
+}
 div#html5style2midcol { margin-left:315px; margin-right:145px; margin-top:-290px; vertical-align:top; 
 }
 /*set nav block position and width*/
@@ -4241,6 +4241,7 @@ footer#html5style2footer {
     page-break-after: avoid;
   }
 }
+
 
 
 
