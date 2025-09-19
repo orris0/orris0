@@ -112,7 +112,7 @@ img { border:0;
 /*add display attributes for the semantic tags*/
 header, footer, section, article, nav { display:block;
 }
-header#inlineblockheader.data header#header.row {width: 920px; height:80px; color:black; background-color:#FFCC00; padding-top:10px;
+header#html5style2header.data header#header.row {width: 920px; height:80px; color:black; background-color:#FFCC00; padding-top:10px;
 }
 
 h1#html5style2h1 { font-size:300%; color :white; position: relative; left:15%; top: 55px; width:480px;
@@ -4231,6 +4231,7 @@ footer#html5style2footer {
     page-break-after: avoid;
   }
 }
+
 
 
 
