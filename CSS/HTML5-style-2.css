@@ -1903,7 +1903,7 @@ html, body {
 */
 .js .home {
   background: #000000; }
-/*
+
 header {
   padding-top: 14px;
   padding-top: 0.875rem;
@@ -1932,7 +1932,6 @@ header {
       float: left;
       margin-bottom: 28px;
       margin-bottom: 1.75rem; }
-      */
   @media screen and (min-width: 48em) {
     header {
       padding-top: 28px;
