@@ -107,24 +107,17 @@ img { border:0;
 /*add display attributes for the semantic tags*/
 header, footer, section, article, nav { display:block;
 }
-/*
-header#html5style2header.data { width: 920px; height:180px; color:black; background-color:#FFCC00; padding-top:10px;background-image: url("../../../orris0/bda-20.jpg");
-    background-repeat: no-repeat;
-    background-position: bottom;
-    margin: 10px auto;
+/*remove the # from #header*/
+header#html5style2header.data {width:920px; height:180px; padding:0; border:10px white solid; background: url(images/header3.jpg); margin:10px auto; 
 }
 
-header#html5style2header.data  {
-  width: 970px; 
-    height: 180px;
-    border: 10px rgba(255,255,255,.3); 
-    padding: 0px;
-    background-image: url("../../../orris0/bda-20.jpg");
-    background-repeat: no-repeat;
-    background-position: bottom;
-    margin: 10px auto; 
+p { 
+
+    color: #000;
+    margin:auto; 
+    text-align:center;
 }
-*/
+
 h1#html5style2h1 { font-size:300%; color :white; position: relative; left:15%; top: 55px; width:480px;
 }
 
@@ -328,16 +321,6 @@ img { margin-left:10px;
 footer { clear:both; color:maroon; text-align:center; border: 2px solid black;
 }
 
-*
-div.wrapper { 
-    position: relative; 
-    top: 0; 
-    left: 0; 
-    width: 970px; 
-    margin: auto; 
-    text-align: center;
-}
-
 /*equalise all the margins, paddings and borders built into various browsers*
 
 #main-content {width:950px; margin:50px auto 0 auto; background-color:white; color:black; text-align:center; font-weight:bold;
@@ -355,7 +338,7 @@ body.ui-mobile-viewport.ui-overlay-a { background:#FFF url(..//images/green-grad
 }
 ul { padding-left: 0;
 }
-/* end of style equalisation */
+/* end of style equalisation *
 p { 
 
     color: #000;
@@ -551,7 +534,7 @@ body { background:#FFF url(images/green-grad.jpg) repeat-x; margin:auto;
 /*add display attributes for the semantic tags*
 header, footer, section, article, nav { display:block; 
 }
-/*remove the # from #header*/
+/*remove the # from #header*
 header#html5style2header.data {width:920px; height:180px; padding:0; border:10px white solid; 
   background: url(images/header3.jpg); margin:10px auto; 
 }
@@ -562,7 +545,7 @@ h1 { font-size:200%; color :white; position: relative; left:-150px; top: -10px; 
 }
 
 div#rosette { position:relative; left:750px; top:5px; }
-
+*/
 div#html5style2content { background-color:transparent; border-left:10px white solid; border-right:10px white solid; 
 border-bottom:10px white solid; width: 904px; margin-top:0px; margin-left:auto; margin-right:auto; padding:8px; font-size:medium; color:maroon; 
 }
@@ -4232,6 +4215,7 @@ footer#html5style2footer {
     page-break-after: avoid;
   }
 }
+
 
 
 
