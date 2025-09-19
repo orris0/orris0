@@ -936,7 +936,7 @@ h6 {
 
 /*--------------------------------------------------------------
 # Header
---------------------------------------------------------------*
+--------------------------------------------------------------*/
 header {
   background: rgba(25, 25, 25, 0.95);
   transition: all 0.5s;
@@ -975,7 +975,7 @@ header .logo img {
 --------------------------------------------------------------*/
 /**
 * Desktop Navigation 
-*
+*/
 .navbar {
   padding: 0;
 }
@@ -1709,10 +1709,10 @@ html {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
-/*
+
 article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary {
   display: block; }
-*/
+
 audio, canvas, video {
   display: inline-block;
   display: inline;
@@ -1737,12 +1737,12 @@ a:focus {
 a:active,
 a:hover {
   outline: 0; }
-/*
+
 hgroup, ul, ol, dd, menu, dl, figure, pre, table, fieldset, legend, hr,
 h1, h2, h3, h4, h5, h6, p, a {
   margin: 5px;
   padding: 0; }
-*/
+
 b, strong {
   font-weight: bold; }
 
@@ -1919,7 +1919,7 @@ html, body {
 
 .js .home {
   background: #000000; }
-/*
+
 header {
   padding-top: 14px;
   padding-top: 0.875rem;
@@ -1935,7 +1935,7 @@ header {
   z-index: 6060;
   width: 100%; 
   }
-  */
+  
   header h1 a {
     display: block; }
   .no-js header {
@@ -4231,6 +4231,7 @@ footer#html5style2footer {
     page-break-after: avoid;
   }
 }
+
 
 
 
