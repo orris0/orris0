@@ -564,7 +564,7 @@ body { background:#FFF url(images/green-grad.jpg) repeat-x; margin:auto;
 /*add display attributes for the semantic tags*
 header, footer, section, article, nav { display:block; 
 }
-/*remove the # from #header*
+/*remove the # from #header*/
 header#html5style2header {width:920px; height:180px; padding:0; border:10px white solid; 
   background: url(images/header3.jpg); margin:10px auto; 
 }
@@ -4245,6 +4245,7 @@ footer#html5style2footer {
     page-break-after: avoid;
   }
 }
+
 
 
 
