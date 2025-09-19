@@ -423,7 +423,7 @@ nav#html5style2nav { margin:0px 9px 0 8px; width:135px;
 nav#html5style2nav.data li { list-style-type:none; 
 }	
 /* set general side button styles */
-nav#nav li { margin-bottom: 3px; text-align: center; width:130px;
+nav#html5style2nav.data li { margin-bottom: 3px; text-align: center; width:130px;
 }
 /* set general anchor styles and include the zoom fix for IE6*/
 nav#nav li a { display: block; color: white; font-weight: bold; text-decoration: none; zoom:1;
