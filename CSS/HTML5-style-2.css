@@ -1891,7 +1891,7 @@ h1, h2, h3, h4, h5, h6 {
 .logo-white-fallback, .no-js header .header-inner h1, .no-js footer h1 {
   background-image: url("img/logo-white.png");
   background-repeat: no-repeat; }
-
+/*
 html, body {
   -webkit-text-size-adjust: 100%; }
 
@@ -1900,7 +1900,7 @@ html, body {
   @media screen and (min-height: 37.5em) {
     html, body {
       height: 100%; } }
-
+*/
 .js .home {
   background: #000000; }
 
