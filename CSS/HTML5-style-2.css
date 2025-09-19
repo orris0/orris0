@@ -2056,9 +2056,10 @@ header .header-inner h1 {
     visibility: visible !important; } }
 .lt-ie9 .show-nav {
   display: block; }
-
+/*
 nav {
   clear: both; }
+  */
   nav li {
     line-height: 2;
     text-align: center; }
