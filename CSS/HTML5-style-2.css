@@ -271,7 +271,7 @@ set the gallery block 10px further to the right
 /*equalise for various browsers and change #header to header*
 div body header #content { margin:0; padding:0; border:0; 
 }
-/*PAGE LAYOUT*/
+/*PAGE LAYOUT*
 body { background:#FFF url(images/green-grad.jpg) repeat-x; margin:auto;
 }
 /*add display attributes for the semantic tags*
@@ -338,17 +338,8 @@ div.wrapper {
     text-align: center;
 }
 
-/*equalise all the margins, paddings and borders built into various browsers*/ 
-div header #content { margin:0; padding:0; border:0; 
-}
-header, footer, section, article, nav { display:block;
-}
-div.wrapper {position:relative; top:0; left:0;width:950px; margin:auto; text-align:center;
-}
-header#inlineblockheader.data header#header.row {width:100%; height:80px; color:black; background-color:#FFCC00; padding-top:10px;
-}
-h1 { font-size:200%; font-weight:bold; margin-top:20px;
-}
+/*equalise all the margins, paddings and borders built into various browsers*
+
 #main-content {width:950px; margin:50px auto 0 auto; background-color:white; color:black; text-align:center; font-weight:bold;
 }
 footer {margin:10px auto 0 auto; width:950px; font-weight:bold; text-align:center; background-color:#FFCC00; color:black; clear:both;
@@ -4241,6 +4232,7 @@ footer#html5style2footer {
     page-break-after: avoid;
   }
 }
+
 
 
 
