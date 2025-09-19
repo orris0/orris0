@@ -420,7 +420,7 @@ h3 { font-size:large; color:rgba(0, 0, 0, 0.6); margin:0 0 6px 0;
 nav#html5style2nav { margin:0px 9px 0 8px; width:135px; 
 }
 /*Set list style within the menu block only. This removes bullets*/
-nav#html5style2nav li { list-style-type:none; 
+nav#html5style2nav.data li { list-style-type:none; 
 }	
 /* set general side button styles */
 nav#nav li { margin-bottom: 3px; text-align: center; width:130px;
