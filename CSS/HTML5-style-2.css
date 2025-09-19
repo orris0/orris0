@@ -1713,7 +1713,7 @@ html, button, input, select, textarea {
   font-family: sans-serif; }
 
 body {
-  margin: 0; }
+  margin: auto; }
 
 a:focus {
   outline: thin dotted; }
