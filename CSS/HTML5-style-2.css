@@ -130,9 +130,9 @@ border-bottom:10px white solid; width: 920px; margin-top:-39px; margin-left:auto
 }
 */
 /* ====== h2 ====== */
-h2#html5style2h2 { font-size: x-large; color: white; margin: 0 0 10px 0; 
+h2#html5style2h2 { font-size: 100%; color: white; margin: 0 0 10px 0; 
 }
-h3#html5style2h3 { font-size:large; color: white; margin:0 0 6px 0;
+h3#html5style2h3 { font-size:100%; color: white; margin:0 0 6px 0;
 }
 div#html5style2leftcol { float:left; width: 310px; vertical-align:top;
 }
@@ -4231,6 +4231,7 @@ footer#html5style2footer {
     page-break-after: avoid;
   }
 }
+
 
 
 
