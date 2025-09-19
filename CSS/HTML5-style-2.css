@@ -282,7 +282,7 @@ body { background:#FFF url(images/green-grad.jpg) repeat-x; margin:auto;
 /*add display attributes for the semantic tags*
 header, footer, section, article, nav { display:block; 
 }
-/*remove the # from #header*/
+/*remove the # from #header*
 header {width:920px; height:180px; padding:0; border:10px white solid; background:  url(../bda-20.jpg); background-position: 35% bottom; margin:10px auto;
 }
 
@@ -333,7 +333,7 @@ img { margin-left:10px;
 footer { clear:both; color:maroon; text-align:center; border: 2px solid black;
 }
 
-*/
+*
 div.wrapper { 
     position: relative; 
     top: 0; 
@@ -4246,6 +4246,7 @@ footer#html5style2footer {
     page-break-after: avoid;
   }
 }
+
 
 
 
