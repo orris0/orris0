@@ -129,7 +129,7 @@ h1#html5style2h1 {
   top: 5px;
 }
 
-#content {
+##html5style2content {
   background-color: transparent;
   border-left: 10px white solid;
   border-right: 10px white solid;
@@ -143,19 +143,19 @@ h1#html5style2h1 {
   color: maroon;
 }
 
-h2 {
+h2#html5style2h2 {
   font-size: x-large;
   color: white;
   margin: 0 0 10px 0;
 }
 
-h3 {
+h3#html5style2h3 {
   font-size: large;
   color: white;
   margin: 0 0 6px 0;
 }
 
-#leftcol {
+#html5style2leftcol {
   float: left;
   width: 310px;
   vertical-align: top;
@@ -163,7 +163,7 @@ h3 {
 
 /*#rightcol { width: 135px; float:right; height: 252px; margin-right:10px;
 }*/
-#midcol {
+#html5style2midcol {
   margin-left: 315px;
   margin-right: 145px;
   margin-top: 10px;
@@ -173,14 +173,14 @@ h3 {
 /*set nav block position and width*/
 /*nav { margin:10px 30px 0 10px; width:135px; float:right; 
 }*/
-nav ul {
+nav#html5style2nav ul {
   margin: 10px 0 10px 0;
   width: 135px;
   float: right;
 }
 
 /*Set un-ordered list style within the menu block only. This removes bullets*/
-nav li {
+nav#html5style2nav li {
   list-style-type: none;
 }
 
@@ -226,7 +226,7 @@ br.clear {
   clear: both;
 }
 
-#midcol img {
+#html5style2midcol img {
   margin-left: 10px;
 }
 
