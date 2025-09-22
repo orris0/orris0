@@ -2,12 +2,12 @@
 
 //-----01_animating_css
 
-$(document).ready(function(){
-  $('p').animate({ 
-    padding: '20px',
-    fontSize: '30px'
-  }, 2000);
-});
+// $(document).ready(function(){
+//  $('p').animate({ 
+//    padding: '20px',
+//    fontSize: '30px'
+//  }, 2000);
+//});
 
 //hover_highlight
 $(document).ready(function(){
@@ -1003,6 +1003,7 @@ new Plyr(".audio-player")
 
 
 	
+
 
 
 
