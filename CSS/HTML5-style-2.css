@@ -86,19 +86,39 @@ textarea {
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400');
 @import url('https://fonts.googleapis.com/css?family=Raleway:300');
 
-/*equalise for various browsers and change #header to header*/
-div body header #content {
-  margin: 0;
-  padding: 0;
-  border: 0;
-}
+/* Listing 1-7b. The Revised CSS Sheet for Figure 1-7 (html5-style-2.css) 
+(The key items are picked out in bold type.)
+equalise for various browsers and change #header to header*/
 
+div body header #content { margin:0; padding:0; border:0;
+}
+/*set attributes for consistent appearance in all browsers*/
+html, body, p, ul, li, h1, h2 { margin:0; padding:0;
+}
+/*set images to have no borders*/
+img { border:0;
+}
+/*add display attributes for the semantic tags*/
+header, footer, section, article, nav { display:block;
+}
+p { 
+
+    color: #000;
+    margin:auto; 
+    text-align:center;
+}
+/*
+h1#html5style2h1 { font-size:300%; color :white; position: relative; left:15%; top: 55px; width:480px;
+}
+*/
 body {
   background: #FFF url(images/green-grad.jpg) repeat-x;
   margin: auto;
 }
+div.wrapper {position:relative; top:0; left:0;width:950px; margin:auto; text-align:center;
+}
 
-/*add display attributes for the semantic tags*/
+/*add display attributes for the semantic tags*
 header,
 footer,
 section,
@@ -233,7 +253,7 @@ br.clear {
   margin-left: 10px;
 }
 
-footer {
+footer#html5style2.data {
   clear: both;
   color: maroon;
   text-align: center;
@@ -254,11 +274,10 @@ footer {
 * {
 	margin: 0; border: 0; padding: 0;
 }
-div.wrapper {position:relative; top:0; left:0;width:950px; margin:auto; text-align:center;
-}
+
 /* Listing 1-7b. The Revised CSS Sheet for Figure 1-7 (html5-style-2.css) 
 (The key items are picked out in bold type.)
-equalise for various browsers and change #header to header*/
+equalise for various browsers and change #header to header*
 
 div body header #content { margin:0; padding:0; border:0;
 }
@@ -271,10 +290,6 @@ img { border:0;
 /*add display attributes for the semantic tags*/
 header, footer, section, article, nav { display:block;
 }
-/*remove the # from #header*/
-header#html5style2header.data {width:920px; height:180px; padding:0; border:10px white solid; background: url(images/header3.jpg); margin:10px auto; 
-}
-
 p { 
 
     color: #000;
@@ -4380,6 +4395,7 @@ footer#html5style2footer {
     page-break-after: avoid;
   }
 }
+
 
 
 
