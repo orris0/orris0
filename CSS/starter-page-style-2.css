@@ -1,6 +1,6 @@
 /*add display attributes for the semantic tags
 header, footer, section, article, nav { display:block; }/*
-change #header to header and remove div*/
+change #header to header and remove div*
 body #header #content {
     margin: 0;
     padding: 0;
