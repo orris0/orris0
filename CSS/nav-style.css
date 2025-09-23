@@ -27,4 +27,4 @@ nav li a { background:#946055; color: white; border: 5px outset #C96E6B;}
 nav li a:hover	{ background: #9F7562;   border: 5px outset #C96E6B;}
 /* omousedown */
 nav li a:active { background:maroon;  border: 5px inset maroon }
-}
+
