@@ -118,7 +118,7 @@ header#html5style2header {
 }
 
 h1#html5style2h1 {
-  font-size: 100%;
+  font-size: 300%;
   color: white;
   position: relative;
   left: 90px;
@@ -4380,6 +4380,7 @@ footer#html5style2footer {
     page-break-after: avoid;
   }
 }
+
 
 
 
