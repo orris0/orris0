@@ -22,3 +22,14 @@ p { padding: 2%;}
         font-size: 2em;
     }
 }
+@media all and (max-width: 768px){
+    .row {
+        display: flex;
+        margin: auto;
+    }
+    [class*="col-"]:last-child {
+        margin: 0;
+    }
+    .col-1 { flex: 1;
+    }
+}
