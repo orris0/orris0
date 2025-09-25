@@ -13,3 +13,12 @@ h2 { font: 300 2em /1 'Raleway', sans-serif; color: #FFF; padding: 2%; /* positi
 .social { font-size: 3em; margin: 1%; padding: 5%; color: #F6931E;}
 .social i:hover { color: #F6931E;}
 p { padding: 2%;}
+/*--- Media Queries ---*/
+@media all and (max-width: 900px){
+    h2 {
+        font-size: 1.5em;
+    }
+    .social i {
+        font-size: 2em;
+    }
+}
