@@ -38,7 +38,7 @@ nav {
 }
 
 /*remove the # from #header*/
-header#html5style2header {
+header {
   width: 920px;
   height: 180px;
   padding: 0;
@@ -4548,6 +4548,7 @@ footer#html5style2footer {
     page-break-after: avoid;
   }
 }
+
 
 
 
