@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400');
 @import url('https://fonts.googleapis.com/css?family=Raleway:300');
 *{ margin:0; padding: 0; box-sizing: border-box;}
-html, body { height: 100%; background: #FFF url(images/green-grad.jpg) repeat-x; text-align: center; font: 1.15em/1 'Open Sans', sans-serif; color: #FFF;}
+html, body { height: 100%; background: #FFF url(images/green-grad.jpg) repeat-x;} /* text-align: center; font: 1.15em/1 'Open Sans', sans-serif; color: #FFF;} */
 .wrapper { background-color: #F5F5F5; height: 100%;}
 #header { background-color: #AFDED4;}
 .logo { padding: 2%;}
