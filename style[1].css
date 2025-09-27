@@ -61,7 +61,7 @@ h1 {
   top: 5px;
 }
 
-#content {
+div#content {
   background-color: transparent;
   border-left: 10px white solid;
   border-right: 10px white solid;
@@ -87,7 +87,7 @@ h3 {
   margin: 0 0 6px 0;
 }
 
-#leftcol {
+div#leftcol {
   float: left;
   width: 310px;
   vertical-align: top;
@@ -95,7 +95,7 @@ h3 {
 
 /*#rightcol { width: 135px; float:right; height: 252px; margin-right:10px;
 }*/
-#midcol {
+div#midcol {
   margin-left: 315px;
   margin-right: 145px;
   margin-top: -277px;
