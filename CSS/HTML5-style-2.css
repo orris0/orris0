@@ -811,11 +811,11 @@ div#inlineblockcontainer { border: 10px solid white;  background-clip: padding-b
 div#inlineblockcontent.data { background-color:transparent; border-left:10px white solid; border-right:10px white solid; 
 border-bottom:10px white solid; width: 904px; margin-top:-10px; margin-left:auto; margin-right:auto; padding:8px; font-size:medium; color:maroon; 
 }
-*
+/*
 div#html5style2content.data { background-color:transparent; border-left:10px white solid; border-right:10px white solid; 
 border-bottom:10px white solid; width: 920px; margin-top:-26px; margin-left:auto; margin-right:auto; padding:8px; font-size:medium; color:maroon; 
 }
-/*
+
 div#inlineblockcontent.data { margin:auto; text-align:center; width:97%; min-width:800px; 
 max-width:70%;
 }
