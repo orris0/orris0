@@ -3,11 +3,11 @@
 *{ margin:0; padding: 0; box-sizing: border-box;}
 html { height: 100%; text-align: center; font: 1.15em/1 'Open Sans', sans-serif; color: #FFF;} */
 div.wrapper { background-color: #F5F5F5; height: 100%;};
-#header { background-color: #AFDED4;}
+#header#html5style2header { background-color: #AFDED4;}
 .logo { padding: 2%;}
 img { max-width: 300%;} 
 h2.dark { color: #34495E;}
-h2 { font: 300 2em /1 'Raleway', sans-serif; color: #FFF; padding: 2%; position: relative;  top: 50%; transform: translateY(-50%);}
+h2#html5style2h2 { font: 300 2em /1 'Raleway', sans-serif; color: #FFF; padding: 2%; position: relative;  top: 50%; transform: translateY(-50%);}
 .social { list-style: none;}
 .social li { display: inline;}
 .social { font-size: 3em; margin: 1%; padding: 5%; color: #F6931E;}
@@ -36,7 +36,7 @@ nav {
 }
 
 /*remove the # from #header*/
-header#html5-style-2header {
+header#html5style2header {
   width: 920px;
   height: 180px;
   padding: 0;
@@ -45,7 +45,7 @@ header#html5-style-2header {
   margin: 10px auto;
 }
 
-h1 {
+h1#html5style2h1 {
   font-size: 100%;
   color: blue;
   position: relative;
@@ -60,7 +60,7 @@ h1 {
   top: 5px;
 }
 
-div#content {
+div#html5style2content {
   background-color: transparent;
   border-left: 10px white solid;
   border-right: 10px white solid;
@@ -86,15 +86,15 @@ h3 {
   margin: 0 0 6px 0;
 }
 
-div#leftcol {
+div#html5style2leftcolo {
   float: left;
   width: 310px;
   vertical-align: bottom;
 }
 
-/*#rightcol { width: 135px; float:right; height: 252px; margin-right:10px;
+/*#html5style2rightcol { width: 135px; float:right; height: 252px; margin-right:10px;
 }*/
-div#midcol {
+div#html5style2headermidcol {
   margin-left: 315px;
   margin-right: 145px;
   margin-top: -277px;
