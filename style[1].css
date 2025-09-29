@@ -36,7 +36,7 @@ nav {
 }
 
 /*remove the # from #header*/
-header#html5style2header {
+header#html5style2header.row {
   width: 920px;
   height: 180px;
   padding: 0;
