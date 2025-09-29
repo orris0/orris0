@@ -463,7 +463,7 @@ div#html5style2leftcol { float:left; width: 310px; vertical-align:top;
 }
 div#html5style2rightcol { width: 135px; float:right; height: 252px; margin-right:10px;
 }
-div#html5style2midcol { margin-left:315px; margin-right:145px; margin-top: 0px; vertical-align:top;
+div#html5style2midcol { margin-left:315px; margin-right:145px; margin-top: -565px; vertical-align:top;
 }
 /*set nav block position and width and remove the #menu item*/
 nav#html5style2nav.data ul { margin: 39px 0 10px 0; width:135px; float:right;
