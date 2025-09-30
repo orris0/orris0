@@ -268,7 +268,7 @@ body {
   background: #FFF url(images/green-grad.jpg) repeat-x;
   margin: auto;
 }
-div.wrapper {position:relative; top:0px; left:0;width:920px; margin:auto; text-align:center;
+div.wrapper {position:relative; top:0px; left:0;width:100%; margin:auto; text-align:center;
 }
 
 /*add display attributes for the semantic tags*
