@@ -14,17 +14,17 @@ body {
 }
 /* needed for checkbox hack */
 
-nav#html5style2nav {
+#nav {
   position: relative;
 }
-nav#html5style2nav ul {
+#nav ul {
   display: none;
   width: 100%;
   list-style: none;
   margin: 0px;
   padding: 0px;
 }
-nav#html5style2nav ul li a {
+#nav ul li a {
   display: block;
   padding: .8em;
   background: #16a085;
@@ -33,28 +33,28 @@ nav#html5style2nav ul li a {
   border-right: 1px solid #34495e;
   font-size: .9em;
 }
-nav#html5style2nav ul li a:hover {
+#nav ul li a:hover {
   background: #138a72;
 }
-nav#html5style2nav ul li:last-of-type a {
+#nav ul li:last-of-type a {
   border-right: 0px;
 }
-nav#html5style2nav ul li ul li a {
+#nav ul li ul li a {
   padding-left: 1.5em;
 }
-nav#html5style2nav ul li ul li ul li a {
+#nav ul li ul li ul li a {
   padding-left: 3.125em;
 }
-nav#html5style2nav input.trigger {
+#nav input.trigger {
   position: absolute;
   top: -9999px;
   left: -9999px;
 }
-nav#html5style2nav input.trigger:checked ~ ul, #nav input.trigger:checked ~ ul li ul {
+#nav input.trigger:checked ~ ul, #nav input.trigger:checked ~ ul li ul {
   display: block !important;
 }
 @media (min-width: 48em) {
-  nav#html5style2nav input.trigger:checked ~ ul, #nav input.trigger:checked ~ ul li ul {
+  #nav input.trigger:checked ~ ul, #nav input.trigger:checked ~ ul li ul {
     /* older flexbox */
     display: -webkit-box;
     display: -moz-box;
@@ -67,7 +67,7 @@ nav#html5style2nav input.trigger:checked ~ ul, #nav input.trigger:checked ~ ul l
     flex-direction: row;
   }
 }
-nav#html5style2nav label {
+#nav label {
   position: relative;
   display: block;
   min-height: 2em;
@@ -80,7 +80,7 @@ nav#html5style2nav label {
   color: white;
   text-align: left!important;
 }
-nav#html5style2nav label:after {
+#nav label:after {
   position: absolute;
   right: .2em;
   top: .1em;
@@ -90,7 +90,7 @@ nav#html5style2nav label:after {
   color: white;
 }
 @media (min-width: 48em) {
-  nav#html5style2nav ul {
+  #nav ul {
     /* older flexbox */
     display: -ms-flexbox;
     flex-direction: -ms-row;
@@ -104,7 +104,7 @@ nav#html5style2nav label:after {
     display: flex;
     flex-direction: row;
   }
-  nav#html5style2nav ul li {
+  #nav ul li {
     position: relative;
     text-align: center;
     /* older flexbox */
@@ -115,7 +115,7 @@ nav#html5style2nav label:after {
     /* newer flexbox */
     flex: 1;
   }
-  nav#html5style2nav ul li ul {
+  #nav ul li ul {
     display: none !important;
     position: absolute;
     top: 3.0625em;
@@ -124,18 +124,18 @@ nav#html5style2nav label:after {
     width: 12.5em;
     z-index: 200;
   }
-  nav#html5style2nav ul li ul li {
+  #nav ul li ul li {
     text-align: left;
   }
-  nav#html5style2nav ul li ul li ul {
+  #nav ul li ul li ul {
     z-index: 300;
     top: 0px;
     left: 12.4em;
   }
-  nav#html5style2nav ul li ul li ul li a {
+  #nav ul li ul li ul li a {
     padding-left: 30px !important;
   }
-  nav#html5style2nav ul li:hover > ul {
+  #nav ul li:hover > ul {
     display: block !important;
   }
   nav#html5style2nav label {
