@@ -44,6 +44,7 @@ function removeLightbox() {
       $('body').css('overflow-y', 'auto'); // show scrollbars!
     });
 }
+/*  document_ready */
 $(function(){
   //alert('Welcome to StarTrackr! Now no longer under police investigation!');
   //alert($('#celebs tbody tr:even').length + ' elements!');
@@ -71,7 +72,7 @@ $(function(){
 
 
 });
-
+/* animating_css */
 $(document).ready(function() {
   $('p:first')
     .effect('shake', {times:3}, 300)
