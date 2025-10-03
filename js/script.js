@@ -1,5 +1,15 @@
 //-----window.load start here
 
+//-----colorbox
+$(document).ready(function(){
+  $('a[rel=celeb]').colorbox({
+    transition: 'fade',
+    speed: 500,
+    current: "{current} of {total} celebrity photos"
+  });
+
+});
+
 // lightbox
 $(document).ready(function(){
   $('a.lightbox').click(function(e) {
