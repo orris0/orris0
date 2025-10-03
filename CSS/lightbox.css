@@ -4,7 +4,7 @@
   left: 0;
   height: 100%;
   width: 100%;
-  background: black url(../../css/images/spinner.gif) no-repeat scroll center center;
+  background: black url( ./images/spinner.gif) no-repeat scroll center center;
 }
 
 #lightbox {
