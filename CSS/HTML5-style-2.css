@@ -10,7 +10,11 @@
 /* ==========================================================================
    Base styles: opinionated defaults
    ========================================================================== */
-html.ui-mobile {
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400');
+@import url('https://fonts.googleapis.com/css?family=Raleway:300');
+
+
+   html.ui-mobile {
   color: black;
   font-size: 1em;
   line-height: 1.4;
@@ -236,8 +240,6 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:400');
-@import url('https://fonts.googleapis.com/css?family=Raleway:300');
 
 /* Listing 1-7b. The Revised CSS Sheet for Figure 1-7 (html5-style-2.css) 
 (The key items are picked out in bold type.)
