@@ -93,6 +93,18 @@ $(document).ready(function(){
     $('#disclaimer').toggle();
   });
 });
+// toggle-text
+$(document).ready(function(){
+  $('#toggleButton').click(function(){
+    $('#disclaimer').toggle();
+    
+    if($('#disclaimer').is(':visible')) {
+      $(this).val('Hide');
+    } else {
+      $(this).val('Show');
+    }
+  });
+});
 
 
 
@@ -237,6 +249,7 @@ gallery.init = function() {
       gallery.slide();
     });
 }
+
 
 
 
