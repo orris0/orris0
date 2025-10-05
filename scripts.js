@@ -77,6 +77,16 @@ $(document).ready(function(){
     $('#disclaimer').show();
   });
 });
+// toogle-1
+$(document).ready(function(){
+    $('#toggleButton').click(function(){
+    if($('#disclaimer').is(':visible')) {
+      $('#disclaimer').hide();
+    } else {
+      $('#disclaimer').show();
+    }
+  });
+});
 
 
 
@@ -221,6 +231,7 @@ gallery.init = function() {
       gallery.slide();
     });
 }
+
 
 
 
