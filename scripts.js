@@ -69,6 +69,15 @@ $(document).ready(function() {
   });
 });
 
+$(document).ready(function(){
+  $('#hideButton').click(function(){
+    $('#disclaimer').hide();
+  });
+  $('#showButton').click(function(){
+    $('#disclaimer').show();
+  });
+});
+
 
 
 
@@ -212,6 +221,7 @@ gallery.init = function() {
       gallery.slide();
     });
 }
+
 
 
 
