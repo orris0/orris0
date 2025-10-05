@@ -34,6 +34,11 @@ $(document).ready(function(){
 });
 
 $(document).ready(function(){
+  var fontSize = $('#celebs tbody tr:first').css('font-size');
+  alert(fontSize);
+});
+
+$(document).ready(function(){
   $('a.lightbox').click(function(e) {
     $('body').css('overflow-y', 'hidden'); // hide scrollbars!
     
@@ -168,6 +173,7 @@ gallery.init = function() {
       gallery.slide();
     });
 }
+
 
 
 
