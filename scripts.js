@@ -147,6 +147,12 @@ $(document).ready(function(){
   alert($('h2:first').text());
 });
 
+$(document).ready(function(){
+  $('#hideButton').click(function(){
+    $('#disclaimer').fadeOut();
+  });
+});
+
 
 
 
@@ -297,6 +303,7 @@ gallery.init = function() {
       gallery.slide();
     });
 }
+
 
 
 
