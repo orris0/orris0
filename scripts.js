@@ -125,6 +125,10 @@ $(document).ready(function(){
   $('<strong>END!</strong>').appendTo('#disclaimer');
 });
 
+$(document).ready(function(){
+  $('#no-script').remove();
+});
+
 
 
 
@@ -275,6 +279,7 @@ gallery.init = function() {
       gallery.slide();
     });
 }
+
 
 
 
