@@ -128,6 +128,10 @@ $(document).ready(function(){
 $(document).ready(function(){
   $('#no-script').remove();
 });
+// removing-with-selector
+$(document).ready(function(){
+  $('#celebs tr').remove(':contains("Singer")');
+});
 
 
 
@@ -279,6 +283,7 @@ gallery.init = function() {
       gallery.slide();
     });
 }
+
 
 
 
