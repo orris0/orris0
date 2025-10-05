@@ -138,6 +138,11 @@ $(document).ready(function(){
   $('h2').text('All your titles are belong to us');
 });
 
+$(document).ready(function(){
+  $('p').html('<strong>Warning!</strong> Text has been replaced for your safety.');
+  $('h2').text('<strong>Warning!</strong> Title elements can be hazardous to your health.');
+});
+
 
 
 
@@ -288,6 +293,7 @@ gallery.init = function() {
       gallery.slide();
     });
 }
+
 
 
 
