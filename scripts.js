@@ -143,6 +143,10 @@ $(document).ready(function(){
   $('h2').text('<strong>Warning!</strong> Title elements can be hazardous to your health.');
 });
 
+$(document).ready(function(){
+  alert($('h2:first').text());
+});
+
 
 
 
@@ -293,6 +297,7 @@ gallery.init = function() {
       gallery.slide();
     });
 }
+
 
 
 
