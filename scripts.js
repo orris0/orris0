@@ -153,6 +153,12 @@ $(document).ready(function(){
   });
 });
 
+$(document).ready(function(){
+  $('#toggleButton').click(function(){
+    $('#disclaimer').toggle('slow');
+  });
+});
+
 
 
 
@@ -303,6 +309,7 @@ gallery.init = function() {
       gallery.slide();
     });
 }
+
 
 
 
