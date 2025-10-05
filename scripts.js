@@ -57,6 +57,12 @@ $(document).ready(function(){
   $('#celebs tbody tr:even').addClass('zebra');
 });
 
+$(document).ready(function() {
+  $('#hideButton').click(function(){
+    $('#disclaimer').hide();
+  });
+});
+
 
 
 
@@ -200,6 +206,7 @@ gallery.init = function() {
       gallery.slide();
     });
 }
+
 
 
 
