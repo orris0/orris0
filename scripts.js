@@ -29,7 +29,9 @@ $(document).ready(function(){
   alert($('#celebs tbody tr:even').length + ' elements!');
 });
 
-
+$(document).ready(function(){
+  alert($('#celebs tr').length + ' elements!');
+});
 
 $(document).ready(function(){
   $('a.lightbox').click(function(e) {
@@ -166,5 +168,6 @@ gallery.init = function() {
       gallery.slide();
     });
 }
+
 
 
