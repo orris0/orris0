@@ -77,7 +77,7 @@ $(document).ready(function(){
     $('#disclaimer').show();
   });
 });
-// toogle-1
+// toggle-1
 $(document).ready(function(){
     $('#toggleButton').click(function(){
     if($('#disclaimer').is(':visible')) {
@@ -85,6 +85,12 @@ $(document).ready(function(){
     } else {
       $('#disclaimer').show();
     }
+  });
+});
+// toggle-2
+$(document).ready(function(){
+  $('#toggleButton').click(function(){
+    $('#disclaimer').toggle();
   });
 });
 
@@ -231,6 +237,7 @@ gallery.init = function() {
       gallery.slide();
     });
 }
+
 
 
 
