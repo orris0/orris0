@@ -63,6 +63,12 @@ $(document).ready(function() {
   });
 });
 
+$(document).ready(function() {
+  $('#hideButton').click(function(){
+    $(this).hide();
+  });
+});
+
 
 
 
@@ -206,6 +212,7 @@ gallery.init = function() {
       gallery.slide();
     });
 }
+
 
 
 
