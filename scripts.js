@@ -1,4 +1,10 @@
 $(document).ready(function(){
+  alert($('#celebs tbody tr:even').length + ' elements!');
+});
+
+
+
+$(document).ready(function(){
   $('a.lightbox').click(function(e) {
     $('body').css('overflow-y', 'hidden'); // hide scrollbars!
     
@@ -133,3 +139,4 @@ gallery.init = function() {
       gallery.slide();
     });
 }
+
