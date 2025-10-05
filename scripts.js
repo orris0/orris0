@@ -68,7 +68,7 @@ $(document).ready(function() {
     $(this).hide();
   });
 });
-
+// revealling
 $(document).ready(function(){
   $('#hideButton').click(function(){
     $('#disclaimer').hide();
@@ -221,6 +221,7 @@ gallery.init = function() {
       gallery.slide();
     });
 }
+
 
 
 
