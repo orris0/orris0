@@ -53,6 +53,10 @@ $(document).ready(function(){
   );
 });
 
+$(document).ready(function(){
+  $('#celebs tbody tr:even').addClass('zebra');
+});
+
 
 
 
@@ -196,6 +200,7 @@ gallery.init = function() {
       gallery.slide();
     });
 }
+
 
 
 
