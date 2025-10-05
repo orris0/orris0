@@ -133,6 +133,11 @@ $(document).ready(function(){
   $('#celebs tr').remove(':contains("Singer")');
 });
 
+$(document).ready(function(){
+  $('p').html('good bye, cruel paragraphs!');
+  $('h2').text('All your titles are belong to us');
+});
+
 
 
 
@@ -283,6 +288,7 @@ gallery.init = function() {
       gallery.slide();
     });
 }
+
 
 
 
