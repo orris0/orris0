@@ -1,3 +1,13 @@
+
+
+
+
+
+
+/* 04_color_animation */
+$(document).ready(function(){
+  $('#disclaimer').animate({'backgroundColor':'#ff9f5f'}, 2000);
+});
 /* 03_animate_show_hide */
 $(document).ready(function(){
   $("#hideButton").click(function() {
