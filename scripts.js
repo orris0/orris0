@@ -1,3 +1,19 @@
+
+// 07_08_animation_queue
+$(document).ready(function(){
+  $('p:first').animate(
+    {
+      height: '+=100px',
+      color: 'green'
+    },
+    {
+      duration: 'slow',
+      easing: 'swing',
+      complete: function() {alert('done!');},
+      queue: false
+    }
+  );
+});
 // 07_bouncy_content_panes
 $(document).ready(function(){
   // hide all the content panes when the page loads
