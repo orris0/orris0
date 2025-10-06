@@ -1,6 +1,5 @@
 
 // 05_easing
-
 $(document).ready(function(){
   $('p:first').toggle(function() {
     $(this).animate( {'height':'+=150px'}, 2000, 'linear')
@@ -8,11 +7,6 @@ $(document).ready(function(){
     $(this).animate( {'height':'-=150px'}, 2000, 'swing');
   });
 });
-
-
-
-
-
 // 04_color_animation 
 $(document).ready(function(){
   $('#disclaimer').animate({'backgroundColor':'#ff9f5f'}, 2000);
