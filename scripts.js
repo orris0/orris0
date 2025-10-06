@@ -1,3 +1,12 @@
+/* 03_animate_show_hide */
+$(document).ready(function(){
+  $("#hideButton").click(function() {
+    $('#disclaimer').animate({ 
+      opacity: 'hide',
+      height: 'hide'
+    }, 'slow');    
+  });
+});
 /* 02_relative_css_animation */
 $(document).ready(function(){
   $('#navigation li').hover(function(){
