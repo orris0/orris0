@@ -1,3 +1,21 @@
+
+
+
+
+
+/* 01_animating_css */
+
+$(document).ready(function(){
+  $('p').animate({ 
+    padding: '20px',
+    fontSize: '15px'
+  }, 2000);
+});
+
+
+
+
+
 $(function(){
   //alert('Welcome to StarTrackr! Now no longer under police investigation!');
   //alert($('#celebs tbody tr:even').length + ' elements!');
