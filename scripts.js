@@ -1,14 +1,23 @@
 
+// 05_easing
+
+$(document).ready(function(){
+  $('p:first').toggle(function() {
+    $(this).animate( {'height':'+=150px'}, 2000, 'linear')
+  }, function() {
+    $(this).animate( {'height':'-=150px'}, 2000, 'swing');
+  });
+});
 
 
 
 
 
-/* 04_color_animation */
+// 04_color_animation 
 $(document).ready(function(){
   $('#disclaimer').animate({'backgroundColor':'#ff9f5f'}, 2000);
 });
-/* 03_animate_show_hide */
+// 03_animate_show_hide 
 $(document).ready(function(){
   $("#hideButton").click(function() {
     $('#disclaimer').animate({ 
@@ -17,7 +26,7 @@ $(document).ready(function(){
     }, 'slow');    
   });
 });
-/* 02_relative_css_animation */
+// 02_relative_css_animation 
 $(document).ready(function(){
   $('#navigation li').hover(function(){
     $(this).animate({
@@ -30,7 +39,7 @@ $(document).ready(function(){
   });
 });
 
-/* 01_animating_css */
+// 01_animating_css 
 
 $(document).ready(function(){
   $('p').animate({ 
