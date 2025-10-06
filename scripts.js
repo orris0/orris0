@@ -5,13 +5,12 @@
 
 
 
-
-
-
-
-
-
-
+// 13_floating_nav_1
+$(document).ready(function () {
+  $(window).scroll(function () {
+    $('#navigation').css('top', $(document).scrollTop()); 
+  });
+});
 // 12_scroll_event
 $(document).ready(function() {
   $('#news').scroll(function() {
