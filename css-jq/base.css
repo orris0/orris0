@@ -5,14 +5,14 @@
 #intro{
 	width: 450px;
 }
-
+/*
 body {
 	font-family: "Lucida Sans Unicode","Lucida Grande",Sans-Serif;
 	color: #3E3E3E;
-	background: #94C5EB url(../images/background-grad.png) repeat-x;
+	background: #94C5EB url(../orris0/css-jq/images/background-grad.png) repeat-x;
 	font-size: 12px;
 }
-
+*/
 p {
 	padding: 5px;
 }
