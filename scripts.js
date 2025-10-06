@@ -25,9 +25,6 @@ $(function(){
 
 });
 
-$(document).ready(function(){
-  alert($('#celebs tbody tr:even').length + ' elements!');
-});
 
 $(document).ready(function(){
   alert($('#celebs tr').length + ' elements!');
@@ -133,15 +130,20 @@ $(document).ready(function(){
   $('#celebs tr').remove(':contains("Singer")');
 });
 
-$(document).ready(function(){
-  $('p').html('good bye, cruel paragraphs!');
-  $('h2').text('All your titles are belong to us');
-});
+// $(document).ready(function(){
+ //  $('p').html('good bye, cruel    
+// paragraphs!');
+//  $('h2').text('All your titles are belong
+// to us');
+// });
 
-$(document).ready(function(){
-  $('p').html('<strong>Warning!</strong> Text has been replaced for your safety.');
-  $('h2').text('<strong>Warning!</strong> Title elements can be hazardous to your health.');
-});
+// $(document).ready(function(){
+ // $('p').html('<strong>Warning!</strong> 
+//Text has been replaced for your safety.');
+ // $('h2').text('<strong>Warning!</strong>
+// Title elements can be hazardous to your
+// health.');
+// });
 
 $(document).ready(function(){
   alert($('h2:first').text());
