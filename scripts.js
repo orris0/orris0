@@ -1,6 +1,15 @@
 
 
 
+
+
+//11_jquery_ui_effects
+$(document).ready(function() {
+  $('p:first')
+    .effect('shake', {times:3}, 300)
+    .effect('highlight', {}, 3000)
+    .hide('explode', {}, 1000);  
+});
 // 10_animated_navigation_2
 $(document).ready(function() {
 	$( '#navigation li' ).hover(function() {
