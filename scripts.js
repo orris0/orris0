@@ -1,7 +1,15 @@
-
-
-
-
+/* 02_relative_css_animation */
+$(document).ready(function(){
+  $('#navigation li').hover(function(){
+    $(this).animate({
+      paddingLeft: '+=15px'
+    }, 200);
+  }, function(){
+    $(this).animate({
+      paddingLeft: '-=15px'
+    }, 200);
+  });
+});
 
 /* 01_animating_css */
 
