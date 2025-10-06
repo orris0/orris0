@@ -3,6 +3,21 @@
 
 
 
+
+
+
+
+
+
+
+
+
+// 12_scroll_event
+$(document).ready(function() {
+  $('#news').scroll(function() {
+    $('#header').append('<span class="scrolled">You scrolled!</span>');
+  });
+});
 //11_jquery_ui_effects
 $(document).ready(function() {
   $('p:first')
