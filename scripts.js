@@ -1,5 +1,13 @@
 
 
+
+// 14_floating_nav_2
+$(document).ready(function() {
+  $('a[href=#]').click(function(e) {
+    $.scrollTo(0,'slow');
+    e.preventDefault();
+  });
+});
 // 14_floating_nav_2
 $(document).ready(function() {
   var $window = $(window),
@@ -535,6 +543,7 @@ gallery.init = function() {
       gallery.slide();
     });
 }
+
 
 
 
