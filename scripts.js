@@ -1,7 +1,7 @@
 
 
 
-// 14_floating_nav_2
+// 15_page_scroll
 $(document).ready(function() {
   $('a[href=#]').click(function(e) {
     $.scrollTo(0,'slow');
@@ -543,6 +543,7 @@ gallery.init = function() {
       gallery.slide();
     });
 }
+
 
 
 
