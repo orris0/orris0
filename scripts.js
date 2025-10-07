@@ -1,10 +1,19 @@
 
 
+// 14_floating_nav_2
+$(document).ready(function() {
+  var $window = $(window),
+  $navigation = $("#navigation");
 
-
-
-
-
+  $window.scroll(function() {
+    if (!$navigation.hasClass("fixed") && ($window.scrollTop() > $navigation.offset().top)) {
+        $navigation.addClass("fixed").data("top", $navigation.offset().top);
+    }
+    else if ($navigation.hasClass("fixed") && ($window.scrollTop() < $navigation.data("top"))) {
+        $navigation.removeClass("fixed");
+    }
+  }); 
+});
 // 13_floating_nav_1
 $(document).ready(function () {
   $(window).scroll(function () {
@@ -526,6 +535,7 @@ gallery.init = function() {
       gallery.slide();
     });
 }
+
 
 
 
