@@ -323,7 +323,7 @@ h3#html5style2h3 {
   margin: 0 0 6px 0;
 }
 
-#html5style2leftcol {
+div#html5style2leftcol.data {
   float: left;
   width: 310px;
   vertical-align: top;
