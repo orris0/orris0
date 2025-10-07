@@ -1,6 +1,10 @@
 
-
-
+// 15_page_scroll
+$(document).ready(function() {
+    $('#fine_print').jScrollPane({
+        verticalGutter: 20
+    });
+});
 // 15_page_scroll
 $(document).ready(function() {
   $('a[href=#]').click(function(e) {
@@ -543,6 +547,7 @@ gallery.init = function() {
       gallery.slide();
     });
 }
+
 
 
 
