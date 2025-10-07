@@ -7,7 +7,7 @@ $(document).ready(function(){
   stylesheetToggle();
   $(window).resize(stylesheetToggle);
 });
-
+// 18_layout_switcher
 function stylesheetToggle() {
   if ($('body').width() > 900) {
     $('<link rel="stylesheet" href="wide.css" type="text/css" />')
@@ -570,6 +570,7 @@ gallery.init = function() {
       gallery.slide();
     });
 }
+
 
 
 
