@@ -1,5 +1,5 @@
 
-// 15_page_scroll
+// 16_custom_scrollbar
 $(document).ready(function() {
     $('#fine_print').jScrollPane({
         verticalGutter: 20
@@ -547,6 +547,7 @@ gallery.init = function() {
       gallery.slide();
     });
 }
+
 
 
 
