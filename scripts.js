@@ -2,7 +2,7 @@
 
 
 
-
+// 19_resizable_elements
 $(document).ready(function(){
   stylesheetToggle();
   $(window).resize(stylesheetToggle);
@@ -570,6 +570,7 @@ gallery.init = function() {
       gallery.slide();
     });
 }
+
 
 
 
