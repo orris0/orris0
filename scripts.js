@@ -1,4 +1,18 @@
 
+
+
+$(document).ready(function() {
+  $(window).resize(function() {
+    alert("You resized the window!");
+  });
+});
+
+
+
+
+
+
+
 // 16_custom_scrollbar
 $(document).ready(function() {
     $('#fine_print').jScrollPane({
@@ -547,6 +561,7 @@ gallery.init = function() {
       gallery.slide();
     });
 }
+
 
 
 
