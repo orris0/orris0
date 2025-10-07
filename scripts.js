@@ -196,12 +196,12 @@ $(document).ready(function(){
 
 // 01_animating_css 
 
-$(document).ready(function(){
-  $('p').animate({ 
-    padding: '20px',
-    fontSize: '15px'
-  }, 2000);
-});
+//$(document).ready(function(){
+ // $('p').animate({ 
+ //   padding: '20px',
+ //   fontSize: '15px'
+ // }, 2000);
+//});
 
 
 
