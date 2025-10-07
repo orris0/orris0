@@ -180,6 +180,7 @@ footer {
 @media all and (min-width: 768px){
     .row {
         display: flex;
+        -ms-flex-direction: column;
         margin: auto;
     }
     [class*="col-"]:last-child {
