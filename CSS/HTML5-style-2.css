@@ -334,7 +334,7 @@ div#html5style2leftcol.data {
 #html5style2midcol {
   margin-left: 315px;
   margin-right: 145px;
-  margin-top: -21px;
+  margin-top: 10px;
   vertical-align: top;
 }
 
@@ -4542,6 +4542,7 @@ footer#html5style2footer {
     page-break-after: avoid;
   }
 }
+
 
 
 
