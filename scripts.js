@@ -125,34 +125,34 @@ $(document).ready( function () {
     );
 });
 // 08_animation_queue
-$(document).ready(function(){
-  $('p:first').animate(
-    {
-      height: '+=100px',
-      color: 'green'
-    },
-    {
-      duration: 'slow',
-      easing: 'swing',
-      complete: function() {alert('done!');},
-      queue: false
-    }
-  );
-});
+//$(document).ready(function(){
+  //$('p:first').animate(
+   // {
+   //   height: '+=100px',
+    //  color: 'green'
+  //  },
+  //  {
+  //    duration: 'slow',
+ //     easing: 'swing',
+   //   complete: function() {alert('done!');},
+  //    queue: false
+  //  }
+ // );
+//});
 // 07_bouncy_content_panes
-$(document).ready(function(){
+//$(document).ready(function(){
   // hide all the content panes when the page loads
-  $('#bio > div').hide();
+  //$('#bio > div').hide();
   
   // uncomment the next line if you'd like the first pane to be visible by default
   // $('#bio > div:first').show();
   
-  $('#bio h3').click(function() {
-    $(this).next().animate({
-      'height':'toggle'
-    }, 'slow', 'easeOutBounce');
-  });
-});
+ // $('#bio h3').click(function() {
+  //  $(this).next().animate({
+   //   'height':'toggle'
+  //  }, 'slow', 'easeOutBounce');
+ // });
+//});
 // 06_other_easing_options
 $(document).ready(function(){
   $('p:first').animate({height: '+=300px'}, 2000, 'easeOutBounce');
@@ -373,7 +373,7 @@ $(document).ready(function(){
 $(document).ready(function(){
   $('#toggleButton').click(function(){
     $('#disclaimer').slideToggle('slow', function(){
-      alert('The slide has finished sliding!')
+  //    alert('The slide has finished sliding!')
     });
   });
 });
@@ -570,6 +570,7 @@ gallery.init = function() {
       gallery.slide();
     });
 }
+
 
 
 
