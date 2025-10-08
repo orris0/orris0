@@ -40,7 +40,15 @@ article,
 nav {
   display: block;
 }
-
+/*remove the # from #header*/
+header#html5style2header.row.data {
+  width: 920px;
+  height: 180px;
+  padding: 0;
+  border: 10px white solid;
+  background: url(images/header3.jpg);
+  margin: 10px auto;
+}
 /*remove the # from #header*/
 #html5style2header {
   width: 920px;
@@ -4542,6 +4550,7 @@ footer#html5style2footer {
     page-break-after: avoid;
   }
 }
+
 
 
 
