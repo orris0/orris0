@@ -4,7 +4,7 @@
 
 
 
-
+// 20_resizable_textarea
 $(document).ready(function(){
   $('textarea').resizable({
     grid : [20, 20],
@@ -14,14 +14,11 @@ $(document).ready(function(){
     containment: 'parent'
   });
 });
-
-
-
 // 19_resizable_elements
-//$(document).ready(function(){
+// $(document).ready(function(){
 //  stylesheetToggle();
 //  $(window).resize(stylesheetToggle);
-//});
+// });
 // 18_layout_switcher
 function stylesheetToggle() {
   if ($('body').width() > 970) {
@@ -585,6 +582,7 @@ gallery.init = function() {
       gallery.slide();
     });
 }
+
 
 
 
