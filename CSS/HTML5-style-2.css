@@ -52,7 +52,7 @@ nav {
 }
 
 #html5style2h1 {
-  font-size: 100%;
+  font-size: 300%;
   color: white;
   position: relative;
   left: 90px;
@@ -60,13 +60,13 @@ nav {
   width: 480px;
 }
 
-##html5style2rosette {
+#html5style2rosette {
   position: relative;
   left: 750px;
   top: 5px;
 }
 
-##html5style2content {
+div#html5style2content.data {
   background-color: transparent;
   border-left: 10px white solid;
   border-right: 10px white solid;
@@ -4542,6 +4542,7 @@ footer#html5style2footer {
     page-break-after: avoid;
   }
 }
+
 
 
 
