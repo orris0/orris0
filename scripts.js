@@ -9,7 +9,7 @@
 //});
 // 18_layout_switcher
 function stylesheetToggle() {
-  if ($('body').width() > 900) {
+  if ($('body').width() > 970) {
     $('<link rel="stylesheet" href="wide.css" type="text/css" />')
       .appendTo('head');
   } else {
@@ -570,6 +570,7 @@ gallery.init = function() {
       gallery.slide();
     });
 }
+
 
 
 
