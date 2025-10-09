@@ -50,7 +50,7 @@ header#html5style2header.row.data {
   margin: 10px auto;
 }
 /*remove the # from #header*/
-#html5style2header.data {
+div#html5style2header.data {
   width: 920px;
   height: 180px;
   padding: 0;
@@ -59,7 +59,7 @@ header#html5style2header.row.data {
   margin: 10px auto;
 }
 
-#html5style2h1 {
+h1#html5style2h1 {
   font-size: 300%;
   color: white;
   position: relative;
@@ -68,7 +68,7 @@ header#html5style2header.row.data {
   width: 480px;
 }
 
-#html5style2rosette {
+div#html5style2rosette {
   position: relative;
   left: 750px;
   top: 5px;
@@ -94,13 +94,13 @@ div#html5style2content.data {
   margin: 0 0 10px 0;
 }
 
-#html5style2h3 {
+h3#html5style2h3 {
   font-size: large;
   color: white;
   margin: 0 0 6px 0;
 }
 
-#leftcol {
+div#html5style2leftcol {
   float: left;
   width: 310px;
   vertical-align: top;
@@ -171,11 +171,11 @@ br.clear {
   clear: both;
 }
 
-#html5style2midcol img {
+div#html5style2midcol img {
   margin-left: 10px;
 }
 
-#html5style2footer {
+div#html5style2footer {
   clear: both;
   color: maroon;
   text-align: center;
@@ -4550,6 +4550,7 @@ footer#html5style2footer {
     page-break-after: avoid;
   }
 }
+
 
 
 
