@@ -21,37 +21,43 @@ a {
 	color: #3687AF;
 }
 
-#container{
+div.wrapper {
 	margin:0 auto;
 	text-align: left;
 	width: 970px;
 }
 
-#html5style2header{
+div#html5style2container {
+	margin:0 auto;
+	text-align: left;
+	width: 970px;
+}
+
+header#html5style2header.data {
 	height: 60px;
 	color: #172322;
 	background: transparent url(./images/header-corners.png) no-repeat bottom left;
 }
 
-#html5style2header h1
+ h1#html5style2h1
 {
 	padding:0;
 	margin:0;
 }
 
-#html5style2content{
+div#html5style2content.data {
 	background-color: #fff;
 	padding: 0 15px 10px 15px;
 
 } 
 
-#html5style2footer{
+div#html5style2footer.data{
 	background-color: #fff;
 	padding:15px;
   clear: both;
 }
 
-#html5style2h2 {
+h2#html5style2h2 {
 	border-bottom:2px solid #015287;
 	color: #D15600;
 	padding-top: 10px;
