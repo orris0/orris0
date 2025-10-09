@@ -89,7 +89,7 @@ h3#html5style2h3 {
   margin: 0 0 6px 0;
 }
 
-div#html5style2leftcol {
+div#html5style2leftcol.data {
   float: left;
   width: 310px;
   vertical-align: bottom;
@@ -107,14 +107,14 @@ div#html5style2midcol.data {
 /*set nav block position and width*/
 /*nav { margin:10px 30px 0 10px; width:135px; float:right; 
 }*/
-nav#html5style2nav ul {
+nav#html5style2nav.data ul {
   margin: 10px 0 10px 0;
   width: 135px;
   float: right;
 }
 
 /*Set un-ordered list style within the menu block only. This removes bullets*/
-nav#html5style2nav li {
+nav#html5style2nav.data li {
   list-style-type: none;
 }
 
@@ -160,7 +160,7 @@ br.clear {
   clear: both;
 }
 
-#html5style2midcol img {
+div#html5style2midcol.data img {
   margin-left: 10px;
 }
 
@@ -169,6 +169,11 @@ footer#html5style2footer {
   color: maroon;
   text-align: center;
 }
+
+
+
+
+
 /*--- Media Queries ---*/
 @media all and (max-width: 900px){
     h2 {
