@@ -97,10 +97,10 @@ div#html5style2leftcol {
 
 /*#html5style2rightcol { width: 135px; float:right; height: 252px; margin-right:10px;
 }*/
-div#html5style2midcol {
+div#html5style2midcol.data {
   margin-left: 315px;
   margin-right: 145px;
-  margin-top: -18px;
+  margin-top: 0px;
   vertical-align: top;
 }
 
