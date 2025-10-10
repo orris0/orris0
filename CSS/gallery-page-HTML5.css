@@ -67,7 +67,7 @@ li.btn a:active { background:maroon; border: 5px inset maroon;
 }
 br.clear { clear:both;
 }
-div#html5style2midcol img { margin-left:0px;
+div#html5style2midcol img { margin-left: 0px;
 }
 /*change #footer to footer */
 footer { clear:both; color:maroon; text-align:center;
