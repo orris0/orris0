@@ -258,6 +258,28 @@ div body header #content { margin:0; padding:0; border:0;
 /*set attributes for consistent appearance in all browsers*/
 html, body, p, ul, li, h1, h2 { margin:0; padding:0;
 }
+header.fixed-top {
+  background: #07062f;
+}
+
+header .logo {
+  font-size: 30px;
+  margin-top: -14em;
+  padding: 0;
+  line-height: 1;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+header .logo a {
+  color: #fff;
+}
+
+header .logo img {
+  max-height: 40px;
+}
+
 /*set images to have no borders*/
 img { border:0;
 }
@@ -1262,27 +1284,6 @@ header {
   height: 70px;
 }
 */
-header.fixed-top {
-  background: #07062f;
-}
-
-header .logo {
-  font-size: 30px;
-  margin-top: -14em;
-  padding: 0;
-  line-height: 1;
-  font-weight: 700;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-}
-
-header .logo a {
-  color: #fff;
-}
-
-header .logo img {
-  max-height: 40px;
-}
 
 .scrolled-offset {
   margin-top: 0px;
