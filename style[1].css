@@ -312,7 +312,7 @@ li	{ margin: 5px; list-style-type:none;	}
 @media all and (min-width: 768px){
     .row {
         display: flex;
-        -ms-flex-direction: row;
+        flex-direction: row;
         margin: auto;
     }
     [class*="col-"]:last-child {
