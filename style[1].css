@@ -86,7 +86,7 @@ li { margin: 5px; list-style-type:none;
 }
 #col-3 a:hover img.hid { visibility:visible;
 }
-header#html5style2header { background-color: #AFDED4;}
+header#html5style2header.data { background-color: #AFDED4;}
 .logo { padding: 2%;}
 img { max-width: 300%;} 
 h2.dark { color: #34495E;}
