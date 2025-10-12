@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway:300');
 *{ margin:0; padding: 0; box-sizing: border-box;}
 html { height: 100%; text-align: center; font: 1.15em/1 'Open Sans', sans-serif; color: #FFF;} */
-div.wrapper {position:relative; top:0px; left:0;width:100%; margin:auto; text-align:center;
+div.wrapper {position:relative; top:0px; left:0;width:970px; margin:auto; text-align:center;
 }
 /*add display attributes for the semantic tags*
 header, footer, section, article, nav { display:block;
