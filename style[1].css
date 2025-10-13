@@ -88,7 +88,7 @@ li { margin: 5px; list-style-type:none;
 }
 header#html5style2header.data { background-color: #AFDED4;}
 .logo { padding: 2%;}
-img { max-width: 300%;} 
+img { max-width: 100%;} 
 h2.dark { color: #34495E;}
 h2#html5style2h2 { font: 300 2em /1 'Raleway', sans-serif; color: #FFF; padding: 2%; position: relative;  top: 50%; transform: translateY(-50%);}
 .social { list-style: none;}
