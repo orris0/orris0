@@ -17,7 +17,7 @@
 }
 
 /* === equalise for various browsers and change #header to header === */
-div body header #content {
+div body header#html5style2header #content {
   margin: 0;
   padding: 0;
   border: 0;
@@ -29,7 +29,7 @@ body {
 }
 
 /*add display attributes for the semantic tags*/
-header,
+header#html5style2header
 footer,
 section,
 article,
@@ -124,11 +124,11 @@ div body header #content { margin:0; padding:0; border:0;
 /*set attributes for consistent appearance in all browsers*/
 html, body, p, ul, li, h1, h2 { margin:0; padding:0;
 }
-header.fixed-top {
+header#html5style2header.fixed-top {
   background: #07062f;
 }
 
-header .logo {
+header#html5style2header .logo {
   font-size: 30px;
   margin-top: -300px;
   padding: 0;
@@ -138,11 +138,11 @@ header .logo {
   text-transform: uppercase;
 }
 
-header .logo a {
+header#html5style2header .logo a {
   color: #fff;
 }
 
-header .logo img {
+header#html5style2header .logo img {
   max-height: 40px;
 }
 
@@ -197,7 +197,7 @@ h1#html5style2h1 {
   width: 480px;
 }
 
-#rosette {
+#html5style2rosette {
   position: relative;
   left: 750px;
   top: 5px;
@@ -4417,6 +4417,7 @@ footer#html5style2footer {
     page-break-after: avoid;
   }
 }
+
 
 
 
