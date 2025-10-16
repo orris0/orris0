@@ -132,7 +132,7 @@ header.fixed-top {
 
 header .logo {
   font-size: 30px;
-  margin-top: -420px;
+  margin-top: -480px;
   padding: 0;
   line-height: 1;
   font-weight: 700;
@@ -4419,6 +4419,7 @@ footer#html5style2footer {
     page-break-after: avoid;
   }
 }
+
 
 
 
