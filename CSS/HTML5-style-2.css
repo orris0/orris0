@@ -17,7 +17,7 @@
 }
 
 /* === equalise for various browsers and change #header to header === */
-div body header#html5style2header #content {
+div body header #content {
   margin: 0;
   padding: 0;
   border: 0;
@@ -28,15 +28,15 @@ body {
   margin: auto;
 }
 
-/*add display attributes for the semantic tags*/
-header#html5style2header
+/*add display attributes for the semantic tags*
+header,
 footer,
 section,
 article,
 nav {
   display: block;
 }
-/*remove the # from #header*/
+/*remove the # from #header*
 header#html5style2header.row.data {
   width: 920px;
   height: 180px;
