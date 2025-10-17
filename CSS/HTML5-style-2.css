@@ -16,36 +16,6 @@
   line-height: 1.4;
 }
 
-/* === equalise for various browsers and change #header to header === */
-div body header #content {
-  margin: 0;
-  padding: 0;
-  border: 0;
-}
-
-body {
-  background: #FFF url(images/green-grad.jpg) repeat-x;
-  margin: auto;
-}
-
-/*add display attributes for the semantic tags*
-header,
-footer,
-section,
-article,
-nav {
-  display: block;
-}
-/*remove the # from #header*
-header#html5style2header.row.data {
-  width: 920px;
-  height: 180px;
-  padding: 0;
-  border: 10px white solid;
-  background: url(images/header3.jpg);
-  margin: 10px auto;
-}
-
 /* ===
  * Remove text-shadow in selection highlight:
  * https://twitter.com/miketaylr/status/12228805301
@@ -227,7 +197,7 @@ div#html5style2leftcol.data {
 
 /*#rightcol { width: 135px; float:right; height: 252px; margin-right:10px;
 }*/
-#html5style2midcol {
+#html5style2midcol.data {
   margin-left: 315px;
   margin-right: 145px;
   margin-top: 10px;
@@ -4417,6 +4387,7 @@ footer#html5style2footer {
     page-break-after: avoid;
   }
 }
+
 
 
 
