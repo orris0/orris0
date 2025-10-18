@@ -98,7 +98,7 @@ header#html5-ch1-7header.fixed-top {
   background: #07062f;
 }
 
-header#html5-ch1-7header .logo {
+header#html5-ch1-7header.data .logo {
   font-size: 30px;
   margin-top: -300px;
   padding: 0;
