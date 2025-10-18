@@ -108,11 +108,11 @@ header#html5-ch1-7header.data .logo {
   text-transform: uppercase;
 }
 
-header#html5-ch1-7header .logo a {
+header#html5-ch1-7header.data .logo a {
   color: #fff;
 }
 
-header#html5-ch1-7header .logo img {
+header#html5-ch1-7header.data .logo img {
   max-height: 40px;
 }
 
@@ -149,7 +149,7 @@ nav {
 }
 
 /*remove the # from #header*/
-header#html5-ch1-7header {
+header#html5-ch1-7header.data {
   width: 920px;
   height: 180px;
   padding: 0;
