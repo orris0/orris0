@@ -38,7 +38,7 @@
 	
   <link rel="stylesheet" href="./css-jq/base.css" type="text/css" media="screen" charset="utf-8">
   <script src="./lib/jquery-1.7.1.min.js" type="text/javascript" charset="utf-8"></script>
-  <script type="text/javascript" src="script.js"></script>
+  <script type="text/javascript" src="scripts.js"></script>
 	
   <meta name="google-adsense-account" content="ca-pub-9639638377144073">
   <meta property="og:title" content="A Basic HTML5 Template">
@@ -91,54 +91,48 @@
     <![endif]-->
     </head>
     <body>
-        <div class="row">
-            <div class="col-12">
-                <nav role="navigation" id="nav">
-                    <input class="trigger" type="checkbox" id="mainNavButton">
-                    <label for="mainNavButton" onclick>Menu</label>
-                    <ul>
-                        <li><a href="./index.html">Home</a></li>
-                        <li><a href="./index[1].html">About Us</a></li>
-                        <li><a href="./membership.html">Products</a></li>
-                        <li><a href="./news.html">Blog</a></li>
-                        <li><a href="./starter-page.html">Specials</a></li>
-                        <li><a href="./welcome.html">Contact</a></li>
-                    </ul>
-                </nav>
-            </div><!-- col-12 -->
-        </div><!-- end-.row -->
+		<div class="wrapper">
+            <div class="row">
+                <div class="col-12">
+                    <nav role="navigation" id="nav">
+                        <input class="trigger" type="checkbox" id="mainNavButton">
+                        <label for="mainNavButton" onclick>Menu</label>
+                        <ul>
+                            <li><a href="./index.html">Home</a></li>
+                            <li><a href="./index[1].html">About Us</a></li>
+                            <li><a href="./membership.html">Products</a></li>
+                            <li><a href="./news.html">Blog</a></li>
+                            <li><a href="./starter-page.html">Specials</a></li>
+                            <li><a href="./welcome.html">Contact</a></li>
+                        </ul>
+                    </nav>
+                </div><!-- col-12 -->
+            </div><!-- end-.row -->
 
-        <div class="row">
+            <div class="row">
                 <div class="col-12">
                     <header class="data" id="html5-ch1-7header"> <!-- <div id="hdr"> changed to <header> -->
+					    <div class="col-12">
+			                <img class="logo" src="img/flexy-logo.png">
+		                </div><!-- end-col-12 -->
 			            <div class="data" id="html5style2banner">
                             <h1>StarTrackr!</h1>
                         </div>
                     </header>
 		        </div>
             </div><!-- end col-12 -->
+		    <br class="clear">
 		
-		<div class="wrapper">
-	        <!--
-	        <div class="row" id="html5-ch1-7header">
-		        <div class="col-12">
-			        <img class="logo" src="img/flexy-logo.png">
-		        </div><!-- end-col-12 --
-	        </div><!-- end-header --
-            
-	        <br class="clear">
-            <!--close top section - content area starts -->
-	
 	        
+                <!--close top section - content area starts -->
+	        <div class="data" id="html5-ch1-7content">
+	            <div class="row">
+		            <div class="çol-12">
+			            <img src="img/kite.png";>
+	                </div><!-- end-col-12 -->
+	            </div><!-- end-row -->
 
-	
-	<div class="row">
-		<div class="çol-12">
-			<img src="img/kite.png";>
-	    </div><!-- end-col-12 -->
-	</div><!-- end-row -->
-
-                <div id="html5-ch1-7content">
+                
                 <h2>Award winning accommodation, self catering or bed and breakfast</h2>
                 <div id="html5-ch1-7leftcol">
                     <h3>Cottages, converted barns, caravans</h3>
@@ -161,7 +155,7 @@
             <img title="Devon countryside" alt="Devon countryside" src="images/devon398.jpg" height="229" width="398">
         </div>
         <br class="clear">
-    </div><!--content section closed-->
+    
 
 	<div class="row">
 		<div class="çol-12" padding="2%">
@@ -248,10 +242,10 @@
         </div>
     </div>
                  
-</div><!-- end-wrapper -->
+
 		
     
-        <div class="data" id="html5-ch1-7content">
+        
             <h2>Award winning accommodation, self catering or bed and breakfast</h2>
             <div class="data" id="html5-ch1-7leftcol">
                 <h3>Cottages, converted barns, caravans</h3>
