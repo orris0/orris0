@@ -118,8 +118,8 @@ nav {
   display: block;
 }
 
-/*remove the # from #header*
-header#html5style2header.data {
+/*remove the # from #header*/
+div#html5-ch1-7header.data {
   width: 920px;
   height: 180px;
   padding: 0;
