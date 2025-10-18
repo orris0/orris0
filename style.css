@@ -52,7 +52,7 @@ body { background:#FFF url(images/green-grad.jpg) repeat-x; margin:auto;
 /*add display attributes for the semantic tags*/
 header, footer, section, article, nav { display:block; 
 }
-header#html5-ch1-7header {width:920px; height:180px; padding:0; border:10px white solid; background: url(../bda-20.jpg); margin:10px auto; 
+div#html5-ch1-7header.row {width:920px; height:180px; padding:0; border:10px white solid; background: url(../bda-20.jpg); margin:10px auto; 
 }
 h1#html5-ch1-7h1 { font-size:300%; color :white; position: relative; left:90px; top: 55px; width:480px;
 }
