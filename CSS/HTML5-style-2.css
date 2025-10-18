@@ -84,7 +84,13 @@ textarea {
    ========================================================================== */
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400');
 @import url('https://fonts.googleapis.com/css?family=Raleway:300');
+html {
 
+}
+
+body {
+  
+}
 /* Listing 1-7b. The Revised CSS Sheet for Figure 1-7 (html5-style-2.css) 
 (The key items are picked out in bold type.)
 equalise for various browsers and change #header to header*/
