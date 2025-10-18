@@ -66,7 +66,7 @@ h2#html5-ch1-7h2 { font-size:x-large; color:white; margin:0 0 10px 0;
 }
 h3#html5-ch1-7h3 { font-size:large; color:white; margin:0 0 6px 0; 
 }
-#html5-ch1-7leftcol { float:left; width: 310px; vertical-align:top; 
+#html5-ch1-7leftcol { position: relative; top: 10px; float:left; width: 310px; vertical-align:top; 
 }
 #html5-ch1-7rightcol { width: 135px; float:right; height: 252px; margin-right:10px;
 }
