@@ -89,7 +89,8 @@ html {
 }
 
 body {
-  
+  background: #FFF url(images/green-grad.jpg) repeat-x;
+  margin: auto;
 }
 /* Listing 1-7b. The Revised CSS Sheet for Figure 1-7 (html5-style-2.css) 
 (The key items are picked out in bold type.)
@@ -138,10 +139,7 @@ p {
 h1#html5-ch1-7h1 { font-size:300%; color :white; position: relative; left:15%; top: 55px; width:480px;
 }
 */
-body {
-  background: #FFF url(images/green-grad.jpg) repeat-x;
-  margin: auto;
-}
+
 div.wrapper {position:relative; top:0px; left:0;width:100%; margin:auto; text-align:center;
 }
 
