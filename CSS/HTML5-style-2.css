@@ -94,7 +94,7 @@ div body header #content { margin:0; padding:0; border:0;
 /*set attributes for consistent appearance in all browsers*/
 html, body, p, ul, li, h1, h2 { margin:0; padding:0;
 }
-header#html5style2header.fixed-top {
+header#html5-ch1-7header.fixed-top {
   background: #07062f;
 }
 
@@ -4387,6 +4387,7 @@ footer#html5style2footer {
     page-break-after: avoid;
   }
 }
+
 
 
 
