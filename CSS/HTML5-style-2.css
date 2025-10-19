@@ -107,7 +107,7 @@ header#html5-ch1-7header.data .fixed-top {
 
 header#html5-ch1-7header.data .logo {
   font-size: 30px;
-  margin-top: -300px;
+  margin-top: -250px;
   padding: 0;
   line-height: 1;
   font-weight: 700;
@@ -4391,6 +4391,7 @@ footer#html5style2footer {
     page-break-after: avoid;
   }
 }
+
 
 
 
