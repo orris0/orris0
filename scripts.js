@@ -1,4 +1,16 @@
-
+$(document).ready(function(){
+  $('#splitter > div:first').resizable({ 
+    handles: 's', 
+    minHeight : '50',
+    maxHeight : '200',
+    resize: function() { 
+        var remainingSpace = $(this).parent().height() - $(this).outerHeight();
+        var divTwo = $(this).next();
+        var divTwoHeight = remainingSpace - (divTwo.outerHeight() - divTwo.height());
+        divTwo.css('height', divTwoHeight + 'px');
+    }
+  });
+});
 
 
 
@@ -15,7 +27,8 @@ $(document).ready(function(){
   });
 });
  19_resizable_elements
- $(document).ready(function(){ 
+ $(document).ready(function(){
+ 
  stylesheetToggle();
  $(window).resize(stylesheetToggle);
  });
@@ -582,6 +595,7 @@ gallery.init = function() {
       gallery.slide();
     });
 }
+
 
 
 
