@@ -14,12 +14,12 @@ $(document).ready(function(){
     containment: 'parent'
   });
 });
-// 19_resizable_elements
-// $(document).ready(function(){
-//  stylesheetToggle();
-//  $(window).resize(stylesheetToggle);
-// });
-// 18_layout_switcher
+ 19_resizable_elements
+ $(document).ready(function(){ 
+ stylesheetToggle();
+ $(window).resize(stylesheetToggle);
+ });
+ 18_layout_switcher
 function stylesheetToggle() {
   if ($('body').width() > 970) {
     $('<link rel="stylesheet" href="wide.css" type="text/css" />')
@@ -194,26 +194,26 @@ $(document).ready(function(){
   });
 });
 // 02_relative_css_animation 
-// $(document).ready(function(){
-  // $('#navigation li').hover(function(){
-   // $(this).animate({
-     // paddingLeft: '+=15px'
-    // }, 200);
- // }, function(){
- //   $(this).animate({
-    //  paddingLeft: '-=15px'
-   // }, 200);
-  //});
-// });
+ $(document).ready(function(){
+  $('#navigation li').hover(function(){
+    $(this).animate({
+      paddingLeft: '+=15px'
+     }, 200);
+  }, function(){
+   $(this).animate({
+     paddingLeft: '-=15px'
+   }, 200);
+  });
+ });
 
 // 01_animating_css 
 
-//$(document).ready(function(){
- // $('p').animate({ 
- //   padding: '20px',
- //   fontSize: '15px'
- // }, 2000);
-//});
+$(document).ready(function(){
+  $('p').animate({ 
+   padding: '20px',
+   fontSize: '15px'
+  }, 2000);
+});
 
 
 
