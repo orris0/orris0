@@ -24,11 +24,11 @@ a {
 #container{
 	margin:0 auto;
 	text-align: left;
-	width: 650px;
+	width: 970px;
 }
 
 #header{
-	height: 60px;
+	height: 180px;
 	color: #172322;
 	background: transparent url(../images/header-corners.png) no-repeat bottom left;
 }
