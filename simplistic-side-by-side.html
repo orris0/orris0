@@ -1,206 +1,57 @@
-<!doctype html>
-<!--Everything you write should be using markups -->
-<!-- head section is communicating about the page to the browser -->
-<!-- Anything you write under head is not displayed on the browser content page. -->
+<!DOCTYPE html>
 <html ng-app lang="en">
-<!-- All the Tags should be under <html> -->
-<!-- Describing about the page -->
+    <head>
+        <title>Semantic tags with two articles side by side</title>
+        <meta charset=utf-8>
+        <style>
+            body { width:500px; margin:auto;
+            }
+            header, nav, footer { display:block;
+            }
+            article { display:inline;
+            }
+            header { width:500px; background-color:#FF9966; text-align:center; margin:auto;
+            }
+            h1 { margin-bottom:10px;
+            }
+            nav { float:left; width:25%; background-color: #FF9966; margin-bottom:10px;
+            }
+            article { float:left; width:33%; background-color:#FF9966; margin:0 0 0 10px;
+            padding:6px;
+            }
+            footer { clear:both; background-color:#FF9966; text-align:center;
+            }
+            h2 { font-size:large; font-weight:bold; margin-top:0; margin-bottom:0;
+        </style>
+        <!--[if lte IE 8]>
+            <script src="./html5.js></script>
+        <![endif]-->
+    </head>
+    <body>
+        <header>
+            <h1>header goes here</h1>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="page-one.html" >Page One</a></li>
+                <li><a href="page-two.html" >Page Two</a></li>
+                <li><a href="index.html" >Home page</a></li>
+            </ul>
+        </nav>
+        <article>
+            <h2>Article</h2>Are you illiterate? Write today for a free course.<br>Easy payment terms.
+        </article>
+        <article>
+            <h2>Another Article</h2>Stock up for Christmas. Limited to one per family.<br>
+            Free Delivery &pound;2
+        </article>
+        <footer>
+            <strong>Footer.</strong> Perhaps for a copyright statement
+        </footer>
+	</body>
 
-<head>
-    <!-- Required meta tags -->
-    <!-- Describing about the page -->
-    <!-- head section is communicating about the page to the browser -->
-    <!-- Anything you write under head is not displayed on the browser content page. -->
-
-    <title>A Basic MT Template #2 </title>
-
-    <meta charset="utf-8"> 
-	<!-- Viewport for responsive web design -->
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="google-adsense-account" content="ca-pub-9639638377144073">
-        <meta property="og:title" content="A Basic HTML5 Template">
-        <meta property="og:type" content="website">
-        <meta property="og:description" content="A simple HTML5 Template for new projects.">
-        <meta property="og:image" content="image.png">
-        <meta name="keywords" content="HTML5, Node.js, Jquery">
-        <meta name="author" content="Orris Baker">
-		
-		<link rel="stylesheet" href="./css-jq/base.css" type="text/css" media="screen" charset="utf-8">
-		<!-- <link rel="stylesheet" href="./CSS/HTML5-style-2.css" type="text/css" media="screen" charset="utf-8"> -->
-        <script src="./lib/jquery-1.7.1.min.js" type="text/javascript" charset="utf-8"></script>
-        <script type="text/javascript" src="./script.js"></script> 
-        <script type="text/javascript" src="./jquery.easing.1.3.js"></script>
-        <script type="text/javascript" src="jquery.scrollTo.js" charset="utf-8"></script>
-		<link rel="stylesheet" href="./style.css"> 
-        <link rel="stylesheet" href="./style[1].css"> 
-        <link rel="stylesheet" type="text/css" href="./CSS/HTML5-style-2.css">
-	   
-        <link rel="stylesheet" href="./nav[1].css">
-        <link rel="stylesheet" href="https://m.w3newbie.com/youtube.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
-        <link rel="stylesheet" href="./font-awesome.min[1].css">
-		<link rel="icon" type="image/png" href="./weed.jpg">
-		<link rel="icon" type="image/png" href="./flexy-logo.png">
-
-	
-    <link rel="stylesheet" href="../jQuery-novice-to-ninja/css/base.css" type="text/css" media="screen" charset="utf-8">
-    <script src="../jQuery-novice-to-ninja/lib/jquery-1.7.1.min.js" type="text/javascript" charset="utf-8"></script>
-    <script type="text/javascript" src="scripts.js"></script>
-    <meta charset="UTF-8">
-
-    <script type="text/javascript" src="js/jquery-1.7.js"></script>
-    <script type="text/javascript" src="../orris0/js/script.js"></script>
-
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <meta name="format-detection" content="telephone=no">
-    <meta property="og:title" content="A Basic HTML5 Template">
-    <meta name="description" content="A simple HTML5 Template for new projects.">
-    <meta name="author" content="Orris A BakerJr">
-    <meta name="google-adsense-account" content="ca-pub-9639638377144073">
-    <meta property="og:title" content="A Basic HTML5 Template">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://www.sitepoint.com/a-basic-html5-template/">
-    <meta property="og:description" content="A simple HTML5 Template for new projects.">
-    <meta property="og:image" content="image.png">
-    <meta name="theme-color" content="#712cf9">
-    <meta name="keywords" content="HTML5, Node.js, Jquery">
-    <meta name="author" content="Ian Andolina">
-    <!-- Optional Metadata -->
-    <!-- <link rel="stylesheet" href="../../orris0/CSS/flexboxgrid.css"> -->
-    <link rel="stylesheet" type="text/css" href="./CSS/HTML5-style-2.css">
-    <link href="./CSS/gallery-page-HTML5.css" rel="stylesheet">
-    <style>
-        header,
-        nav,
-        article,
-        footer {
-            display: block;
-        }
-
-        body {
-            width: 500px;
-            margin: auto;
-            border: 1px solid rgba(0, 0, 0, .1);
-            background: #58a linear-gradient(#FF9966, #58a);
-            border-radius: .2em;
-            box-shadow: 0 .05em .25em rgba(0, 0, 0, .5);
-            color: white;
-            text-shadow: 0 -.05em .05em rgba(0, 0, 0, .5);
-            font-size: 125%;
-            line-height: 1.5;
-            border-width: 10px;
-            border-left-width: 0;
-        }
-
-        h1 {
-            margin-bottom: 10px;
-        }
-
-        article {
-            display: inline;
-        }
-
-        h2 {
-            font-size: 100%;
-            font-weight: bold;
-            background: rgba(0, 0, 0, .5);
-            margin-top: 0;
-            margin-bottom: 0;
-        }
-
-        footer {
-            clear: both;
-            background-color: #FF9966;
-            text-align: center;
-        }
-
-        header {
-            width: 500px;
-            background-color: #FF9966;
-            text-align: center;
-            margin: auto;
-        }
-
-        nav {
-            float: left;
-            width: 25%;
-            background-color: #FF9966;
-            margin-bottom: 10px;
-        }
-
-        article {
-            float: left;
-            width: 33%;
-            background-color: #FF9966;
-            margin: 0 0 0 10px;
-            padding: 6px;
-        }
-
-        footer {
-            clear: both;
-            background-color: #FF9966;
-            text-align: center;
-        }
-
-        h2 {
-            font-size: 50%;
-            font-weight: bold;
-            margin-top: 0;
-            margin-bottom: 0;
-        }
-    </style>
-    <link rel="stylesheet" href="../jQuery-novice-to-ninja/css/base.css" type="text/css" media="screen"
-        charset="utf-8" />
-    <script src="../jQuery-novice-to-ninja/lib/jquery-1.7.1.min.js" type="text/javascript" charset="utf-8"></script>
-    <script type="text/javascript" src="scripts.js"></script>
-    <meta charset="UTF-8">
-
-    <script type="text/javascript" src="js/jquery-1.7.js"></script>
-    <script type="text/javascript" src="../orris0/js/script.js"></script>
-
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <meta name="format-detection" content="telephone=no">
-    <meta property="og:title" content="A Basic HTML5 Template">
-    <meta name="description" content="A simple HTML5 Template for new projects.">
-    <meta name="author" content="Orris A BakerJr">
-    <meta name="google-adsense-account" content="ca-pub-9639638377144073">
-    <meta property="og:title" content="A Basic HTML5 Template">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://www.sitepoint.com/a-basic-html5-template/">
-    <meta property="og:description" content="A simple HTML5 Template for new projects.">
-    <meta property="og:image" content="image.png">
-    <meta name="theme-color" content="#712cf9">
-    <meta name="keywords" content="HTML5, Node.js, Jquery">
-    <meta name="author" content="Ian Andolina">
-    <!-- Optional Metadata -->
-    <!-- <link rel="stylesheet" href="../../orris0/CSS/flexboxgrid.css"> -->
-    <link rel="stylesheet" type="text/css" href="./CSS/HTML5-style-2.css">
-    <link href="./CSS/gallery-page-HTML5.css" rel="stylesheet">
-    <!-- <link rel="stylesheet" href="../../css/base.css" type="text/css" media="screen" charset="utf-8" />
-        <link rel="stylesheet" type="text/css" href="CSS/css/nav.css">
-        <link rel="stylesheet" href="./html5-boilerplate_v9.0.0/css/style.css">
-        <link rel="stylesheet" type="text/css" href="./CSS/css/inline-block.css"> -->
-    <link rel="stylesheet" href="./CSS/nav.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.8.0/normalize.min.css">
-    <link rel="stylesheet" href="../orris0/CSS/css/font-awesome.min.css">
-    <link rel="apple-touch-icon" href="./images/apple-touch-icon.png">
-    <!-- <link rel="stylesheet" href="./style.css"> -->
-    <link rel="alternate" type="application/pdf" href="MainPage.pdf">
-    <link rel="author" href="mailto:bakerorris0@gmail.com">
-    <link rel="author" type="text/html" href="https://orris0.github.io/orris0/index.html">
-    <!-- Bootstrap Icons-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet">
-    <!-- Google fonts-->
-    <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic"
-        rel="stylesheet" type="text/css">
-    <!-- SimpleLightbox plugin CSS-->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.css" rel="stylesheet">
-
-</head>
-
-<body>
-    <div class="wrapper">
+      <!--  
+        <div class="wrapper">
         <div class="row">
             <div class="col-12">
                 <header class="data" id="gallerypageheader">
@@ -233,7 +84,7 @@
                     </div>
                 </header>
                 <br class="clear">
-                <!-- close top section - content area starts -->
+                <!-- close top section - content area starts --
                 <div class="col-12"> 
                     <div id="hnav">
                         <ul>
@@ -245,7 +96,7 @@
                         </ul>
                     </div>
                 </div><!-- end col-12 -->
-                <!--close top section - content area starts -->
+                <!--close top section - content area starts --
                 <div id="content">
                     <b>A full page roll-over gallery of greetings cards</b>
                     <p><img title="Koala" alt="Koala" height="165" src="images/Koalasmall.jpg" width="220"></p>
@@ -259,9 +110,9 @@
                             <li class="btn"><a href="pagethree.html">Page Three</a></li>
                             <li class="btn"><a href="pagefour.html">Page Four</a></li>
                             <li class="btn"><a href="Homepage.html">Home Page</a></li>
-                        </ul><!-- end-ul -->
+                        </ul><!-- end-ul --
                     </menu><!-- end-nav -->
-                    <!-- RIGHT-COL -->
+                    <!-- RIGHT-COL --
                     <div id="rightcol">
                         <h2 class="dark">StarTrackr!</h2>
                         <a href="./creating-a-website.html" class="btn-get-started scrollto">get started</a>
@@ -276,11 +127,11 @@
                         </p>
                         <br class="clear">
                         <p class="advert">Web Design by <br> Orris Baker</p>
-                    </div> <!-- end right-col -->
+                    </div> <!-- end right-col --
                     <div class="row">
                         <div class="col-12">
                             <img src="images/kite.png" width="95%" ;>
-                        </div><!-- end col-12 -->
+                        </div><!-- end col-12 --
                         <div id="midcol">
                             <div id="gallery-block">
                                 <ul id="col-1">
@@ -310,9 +161,9 @@
                                                 title="Cliffs"><img class="hid" src="./9landscape.jpg" alt=""></a></li>
                                 </ul>
                                 <br class="clear">
-                            </div><!--gallery block closed-->
-                        </div><!--midcol closed-->
-                    </div><!-- end col-12 -->
+                            </div><!--gallery block closed--
+                        </div><!--midcol closed--
+                    </div><!-- end col-12 --
                     <div class="row">
                         <div class="col-12" style="padding: 2%;">
                             <div id="banner">
@@ -321,14 +172,14 @@
                                     </h2>
                                 </div>
                             </div>
-                        </div><!-- end col-12 -->
-                    </div> <!-- end class row -->
+                        </div><!-- end col-12 --
+                    </div> <!-- end class row --
                     <div class="row" style="background-color: #3c8BB6; padding: 5% 0 3%;">
                         <div class="col-12">
                             <img src="images/paper.png" width="95%" ;>
 
-                        </div><!-- end col-12 -->
-                    </div> <!-- end class row -->
+                        </div><!-- end col-12 --
+                    </div> <!-- end class row --
 
                     <b>
                         <!--  <menu>
@@ -406,7 +257,7 @@
 
                 </div>
             </header>
-        </div> <!--end wrapper --> <!-- end header -->
+        </div> <!--end wrapper --> <!-- end header --
                         <br>
                         <nav>
                             <ul>
@@ -421,7 +272,7 @@
                                     </a></li>
                             </ul>
                         </nav>
-                        -->
+                        --
                         <article>
                             <h2>Free Basic Education and GED</h2>
                             <p> Are you illiterate? Write today for free course.</p>
@@ -437,9 +288,9 @@
 
                                 <div class="col-3">
                                     <img class="circle" src="img/plane.png" width="95%" ;>
-                                </div> <!-- end col-3 -->
+                                </div> <!-- end col-3 --
 
-                            </div><!-- end class col-11 -->
+                            </div><!-- end class col-11 --
 
                         </div> <!-- end class row --><!-- end class row -->
 
@@ -455,7 +306,7 @@
                         <script src="../orris0/validate.js"></script>
                         <!--jQuery JS-->
                         <script src="../orris0/js/"></script>
-                        <!-- Template Main JS File -->
+                        <!-- Template Main JS File --
                         <script src="../orris0/main.js"></script>
 
                         <div class="row" style="background-color: #00afe1;">
@@ -520,8 +371,8 @@
 
                                         <hr class="full">
 
-                                    </div> <!-- end col-12 -->
-                                </div> <!-- end class row -->
+                                    </div> <!-- end col-12 --
+                                </div> <!-- end class row --
 
                                 <div class="row" style="background-color: #66d4ff;">
                                     <div class="col-12">
@@ -593,7 +444,7 @@
                                                 </div>
 
                                             </div>
-                                    </div> <!-- end col-3 -->
+                                    </div> <!-- end col-3 --
                                     <div id="container">
                                         <p>&nbsp;</p>
                                         <p>Tour Orris (default)</p>
@@ -709,8 +560,8 @@
                                             <li><a href="#"><i class="fa fa-youtube"></i></i></a></li>
                                             <li><a href="#"><i class="instagram"></i></i></a></li>
                                         </ul>
-                                    </div> <!-- end col-3 -->
-                                </div> <!-- end class row -->
+                                    </div> <!-- end col-3 --
+                                </div> <!-- end class row --
                                 <a href="https://orris0.github.io/orris0/index.html"
                                     class="back-to-top d-flex align-items-center justify-content-center"><i
                                         class="bi bi-arrow-up-short"></i></a>
@@ -720,7 +571,7 @@
                                     </div>
                                 </div>
                             </footer>
-                        </div><!-- main-content -->
+                        </div><!-- main-content --
                 </div><!-- end wrapper -->
             </div><!--end container>-->
 </body><!-- end body  -->
