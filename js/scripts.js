@@ -1,6 +1,12 @@
 //
 // Scripts
 //
+$(document).ready(function(){
+  $('#photos').cycle({
+    fx: 'shuffle'
+  });
+});
+
 $(document).ready(function() {
   $('#news ul').innerfade({
     animationtype: 'slide',
