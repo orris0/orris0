@@ -1,6 +1,6 @@
 //
 // Scripts
-//
+//06_slideshow_fade
 $(document).ready(function(){
   slideShow();
 });
