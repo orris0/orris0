@@ -498,20 +498,6 @@ $(document).ready(function(){
   });
 });
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 $(document).ready(function(){
   $('a.lightbox').click(function(e) {
     $('body').css('overflow-y', 'hidden'); // hide scrollbars!
@@ -647,6 +633,7 @@ gallery.init = function() {
       gallery.slide();
     });
 }
+
 
 
 
