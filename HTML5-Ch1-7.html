@@ -9,6 +9,7 @@
         -->
         <!-- meta details go here -->
         <title>Test page-html5-ch1-7-Templates for A full page roll-over gallery</title>
+		
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
         <!-- Viewport for responsive web design -->
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -385,7 +386,7 @@
                     <nav role="navigation" id="nav">
                         <input class="trigger" type="checkbox" id="mainNavButton">
                         <label for="mainNavButton" onclick>Menu</label>
-                        <ul>
+                        <ul>1
                             <li><a href="./index.html">Home</a></li>
                             <li><a href="./about.html">About Us</a></li>
                             <li><a href="./membership.html">Products</a></li>
@@ -395,14 +396,35 @@
 						    <li><a href="./index[1].html">About Us</a></li>
                         </ul>
                     </nav>
-              </div><!-- col-12 -->
-          </div><!-- end-.row -->
-      <div class="data" id="html5-ch1-7content">
-          <div class="row">
-              <div class="çol-12">
-                  <img src="img/kite.png" ;>
-              </div>
-          </div><!-- end-.row -->
+                </div><!-- col-12 -->
+            </div><!-- end-.row -->
+            <div class="data" id="html5-ch1-7content">
+				<div class="row">
+                    <div class="çol-12">
+                        <img src="img/kite.png">
+				        <div class="data" id="html5-ch1-7leftcol">
+                            <h3>Cottages, converted barns, caravans</h3>
+                            <img alt="Cottage interior" title="Cottage interior" height="225" src="images/bda2.jpg" width="300">
+                            <br>The superb interior of one of our cottages
+                        </div>
+
+                        <nav class="data" id="html5-ch1-7nav"><!--use the semantic tag <nav>-->
+                            <ul><!--start of menu list-->
+                                <li class="btn"> <a href="accommodation.html" title="Accommodation">Accommodation</a></li>
+                                <li class="btn"><a href="maps.html" title="Location Maps">Maps</a></li>
+                                <li class="btn"><a href="index[1].html" title="Frequently Asked Questions">Information</a></li>
+                                <li class="btn"><a href="starter-page.html" title="Local attractions">Attractions</a></li>
+                                <li class="btn"><a href="HTML5-Ch1-7.html" title="Return to Home Page">Home Page</a></li>
+                            </ul><!--end of menu list-->
+                        </nav>
+
+                        <!--</div> removed and replaced with </nav>-->
+                        <div class="data" id="html5-ch1-7midcol">
+                            <h3>Situated in the BDA's beautiful countryside</h3>
+                            <img title="Devon countryside" alt="Devon countryside" src="images/bda.gif" height="229" width="398">
+                        </div>
+                    </div>
+                </div><!-- end-.row -->
             
                 <div class="row">
                     <div class="col-12" style="padding: 2%;">
@@ -415,9 +437,10 @@
                     </div><!-- end col-12 -->
                 </div> <!-- end class row -->
     
-      <div class="row" style="background-color: #3C8BB6; padding: 5% 0 3%;">
-        <div class="çol-12">
-          <img src="img/paper.png" ;>
+                <div class="row" style="background-color: #3C8BB6; padding: 5% 0 3%;">
+                    <div class="çol-12">
+                        <img src="img/paper.png">
+						<!--
 
           <div class="data" id="html5-ch1-7leftcol">
             <h3>Cottages, converted barns, caravans</h3>
@@ -425,21 +448,22 @@
             <br>The superb interior of one of our cottages
           </div>
 
-          <nav class="data" id="html5-ch1-7nav"><!--use the semantic tag <nav>-->
-            <ul><!--start of menu list-->
+          <nav class="data" id="html5-ch1-7nav"><!--use the semantic tag <nav>--
+            <ul><!--start of menu list--
               <li class="btn"> <a href="accommodation.html" title="Accommodation">Accommodation</a></li>
               <li class="btn"><a href="maps.html" title="Location Maps">Maps</a></li>
               <li class="btn"><a href="index[1].html" title="Frequently Asked Questions">Information</a></li>
               <li class="btn"><a href="starter-page.html" title="Local attractions">Attractions</a></li>
               <li class="btn"><a href="HTML5-Ch1-7.html" title="Return to Home Page">Home Page</a></li>
-            </ul><!--end of menu list-->
+            </ul><!--end of menu list--
           </nav>
 
-          <!--</div> removed and replaced with </nav>-->
+          <!--</div> removed and replaced with </nav>--
           <div class="data" id="html5-ch1-7midcol">
             <h3>Situated in the BDA's beautiful countryside</h3>
             <img title="Devon countryside" alt="Devon countryside" src="images/bda.gif" height="229" width="398">
           </div>
+						-->
 
         </div><!-- end-col-12 -->
       </div> <!-- end class row -->
