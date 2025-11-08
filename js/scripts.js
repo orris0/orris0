@@ -746,20 +746,6 @@ $(document).ready(function(){
   });
 });
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 $(document).ready(function(){
   $('a.lightbox').click(function(e) {
     $('body').css('overflow-y', 'hidden'); // hide scrollbars!
@@ -812,7 +798,7 @@ $(function(){
   //alert($('#celebs tbody tr:even').length + ' elements!');
  //$('#celebs tbody  tr:even').addClass('zebra');
   
-  /*$('<input type="button" value="toggle"  id="toggleButton">').insertBefore('#disclaimer');
+  $('<input type="button" value="toggle"  id="toggleButton">').insertBefore('#disclaimer');
   $('#toggleButton').click(function() {
     $('#disclaimer').slideToggle('slow',function() {
       $('#toggleButton').fadeOut();
@@ -820,7 +806,7 @@ $(function(){
   });
   
   $('<strong>START!</strong>').prependTo('#disclaimer');
-  $('<strong>END!</strong>').appendTo('#disclaimer');*/
+  $('<strong>END!</strong>').appendTo('#disclaimer');
   
   $('#no-script').remove();
   
@@ -895,6 +881,7 @@ gallery.init = function() {
       gallery.slide();
     });
 }
+
 // 01_document_ready
 $(function(){
   //alert('Welcome to StarTrackr! Now no longer under police investigation!');
