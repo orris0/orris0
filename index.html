@@ -273,7 +273,76 @@ br.clear { 	clear:both;
 footer { clear:both; color:maroon; text-align:center; 
 }
 
+ margin: 0; padding: 0; font-weight: normal; }
+*/
+/*equalise for various browsers and change #header to header*/
+div body #main-header #content { margin:0; padding:0; border:0; 
+}
+/*set images to have no borders*/
+img {   border:0;
+}
+/*
+img {
+  clip-path: polygon(50% 0, 100% 50%,
+             50% 100%, 0 50%);
+             transition: 1s clip-path;
+}
+             */
+img, #logo {
+  text-align: left;
+}
+.clear { clear:both;
+}
 
+img:hover{
+      clip-path: polygon(0% 0, 100% 0%,
+100% 100%, 0 100%);		
+}
+
+/*SET FONTS*/
+span.small { font-size:small;
+}
+
+/*
+div#container {width:48.75em; margin:-0.625em auto 0 auto; }
+*/
+#main-header, footer, section, article, nav { display:block; }
+#main-header {margin-top:1em; height:9.75em; width:48.75em; background-image:url('../images/showcase.jpg'); background-position: center; background-repeat:no-repeat; border-bottom:0; clip-path:polygon(20px 0, calc(100% - 20px) 0, 100% 20px, 
+  100% calc(100% - 20px), calc(100% - 20px) 100%,
+  20px 100%, 0 calc(100% - 20px), 0 20px);
+}
+
+h1 { font-size:300%; color :white; position: relative; left:45px; top: 5px; width:480px; 
+}
+
+#banner h1 { 
+    text-shadow: 0.1em 0.1em 0.2em blue;        
+    font-family:Arial; font-size:125%; color:white; 
+    background: hsl(0,50%,45%);
+    text-shadow: 1px 1px black, 2px 2px black,
+    3px 3px black, 4px 4px black,
+    5px 5px black, 6px 6px black,
+    7px 7px black, 8px 8px black; 
+    font-weight:normal; 
+     /* 
+      padding-top:35px; 
+      margin-bottom:-10px; 
+      height: 94px; 
+      margin:auto;
+      padding: .3em .8em;
+      border: 1px solid rgba(0, 0, 0, .1);
+      
+      border-radius: .2em;
+      box-shadow: 0 .05em .25em rgba(0, 0, 0, .5);
+    
+      line-height: 5.5;
+      border-width: 10px;
+      border-left-width: 0;font-weight:normal; text-align:center; padding-top:2em; margin-bottom:-0.625em; margin:auto; */
+}
+
+div.menu-bar { position: relative; top: 2.5em; left: 1em;
+
+}
 
 
 
