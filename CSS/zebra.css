@@ -1,4 +1,8 @@
-.zebra { 
+.zebra {
   background-color: #dddddd;
   color: #666666;
+}
+
+tr.zebraHover {
+  background-color: #FFFACD;
 }
