@@ -1,6 +1,8 @@
 //
 // Scripts
 //
+
+//09_cycle_plugin
 $(document).ready(function(){
   $('#photos').cycle({
     fx: 'shuffle'
