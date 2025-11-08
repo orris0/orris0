@@ -30,7 +30,7 @@ a {
 #header{
 	height: 60px;
 	color: #172322;
-	background: transparent url(../images/header-corners.png) no-repeat bottom left;
+	background: transparent url(./css-jq/images/header-corners.png) no-repeat bottom left;
 }
 
 #header h1
