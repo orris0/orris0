@@ -1,6 +1,18 @@
 //
 // Scripts
 //
+
+// 04_rollover_fade
+$(document).ready(function() {
+  $('#fader').hover(function() {
+    $(this).find('img:eq(1)').stop(true,true).fadeIn();
+  }, function() {
+    $(this).find('img:eq(1)').fadeOut();
+  })
+});
+
+
+//
 function doOneUp(which, callback) {
 	$(which).next().show().animate({
     		top: "-=50px",
