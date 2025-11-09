@@ -7,6 +7,10 @@ body > footer {border-top: solid 5px black;
 			  }
 h2 { margin-top: 0; font-style: italic; 
    }
+h3 { font-variant: small-caps; 
+   }
+p { margin-left: 1.5em; 
+   }
 #navigation{
 	float: right;
 	width: 150px;
