@@ -5,6 +5,8 @@ body > header { background-color: #930; color: white;
 			  }
 body > footer {border-top: solid 5px black; 
 			  }
+h2 { margin-top: 0; font-style: italic; 
+   }
 #navigation{
 	float: right;
 	width: 150px;
