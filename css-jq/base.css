@@ -1,16 +1,16 @@
 /* style up a few of the new elements */
-article, aside, figure,footer, header, hgroup, menu, nav, section { display: block; 
-																  }
-body > header { background-color: #930; color: white;
-			  }
-body > footer {border-top: solid 5px black; 
-			  }
-h2 { margin-top: 0; font-style: italic; 
-   }
-h3 { font-variant: small-caps; 
-   }
-p { margin-left: 1.5em; 
-   }
+article, aside, figure,footer, header, hgroup, menu, nav, section { display: block;}
+body > header { background-color: #930; color: white;}
+body > footer {border-top: solid 5px black; }
+h2 { margin-top: 0; font-style: italic; }
+h3 { font-variant: small-caps; }
+p { margin-left: 1.5em; }
+section { border-top: dashed 2px black; }
+section > section h3 { margin-left: 2em; }
+section > section p { margin-left: 3em; }
+body > footer > p { text-align: right; font-style: italic; font-size: smaller;} 
+			  
+
 #navigation{
 	float: right;
 	width: 150px;
