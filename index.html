@@ -4199,111 +4199,27 @@ li	{ margin: 5px; list-style-type:none;	}
         <![endif]-->
     </head>
     <body>
-		<div>
-            <div id="green" class="box">Go!</div>
-            <div id="red" class="box">Go!</div>
-        </div>
-		<!--
-		<section data-role="page" id="home">
-		<div data-role="content">
-			<a href="#albums" data-role="button">START</a>
-		</div>
-	</section>
-
-	<section data-role="page" id="albums">
-		<header data-role="header" data-theme="b">
-			<h1>Pop Trumps</h1>
-		</header>
-
-		<div data-role="content">
-			<p>Select an album by The Jemimas to play</p>
-			
-			<ul data-role="listview" data-inset="true" data-theme="b">
-				<li><a href="#album" data-transition="flip">The Jemimas: Debut</a></li>
-				<li><a href="#album" data-transition="flip">This is The Jemimas</a></li>
-				<li><a href="#album" data-transition="flip">Awkward Third</a></li>
-				<li><a href="#album" data-transition="flip">Best of The Jemimas</a></li>
-			</ul>
-		</div>
-
-		<footer data-role="footer" data-theme="c">
-			<div data-role="controlgroup" data-type="horizontal">
-				<a href="#home" data-role="button" data-direction="reverse" class="single">HOME</a>
-			</div>
-		</footer>
-	</section>
-
-	<section data-role="page" id="album">
-		<header data-role="header" data-theme="b">
-			<h1>Pop Trumps</h1>
-		</header>
-
-		<div data-role="content">
-			<div data-role="fieldcontain">
-				<label for="flip-a" class="ui-hidden-accessible">Select slider:</label>
-				<select name="slider" id="flip-a" data-role="slider" data-theme="c">
-					<option value="no">&#9756;Number 1s</option>
-					<option value="yes">6</option>
-				</select>
-				<label for="flip-b" class="ui-hidden-accessible">Select slider:</label>
-				<select name="slider" id="flip-b" data-role="slider" data-theme="c">
-					<option value="no">&#9756; B Sides &nbsp; &nbsp;  &nbsp; </option>
-					<option value="yes">3</option>
-				</select> 
-			</div>		
-		</div>
-
-		<footer data-role="footer" data-theme="c">
-			<div data-role="controlgroup" data-type="horizontal" class="wide">
-				<a href="#albums" data-role="button" data-direction="reverse" class="quatro">REDRAW</a>
-				<a href="" data-role="button" class="quatro score">WIN</a>
-				<a href="" data-role="button" class="quatro score">LOSE</a>
-				<a href="" data-role="button" class="quatro" id="gameover">OVER</a>
-			</div>
-		</footer>
-	</section>
-
-	<section data-role="page" id="results">
-		<header data-role="header" data-theme="b">
-			<h1>Pop Trumps</h1>
-		</header>
-
-		<div data-role="content">	
-			<h2></h2>
-			<h3>The game was a <span></span></h2>
-			<p>So far you've played <b></b>, and won <span></span> of them.</p>
-		</div>
-
-		<footer data-role="footer" data-theme="c">
-			<div data-role="controlgroup" data-type="horizontal">
-				<a href="#album" data-role="button" data-direction="reverse" id="continue">CONTINUE</a>
-				<a href="#home" data-role="button">HOME</a>
-			</div>
-		</footer>
-	</section>
-		<!--
+		<div class="wrapper">
+			<div id="container">
+		        <div>
+                    <div id="green" class="box">Go!</div>
+                    <div id="red" class="box">Go!</div>
+                </div>
+				<img class="logo" src="img/flexy-logo.png">
+				<header data-role="header" class="data" id="html5-ch1-7header"><!-- <div id="hdr"> changed to <header> -->
+				    <hgroup>  
+						<h1 class="veryimportant heading stuff" id="html5-ch1-7h1">StarTrackr!</h1>
+						<h2 class="heading"> Practical HTML5 Projects for fun and Profit!</h2>
+					</hgroup>
+				</header>
 		
-            <div id="container">
-<header>
-<h1>This is a tab menu</h1>
-</header>
-<nav>
-<ul>
-<li><a class="active" href="index.html">Home Page</a></li>
-<li><a href="page2.html">Page Two</a></li>
-<li><a href="page3.html">Page Three with a long label</a></li>
-<li><a href="page4.html">Page Four</a></li>
-<li><a href="page5.html">Page Five</a></li>
-</ul>
-</nav>
+		<!--
 <div id="content">
 <b>This is the home page</b>
 <p><img title="Koala" alt="Koala" height="165" src="images/Koalasmall.jpg" 
 width="220"></p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p>
 </div></div>
 		-->
-        <div class="wrapper">
-			<div id="container">
 		        <img class="logo" src="img/flexy-logo.png">
 				<header data-role="header" class="data" id="html5-ch1-7header"><!-- <div id="hdr"> changed to <header> -->
 				    <hgroup>  
@@ -4311,8 +4227,7 @@ width="220"></p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p>
 						<h2 class="heading"> Practical HTML5 Projects for fun and Profit!</h2>
 					</hgroup>
 				</header>
-            <!-- </div><!-- end-col-12 -->	
-				<nav>
+                <nav>
                     <ul>
                         <li><a class="active" href="index.html">Home Page</a></li>
                         <li><a href="page2.html">Page Two</a></li>
@@ -4320,15 +4235,14 @@ width="220"></p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p>
                         <li><a href="page4.html">Page Four</a></li>
                         <li><a href="page5.html">Page Five</a></li>
                     </ul>
-                </nav>
-			
-            <div data-role="content" class="data" id="html5-ch1-7content">
-                <div class="row">
-                    <div class="col-12">
-                        <nav role="navigation" class="data" id="nav">
-                            <input class="trigger" type="checkbox" id="mainNavButton">
-                            <label for="mainNavButton" onclick>Menu</label>
-                            <ul>
+                </nav>				
+                <div data-role="content" class="data" id="html5-ch1-7content">
+                    <div class="row">
+                        <div class="col-12">
+                            <nav role="navigation" class="data" id="nav">
+                                <input class="trigger" type="checkbox" id="mainNavButton">
+                                <label for="mainNavButton" onclick>Menu</label>
+                                <ul>
                                 <li><a href="./index.html">Home</a></li>
                                 <li><a href="./about.html">About Us</a></li>
                                 <li><a href="./membership.html">Membership</a></li>
@@ -4340,48 +4254,35 @@ width="220"></p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p>
                         </nav>
 					</div><!-- end-col-12 -->
                 </div><!-- end-row -->
+	            
+		        <div class="row">
+                    <div class="çol-12" padding="2%">
+				        <div id="banner-wrapper">
+                            <h2 class="dark" id="html5-ch1-7h2">Welcome to <strong>StarTrackr!</strong> the planet's premier celebrity tracking and monitoring service.</h2>
+				        </div>    
+                    </div><!-- end-col-12 -->
+                </div><!-- end-row --
+		
+        
 
-		        <div id="footer">
-			        <p>	&copy; Copyright 2010 CelebriTracker Productions</p>
-		        </div>
-	        </div>
-		</div>              
-		            
-		<div class="row">
-            <div class="çol-12" padding="2%">
-				<div id="banner-wrapper">
-                    <h2 class="dark" id="html5-ch1-7h2">Welcome to <strong>StarTrackr!</strong> the planet's premier celebrity tracking and monitoring service.</h2>
-				</div>    
-            </div><!-- end-col-12 -->
-        </div><!-- end-row -->
-	</div>	<!-- end wrapper -->	
-                    <div class="row" style="background-color: #3C8886; padding: 5% 0 3%;">
-                        <div class="çol-12">
-                            <img src="img/paper.png">
-						    <p id="no-script">
-                                We recommend that you have JavaScript enabled!
-                            </p>
-                        </div><!-- end-col-12 --
-                    </div> <!-- end class row --
-
-					<div class="row" style="background-color: #f6931e;">
-                        <div class="col-11">
-                            <h2 class="heading">Get ready for take off.</h2>							
-							<br class="clear">
-							<br class="clear">
-							<br class="clear">
+		<div class="row" style="background-color: #f6931e;">
+            <div class="col-11">
+                <h2 class="heading">Get ready for take off.</h2>							
+				<br class="clear">
+				<br class="clear">
+				<br class="clear">
 							
-							<p id="intro">
-                            Need to know where in the world the best bands, musicians or producers are within 2.2 square meters?
-                            You've come to the right place. We have a very special special on B-grade celebs this week, so hurry in!
-                            </p>
+				<p id="intro">
+                    Need to know where in the world the best bands, musicians or producers are within 2.2 square meters?
+                    You've come to the right place. We have a very special special on B-grade celebs this week, so hurry in!
+                </p>
 												
-		                </div><!-- end col-11 --
-						<div class="col-3">
-                            <img class="circle" src="img/orange-globe.png">
-							<h2 class="dark">Our Celebrities </h2>
-                       </div> <!-- end col-3 --
-                    </div> <!-- end class row --           
+		    </div><!-- end col-11 --
+			<div class="col-3">
+                <img class="circle" src="img/orange-globe.png">
+				<h2 class="dark">Our Celebrities </h2>
+            </div> <!-- end col-3 --
+        </div> <!-- end class row --        
 					
                     <div class="row" style="background-color: #1abc9c;">
                         <div class="col-10">
@@ -4474,7 +4375,7 @@ width="220"></p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p>
                         </div>
                         <div class="col-3">
                             <img class="circle" src="img/plane.png">
-                        </div><!-- end col-3 --  
+                        </div><!-- end col-3 --
 				    </div>
 					
                     <div class="row" style="background-color: #34495e;">
@@ -4500,7 +4401,7 @@ width="220"></p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p>
                             <img src="img/plane-background.png" width="935px">
                         </div>
                     </div>  
-				
+				<!--
 			        <img class="logo" src="img/flexy-logo.png">
 			
 			        <header class="data" id="html5-ch1-7header"><!-- <div id="hdr"> changed to <header> --
@@ -4529,7 +4430,7 @@ width="220"></p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p>
                     </nav>
                 </div><!-- col-12 --
             </div><!-- end-.row --
--->
+--
             <div class="row">
                 <div class="çol-12">
                     <img src="img/kite.png">
