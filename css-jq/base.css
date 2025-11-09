@@ -1,4 +1,8 @@
-
+/* style up a few of the new elements */
+article, aside, figure,footer, header, hgroup, menu, nav, section { display: block; 
+																  }
+body > header { background-color: #930; color: white;
+			  }
 #navigation{
 	float: right;
 	width: 150px;
