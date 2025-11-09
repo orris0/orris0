@@ -3,6 +3,8 @@ article, aside, figure,footer, header, hgroup, menu, nav, section { display: blo
 																  }
 body > header { background-color: #930; color: white;
 			  }
+body > footer {border-top: solid 5px black; 
+			  }
 #navigation{
 	float: right;
 	width: 150px;
