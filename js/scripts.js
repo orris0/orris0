@@ -2,6 +2,18 @@
 // Scripts
 //
 
+tl1 = new TimelineMax( {repeat:-1 , onUpdate: updateProgress, yoyo: true, ease: Power3.easeInOut } );
+
+tl1.to( $("#container"), 1, { x: 200 } ) 
+   .to( $("#container"), .5, { rotation: 90 } ) 
+   .to( $("#container"), .5, { css: { backgroundColor: 'green' } } ) 
+   .to( $("#container"), 1, { x: 500 } ) 
+
+
+function updateProgress(){
+  TweenMax.set( $('#progress'), { value: tl1.progress()*100 } );
+}
+
 // 04_rollover_fade
 $(document).ready(function() {
   $('#fader').hover(function() {
