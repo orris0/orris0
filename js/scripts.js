@@ -1,7 +1,7 @@
 //
 // Scripts
 //
-
+$(document).ready(function() {
 tl1 = new TimelineMax( {repeat:-1 , onUpdate: updateProgress, yoyo: true, ease: Power3.easeInOut } );
 
 tl1.to( $("#container"), 1, { x: 200 } ) 
