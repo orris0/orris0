@@ -2,6 +2,13 @@
 // Scripts
 //
 
+$(document).ready(function() {
+  $('#container.data div.row')
+  })
+});
+
+
+
 // 04_rollover_fade
 $(document).ready(function() {
   $('#fader').hover(function() {
