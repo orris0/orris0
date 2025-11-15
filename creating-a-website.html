@@ -39,7 +39,34 @@
         <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic' rel='stylesheet' type='text/css'>
         <!-- Plugin CSS -->
         <link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
-		
+		<style>
+        /* Basic reset to remove default browser margins */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: sans-serif;
+        }
+
+        /* Styling for the full-page container */
+        .container-full-page {
+            width: 100vw; /* Viewport width */
+            height: 100vh; /* Viewport height */
+            background-color: #f0f0f0; /* Example background color */
+            display: flex; /* Example: Use flexbox for content alignment */
+            justify-content: center;
+            align-items: center;
+            box-sizing: border-box; /* Include padding and border in element's total width and height */
+        }
+
+        /* Optional styling for content inside the container */
+        #mainContent {
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+    </style>
 	    <!--Add conditional Javascript-->
     
         <!--[if lte IE 8]>
@@ -49,7 +76,7 @@
     </head>
 	<body>
         <div class="wrapper">
-			<div id="container">
+			<div class="data" id="container">
 				<div class="row">
                     <div class="col-12">
                         <nav role="navigation" class="data" id="nav">
@@ -1210,6 +1237,7 @@
   </a>
 </div>
 !-- End View in Browser -->
+
 
 
 
