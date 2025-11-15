@@ -313,7 +313,6 @@ function removeLightbox() {
       $('body').css('overflow-y', 'auto'); // show scrollbars!
     });
 }
-
 $(document).ready(function(){
   $('#splitter > div:first').resizable({ 
     handles: 's', 
