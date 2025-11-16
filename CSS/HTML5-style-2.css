@@ -143,7 +143,7 @@ h1#html5-ch1-7h1 { font-size:300%; color :white; position: relative; left:15%; t
 div.wrapper {position:relative; top:0px; left:0;width:970px; margin:auto; text-align:center;
 }
 
-/*add display attributes for the semantic tags*
+/*add display attributes for the semantic tags*/
 header,
 footer,
 section,
@@ -315,7 +315,7 @@ p {
 h1#html5style2h1 { font-size:300%; color :white; position: relative; left:15%; top: 55px; width:480px;
 }
 
-/*Listing 3-6b. The Revised CSS for Re-positioning the Rosette (rosette.css) *
+/*Listing 3-6b. The Revised CSS for Re-positioning the Rosette (rosette.css) */
 body { background: #FFF url(images/green-grad.jpg) repeat-x; margin:auto;
 }
 
@@ -4391,6 +4391,7 @@ footer#html5style2footer {
     page-break-after: avoid;
   }
 }
+
 
 
 
