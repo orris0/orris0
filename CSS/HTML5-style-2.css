@@ -331,7 +331,7 @@ h2#html5style2h2 { font-size: 100%; color: white; margin: 0 0 10px 0;
 }
 h3#html5style2h3 { font-size:100%; color: white; margin:0 0 6px 0;
 }
-div#html5style2leftcol { float:left; width: 310px; vertical-align:top;
+div#html5style2leftcol { float:left; width: 310px; vertical-align:bottom;
 }
 div#html5style2rightcol { width: 135px; float:right; height: 252px; margin-right:10px;
 }
@@ -4391,6 +4391,7 @@ footer#html5style2footer {
     page-break-after: avoid;
   }
 }
+
 
 
 
