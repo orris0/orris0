@@ -3,7 +3,7 @@
 //
 
 $(document).ready(function() {
-  $('#container.data div.row')
+  $('#container.data div.row .col-12 #nav #mainNavButton input label li a href ul img .logo ')
   })
 });
 
