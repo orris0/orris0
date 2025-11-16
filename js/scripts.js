@@ -3,7 +3,7 @@
 //
 
 $(document).ready(function() {
-  $('#container.data div.row .col-12 #nav #mainNavButton input label li a href ul img .logo ')
+  $('#container.data div.row .col-12 #nav #mainNavButton input label li a href ul img .logo #html5-ch1-7header #html5-ch1-7h1 #html5-ch1-7header .#veryimportant heading stuff')
   })
 });
 
