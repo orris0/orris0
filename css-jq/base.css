@@ -157,7 +157,7 @@ footer {
 article, aside, figure,footer, header, hgroup, menu, nav, section { display: block;}
 body > header { background-color: #930; color: white;}
 body > footer {border-top: solid 5px black; }
-h2 { margin-top: 0; font-style: italic; }
+
 h3 { font-variant: small-caps; }
 p { margin-left: 1.5em; }
 section { border-top: dashed 2px black; }
