@@ -128,14 +128,14 @@ div#html5-ch1-7midcol.data {
 /*set nav block position and width*/
 /*nav { margin:10px 30px 0 10px; width:135px; float:right; 
 }*/
-nav#html5-ch1-7nav ul {
+nav#html5-ch1-7nav.data ul {
   margin: 10px 0 10px 0;
   width: 135px;
   float: right;
 }
 
 /*Set un-ordered list style within the menu block only. This removes bullets*/
-nav#html5-ch1-7nav li {
+nav#html5-ch1-7nav.data li {
   list-style-type: none;
 }
 
