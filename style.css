@@ -9,10 +9,7 @@ div.wrapper {
     text-align: center; 
 }
 
-body {
-  background: #FFF url(images/green-grad.jpg) repeat-x;
-  margin: auto;
-}
+
 /* Listing 1-7b. The Revised CSS Sheet for Figure 1-7 (html5-style-2.css) 
 (The key items are picked out in bold type.)
 equalise for various browsers and change #header to header*/
@@ -309,9 +306,11 @@ html, h1, h2, h3, h4, h5, p, ol, ul, li { padding: 0; margin: 0;
 body {
   font-family: "Open Sans", sans-serif;
   color: #444444;
+  background: #FFF url(images/green-grad.jpg) repeat-x;
+  margin: auto;
 }
 body {
-  margin: 0;
+  margin: auto;
   font-family: var(--bs-body-font-family);
   font-size: var(--bs-body-font-size);
   font-weight: var(--bs-body-font-weight);
