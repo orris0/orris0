@@ -73,10 +73,17 @@
         <![endif]-->
     </head>
     <body>
-		<!--
-		<header><!--<div id="hdr"> changed to <header>-->
-<h1>Devon's Rural Retreats</h1>
-</header>
+		<div id="wrapper">
+			<div class="data" id="container">
+				<header data-role="header" class="data" id="html5-ch1-7header"><!-- <div id="hdr"> changed to <header> -->
+				    <hgroup>  
+					    <h1 class="veryimportant heading stuff" id="html5-ch1-7h1">Practical HTML5 Projects for fun and Profit!</h1>
+					    <h2 class="heading"><strong>StarTrackr!</strong id="html5-ch1-7h2">
+				    </hgroup>
+			    </header>
+		     <!-- <header><div id="hdr"> changed to <header>
+                    <h1>Devon's Rural Retreats</h1>
+                </header>-  ->
 <!--close top section - content area starts -->
 <div id="content">
 <h2>Award winning accommodation, self catering or bed and breakfast</h2>
@@ -85,7 +92,7 @@
 <img alt="Cottage interior" title="Cottage interior" height="225"
 src="images/cotdining300.jpg" width="300"><br>The superb interior
 of one of our cottages
-</div>
+</div></div><!-- 
 <nav><!--use the semantic tag <nav>-->
 <ul><!--start of menu list-->
 <li class="btn"> <a href="accommodation.html" title="Accommodation">Accommodation</a></li>
@@ -104,13 +111,11 @@ height="229" width="398">
 </div>
 <!-- 17CHAPTER 1 ■ MOVING TO HTML5 -->
 <br class="clear">
-</div><!--content section closed-->
+<!-- </div>content section closed-->
 <!--<div id=footer"> changed to <footer>-->
 <footer><p>Footer goes here</p>
 </footer>
-		-->
-		<div id="wrapper">
-			<div class="data" id="container">
+	
 				<div class="row">
                     <div class="col-12">
                         <nav role="navigation" class="data" id="nav">
@@ -132,12 +137,7 @@ height="229" width="398">
                 </div><!-- end-row -->
 			    <div class="row">
                     <div class="col-12">        
-				        <header data-role="header" class="data" id="html5-ch1-7header"><!-- <div id="hdr"> changed to <header> -->
-				            <hgroup>  
-					            <h1 class="veryimportant heading stuff" id="html5-ch1-7h1">Practical HTML5 Projects for fun and Profit!</h1>
-					            <h2 class="heading"><strong>StarTrackr!</strong id="html5-ch1-7h2">
-				            </hgroup>
-			            </header>
+				        
 			        </div><!-- end-col-12 -->
                 </div><!-- end-row -->
 				<br>
@@ -795,9 +795,10 @@ height="229" width="398">
                                 officia deserunt mollit anim id est laborum.
                             </p>
                         </div>
-                    </div>
+                    
                 </div> <!-- end-content-->
-
+		</div><!-- end-.wrapper -->
+    </body>
                 <div id="footer">
                     <ul class="social">
                         <li><a href="#"><i class="fa fa-facebook"></i></i></a></li>
@@ -807,7 +808,8 @@ height="229" width="398">
                         <li><a href="#"><i class="instagram"></i></i></a></li>
                     </ul>
                     <p> &copy; Copyright 2025 MJ&#39;s Practical HTML5 Project&#39;s for Fun<span class="amp">&amp;</span>Profit - Productions</p>
-                </div><!-- end-footer --
+	
+                </div><!-- end-footer -->
 		    </div><!-- end-container -->
 
             <!-- document ready -->
@@ -823,7 +825,7 @@ height="229" width="398">
             <link rel="stylesheet" href="./splitter.css" type="text/css" media="screen" charset="utf-8">
             <script src="./jquery.easing.1.3.js"></script>
             <script src="./js/bootstrap.bundle.js.map"></script>
-        </div><!-- end-.wrapper -->
+        
     </body>
 
 </html>
