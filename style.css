@@ -269,14 +269,6 @@ footer { clear:both; color:maroon; text-align:center;
 /* Set styles to equalise the browser rendition*/
 html, h1, h2, h3, h4, h5, p, ol, ul, li { padding: 0; margin: 0;
 }
-div#wrapper { 
-    position: relative; 
-    top: 0em; 
-    left: 0; 
-    width: 100%; 
-    margin: auto; 
-    text-align: center; 
-}
 
 #photos {
   border: 1px solid #BEBEBE;
