@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400');
 @import url('https://fonts.googleapis.com/css?family=Raleway:300');
-div#wrapper { 
+div.wrapper { 
     position: relative; 
     top: 0em; 
     left: 0; 
