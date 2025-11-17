@@ -273,7 +273,7 @@ footer#html5style2.data {
   color: maroon;
   text-align: center;
 } 
-*/
+
 #overlay {
   position: fixed;
   top: 0;
@@ -4391,6 +4391,7 @@ footer#html5style2footer {
     page-break-after: avoid;
   }
 }
+
 
 
 
