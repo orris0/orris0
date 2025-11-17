@@ -305,12 +305,6 @@ img { border:0;
 /*add display attributes for the semantic tags*/
 header, footer, section, article, nav { display:block;
 }
-p { 
-
-    color: #000;
-    margin:auto; 
-    text-align:center;
-}
 
 h1#html5style2h1 { font-size:300%; color :white; position: relative; left:15%; top: 55px; width:480px;
 }
@@ -1897,14 +1891,7 @@ a:active,
 a:hover {
   outline: 0; }
 
-hgroup, ul, ol, dd, menu, dl, figure, pre, table, fieldset, legend, hr,
-h1, h2, h3, h4, h5, h6, p, a {
-  margin: 5px;
-  padding: 0; }
-/*
-b, strong {
-  font-weight: bold; }
-*/
+
 pre {
   white-space: pre;
   white-space: pre-wrap;
@@ -2032,9 +2019,6 @@ table {
 li > ul,
 li > ol {
   margin-bottom: 0; }
-
-p, ul, ol {
-  font-family: 'Josefin Sans',sans-serif; }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: Georgia, serif; }
@@ -4107,13 +4091,10 @@ br.clear { 	clear:both;
 }
 footer { clear:both; color:maroon; text-align:center; 
 }
-/* Set styles to equalise browser rendition*
+/* Set styles to equalise browser rendition*/
 html, body, h1, h2, h3, h4, h5, p, ol, ul, li { padding: 0; margin: 0; 
 }
 
-/* end of style equalisation */
-p { background: rgba(255,255,255,0.5);  margin:auto; text-align:center; 
-}
 a { background: orange; color:navy;
 }*/
 .inline-block a { display:inline-block; width:110px; height:30px; line-height:30px; text-align:center;
@@ -4391,6 +4372,7 @@ footer#html5style2footer {
     page-break-after: avoid;
   }
 }
+
 
 
 
