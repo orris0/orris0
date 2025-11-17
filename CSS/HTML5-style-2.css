@@ -286,9 +286,6 @@ footer#html5style2.data {
 #lightbox {
   position: fixed;
 }
-* {
-	margin: 0; border: 0; padding: 0;
-}
 
 /* Listing 1-7b. The Revised CSS Sheet for Figure 1-7 (html5-style-2.css) 
 (The key items are picked out in bold type.)
@@ -1857,11 +1854,6 @@ html {
 
 @viewport {
   width: device-width; }
-
-*, *:before, *:after {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box; }
 
 article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary {
   display: block; }
@@ -4091,9 +4083,6 @@ br.clear { 	clear:both;
 }
 footer { clear:both; color:maroon; text-align:center; 
 }
-/* Set styles to equalise browser rendition*/
-html, body, h1, h2, h3, h4, h5, p, ol, ul, li { padding: 0; margin: 0; 
-}
 
 a { background: orange; color:navy;
 }*/
@@ -4372,6 +4361,7 @@ footer#html5style2footer {
     page-break-after: avoid;
   }
 }
+
 
 
 
