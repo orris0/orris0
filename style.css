@@ -71,7 +71,7 @@ nav {
 
 /*remove the # from #header*/
 header#html5-ch1-7header.data {
-  width: 920px;
+  width: 970px;
   height: 180px;
   padding: 0;
   border: 10px white solid;
@@ -191,12 +191,12 @@ footer#html5style2.data {
   text-align: center;
 } 
 
-/*equalise for various browsers and change #header to header*
+/*equalise for various browsers and change #header to header*/
 div body header #content { margin:0; padding:0; border:0;
 }
 body { background:#FFF url(images/green-grad.jpg) repeat-x; margin:auto;
 }
-/*add display attributes for the semantic tags*
+/*add display attributes for the semantic tags*/
 header, footer, section, article, nav { display:block;
 }
 /*remove the # from #header*/
