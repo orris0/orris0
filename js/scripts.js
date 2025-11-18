@@ -4,10 +4,12 @@
 
 $(document).ready(function() {
   $('#container.data div.row .col-12 #nav #mainNavButton input
-label li a href ul img .logo #html5-ch1-7header 
-	#html5-ch1-7h1 #html5-ch1-7header 
-	.#veryimportant heading stuff .heading hgroup 
-	#html5-ch1-7content #html5-ch1-7h2 #html5-ch1-7leftcol img #html5-ch1-7nav ul .btn a href #html5-ch1-7midcol h3 #html5-ch1-7footer .footer-inner .company-details')
+    label li a href ul img .logo #html5-ch1-7header #html5-ch1-7h1 #html5-ch1-7header 
+	.#veryimportant heading stuff .heading hgroup #html5-ch1-7content #html5-ch1-7h2 #html5-ch1-7leftcol img 
+	#html5-ch1-7nav ul .btn a href #html5-ch1-7midcol h3 #html5-ch1-7footer .footer-inner .company-details 
+		.distributor .address .telephone-number .full #comment p#fine .form-group .form-control .col-lg-12 
+		.col-md-12  .col-sm-12 .offset-lg-4 .col-lg-4 .offset-md-2 .col-md-8 div#disclaimer div#splitter 
+		.subscribe-accept #tocPane .pane .inner ol #farewell')
   })
 });
 
