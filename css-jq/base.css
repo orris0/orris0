@@ -1,13 +1,24 @@
 html.fa-events-icons-failed {
   
 }
-
-body {
-
+/*equalise for various browsers and change #header to header*/
+div body header #content {
+  margin: 0;
+  padding: 0;
+  border: 0;
 }
 
-div.wrapper {
+body {
+  background: #FFF url(images/green-grad.jpg) repeat-x;
+  margin: auto;
+}
 
+div.wrapper { 
+    position: relative; 
+    top: 0em; 
+    left: 0; 
+    width: 100%; 
+    margin: auto;  
 }
 
 div#container.data {
@@ -42,15 +53,27 @@ li {
 
 }
 
-div.col12 {
+div.col-12 {
 
 }
 
 header#html5-ch1-7header.data {
+    width: 970px;
+    height: 180px;
+    padding: 0;
+    border: 10px white solid;
+    background: url(bda-20.jpg);
+    margin: 50px auto;
 
 }
 
 h1#html5-ch1-7h1 {
+    font-size: 300%;
+    color: white;
+    position: relative;
+    left: 90px;
+    top: -3px;
+    width: 480px;
 
 }
 
@@ -151,17 +174,9 @@ footer {
 }
 
 
-/*equalise for various browsers and change #header to header*/
-div body header #content {
-  margin: 0;
-  padding: 0;
-  border: 0;
-}
 
-body {
-  background: #FFF url(images/green-grad.jpg) repeat-x;
-  margin: auto;
-}
+
+
 
 /*add display attributes for the semantic tags*/
 header,
