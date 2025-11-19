@@ -183,6 +183,9 @@ section#chapter3 {
 }
 
 p {
+    color: #000;
+    margin:auto; 
+    text-align:center;
 
 }
 
