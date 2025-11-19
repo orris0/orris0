@@ -119,7 +119,9 @@ br {
 }
 
 nav#html5-ch1-7nav.data {
-
+    margin: -240px 0 10px 0;
+    width: 135px;
+    float: right;
 }
 
 li.btn {
@@ -127,7 +129,21 @@ li.btn {
 }
 
 div#html5-ch1-7midcol.data {
+  margin-left: 315px;
+  margin-right: 145px;
+  margin-top: -275px;
+  vertical-align: top;
+}
 
+div#html5-ch1-7midcol.data {
+    margin-left: 315px;
+    margin-right: 145px;
+    margin-top: -275px;
+    vertical-align: top;
+}
+
+#html5-ch1-7midcol.data img {
+    margin-top: 10px;
 }
 
 div.footer {
