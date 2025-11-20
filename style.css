@@ -70,11 +70,31 @@ header#html5-ch1-7header.data .logo a {
 }
 
 header#html5-ch1-7header.data .logo img {
-  max-height: 40px;
+  max-height: 40px;  padding: .3em .8em;
+  border: 1px solid rgba(0,0,0,.1);
+  background: #58a linear-gradient(hsla(0,0%,100%,.2),transparent);
+  border-radius: .2em;
+  box-shadow: 0 .05em .25em rgba(0,0,0,.5);
+  color: white;
+  text-shadow: 0 -.05em .05em rgba(0,0,0,.5);
+  font-size: 125%;
+  line-height: 1.5;
+  border-width: 10px;
+  border-left-width: 0px;
 }
 
 /*set images to have no borders*/
-img { border:0;
+img { border:0;  padding: .3em .8em;
+  border: 1px solid rgba(0,0,0,.1);
+  background: #58a linear-gradient(hsla(0,0%,100%,.2),transparent);
+  border-radius: .2em;
+  box-shadow: 0 .05em .25em rgba(0,0,0,.5);
+  color: white;
+  text-shadow: 0 -.05em .05em rgba(0,0,0,.5);
+  font-size: 125%;
+  line-height: 1.5;
+  border-width: 10px;
+  border-left-width: 0px;
 }
 /*add display attributes for the semantic tags*/
 header, footer, section, article, nav { display:block;
@@ -177,7 +197,17 @@ h1#html5-ch1-7h1 {
 #html5-ch1-7rosette {
   position: relative;
   left: 750px;
-  top: 5px;
+  top: 5px;  padding: .3em .8em;
+  border: 1px solid rgba(0,0,0,.1);
+  background: #58a linear-gradient(hsla(0,0%,100%,.2),transparent);
+  border-radius: .2em;
+  box-shadow: 0 .05em .25em rgba(0,0,0,.5);
+  color: white;
+  text-shadow: 0 -.05em .05em rgba(0,0,0,.5);
+  font-size: 125%;
+  line-height: 1.5;
+  border-width: 10px;
+  border-left-width: 0px;
 }
 
 div#html5-ch1-7content.data { background-color:transparent; border-left:10px white solid; border-right:10px white solid; 
@@ -340,20 +370,50 @@ li.btn a {
   background: #559a55;
   color: white;
   border: 5px outset #559a55;
-  padding-bottom: 3px;
+  padding-bottom: 3px; padding: .3em .8em;
+  border: 1px solid rgba(0,0,0,.1);
+  background: #58a linear-gradient(hsla(0,0%,100%,.2),transparent);
+  border-radius: .2em;
+  box-shadow: 0 .05em .25em rgba(0,0,0,.5);
+  color: white;
+  text-shadow: 0 -.05em .05em rgba(0,0,0,.5);
+  font-size: 125%;
+  line-height: 1.5;
+  border-width: 10px;
+  border-left-width: 0px;
 }
 
 /* mouseover */
 li.btn a:hover {
   background: red;
   color: white;
-  border: 5px outset red;
+  border: 5px outset red;  padding: .3em .8em;
+  border: 1px solid rgba(0,0,0,.1);
+  background: #58a linear-gradient(hsla(0,0%,100%,.2),transparent);
+  border-radius: .2em;
+  box-shadow: 0 .05em .25em rgba(0,0,0,.5);
+  color: white;
+  text-shadow: 0 -.05em .05em rgba(0,0,0,.5);
+  font-size: 125%;
+  line-height: 1.5;
+  border-width: 10px;
+  border-left-width: 0px;
 }
 
 /*mouse active*/
 li.btn a:active {
   background: maroon;
-  border: 5px inset maroon;
+  border: 5px inset maroon;  padding: .3em .8em;
+  border: 1px solid rgba(0,0,0,.1);
+  background: #58a linear-gradient(hsla(0,0%,100%,.2),transparent);
+  border-radius: .2em;
+  box-shadow: 0 .05em .25em rgba(0,0,0,.5);
+  color: white;
+  text-shadow: 0 -.05em .05em rgba(0,0,0,.5);
+  font-size: 125%;
+  line-height: 1.5;
+  border-width: 10px;
+  border-left-width: 0px;
 }
 
 br.clear {
@@ -361,19 +421,49 @@ br.clear {
 }
 
 #html5-ch1-7midcol.data img {
-  margin-top: 10px;
+  margin-top: 10px;  padding: .3em .8em;
+  border: 1px solid rgba(0,0,0,.1);
+  background: #58a linear-gradient(hsla(0,0%,100%,.2),transparent);
+  border-radius: .2em;
+  box-shadow: 0 .05em .25em rgba(0,0,0,.5);
+  color: white;
+  text-shadow: 0 -.05em .05em rgba(0,0,0,.5);
+  font-size: 125%;
+  line-height: 1.5;
+  border-width: 10px;
+  border-left-width: 0px;
 }
 
 footer#html5style2.data {
   clear: both;
   color: white;
-  text-align: center;
+  text-align: center;  padding: .3em .8em;
+  border: 1px solid rgba(0,0,0,.1);
+  background: #58a linear-gradient(hsla(0,0%,100%,.2),transparent);
+  border-radius: .2em;
+  box-shadow: 0 .05em .25em rgba(0,0,0,.5);
+  color: white;
+  text-shadow: 0 -.05em .05em rgba(0,0,0,.5);
+  font-size: 125%;
+  line-height: 1.5;
+  border-width: 10px;
+  border-left-width: 0px;
 } 
 
 /*equalise for various browsers and change #header to header*/
 div body header #content { margin:0; padding:0; border:0;
 }
-body { background:#FFF url(images/green-grad.jpg) repeat-x; margin:auto;
+body { background:#FFF url(images/green-grad.jpg) repeat-x; margin:auto;  padding: .3em .8em;
+  border: 1px solid rgba(0,0,0,.1);
+  background: #58a linear-gradient(hsla(0,0%,100%,.2),transparent);
+  border-radius: .2em;
+  box-shadow: 0 .05em .25em rgba(0,0,0,.5);
+  color: white;
+  text-shadow: 0 -.05em .05em rgba(0,0,0,.5);
+  font-size: 125%;
+  line-height: 1.5;
+  border-width: 10px;
+  border-left-width: 0px;
 }
 /*add display attributes for the semantic tags*/
 header, footer, section, article, nav { display:block;
