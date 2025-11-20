@@ -25,6 +25,8 @@ body {
   text-shadow: 0 -.05em .05em rgba(0,0,0,.5);
   font-size: 125%;
   line-height: 1.5;
+  border-width: 10px;
+  border-left-width: 0px;
 }
 #nav ul {
   padding: .3em .8em;
