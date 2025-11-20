@@ -13,6 +13,18 @@ body {
   margin: auto;
 }
 
+.callout { position: relative; }
+.callout::before {
+content: "";
+position: absolute;
+top: -.4em; left: 1em;
+padding: .35em;
+background: inherit;
+border: inherit;
+border-right: 0;
+border-bottom: 0;
+transform: rotate(45deg);
+
 div.wrapper { 
     position: relative; 
     top: 0em; 
