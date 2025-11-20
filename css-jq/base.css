@@ -96,6 +96,18 @@ div#html5-ch1-7content.data {
 
 }
 
+button.cancel {
+background-color: #c00;
+}
+button.ok {
+background-color: #6b0;
+}
+hr {
+height: .5em;
+background: currentColor;
+}
+input, select, button { font: inherit; }
+
 h2 {
     font-size: x-large;
     color: white;
