@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400');
 @import url('https://fonts.googleapis.com/css?family=Raleway:300');
+article,aside,details,figcaption,figure,footer,header,hgroup,nav,section { display:block; }
 div.wrapper { 
     position: relative; 
     top: 0em; 
