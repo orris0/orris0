@@ -10,9 +10,9 @@ div.wrapper {
   border: 1px solid rgba(0,0,0,.1);
  /* background: #58a linear-gradient(hsla(0,0%,100%,.2),transparent);*/
   border-radius: .2em;
-  box-shadow: 0 .05em .25em rgba(0,0,0,.5);
+  box-shadow: 0 .05em .25em hsla(0,0,0,.5);
   color: white;
-  text-shadow: 0 -.05em .05em rgba(0,0,0,.5);
+  text-shadow: 0 -.05em .05em hsla(0,0,0,.5);
   font-size: 125%;
   line-height: 1.5;
   border-width: 10px;
