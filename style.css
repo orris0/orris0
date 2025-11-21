@@ -64,7 +64,7 @@ header#html5-ch1-7header.data .logo a {
   box-shadow: 0 .05em .25em rgba(0,0,0,.5);
   color: white;
   text-shadow: 0 -.05em .05em rgba(0,0,0,.5);
-  font-size: 125%;
+  font-size: 100%;
   line-height: 1.5;
   border-width: 10px;
   border-left-width: 0px;
@@ -78,7 +78,7 @@ header#html5-ch1-7header.data .logo img {
   box-shadow: 0 .05em .25em rgba(0,0,0,.5);
   color: white;
   text-shadow: 0 -.05em .05em rgba(0,0,0,.5);
-  font-size: 125%;
+  font-size: 100%;
   line-height: 1.5;
   border-width: 10px;
   border-left-width: 0px;
@@ -92,7 +92,7 @@ img { border:0;  padding: .3em .8em;
   box-shadow: 0 .05em .25em rgba(0,0,0,.5);
   color: white;
   text-shadow: 0 -.05em .05em rgba(0,0,0,.5);
-  font-size: 125%;
+  font-size: 100%;
   line-height: 1.5;
   border-width: 10px;
   border-left-width: 0px;
@@ -111,7 +111,7 @@ p {
   box-shadow: 0 .05em .25em rgba(0,0,0,.5);
   color: white;
   text-shadow: 0 -.05em .05em rgba(0,0,0,.5);
-  font-size: 125%;
+  font-size: 100%;
   line-height: 1.5;
   border-width: 10px;
   border-left-width: 0px;
@@ -125,7 +125,7 @@ h1#html5-ch1-7h1 { font-size:300%; color :white; position: relative; left:15%; t
   box-shadow: 0 .05em .25em rgba(0,0,0,.5);
   color: white;
   text-shadow: 0 -.05em .05em rgba(0,0,0,.5);
-  font-size: 125%;
+  font-size: 100%;
   line-height: 1.5;
   border-width: 10px;
   border-left-width: 0px;
@@ -138,7 +138,7 @@ div#wrapper {position:relative; top:0px; left:0;width:970px; margin:auto; text-a
   box-shadow: 0 .05em .25em rgba(0,0,0,.5);
   color: white;
   text-shadow: 0 -.05em .05em rgba(0,0,0,.5);
-  font-size: 125%;
+  font-size: 100%;
   line-height: 1.5;
   border-width: 10px;
   border-left-width: 0px;
@@ -155,7 +155,7 @@ nav {
 
 /*remove the # from #header*/
 header#html5-ch1-7header.data {
-  width: 970px;
+  width: 920px;
   height: 180px;
   padding: 0;
   border: 10px white solid;
@@ -168,7 +168,7 @@ header#html5-ch1-7header.data {
   box-shadow: 0 .05em .25em rgba(0,0,0,.5);
   color: white;
   text-shadow: 0 -.05em .05em rgba(0,0,0,.5);
-  font-size: 125%;
+  font-size: 100%;
   line-height: 1.5;
   border-width: 10px;
   border-left-width: 0px;
@@ -177,7 +177,7 @@ header#html5-ch1-7header.data {
 }
 
 h1#html5-ch1-7h1 {
-  font-size: 300%;
+ /* font-size: 300%; */
   color: white;
   position: relative;
   left: 90px;
@@ -205,7 +205,7 @@ h1#html5-ch1-7h1 {
   box-shadow: 0 .05em .25em rgba(0,0,0,.5);
   color: white;
   text-shadow: 0 -.05em .05em rgba(0,0,0,.5);
-  font-size: 125%;
+  font-size: 100%;
   line-height: 1.5;
   border-width: 10px;
   border-left-width: 0px;
@@ -219,14 +219,14 @@ border-bottom:10px white solid; width: 970px; margin-top:-26px; margin-left:auto
   box-shadow: 0 .05em .25em rgba(0,0,0,.5);
   color: white;
   text-shadow: 0 -.05em .05em rgba(0,0,0,.5);
-  font-size: 125%;
+  font-size: 100%;
   line-height: 1.5;
   border-width: 10px;
   border-left-width: 0px; 
 }
 
 h2#html5-ch1-7h2 {
-  font-size: x-large;
+ /* font-size: x-large; */
   color: white;
   margin: 0 0 10px 0;
 	 padding: .3em .8em;
@@ -236,14 +236,14 @@ h2#html5-ch1-7h2 {
   box-shadow: 0 .05em .25em rgba(0,0,0,.5);
   color: white;
   text-shadow: 0 -.05em .05em rgba(0,0,0,.5);
-  font-size: 125%;
+  font-size: 100%;
   line-height: 1.5;
   border-width: 10px;
   border-left-width: 0px;
 }
 
 h3#html5-ch1-7h3 {
-  font-size: large;
+/*  font-size: large; */
   color: white;
   margin: 10px 0 6px 0; padding: .3em .8em;
   border: 1px solid rgba(0,0,0,.1);
@@ -252,7 +252,7 @@ h3#html5-ch1-7h3 {
   box-shadow: 0 .05em .25em rgba(0,0,0,.5);
   color: white;
   text-shadow: 0 -.05em .05em rgba(0,0,0,.5);
-  font-size: 125%;
+  font-size: 100%;
   line-height: 1.5;
   border-width: 10px;
   border-left-width: 0px;
@@ -268,7 +268,7 @@ div#html5-ch1-7col.data {
   box-shadow: 0 .05em .25em rgba(0,0,0,.5);
   color: white;
   text-shadow: 0 -.05em .05em rgba(0,0,0,.5);
-  font-size: 125%;
+  font-size: 100%;
   line-height: 1.5;
   border-width: 10px;
   border-left-width: 0px;
@@ -287,7 +287,7 @@ div#html5-ch1-7midcol.data {
   box-shadow: 0 .05em .25em rgba(0,0,0,.5);
   color: white;
   text-shadow: 0 -.05em .05em rgba(0,0,0,.5);
-  font-size: 125%;
+  font-size: 100%;
   line-height: 1.5;
   border-width: 10px;
   border-left-width: 0px;
@@ -304,7 +304,7 @@ nav#html5-ch1-7nav.data ul {
   box-shadow: 0 .05em .25em rgba(0,0,0,.5);
   color: white;
   text-shadow: 0 -.05em .05em rgba(0,0,0,.5);
-  font-size: 125%;
+  font-size: 100%;
   line-height: 1.5;
   border-width: 10px;
   border-left-width: 0px;
@@ -321,7 +321,7 @@ nav#html5-ch1-7nav.data li {
   box-shadow: 0 .05em .25em rgba(0,0,0,.5);
   color: white;
   text-shadow: 0 -.05em .05em rgba(0,0,0,.5);
-  font-size: 125%;
+  font-size: 100%;
   line-height: 1.5;
   border-width: 10px;
   border-left-width: 0px;
@@ -339,7 +339,7 @@ li.btn {
   box-shadow: 0 .05em .25em rgba(0,0,0,.5);
   color: white;
   text-shadow: 0 -.05em .05em rgba(0,0,0,.5);
-  font-size: 125%;
+  font-size: 100%;
   line-height: 1.5;
   border-width: 10px;
   border-left-width: 0px;
@@ -359,7 +359,7 @@ li.btn a {
   box-shadow: 0 .05em .25em rgba(0,0,0,.5);
   color: white;
   text-shadow: 0 -.05em .05em rgba(0,0,0,.5);
-  font-size: 125%;
+  font-size: 100%;
   line-height: 1.5;
   border-width: 10px;
   border-left-width: 0px;
@@ -378,7 +378,7 @@ li.btn a {
   box-shadow: 0 .05em .25em rgba(0,0,0,.5);
   color: white;
   text-shadow: 0 -.05em .05em rgba(0,0,0,.5);
-  font-size: 125%;
+  font-size: 100%;
   line-height: 1.5;
   border-width: 10px;
   border-left-width: 0px;
@@ -411,7 +411,7 @@ li.btn a:active {
   box-shadow: 0 .05em .25em rgba(0,0,0,.5);
   color: white;
   text-shadow: 0 -.05em .05em rgba(0,0,0,.5);
-  font-size: 125%;
+  font-size: 100%;
   line-height: 1.5;
   border-width: 10px;
   border-left-width: 0px;
@@ -429,7 +429,7 @@ br.clear {
   box-shadow: 0 .05em .25em rgba(0,0,0,.5);
   color: white;
   text-shadow: 0 -.05em .05em rgba(0,0,0,.5);
-  font-size: 125%;
+  font-size: 100%;
   line-height: 1.5;
   border-width: 10px;
   border-left-width: 0px;
@@ -445,7 +445,7 @@ footer#html5style2.data {
   box-shadow: 0 .05em .25em rgba(0,0,0,.5);
   color: white;
   text-shadow: 0 -.05em .05em rgba(0,0,0,.5);
-  font-size: 125%;
+  font-size: 100%;
   line-height: 1.5;
   border-width: 10px;
   border-left-width: 0px;
@@ -461,7 +461,7 @@ body { background:#FFF url(images/green-grad.jpg) repeat-x; margin:auto;  paddin
   box-shadow: 0 .05em .25em rgba(0,0,0,.5);
   color: white;
   text-shadow: 0 -.05em .05em rgba(0,0,0,.5);
-  font-size: 125%;
+  font-size: 100%;
   line-height: 1.5;
   border-width: 10px;
   border-left-width: 0px;
@@ -472,7 +472,7 @@ header, footer, section, article, nav { display:block;
 /*remove the # from #header*/
 header {width:920px; height:180px; padding:0; border:10px white solid; background: url(images/header3.jpg); margin:10px auto;
 }
-h1 { font-size:300%; color :white; position: relative; left:90px; top: 55px;
+h1 { font-size:100%; color :white; position: relative; left:90px; top: 55px;
 width:480px;
 }
 #rosette { position:relative; left:750px; top:5px;
