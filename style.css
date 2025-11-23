@@ -87,7 +87,7 @@ header#html5-ch1-7header.data .logo {
 
   padding: .3em .8em;
   border: 1px solid rgba(0,0,0,.1);
-  background: #58a linear-gradient(hsla(0,0%,100%,.2),transparent);
+ /* background: #58a linear-gradient(hsla(0,0%,100%,.2),transparent); */
   border-radius: .2em;
   box-shadow: 0 .05em .25em rgba(0,0,0,.5);
   color: white;
@@ -101,7 +101,7 @@ header#html5-ch1-7header.data .logo {
 header#html5-ch1-7header.data .logo a {
   color: #fff;  padding: .3em .8em;
   border: 1px solid rgba(0,0,0,.1);
-  background: #58a linear-gradient(hsla(0,0%,100%,.2),transparent);
+ /* background: #58a linear-gradient(hsla(0,0%,100%,.2),transparent); */
   border-radius: .2em;
   box-shadow: 0 .05em .25em rgba(0,0,0,.5);
   color: white;
@@ -115,7 +115,7 @@ header#html5-ch1-7header.data .logo a {
 header#html5-ch1-7header.data .logo img {
   max-height: 40px;  padding: .3em .8em;
   border: 1px solid rgba(0,0,0,.1);
-  background: #58a linear-gradient(hsla(0,0%,100%,.2),transparent);
+ /* background: #58a linear-gradient(hsla(0,0%,100%,.2),transparent); */
   border-radius: .2em;
   box-shadow: 0 .05em .25em rgba(0,0,0,.5);
   color: white;
@@ -148,7 +148,7 @@ p {
     margin:auto; 
     text-align:center; padding: .3em .8em;
   border: 1px solid rgba(0,0,0,.1);
-  background: #58a linear-gradient(hsla(0,0%,100%,.2),transparent);
+ /* background: #58a linear-gradient(hsla(0,0%,100%,.2),transparent); */
   border-radius: .2em;
   box-shadow: 0 .05em .25em rgba(0,0,0,.5);
   color: white;
