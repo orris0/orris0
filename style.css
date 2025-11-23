@@ -129,7 +129,7 @@ header#html5-ch1-7header.data .logo img {
 /*set images to have no borders*/
 img { border:0;  padding: .3em .8em;
   border: 1px solid rgba(0,0,0,.1);
-  background: #58a linear-gradient(hsla(0,0%,100%,.2),transparent);
+ /* background: #58a linear-gradient(hsla(0,0%,100%,.2),transparent); */
   border-radius: .2em;
   box-shadow: 0 .05em .25em rgba(0,0,0,.5);
   color: white;
@@ -207,7 +207,7 @@ header#html5-ch1-7header.data {
   margin: 50px auto;
 	 padding: .3em .8em;
   border: 1px solid rgba(0,0,0,.1);
-  background: #58a linear-gradient(hsla(0,0%,100%,.2),transparent);
+/*  background: #58a linear-gradient(hsla(0,0%,100%,.2),transparent); */
   border-radius: .2em;
   box-shadow: 0 .05em .25em rgba(0,0,0,.5);
   color: white;
@@ -228,7 +228,7 @@ h1#html5-ch1-7h1 {
   top: -3px;
   width: 480px; padding: .3em .8em;
   border: 1px solid rgba(0,0,0,.1);
-  background: #58a linear-gradient(hsla(0,0%,100%,.2),transparent);
+ /* background: #58a linear-gradient(hsla(0,0%,100%,.2),transparent); */
   border-radius: .2em;
   box-shadow: 0 .05em .25em rgba(0,0,0,.5);
   color: white;
@@ -244,7 +244,7 @@ h1#html5-ch1-7h1 {
   left: 750px;
   top: 5px;  padding: .3em .8em;
   border: 1px solid rgba(0,0,0,.1);
-  background: #58a linear-gradient(hsla(0,0%,100%,.2),transparent);
+ /* background: #58a linear-gradient(hsla(0,0%,100%,.2),transparent); */
   border-radius: .2em;
   box-shadow: 0 .05em .25em rgba(0,0,0,.5);
   color: white;
@@ -258,7 +258,7 @@ h1#html5-ch1-7h1 {
 div#html5-ch1-7content.data { background-color:transparent; border-left:10px white solid; border-right:10px white solid; 
 border-bottom:10px white solid; width: 970px; margin-top:-26px; margin-left:auto; margin-right:auto; padding:8px; font-size:medium; color:maroon; padding: .3em .8em;
   border: 1px solid rgba(0,0,0,.1);
-  background: #58a linear-gradient(hsla(0,0%,100%,.2),transparent);
+/*  background: #58a linear-gradient(hsla(0,0%,100%,.2),transparent); */
   border-radius: .2em;
   box-shadow: 0 .05em .25em rgba(0,0,0,.5);
   color: white;
@@ -275,7 +275,7 @@ h2#html5-ch1-7h2 {
   margin: 0 0 10px 0;
 	 padding: .3em .8em;
   border: 1px solid rgba(0,0,0,.1);
-  background: #58a linear-gradient(hsla(0,0%,100%,.2),transparent);
+ /* background: #58a linear-gradient(hsla(0,0%,100%,.2),transparent); */
   border-radius: .2em;
   box-shadow: 0 .05em .25em rgba(0,0,0,.5);
   color: white;
@@ -291,7 +291,7 @@ h3#html5-ch1-7h3 {
   color: white;
   margin: 10px 0 6px 0; padding: .3em .8em;
   border: 1px solid rgba(0,0,0,.1);
-  background: #58a linear-gradient(hsla(0,0%,100%,.2),transparent);
+ /* background: #58a linear-gradient(hsla(0,0%,100%,.2),transparent); */
   border-radius: .2em;
   box-shadow: 0 .05em .25em rgba(0,0,0,.5);
   color: white;
