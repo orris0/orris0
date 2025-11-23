@@ -12,7 +12,7 @@ body {
   background: #FFF url(images/green-grad.jpg) repeat-x;
   margin: auto;
 }
-*/
+*
 .callout { position: relative; }
 .callout::before {
 content: "";
