@@ -677,7 +677,7 @@ li.btn { margin-bottom: 3px; text-align: center; width:130px;
 li.btn a { display: block; color: white; font-weight: bold; text-decoration: none; zoom:1;
 }
 /* specify mouse state styles */
-/* mouseout (default) */
+/* mouseout (default) *
 li.btn a { background:#559a55; color: white; border: 5px outset #559a55; padding-bottom:3px;
 }
 /* mouseover */
