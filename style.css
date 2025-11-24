@@ -515,7 +515,7 @@ li.btn {
   border-left-width: 0px;
 }
 
-/* set general anchor styles and include the zoom fix for IE6*/
+/* set general anchor styles and include the zoom fix for IE6*
 li.btn a {
   display: block;
   color: white;
