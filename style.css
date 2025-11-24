@@ -199,6 +199,11 @@ img { border:0;
 /*add display attributes for the semantic tags*/
 header, footer, section, article, nav { display:block;
 }
+p {
+ width: 700px;
+ font-size: 24px;
+ font-family: sans-serif;
+}
 p { 
 
     color: #000;
