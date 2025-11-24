@@ -297,7 +297,7 @@ h1#html5-ch1-7h1 {
   box-shadow: 0 .05em .25em rgba(0,0,0,.5);
   color: white;
   text-shadow: 0 -.05em .05em rgba(0,0,0,.5);
-  font-size: 200%;
+  font-size: 300%;
   line-height: 1.5;
   border-width: 10px;
   border-left-width: 0px;
@@ -360,7 +360,7 @@ h3#html5-ch1-7h3 {
   box-shadow: 0 .05em .25em rgba(0,0,0,.5);
   color: white;
   text-shadow: 0 -.05em .05em rgba(0,0,0,.5);
-  font-size: 100%;
+  font-size: large;
   line-height: 1.5;
   border-width: 10px;
   border-left-width: 0px;
