@@ -5,6 +5,14 @@ body {
  font-size: 16px;
 }
 
+div {
+ font-size: 2em;
+}
+body {
+ margin: 2rem;
+ font-size: 16px;
+}
+
 article {
  font-size: 1.5em;
 }
