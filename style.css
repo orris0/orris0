@@ -536,7 +536,7 @@ li.btn a {
 }
 
 /* specify mouse state styles */
-/* mouseout (default) */
+/* mouseout (default) *
 li.btn a {
   background: #559a55;
   color: white;
