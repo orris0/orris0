@@ -15,6 +15,7 @@ article {
 span {
  font-style: italic;
 }
+/*
 div {
  font-size: 4rem;
  font-family: Calibri, sans-serif;
@@ -111,6 +112,8 @@ aside {
  background-color: #eee;
  float: right;
 }
+
+*/
 article,aside,details,figcaption,figure,footer,header,hgroup,nav,section { display:block; }
 div.wrapper { 
     position: relative; 
