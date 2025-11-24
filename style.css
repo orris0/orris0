@@ -1,5 +1,35 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400');
 @import url('https://fonts.googleapis.com/css?family=Raleway:300');
+* {
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+}
+body {
+ margin: 2rem;
+ width: 30rem;
+}
+nav {
+ padding: .5rem 0;
+ background-color: #ccc;
+}
+nav::after {
+ content: '';
+ display: block;
+ clear: both;
+}
+nav ul {
+ list-style-type: none;
+ padding-left: 1.75rem;
+}
+nav li {
+ float: left;
+ padding-right: 1.75rem;
+}
+main {
+ clear: left;
+ margin-top: 1rem;
+}
 body {
  border: 1px solid black;
  margin: 2rem;
