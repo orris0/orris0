@@ -1,5 +1,11 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400');
 @import url('https://fonts.googleapis.com/css?family=Raleway:300');
+body {
+ width: 50vw;
+ height: 50vh;
+ border: 1px solid black;
+ margin: 0;
+}
 * {
  margin: 0;
  padding: 0;
