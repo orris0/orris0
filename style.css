@@ -2,6 +2,18 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway:300');
 body {
  margin: 2rem;
+ font-size: 16px;
+}
+
+article {
+ font-size: 1.5em;
+}
+
+section {
+ font-size: 1.25em;
+}
+body {
+ margin: 2rem;
 }
 
 h1 {
