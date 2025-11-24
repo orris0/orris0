@@ -1,8 +1,19 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400');
 @import url('https://fonts.googleapis.com/css?family=Raleway:300');
 body {
- font-size: 1.6rem;
- text-align: center;
+ border: 1px solid black;
+ margin: 2rem;
+ padding: 1.58rem;
+ width: 525px;
+ text-align: justify;
+}
+
+aside {
+ border: 1px solid black;
+ padding: 1.58rem;
+ margin: 1.5rem;
+ background-color: #eee;
+ float: right;
 }
 article,aside,details,figcaption,figure,footer,header,hgroup,nav,section { display:block; }
 div.wrapper { 
