@@ -545,3 +545,68 @@ th {
 td {
 	padding: 6px;
 }
+
+ 
+/*
+Listing 2-6b provides the CSS presentation instructions for a 3 column gallery set in a real world page. 
+ CHAPTER 2 ■ A ROLLOVER PICTURE GALLERY 
+52 
+/*set menu buttons*/ 
+li.btn a { display:block; background-color :#66CCFF; color:black; font-weight:bold; -
+
+padding:4px; margin-left:0; text-align:center; list-style-type:none; -
+
+text-decoration:none; width:110px; 
+} 
+li.btn a:hover { background-color:blue; color:white; 
+} 
+li.btn { width:110px; 
+} 
+/*SET THUMBNAIL GALLERY BLOCK*/ 
+/* Set general thumbnail styles */ 
+#col-1 { position: absolute; top: 0; left: 0; width:85px; 
+} 
+/*place the first column on the page*/ 
+li { margin: 5px; list-style-type:none; 
+} 
+/*remove bullets from the un-ordered list elements and create the -
+
+MouseOut state (default) - create and position a space for the larger images and -
+
+hide them*/ 
+#col-1 a img.hid { width: 260px; height:390px; position: -
+
+absolute; top: 10px; left: 330px; visibility: hidden; 
+} 
+/* MouseOver state (hover)- this reveals larger picture */ 
+#col-1 a:hover { background: white; } 
+#col-1 a:hover img.hid { visibility:visible; 
+} 
+/*----------------------------------------------------*/ 
+/* set 2nd column of thumbnails 85px further over to right*/ 
+#col-2 { position: absolute; top: 0; left: 85px; width:85px; 
+} 
+li { margin: 5px; list-style-type:none; 
+} 
+/* MouseOut state (default) - hide larger picture */ 
+#col-2 a img.hid { width: 260px; height:390px; -
+
+position: absolute; top: 10px; left: 245px; margin-left:0;visibility: hidden; 
+} 
+/* MouseOver state (hover)- reveal larger picture */ 
+#col-2 a:hover { background: white; } 
+#col-2 a:hover img.hid { visibility:visible; } 
+/*----------------------------------------------------*/ 
+/* set 3rd column of thumbnails 170px further over to right*/ 
+#col-3 { position: absolute; top: 0; left: 175px; width:95px; } 
+li { margin: 5px; list-style-type:none; 
+} 
+/* MouseOut state (default) - hide larger picture */ 
+#col-3 a img.hid { width: 260px; height:390px; -
+
+position: absolute; top: 10px; left: 155px; margin-left:0; visibility: hidden; 
+} 
+/* MouseOver state (hover)- reveal larger picture */ 
+#col-3a:hover { background: white; 
+} 
+#col-3 a:hover img.hid { visibility:visible;
