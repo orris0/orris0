@@ -175,7 +175,7 @@ div body header #content { margin:0; padding:0; border:0;
 /*set attributes for consistent appearance in all browsers*/
 html, body, p, ul, li, h1, h2 { margin:0; padding:0;
 }
-header#html5-ch1-7header.data .fixed-top {
+header#html5-style-2header.data .fixed-top {
   background: #07062f;
      padding: .3em .8em;
   border: 1px solid rgba(0,0,0,.1);
