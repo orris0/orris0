@@ -123,7 +123,7 @@ div.wrapper {
     margin: auto;  
 	
 	padding: .3em .8em;
-    border: 1px solid rgba(0,0,0,.1);
+    border: 1px solid rgba(255,0,0,.1);
     /* background: #58a linear-gradient(hsla(0,0%,100%,.2),transparent);*/
     border-radius: .2em;
     box-shadow: 0 .05em .25em hsla(0,0,0,.5);
