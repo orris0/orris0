@@ -137,7 +137,7 @@ div.wrapper {
   }
 div#container.data { 
 	padding: .3em .8em;
-    border: 1px red;
+    border: 1px solid red;
    /* background: #58a linear-gradient(hsla(0,0%,100%,.2),transparent);*/
     border-radius: .2em;
     box-shadow: 0 .05em .25em rgba(0,0,0,.5);
