@@ -254,7 +254,7 @@ li.btn {
 div#html5-style-2midcol.data {
     margin-left: 315px;
     margin-right: 145px;
-    margin-top: -275px;
+    margin-top: 20px;
     vertical-align: top;
 }
 
@@ -612,6 +612,7 @@ position: absolute; top: 10px; left: 155px; margin-left:0; visibility: hidden;
 } 
 
 #col-3 a:hover img.hid { visibility:visible;
+
 
 
 
