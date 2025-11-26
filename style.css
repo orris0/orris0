@@ -15,7 +15,7 @@ header#html5-style-2header {
 	width: 920px; height: 180px; padding: 0; border: 10px white solid; background: url(../bda-20.jpg); margin: 10px auto; 
 }
 h1 {
-  font-size: 300%; color: white; position: relative; left: 90px; top: -25px; width: 600px;
+  font-size: 200%; color: white; position: relative; left: 90px; top: -25px; width: 600px;
 }
 /*
 body {
