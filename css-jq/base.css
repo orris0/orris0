@@ -461,9 +461,10 @@ footer {
 
 /* style up a few of the new elements */
 article, aside, figure,footer, header, hgroup, menu, nav, section { display: block;}
+/*
 body > header { background-color: #930; color: white;}
 body > footer {border-top: solid 5px black; }
-
+*/
 h3 { font-variant: small-caps; }
 p { margin-left: 1.5em; }
 section { border-top: dashed 2px black; }
@@ -479,14 +480,14 @@ body > footer > p { text-align: right; font-style: italic; font-size: smaller;}
 #intro{
 	width: 902px;
 }
-
+/*
 body {
 	font-family: "Lucida Sans Unicode","Lucida Grande",Sans-Serif;
 	color: #3E3E3E;
 	background: #94C5EB url(css-jq/images/background-grad.png) repeat-x;
 	font-size: 12px;
 }
-/*
+
 p {
 	padding: 5px;
 }
