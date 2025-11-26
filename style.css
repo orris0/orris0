@@ -125,7 +125,7 @@ aside {
 div#html5-style-2content.data { 
 	
   }
-
+/*
 nav#nav.data {
 	padding: .3em .8em;
   border: 1px solid rgba(0,0,0,.1);
@@ -143,7 +143,7 @@ nav#nav.data {
 
   
 
-/* Listing 1-7b. The Revised CSS Sheet for Figure 1-7 (html5-style-2.css) 
+ Listing 1-7b. The Revised CSS Sheet for Figure 1-7 (html5-style-2.css) 
 (The key items are picked out in bold type.)
 equalise for various browsers and change #header to header*/
 
