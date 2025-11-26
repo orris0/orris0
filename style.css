@@ -10,12 +10,26 @@ nav#nav.data {
 	padding: 5.3em 1.8em; border: 1px solid rgba(0,0,0,.1); background: #58a linear-gradient(hsla(0,0%,100%,.2),transparent); 
     border-radius: .2em; box-shadow: 0 .05em .25em rgba(0,0,0,.5); color: white; text-shadow: 0 -.05em .05em rgba(0,0,0,.5); font-size: 80%; line-height: 1.5; border-width: 10px; border-left-width: 0px; 
 }
-/*remove the # from #header*/
+/*remove the # from #header
 header#html5-style-2header { 
 	width: 920px; height: 180px; padding: 0; border: 10px white solid; background: url(../bda-20.jpg); margin: 0px auto; 
 }
 h1 {
   font-size: 200%; color: white; position: relative; left: 90px; top: -25px; width: 600px;
+}
+*/
+body { background: #FFF url(images/green-grad.jpg) repeat-x; margin:auto;
+}
+header, nav, footer, article section { display:block;
+}
+header#html5-style-2header { width:95%; max-width:1024px; min-width:900px; height:180px; 
+padding:0; border:10px white solid; background:url(../header3.jpg); 
+margin:20px auto;
+}
+h1 { font-size:300%; color :white; 
+position: absolute; left:15%; top: 55px; width: 480px;
+}
+#rosette { position:relative; left:85%; top:120px;
 }
 /*
 body {
