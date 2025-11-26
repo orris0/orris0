@@ -2,6 +2,25 @@
 // Scripts
 //
 
+function template(row, cart) {
+  row.find('.item_name').text(cart.name);
+  row.find('.item_qty').text(cart.qty);
+  row.find('.item_total').text(cart.total);
+  return row;
+}
+
+$(document).ready(function() {
+  var newRow = $('#cart .template').clone().removeClass('template');
+  var cartItem = {
+    name: 'Glendatronix',
+    qty: 1,
+    total: 450
+  };
+  template(newRow, cartItem)
+    .appendTo('#cart')
+    .fadeIn();  
+});
+
 $(document).ready(function() {
   $('#container.data div.row .col-12 #nav #mainNavButton input
     label li a href ul img .logo #html5-ch1-7header #html5-ch1-7h1 #html5-ch1-7header 
