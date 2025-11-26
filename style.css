@@ -1,7 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400');
 @import url('https://fonts.googleapis.com/css?family=Raleway:300');
-article,aside,details,figcaption,figure,footer,header,hgroup,nav,section { display:block; 
-																		 }
+article,aside,details,figcaption,figure,footer,header,hgroup,nav,section { 
+	display:block; 
+}
 div.wrapper { 
 	position: relative;  top: 0em;  left: 0;  width: 100%;  margin: auto; 
 }
@@ -12,6 +13,9 @@ nav#nav.data {
 /*remove the # from #header*/
 header#html5-style-2header { 
 	width: 920px; height: 180px; padding: 0; border: 10px white solid; background: url(../bda-20.jpg); margin: 10px auto; 
+}
+h1 {
+  font-size: 300%; color: white; position: relative; left: 90px; top: -20px; width: 600px;
 }
 /*
 body {
