@@ -34,7 +34,7 @@ h3#html5-style-2h3 { font-size:large; color:white; margin:0 0 6px 0;
 vertical-align:top;
 }
 /*set nav block position and width and remove the #menu item*/
-nav ul { margin:10px 0 10px 0; width:135px; float:right;
+nav#html5-style-2nav ul { margin:10px 0 10px 0; width:135px; float:right;
 }
 /*Set un-ordered list style within the menu block only. This removes bullets*/
 nav#html5-style-2nav li { list-style-type:none;
@@ -612,6 +612,7 @@ position: absolute; top: 10px; left: 155px; margin-left:0; visibility: hidden;
 } 
 
 #col-3 a:hover img.hid { visibility:visible;
+
 
 
 
