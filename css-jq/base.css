@@ -1,4 +1,4 @@
-/* Listing 1-7b. The Revised CSS Sheet for Figure 1-7 (html5-style-2.css)
+/* Listing 1-7b. The Revised CSS Sheet for Figure 1-7 (html5-style-2.css
 (The key items are picked out in bold type.)
 equalise for various browsers and change #header to header*/
 div body header #content { margin:0; padding:0; border:0;
@@ -11,18 +11,17 @@ div.wrapper {
     left: 0; 
     width: 100%; 
     margin: auto;
-
 	padding: .3em .8em;
-  border: 1px solid rgba(0,0,0,.1);
-  background: #58a linear-gradient(hsla(0,0%,100%,.2),transparent);
-  border-radius: .2em;
-  box-shadow: 0 .05em .25em rgba(0,0,0,.5);
-  color: white;
-  text-shadow: 0 -.05em .05em rgba(0,0,0,.5);
-  font-size: 100%;
-  line-height: 1.5;
-  border-width: 10px;
-  border-left-width: 0px;
+    border: 1px solid rgba(0,0,0,.1);
+    background: #58a linear-gradient(hsla(0,0%,100%,.2),transparent);
+    border-radius: .2em;
+    box-shadow: 0 .05em .25em rgba(0,0,0,.5);
+    color: white;
+    text-shadow: 0 -.05em .05em rgba(0,0,0,.5);
+    font-size: 100%;
+    line-height: 1.5;
+    border-width: 10px;
+    border-left-width: 0px;
 }
 /*add display attributes for the semantic tags*/
 header, footer, section, article, nav { display:block;
@@ -611,6 +610,7 @@ position: absolute; top: 10px; left: 155px; margin-left:0; visibility: hidden;
 } 
 
 #col-3 a:hover img.hid { visibility:visible;
+
 
 
 
