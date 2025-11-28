@@ -70,23 +70,6 @@ div body header #content {
   padding: 0;
   border: 0;
 }
-/*
-body {
-  background: #FFF url(images/green-grad.jpg) repeat-x;
-  margin: auto;
-}
-*
-.callout { position: relative; }
-.callout::before {
-content: "";
-position: absolute;
-top: -.4em; left: 1em;
-padding: .35em;
-background: inherit;
-border: inherit;
-border-right: 0;
-border-bottom: 0;
-transform: rotate(45deg);
 
 div.wrapper { 
     position: relative; 
@@ -107,7 +90,7 @@ div.wrapper {
   border-width: 10px;
   border-left-width: 0px;
 }
-
+/*
 div#container.data { padding: .3em .8em;
   border: 1px solid rgba(0,0,0,.1);
   background: #58a linear-gradient(hsla(0,0%,100%,.2),transparent);
@@ -612,6 +595,7 @@ position: absolute; top: 10px; left: 155px; margin-left:0; visibility: hidden;
 } 
 
 #col-3 a:hover img.hid { visibility:visible;
+
 
 
 
