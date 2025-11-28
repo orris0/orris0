@@ -403,20 +403,7 @@ $(document).ready(function() {
     e.preventDefault();
   });
 });
-// 14_floating_nav_2+
-$(document).ready(function() {
-  var $window = $(window),
-  $navigation = $("#nav");
 
-  $window.scroll(function() {
-    if (!$navigation.hasClass("fixed") && ($window.scrollTop() > $navigation.offset().top)) {
-        $navigation.addClass("fixed").data("top", $navigation.offset().top);
-    }
-    else if ($navigation.hasClass("fixed") && ($window.scrollTop() < $navigation.data("top"))) {
-        $navigation.removeClass("fixed");
-    }
-  }); 
-});
 // 14_floating_nav_2
 $(document).ready(function() {
   var $window = $(window),
