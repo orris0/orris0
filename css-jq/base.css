@@ -64,22 +64,22 @@ nav#html5-style-2nav ul { margin:10px 0 10px 0; width:135px; float:right;
 nav#html5-style-2nav li { list-style-type:none;
 }
 /* set general side button styles */
-li.btn { margin-bottom: 3px; text-align: center; width:130px;
+nav#html5-style-2nav, li.btn { margin-bottom: 3px; text-align: center; width:130px;
 }
 /* set general anchor styles and include the zoom fix for IE6*/
-li.btn a { display: block; color: white; font-weight: bold; 
+nav#html5-style-2nav, li.btn a { display: block; color: white; font-weight: bold; 
 text-decoration: none; zoom:1;
 }
 /* specify mouse state styles */
 /* mouseout (default) */
-li.btn a { background:#559a55; color: white; border: 5px outset #559a55; 
+nav#html5-style-2nav, li.btn a { background:#559a55; color: white; border: 5px outset #559a55; 
 padding-bottom:3px;
 }
 /* mouseover */
 li.btn a:hover { background: red; color:white; border: 5px outset red;
 }
 /*mouse active*/
-li.btn a:active { background:maroon; border: 5px inset maroon;
+nav#html5-style-2nav, li.btn a:active { background:maroon; border: 5px inset maroon;
 }
 br.clear { clear:both;
 }
@@ -94,27 +94,6 @@ div body header #content {
   padding: 0;
   border: 0;
 }
-
-div.wrapper { 
-    position: relative; 
-    top: 0em; 
-    left: 0; 
-    width: 100%; 
-    margin: auto;
-
-	padding: .3em .8em;
-  border: 1px solid rgba(0,0,0,.1);
-  background: #58a linear-gradient(hsla(0,0%,100%,.2),transparent);
-  border-radius: .2em;
-  box-shadow: 0 .05em .25em rgba(0,0,0,.5);
-  color: white;
-  text-shadow: 0 -.05em .05em rgba(0,0,0,.5);
-  font-size: 100%;
-  line-height: 1.5;
-  border-width: 10px;
-  border-left-width: 0px;
-}
-/*
 div#container.data { padding: .3em .8em;
   border: 1px solid rgba(0,0,0,.1);
   background: #58a linear-gradient(hsla(0,0%,100%,.2),transparent);
@@ -128,7 +107,7 @@ div#container.data { padding: .3em .8em;
   border-left-width: 0px;
 }
 
-
+/*
 div.row {
   
 }
@@ -610,6 +589,7 @@ position: absolute; top: 10px; left: 155px; margin-left:0; visibility: hidden;
 } 
 
 #col-3 a:hover img.hid { visibility:visible;
+
 
 
 
