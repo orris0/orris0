@@ -319,7 +319,7 @@ nav {
 }
 
 h1 {
-  font-size: 300%;
+  font-size: 40%;
   color: white;
   position: relative;
   left: 90px;
@@ -633,6 +633,7 @@ position: absolute; top: 10px; left: 155px; margin-left:0; visibility: hidden;
 } 
 
 #col-3 a:hover img.hid { visibility:visible;
+
 
 
 
