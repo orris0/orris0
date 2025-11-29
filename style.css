@@ -31,7 +31,7 @@ position: absolute; left:15%; top: 55px; width: 480px;
 }
 #rosette { position:relative; left:85%; top:120px;
 }
-/*
+
 body {
  margin: 2rem;
  width: 500px;
@@ -42,11 +42,11 @@ article {
  font-size: 1.5rem;
  font-family: Georgia, serif;
 }
-*/
+
 span {
  font-style: italic;
 }
-/*
+
 div {
  font-size: 4rem;
  font-family: Calibri, sans-serif;
@@ -144,7 +144,7 @@ aside {
  float: right;
 }
 
-*/
+
 
 div#html5-style-2content.data { 
 	
