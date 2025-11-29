@@ -557,7 +557,7 @@ nav#gallerypagenav { float:left; margin-left:10px; width:115px;
 nav#gallerypagenav ul { margin-left:0; border:0; width:115px; 
 } 
 /*set far right column for ads*/ 
-#gallerypagerightcol { width:150px; float:right; text-align:center; 
+#gallerypagerightcol { width:255px; float:right; text-align:center; 
 } 
 #gallerypagerightcol p.advert {font-size: 15px; margin-top:190px; 
 } 
@@ -633,6 +633,7 @@ position: absolute; top: 10px; left: 155px; margin-left:0; visibility: hidden;
 } 
 
 #col-3 a:hover img.hid { visibility:visible;
+
 
 
 
