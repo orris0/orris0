@@ -216,7 +216,7 @@ br {
 }
 
 nav#html5-style-2nav.data {
-    margin: 23px 0 10px 0;
+    margin: 18px 50px 10px 0;
     width: 135px;
     float: right;
 }
@@ -633,6 +633,7 @@ position: absolute; top: 10px; left: 155px; margin-left:0; visibility: hidden;
 } 
 
 #col-3 a:hover img.hid { visibility:visible;
+
 
 
 
