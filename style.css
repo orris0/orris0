@@ -219,7 +219,7 @@ div#wrapper {position:relative; top:0px; left:0;width:970px; margin:auto; text-a
   border-left-width: 0px;
 }
 
-/*add display attributes for the semantic tags*/
+/*add display attributes for the semantic tags*
 header,
 footer,
 section,
@@ -230,7 +230,7 @@ nav {
 
 
 
-/*remove the # from #header*/
+/*remove the # from #header*
 header#html5-style-2header.data {
   width: 920px;
   height: 180px;
@@ -240,7 +240,7 @@ header#html5-style-2header.data {
   margin: 50px auto;
 	 padding: .3em .8em;
   border: 1px solid rgba(0,0,0,.1);
-/*  background: #58a linear-gradient(hsla(0,0%,100%,.2),transparent); */
+/*  background: #58a linear-gradient(hsla(0,0%,100%,.2),transparent); *
   border-radius: .2em;
   box-shadow: 0 .05em .25em rgba(0,0,0,.5);
   color: white;
@@ -254,14 +254,14 @@ header#html5-style-2header.data {
 }
 
 h1#html5-style-2h1 {
- /* font-size: 300%; */
+ /* font-size: 300%; *
   color: white;
   position: relative;
   left: 90px;
   top: -3px;
   width: 480px; padding: .3em .8em;
   border: 1px solid rgba(0,0,0,.1);
- /* background: #58a linear-gradient(hsla(0,0%,100%,.2),transparent); */
+ /* background: #58a linear-gradient(hsla(0,0%,100%,.2),transparent); *
   border-radius: .2em;
   box-shadow: 0 .05em .25em rgba(0,0,0,.5);
   color: white;
@@ -277,7 +277,7 @@ h1#html5-style-2h1 {
   left: 750px;
   top: 5px;  padding: .3em .8em;
   border: 1px solid rgba(0,0,0,.1);
- /* background: #58a linear-gradient(hsla(0,0%,100%,.2),transparent); */
+ /* background: #58a linear-gradient(hsla(0,0%,100%,.2),transparent); *
   border-radius: .2em;
   box-shadow: 0 .05em .25em rgba(0,0,0,.5);
   color: white;
@@ -389,11 +389,11 @@ nav#html5-style-2nav.data ul {
   float: right;
 }
 
-/*Set un-ordered list style within the menu block only. This removes bullets*/
+/*Set un-ordered list style within the menu block only. This removes bullets*
 nav#html5-style-2nav.data li {
   list-style-type: none; padding: .3em .8em;
   border: 1px solid rgba(0,0,0,.1);
- /* background: #58a linear-gradient(hsla(0,0%,100%,.2),transparent); */
+ /* background: #58a linear-gradient(hsla(0,0%,100%,.2),transparent); *
   border-radius: .2em;
   box-shadow: 0 .05em .25em rgba(0,0,0,.5);
   color: white;
