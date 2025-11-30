@@ -3,6 +3,7 @@
 article,aside,details,figcaption,figure,footer,header,hgroup,nav,section { 
 	display:block; 
 }
+/*
 div.wrapper { 
 	position: relative;  top: 0em;  left: 0;  width: 100%;  margin: auto; 
 }
