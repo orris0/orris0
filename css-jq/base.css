@@ -63,10 +63,10 @@ nav#html5-style-2nav ul { margin:10px 0 10px 0; width:135px; float:right;
 nav#html5-style-2nav li { list-style-type:none;
 }
 /* set general side button styles */
-nav#html5-style-2nav, li.btn { margin-bottom: 3px; text-align: center; width:130px;
+nav#html5-style-2nav li.btn { margin-bottom: 3px; text-align: center; width:130px;
 }
 /* set general anchor styles and include the zoom fix for IE6*/
-nav#html5-style-2nav, li.btn a { display: block; color: white; font-weight: bold; 
+nav#html5-style-2nav li.btn a { display: block; color: white; font-weight: bold; 
 text-decoration: none; zoom:1;
 }
 /* specify mouse state styles */
@@ -78,7 +78,7 @@ padding-bottom:3px;
 nav#html5-style-2nav li.btn a:hover { background: red; color:white; border: 5px outset red;
 }
 /*mouse active*/
-nav#html5-style-2nav, li.btn a:active { background:maroon; border: 5px inset maroon;
+nav#html5-style-2nav li.btn a:active { background:maroon; border: 5px inset maroon;
 }
 br.clear { clear:both;
 }
@@ -633,6 +633,7 @@ position: absolute; top: 10px; left: 155px; margin-left:0; visibility: hidden;
 } 
 
 #col-3 a:hover img.hid { visibility:visible;
+
 
 
 
