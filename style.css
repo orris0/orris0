@@ -38,7 +38,7 @@ body {
  border: 1px solid black;
  margin: 2rem;
  padding: 1.58rem;
- width: 525px;
+ /* width: 525px; */
  text-align: justify;
 }
 
