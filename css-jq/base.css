@@ -93,7 +93,7 @@ div body header #content {
   padding: 0;
   border: 0;
 }
-div#container.data { padding: .3em .8em;
+div#html5-style-2container.data { padding: .3em .8em;
   border: 1px solid rgba(0,0,0,.1);
   background: #58a linear-gradient(hsla(0,0%,100%,.2),transparent);
   border-radius: .2em;
@@ -625,6 +625,7 @@ position: absolute; top: 10px; left: 155px; margin-left:0; visibility: hidden;
 } 
 
 #gallerypagecol-3 a:hover img.hid { visibility:visible;
+
 
 
 
