@@ -530,13 +530,13 @@ $(document).ready(function(){
   $('p:first').animate({height: 'show'}, 2000, 'easeOutElastic');
 });
 // 05_easing
-$(document).ready(function(){
-  $('p:first').toggle(function() {
-    $(this).animate( {'height':'+=150px'}, 2000, 'linear')
-  }, function() {
-    $(this).animate( {'height':'-=150px'}, 2000, 'swing');
-  });
-});
+// $(document).ready(function(){
+// $('p:first').toggle(function() {
+   // $(this).animate( {'height':'+=150px'}, 2000, 'linear')
+ // }, function() {
+   // $(this).animate( {'height':'-=150px'}, 2000, 'swing');
+ // });
+// });
 // 04_color_animation 
 $(document).ready(function(){
   $('#disclaimer').animate({'backgroundColor':'#ff9f5f'}, 2000);
@@ -565,12 +565,12 @@ $(document).ready(function(){
 
 // 01_animating_css 
 
-$(document).ready(function(){
-  $('p').animate({ 
-   padding: '20px',
-   fontSize: '15px'
-  }, 2000);
-});
+// $(document).ready(function(){
+ // $('p').animate({ 
+  // padding: '20px',
+  // fontSize: '15px'
+ // }, 2000);
+// });
 
 
 
