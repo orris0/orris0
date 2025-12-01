@@ -3,14 +3,14 @@
 equalise for various browsers and change #header to header*/
 div body header #content { margin:0; padding:0; border:0;
 }
-body { background:#FFF url(images/green-grad.jpg) repeat-x; margin: 20px auto;
+body { background:#FFF url(images/green-grad.jpg) repeat-x; margin: auto;
 }
 div.wrapper { 
     position: relative; 
     top: 0em; 
     left: 0; 
     width: 100%; 
-    margin: 0px auto;
+    margin: auto;
 	padding: .3em .8em;
     border: 1px solid rgba(0,0,0,.1);
     background: #58a linear-gradient(hsla(0,0%,100%,.2),transparent);
@@ -625,6 +625,7 @@ position: absolute; top: 10px; left: 155px; margin-left:0; visibility: hidden;
 } 
 
 #gallerypagecol-3 a:hover img.hid { visibility:visible;
+
 
 
 
