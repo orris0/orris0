@@ -378,7 +378,7 @@ $(document).ready(function(){
  18_layout_switcher
 function stylesheetToggle() {
   if ($('body').width() > 970) {
-    $('<link rel="stylesheet" href="wide.css" type="text/css" />')
+    $('<link rel="stylesheet" href="./CSS/wide.css" type="text/css" />')
       .appendTo('head');
   } else {
     $('link[href="wide.css"]').remove();
