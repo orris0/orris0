@@ -66,6 +66,10 @@ header#html5-style-2header {
 }
 h1 {
     font-size: 125%;
+    position: relative;
+    left: 90px;
+    top: 55px;
+    width: 480px;
     color: maroon;
     margin: 0 0 10px 0;
 }
@@ -508,6 +512,7 @@ position: absolute; top: 10px; left: 155px; margin-left:0; visibility: hidden;
 } 
 
 #gallerypagecol-3 a:hover img.hid { visibility:visible;
+
 
 
 
