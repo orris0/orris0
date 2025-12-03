@@ -438,7 +438,7 @@ body {margin:auto; width:970px;
 } 
 header#gallery-pageheader.data { width:95%; 
 } 
-nav#gallery-pagenav.data { float:left; margin-left:10px; width:115px; position: relative; top: 190px; position: relative; top:190px;
+nav#gallery-pagenav.data { float:left; margin-left:10px; width:115px; position: relative; top: 190px; position: relative; top:325px;
 } 
 ul { margin-left:0; border:0; width:115px; 
 } 
@@ -507,6 +507,7 @@ hide them*/
 } 
 
 #gallery-pagecol-3 a:hover img.hid { visibility:visible;
+
 
 
 
