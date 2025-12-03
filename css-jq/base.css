@@ -381,12 +381,12 @@ footer {
 
 
 
-/* style up a few of the new elements */
+/* style up a few of the new elements *
 article, aside, figure,footer, header, hgroup, menu, nav, section { display: block;}
-/*
+
 body > header { background-color: #930; color: white;}
 body > footer {border-top: solid 5px black; }
-*/
+*
 h3 { font-variant: small-caps; }
 p { margin-left: 1.5em; }
 section { border-top: dashed 2px black; }
@@ -570,6 +570,7 @@ position: absolute; top: 10px; left: 155px; margin-left:0; visibility: hidden;
 } 
 
 #gallerypagecol-3 a:hover img.hid { visibility:visible;
+
 
 
 
