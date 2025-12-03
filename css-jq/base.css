@@ -430,21 +430,21 @@ header, footer, section, article, nav { display:block;
 /*SET FONTS*/ 
 span.small { font-size:small; 
 } 
-h1#gallerypageh1 { font-size:x-large; font-family:"times new roman"; text-align:center; 
+h1#gallery-pageh1 { font-size:x-large; font-family:"times new roman"; text-align:center; 
 } 
-h2#gallerypageh2 {font-size:large; font-family:"times new roman"; text-align:center; 
+h2#gallery-pageh2 {font-size:large; font-family:"times new roman"; text-align:center; 
 } 
 /*PAGE LAYOUT*/ 
 body {margin:auto; width:970px; 
 } 
-header#gallerypageheader.data { width:95%; 
+header#gallery-pageheader.data { width:95%; 
 } 
-nav#gallerypagenav { float:left; margin-left:10px; width:115px; 
+nav#gallery-pagenav { float:left; margin-left:10px; width:115px; 
 } 
-nav#gallerypagenav ul { margin-left:0; border:0; width:115px; 
+nav#gallery-pagenav ul { margin-left:0; border:0; width:115px; 
 } 
 /*set far right column for ads*/ 
-div#gallerypagerightcol { width:255px; float:right; text-align:center; 
+div#gallery-pagerightcol { width:255px; float:right; text-align:center; 
 } 
 div#gallerypagerightcol p.advert {font-size: 15px; margin-top:190px; 
 } 
@@ -455,63 +455,64 @@ div#gallery-pagemidcol.data { margin-left:135px; margin-right:155px;
 div#gallery-pagegallery-block.data { position:relative; left: 30px; top: -490px; 
 } 
 /*set footer*/ 
-footer#gallerypagefooter { clear:both; color:black; text-align:center; width:970px; 
+footer#gallery-pagefooter { clear:both; color:black; text-align:center; width:970px; 
 } 
 .clear { clear:both; 
 }
 #gallerypage, li.btn a { display:block; background-color :#66CCFF; color:black; font-weight:bold; padding:4px; margin-left:0; text-align:center; list-style-type:none; text-decoration:none; width:110px; 
 } 
-#gallerypage, li.btn a:hover { background-color:blue; color:white; 
+#galler-ypage, li.btn a:hover { background-color:blue; color:white; 
 } 
-#gallerypage, li.btn { width:110px; 
+#gallery-page, li.btn { width:110px; 
 } 
 /*SET THUMBNAIL GALLERY BLOCK*/ 
 /* Set general thumbnail styles */ 
-#gallerypagecol-1 { position: absolute; top: 0; left: 0; width:85px; 
+#gallery-pagecol-1 { position: absolute; top: 0; left: 0; width:85px; 
 } 
 /*place the first column on the page*/ 
-#gallerypage, li { margin: 5px; list-style-type:none; 
+#gallery-page, li { margin: 5px; list-style-type:none; 
 } 
 /*remove bullets from the un-ordered list elements and create the -
 
 MouseOut state (default) - create and position a space for the larger images and -
 
 hide them*/ 
-#gallerypagecol-1 a img.hid { width: 260px; height:390px; position: absolute; top: 10px; left: 330px; visibility: hidden; 
+#gallery-pagecol-1 a img.hid { width: 260px; height:390px; position: absolute; top: 10px; left: 330px; visibility: hidden; 
 } 
 /* MouseOver state (hover)- this reveals larger picture */ 
-#gallerypagecol-1 a:hover { background: white; } 
-#gallerypagecol-1 a:hover img.hid { visibility:visible; 
+#gallery-pagecol-1 a:hover { background: white; } 
+#gallery-pagecol-1 a:hover img.hid { visibility:visible; 
 } 
 /*----------------------------------------------------*/ 
 /* set 2nd column of thumbnails 85px further over to right*/ 
-#gallerypagecol-2 { position: absolute; top: 0; left: 85px; width:85px; 
+#gallery-pagecol-2 { position: absolute; top: 0; left: 85px; width:85px; 
 } 
-#gallerypage, li { margin: 5px; list-style-type:none; 
+#gallery-page, li { margin: 5px; list-style-type:none; 
 } 
 /* MouseOut state (default) - hide larger picture */ 
-#gallerypagecol-2 a img.hid { width: 260px; height:390px; -
+#gallery-pagecol-2 a img.hid { width: 260px; height:390px; -
 
 position: absolute; top: 10px; left: 245px; margin-left:0;visibility: hidden; 
 } 
 /* MouseOver state (hover)- reveal larger picture */ 
-#gallerypagecol-2 a:hover { background: white; } 
-#gallerypagecol-2 a:hover img.hid { visibility:visible; } 
+#gallery-pagecol-2 a:hover { background: white; } 
+#gallery-pagecol-2 a:hover img.hid { visibility:visible; } 
 /*----------------------------------------------------*/ 
 /* set 3rd column of thumbnails 170px further over to right*/ 
-#gallerypagecol-3 { position: absolute; top: 0; left: 175px; width:95px; } 
-#gallerypage, li { margin: 5px; list-style-type:none; 
+#gallery-pagecol-3 { position: absolute; top: 0; left: 175px; width:95px; } 
+#gallery-page, li { margin: 5px; list-style-type:none; 
 } 
 /* MouseOut state (default) - hide larger picture */ 
-#gallerypagecol-3 a img.hid { width: 260px; height:390px; -
+#gallery-pagecol-3 a img.hid { width: 260px; height:390px; -
 
 position: absolute; top: 10px; left: 155px; margin-left:0; visibility: hidden; 
 } 
 /* MouseOver state (hover)- reveal larger picture */ 
-#gallerypagecol-3a:hover { background: white; 
+#gallery-pagecol-3a:hover { background: white; 
 } 
 
-#gallerypagecol-3 a:hover img.hid { visibility:visible;
+#gallery-pagecol-3 a:hover img.hid { visibility:visible;
+
 
 
 
