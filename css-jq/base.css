@@ -1,6 +1,6 @@
-/* Listing 1-7b. The Revised CSS Sheet for Figure 1-7 (html5-style-2.css
-(The key items are picked out in bold type.)
-equalise for various browsers and change #header to header*/
+/* Listing 1-7b. The Revised CSS Sheet for Figure 1-7 (html5-style-2.css */
+
+/* equalise for various browsers and change #header to header */
 div body header #content { margin:0; padding:0; border:0;
 }
 body { background:#FFF url(images/green-grad.jpg) repeat-x; margin: auto;
@@ -32,7 +32,7 @@ header#html5-style-2header {
   height: 180px;
   padding: 0;
   border: 10px white solid;
-  background: url(../bda-20.jpg);
+  background: url(./bda-20.jpg);
   margin: 10px auto;
 }
 
@@ -625,6 +625,7 @@ position: absolute; top: 10px; left: 155px; margin-left:0; visibility: hidden;
 } 
 
 #gallerypagecol-3 a:hover img.hid { visibility:visible;
+
 
 
 
