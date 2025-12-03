@@ -108,8 +108,7 @@ text-decoration: none; zoom:1;
 }
 /* specify mouse state styles */
 /* mouseout (default) */
-nav#html5-style-2nav, li.btn a { background:#559a55; color: white; border: 5px outset #559a55; 
-padding-bottom:3px;
+nav#html5-style-2nav, li.btn a { background:#559a55; color: white; border: 5px outset #559a55; padding-bottom:3px;
 }
 /* mouseover */
 nav#html5-style-2nav li.btn a:hover { background: red; color:white; border: 5px outset red;
@@ -508,6 +507,7 @@ hide them*/
 } 
 
 #gallery-pagecol-3 a:hover img.hid { visibility:visible;
+
 
 
 
