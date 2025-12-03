@@ -36,7 +36,7 @@ header#html5-style-2header {
   margin: 10px auto;
 }
 
-h1#html5-style-2h1 { font-size:150%; color:rgba(0,0,0,.5); position: relative; left:90px; top: 55px;
+h1#html5-style-2h1 { font-size:150%; color:rgba(0,0,0,.5); position: relative; left:90px; top: 25px;
 width:480px;
 }
 #rosette { position:relative; left:750px; top:5px;
@@ -625,6 +625,7 @@ position: absolute; top: 10px; left: 155px; margin-left:0; visibility: hidden;
 } 
 
 #gallerypagecol-3 a:hover img.hid { visibility:visible;
+
 
 
 
