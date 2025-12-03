@@ -444,7 +444,7 @@ nav#gallery-pagenav { float:left; margin-left:10px; width:115px;
 nav#gallery-pagenav ul { margin-left:0; border:0; width:115px; 
 } 
 /*set far right column for ads*/ 
-div#gallery-pagerightcol { width:255px; float:right; text-align:center; 
+div#gallery-pagerightcol.data { width:255px; float:right; text-align:center; 
 } 
 div#gallerypagerightcol p.advert {font-size: 15px; margin-top:190px; 
 } 
@@ -512,6 +512,7 @@ position: absolute; top: 10px; left: 155px; margin-left:0; visibility: hidden;
 } 
 
 #gallery-pagecol-3 a:hover img.hid { visibility:visible;
+
 
 
 
