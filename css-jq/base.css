@@ -23,20 +23,6 @@ div.wrapper {
     border-width: 10px;
     border-left-width: 0px;
 }
-/*
-div#html5-style-2container.data { padding: .3em .8em;
-  border: 1px solid rgba(0,0,0,.1);
-  background: #58a linear-gradient(hsla(0,0%,100%,.2),transparent);
-  border-radius: .2em;
-  box-shadow: 0 .05em .25em rgba(0,0,0,.5);
-  color: white;
-  text-shadow: 0 -.05em .05em rgba(0,0,0,.5);
-  font-size: 100%;
-  line-height: 1.5;
-  border-width: 10px;
-  border-left-width: 0px;
-}
-*/
 div#html5-style-2content.data {
     background-color:transparent; 
     border-left:10px white solid; 
@@ -50,7 +36,6 @@ div#html5-style-2content.data {
     font-size:medium; 
     color:maroon; 
 }
-
 /*add display attributes for the semantic tags*/
 header, footer, section, article, nav { display:block;
 }
@@ -63,7 +48,6 @@ header#html5-style-2header {
   background: url(../bda-20.jpg);
   margin: 10px auto;
 }
-
 h1#html5-style-2h1 { font-size:150%; color:rgba(0,0,0,.5); position: relative; left:90px; top: -3px;
 width:480px;
 }
@@ -402,74 +386,7 @@ body > footer > p { text-align: right; font-style: italic; font-size: smaller;}
 #intro{
 	width: 902px;
 }
-/*
-body {
-	font-family: "Lucida Sans Unicode","Lucida Grande",Sans-Serif;
-	color: #3E3E3E;
-	background: #94C5EB url(css-jq/images/background-grad.png) repeat-x;
-	font-size: 12px;
-}
 
-p {
-	padding: 5px;
-}
-*
-a {
-	color: #3687AF;
-}
-
-#container{
-	margin:0 auto;
-	text-align: left;
-	width: 970px;
-}
-
-#header{
-	height: 60px;
-	color: #172322;
-	background: transparent url(./css-jq/images/header-corners.png) no-repeat bottom left;
-}
-
-#header h1
-{
-	padding:0;
-	margin:0;
-}
-
-#content{
-	background-color: #fff;
-	padding: 0 15px 10px 15px;
-
-} 
-
-#footer{
-	background-color: #fff;
-	padding:15px;
-  clear: both;
-}
-
-table {
-	border-collapse:collapse;
-	font-size:12px;
-	margin:0 20px 20px 20px;
-	border-top:2px solid #015287;
-	width:480px;
-}
-
-th {
-	border-bottom: 2px solid #015287;
-	color: #D15600;
-	font-size: 14px;
-	font-weight: normal;
-	text-align: left;
-	padding: 3px 8px;
-}
-
-td {
-	padding: 6px;
-}
-
- 
 /*
 Listing 2-6b provides the CSS presentation instructions for a 3 column gallery set in a real world page. 
  CHAPTER 2 ■ A ROLLOVER PICTURE GALLERY 
@@ -570,6 +487,7 @@ position: absolute; top: 10px; left: 155px; margin-left:0; visibility: hidden;
 } 
 
 #gallerypagecol-3 a:hover img.hid { visibility:visible;
+
 
 
 
