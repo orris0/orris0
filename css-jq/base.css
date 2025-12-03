@@ -49,8 +49,8 @@ div#html5-style-2content.data {
     padding:8px; 
     font-size:medium; 
     color:maroon; 
-
 }
+
 /*add display attributes for the semantic tags*/
 header, footer, section, article, nav { display:block;
 }
@@ -570,6 +570,7 @@ position: absolute; top: 10px; left: 155px; margin-left:0; visibility: hidden;
 } 
 
 #gallerypagecol-3 a:hover img.hid { visibility:visible;
+
 
 
 
