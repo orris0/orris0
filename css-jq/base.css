@@ -445,10 +445,10 @@ div#gallerypagerightcol { width:255px; float:right; text-align:center;
 div#gallerypagerightcol p.advert {font-size: 15px; margin-top:190px; 
 } 
 /*set middle column for main content*/ 
-div#gallery-pagemidcol.data { margin-left:135px; margin-right:155px; 
+div#gallerypagemidcol.data { margin-left:135px; margin-right:155px; 
 } 
 /*set gallery block position*/ 
-div#gallery-pagegallery-block.data { position:relative; left: 30px; top:10px; 
+div#gallerypagegallery-block.data { position:relative; left: 30px; top:10px; 
 } 
 /*set footer*/ 
 footer#gallerypagefooter { clear:both; color:black; text-align:center; width:970px; 
@@ -508,6 +508,7 @@ position: absolute; top: 10px; left: 155px; margin-left:0; visibility: hidden;
 } 
 
 #gallerypagecol-3 a:hover img.hid { visibility:visible;
+
 
 
 
