@@ -433,7 +433,7 @@ h2#gallerypageh2 {font-size:large; font-family:"times new roman"; text-align:cen
 /*PAGE LAYOUT*/ 
 body {margin:auto; width:970px; 
 } 
-header#gallerypageheader { width:970px; 
+header#gallerypageheader.data { width:970px; 
 } 
 nav#gallerypagenav { float:left; margin-left:10px; width:115px; 
 } 
@@ -508,6 +508,7 @@ position: absolute; top: 10px; left: 155px; margin-left:0; visibility: hidden;
 } 
 
 #gallerypagecol-3 a:hover img.hid { visibility:visible;
+
 
 
 
