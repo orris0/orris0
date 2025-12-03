@@ -441,7 +441,7 @@ header#gallery-pageheader.data { width:95%;
 } 
 nav#gallery-pagenav.data { float:left; margin-left:10px; width:115px; 
 } 
-nav#gallery-pagenav ul { margin-left:0; border:0; width:115px; 
+ul { margin-left:0; border:0; width:115px; 
 } 
 /*set far right column for ads*/ 
 div#gallery-pagerightcol.data { width:255px; float:right; text-align:center; 
@@ -459,7 +459,7 @@ footer#gallery-pagefooter { clear:both; color:black; text-align:center; width:97
 } 
 .clear { clear:both; 
 }
-#gallerypage, li.btn a { display:block; background-color :#66CCFF; color:black; font-weight:bold; padding:4px; margin-left:0; text-align:center; list-style-type:none; text-decoration:none; width:110px; 
+li.btn a { display:block; background-color :#66CCFF; color:black; font-weight:bold; padding:4px; margin-left:0; text-align:center; list-style-type:none; text-decoration:none; width:110px; 
 } 
 #galler-ypage, li.btn a:hover { background-color:blue; color:white; 
 } 
@@ -490,9 +490,7 @@ hide them*/
 #gallery-page, li { margin: 5px; list-style-type:none; 
 } 
 /* MouseOut state (default) - hide larger picture */ 
-#gallery-pagecol-2 a img.hid { width: 260px; height:390px; -
-
-position: absolute; top: 10px; left: 245px; margin-left:0;visibility: hidden; 
+#gallery-pagecol-2 a img.hid { width: 260px; height:390px; position: absolute; top: 10px; left: 245px; margin-left:0;visibility: hidden; 
 } 
 /* MouseOver state (hover)- reveal larger picture */ 
 #gallery-pagecol-2 a:hover { background: white; } 
@@ -503,15 +501,14 @@ position: absolute; top: 10px; left: 245px; margin-left:0;visibility: hidden;
 #gallery-page, li { margin: 5px; list-style-type:none; 
 } 
 /* MouseOut state (default) - hide larger picture */ 
-#gallery-pagecol-3 a img.hid { width: 260px; height:390px; -
-
-position: absolute; top: 10px; left: 155px; margin-left:0; visibility: hidden; 
+#gallery-pagecol-3 a img.hid { width: 260px; height:390px; position: absolute; top: 10px; left: 155px; margin-left:0; visibility: hidden; 
 } 
 /* MouseOver state (hover)- reveal larger picture */ 
 #gallery-pagecol-3 a:hover { background: white; 
 } 
 
 #gallery-pagecol-3 a:hover img.hid { visibility:visible;
+
 
 
 
