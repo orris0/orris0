@@ -9,7 +9,7 @@ div.wrapper {
     position: relative; 
     top: 0em; 
     left: 0; 
-    width: 100%; 
+    width:#; 
     margin: auto;
 	padding: .3em .8em;
     border: 1px solid rgba(0,0,0,.1);
@@ -32,7 +32,7 @@ header#html5-style-2header {
   height: 180px;
   padding: 0;
   border: 10px white solid;
-  background: url(./bda-20.jpg);
+  background: url(../bda-20.jpg);
   margin: 10px auto;
 }
 
@@ -468,7 +468,7 @@ body {
 p {
 	padding: 5px;
 }
-*/
+*
 a {
 	color: #3687AF;
 }
@@ -528,7 +528,7 @@ td {
 /*
 Listing 2-6b provides the CSS presentation instructions for a 3 column gallery set in a real world page. 
  CHAPTER 2 ■ A ROLLOVER PICTURE GALLERY 
-/*set menu buttons*
+/*set menu buttons*/
 
 Listing 2-6b. The CSS Style Sheet for Listing 2-6a (gallery-page.css) 
 *set attributes for consistent appearance in all browsers*/ 
@@ -625,6 +625,7 @@ position: absolute; top: 10px; left: 155px; margin-left:0; visibility: hidden;
 } 
 
 #gallerypagecol-3 a:hover img.hid { visibility:visible;
+
 
 
 
