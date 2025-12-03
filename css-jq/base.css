@@ -23,6 +23,7 @@ div.wrapper {
     border-width: 10px;
     border-left-width: 0px;
 }
+/*
 div#html5-style-2container.data { padding: .3em .8em;
   border: 1px solid rgba(0,0,0,.1);
   background: #58a linear-gradient(hsla(0,0%,100%,.2),transparent);
@@ -34,6 +35,21 @@ div#html5-style-2container.data { padding: .3em .8em;
   line-height: 1.5;
   border-width: 10px;
   border-left-width: 0px;
+}
+*/
+div#html5-style-2content.data {
+    background-color:transparent; 
+    border-left:10px white solid; 
+    border-right:10px white solid; 
+    border-bottom:10px white solid; 
+    width: 904px; 
+    margin-top: 10px; 
+    margin-left:auto; 
+    margin-right:auto; 
+    padding:8px; 
+    font-size:medium; 
+    color:maroon; 
+
 }
 /*add display attributes for the semantic tags*/
 header, footer, section, article, nav { display:block;
@@ -163,20 +179,7 @@ h1#html5-style-2h1 {
 }
 */
 
-div#html5-style-2content.data {
-    background-color:transparent; 
-    border-left:10px white solid; 
-    border-right:10px white solid; 
-    border-bottom:10px white solid; 
-    width: 904px; 
-    margin-top: 10px; 
-    margin-left:auto; 
-    margin-right:auto; 
-    padding:8px; 
-    font-size:medium; 
-    color:maroon; 
 
-}
 
 button.cancel {
 background-color: #c00;
@@ -626,6 +629,7 @@ position: absolute; top: 10px; left: 155px; margin-left:0; visibility: hidden;
 } 
 
 #gallerypagecol-3 a:hover img.hid { visibility:visible;
+
 
 
 
