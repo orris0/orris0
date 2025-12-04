@@ -434,7 +434,7 @@ h1#gallery-pageh1 { font-size:x-large; font-family:"times new roman"; text-align
 h2#gallery-pageh2 {font-size:large; font-family:"times new roman"; text-align:center; 
 } 
 /*PAGE LAYOUT*/ 
-body {margin:auto; width:970px; 
+body {margin:auto; width:100%; 
 } 
 header#gallery-pageheader.data { width:95%; 
 } 
@@ -507,6 +507,7 @@ hide them*/
 } 
 
 #gallery-pagecol-3 a:hover img.hid { visibility:visible;
+
 
 
 
