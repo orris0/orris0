@@ -73,7 +73,7 @@ h1 {
     color: white;
     margin: 0 0 10px 0;
 }
-h1#html5-ch-7h1.veryimportant.heading.stuff { font-size:150%; color:rgba(0,0,0,.5); position: relative; left:90px; top: -3px;
+h1#html5-style-2h1.veryimportant.heading.stuff { font-size:150%; color:rgba(0,0,0,.5); position: relative; left:90px; top: -3px;
 width:480px;
 }
 #rosette { position:relative; left:750px; top:5px;
@@ -507,6 +507,7 @@ hide them*/
 } 
 
 #gallery-pagecol-3 a:hover img.hid { visibility:visible;
+
 
 
 
