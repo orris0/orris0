@@ -3,7 +3,7 @@
 /* equalise for various browsers and change #header to header */
 div body header #content { margin:0; padding:0; border:0;
 }
-body { background:#FFF url(images/green-grad.jpg) repeat-x; margin: auto;
+body { /*background:#FFF */url(images/green-grad.jpg) repeat-x; margin: auto;
 }
 div.wrapper { 
     position: relative; 
@@ -507,6 +507,7 @@ hide them*/
 } 
 
 #gallery-pagecol-3 a:hover img.hid { visibility:visible;
+
 
 
 
