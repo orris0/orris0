@@ -61,7 +61,7 @@ header#html5-style-2header {
   height: 180px;
   padding: 0;
   border: 10px white solid;
-  background: url(../bda-20.jpg);
+  background: url(./bda-20.jpg);
   margin: 10px auto;
 }
 h1 {
@@ -507,6 +507,7 @@ hide them*/
 } 
 
 #gallery-pagecol-3 a:hover img.hid { visibility:visible;
+
 
 
 
