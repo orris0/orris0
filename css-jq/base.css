@@ -25,7 +25,7 @@ div.wrapper {
 }
 img.logo { overflow-clip-margin: content-box; overflow: clip; }
 div#container { position: relative; 
-    top: 0em; 
+    top: .3em; 
     left: 0; 
     width: 100%; 
     margin: auto;  
@@ -507,6 +507,7 @@ hide them*/
 } 
 
 #gallery-pagecol-3 a:hover img.hid { visibility:visible;
+
 
 
 
