@@ -44,7 +44,7 @@ div#\#html5-style-2content.data {
     border-left:10px white solid; 
     border-right:10px white solid; 
     border-bottom:10px white solid; 
-    width: 904px; 
+    width: 900px; 
     margin-top: 10px; 
     margin-left:auto; 
     margin-right:auto; 
@@ -507,6 +507,7 @@ hide them*/
 } 
 
 #gallery-pagecol-3 a:hover img.hid { visibility:visible;
+
 
 
 
