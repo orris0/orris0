@@ -8,6 +8,8 @@ header, footer, section, article, nav { display:block;
 body { margin: 0; padding: 0; /* background: url(images/img01.gif) repeat-x left top; */
 	font-family: Arial; font-size: 100%; color: black;
 }
+.row { margin-right: 9rem;  margin-left: 0rem; 
+	 }
 h1, h2, h3 { margin: 0; padding: 0; font-weight: normal;
 }
 h1 { font-size: 2em; color:white;
