@@ -647,6 +647,7 @@ body {
   background: #FFF url(images/green-grad.jpg) repeat-x;
   margin: auto;
 }
+/*
 body {
   margin: auto;
   font-family: var(--bs-body-font-family);
@@ -659,6 +660,7 @@ body {
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: transparent;
 }
+*/
 a {
   color: #eacd8b;
   text-decoration: none;
