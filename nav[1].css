@@ -1,5 +1,5 @@
 body {
-  margin: 25px;
+  /* margin: 25px; */
   -webkit-animation: bugfix infinite 1s;
   /* needed for checkbox hack */
 }
