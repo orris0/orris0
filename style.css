@@ -3413,7 +3413,6 @@ footer:before, footer:after, .footer-inner:before, .footer-inner:after {
 }
 
 body {
-  min-width: 260px;
   overflow-x: hidden; }
 
 @media print {
