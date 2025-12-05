@@ -299,11 +299,11 @@ img { border:0;
 /*add display attributes for the semantic tags*/
 header, footer, section, article, nav { display:block;
 }
-
+/*
 h1#html5style2h1 { font-size:300%; color :white; position: relative; left:15%; top: 55px; width:480px;
 }
 
-/*Listing 3-6b. The Revised CSS for Re-positioning the Rosette (rosette.css) */
+Listing 3-6b. The Revised CSS for Re-positioning the Rosette (rosette.css) */
 body { background: #FFF url(images/green-grad.jpg) repeat-x; margin:auto;
 }
 
