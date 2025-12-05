@@ -50,11 +50,6 @@ aside {
  float: right;
 }
 
-
-
-div#html5-style-2content.data { 
-	
-  }
 /*
 nav#nav.data {
 	padding: .3em .8em;
@@ -303,10 +298,10 @@ border-bottom:10px white solid; width: 970px; margin-top:-26px; margin-left:auto
 }
 
 h2#html5-style-2h2 {
- /* font-size: x-large; */
+ /* font-size: x-large; *
   color: white;
   margin: 0 0 10px 0;
-	 padding: .3em .8em;
+	padding: .3em .8em;
   border: 1px solid rgba(0,0,0,.1);
  /* background: #58a linear-gradient(hsla(0,0%,100%,.2),transparent); *
   border-radius: .2em;
@@ -1588,32 +1583,6 @@ html {
 @viewport {
   width: device-width; }
 
-*, *:before, *:after {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box; }
-
-article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary {
-  display: block; }
-
-audio, canvas, video {
-  display: inline-block;
-  display: inline;
-  zoom: 1; }
-
-audio:not([controls]) {
-  display: none;
-  height: 0; }
-
-[hidden] {
-  display: none; }
-
-html, button, input, select, textarea {
-  font-family: sans-serif; }
-/*
-body {
-  margin: 0; }
-*/
 a:focus {
   outline: thin dotted; }
 
@@ -3531,4 +3500,4 @@ font-size: 12px;
 .lt-ie9 .designed-by span {
 background: url(http://conosur.room150.com/wp-content/themes/starkers-master/img/IEroom150.png) no-repeat;
 }
-  }
+
