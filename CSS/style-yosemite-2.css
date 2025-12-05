@@ -1,8 +1,9 @@
 /*Design by Free CSS Templates http://www.freecsstemplates.org
 Released for free under a Creative Commons Attribution 2.5 License*/
-/* Set styles to equalise browser rendition*/
+/* Set styles to equalise browser rendition
 html, body, h1, h2, h3, h4, h5, h6, p, ol, ul, li {  padding: 0; margin: 0; 
 }
+*/
 header, footer, section, article, nav { display:block; 
 }
 body { margin: 0; padding: 0; /* background: url(images/img01.gif) repeat-x left top; */
