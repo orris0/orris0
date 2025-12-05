@@ -11,7 +11,7 @@ div.wrapper {
     left: 0; 
     width: 80%; 
     margin: auto;
-	  padding: .3em .8em;
+	padding: .3em .8em;
     border: 1px solid rgba(0,0,0,.1);
     background: #58a linear-gradient(hsla(0,0%,100%,.2),transparent);
     border-radius: .2em;
@@ -78,7 +78,7 @@ width:480px;
 }
 #rosette { position:relative; left:750px; top:5px;
 }
-#html5-style-2content { background-color:transparent; border-left:10px white solid; border-right:10px white solid; border-bottom:10px white solid; width: 904px; margin-top: 82px; margin-left:auto; margin-right:auto; padding:8px; font-size:medium; color:maroon;
+#html5-style-2content { background-color:transparent; border-left:10px white solid; border-right:10px white solid; border-bottom:10px white solid; width: 904px; margin-top: -8%; margin-left:auto; margin-right:auto; padding:8px; font-size:medium; color:maroon;
 }
 h2#html5-style-2h2 { font-size: 100%; color:white; margin:0 0 10px 0;
 }
@@ -507,3 +507,4 @@ hide them*/
 #gallery-pagecol-3 a:hover img.hid { visibility:visible;
 
 }
+
