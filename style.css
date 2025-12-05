@@ -1790,9 +1790,10 @@ p, ul, ol {
 
 html, body {
   -webkit-text-size-adjust: 100%; }
-
+/*
 html, body {
   width: 100%; }
+*/
   @media screen and (min-height: 37.5em) {
     html, body {
       height: 100%; } }
