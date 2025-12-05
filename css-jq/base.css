@@ -449,7 +449,7 @@ div#gallery-pagemidcol.data { margin-left:135px; margin-right:155px;
 div#gallery-pagegallery-block.data { position:relative; left: 30px; top: -490px; 
 } 
 /*set gallery block position*/ 
-div#gallerypagegallery-block { position:relative; left: 30px; top: -490px; 
+div#gallerypagegallery-block { position:relative; left: 60px; top: -490px; 
 } 
 /*set footer*/ 
 footer#gallery-pagefooter { clear:both; color:black; text-align:center; width:970px; 
@@ -507,5 +507,6 @@ hide them*/
 #gallery-pagecol-3 a:hover img.hid { visibility:visible;
 
 }
+
 
 
