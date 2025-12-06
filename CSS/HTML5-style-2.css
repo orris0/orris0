@@ -137,13 +137,10 @@ p {
     text-align:center;
 }
 /*
-h1#html5-ch1-7h1 { font-size:300%; color :white; position: relative; left:15%; top: 55px; width:480px;
-}
-*/
 
 div.wrapper {position:relative; top:0px; left:0;width:80%; margin:auto; text-align:center;
 }
-
+*/
 /*add display attributes for the semantic tags*/
 header,
 footer,
@@ -4358,6 +4355,7 @@ footer#html5style2footer {
     page-break-after: avoid;
   }
 }
+
 
 
 
