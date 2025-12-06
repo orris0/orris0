@@ -8,7 +8,7 @@ body { background:#FFF *url(images/green-grad.jpg) repeat-x; margin: auto;
 div.wrapper { 
     position: relative; 
     top: 0em; 
-    left: 0; 
+    left: 0.9em; 
     width: 100%; 
     margin: auto;
 	padding: .3em .8em;
@@ -507,6 +507,7 @@ hide them*/
 #gallery-pagecol-3 a:hover img.hid { visibility:visible;
 
 }
+
 
 
 
