@@ -136,11 +136,11 @@ p {
     margin:auto; 
     text-align:center;
 }
-/*
-
-div.wrapper {position:relative; top:0px; left:0;width:80%; margin:auto; text-align:center;
-}
 */
+
+div.wrapper { text-align:center;
+}
+
 /*add display attributes for the semantic tags*/
 header,
 footer,
@@ -4355,6 +4355,7 @@ footer#html5style2footer {
     page-break-after: avoid;
   }
 }
+
 
 
 
