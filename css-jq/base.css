@@ -27,7 +27,7 @@ img.logo { overflow-clip-margin: content-box; overflow: clip; }
 div#container { position: relative; 
     top: .3em; 
     left: 0; 
-    width: 80%; 
+    width: 99%; 
     margin: auto;  
 	}
 nav#nav.data {
@@ -82,7 +82,7 @@ width:480px;
 }
 h2#html5-style-2h2 { font-size: 100%; color:white; margin:0 0 10px 0;
 }
-h3#html5-style-2h3 { font-size:large; color:white; margin:0 0 6px 0;
+h3#html5-style-2h3 { font-size: 100%; color:white; margin:0 0 6px 0;
 }
 #html5-style-2leftcol { float:left; width: 310px; vertical-align:top;
 }
@@ -507,6 +507,7 @@ hide them*/
 #gallery-pagecol-3 a:hover img.hid { visibility:visible;
 
 }
+
 
 
 
