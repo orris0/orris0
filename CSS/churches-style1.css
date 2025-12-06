@@ -1,5 +1,5 @@
 ﻿/*position body and table at horizontal centre of screen*/
-body {width:960px; font-family:"times new roman"; font-size:medium; color:navy; margin:auto; min-width:780px;}
+body { font-family:"times new roman"; font-size:medium; color:navy; margin:auto; min-width:780px;}
 img { border:0; margin:0; padding:0; 
 }
 #container { text-align:center; margin:10px auto 0 auto;
