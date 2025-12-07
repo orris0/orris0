@@ -10,7 +10,7 @@ div.wrapper {
     top: 0em; 
     left: -11px; 
     width: 100%; 
-    margin: 54em;
+    margin: auto;
 	text-align: center;
 }
 img.logo { overflow-clip-margin: content-box; overflow: clip; }
@@ -497,6 +497,7 @@ hide them*/
 #gallery-pagecol-3 a:hover img.hid { visibility:visible;
 
 }
+
 
 
 
