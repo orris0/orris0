@@ -20,7 +20,7 @@ body { background:#FFF url(images/green-grad.jpg) repeat-x; margin:auto;
 header, footer, section, article, nav { display:block;
 }
 /*remove the # from #header*/
-header#gallerypageheader.data {width:970px; height:180px; padding:0; border:10px white solid; background: url(../../orris0/bda-20.jpg); margin:10px auto; background-position: bottom; /* Adjust as needed */
+header#gallerypageheader.data {width:95%; height:180px; padding:0; border:10px white solid; background: url(../../orris0/bda-20.jpg); margin:10px auto; background-position: bottom; /* Adjust as needed */
   background-repeat: no-repeat; margin:10px auto;
 }
 h1#gallerypage-h1 { font-size:300%; color :white; /* position: relative; left:90px; top: 15px; width:5500px; */
