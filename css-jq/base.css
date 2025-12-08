@@ -69,7 +69,7 @@ width:480px;
 }
 #rosette { position:relative; left:750px; top:5px;
 }
-#html5-style-2content { background-color:transparent; border-left:10px white solid; border-right:10px white solid; border-bottom:10px white solid; width: 904px; margin-top: -8%; margin-left:auto; margin-right:auto; padding:8px; font-size:medium; color:maroon;
+#html5-style-2content { background-color:transparent; border-left:10px white solid; border-right:10px white solid; border-bottom:10px white solid; width: 804px; margin-top: -8%; margin-left:auto; margin-right:auto; padding:8px; font-size:medium; color:maroon;
 }
 h2#html5-style-2h2 { font-size: 100%; color:white; margin:0 0 10px 0;
 }
@@ -498,6 +498,7 @@ hide them*/
 #gallery-pagecol-3 a:hover img.hid { visibility:visible;
 
 }
+
 
 
 
