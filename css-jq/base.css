@@ -1,4 +1,4 @@
-/* Listing 1-7b. The Revised CSS Sheet for Figure 1-7 (html5-style-2.css *
+/* Listing 1-7b. The Revised CSS Sheet for Figure 1-7 (html5-style-2.css
 
 /* equalise for various browsers and change #header to header */
 div body header #content { margin:0; padding:0; border:0;
@@ -12,7 +12,7 @@ div.wrapper {
     position: relative; 
     top: 0em; 
     left: 0px; 
-    width: 110%; 
+    width: 100%; 
     margin-left:auto; 
     margin-right:auto; 
 	text-align: center;
@@ -716,6 +716,7 @@ li {
 #gallery3colmixcol-3 a:hover img.hid {
 	visibility: visible;
 }
+
 
 
 
