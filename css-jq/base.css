@@ -9,7 +9,7 @@ div.wrapper {
     position: relative; 
     top: 0em; 
     left: 0px; 
-    width: 100%; 
+    width: 990px; 
     margin: auto;
 	text-align: center;
 }
@@ -497,6 +497,7 @@ hide them*/
 #gallery-pagecol-3 a:hover img.hid { visibility:visible;
 
 }
+
 
 
 
