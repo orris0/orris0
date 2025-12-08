@@ -5,6 +5,9 @@ div body header #content { margin:0; padding:0; border:0;
 }
 body { background:#FFF *url(images/green-grad.jpg) repeat-x; margin: auto;
 }
+/*add display attributes for the semantic tags*/
+header, footer, section, article, nav { display:block;
+}
 div.wrapper { 
     position: relative; 
     top: 0em; 
@@ -43,9 +46,7 @@ div#\#html5-style-2content.data {
     font-size:medium; 
     color:maroon; 
 }
-/*add display attributes for the semantic tags*/
-header, footer, section, article, nav { display:block;
-}
+
 /*remove the # from #header*/
 header#html5-style-2header {
   width: 920px;
@@ -64,10 +65,10 @@ h1 {
     color: white;
     margin: 0 0 10px 0;
 }
-h1#html5-style-2h1.veryimportant.heading.stuff { font-size:150%; color:rgba(0,0,0,.5); position: relative; left:90px; top: -3px;
+h1#html5-style-2h1.veryimportant.heading.stuff { font-size:300%; color:rgba(0,0,0,.5); position: relative; left:90px; top: -3px;
 width:480px;
 }
-#rosette { position:relative; left:750px; top:5px;
+#rosette { position:relative; left:350px; top:5px;
 }
 #html5-style-2content { background-color:transparent; border-left:10px white solid; border-right:10px white solid; border-bottom:10px white solid; width: 804px; margin-top: -8%; margin-left:auto; margin-right:auto; padding:8px; font-size:medium; color:maroon;
 }
@@ -498,6 +499,7 @@ hide them*/
 #gallery-pagecol-3 a:hover img.hid { visibility:visible;
 
 }
+
 
 
 
