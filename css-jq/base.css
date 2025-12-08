@@ -12,18 +12,13 @@ div.wrapper {
     position: relative; 
     top: 0em; 
     left: 0px; 
-    width: 904px ; 
+    width: 100%; 
     margin-left:auto; 
     margin-right:auto; 
 	text-align: center;
 }
 img.logo { overflow-clip-margin: content-box; overflow: clip; }
-div#container { position: relative; 
-    top: .3em; 
-    left: 0; 
-     
-    margin: auto;  
-	}
+
 nav#nav.data {
 	display: block;
     padding: .8em;
@@ -721,6 +716,7 @@ li {
 #gallery3colmixcol-3 a:hover img.hid {
 	visibility: visible;
 }
+
 
 
 
