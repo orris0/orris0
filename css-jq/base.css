@@ -8,6 +8,10 @@ body { background:#FFF *url(images/green-grad.jpg) repeat-x; margin: auto;
 /*add display attributes for the semantic tags*/
 header, footer, section, article, nav { display:block;
 }
+div {
+  border: 1px solid black;
+  padding: 20px;
+}
 div.wrapper { 
     position: relative; 
     top: 0em; 
