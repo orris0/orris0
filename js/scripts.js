@@ -1,3 +1,39 @@
+$(document).ready(function(){
+  $('#menu li ul').css({
+    display: "none",
+    left: "auto"
+  });
+  $('#menu li').hover(function() {
+    $(this)
+      .find('ul')
+      .stop(true, true)
+      .slideDown('fast');
+  }, function() {
+    $(this)
+      .find('ul')
+      .stop(true,true)
+      .fadeOut('fast');
+  });
+});
+
+$(document).ready(function(){
+$( '#menu > li > ul' )
+	.hide()
+	.click(function( e ){
+		e.stopPropagation();
+	});
+	
+  $('#menu > li').toggle(function(){
+	  $(this)
+      .css('background-position', 'right -20px')
+      .find('ul').slideDown();
+  }, function(){
+  	$( this )
+      .css('background-position', 'right top')
+      .find('ul').slideUp();
+  });
+});
+
 
 // 01_document_ready
 $(function(){
