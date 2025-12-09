@@ -1,4 +1,4 @@
-/* Listing 1-7b. The Revised CSS Sheet for Figure 1-7 (html5-style-2.css
+/* Listing 1-7b. The Revised CSS Sheet for Figure 1-7 (html5-style-2.cs
 
 /* equalise for various browsers and change #header to header */
 div body header #content { margin:0; padding:0; border:0;
@@ -17,7 +17,7 @@ div.wrapper {
     position: relative; 
     top: 0em; 
     left: 0px; 
-    width: 1095px; 
+    width: 1100px; 
 	font-size: 125%;
     margin-left:auto; 
     margin-right:auto; 
@@ -939,6 +939,7 @@ li {
 #celebs {
 	clear: both;
 }
+
 
 
 
