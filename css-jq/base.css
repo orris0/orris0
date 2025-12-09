@@ -16,7 +16,7 @@ div.wrapper {
     position: relative; 
     top: 0em; 
     left: 0px; 
-    width: 130%; 
+    width: 56.5em; 
 	font-size: 125%
     margin-left:auto; 
     margin-right:auto; 
@@ -938,6 +938,7 @@ li {
 #celebs {
 	clear: both;
 }
+
 
 
 
