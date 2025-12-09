@@ -3,7 +3,8 @@
 /* equalise for various browsers and change #header to header */
 div body header #content { margin:0; padding:0; border:0;
 }
-body { background:#FFF *url(images/green-grad.jpg) repeat-x; margin: auto;
+body { background:#FFF *url(images/green-grad.jpg) repeat-x; margin: auto; margin-left:auto; 
+    margin-right:auto;
 }
 /*add display attributes for the semantic tags*/
 header, footer, section, article, nav { display:block;
@@ -17,7 +18,7 @@ div.wrapper {
     top: 0em; 
     left: 0px; 
     width: 995px; 
-	font-size: 125%
+	font-size: 125%;
     margin-left:auto; 
     margin-right:auto; 
 	text-align: center;
@@ -938,6 +939,7 @@ li {
 #celebs {
 	clear: both;
 }
+
 
 
 
