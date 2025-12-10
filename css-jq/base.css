@@ -39,7 +39,7 @@ div#html5-style-2content.data {
     border-left:10px white solid; 
     border-right:10px white solid; 
     border-bottom:10px white solid; 
-    width: 50em; 
+    width: 60em; 
     margin-top: -10px; 
     margin-left:auto; 
     margin-right:auto; 
@@ -58,7 +58,7 @@ header#html5-style-2header {
   margin: 10px auto;
 }
 h1 {
-    font-size: 300%;
+    font-size: 200%;
     position: relative;
     left: 90px;
     top: 55px;
@@ -939,6 +939,7 @@ li {
 #celebs {
 	clear: both;
 }
+
 
 
 
