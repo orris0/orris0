@@ -81,7 +81,7 @@ h3#html5-style-2h3 { font-size: large; color:white; margin:0 0 6px 0;
 }
 #html5-style-2rightcol { width: 135px; float:right; height: 252px; margin-right:10px;
 }
-#html5-style-2midcol { margin-left:315px; margin-right:145px; margin-top:10px; vertical-align:top;
+#html5-style-2midcol { margin-left: auto; margin-right: auto; margin-top:10px; vertical-align:top;
 }
 /*set nav block position and width and remove the #menu item*/
 nav#html5-style-2nav ul { margin:10px 0 10px 0; width:135px; float:right;
@@ -939,6 +939,7 @@ li {
 #celebs {
 	clear: both;
 }
+
 
 
 
