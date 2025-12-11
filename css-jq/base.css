@@ -39,7 +39,7 @@ div#html5-style-2content.data {
     border-left:10px white solid; 
     border-right:10px white solid; 
     border-bottom:10px white solid; 
-    width: 40em; 
+    width: 20em; 
     margin-top: -10px; 
     margin-left:auto; 
     margin-right:auto; 
@@ -71,7 +71,7 @@ width:480px;
 }
 #rosette { position:relative; left:350px; top: -5px;
 }
-#html5-style-2content { background-color:transparent; border-left:10px white solid; border-right:10px white solid; border-bottom:10px white solid; width: 904px; margin-top: -8%; margin-left:auto; margin-right:auto; padding:8px; font-size:medium; color:maroon;
+#html5-style-2content { background-color:transparent; border-left:10px white solid; border-right:10px white solid; border-bottom:10px white solid; width: 20em; margin-top: -8%; margin-left:auto; margin-right:auto; padding:8px; font-size:medium; color:maroon;
 }
 h2#html5-style-2h2 { font-size: x-large; color:white; margin:0 0 10px 0;
 }
@@ -939,6 +939,7 @@ li {
 #celebs {
 	clear: both;
 }
+
 
 
 
