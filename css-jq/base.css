@@ -1,4 +1,4 @@
-/* Listing 1-7b. The Revised CSS Sheet for Figure 1-7 (html5-style-2.c
+/* Listing 1-7b. The Revised CSS Sheet for Figure 1-7 (html5-style-2. */
 
 /* equalise for various browsers and change #header to header */
 div body header #content { margin:0; padding:0; border:0;
@@ -39,7 +39,7 @@ div#html5-style-2content.data {
     border-left:10px white solid; 
     border-right:10px white solid; 
     border-bottom:10px white solid; 
-    width: 60em; 
+    width: 904px; 
     margin-top: -10px; 
     margin-left:auto; 
     margin-right:auto; 
