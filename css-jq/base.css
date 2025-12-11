@@ -39,7 +39,7 @@ div#html5-style-2content.data {
     border-left:10px white solid; 
     border-right:10px white solid; 
     border-bottom:10px white solid; 
-    width: 60em; 
+    width: 40em; 
     margin-top: -10px; 
     margin-left:auto; 
     margin-right:auto; 
@@ -939,6 +939,7 @@ li {
 #celebs {
 	clear: both;
 }
+
 
 
 
