@@ -53,7 +53,7 @@ h1 {
     color: white;
     margin: 0 0 10px 0;
 }
-h1#html5-style-2h1.veryimportant.heading.stuff { font-size:300%; color:rgba(0,0,0,.5); position: relative; left:90px; top: -3px;
+h1#html5-style-2h1.veryimportant.heading.stuff { font-size:200%; color:rgba(0,0,0,.5); position: relative; left:90px; top: -3px;
 width:480px;
 }
 #rosette { position:relative; left:350px; top: -10em;
@@ -929,6 +929,7 @@ li {
 #celebs {
 	clear: both;
 }
+
 
 
 
