@@ -517,7 +517,7 @@ footer#html5-style-2.data {
   border-left-width: 0px;
 } 
 
-/*equalise for various browsers and change #header to header*/
+/*equalise for various browsers and change #header to header*
 div body header #content { margin:0; padding:0; border:0;
 }
 body { background:#FFF url(images/green-grad.jpg) repeat-x; margin:auto;  padding: .3em .8em;
@@ -532,10 +532,10 @@ body { background:#FFF url(images/green-grad.jpg) repeat-x; margin:auto;  paddin
   border-width: 10px;
   border-left-width: 0px;
 }
-/*add display attributes for the semantic tags*/
+/*add display attributes for the semantic tags*
 header, footer, section, article, nav { display:block;
 }
-/*remove the # from #header*/
+/*remove the # from #header*
 header {width:95%; height:180px; padding:0; border:10px white solid; background: url(images/header3.jpg); margin:10px auto;
 }
 h1 { font-size:100%; color :white; position: relative; left:90px; top: -20px;
