@@ -67,7 +67,7 @@ h3#html5-style-2h3 { font-size: large; color:white; margin:0 0 6px 0;
 }
 #html5-style-2leftcol { float:left; width: 310px; vertical-align:top;
 }
-#html5-style-2rightcol { width: 135px; float:right; height: 252px; margin-right:10px;
+#html5-style-2rightcol { width: 135px; float:right; height: 262px; margin-right:10px;
 }
 #html5-style-2midcol { margin-left: auto; margin-right: auto; margin-top:10px; vertical-align:top;
 }
@@ -929,6 +929,7 @@ li {
 #celebs {
 	clear: both;
 }
+
 
 
 
