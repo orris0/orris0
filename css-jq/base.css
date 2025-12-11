@@ -930,6 +930,27 @@ li {
 	clear: both;
 }
 
+/*reset browsers to give cross browser uniformity*/
+html, body, p, lu, li { margin:0; padding:0;
+}
+img { border:0;
+}
+/* Set general thumbnail styles */
+/*place the column on the page*/
+#gallery-onecol-1 { position: absolute; top: 0; left: 0;
+}
+/*remove bullets from the list elements*/
+li { margin: 10px; list-style-type:none;
+}
+/* MouseOut state (default) - create a space for the larger images and hide them*/
+#gallery-onecol-1 a img.hid { width: 260px; height:390px; position: 
+absolute; top: 10px; left: 140px; visibility: hidden;
+}
+/* MouseOver state (hover)- reveal larger image */
+#gallery-onecol-1 a:hover { background: white;
+}
+#gallery-onecol-1 a:hover img.hid { visibility:visible;
+}
 
 
 
