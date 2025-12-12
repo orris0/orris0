@@ -53,9 +53,9 @@ width:480px;
 #html5-style-2content { background-color:transparent; border-left:10px white solid; border-right:10px white solid; border-bottom:10px white solid; 
 					   width: 58%; margin-top: 20px; margin-left:auto; margin-right:auto; padding:8px; font-size:medium; color:maroon;
 }
-h2#html5-style-2h2 { font-size: x-large; color:white; margin:0 0 10px 0;
+h2#html5-style-2h2 { font-size: 100%; color:white; margin:0 0 10px 0;
 }
-h3#html5-style-2h3 { font-size: large; color:white; margin:0 0 6px 0;
+h3#html5-style-2h3 { font-size: 100%; color:white; margin:0 0 6px 0;
 }
 #html5-style-2leftcol { float:left; width: 310px; vertical-align:top;
 }
@@ -943,6 +943,7 @@ absolute; top: 10px; left: 140px; visibility: hidden;
 }
 #gallery-onecol-1 a:hover img.hid { visibility:visible;
 }
+
 
 
 
