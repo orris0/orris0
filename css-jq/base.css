@@ -44,16 +44,8 @@ header#html5-style-2header {
   background: url(./bda-20.jpg);
   margin: 10px auto;
 }
-h1 {
-    font-size: 200%;
-    position: relative;
-    left: 90px;
-    top: 55px;
-    width: 480px;
-    color: white;
-    margin: 0 0 10px 0;
-}
-h1#html5-style-2h1.veryimportant.heading.stuff { font-size:200%; color:rgba(0,0,0,.5); position: relative; left:90px; top: -3px;
+
+h1#html5-style-2h1.veryimportant.heading.stuff { font-size:300%; color:rgba(0,0,0,.5); position: relative; left:90px; top: -3px;
 width:480px;
 }
 #rosette { position:relative; left:350px; top: -10em;
@@ -951,6 +943,7 @@ absolute; top: 10px; left: 140px; visibility: hidden;
 }
 #gallery-onecol-1 a:hover img.hid { visibility:visible;
 }
+
 
 
 
