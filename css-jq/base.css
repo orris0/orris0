@@ -37,7 +37,7 @@ nav#nav.data {
 
 /*remove the # from #header*/
 header#html5-style-2header {
-  width: 70%;
+  width: 902px;
   height: 180px;
   padding: 0;
   border: 10px white solid;
@@ -943,6 +943,7 @@ absolute; top: 10px; left: 140px; visibility: hidden;
 }
 #gallery-onecol-1 a:hover img.hid { visibility:visible;
 }
+
 
 
 
