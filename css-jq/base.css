@@ -953,6 +953,18 @@ li { margin: 10px; list-style-type:none;
 #gallery-onecol-1 a:hover img.hid { visibility:visible;
 }
 
+#overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: black url(../../css/images/spinner.gif) no-repeat scroll center center;
+}
+
+#lightbox {
+  position: fixed;
+}
 
 
 
