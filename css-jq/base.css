@@ -1,3 +1,71 @@
+.picture {
+	width: 220px;
+	transform: rotate(10deg);
+	overflow: hidden;
+}
+
+.picture {
+	max-width: 100%;
+	transform: rotate(-0deg) scale(1.0);
+	overflow: hidden;
+}
+
+
+
+div#content { flex: 1;
+    clip-path:polygon(20px 0, calc(100% - 20px) 0, 100% 20px, 
+			  100% calc(100% - 20px), calc(100% - 20px) 100%,
+			  20px 100%, 0 calc(100% - 20px), 0 20px);
+}
+
+/*set the generic tab style--and set position so that it overlaps the header*/
+#hnav {
+	position:relative; 
+	top:0.1rem; 
+	color: navy; 
+	
+	margin: -25px 0 0 0; 
+	padding: 0px; 
+	padding-left: 10px; 
+	z-index: 1; 
+}
+/* use display:inline to remove IE6 double margin bug*/
+#hnav li { 
+	display: inline; 
+	overflow: hidden; 
+	list-style-type: none; 
+}
+/*set tab colour*/
+	
+#hnav a, a.active { 
+	color: navy; 
+	background: #81d9f6; 
+	font: bold 1em "Trebuchet MS", 
+	Arial, sans-serif;
+	border: 1px solid black; 
+	padding: 2px 5px 0px 5px; 
+	margin: 0; 
+	text-decoration: none; 
+}
+ /* make a 3px wide bottom border on tab the same colour as the page */ 
+#hnav a.active { 
+	background: #cfecf5; 
+	color:navy; 
+	border-bottom: 3px solid #cfecf5; 
+}
+  /*hovering over a non-active tab shows an aqua tab*/
+#hnav a:hover { 	
+	background: aqua; 
+}
+#hnav a:visited { 
+	color: navy; 
+}
+ /*hovering over the active tab shows navy text*/
+#hnav a.active:hover { 
+	background: #cfecf5; 
+	color: navy; 
+}
+
 #news {
   display: block;
   height: 70px;
@@ -1050,6 +1118,7 @@ li { margin: 10px; list-style-type:none;
   position: absolute;
   left: 0;
 }
+
 
 
 
