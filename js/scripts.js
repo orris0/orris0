@@ -1,3 +1,12 @@
+// 09_cycle_plugin
+$(document).ready(function(){
+  $('#photos').cycle({
+    fx: 'shuffle'
+  });
+});
+
+
+
 // jquery.innerfade.js
 $(document).ready(function() {
   $('#news ul').innerfade({
