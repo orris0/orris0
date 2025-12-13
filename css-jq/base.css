@@ -1,3 +1,16 @@
+.box {
+  position: absolute; 
+  width: 50px;
+  height: 50px;
+}
+#green {
+  background-color: green;
+}
+#red {
+  background-color: red;
+  top: 60px;
+}
+
 /* Listing 1-7b. The Revised CSS Sheet for Figure 1-7 (html5-style-2. *
 
 /* equalise for various browsers and change #header to header */
@@ -1011,6 +1024,7 @@ li { margin: 10px; list-style-type:none;
   position: absolute;
   left: 0;
 }
+
 
 
 
