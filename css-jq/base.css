@@ -1,3 +1,10 @@
+#photos img {
+  display: none;
+}
+
+#photos .show {
+  display: inline;
+}
 .box {
   position: absolute; 
   width: 50px;
@@ -1024,6 +1031,7 @@ li { margin: 10px; list-style-type:none;
   position: absolute;
   left: 0;
 }
+
 
 
 
