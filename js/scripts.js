@@ -1,3 +1,12 @@
+// 04_rollover_fade
+$(document).ready(function() {
+  $('#fader').hover(function() {
+    $(this).find('img:eq(1)').stop(true,true).fadeIn();
+  }, function() {
+    $(this).find('img:eq(1)').fadeOut();
+  })
+});
+
 // Jcrop
 $(document).ready(function(){
   var jcrop = $.Jcrop('#mofat',{
@@ -26,8 +35,6 @@ $(document).ready(function(){
   });
 
 });
-
-
 
 // lightbox
 $(document).ready(function(){
