@@ -3,13 +3,14 @@
 /*set attributes for consistent appearance in all browsers*/
 html, body, p, ul, li, h1, h2 { margin:0; padding:0;
 }
+/*
 #kite { width: 960px; height: 500px;}
 #paper { width: 960px;}
 #take-off { width: 960px;}
 #paper { width: 960px;}
 #waves { width: 960px;}
 #plane { width: 930px;}
-/*set images to have no borders*/
+set images to have no borders*/
 img {
 border:0;
 }
