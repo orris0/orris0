@@ -78,13 +78,13 @@ $(document).ready(function(){
     containment: 'parent'
   });
 });
- 19_resizable_elements
+ // 19_resizable_elements
  $(document).ready(function(){
  
  stylesheetToggle();
  $(window).resize(stylesheetToggle);
  });
- 18_layout_switcher
+ // 18_layout_switcher
 function stylesheetToggle() {
   if ($('body').width() > 970) {
     $('<link rel="stylesheet" href="wide.css" type="text/css" />')
