@@ -179,7 +179,7 @@ div.wrapper {
     font-size: 100%;
     text-shadow: 0 -.05em .05em rgba(0, 0, 0, .5);
     line-height: 1.5;
-    margin: auto;
+    margin-top: -54px;
 	padding: .3em .8em;	 
     text-shadow: 0 -.05em .05em rgba(0, 0, 0, .5);
     width: 61.5em;
