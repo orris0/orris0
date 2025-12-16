@@ -170,7 +170,7 @@ set the gallery block 10px further to the right
 div.wrapper { 
     position: relative;
     top:  7.5em;
-    left: 9.9em;
+    left: 0%;
     border: 1px solid rgba(0, 0, 0, .1);
     border-left-width: 0 !important;
     border-width: 10px;
