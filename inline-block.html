@@ -1,338 +1,141 @@
-<!doctype html>
-<html ng-app lang="en">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <!--Everything you write should be using markups -->
-    <!-- head section is communicating about the page to the browser -->
-    <!-- Anything you write under head is not displayed on the browser content page. -->
-    <!-- All the Tags should be under <html> -->
-    <!-- Describing about the page -->
-    <!-- Required meta tags -->
-    <!-- Describing about the page -->
-    <!-- head section is communicating about the page to the browser -->
-    <!-- Anything you write under head is not displayed on the browser content page. -->
-    <meta charset="utf-8">
-
-    <title>HTML5 Gallery page Templates</title>
-
-	<!-- Viewport for responsive web design -->
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="google-adsense-account" content="ca-pub-9639638377144073">
-        <meta property="og:title" content="A Basic HTML5 Template">
-        <meta property="og:type" content="website">
-        <meta property="og:description" content="A simple HTML5 Template for new projects.">
-        <meta property="og:image" content="image.png">
-        <meta name="keywords" content="HTML5, Node.js, Jquery">
-        <meta name="author" content="Orris Baker">
-		
-		<link rel="stylesheet" href="./css-jq/base.css" type="text/css" media="screen" charset="utf-8">
-		<!-- <link rel="stylesheet" href="./CSS/HTML5-style-2.css" type="text/css" media="screen" charset="utf-8"> -->
-        <script src="./lib/jquery-1.7.1.min.js" type="text/javascript" charset="utf-8"></script>
-        <script type="text/javascript" src="./script.js"></script> 
-        <script type="text/javascript" src="./jquery.easing.1.3.js"></script>
-        <script type="text/javascript" src="jquery.scrollTo.js" charset="utf-8"></script>
-		<link rel="stylesheet" href="./style.css"> 
-        <link rel="stylesheet" href="./style[1].css"> 
-        <link rel="stylesheet" type="text/css" href="./CSS/HTML5-style-2.css">
-	   
-        <link rel="stylesheet" href="./nav[1].css">
-        <link rel="stylesheet" href="https://m.w3newbie.com/youtube.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
-        <link rel="stylesheet" href="./font-awesome.min[1].css">
-		<link rel="icon" type="image/png" href="./weed.jpg">
-		<link rel="icon" type="image/png" href="./flexy-logo.png">
-
-
-	
-    <link href="./CSS/gallery-page-HTML5.css" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="./inline-block.css">
-    <link rel="stylesheet" type="text/css" href="./CSS/inline-block.css">
-    <link rel="stylesheet" type="text/css" href="../orris0/CSS/gallery-page-HTML5.css">
-
-    <meta name="viewport" content="width-device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <meta name="format-detection" content="telephone=no">
-    <meta property="og:title" content="A Basic HTML5 Template">
-    <meta property="og:type" content="video.movie">
-    <meta property="og:url" content="https://www.imdb.com/title/tt0117500/">
-    <meta property="og:image" content="https://ia.media-imdb.com/images/rock.jpg">
-    <meta name="description" content="A simple HTML5 Template for new projects.">
-    <meta name="author" content="Orris A BakerJr">
-    <meta name="google-adsense-account" content="ca-pub-9639638377144073">
-    <meta property="og:title" content="A Basic HTML5 Template">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://www.sitepoint.com/a-basic-html5-template/">
-    <meta property="og:description" content="A simple HTML5 Template for new projects.">
-    <meta property="og:image" content="image.png">
-    <meta name="theme-color" content="#712cf9">
-    <meta name="keywords" content="HTML5, Node.js, Jquery">
-    <meta name="author" content="Ian Andolina">
-    <!-- Optional Metadata -->
-    <meta property="og:audio" content="https://example.com/sound.mp3">
-    <meta property="og:audio:secure_url" content="https://secure.example.com/sound.mp3">
-    <meta property="og:audio:type" content="audio/mpeg">
-    <meta property="og:audio" content="https://example.com/bond/theme.mp3">
-    <meta property="og:description" content="Sean Connery found fame and fortune as the suave, sophisticated British agent, James Bond.">
-    <meta property="og:determiner" content="the">
-    <meta property="og:locale" content="en_GB">
-    <meta property="og:locale:alternate" content="fr_FR">
-    <meta property="og:locale:alternate" content="es_ES">
-    <meta property="og:site_name" content="IMDb">
-    <!--og: video example: -->
-    <meta property="og:video" content="https://example.com/bond/trailer.swf">
-    <meta property="og:video" content="https://example.com/movie.swf">
-    <meta property="og:video:secure_url" content="https://secure.example.com/movie.swf">
-    <meta property="og:video:type" content="application/x-shockwave-flash">
-    <meta property="og:video:width" content="400">
-    <meta property="og:video:height" content="300">
-    <!-- A full image example: -->
-    <meta property="og:image" content="https://example.com/ogp.jpg">
-    <meta property="og:image:secure_url" content="https://secure.example.com/ogp.jpg">
-    <meta property="og:image:type" content="image/jpeg">
-    <meta property="og:image:width" content="400">
-    <meta property="og:image:height" content="300">
-    <meta property="og:image:alt" content="A shiny red apple with a bite taken out">
-    <meta property="og:image" content="https://example.com/rock.jpg">
-    <meta property="og:image:width" content="300">
-    <meta property="og:image:height" content="300">
-    <meta property="og:image" content="https://example.com/rock2.jpg">
-    <meta property="og:image" content="https://example.com/rock3.jpg">
-    <meta property="og:image:height" content="1000">
-    <link rel="apple-touch-icon" href="./images/apple-touch-icon.png">
-    <link rel="stylesheet" href="../orris0/gallery-page-HTML5.css">
-    <!--<link rel="stylesheet" href="css/styles.css?v=1.0">-->
-    <link rel="alternate" type="application/pdf" href="MainPage.pdf">
-    <link rel="author" href="mailto:internetearnings@live.com">
-    <link rel="author" type="text/html" href="https://orrisb.github.io">
-    <!-- Bootstrap Icons-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet">
-    <!-- Google fonts-->
-    <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic"
-        rel="stylesheet" type="text/css">
-    <!-- SimpleLightbox plugin CSS-->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.css" rel="stylesheet">
-    <!-- Core theme CSS (includes Bootstrap)-->
-    <link rel="stylesheet" href="../../css/base.css" type="text/css" media="screen" charset="utf-8">
-    <script src="../../lib/jquery-1.7.1.min.js" type="text/javascript" charset="utf-8"></script>
-    <script type="text/javascript" src="./scripts.js"></script>
-    
-    <link rel="icon" type="image/x-icon" href="../Bootstrap/dist/assets/img/HTMLBadge.ico">
-    <link rel="icon" type="image/x-icon" href="../Bootstrap/dist/assets/favicon.ico">
-
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9639638377144073"
-        crossorigin="anonymous"></script>
-    <script>to
-        document.createElement('nav');
-    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flat Fix Pros - Fast Tire Repair & Service</title>
+    <style>
+        /* CSS styles are embedded here for a single-file example */
+        body {
+            font-family: sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            background-color: #f4f4f4;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+            padding: 0 20px;
+        }
+        header {
+            background: #2a2a2a;
+            color: #ffffff;
+            padding-top: 30px;
+            min-height: 70px;
+            border-bottom: #e8491d 3px solid;
+        }
+        header h1 {
+            text-align: center;
+            text-transform: uppercase;
+            margin: 0;
+            font-size: 2.5rem;
+        }
+        .main-content {
+            padding: 20px 0;
+            background: #fff;
+        }
+        .section {
+            padding: 20px 0;
+            border-bottom: 1px solid #eee;
+        }
+        h2 {
+            color: #e8491d;
+            text-align: center;
+            border-bottom: 2px solid #e8491d;
+            padding-bottom: 10px;
+        }
+        .service-list {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: space-around;
+        }
+        .service-list li {
+            background: #eee;
+            margin: 10px;
+            padding: 20px;
+            text-align: center;
+            flex: 1;
+            border-radius: 5px;
+        }
+        .testimonial {
+            font-style: italic;
+            text-align: center;
+            margin-top: 15px;
+        }
+        .contact-info p {
+            text-align: center;
+            font-size: 1.1rem;
+        }
+        footer {
+            background: #2a2a2a;
+            color: #ffffff;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 20px;
+        }
+    </style>
 </head>
-
 <body>
-    <div container class="data" id="inlineblockcontainer">
-        <header class="data" id="inlineblockheader"><!--<div id="hdr"> changed to <header>-->
-                        
-            <div id="inlineblockcontainer">
-                <p>&nbsp;</p>
-                <h1>TourOrris's (Rural Retreats)</h1>
-                <p>
-                    <a href="kight.it.tk.html">Page 1</a>
-                    <a href="page2.html">Page 2</a>
-                    <a href="page3.html">Page 3</a>
-                    <a href="page4.html">Page 4</a>
-                    <a href="page5.html">Page 5</a>
-                    <a href="page2.html">Page 6</a>
-                    <a href="page3.html">Page 7</a>
-                </p>
-                <p>&nbsp;</p>
-                <p class="inline-block">Practical HTML5 Projects for fun and Profit (Default)<br>
-                    <a href="#">Page 1</a>
-                    <a href="#">Page 2</a>
-                    <a href="#">Page 3</a>
-                    <a href="#">Page 4</a>
-                    <a href="#">Page 5</a>
-                    <a href="#">Page 6</a>
-                    <a href="#">Page 7</a>
-                </p>	
-        
-            </div><!-- end-container -->  
-            
-        </header><!-- end-header --> 
-        <!-- 
-		<p>&nbsp;</p>
-		<p>TourOrris (online content)</p>
-		<p>
-			<a href="#">Page 1</a>
-			<a href="#">Page 2</a>
-			<a href="#">Page 3</a>
-			<a href="#">Page 4</a>
-			<a href="#">Page 5</a>
-			<a href="#">Page 6</a>
-			<a href="#">Page 7</a>
-		</p>
-		<p>&nbsp;</p>
-		<p class="inline-block">Practical HTML5 Projects for fun and Profit<br />
-			<a href="#">Page 1</a>
-			<a href="#">Page 2</a>
-			<a href="#">Page 3</a>
-			<a href="#">Page 4</a>
-			<a href="#">Page 5</a>
-			<a href="#">Page 6</a>
-			<a href="#">Page 7</a>
-		</p>
-		<p>&nbsp;</p>
-    -->	
-	</div>
-    <!--
-	<header class="data" id="horizontalequal2dheader"><br>
-        <h1>TourOrris&#39;s Rural Retreats</h1>
-        <img id="rosette" alt="Rosette" title="Rosette" height="127" src="images/rosette-128.png" width="128" />
+
+    <header>
+        <div class="container">
+            <h1>Flat Fix Pros</h1>
+            <p style="text-align: center;">Drive with Confidence - Your Car's Best Friend</p>
+        </div>
     </header>
--->
-    <div id="content">
-        <h2>Award winning accommodation, self catering or bed and breakfast</h2>
 
-        <div id="leftcol">
-            <h3>Cottages, converted barns, caravans</h3>
-            <img alt="cottage interior" height="225" src="./images/clear-view-suites-villas (3).jpg" width="300" /><br />
-            The superb interior of one of our cottages
-        </div>
-        <div id="rightcol">
-            <nav class="data" id="inlineblocknav">
-                <ul>
-                    <li><a href="accommodation.html" title="Accommodation">Accommodation</a></li>
-                    <li class="btn"><a href="maps.html" title="Location Maps">Maps</a></li>
-                    <li><a href="faqs.html" title="Frequently Asked Questions">Information</a></li>
-		            <li><a href="attractions.html" title="Local attractions">Attractions</a></li>
-                    <li><a href="contact.html" title="Contact us">Contact Us</a></li>
-                    <li><a href="index.html" title="Return to Home Page">Home Page</a></li>
-                </ul>
-            </nav>
-        </div><!--end of side menu column-->        
-        <div id="midcol">
-            <h3>All situated in the beautiful rolling countryside of St. Davids</h3>
-            <img alt="Devon countryside" height="229" src="./images/bda (2).jpg" width="419">
-        </div>
-        <br class="clear" />
-    </div><!--content closed-->
- <!--   <footer>
-	    footer goes here
-    </footer>
-         <title>Equal width buttons horizontal menu</title> -->   
-    <div id="wrapper">
-        <header>
-            <h1>Practical HTML5 Project&#39;s for Fun and Profit!</h1>
-        </header>
-        <nav>
-            <ul>
-                <li><a href="#" title="Page Two">Page Two</a></li>
-                <li><a href="#" title="page Three">Page Three</a></li>
-                <li><a href="#" title="Page Four">Page Four</a></li>
-                <li><a href="#" title="Page Five">Page Five</a></li>
-                <li><a href="#" title="Page Six">Page Six</a></li>
-                <li><a href="#" title="Return to Home Page">Home Page</a></li>
+    <div class="container main-content">
+        
+        <section id="services" class="section">
+            <h2>Our Services</h2>
+            <ul class="service-list">
+                <li>
+                    <h3>Flat Tire Repair</h3>
+                    <p>Professional patching and plugging according to industry standards.</p>
+                </li>
+                <li>
+                    <h3>New Tire Installation</h3>
+                    <p>Wide selection of major brands, expert installation and balancing.</p>
+                </li>
+                <li>
+                    <h3>Tire Rotation & Balance</h3>
+                    <p>Extend the life of your tires with routine maintenance.</p>
+                </li>
             </ul>
-        </nav>
-        <!--[if lte IE 7]>
-        <br>
-        <![endif]--
-        <div id="main-content">
-            <br /><header>
-                <!-- svg-text-embed --
-                <svg version="1.1" baseProfile="full" xmlns="http://www.w3.org/2000/svg" width="500px" height="60px">
-		    <text x="20" y="50" style="font-family:times new roman; font-size:20pt; font-weight:bold; letter-spacing:1px; stroke:black; fill:white;">
-			TourOrris
-		    </text>
-                </svg>
-                <h1>Practical HTML5 Project&#39;s for Fun and Profit!</h1>
-                <nav>
-                    <ul>
-                        <li><a href="about.html" title="">About Us</a></li>
-                        <li><a href="news.html" title="">News</a></li>
-                        <li><a href="events.html" title="">Events</a></li>
-                        <li><a href="volunteers.html" title="">Volunteers</a></li>
-                        <li><a href="services.html" title="">Services</a></li>
-                        <li><a href="membership.html" title="">Membership</a></li>
-                        <li><a href="index.html" title="" class="current">Home</a></li>
-                    </ul>
-                </nav>
-                <noscript>
-                    <p>
-                        Hey, your browser has JavaScript turned off!
-                    </p>
-                    <p>
-                        Okay, cool, perhaps you'll prefer this <a href="no-js.html">non-JavaScript version</a> of the page.
-                    </p>
-                </noscript>
-	    </header><!-- end-header -->
-	    <br class="clear">
-        <div class="col-12"> <!-- close top section - content area starts -->
-		    <div id="hnav">
-                <ul>
-                    <li><a class="active" href="index2.html/">Home Page</a></li>
-                    <li><a href="./page2.html">Page Two</a></li>
-                    <li><a href="./page3.html">Page Three with a long label</a></li>
-                    <li><a href="./page4.html">Page Four</a></li>
-                    <li><a href="./page5.html">Page Five</a></li>
-                </ul>
+        </section>
+
+        <section id="about" class="section">
+            <h2>About Us</h2>
+            <p>Flat Fix Pros is a locally-owned tire shop dedicated to getting you back on the road safely and quickly. We believe in fair and transparent pricing for all our services.</p>
+        </section>
+
+        <section id="testimonials" class="section">
+            <h2>Customer Testimonials</h2>
+            <div class="testimonial">
+                <p>"Fixed my flat tire in under 15 minutes! Great service and friendly staff."</p>
+                <p>- A Satisfied Customer</p>
             </div>
-	    </div><!-- end col-12 -->
-	    <div id="content">
-                <b>A full page roll-over gallery of greetings cards</b>
-                <p><img title="Koala" alt="Koala" height="165" src="images/Koalasmall.jpg" width="220"></p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p>          
-                <br class="clear">
-		<div id="navigation">
-                    <menu>
-                        <ul>
-                            <li class="btn"><a href="pagetwo.html">Home</a></li>
-                            <li class="btn"><a href="pagethree.html">Buy Now!</a></li>
-                            <li class="btn"><a href="pagefour.html">About Us</a></li>
-                            <li class="btn"><a href="Homepage.html">Gift Ideas</a></li>
-                        </ul><!-- end-ul -->
-                    </menu><!-- end-nav -->
-	        </div>
-                <!-- RIGHT-COL -->
-                <div id="rightcol">
-                    <h2 class="dark">StarTrackr!</h2>
-                    <a href="./creating-a-website.html" class="btn-get-started scrollto">get started</a>
-                    <br>
-                    <p><a href="http://validator.w3.org/check?uri=referer"><img src="http://www.w3.org/html/logo/img/mark-word-icon.png" width="64" height="64" alt="Validated HTML5" title="Validated HTML5"></a></p>
-                    <p>
-                        <a href="http://jigsaw.w3.org/css-validator/"><img src="images/vcss-blue.gif" width="88" height="31" title="Valid CSS!" alt="Valid CSS!"></a>
-                        <span class="small"><br><br> Markup Validated by the World Wide Web Consortium</span>
-                    </p>
-                    <br class="clear">
-                    <p class="advert">Web Design by <br> Orris Baker</p>
-                </div> <!-- end right-col -->
-                <div class="row">
-                    <div class="col-12">
-                        <img src="images/kite.png" width="95%" ;>
-                    </div><!-- end col-12 -->
-                    <div id="midcol">
-                        <div id="gallery-block">
-                            <ul id="col-1">
-                                <li><a href="#"><img src="./1landscape.jpg" width="70px" height="103px" alt="Ali" title="Ali"><img class="hid" src="./1landscape.jpg" alt=""></a></li>
-                                <li><a href="#"><img src="./2landscape.jpg" width="69px" height="91px" alt="Cat" title="Cat"><img class="hid" src="./2landscape.jpg" alt=""></a></li>
-                                <li><a href="#"><img src="./3landscape.jpg" width="75px" height="95px" alt="Beach" title="Beach"><img class="hid" src="./3landscape.jpg"" alt=""></a></li>
-                            </ul>
-                            <ul id="col-2">
-                                <li><a href="#"><img src="./4landscape.jpg" width="73px" height="103px" alt="Ferns" title="Ferns"><img class="hid" src="./4landscape.jpg" alt=""></a></li>
-                                <li><a href="#"><img src="./5landscape.jpg" width="74px" height="91px" alt="Nico" title="Nico"><img class="hid" src="./5landscape.jpg" alt=""></a> </li>
-                                <li><a href="#"><img src="./6landscape.jpg" width="76px" height="59px" alt="Child and Beach" title="Child and Beach"><img class="hid" src="./6landscape.jpg" alt=""></a></li>
-                            </ul>
-                            <ul id="col-3">
-                                <li><a href="#"><img src="./7landscape.jpg" width="83px" height="103px" alt="Ancient and modern" title="Ancient and Modern"><img class="hid" src="./7landscape.jpg" alt=""></a></li>
-                                <li><a href="#"><img src="./8landscape.jpg" width="80px" height="91px" alt="Felix" title="Felix"><img class="hid" src="./8landscape.jpg" alt=""></a></li>
-                                <li><a href="#"><img src="./9landscape.jpg" width="79px" height="95px" alt="Cliffs" title="Cliffs"><img class="hid" src="./9landscape.jpg" alt=""></a></li>
-                            </ul>
-                            <br class="clear">
-                        </div><!--gallery block closed-->
-                    </div><!--midcol closed-->
-                </div><!-- end col-12 --><br><br>
-        </div>
-        <footer>
-            A footer goes here
-        </footer>
+        </section>
+
+        <section id="contact" class="section">
+            <h2>Contact Us</h2>
+            <div class="contact-info">
+                <p><strong>Location:</strong> 123 Tire Street, Manhattan, New York</p>
+                <p><strong>Phone:</strong> (555) 123-4567</p>
+                <p><strong>Hours:</strong> Mon-Fri: 8am - 5pm | Sat: 8am - 12pm</p>
+                <p>Use our [online contact form](#) to book an appointment.</p>
+            </div>
+        </section>
+
     </div>
+
+    <footer>
+        <p>Flat Fix Pros &copy; 2025</p>
+    </footer>
+
 </body>
-
 </html>
-
