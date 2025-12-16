@@ -1,3 +1,78 @@
+
+body {
+            font-family: sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            background-color: #f4f4f4;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+            padding: 0 20px;
+        }
+        header {
+            background: #2a2a2a;
+            color: #ffffff;
+            padding-top: 30px;
+            min-height: 70px;
+            border-bottom: #e8491d 3px solid;
+        }
+        header h1 {
+            text-align: center;
+            text-transform: uppercase;
+            margin: 0;
+            font-size: 2.5rem;
+        }
+        .main-content {
+            padding: 20px 0;
+            background: #fff;
+        }
+        .section {
+            padding: 20px 0;
+            border-bottom: 1px solid #eee;
+        }
+        h2 {
+            color: #e8491d;
+            text-align: center;
+            border-bottom: 2px solid #e8491d;
+            padding-bottom: 10px;
+        }
+        .service-list {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: space-around;
+        }
+        .service-list li {
+            background: #eee;
+            margin: 10px;
+            padding: 20px;
+            text-align: center;
+            flex: 1;
+            border-radius: 5px;
+        }
+        .testimonial {
+            font-style: italic;
+            text-align: center;
+            margin-top: 15px;
+        }
+        .contact-info p {
+            text-align: center;
+            font-size: 1.1rem;
+        }
+        footer {
+            background: #2a2a2a;
+            color: #ffffff;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 20px;
+        }
+    
+
+
 .picture {
 	width: 220px;
 	transform: rotate(10deg);
@@ -1118,6 +1193,7 @@ li { margin: 10px; list-style-type:none;
   position: absolute;
   left: 0;
 }
+
 
 
 
