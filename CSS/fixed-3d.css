@@ -13,7 +13,7 @@ h1 { font-size:200%; font-weight:bold; margin-top:20px;
 }
 #main-content {width:950px; margin:65px auto 0 auto; background-color:white; color:black; text-align:center; font-weight:bold; 
 }
-footer {margin:10px auto 0 auto; width:950px; font-weight:bold; text-align:center; background-color:#FFCC00; color:black; clear:both;
+footer {margin:10px auto 0 auto; width: 100%; font-weight:bold; text-align:center; background-color:#FFCC00; color:black; clear:both;
 }
 nav {position:absolute; top:100px; left:3.6%; width: 866px; padding: 5px; list-style: none; overflow: hidden; height: 35px; 
 }
