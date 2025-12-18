@@ -182,7 +182,7 @@ div.wrapper {
     margin-top: -54px;
 	padding: .3em .8em;	 
     text-shadow: 0 -.05em .05em rgba(0, 0, 0, .5);
-    width: 61.5em;
+    width: 975px;
     background: #58a linear-gradient(#FF9966, #58a);
 
     clip-path:polygon(20px 0, calc(100% - 20px) 0, 100% 20px, 
