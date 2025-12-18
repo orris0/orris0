@@ -149,7 +149,7 @@ nav {
 
 /*remove the # from #header*/
 header#html5-ch1-7header.data {
-  width: 920px;
+  width: 100%;
   height: 180px;
   padding: 0;
   border: 10px white solid;
