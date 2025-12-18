@@ -116,7 +116,7 @@ nav a.active:hover { background: #cfecf5; color: navy;
 }
 /*set the position of the content to move it close up to the menu tabs*/
 div#content {
-  margin-top:15px; 
+  margin-top:1%; 
   font : 0.9em/1.3em "bitstream vera sans", verdana; 
   position:relative; 
   left: 10%; 
