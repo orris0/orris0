@@ -20,5 +20,5 @@ ul li a.tab { font-family:Arial; color:black; font-size :medium; font-weight:bol
 }
 #activelink {background-color:white; border-bottom:0; padding-bottom:7px;
 }
-#content {margin-top:-25px; padding:10px; width: ; border:2px solid black;  
+#content {margin-top:-25px; padding:10px; width: 80%; border:2px solid black;  
 }
