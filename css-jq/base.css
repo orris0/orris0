@@ -1,4 +1,4 @@
-
+/*
 body {
             font-family: sans-serif;
             line-height: 1.6;
@@ -7,12 +7,14 @@ body {
             color: #333;
             background-color: #f4f4f4;
         }
+*/
         .container {
             width: 80%;
             margin: auto;
             overflow: hidden;
             padding: 0 20px;
         }
+/*
         header {
             background: #2a2a2a;
             color: #ffffff;
@@ -26,6 +28,7 @@ body {
             margin: 0;
             font-size: x-large;
         }
+*/
         .main-content {
             padding: 20px 0;
             background: #fff;
@@ -1193,6 +1196,7 @@ li { margin: 10px; list-style-type:none;
   position: absolute;
   left: 0;
 }
+
 
 
 
