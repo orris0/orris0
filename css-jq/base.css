@@ -98,7 +98,7 @@ div#content { flex: 1;
 			  20px 100%, 0 calc(100% - 20px), 0 20px);
 }
 
-/*set the generic tab style--and set position so that it overlaps the header*/
+/*set the generic tab style--and set position so that it overlaps the header*
 #hnav {
 	position:relative; 
 	top:0.1rem; 
@@ -109,13 +109,13 @@ div#content { flex: 1;
 	padding-left: 10px; 
 	z-index: 1; 
 }
-/* use display:inline to remove IE6 double margin bug*/
+/* use display:inline to remove IE6 double margin bug*
 #hnav li { 
 	display: inline; 
 	overflow: hidden; 
 	list-style-type: none; 
 }
-/*set tab colour*/
+/*set tab colour*
 	
 #hnav a, a.active { 
 	color: navy; 
@@ -127,20 +127,20 @@ div#content { flex: 1;
 	margin: 0; 
 	text-decoration: none; 
 }
- /* make a 3px wide bottom border on tab the same colour as the page */ 
+ /* make a 3px wide bottom border on tab the same colour as the page *
 #hnav a.active { 
 	background: #cfecf5; 
 	color:navy; 
 	border-bottom: 3px solid #cfecf5; 
 }
-  /*hovering over a non-active tab shows an aqua tab*/
+  /*hovering over a non-active tab shows an aqua tab*
 #hnav a:hover { 	
 	background: aqua; 
 }
 #hnav a:visited { 
 	color: navy; 
 }
- /*hovering over the active tab shows navy text*/
+ /*hovering over the active tab shows navy text*
 #hnav a.active:hover { 
 	background: #cfecf5; 
 	color: navy; 
@@ -172,6 +172,7 @@ div#content { flex: 1;
 #photos .show {
   display: inline;
 }
+*/
 .box {
   position: absolute; 
   width: 50px;
@@ -1198,6 +1199,7 @@ li { margin: 10px; list-style-type:none;
   position: absolute;
   left: 0;
 }
+
 
 
 
