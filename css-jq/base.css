@@ -28,15 +28,17 @@ body {
             margin: 0;
             font-size: x-large;
         }
-*/
+
         .main-content {
             padding: 20px 0;
             background: #fff;
         }
+*/
         .section {
             padding: 20px 0;
             border-bottom: 1px solid #eee;
         }
+/*
         h2 {
             color: #e8491d;
             text-align: center;
@@ -88,7 +90,7 @@ body {
 	overflow: hidden;
 }
 
-
+*/
 
 div#content { flex: 1;
     clip-path:polygon(20px 0, calc(100% - 20px) 0, 100% 20px, 
@@ -1196,6 +1198,7 @@ li { margin: 10px; list-style-type:none;
   position: absolute;
   left: 0;
 }
+
 
 
 
