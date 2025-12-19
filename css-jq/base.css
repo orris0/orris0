@@ -37,7 +37,7 @@ nav#nav.data {
 
 /*remove the # from #header*/
 header#html5-style-2header {
-  width: 902px;
+  width: 920px;
   height: 180px;
   padding: 0;
   border: 10px white solid;
@@ -1200,6 +1200,7 @@ li { margin: 10px; list-style-type:none;
   position: absolute;
   left: 0;
 }
+
 
 
 
