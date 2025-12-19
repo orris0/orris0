@@ -12,6 +12,7 @@ div {
   border: 1px solid black;
   /* padding: 0.3em 0.5em; */
 }
+/*
 div.wrapper { 
     position: relative; 
     top: 0em; 
@@ -1199,6 +1200,7 @@ li { margin: 10px; list-style-type:none;
   position: absolute;
   left: 0;
 }
+
 
 
 
