@@ -101,14 +101,14 @@ body {
             color: #333;
             background-color: #f4f4f4;
         }
-*/
+
         .container {
             width: 80%;
             margin: auto;
             overflow: hidden;
             padding: 0 20px;
         }
-/*
+
         header {
             background: #2a2a2a;
             color: #ffffff;
@@ -127,12 +127,12 @@ body {
             padding: 20px 0;
             background: #fff;
         }
-*/
+
         .section {
             padding: 20px 0;
             border-bottom: 1px solid #eee;
         }
-/*
+
         h2 {
             color: #e8491d;
             text-align: center;
@@ -1200,6 +1200,7 @@ li { margin: 10px; list-style-type:none;
   position: absolute;
   left: 0;
 }
+
 
 
 
