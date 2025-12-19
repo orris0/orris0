@@ -3,8 +3,7 @@
 /* equalise for various browsers and change #header to header */
 div body header #content { margin:0; padding:0; border:0;
 }
-body { background:#FFF *url(images/green-grad.jpg) repeat-x; margin: auto; margin-left:auto; 
-    margin-right:auto;
+body { background:#FFF *url(images/green-grad.jpg) repeat-x; margin: auto;
 }
 /*add display attributes for the semantic tags*/
 header, footer, section, article, nav { display:block;
@@ -1200,6 +1199,7 @@ li { margin: 10px; list-style-type:none;
   position: absolute;
   left: 0;
 }
+
 
 
 
