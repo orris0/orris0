@@ -24,7 +24,7 @@ body {
             text-align: center;
             text-transform: uppercase;
             margin: 0;
-            font-size: xx-large;
+            font-size: x-large;
         }
         .main-content {
             padding: 20px 0;
@@ -1193,6 +1193,7 @@ li { margin: 10px; list-style-type:none;
   position: absolute;
   left: 0;
 }
+
 
 
 
