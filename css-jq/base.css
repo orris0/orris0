@@ -22,7 +22,8 @@ div.wrapper {
     width: 100%; 
 	  font-size: 1005px;
     margin-left:0; 
-    margin-right:0; 
+    margin-top:-56px;
+     
 	  text-align: center;
 }
 img.logo { overflow-clip-margin: content-box; overflow: clip; }
