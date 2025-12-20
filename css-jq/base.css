@@ -2322,7 +2322,7 @@ li { margin: 10px; list-style-type:none;
 */
 #cboxOverlay{background:#000;}
 
-#colorbox{}
+#colorbox{
     #cboxContent{margin-top:20px;}
         #cboxLoadedContent{background:#000; padding:5px;}
         #cboxTitle{position:absolute; top:-20px; left:0; color:#ccc;}
@@ -2336,6 +2336,7 @@ li { margin: 10px; list-style-type:none;
         #cboxLoadingGraphic{background:url(images/loading.gif) center center no-repeat;}
         #cboxClose{position:absolute; top:5px; right:5px; display:block; background:url(images/controls.png) top center no-repeat; width:38px; height:19px; text-indent:-9999px;}
         #cboxClose.hover{background-position:bottom center;}
+}
 #fader {
   position: relative;
 }
