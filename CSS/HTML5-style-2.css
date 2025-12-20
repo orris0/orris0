@@ -172,8 +172,12 @@ h1#html5-ch1-7h1 {
   top: 5px;
 }
 
-div#html5-ch1-7content.data { background-color:transparent; border-left:10px white solid; border-right:10px white solid; 
-border-bottom:10px white solid; width: 100%; margin-top:-54px; margin-left:auto; margin-right:auto; padding:8px; font-size:medium; color:maroon; 
+div#html5-ch1-7content.data { 
+  background-color:transparent; 
+  border-left:10px white solid; 
+  border-right:10px white solid; 
+border-bottom:10px white solid; 
+width: 970px; margin-top:-54px; margin-left:auto; margin-right:auto; padding:8px; font-size:medium; color:maroon; 
 }
 
 h2#html5-ch1-7h2 {
