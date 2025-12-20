@@ -218,7 +218,7 @@ div#content {
   margin-top:1%; 
   font : 0.9em/1.3em "bitstream vera sans", verdana; 
   position:relative; 
-  left: 10%; 
+  left: -1%; 
   text-align: left; 
   background: #cfecf5;
   padding: 20px; 
