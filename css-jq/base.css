@@ -19,11 +19,11 @@ div.wrapper {
     position: relative; 
     top: 3.5em; 
     left: 23.6%; 
-    width: 1005px; 
+    width: 1020px; 
 	  font-size: 1005px;
     margin-left:0; 
     margin-right:0; 
-	text-align: center;
+	  text-align: center;
 }
 img.logo { overflow-clip-margin: content-box; overflow: clip; }
 
