@@ -50,7 +50,7 @@ header#html5-style-2header {
   margin: 10px auto;
 }
 
-h1#html5-style-2h1.veryimportant.heading.stuff { font-size:xx-large; color:rgba(0,0,0,.5); position: relative; left:90px; top: -3px;
+h1#html5-style-2h1.veryimportant.heading.stuff { font-size:large; color:rgba(0,0,0,.5); position: relative; left:90px; top: -3px;
 width:480px;
 }
 #rosette { position:relative; left:350px; top: -10em;
@@ -2354,6 +2354,7 @@ li { margin: 10px; list-style-type:none;
   position: absolute;
   left: 0;
 }
+
 
 
 
