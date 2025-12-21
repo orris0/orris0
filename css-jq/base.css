@@ -21,7 +21,7 @@ div.wrapper {
     position: relative; 
     top: 3.5em; 
     left: 23.6%; 
-    width: 1010px; 
+    width: 1000px; 
 	  font-size: 100%;
     margin-left:0; 
     margin-top:-56px;
@@ -2354,6 +2354,7 @@ li { margin: 10px; list-style-type:none;
   position: absolute;
   left: 0;
 }
+
 
 
 
