@@ -1,4 +1,6 @@
-/* Listing 1-7b. The Revised CSS Sheet for Figure 1-7 (html5-style-2. *
+/* Listing 1-7b. The Revised CSS Sheet for Figure 1-7 (html5-style-2. */
+html, body {
+  min-height: 100%; }
 
 /* equalise for various browsers and change #header to header */
 div body header #content { margin:0; padding:0; border:0;
@@ -159,6 +161,11 @@ br.clear { 	clear:both;
 }
 #html5style2 footer { clear:both; color:maroon; text-align:center; 
 }
+
+
+
+
+
 
 /* Set styles to equalise browser rendition
 html, body, h1, h2, h3, h4, h5, h6, p, ol, ul, li { padding: 0; margin: 0;
@@ -2347,6 +2354,7 @@ li { margin: 10px; list-style-type:none;
   position: absolute;
   left: 0;
 }
+
 
 
 
