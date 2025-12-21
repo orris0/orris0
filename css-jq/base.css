@@ -162,7 +162,9 @@ br.clear { 	clear:both;
 #html5style2 footer { clear:both; color:maroon; text-align:center; 
 }
 
-
+hgroup {
+  display: block;
+}
 
 
 
@@ -2354,6 +2356,7 @@ li { margin: 10px; list-style-type:none;
   position: absolute;
   left: 0;
 }
+
 
 
 
