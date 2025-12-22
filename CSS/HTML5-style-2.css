@@ -1914,8 +1914,7 @@ img {
   border: 0;
   -ms-interpolation-mode: bicubic;
   max-width: 100%;
-  min-height: auto;
-  vertical-align: middle; }
+   }
 
 svg:not(:root) {
   overflow: hidden; }
