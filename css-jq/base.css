@@ -15,7 +15,39 @@ div {
   border: 1px solid black;
    padding: 0.3em 0.5em; 
 }
-   
+/* base.css */
+#photos {
+  border: 1px solid #BEBEBE;
+  height: 400px;
+  overflow: hidden;
+  position: relative;
+  width: 400px;
+}
+
+#photos ul {
+  left: 0;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 0;
+  width: 2400px;
+}
+
+#photos li {
+  float: left;
+}
+
+#photos .trigger {
+  left: 0;
+  position: absolute;
+  top: 0;
+  z-index: 10;
+  text-indent: -9999px;
+  height: 400px;
+  width: 400px;
+  display: block;
+}
 
 div.wrapper { 
     position: relative; 
@@ -2357,6 +2389,7 @@ li { margin: 10px; list-style-type:none;
   position: absolute;
   left: 0;
 }
+
 
 
 
