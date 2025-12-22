@@ -1,4 +1,4 @@
-body, header, #content, { margin:0; padding:0; border:0; 
+body, header, #content { margin:0; padding:0; border:0; 
 }
 /*add display attributes for the semantic tags*/
 header, footer, section, article, nav { display:block; 

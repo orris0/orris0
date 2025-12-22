@@ -4,7 +4,7 @@ body {
   -webkit-animation: bugfix infinite 1s;
   * needed for checkbox hack 
 }
-*/
+*
 @-webkit-keyframes bugfix {
   from {
     padding: 0;
