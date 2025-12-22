@@ -12,8 +12,6 @@
    ========================================================================== */
    html.ui-mobile {
   color: black;
-  font-size: 1em;
-  line-height: 1.4;
 }
 
 /* ===
@@ -84,12 +82,12 @@ textarea {
    ========================================================================== */
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400');
 @import url('https://fonts.googleapis.com/css?family=Raleway:300');
-
+/*
 body {
   background: #FFF url(images/green-grad.jpg) repeat-x;
   margin: auto;
 }
-/* Listing 1-7b. The Revised CSS Sheet for Figure 1-7 (html5-style-2.css) 
+* Listing 1-7b. The Revised CSS Sheet for Figure 1-7 (html5-style-2.css) 
 (The key items are picked out in bold type.)
 equalise for various browsers and change #header to header*/
 
@@ -301,13 +299,13 @@ header, footer, section, article, nav { display:block;
 h1#html5style2h1 { font-size:300%; color :white; position: relative; left:15%; top: 55px; width:480px;
 }
 
-Listing 3-6b. The Revised CSS for Re-positioning the Rosette (rosette.css) */
+Listing 3-6b. The Revised CSS for Re-positioning the Rosette (rosette.css) *
 body { background: #FFF url(images/green-grad.jpg) repeat-x; margin:auto;
 }
 
 #rosette { position:relative; left:85%; top:120px;
 }
-/*
+*
 div#html5style2content.data { background-color:transparent; border-left:10px white solid; border-right:10px white solid; 
 border-bottom:10px white solid; width: 920px; margin-top:-26px; margin-left:auto; margin-right:auto; padding:8px; font-size:medium; color:maroon; 
 }
