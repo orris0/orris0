@@ -1,9 +1,9 @@
 @import 'https://fonts.googleapis.com/css?family=Alegreya+Sans';
 /* Listing 2-6b. The CSS Style Sheet for Listing 2-6a (gallery-page.css) */
-/*set attributes for consistent appearance in all browsers*/
+/*set attributes for consistent appearance in all browsers*
 html, body, p, ul, li, h1, h2 { margin:0; padding:0;
 }
-/*
+
 #kite { width: 960px; height: 500px;}
 #paper { width: 960px;}
 #take-off { width: 960px;}
@@ -14,10 +14,10 @@ set images to have no borders*/
 img {
 border:0;
 }
-
+/*
 body { background:#FFF url(images/green-grad.jpg) repeat-x; margin:auto;
 }
-/*add display attributes for the semantic tags*/
+*add display attributes for the semantic tags*/
 header, footer, section, article, nav { display:block;
 }
 /*remove the # from #header*/
@@ -84,9 +84,10 @@ h1 { font-size:x-large; font-family:"times new roman"; text-align:center;
 }
 h2 {font-size:large; font-family:"times new roman"; text-align:center;
 }
-/*PAGE LAYOUT*/
+/*PAGE LAYOUT
 body {margin:auto; width:970px;
 }
+*/
 header#gallerypageheader.data { width:970px;
 }
 nav#gallerypagenav.data { float:left; margin-left:10px; width:115px;

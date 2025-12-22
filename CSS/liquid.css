@@ -1,6 +1,7 @@
-﻿/* flood the background with yellow */
+﻿/* flood the background with yellow *
 body {	width:100%; text-align: center; margin:0 auto 0 auto ; background-color:yellow; font-family:"times new roman"; font-size:large; font-weight:bold;
 }
+*/
 #container	{ width:100%; padding: 0; text-align: center; margin:auto; background-color:white;}
 /* set widths and float on nav col and col 3*/
 ul { float: left;  padding:0; margin:0; width: 100px; height:120px; 

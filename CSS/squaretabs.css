@@ -70,13 +70,14 @@ h1 { font-size:300%; color :white; position: relative; left:45px; top: 5px; widt
 div.menu-bar { position: relative; top: 2.5em; left: 1em;
 
 }
-/* Set styles to equalise browser rendition*/
+/* Set styles to equalise browser rendition
 html, body, h1, h2, h3, h4, h5, h6, p, ol, ul, li {  padding: 0; margin: auto; 
 }
+*/
 #main-header, footer, section, article, nav { display:block; 
 }
 
-body {text-align:center; margin: 1.25em; background: #bee8ff; font: medium arial; 
+body {/* text-align:center; margin: 1.25em; background: #bee8ff; */ font: medium arial; 
 }
 #container-1 {width:48.75em; margin:-0.625em auto 0 auto; 
 }

@@ -931,11 +931,11 @@ li { margin: 5px; list-style-type:none;
 }
 
 
-/* ###################################### */
+/* ###################################### *
 body {
   font-family: "Open Sans", sans-serif;
   color: #444444;
-}
+}/*
 body {
   margin: auto;
   font-family: var(--bs-body-font-family);
@@ -944,10 +944,11 @@ body {
   line-height: var(--bs-body-line-height);
   color: #fff;
   text-align: var(--bs-body-text-align);
-  /* background-color: #; */
+  /* background-color: #; *
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: transparent;
 }
+  */
 a {
   color: #eacd8b;
   text-decoration: none;
@@ -1867,10 +1868,10 @@ audio:not([controls]) {
 
 html, button, input, select, textarea {
   font-family: sans-serif; }
-
+/*
 body {
   margin: auto; }
-
+*/
 a:focus {
   outline: thin dotted; }
 

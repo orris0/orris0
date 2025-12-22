@@ -1,15 +1,17 @@
 /*MAIN.CSS*/
-/* Set styles to equalise browser rendition*/
+/* Set styles to equalise browser rendition
 html, body, h1, h2, h3, h4, h5, h6, p, ol, ul, li {  padding: 0; margin: 0; font-size: 100%; font-weight: normal;
 }
+*/
 img { border: 0; }
 ul { padding-left: 0; }
 q:before, q:after { content:''; }
 /* end of style equalisation */
 
-/* Layout */
+/* Layout 
 body { width:960px; margin:auto; background-color:#99FF66; font: 100% Arial;
 }
+*/
 #wrapper {position:relative; top:0; left:0;
 	width:950px; margin:auto; text-align:center;
 }
