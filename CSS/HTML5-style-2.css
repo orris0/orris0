@@ -352,8 +352,8 @@ div#html5-ch1-7col.data {
   vertical-align: top;
 }
 
-/*#html5-ch1-7rightcol { width: 135px; float:right; height: 252px; margin-right:10px;
-}*/
+#html5-ch1-7rightcol { width: 135px; float:right; height: 252px; margin-right:10px;
+}
 
 
 /*set nav block position and width*/
@@ -4510,6 +4510,7 @@ footer#html5style2footer {
     page-break-after: avoid;
   }
 }
+
 
 
 
