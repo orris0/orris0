@@ -1,3 +1,15 @@
+div.container {
+  display: flex;
+  justify-content: center; /* Centers horizontally */
+  align-items: center;     /* Centers vertically */
+  height: 100vh;           /* Sets the container height (e.g., full screen height) */
+}
+
+.item {
+  /* Add styling for your inner item as needed */
+}
+
+
 /* Listing 1-7b. The Revised CSS Sheet for Figure 1-7 (html5-style-2. */
 
 html, body {
@@ -2430,6 +2442,7 @@ li { margin: 10px; list-style-type:none;
   position: absolute;
   left: 0;
 }
+
 
 
 
