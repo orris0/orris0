@@ -246,7 +246,7 @@ nav#html5-style-2nav li.btn a:active { background:maroon; border: 5px inset maro
 }
 br.clear { clear:both;
 }
-#html5-style-2midcol img { margin-left:0px;
+#html5-style-2midcol img { margin-left:0px; margin-top: 10px;
 }
 /*change #footer to footer */
 footer#html5-style-2footer { clear:both; color:maroon; text-align:center; padding: 0.3em 0.5em;
@@ -2511,6 +2511,7 @@ li { margin: 10px; list-style-type:none;
   position: absolute;
   left: 0;
 }
+
 
 
 
