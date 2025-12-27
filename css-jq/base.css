@@ -215,7 +215,8 @@ h2#html5-style-2h2 { font-size: x-large; color:white; margin:0 0 10px 0;
 }
 h3#html5-style-2h3 { font-size: large; color:white; margin:0 0 6px 0;
 }
-#html5-style-2leftcol { float:left; width: 310px; margin-top: 10px vertical-align:top;
+#html5-style-2leftcol { float:left; width: 310px; margin-top: 10px; margin-left: 10px;
+    margin-top: 10px ; vertical-align:top;
 }
 #html5-style-2rightcol { width: 135px; float:right; height: 262px; margin-right:10px;
 }
@@ -2510,6 +2511,7 @@ li { margin: 10px; list-style-type:none;
   position: absolute;
   left: 0;
 }
+
 
 
 
