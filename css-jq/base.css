@@ -1105,7 +1105,7 @@ transform: skewX(45deg);
 
 @media only screen and (min-width: 75em) {
   .container {
-    width: 71rem;
+    width: 59%;
   }
 
   .col-lg,
@@ -2428,6 +2428,7 @@ li { margin: 10px; list-style-type:none;
   position: absolute;
   left: 0;
 }
+
 
 
 
