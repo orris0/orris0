@@ -23,7 +23,8 @@ a {
 
 #container{
 	margin:20px auto;
-	text-align: left;
+	text-align: left;
+width: 970px
 }
 
 #header{
