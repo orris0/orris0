@@ -20,7 +20,7 @@ body { background:#FFF url(images/green-grad.jpg) repeat-x; margin:auto;
 *add display attributes for the semantic tags*/
 header, footer, section, article, nav { display:block;
 }
-/*remove the # from #header*/
+/*remove the # from #header*
 header#gallerypageheader.data {width:95%; height:180px; padding:0; border:10px white solid; background: url(../../orris0/bda-20.jpg); margin:10px auto; background-position: bottom; /* Adjust as needed */
   background-repeat: no-repeat; margin:10px auto;
 }
@@ -88,7 +88,7 @@ h2 {font-size:large; font-family:"times new roman"; text-align:center;
 body {margin:auto; width:970px;
 }
 */
-header#gallerypageheader.data { width:970px;
+header#gallerypageheader.data { width:920px;
 }
 nav#gallerypagenav.data { float:left; margin-left:10px; width:115px;
 }
