@@ -182,7 +182,7 @@ div.wrapper {
 }
 */
 img.logo { overflow-clip-margin: content-box; overflow: clip; }
-
+/*
 nav#nav.data {
 	display: block;
     padding: .8em;
@@ -193,7 +193,7 @@ nav#nav.data {
     font-size: .9em;
 }
 
-/*remove the # from #header*/
+remove the # from #header*/
 header#html5-style-2header {
   width: 920px;
   height: 180px;
