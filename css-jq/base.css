@@ -377,11 +377,9 @@ nav a:visited { color: navy;
 nav a.active:hover { background: #cfecf5; color: navy;
 }
 /*set the position of the content to move it close up to the menu tabs*/
-div#content {
-  margin-top:1%; 
+div#content { 
   font : 0.9em/1.3em "bitstream vera sans", verdana; 
-  position:relative; 
-  left: -1%; 
+  position:relative;  
   text-align: left; 
   background: #cfecf5;
   padding: 20px; 
