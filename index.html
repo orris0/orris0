@@ -7,10 +7,16 @@
 		<!-- lightbox -->
 	    <link rel="stylesheet" href="css-jq/base.css" type="text/css" media="screen" charset="utf-8">
         <link rel="stylesheet" href="CSS/lightbox.css" type="text/css" media="screen" charset="utf-8" />
+        
         <script src="./jquery-1.7.1.min.js" type="text/javascript" charset="utf-8"></script>
-        <script type="text/javascript" src="scripts.js"></script>
 		<!-- end lightbox -->
-		
+
+        <!-- colorbox -->		
+        <link rel="stylesheet" href="CSS/colorbox.css" type="text/css" media="screen" charset="utf-8"/>
+
+        <script src="jquery.colorbox-min.js" type="text/javascript" charset="utf-8"></script>
+        <script type="text/javascript" src="scripts.js"></script>
+		<!-- end colorbox -->
 		<meta charset="utf-8">
 	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="stylesheet" type="text/css" href="./CSS/HTML5-style-2.css">
@@ -223,7 +229,19 @@
     <body>
 		<div id="container">
             <div id="header">
-                <h1>StarTrackr!</h1>
+                <!-- <h1>StarTrackr!</h1> -->
+                <div class="row">
+                    <div class="col-12">
+				        <header data-role="header" id="html5-style-2header" class="data"><!-- <div id="hdr"> changed to <header> -->
+				            <hgroup>  
+						        <h1 class="veryimportant heading stuff" id="html5-style-2h1">Tourorris Rural Retreats!</h1>
+						        <h2 class="heading" id="html5-style-2h2"><strong>StarTrackr!</strong></h2>
+					        </hgroup>
+					        <p>We returned to a ransacked house, even the furniture was taken.<br> Your friend,
+                            <br>Orris</p>
+				        </header>
+					</div><!-- end-col-12 -->
+                </div><!-- end-row -->
             </div>
             <div id="content">
                 <h2>Welcome!</h2>
