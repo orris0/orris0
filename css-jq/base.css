@@ -231,7 +231,7 @@ nav#html5-style-2nav li { list-style-type:none;
 /* set general side button styles */
 nav#html5-style-2nav li.btn { margin-bottom: 3px; text-align: center; width:130px;
 }
-/* set general anchor styles and include the zoom fix for IE6*/
+/* set general anchor styles and include the zoom fix for IE6*
 nav#html5-style-2nav li.btn a { display: block; color: white; font-weight: bold; text-decoration: none; zoom:1;
 }
 /* specify mouse state styles */
@@ -1969,8 +1969,10 @@ footer#gallery-pagefooter { clear:both; color:black; text-align:center; width:97
 } 
 .clear { clear:both; 
 }
+/*
 li.btn a { display:block; background-color :#66CCFF; color:black; font-weight:bold; padding:4px; margin-left:0; text-align:center; list-style-type:none; text-decoration:none; width:110px; 
 } 
+*/
 #gallery-page, li.btn a:hover { background-color:blue; color:white; 
 } 
 #gallery-page, li.btn { width:110px; 
