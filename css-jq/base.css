@@ -1600,10 +1600,6 @@ background-color:#ffc0cb; font-family:verdana; font-size:small; border:black 2px
 	text-align:center;
 }
 
-#container {
-  position: relative;
-}
-
 #menu {
   position: absolute;
   top: 0;
@@ -2284,10 +2280,6 @@ li {
   width: 400px;
 }
 
-#container {
-  position: relative;
-}
-
 #menu {
   position: absolute;
   top: 0;
@@ -2319,10 +2311,6 @@ li {
 
 #menu li:hover ul, #menu li ul:hover {
   left:auto;
-}
-
-#container {
-  position: relative;
 }
 
 #menu {
