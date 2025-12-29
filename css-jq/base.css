@@ -94,7 +94,7 @@ header, footer, section, article, nav { display:block;
 
 div {
   border: 1px solid black;
- /*  padding: 0.3em 0.5em; */
+ padding: 0.2em 0.2em;
 }
 
 #menu { 
@@ -2511,6 +2511,7 @@ li { margin: 10px; list-style-type:none;
   position: absolute;
   left: 0;
 }
+
 
 
 
