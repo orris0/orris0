@@ -1,4 +1,4 @@
-// slideshow f
+// slideshow cross fade
 $(document).ready(function() {
   rotatePics(1);
 });
@@ -20,7 +20,7 @@ function rotatePics(currentPhoto) {
 }
 
 
-// slideshow
+// slideshow fade
 $(document).ready(function(){
   slideShow();
 });
@@ -720,6 +720,7 @@ gallery.init = function() {
       gallery.slide();
     });
 }
+
 
 
 
