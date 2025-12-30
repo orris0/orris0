@@ -1,5 +1,13 @@
 @import 'https://fonts.googleapis.com/css?family=Alegreya+Sans';
 
+#photos img {
+  display: none;
+}
+
+#photos .show {
+  display: inline;
+}
+
 .box {
   position: absolute; 
   width: 50px;
@@ -250,5 +258,6 @@ img{
     padding:40px 10px;
   }
 }
+
 
 
