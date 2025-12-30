@@ -1,3 +1,11 @@
+// shuffle
+$(document).ready(function(){
+  $('#photos').cycle({
+    fx: 'shuffle'
+  });
+});
+
+
 // inner fade
 $(document).ready(function() {
   $('#news ul').innerfade({
@@ -730,6 +738,7 @@ gallery.init = function() {
       gallery.slide();
     });
 }
+
 
 
 
