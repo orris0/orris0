@@ -1,3 +1,13 @@
+// inner fade
+$(document).ready(function() {
+  $('#news ul').innerfade({
+    animationtype: 'slide',
+    speed: 750,
+    timeout: 3000,
+    type: 'random'
+  });
+});
+
 // slideshow cross fade
 $(document).ready(function() {
   rotatePics(1);
@@ -720,6 +730,7 @@ gallery.init = function() {
       gallery.slide();
     });
 }
+
 
 
 
