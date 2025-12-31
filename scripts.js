@@ -1,3 +1,14 @@
+// chapter_04/10_cycle_plugin_2/script.js
+$(document).ready(function(){
+  $('#photos').cycle({
+    fx: 'scrollDown',
+    speedIn: 2500,
+    speedOut: 500,
+    timeout: 0,
+    next: '#photos'
+  });
+});
+
 
 // chapter_04/09_cycle_plugin/script.js
 $(document).ready(function(){
@@ -758,6 +769,7 @@ gallery.init = function() {
       gallery.slide();
     });
 }
+
 
 
 
