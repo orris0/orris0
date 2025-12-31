@@ -1,4 +1,13 @@
 
+// chapter_04/09_cycle_plugin/script.js
+$(document).ready(function(){
+  $('#photos').cycle({
+    fx: 'shuffle'
+  });
+});
+
+
+
 // thumb nail
 $(document).ready(function() {
 	$('#photos_inner').toggle(function() {
@@ -749,6 +758,7 @@ gallery.init = function() {
       gallery.slide();
     });
 }
+
 
 
 
