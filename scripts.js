@@ -1,3 +1,13 @@
+// chapter_04/11_thumbnail_scroller/script.js
+$(document).ready(function() {
+	$('#photos_inner').toggle(function() {
+		var scrollAmount = $(this).width() - $(this).parent().width();
+		$(this).animate({'left':'-=' + scrollAmount}, 'slow');
+	}, function() {
+		$(this).animate({'left':'0'}, 'slow');
+	});
+});
+
 // chapter_04/10_cycle_plugin_2/script.js
 $(document).ready(function(){
   $('#photos').cycle({
@@ -769,6 +779,7 @@ gallery.init = function() {
       gallery.slide();
     });
 }
+
 
 
 
