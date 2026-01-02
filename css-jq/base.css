@@ -69,8 +69,9 @@
 	height: 7px !important;
 	border: 1px #eee solid;
 	background-color: #333;
+  /*
 	*width: 9px;
-	*height: 9px;
+	*height: 9px; */
 }
 
 .jcrop-tracker { width: 100%; height: 100%; }
@@ -84,8 +85,10 @@
 {
 	border-color: black;
 	background-color: #C7BB00;
+  /*
 	-moz-border-radius: 3px;
 	-webkit-border-radius: 3px;
+  */
 }
 
 #navigation {
