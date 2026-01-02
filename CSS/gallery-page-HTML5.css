@@ -21,11 +21,12 @@ body { background:#FFF url(images/green-grad.jpg) repeat-x; margin:auto;
 header, footer, section, article, nav { display:block;
 }
 /*remove the # from #header*
-header#gallerypageheader.data {width:95%; height:180px; padding:0; border:10px white solid; background: url(../../orris0/bda-20.jpg); margin:10px auto; background-position: bottom; /* Adjust as needed */
-  background-repeat: no-repeat; margin:10px auto;
+header#gallerypageheader.data {width:95%; height:180px; padding:0; border:10px white solid; background: url(../../orris0/bda-20.jpg); margin:10px auto; background-position: bottom; /* Adjust as needed *
+  background-repeat: no-repeat; margin: 10px auto;
 }
-h1#gallerypage-h1 { font-size:300%; color :white; /* position: relative; left:90px; top: 15px; width:5500px; */
+h1#gallerypage-h1 { font-size:300%; color :white; /* position: relative; left:90px; top: 15px; width:5500px; *
 }
+ */
 div#rosette { position:relative; left:750px; top:5px;
 }
 div#gallerypagecontent { background-color:transparent; border-left:10px white solid; border-right:10px white solid; border-bottom:10px white solid; width: 904px; margin-top: -10px; margin-left:auto; margin-right:auto; padding:8px; font-size:medium; color:maroon;
