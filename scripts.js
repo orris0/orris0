@@ -39,7 +39,11 @@ case FileError.PATH_EXISTS_ERR:
 msg += 'File or directory already exists at specified path';
 break;
 default:
-
+msg += 'Unknown Error';
+break;
+};
+console.log(msg);
+}
 
 
 
@@ -904,6 +908,7 @@ gallery.init = function() {
       gallery.slide();
     });
 }
+
 
 
 
