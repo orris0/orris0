@@ -1,3 +1,18 @@
+// Example 3-1. Requesting a filesystem temporary storage
+var onError = function(fs) {
+console.log('There was an error');
+};
+var onFS = function(fs) {
+console.log('Opened filesystem: ' + fs.name);
+};
+window.requestFileSystem(window.TEMPORARY, 5*1024*1024 /*5MB*/, onFs, onError);
+
+
+
+
+
+
+
 // chapter_04/15_iphoto_style_slideshow/script.js
 $(document).ready(function(){
   gallery.trigger = $("#photos .trigger");
@@ -835,6 +850,7 @@ gallery.init = function() {
       gallery.slide();
     });
 }
+
 
 
 
