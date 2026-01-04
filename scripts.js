@@ -1,3 +1,12 @@
+// Example 3-2. Requesting a filesystem with persistent storage
+const SIZE = 5*1024*1024; /*5MB*/
+const TYPE = PERSISTENT;
+window.webkitStorageInfo.requestQuota(TYPE, SIZE, function(grantedBytes) {
+window.requestFileSystem(TYPE, grantedBytes, onFs, onError);
+}, function(e) {
+console.log('Error', e);
+});
+
 // Example 3-1. Requesting a filesystem temporary storage
 var onError = function(fs) {
 console.log('There was an error');
@@ -850,6 +859,7 @@ gallery.init = function() {
       gallery.slide();
     });
 }
+
 
 
 
