@@ -45,6 +45,20 @@ break;
 console.log(msg);
 }
 
+FileError.prototype.__defineGetter__('name', function() {
+var keys = Object.keys(FileError);
+for (var i = 0, key; key = keys[i]; ++i) {
+if (FileError[key] == this.code) {
+return key;
+}
+}
+return 'Unknown Error';
+});
+function onError(err) {
+console.log(err.name);
+// e.g., 'QUOTA_EXCEEDED_ERR', 'NOT_READABLE_ERR', etc.
+}
+
 
 
 // Example 3-2. Requesting a filesystem with persistent storage
@@ -908,6 +922,7 @@ gallery.init = function() {
       gallery.slide();
     });
 }
+
 
 
 
