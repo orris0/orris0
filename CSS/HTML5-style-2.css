@@ -82,6 +82,31 @@ textarea {
    ========================================================================== */
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400');
 @import url('https://fonts.googleapis.com/css?family=Raleway:300');
+
+/* Listing 2-1b. The CSS Style Sheet for Listing 2-1a (gallery-one-col.css
+reset browsers to give cross browser uniformity*/
+html, body, p, lu, li { margin:0; padding:0;
+}
+img { border:0;
+}
+/* Set general thumbnail styles */
+/*place the column on the page*/
+#col-1 { position: absolute; top: 0; left: 0;
+}
+/*remove bullets from the list elements*/
+li { margin: 10px; list-style-type:none;
+}
+/* MouseOut state (default) - create a space for the larger images and hide them*/
+#col-1 a img.hid { width: 260px; height:390px; position: 
+absolute; top: 10px; left: 140px; visibility: hidden;
+}
+/* MouseOver state (hover)- reveal larger image */
+#col-1 a:hover { background: white;
+}
+#col-1 a:hover img.hid { visibility:visible;
+}
+
+
 .thermometer-widget {
   margin: auto;
   position: relative;
@@ -4512,6 +4537,7 @@ footer#html5style2footer {
 }
 
 https://www.reddit.com/r/VISITDURBAN/comments/1q2745h/why_i_started_visit_durban_from_new_yorkusa/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button
+
 
 
 
