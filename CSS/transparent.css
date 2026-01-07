@@ -1,4 +1,4 @@
-/*equalise all the margins, paddings and borders built into various browsers*/  
+q/*equalise all the margins, paddings and borders built into various browsers*/  
 div body header #content { margin:0; padding:0; border:0; 
 }
 body { background:#fff url(images/green-grad.jpg) repeat-x; margin:auto; box-shadow: 0 0 0 10px #665;
@@ -14,8 +14,8 @@ h1 { font-size:300%; color :white; position: relative; left:90px; top: 55px; wid
 #rosette { position:relative; left:750px; top:5px; }
 
 
-#content { background-color:transparent; border-left:0px; border-right:10px #665; 
-border-bottom:10px #665; outline: 15px solid deeppink; width: 904px; margin-top:-10px; margin-left:auto; margin-right:auto; padding:8px; font-size:medium; color:maroon; 
+#content { background-color:transparent; border-left:10px solid hsla(0, 0%,100%,.5); border-right:10px solid hsla(0, 0%,100%,.5); 
+border-bottom:10px solid hsla(0, 0%,100%,.5);; outline: 15px solid deeppink; width: 904px; margin-top:-10px; margin-left:auto; margin-right:auto; padding:8px; font-size:medium; color:maroon; 
 }
 h2 { font-size:x-large; color:white; margin:0 0 10px 
 }
