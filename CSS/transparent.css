@@ -15,7 +15,7 @@ h1 { font-size:300%; color :white; position: relative; left:90px; top: 55px; wid
 
 
 #content { background-color:transparent; border-left:0px; border-right:10px #665; 
-border-bottom:10px #665; width: 904px; margin-top:-10px; margin-left:auto; margin-right:auto; padding:8px; font-size:medium; color:maroon; 
+border-bottom:10px #665; outline: 15px solid deeppink; width: 904px; margin-top:-10px; margin-left:auto; margin-right:auto; padding:8px; font-size:medium; color:maroon; 
 }
 h2 { font-size:x-large; color:white; margin:0 0 10px 
 }
