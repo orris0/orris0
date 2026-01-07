@@ -1,7 +1,7 @@
 /*equalise all the margins, paddings and borders built into various browsers*/  
 div body header #content { margin:0; padding:0; border:0; 
 }
-body { background:yellowgreen url(images/green-grad.jpg) repeat-x; margin:auto; box-shadow: 0 0 0 10px #665;
+body { background:#fff url(images/green-grad.jpg) repeat-x; margin:auto; box-shadow: 0 0 0 10px #665;
 }
 /*add display attributes for the semantic tags*/
 header, footer, section, article, nav { display:block; 
@@ -14,10 +14,10 @@ h1 { font-size:300%; color :white; position: relative; left:90px; top: 55px; wid
 #rosette { position:relative; left:750px; top:5px; }
 
 
-#content { background-color:transparent; border-left:10px white solid; border-right:10px white solid; 
-border-bottom:10px white solid; width: 904px; margin-top:-10px; margin-left:auto; margin-right:auto; padding:8px; font-size:medium; color:maroon; 
+#content { background-color:transparent; border-left:0px; border-right:10px #665; 
+border-bottom:10px #665; width: 904px; margin-top:-10px; margin-left:auto; margin-right:auto; padding:8px; font-size:medium; color:maroon; 
 }
-h2 { font-size:x-large; color:white; margin:0 0 10px 0; 
+h2 { font-size:x-large; color:white; margin:0 0 10px 
 }
 h3 { font-size:large; color:white; margin:0 0 6px 0; 
 }
