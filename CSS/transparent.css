@@ -1,7 +1,7 @@
 /*equalise all the margins, paddings and borders built into various browsers*/  
 div body header #content { margin:0; padding:0; border:0; 
 }
-body { background:#FFF url(images/green-grad.jpg) repeat-x; margin:auto;
+body { background:yellowgreen url(images/green-grad.jpg) repeat-x; margin:auto; box-shadow: 0 0 0 10px #665
 }
 /*add display attributes for the semantic tags*/
 header, footer, section, article, nav { display:block; 
