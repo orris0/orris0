@@ -11,7 +11,7 @@ header {width:920px; height:180px; padding:0; border:10px solid hsla(0, 0%,100%,
 }
 h1 { font-size:300%; color :white; position: relative; left:90px; top: 0px; width:650px; 
 }
-#rosette { position:relative; left:400px; top:10px; }
+#rosette { position:relative; left:800px; top:10px; }
 
 
 #content { background-color:transparent; border-left:10px solid hsla(0, 0%,100%,.5); border-right:10px solid hsla(0, 0%,100%,.5); 
