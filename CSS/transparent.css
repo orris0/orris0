@@ -7,7 +7,7 @@ body { background:#fff url(images/green-grad.jpg) repeat-x; margin:auto; box-sha
 header, footer, section, article, nav { display:block; 
 }
 header {width:920px; height:180px; padding:0; border:10px solid hsla(0, 0%,100%,.5); 
-  background: url(CSS/images/header3.jpg); margin:10px auto; 
+  background: url(/CSS/images/header3.jpg); margin:10px auto; 
 }
 h1 { font-size:300%; color :white; position: relative; left:90px; top: 55px; width:480px; 
 }
