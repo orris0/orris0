@@ -4146,7 +4146,7 @@ nav ul { margin-left:0; border:0; width:115px;
 #gallery-block { position:relative; left: 30px; top:-10px;
 }
 /*set footer*/
-footer { margin-left: 9.5em; clear:both; color:black; text-align:center; width:970px;
+footer { clear:both; color:black; text-align:center;
 }
 .clear { clear:both;
 }
