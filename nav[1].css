@@ -17,7 +17,7 @@ body {
 
 #nav {
   position: relative;
- /*  padding: .3em .8em;
+  padding: .3em .8em;
   border: 1px solid rgba(0,0,0,.1);
   background: #58a linear-gradient(hsla(0,0%,100%,.2),transparent);
   border-radius: .2em;
@@ -27,7 +27,7 @@ body {
   font-size: 125%;
   line-height: 1.5;
   border-width: 10px;
-  border-left-width: 0px; */
+  border-left-width: 0px;
 }
 
 #nav ul {
