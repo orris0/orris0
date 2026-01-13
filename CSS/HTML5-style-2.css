@@ -162,9 +162,12 @@ br.clear { clear:both;
 #midcol img { margin-left:10px;
 }
 /*change #footer to footer */
+footer {display:block; border-top: 1px solid orange; margin: 10px;clear:both; color:maroon; text-align:center;font-family: "Trebuchet MS", Arial, Helvetica, sans-serif; font-weight: bold;}
+article {display:block; font-family: Georgia, "Times New Roman", Times, serif; margin: 5px;}
+/*change #footer to footer 
 footer { clear:both; color:maroon; text-align:center;
 }
-
+*/
 
 .thermometer-widget {
   margin: auto;
@@ -499,12 +502,14 @@ br.clear {
 #html5-ch1-7midcol.data img {
   margin-top: 10px;
 }
-
+/*
 footer#html5style2.data {
   clear: both;
   color: maroon;
   text-align: center;
 } 
+*/
+footer#html5style2.data {display:block; border-top: 1px solid orange; margin: 10px;clear:both; color:maroon; text-align:center;font-family: "Trebuchet MS", Arial, Helvetica, sans-serif; font-weight: bold;}
 
 #overlay {
   position: fixed;
@@ -589,7 +594,7 @@ br.clear { clear:both;
 #html5style2midcol img { margin-left:10px;
 }
 /*change #footer to footer */
-footer { clear:both; color:maroon; text-align:center;
+footer#html5style2.data {display:block; border-top: 1px solid orange; margin: 10px;clear:both; color:maroon; text-align:center;font-family: "Trebuchet MS", Arial, Helvetica, sans-serif; font-weight: bold;}
 }
 
 
@@ -861,7 +866,7 @@ br.clear { clear:both;
 }
 #html5style2midcol img { margin-left:10px; 
 }
-footer { clear:both; color:maroon; text-align:center; 
+footer#html5style2.data {display:block; border-top: 1px solid orange; margin: 10px;clear:both; color:maroon; text-align:center;font-family: "Trebuchet MS", Arial, Helvetica, sans-serif; font-weight: bold;} 
 }
 /*
 Listing 4-1b. Applying the display:inline-block; Style to the Second Row of Buttons (inline-block.css)
@@ -1009,6 +1014,7 @@ div#html5style2 img { margin-left:10px;
 }
 div#html5style2footer { clear:both; color:maroon; text-align:center; 
 }
+footer#html5style2.data {display:block; border-top: 1px solid orange; margin: 10px;clear:both; color:maroon; text-align:center;font-family: "Trebuchet MS", Arial, Helvetica, sans-serif; font-weight: bold;}
 
 
 /* Listing 1-7b. The Revised CSS Sheet for Figure 1-7 (html5-style-2.css)
@@ -4593,6 +4599,7 @@ footer#html5style2footer {
 }
 
 /* https://www.reddit.com/r/VISITDURBAN/comments/1q2745h/why_i_started_visit_durban_from_new_yorkusa/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button */
+
 
 
 
