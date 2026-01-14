@@ -1,13 +1,116 @@
-﻿/*set attributes for consistent appearance in all browsers*/
-html, p, ul, li, h1, h2 {	margin:0; padding:0; 
+/* Listing 2-6b. The CSS Style Sheet for Listing 2-6a (gallery-page.css) */
+/*set attributes for consistent appearance in all browsers*/
+html, body, p, ul, li, h1, h2 { margin:0; padding:0;
 }
 /*set images to have no borders*/
-img { 	border:0;
+img {
+border:0;
 }
 /*add display attributes for the semantic tags*/
-header, footer, section, article, nav { display:block; 
+header, footer, section, article, nav { display:block;
 }
 /*SET FONTS*/
+span.small { font-size:small;
+}
+h1 { font-size:x-large; font-family:"times new roman"; text-align:center;
+}
+h2 {font-size:large; font-family:"times new roman"; text-align:center;
+}
+/*PAGE LAYOUT*/
+body {margin:auto; width:970px;
+}
+header { width:970px;
+}
+nav { float:left; margin-left:10px; width:115px;
+}
+nav ul { margin-left:0; border:0; width:115px;
+}
+/*set far right column for ads*/
+#rightcol { width:150px; float:right; text-align:center;
+}
+#rightcol p.advert {font-size:small; margin-top:190px;
+}
+/*set middle column for main content*/
+#midcol { margin-left:135px; margin-right:155px;
+}
+/*set gallery block position*/
+#gallery-block { position:relative; left: 30px; top:10px;
+}
+/*set footer*/
+footer { clear:both; color:black; text-align:center; width:970px;
+}
+.clear { clear:both;
+}
+/* 51CHAPTER 2 ■ A ROLLOVER PICTURE GALLERY */
+/*set menu buttons*/
+li.btn a { display:block; background-color :#66CCFF; color:black; font-weight:bold; 
+padding:4px; margin-left:0; text-align:center; list-style-type:none; 
+text-decoration:none; width:110px;
+}
+li.btn a:hover { background-color:blue; color:white;
+}
+li.btn { width:110px;
+}
+/*SET THUMBNAIL GALLERY BLOCK*/
+/* Set general thumbnail styles */
+#col-1 { position: absolute; top: 0; left: 0; width:85px;
+}
+/*place the first column on the page*/
+li { margin: 5px; list-style-type:none;
+}
+/*remove bullets from the un-ordered list elements and create the 
+MouseOut state (default) - create and position a space for the larger images and 
+hide them*/
+#col-1 a img.hid { width: 260px; height:390px; position: 
+absolute; top: 10px; left: 330px; visibility: hidden;
+}
+/* MouseOver state (hover)- this reveals larger picture */
+#col-1 a:hover { background: white; }
+#col-1 a:hover img.hid { visibility:visible;
+}
+/*----------------------------------------------------*/
+/* set 2nd column of thumbnails 85px further over to right*/
+#col-2 { position: absolute; top: 0; left: 85px; width:85px;
+}
+li { margin: 5px; list-style-type:none;
+}
+/* MouseOut state (default) - hide larger picture */
+#col-2 a img.hid { width: 260px; height:390px; 
+position: absolute; top: 10px; left: 245px; margin-left:0;visibility: hidden;
+}
+/* MouseOver state (hover)- reveal larger picture */
+#col-2 a:hover { background: white; }
+#col-2 a:hover img.hid { visibility:visible; }
+/*----------------------------------------------------*/
+/* set 3rd column of thumbnails 170px further over to right*/
+#col-3 { position: absolute; top: 0; left: 175px; width:95px; }
+li { margin: 5px; list-style-type:none;
+}
+/* MouseOut state (default) - hide larger picture */
+#col-3 a img.hid { width: 260px; height:390px; 
+position: absolute; top: 10px; left: 155px; margin-left:0; visibility: hidden;
+}
+/* MouseOver state (hover)- reveal larger picture */
+#col-3a:hover { background: white;
+}
+#col-3 a:hover img.hid { visibility:visible;
+}
+
+
+
+
+
+
+/*set attributes for consistent appearance in all browsers*
+html, p, ul, li, h1, h2 {	margin:0; padding:0; 
+}
+/*set images to have no borders*
+img { 	border:0;
+
+/*add display attributes for the semantic tags*
+header, footer, section, article, nav { display:block; 
+}
+/*SET FONTS*
 span.small { font-size:small;
 }
 #banner h1 { 
@@ -17,7 +120,7 @@ span.small { font-size:small;
 	text-align:center;
 	font-weight:bold; 
     text-align:center; 
-	/*padding-top:30px; */
+	/*padding-top:30px; *
 	margin-bottom:0px; 
 	height: 42px; 
 	margin:auto; 	  
@@ -33,7 +136,7 @@ h2 {font-size:75%; font-family:"times new roman"; line-height:3.4rem; text-align
 /*PAGE LAYOUT*
 body {background:#FFF url(../images/green-grad.jpg) repeat-x; margin:auto; width:970px; 
 }
-*/
+*
 header {
 	width:970px;height:180px;border:10px solid white ; margin:10px auto; color:black; background-position:35% bottom; background-image:url('../orris0/bda-20.jpg'); background-repeat:no-repeat;
 }
@@ -42,7 +145,7 @@ nav { float:left; margin-left:10px; width:115px;
 }
 nav ul { margin-left:0; border:0; width:115px;
 }
-*/
+*
 nav { width:140px;
 }
 nav ul { width: 145px; float:left;margin-left:0; 
@@ -52,14 +155,14 @@ nav li { margin-bottom: 1px; text-align: center; list-style:none; padding-bottom
 nav li a { display: block; color: yellow; font-weight: bold;
 text-decoration: none; zoom:1; 
 }
-/* mouseout (default) */
+/* mouseout (default) *
 nav li a { background: #946055;  border: 4px outset #c96e6b;
 }
 nav li a:hover { background: #9f7562; color:white;  border: 4px outset #c96e6b;
 }
 nav li a:active { background:#aecbff;  border: 4px inset #aecbff; 
 }
-/* set general inset button styles */
+/* set general inset button styles *
 nav li.insetbtn { border:none;
 }
 nav li.insetbtn a { display: block; color:orange; font-weight: bold;
@@ -67,23 +170,23 @@ text-decoration: none; cursor:default; margin-bottom: 0; text-align: center; lis
 padding-bottom:3px; background:#744035; border-top: 4px #5e2100 solid;
 border-left: 4px #5e2100 solid; border-right:3px #bfa5a2 solid; border-bottom:3px #bfa5a2 solid;
 }
-/*set far right column for ads*/
+/*set far right column for ads*
 #rightcol { width:250px; float:right; text-align:center;	
 }
 #rightcol p.advert {font-size:small; margin-top:30px;margin-left:0px;
 } 
-/*set middle column for main content*/
+/*set middle column for main content*
 #midcol { margin-left:135px; margin-right:155px;
 }
-/*set gallery block position*/ 
+/*set gallery block position*
 #gallery-block { position:relative; left: -10.125em; top: -15em; 
 }
-/*set footer*/
+/*set footer*
 footer { 	clear:both; color:black; text-align:center; width:970px;
 }
 .clear { clear:both;
 }
-/*set menu buttons*/
+/*set menu buttons*
 li.btn a { display:block; background-color :#66CCFF; color:black; font-weight:bold; padding:4px;
 	margin-left:0; text-align:center; list-style-type:none; text-decoration:none; width:110px;
 }
