@@ -593,7 +593,7 @@ br.clear { clear:both;
 }
 #html5style2midcol img { margin-left:10px;
 }
-/*change #footer to footer */
+/*change #footer to footer *
 footer#html5style2.data {display:block; border-top: 1px solid orange; margin: 10px;clear:both; color:maroon; text-align:center;font-family: "Trebuchet MS", Arial, Helvetica, sans-serif; font-weight: bold;}
 }
 
