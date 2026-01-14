@@ -4322,8 +4322,9 @@ br.clear { 	clear:both;
 footer { clear:both; color:maroon; text-align:center; 
 }
 
-a { background: orange; color:navy;
-}*/
+a {  background:#559a55; color: white; border: 5px outset #559a55;
+padding-bottom:3px;
+}
 .inline-block a { display:inline-block; width:110px; height:30px; line-height:30px; text-align:center;
 }
 /*add display attributes for the semantic tags*
