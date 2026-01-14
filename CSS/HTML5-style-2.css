@@ -103,7 +103,7 @@ width:480px;
 }
 #content { background-color:transparent; border-left:10px white solid; border-right:10px white solid; border-bottom:10px white solid; width: 904px; margin-top:10px; margin-left:auto; margin-right:auto; padding:8px; font-size:medium; color:maroon;
 }
-h2 { font-size:x-large; color:white; margin:0 0 10px 0;
+h2 { font-size:x-large; color: black; margin:0 0 10px 0;
 }
 h3 { font-size:large; color:white; margin:0 0 6px 0;
 }
@@ -124,9 +124,10 @@ li.btn { margin-bottom: 3px; text-align: center; width:130px;
 }
 
 /* Listing 2-1b. The CSS Style Sheet for Listing 2-1a (gallery-one-col.css
-reset browsers to give cross browser uniformity*/
+reset browsers to give cross browser uniformity*
 html, body, p, lu, li { margin:0; padding:0;
 }
+*/
 img { border:0;
 }
 /* Set general thumbnail styles */
@@ -530,7 +531,7 @@ equalise for various browsers and change #header to header*/
 
 div body header #content { margin:0; padding:0; border:0;
 }
-/* set attributes for consistent appearance in all browsers */
+/* set attributes for consistent appearance in all browsers *
 html, body, p, ul, li, h1, h2 { margin:0; padding:0;
 }
 
@@ -544,10 +545,10 @@ header, footer, section, article, nav { display:block;
 h1#html5style2h1 { font-size:300%; color :white; position: relative; left:15%; top: 55px; width:480px;
 }
 
-/* Listing 3-6b. The Revised CSS for Re-positioning the Rosette (rosette.css) */
+/* Listing 3-6b. The Revised CSS for Re-positioning the Rosette (rosette.css) *
 body { background: #FFF url(images/green-grad.jpg) repeat-x; margin:auto;
 }
-
+*/
 #rosette { position:relative; left:85%; top:120px;
 }
 *
@@ -1922,6 +1923,7 @@ section {
   background-color: #aa9464;
   border-color: #fff;
 }
+/*
 h3{
   font-size:40px;
 margin-top:100px;}
@@ -4362,7 +4364,7 @@ h2 {
   color: #551616;
   margin: 5px 0 10px 0;
 }
-*/
+*
 h3 {
   font-size: 100%;
   color: white;
