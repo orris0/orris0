@@ -1,7 +1,7 @@
 /*add display attributes for the semantic tags
 header, footer, section, article, nav { display:block; }/*
 change #header to header and remove div*/
-body, #header, #content, { margin:0; padding:0; border:0; }
+body #header #content { margin:0; padding: 0; border: 0;}
 body { margin:auto; background:url(images/green-grad.jpg) repeat-x; }
 /*Insert a tag for the topmost block*/
 #container { width:940px; margin:0 auto 0 auto;}

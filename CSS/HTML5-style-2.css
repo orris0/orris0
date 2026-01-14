@@ -530,21 +530,21 @@ equalise for various browsers and change #header to header*/
 
 div body header #content { margin:0; padding:0; border:0;
 }
-/* set attributes for consistent appearance in all browsers
+/* set attributes for consistent appearance in all browsers */
 html, body, p, ul, li, h1, h2 { margin:0; padding:0;
 }
-*/
+
 /*set images to have no borders*/
 img { border:0;
 }
 /*add display attributes for the semantic tags*/
 header, footer, section, article, nav { display:block;
 }
-/*
+
 h1#html5style2h1 { font-size:300%; color :white; position: relative; left:15%; top: 55px; width:480px;
 }
 
-Listing 3-6b. The Revised CSS for Re-positioning the Rosette (rosette.css) *
+/* Listing 3-6b. The Revised CSS for Re-positioning the Rosette (rosette.css) */
 body { background: #FFF url(images/green-grad.jpg) repeat-x; margin:auto;
 }
 
@@ -554,7 +554,7 @@ body { background: #FFF url(images/green-grad.jpg) repeat-x; margin:auto;
 div#html5style2content.data { background-color:transparent; border-left:10px white solid; border-right:10px white solid; 
 border-bottom:10px white solid; width: 920px; margin-top:-26px; margin-left:auto; margin-right:auto; padding:8px; font-size:medium; color:maroon; 
 }
-*/
+
 /* ====== h2 ====== */
 h2#html5style2h2 { font-size: 100%; color: white; margin: 0 0 10px 0; 
 }
