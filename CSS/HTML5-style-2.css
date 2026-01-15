@@ -2429,7 +2429,7 @@ nav {
   clear: both; }
   */
   nav li {
-    line-height: 2;
+    line-height: 1.6;
     text-align: center; }
   nav a {
     /*
