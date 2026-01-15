@@ -363,8 +363,9 @@ header#html5style2header {width:920px; height:180px; padding:0; border:10px whit
 }
 /*
 h1 { font-size:150%; color :black; position: relative; text-align:center; top: 2px; width:480px; 
-*/
+*
 #rosette { position:relative; left:785px; top:-105px; }
+*/
 #html5style2content { background-color:transparent; border-left:10px white solid; border-right:10px white solid; 
 border-bottom:10px white solid; width: 904px; margin-top:195px; margin-left:484px; margin-right:auto; padding:8px; font-size:medium; color:maroon; 
 }
