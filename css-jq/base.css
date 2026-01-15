@@ -299,8 +299,10 @@ header#html5-style-2header {
 h1#html5-style-2h1.veryimportant.heading.stuff { font-size:100%; color:rgba(0,0,0,.5); position: relative; left:90px; top: -3px;
 width:480px;
 }
+/*
 #rosette { position:relative; left:350px; top: -10em;
 }
+ */
 #html5-style-2content { background-color:transparent; border-left:10px white solid; border-right:10px white solid; border-bottom:10px white solid; 
 					   width: 902px; margin-top: 0px; margin-left:auto; margin-right:auto; padding:8px; font-size: 100%; color:maroon;
 }
@@ -355,7 +357,7 @@ body { background:#FFF url(images/green-grad.jpg) repeat-x; margin:auto;
 /*add display attributes for the semantic tags*
 header, footer, section, article, nav { display:block; 
 }
-/*remove the # from #header*/
+/*remove the # from #header*
 header#html5style2header {width:920px; height:180px; padding:0; border:10px white solid; 
   background: url(../bda-20.jpg); background-position: bottom; margin:10px auto; 
 }
