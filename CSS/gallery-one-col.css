@@ -47,7 +47,7 @@ footer { clear:both; color:black; text-align:center; width:970px;
 
 
 /* Set general thumbnail styles */
-#col-1	{ position: absolute; top: 0; left: 0; } /*place the column on the page*/
+#col-1	{ position: absolute; top: 0; left: 50px; } /*place the column on the page*/
 li	{ margin: 10px; list-style-type:none; } /*remove bullets from the list elements*/
 img	{ border: none; } /*set images to have no borders*/ 
 
