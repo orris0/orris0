@@ -17,7 +17,7 @@ body {
 
 #nav {
   position: relative;
-  left: 38px;
+  left: 0px;
   padding: .3em .8em;
   border: 1px solid rgba(0,0,0,.1);
   background: #58a linear-gradient(hsla(0,0%,100%,.2),transparent);
