@@ -115,7 +115,7 @@ background: url(images/header3.jpg); margin:10px auto;
 h1 { font-size:300%; color:fuchsia; position: relative; left:90px; top: 5px;
 width:480px;
 }
-#rosette { position:relative; left:785px; top: 10px;
+#rosette { position:relative; left:785px; top: -90px;
 }
 #content { background-color:transparent; border-left:10px white solid;
 border-right:10px white solid; border-bottom:10px white solid; width: 904px;
@@ -4598,6 +4598,7 @@ footer#html5style2footer {
 }
 
 /* https://www.reddit.com/r/VISITDURBAN/comments/1q2745h/why_i_started_visit_durban_from_new_yorkusa/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button */
+
 
 
 
