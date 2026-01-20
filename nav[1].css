@@ -19,6 +19,7 @@ body {
   position: relative;
   left: 0px;
   padding: .3em .8em;
+  height: 70px;
   border: 1px solid rgba(0,0,0,.1);
   background: #58a linear-gradient(hsla(0,0%,100%,.2),transparent);
   border-radius: .2em;
