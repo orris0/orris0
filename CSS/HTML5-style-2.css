@@ -95,7 +95,24 @@ header, footer, section, article, nav { display:block;
 header {width:920px; height:180px; padding:0; border:10px white solid;
 background: url(images/header3.jpg); margin:10px auto;
 }
-h1 { font-size:300%; color :white; position: relative; left:90px; top: 5px;
+
+#nav {
+  position: relative;
+  left: 0px;
+  padding: .3em .8em;
+  height: 70px;
+  border: 1px solid rgba(0,0,0,.1);
+  background: #58a linear-gradient(hsla(0,0%,100%,.2),transparent);
+  border-radius: .2em;
+  box-shadow: 0 .05em .25em rgba(0,0,0,.5);
+  color: white;
+  text-shadow: 0 -.05em .05em rgba(0,0,0,.5);
+  font-size: 125%;
+  line-height: 1.5;
+  border-width: 10px;
+  border-left-width: 0px;
+}
+h1 { font-size:300%; color:fushia; position: relative; left:90px; top: 5px;
 width:480px;
 }
 #rosette { position:relative; left:785px; top: 10px;
@@ -4581,6 +4598,7 @@ footer#html5style2footer {
 }
 
 /* https://www.reddit.com/r/VISITDURBAN/comments/1q2745h/why_i_started_visit_durban_from_new_yorkusa/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button */
+
 
 
 
