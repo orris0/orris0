@@ -3,7 +3,7 @@
 img { border:none;
 }
 /*place the first column on the page*/
-#3col-mixcol-1 { position: absolute; top: 0; left: 0; width:85px;
+#col-1 { position: absolute; top: 0; left: 0; width:85px;
 }
 /*remove bullets from the list elements*/
 li { margin: 5px; list-style-type:none;
@@ -14,41 +14,41 @@ hide them*/
 400px; visibility: hidden;
 }
 /* MouseOver state (hover)- reveal larger picture */
-#3col-mixcol-1 a:hover { background: white;
+#col-1 a:hover { background: white;
 }
-#3col-mixcol-1 a:hover img.hid { visibility:visible;
+#col-1 a:hover img.hid { visibility:visible;
 }
 /*----------------------------------------------------*/
 /* Set 2nd column of thumbnails 85px further over to right*/
-#3col-mixcol-2 { position: absolute; top: 0; left: 85px; width:135px;
+#col-2 { position: absolute; top: 0; left: 85px; width:135px;
 }
 li { margin: 5px; list-style-type:none;
 }
 /* 47CHAPTER 2 ■ A ROLLOVER PICTURE GALLERY */
 /* MouseOut state (default) - hide larger picture */
-#3col-mixcol-2 a img.hid { width: 350px; height:265px; position: absolute; top: 10px; left:
+#col-2 a img.hid { width: 350px; height:265px; position: absolute; top: 10px; left:
 315px; margin-left:0;
 visibility: hidden;
 }
 /* MouseOver state (hover)- reveal larger picture */
-#3col-mixcol-2 a:hover { background: white;
+#col-2 a:hover { background: white;
 }
-#3col-mixcol-2 a:hover img.hid { visibility:visible;
+#col-2 a:hover img.hid { visibility:visible;
 }
 /*----------------------------------------------------*/
 /* Set 3rd column of thumbnails 170px further over to right*/
-#3col-mixcol-3 { position: absolute; top: 0; left: 230px; width:108px;
+#col-3 { position: absolute; top: 0; left: 230px; width:108px;
 }
 li { margin: 5px; list-style-type:none;
 }
 /* MouseOut state (default) - hide larger picture */
-#3col-mixcol-3 a img.hid { width: 260px; height:260px; position: absolute; top: 10px; left:
+#col-3 a img.hid { width: 260px; height:260px; position: absolute; top: 10px; left:
 175px; margin-left:0; visibility: hidden;
 }
 /* MouseOver state (hover)- reveal larger picture */
-#3col-mixcol-3 a:hover { background: white;
+#col-3 a:hover { background: white;
 }
-#3col-mixcol-3 a:hover img.hid { visibility:visible;
+#col-3 a:hover img.hid { visibility:visible;
 }
 
 
