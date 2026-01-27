@@ -1753,20 +1753,8 @@ p, ul, ol {
   background-image: url("img/logo-white.png");
   background-repeat: no-repeat; }
 
-html, body {
-  -webkit-text-size-adjust: 100%; }
-/*
-html, body {
-  width: 100%; }
-
-  @media screen and (min-height: 37.5em) {
-    html, body {
-      height: 100%; } }
-*/
 .js .home {
   background: #000000; }
-
-
 
 .js .menu-btn {
   font-size: 18px;
@@ -3375,9 +3363,6 @@ footer:before, footer:after, .footer-inner:before, .footer-inner:after {
 .lt-ie9 .full-page {
 	height: 700px;
 }
-
-body {
-  overflow-x: hidden; }
 
 @media print {
   * {
