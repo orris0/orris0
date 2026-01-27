@@ -133,7 +133,7 @@ h3 { font-size:100%; color:white; margin:0 0 6px 0;
 vertical-align:top;
 }
 /*set nav block position and width and remove the #menu item*/
-nav ul { margin:50px 0 10px 0; width:135px; float:right;
+nav ul { margin:22px 0 10px 0; width:135px; float:right;
 }
 /*Set un-ordered list style within the menu block only. This removes bullets*/
 nav li { list-style-type:none;
