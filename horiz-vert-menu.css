@@ -41,7 +41,7 @@ height:42px;
 #hnav li a {text-decoration:none; color:white; font-weight:bold; width:120px; padding:5px; text-align:center; 
 }
 /*mouseOut state (default)*/
-#hnav li a { background: #1A9CE0; border: 4px outset #AABAFF; text-align:center; margin-right:5px;
+#hnav li a { position: relative; top: 90px; background: #1A9CE0; border: 4px outset #AABAFF; text-align:center; margin-right:5px;
 }
 /* mouseover */
 #hnav li a:hover { background: #0A4ADF;   border: 4px outset #8ABAFF; width:120px; 
