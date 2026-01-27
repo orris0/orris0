@@ -163,10 +163,6 @@ br.clear { clear:both;
 }
 #midcol img { margin-left:10px;
 }
-/*change #footer to footer */
-footer { clear:both; color:maroon; text-align:center;
-} 
-
 .thermometer-widget {
   margin: auto;
   position: relative;
