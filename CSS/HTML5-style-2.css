@@ -114,11 +114,13 @@ width:480px;
 }
 #rosette { position:relative; left:785px; top: 80px;
 }
+/*
 #content { background-color:transparent; border-left:10px white solid;
 border-right:10px white solid; border-bottom:10px white solid; width: 904px;
 margin-top:-112px; margin-left:auto; margin-right:auto; padding:8px;
 font-size:100%; color:maroon;
 }
+*/
 h2 { font-size:x-large; color:inherit; margin:0 0 10px 0;
 }
 h3 { font-size:100%; color:white; margin:0 0 6px 0;
