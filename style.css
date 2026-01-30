@@ -1563,13 +1563,13 @@ Version: 		4.0
 Author: 		Elliot Jay Stocks & Keir Whitaker
 Author URI: 	http://viewportindustries.com
 Tags: 			starkers, naked, clean, basic
-*/
+
 html {
   font-size: 16px;
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%; }
 
-
+*/
 
 @-ms-viewport {
   width: device-width; }
