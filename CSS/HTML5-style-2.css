@@ -109,9 +109,7 @@ background: url(images/header3.jpg); margin:10px auto;
   border-width: 10px;
   border-left-width: 0px;
 }
-h1 { font-size:300%; color:fuchsia; position: relative; left:90px; top: -20px;
-width:480px;
-}
+
 #rosette { position:relative; left:785px; top: 80px;
 }
 /*
