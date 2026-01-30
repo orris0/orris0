@@ -16,16 +16,16 @@ body {
 p {
 	padding: 5px;
 }
-
+/*
 a {
 	color: #3687AF;
 }
-
+/*
 #header{
 	height: 23.6%;
 	color: #172322;
   /*	background: transparent url(../images/header-corners.png) no-repeat bottom left; */
-}
+
 
 #header h1
 {
