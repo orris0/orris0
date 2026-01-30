@@ -1609,16 +1609,17 @@ nav {
   nav li {
     line-height: 1.1;
     text-align: center; }
+    /*
   nav a {
     /*
     font-size: 20px;
     font-size: 1.25rem;
-    */
+    
     color: #fff;
     display: block;
     font-family: 'Josefin Sans',sans-serif;
     text-decoration: none;
-    
+    */
   @media screen and (max-width: 62.4375em) {
     .js nav {
       float: right;
