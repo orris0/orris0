@@ -25,8 +25,7 @@ header, nav, footer, article section { display:block;
 }
 header#html5-style-2header { width:95%; max-width:1024px; min-width:900px; height:180px; padding:0; border:10px white solid; background:url(../header3.jpg); margin:20px auto;
 }
-h1 { font-size: 100%; color :white; position: absolute; left:15%; top: 55px; width: 480px;
-}
+
 #rosette { position:relative; left:85%; top:120px;
 }
 
