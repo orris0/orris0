@@ -84,14 +84,6 @@ body {
 }
 @media (min-width: 48em) {
   #nav input.trigger:checked ~ ul, #nav input.trigger:checked ~ ul li ul {
-    /* older flexbox */
-    display: -webkit-box;
-    display: -moz-box;
-    display: box;
-    -webkit-box-orient: horizontal;
-    -moz-box-orient: horizontal;
-    box-orient: horizontal;
-    /* newer flexbox */
     display: flex;
     flex-direction: row;
   }
