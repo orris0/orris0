@@ -23,7 +23,7 @@
  * https://twitter.com/miketaylr/status/12228805301
  *
  * Customize the background color to match your design.
-  === */
+  === *
 
 ::-moz-selection {
   background: #b3d4fc;
@@ -35,7 +35,7 @@
   text-shadow: none;
 }
 
-/*
+*
  * A better looking default horizontal rule */
  
 
@@ -92,7 +92,7 @@ div body header #content { margin:0; padding:0; border:0;
 header {width:920px; height:180px; padding:0; border:10px white solid;
 background: url(images/header3.jpg); margin:10px auto;
 }
-
+/*
 #nav {
   position: relative;
   left: 0px;
@@ -109,7 +109,7 @@ background: url(images/header3.jpg); margin:10px auto;
   border-width: 10px;
   border-left-width: 0px;
 }
-
+*/
 #rosette { position:relative; left:785px; top: 80px;
 }
 /*
