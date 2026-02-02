@@ -3149,11 +3149,11 @@ footer:before, footer:after, .footer-inner:before, .footer-inner:after {
 .lt-ie9 .full-page {
 	height: 700px;
 }
-
+/*
 body {
   min-width: 260px;
   overflow-x: hidden; }
-
+*/
 @media print {
   * {
     background: transparent !important;
