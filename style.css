@@ -586,10 +586,10 @@ br.clear { clear:both;
 footer { clear:both; color: white; text-align:center;
 }
 
-/* Set styles to equalise the browser rendition*/
+/* Set styles to equalise the browser rendition*
 html, h1, h2, h3, h4, h5, p, ol, ul, li { padding: 0; margin: 0;
 }
-
+*/
 #photos {
   border: 1px solid #BEBEBE;
   height: 400px;
