@@ -13,7 +13,7 @@ body {
     padding: 0;
   }
 }
-/* needed for checkbox hack */
+/* needed for checkbox hack *
 
 #nav {
   position: relative;
@@ -43,7 +43,7 @@ body {
   text-shadow: 0 -.05em .05em rgba(0,0,0,.5);
   font-size: 125%;
   line-height: 1.5;
-  */
+  *
   display: none;
   width: 100%;
   list-style: none;
