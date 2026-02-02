@@ -18,14 +18,14 @@ header#html5-style-2header {
 h1 {
   font-size: 200%; color: white; position: relative; left: 90px; top: -25px; width: 600px;
 }
-*/
+*
 body { background: #FFF url(images/green-grad.jpg) repeat-x; margin:auto;
 }
 header, nav, footer, article section { display:block;
 }
 header#html5-style-2header { width:95%; max-width:1024px; min-width:900px; height:180px; padding:0; border:10px white solid; background:url(../header3.jpg); margin:20px auto;
 }
-
+*/
 main {
  clear: left;
  margin-top: 1rem;
