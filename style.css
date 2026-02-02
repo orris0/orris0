@@ -1875,6 +1875,7 @@ nav {
     nav ul {
       background: transparent;
       padding-top: 0; }
+      /*
     nav li {
       float: left;
       display: block;
@@ -1882,6 +1883,7 @@ nav {
       border-color: rgba(249, 249, 249, 0.4);
       line-height: 4.5;
       width: 16.66826%; }
+      */
       nav li:first-child {
         border-left: 1px solid #F9F9F9;
         border-color: rgba(249, 249, 249, 0.4); }
