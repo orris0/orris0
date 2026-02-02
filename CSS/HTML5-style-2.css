@@ -92,19 +92,18 @@ div body header #content { margin:0; padding:0; border:0;
 header {width:920px; height:180px; padding:0; border:10px white solid;
 background: url(images/header3.jpg); margin:10px auto;
 }
-/*
+
 #nav {
   position: relative;
-  left: 0px;
   padding: .3em .8em;
-  height: 70px;
+  height: 9em;
   border: 1px solid rgba(0,0,0,.1);
   background: #58a linear-gradient(hsla(0,0%,100%,.2),transparent);
-  border-radius: .2em;
+  
   box-shadow: 0 .05em .25em rgba(0,0,0,.5);
   color: white;
   text-shadow: 0 -.05em .05em rgba(0,0,0,.5);
-  font-size: 125%;
+  font-size: 80%;
   line-height: 1.5;
   border-width: 10px;
   border-left-width: 0px;
@@ -1668,7 +1667,7 @@ nav {
       display: block;
       border-right: 1px solid #F9F9F9;
       border-color: rgba(249, 249, 249, 0.4);
-      line-height: 4.5;
+      line-height: 2.4;
       width: 16.66826%; }
       nav li:first-child {
         border-left: 1px solid #F9F9F9;
