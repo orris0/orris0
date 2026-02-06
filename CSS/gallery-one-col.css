@@ -21,7 +21,7 @@ h2 {font-size:150%; font-family:"times new roman"; text-align:center;
 /*PAGE LAYOUT*/
 body {margin:auto; width:970px;
 }
-header#gallery-one-colheader { width:970px;
+header#gallery-one-colheader.data { width:970px;
 }
 nav#gallery-one-colnav { float:left; margin-left:10px; width:115px;
 }
