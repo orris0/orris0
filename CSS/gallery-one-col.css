@@ -39,7 +39,7 @@ div#gallery-one-colmidcol.data { margin-left:135px; margin-right:155px;
 div#gallery-one-colgallery-block.data { position:relative; left: 90px; top:30px;
 }
 /*set footer*/
-footer.data#gallery-one-colfooter.data { clear:both; color:black; text-align:center; width:970px;
+footer#gallery-one-colfooter.data { clear:both; color:black; text-align:center; width:970px;
 }
 .clear { clear:both;
 }
