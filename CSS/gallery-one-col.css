@@ -23,23 +23,23 @@ body {margin:auto; width:970px;
 }
 header#gallery-one-colheader.data { width:970px;
 }
-nav#gallery-one-colnav { float:left; margin-left:10px; width:115px;
+nav#gallery-one-colnav.data { float:left; margin-left:10px; width:115px;
 }
-nav#gallery-one-colnav ul { margin-left:0; border:0; width:115px;
+nav#gallery-one-colnav.data ul { margin-left:0; border:0; width:115px;
 }
 /*set far right column for ads*/
-div#gallery-one-colrightcol { width:150px; float:right; text-align:center;
+div#gallery-one-colrightcol.data { width:150px; float:right; text-align:center;
 }
-div#gallery-one-colrightcol p.advert {font-size:small; margin-top:190px;
+div#gallery-one-colrightcol.data p.advert {font-size:small; margin-top:190px;
 }
 /*set middle column for main content*/
-div#gallery-one-colmidcol { margin-left:135px; margin-right:155px;
+div#gallery-one-colmidcol.data { margin-left:135px; margin-right:155px;
 }
 /*set gallery block position*/
-div#gallery-one-colgallery-block { position:relative; left: 90px; top:30px;
+div#gallery-one-colgallery-block.data { position:relative; left: 90px; top:30px;
 }
 /*set footer*/
-footer.data#gallery-one-colfooter { clear:both; color:black; text-align:center; width:970px;
+footer.data#gallery-one-colfooter.data { clear:both; color:black; text-align:center; width:970px;
 }
 .clear { clear:both;
 }
