@@ -62,28 +62,28 @@ img	{ border: none; } /*set images to have no borders*/
 #col-1 a:hover img.hid { visibility:visible; }
 
 
-
+/*
 @import 'https://fonts.googleapis.com/css?family=Alegreya+Sans';
 /* Listing 2-6b provides the CSS presentation instructions for a 3 column gallery set in a real world page.
 Listing 2-6b. The CSS Style Sheet for Listing 2-6a (gallery-page.css) */
-/*set attributes for consistent appearance in all browsers*/
+/*set attributes for consistent appearance in all browsers*
 html, body, p, ul, li, h1, h2 { margin:0; padding:0;
 }
-/*set images to have no borders*/
+/*set images to have no borders*
 img {
 border:0;
 }
-/*add display attributes for the semantic tags*/
+/*add display attributes for the semantic tags*
 header, footer, section, article, nav { display:block;
 }
-/*SET FONTS*/
+/*SET FONTS*
 span.small { font-size:small;
 }
 h1 { font-size:x-large; font-family:"times new roman"; text-align:center;
 }
 h2 {font-size:large; font-family:"times new roman"; text-align:center;
 }
-/*PAGE LAYOUT*/
+/*PAGE LAYOUT*
 body {margin:auto; width:970px;
 }
 header { width:970px;
@@ -92,18 +92,18 @@ nav { float:left; margin-left:10px; width:115px;
 }
 nav ul { margin-left:0; border:0; width:115px;
 }
-/*set far right column for ads*/
+/*set far right column for ads*
 #rightcol { width:150px; float:right; text-align:center;
 }
 #rightcol p.advert {font-size:small; margin-top:190px;
 }
-/*set middle column for main content*/
+/*set middle column for main content*
 #midcol { margin-left:135px; margin-right:155px;
 }
-/*set gallery block position*/
+/*set gallery block position*
 #gallery-block { position:relative; left: 30px; top:10px;
 }
-/*set footer*/
+/*set footer*
 footer { clear:both; color:black; text-align:center; width:970px;
 }
 .clear { clear:both;
@@ -184,7 +184,7 @@ header#gallerypageheader.data {width:95%; height:180px; padding:0; border:10px w
 }
 h1#gallerypage-h1 { font-size:300%; color :white; /* position: relative; left:90px; top: 15px; width:5500px; *
 }
- */
+ *
 div#rosette { position:relative; left:750px; top:5px;
 }
 div#gallerypagecontent { background-color:transparent; border-left:10px white solid; border-right:10px white solid; border-bottom:10px white solid; width: 904px; margin-top: -10px; margin-left:auto; margin-right:auto; padding:8px; font-size:medium; color:maroon;
@@ -200,7 +200,7 @@ div#gallerypagerightcol { width: 135px; float:right; height: 252px; margin-right
 div#gallerypagemidcol { margin-left:315px; margin-right:145px; margin-top:10px; 
 vertical-align:top;
 }
-/*set nav block position and width and remove the #menu item*/
+/*set nav block position and width and remove the #menu item*
 nav#gallerypagenav ul { margin:10px 0 10px 0; width:135px; float:right;
 }
 /*Set un-ordered list style within the menu block only. This removes bullets*/
@@ -214,15 +214,15 @@ li.btn a { display: block; color: white; font-weight: bold;
 text-decoration: none; zoom:1;
 }
 /* specify mouse state styles */
-/* mouseout (default) */
+/* mouseout (default) *
 li.btn a { background:#559a55; color: white; border: 5px outset #559a55; 
 padding-bottom:3px;
 }
-/* mouseover */
+/* mouseover *
 li.btn a:hover { background: red; color:white; border: 5px outset red;
 }
 
-/*mouse active*/
+/*mouse active*
 li.btn a:active { background:maroon; border: 5px inset maroon;
 }
 br.clear { clear:both;
