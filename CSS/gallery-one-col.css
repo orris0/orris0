@@ -1,10 +1,10 @@
 @import 'https://fonts.googleapis.com/css?family=Alegreya+Sans';
 /* Listing 2-6b provides the CSS presentation instructions for a 3 column gallery set in a real world page.
 Listing 2-6b. The CSS Style Sheet for Listing 2-6a (gallery-page.css) */
-/*set attributes for consistent appearance in all browsers*/
+/*set attributes for consistent appearance in all browsers*
 html, body, p, ul, li, h1, h2 { margin:0; padding:0;
 }
-/*set images to have no borders*/
+set images to have no borders*/
 img {
 border:0;
 }
@@ -14,9 +14,9 @@ header, footer, section, article, nav { display:block;
 /*SET FONTS*/
 span.small { font-size:small;
 }
-h1 { font-size:large; font-family:"times new roman"; text-align:center;
+h1 { font-size:300%; font-family:"times new roman"; text-align:center;
 }
-h2 {font-size:large; font-family:"times new roman"; text-align:center;
+h2 {font-size:150%; font-family:"times new roman"; text-align:center;
 }
 /*PAGE LAYOUT*/
 body {margin:auto; width:970px;
