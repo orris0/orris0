@@ -61,53 +61,6 @@ img	{ border: none; } /*set images to have no borders*/
 #col-1 a:hover { background: white; }
 #col-1 a:hover img.hid { visibility:visible; }
 
-
-/*
-@import 'https://fonts.googleapis.com/css?family=Alegreya+Sans';
-/* Listing 2-6b provides the CSS presentation instructions for a 3 column gallery set in a real world page.
-Listing 2-6b. The CSS Style Sheet for Listing 2-6a (gallery-page.css) */
-/*set attributes for consistent appearance in all browsers*
-html, body, p, ul, li, h1, h2 { margin:0; padding:0;
-}
-/*set images to have no borders*
-img {
-border:0;
-}
-/*add display attributes for the semantic tags*
-header, footer, section, article, nav { display:block;
-}
-/*SET FONTS*
-span.small { font-size:small;
-}
-h1 { font-size:x-large; font-family:"times new roman"; text-align:center;
-}
-h2 {font-size:large; font-family:"times new roman"; text-align:center;
-}
-/*PAGE LAYOUT*
-body {margin:auto; width:970px;
-}
-header { width:970px;
-}
-nav { float:left; margin-left:10px; width:115px;
-}
-nav ul { margin-left:0; border:0; width:115px;
-}
-/*set far right column for ads*
-#rightcol { width:150px; float:right; text-align:center;
-}
-#rightcol p.advert {font-size:small; margin-top:190px;
-}
-/*set middle column for main content*
-#midcol { margin-left:135px; margin-right:155px;
-}
-/*set gallery block position*
-#gallery-block { position:relative; left: 30px; top:10px;
-}
-/*set footer*
-footer { clear:both; color:black; text-align:center; width:970px;
-}
-.clear { clear:both;
-}
 /* 51CHAPTER 2 ■ A ROLLOVER PICTURE GALLERY */
 /*set menu buttons*/
 li.btn a { display:block; background-color :#66CCFF; color:black; font-weight:bold; padding:4px; margin-left:0; text-align:center; list-style-type:none; text-decoration:none; width:110px;
