@@ -137,22 +137,22 @@ h2 {font-size:large; font-family:"times new roman"; text-align:center;
 /*PAGE LAYOUT*/
 body {margin:auto; width:970px;
 }
-header#2colheader.data { width:970px;
+header#twocolheader.data { width:970px;
 }
 nav { float:left; margin-left:10px; width:115px;
 }
 nav ul { margin-left:0; border:0; width:115px;
 }
 /*set far right column for ads*/
-#rightcol { width:150px; float:right; text-align:center;
+#twocolrightcol { width:150px; float:right; text-align:center;
 }
-#rightcol p.advert {font-size:small; margin-top:190px;
+#twocolrightcol p.advert {font-size:small; margin-top:190px;
 }
 /*set middle column for main content*/
-#midcol { margin-left:135px; margin-right:155px;
+#twocolmidcol { margin-left:135px; margin-right:155px;
 }
 /*set gallery block position*/
-#gallery-block { position:relative; left: 30px; top:10px;
+#twocolgallery-block { position:relative; left: 30px; top:10px;
 }
 /*set footer*/
 footer { clear:both; color:black; text-align:center; width:970px;
