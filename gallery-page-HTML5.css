@@ -43,9 +43,7 @@ footer { clear:both; color:black; text-align:center; width:970px;
 }
 /* 51CHAPTER 2 ■ A ROLLOVER PICTURE GALLERY */
 /*set menu buttons*/
-li.btn a { display:block; background-color :#66CCFF; color:black; font-weight:bold; 
-padding:4px; margin-left:0; text-align:center; list-style-type:none; 
-text-decoration:none; width:110px;
+li.btn a { display:block; background-color :#66CCFF; color:black; font-weight:bold; padding:4px; margin-left:0; text-align:center; list-style-type:none; text-decoration:none; width:110px;
 }
 li.btn a:hover { background-color:blue; color:white;
 }
@@ -58,11 +56,8 @@ li.btn { width:110px;
 /*place the first column on the page*/
 li { margin: 5px; list-style-type:none;
 }
-/*remove bullets from the un-ordered list elements and create the 
-MouseOut state (default) - create and position a space for the larger images and 
-hide them*/
-#col-1 a img.hid { width: 260px; height:390px; position: 
-absolute; top: 10px; left: 330px; visibility: hidden;
+/*remove bullets from the un-ordered list elements and create the MouseOut state (default) - create and position a space for the larger images and hide them*/
+#col-1 a img.hid { width: 260px; height:390px; position: absolute; top: 10px; left: 330px; visibility: hidden;
 }
 /* MouseOver state (hover)- this reveals larger picture */
 #col-1 a:hover { background: white; }
@@ -75,8 +70,7 @@ absolute; top: 10px; left: 330px; visibility: hidden;
 li { margin: 5px; list-style-type:none;
 }
 /* MouseOut state (default) - hide larger picture */
-#col-2 a img.hid { width: 260px; height:390px; 
-position: absolute; top: 10px; left: 245px; margin-left:0;visibility: hidden;
+#col-2 a img.hid { width: 260px; height:390px; position: absolute; top: 10px; left: 245px; margin-left:0;visibility: hidden;
 }
 /* MouseOver state (hover)- reveal larger picture */
 #col-2 a:hover { background: white; }
@@ -87,8 +81,7 @@ position: absolute; top: 10px; left: 245px; margin-left:0;visibility: hidden;
 li { margin: 5px; list-style-type:none;
 }
 /* MouseOut state (default) - hide larger picture */
-#col-3 a img.hid { width: 260px; height:390px; 
-position: absolute; top: 10px; left: 155px; margin-left:0; visibility: hidden;
+#col-3 a img.hid { width: 260px; height:390px; position: absolute; top: 10px; left: 155px; margin-left:0; visibility: hidden;
 }
 /* MouseOver state (hover)- reveal larger picture */
 #col-3a:hover { background: white;
