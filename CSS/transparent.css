@@ -15,7 +15,7 @@ h1 { font-size:xxx-large; color :white; position: relative; left:90px; top: 80px
 
 
 #content { background-color:transparent; border-left:10px solid hsla(0, 0%,100%,.5); border-right:10px solid hsla(0, 0%,100%,.5); 
-border-bottom:10px solid hsla(0, 0%,100%,.5); width: 904px; margin-top:-10px; margin-left:auto; margin-right:auto; padding:8px; font-size:medium; color:maroon; 
+border-bottom:10px solid hsla(0, 0%,100%,.5); width: 904px; margin-top:50px; margin-left:auto; margin-right:auto; padding:8px; font-size:medium; color:maroon; 
 }
 h2 { font-size:100%; color:white; margin:0 0 10px 
 }
