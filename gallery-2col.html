@@ -1,3 +1,246 @@
+<!doctype html>
+<html ng-app lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html"; charset="utf-8">
+    <title>Complete Gallery page</title>
+	<link rel="stylesheet" href="CSS/gallery-2col.css" type="text/css" media="screen" charset="utf-8">
+    <link rel="stylesheet" href="./CSS/base.css" type="text/css" media="screen" charset="utf-8">
+    <script src="lib/jquery-1.7.1.min.js" type="text/javascript" charset="utf-8"></script>
+    <script type="text/javascript" src="scripts.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="google-adsense-account" content="ca-pub-9639638377144073">
+    <meta property="og:title" content="A Basic HTML5 Template">
+    <meta property="og:type" content="website">
+    <meta property="og:audio:type" content="audio/mpeg">
+    <meta property="og:description" content="The abuse and mistreatment @ The BRC residential center, breaking-ground, The Travellers Hotel, The Andrews, The Kelly.">
+    <meta property="og:image" content="image.png">
+    <meta name="keywords" content="HTML5, Node.js, Jquery">
+    <meta name="author" content="Orris Baker">
+    <meta property="og:audio:type" content="audio/mpeg">
+    <link rel="icon" type="image/png" href="./flexy-logo.png">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic' rel='stylesheet' type='text/css'>
+    <!-- Favicon-->
+    <link rel="apple-touch-icon" href="./images/apple-touch-icon.png">
+    <link rel="alternate" type="application/pdf" href="MainPage.pdf">
+    <link rel="author" href="mailto:bakerorris0@gmail.comcom">
+    <!-- Bootstrap Icons-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet">
+    <!-- SimpleLightbox plugin CSS-->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.css" rel="stylesheet">
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.0/jquery.mobile-1.0.min.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--conditional Javascript added-->
+    <!--[if lte IE 8]>
+        <script src="html5.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+    <header class="data" id="gallery-one-colheader">
+        <h1>A full page roll-over gallery of greetings cards</h1>
+        <h2>Hover the mouse over a small picture to see an enlarged version</h2>
+    </header>
+    <nav class="data" id="gallery-one-colnav">
+        <ul>
+            <li class="btn"><a href="gallery-one-col.html">One-col-Gallery</a></li>
+            <li class="btn"><a href="gallery-2col.html">Two-col-Gallery</a></li>
+            <li class="btn"><a href="gallery-3col-mix.html">Three-col-Gallery</a></li>
+            <li class="btn"><a href="gallery-page-validated.html">Home Page Gallery</a></li>
+        </ul>
+    </nav>
+    <div class="data" id="gallery-one-colrightcol">
+        StarTrackr<br><br>
+        <p>
+            <a href="http://validator.w3.org/check?uri=referer"><img src="http://www.w3.org/html/logo/img/mark-word-icon.png" width="64" height="64" alt="Validated HTML5" title="Validated HTML5"></a>
+        </p>
+        <p>
+            <a href="http://jigsaw.w3.org/css-validator/"><img src="images/vcss-blue.gif" width="88" height="31" title="Valid CSS!" alt="Valid CSS!"></a>
+            <span class="small"><br><br>Markup Validated by the World Wide Web Consortium</span>
+        </p>
+        <br class="clear">
+        <p class="advert">Web Design by Orris Baker</p>
+    </div>
+    <div class="data" id="gallery-one-colmidcol">
+        <div class="data" id="gallery-one-colgallery-block">
+            <ul id="col-1">
+                <li><a hre="#"><img src="images/alithumb.jpg" alt="Ali" title="Ali"><img class="hid"
+                            src="images/alibig.jpg" alt=""></a></li>
+                <li><a href="#"><img src="images/catthumb.jpg" alt="Cat" title="Cat"><img class="hid"
+                            src="images/catbig.jpg" alt=""></a></li>
+                <li><a href="#"><img src="images/beachthumb.jpg" alt="Beach" title="Beach"><img class="hid"
+                            src="images/beachbig.jpg" alt=""></a></li>
+            </ul>
+            <!--
+                <ul id="col-2">
+                    <li><a href="#"><img src="images/fernsthumb.jpg" alt="Ferns" title="Ferns"><img class="hid" src="images/fernsbig.jpg" alt=""></a></li>
+                    <li><a href="#"><img src="images/nicothumb.jpg" alt="Nico" title="Nico"><img class="hid" src="images/nicobig.jpg" alt=""></a></li>
+                    <li><a href="#"><img src="images/childbeachthumb.jpg" alt="Child and Beach" title="Child and Beach"><img class="hid" src="images/childbeachbig.jpg" alt=""></a></li>
+                </ul>
+                <ul id="col-3">
+                    <li><a href="#"><img src="images/ancientthumb.jpg" alt="Ancient and modern" title="Ancient and Modern"><img class="hid" src="images/ancientbig.jpg" alt=""></a></li>
+                    <li><a href="#"><img src="images/felixthumb.jpg" alt="Felix" title="Felix"><img class="hid" src="images/felixbig.jpg" alt=""></a></li>
+                    <li><a href="#"><img src="images/cliffthumb.jpg" alt="Cliffs" title="Cliffs"><img class="hid" src="images/cliffbig.jpg" alt=""></a></li>
+                    CHAPTER 2 ■ A ROLLOVER PICTURE GALLERY 51 -->
+            </ul>
+            <br class="clear">
+        </div><!--gallery block closed-->
+    </div><!--midcol closed-->
+    <footer class="data" id="gallery-one-colfooter">
+            <div class="footer-inner">
+                <div class="company-details">
+                    <p class="copyright"> &copy; <time datetime="2013">2024</time> The Kelly Transitional Housing Program</p>
+                    <p class="distributor">Distributor: Findlater HempSmarts Inc & Cannabis in Action Group</p>
+                    <p class="address">414 W 127th, New York, NY 10027</p>
+                    <p class="telephone-number">Tel: 332-294-7127</p>
+                </div>
+                <hr class="full">
+            </div>
+            
+			<div class="row" style="background-color: #66d4ff">
+                <div class="col-12">
+                    <h2 class="heading">Follow Us</h2>
+                </div>
+                <div id="comment">
+                    <h2>Leave a comment</h2>
+                    name:<br>
+                    <input type="text"><br>
+                    comment:<br>
+                    <textarea rows="5" cols="30" name="comment"></textarea>
+                </div>
+            </div>
+            
+			<div class="row" style="background-color: 66d4ff">
+                <div class="col-12">
+                    <h2>Fine Print</h2>
+                    <p id="fine_print">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        tempor incididunt ut labore
+                        et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                        exercitation ullamco laboris nisi ut
+                        aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
+                        in voluptate velit esse cillum
+                        dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                        proident, sunt in culpa qui
+                        officia deserunt mollit anim id est laborum.
+                    </p>
+                </div>
+            </div>
+            
+			<div class="row">
+                <div class="offset-lg-4 col-lg-4 offset-md-2 col-md-8">
+                    <div class="form-group">
+                        <input class="form-control" type="email" name="subscribe_email" placeholder="Enter your email address" required="required">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class=" col-lg-12 col-md-12  col-sm-12">
+                    <div class="subscribe-accept">
+                        <input type="checkbox" name="subscribe_accept" required="required">
+                        I agree to the
+                        <a href="https://orris0.github.io/orris0/privacy.html">Privacy Policy</a>,
+                        <a href="https://orris0.github.io/orris0/disclaimer.html">Disclaimer</a>
+                        and to receive newsletters from Practical HTML5 Projects for fun and Profit!
+                    </div>
+                    <p id="disclaimer">
+                        Disclaimer! This service is not intended for the those with criminal intent. Celebrities are kind of like people so their privacy should be respected.
+                    </p>
+                    <div id="splitter">
+                        <h2>Terms &amp; Conditions</h2>
+                        <div class="pane" id="tocPane">
+                            <div class="inner">
+                                <ol>
+                                    <li><a href="#privacy">Your Privacy</a></li>
+                                    <li><a href="#celebs">Celeb's Privacy</a></li>
+                                    <li>Ownership & Intellectual Property
+                                        <ol style="list-style-type: lower-roman">
+                                            <li><a href="#liability">Liability</a></li>
+                                            <li><a href="#rights">Exclusive & Non-exclusive rights</a></li>
+                                            <li><a href="#ugc">User Generated Material</a></li>
+                                        </ol>
+                                    </li>
+                                </ol>
+                            </div>
+                        </div>
+
+                        <div class="inner">
+                            <h3>User Generated Material</h3>
+                            <p>This website contains messaging systems and other user
+                                generated content toward the purpose and fulfillment of
+                                directory or indirectly contacting or stalking celebrities
+                                and/or their family and/or people in their vaguely related
+                                social sphere. Such content is here forth and eternally
+                                regarded as property of StarTrackr and parent company et
+
+                            <div id="comment">
+                                <h2>Leave a comment</h2>
+                                name:<br />
+                                <input type="text" /><br />
+                                comment:<br />
+                                <textarea rows="5" cols="30"></textarea>
+                            </div>
+                            <h2>Fine Print</h2>
+                            <p id="fine_print">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+                                non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                            </p>
+
+                        </div>
+                    </div>
+                </div><!-- end col-12 -->
+            </div><!-- end .row -->
+    
+            <div id="footer">
+                <p>
+                    &copy; Copyright 2010 CelebriTracker Productions
+                </p>
+            </div>
+            <div id="container">
+                <p>&nbsp;</p>
+                <p>Tour Orris (default)</p>
+                <p>
+                    <a href="../orris0/HTML5-Ch1-7.html">Page 1</a>
+                    <a href="html5-nav.html">Page 2</a>
+                    <a href="simplistic-side-by-side.html">Page 3</a>
+                    <a href="simplistic-html5-java.html">Page 4</a>
+                    <a href="simplistic-html5.html">Page 5</a>
+                    <a href="gallery-one-col.html">Page 6</a>
+                    <a href="gallery-2col.html">Page 7</a>
+                </p>
+                <p>&nbsp;</p>
+                <p class="inline-block">Practical HTML5 Project&#39;s<br>
+                    <a href="gallery-3col-mix.html">Page 1</a>
+                    <a href="gallery-page-validated.html">Page 2</a>
+                    <a href="squares-html5.html">Page 3</a>
+                    <a href="horiz-vert-menu.html">Page 4</a>
+                    <a href="fig2-nifty.html">Page 5</a>
+                    <a href="starter-page.html">Page 6</a>
+                    <a href="index2.html">Page 7</a>
+                </p>
+                <p>&nbsp;</p>
+            </div>
+
+            <a href="https://orris0.github.io/orris0/index.html" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+            <div id="farewell">Come back and visit us soon!</div>
+                <div class="row" style="background-color: #34495e; border-top: 2px solid #f6931e">
+                    <p>&copy; Kite-It.</p>
+                </div>
+        </footer>
+        <a href="https://orris0.github.io/orris0/gallery-page-validated.html" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+    </body><!-- end body  -->
+</html>
+
+
+
 <!--
 Listing 2-6a. Creating a Three Column Rollover Gallery with HTML5 Validation Logo (gallery-page-
 validated.html)
