@@ -37,7 +37,7 @@ br.clear { clear:both;
 }
 #mid-right-col {width:47%; float:right; text-align:left;
 }
-h1 { padding-top:30px; margin:0; text-align:center;
+h1 { padding-top:30px; margin:0; text-align:center; font-size:200%;
 }
 h2 { margin:0 0 5px 0; font-size:150%; font-weight:bold; 
 }
