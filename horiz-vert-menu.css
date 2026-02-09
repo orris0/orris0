@@ -39,7 +39,7 @@ br.clear { clear:both;
 }
 h1 { padding-top:30px; margin:0; text-align:center;
 }
-h2 { margin:0 0 5px 0; font-size:large; font-weight:bold; 
+h2 { margin:0 0 5px 0; font-size:150%; font-weight:bold; 
 }
 p.lft {text-align:left;
 }
