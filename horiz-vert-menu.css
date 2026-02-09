@@ -41,7 +41,7 @@ h1 { padding-top:30px; margin:0; text-align:center;
 }
 h2 { margin:0 0 5px 0; font-size:150%; font-weight:bold; 
 }
-h3 { font-size:100%; color:white; margin:0 0 6px 0;
+h3 { font-size:100%; color:white; margin:0 0 -5px 0;
 }
 p.lft {text-align:left;
 }
