@@ -67,7 +67,7 @@ body {text-align:center; background: #bee8ff; font-family:"times new roman"; fon
 }
 #main-content { width:100%; margin:10px; padding:0;
 }
-header {width:100%; height:156px; position: relative; top: 55px; background-image:url('images/header2.jpg'); text-align:center; border-bottom:10px white solid;  border-left:10px white solid;
+header {width:100%; height:156px; position: relative; top: -45px; background-image:url('images/header2.jpg'); text-align:center; border-bottom:10px white solid;  border-left:10px white solid;
 border-right:10px white solid; border-bottom:10px white solid; background-repeat:no-repeat; background-position:center top;}
 img { border:0;
 }
