@@ -95,7 +95,7 @@ background: url(images/header3.jpg); margin:10px auto;
 
 #nav {
   position: relative;
-  padding: .3em .8em;
+  padding:-24px;
   height: 9em;
   border: 1px solid rgba(0,0,0,.1);
   background: #58a linear-gradient(hsla(0,0%,100%,.2),transparent);
