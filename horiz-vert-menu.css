@@ -27,7 +27,7 @@ vertical-align:top;
 }
 #content { background-color:transparent; border-left:10px white solid;
 border-right:10px white solid; border-bottom:10px white solid; width: 904px;
-margin-top:12px; margin-left:10px; margin-right:auto; padding:8px;
+margin-top:-33px; margin-left:-10px; margin-right:auto; padding:8px;
 font-size:100%; color:maroon;
 }
 footer {text-align:center; clear:both;
@@ -67,7 +67,7 @@ height:42px;
 #hnav li a:active 	{ background:#ABCBFF;  border: 4px inset #ABCBFF; 
 }
 /* set vertical button menu position */
-nav {width:130px; float:left; position: relative; top: -20px; left:37px
+nav {width:130px; float:left; position: relative; top: 2px; left:37px
 }
 ul	{  margin-left:0; padding-left:0;   
 }
