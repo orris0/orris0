@@ -24,7 +24,6 @@ $(function(){
                                                    });
 
                                                    });
-})
 
 // Example 3-3. Generic error handler
 function onError(err) {
