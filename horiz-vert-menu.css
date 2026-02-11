@@ -67,7 +67,7 @@ height:42px;
 #hnav li a:active 	{ background:#ABCBFF;  border: 4px inset #ABCBFF; 
 }
 /* set vertical button menu position */
-nav {width:130px; float:left; position: relative; top: 2px; left:37px
+nav {width:130px; float:left; position: relative; top: 20px; left:0px
 }
 ul	{  margin-left:0; padding-left:0;   
 }
