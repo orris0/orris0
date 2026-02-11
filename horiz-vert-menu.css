@@ -72,7 +72,7 @@ nav {width:130px; float:left; position: relative; top: 2px; left:37px
 ul	{  margin-left:0; padding-left:0;   
 }
 /* set general side button styles */
-li { width:115px; list-style-type :none; margin-bottom: 73px; text-align: center; 
+li { width:115px; list-style-type :none; margin-bottom: -5px; text-align: center; 
 }
 /* set general anchor styles */
 li a { display: block; width:115px; color: white; font-weight: bold; text-decoration: none 
