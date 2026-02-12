@@ -47,7 +47,7 @@ br.clear { clear:both;
 }
 #starter-page-mid-right-col {width:47%; float:right; text-align:left;
 }
-h1#starter-page-h1 { padding-top:0px; margin:50px; text-align:center; font-size:300%;
+h1#starter-page-h1 { padding-top:0px; margin:-60px; text-align:center; font-size:300%;
 }
 h2#starter-page-h2 { margin:50px 0 5px 0; font-size:150%; font-weight:bold; 
 }
