@@ -67,7 +67,7 @@ height:42px;
 /* set vertical button menu position */
 nav {width:130px; float:left; position: relative; top: 20px; left:0px
 }
-ul	{  margin-left:0; padding-left:0;   
+ul	{  margin-left:-39px; padding-left:0;   
 }
 /* set general side button styles */
 li { width:115px; list-style-type :none; margin-bottom: -6px; text-align: center; 
