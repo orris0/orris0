@@ -9,6 +9,10 @@ div#starter-page-container.data {width:97%; max-width:960px; min-width:780px; ma
 div.row {
   display: block; unicode-bidi:isolate;
 }
+div.col-12 {
+  display:block;
+  unicode-bidi: isolate;
+}
 #starter-page-main-content { width:100%; margin:10px; padding:0;
 }
 header {width:100%; height:156px; position: relative; top: 125px; background-image:url('images/header2.jpg'); text-align:center; border-top:10px white solid;  border-left:10px white solid;
