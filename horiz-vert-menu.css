@@ -67,7 +67,7 @@ height:42px;
 #starter-page-hnav li a {text-decoration:none; color:white; font-weight:bold; width:120px; padding:5px; text-align:center; 
 }
 /*mouseOut state (default)*/
-#starter-page-hnav li a { position: relative; top:30px; background: #1A9CE0; border: 4px outset #AABAFF; text-align:center; margin-right:5px;
+#starter-page-hnav li a { position: relative; top:0px; background: #1A9CE0; border: 4px outset #AABAFF; text-align:center; margin-right:5px;
 }
 /* mouseover */
 #starter-page-hnav li a:hover { background: #0A4ADF;   border: 4px outset #8ABAFF; width:120px; 
