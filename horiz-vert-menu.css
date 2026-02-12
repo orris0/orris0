@@ -16,7 +16,7 @@ img { border:0;
 }
 #rightcol { width: 135px; float:right; height: 252px; margin-right:10px;
 }
-#midcol { margin-left:315px; margin-right:205px; margin-top:10px;
+#midcol { margin-left:315px; margin-right:205px; margin-top:-2px;
 vertical-align:top;
 }
 #creditcol { float:right; width:125px; text-align:center;
