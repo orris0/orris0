@@ -4,7 +4,7 @@ header, footer, section, article, nav { display:block;
 }
 body {text-align:center; background: #bee8ff; font-family:"times new roman"; font-size:100%; color:navy; 
 }
-#starter-page-container {width:97%; max-width:960px; min-width:780px; margin:auto;
+div#starter-page-container.data {width:97%; max-width:960px; min-width:780px; margin:auto;
 }
 #starter-page-main-content { width:100%; margin:10px; padding:0;
 }
