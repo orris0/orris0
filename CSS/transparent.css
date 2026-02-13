@@ -239,7 +239,7 @@ ul	{  margin-left:0; padding-left:0;
 li { width:115px; list-style-type :none; margin-bottom: 3px; text-align: center; 
 }
 /* set general anchor styles */
-li a { display: block; width:115px; color: white; font-weight: bold; text-decoration: none 
+li a { display: block; width:115px; color: font-weight: bold; text-decoration: none 
 }
 /* specify state styles... */
 /* mouseout (default) */
