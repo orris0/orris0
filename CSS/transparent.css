@@ -67,6 +67,10 @@ header, footer, section, article, nav { display:block;
 }
 body {text-align:center; font-family:"times new roman"; font-size:100%; color:navy; 
 }
+
+
+
+
 #container {width:97%; max-width:960px; min-width:780px; margin:auto;
 }
 #main-content { width:100%; margin:10px; padding:0;
@@ -185,8 +189,7 @@ header, footer, section, article, nav { display:block;
 }
 body {text-align:center; font-family:"times new roman"; font-size:100%; color:navy; 
 }
-#container {width:97%; max-width:960px; min-width:780px; margin:auto;
-}
+
 #main-content { width:100%; margin:10px; padding:0;
 }
 
