@@ -47,7 +47,7 @@ nav li a { display: block;
 nav li a { background:#559a55; font-size: 80%; border: 5px outset #559a55;
 }
 /* mouseover */
-nav li a:hover { background: red;  color:white; border: 5px outset red;
+nav li a:hover { background: red; border: 5px outset red;
 }
 /*mouse active*/
 nav li a:active { background:maroon;  border: 5px inset maroon; 
