@@ -65,8 +65,7 @@ html, body, h1, h2, h3, h4, h5, h6, p, ol, ul, li { padding: 10px; margin: 0;
 }
 header, footer, section, article, nav { display:block; 
 }
-body {text-align:center; font-family:"times new roman"; font-size:100%; color:navy; 
-}
+
 
 
 
@@ -183,8 +182,7 @@ p.right {text-align:right;
 
 /* ############################### */
 
-html, body, h1, h2, h3, h4, h5, h6, p, ol, ul, li { padding: 10px; margin: 0; 
-}
+
 header, footer, section, article, nav { display:block; 
 }
 body {text-align:center; font-family:"times new roman"; font-size:100%; color:navy; 
