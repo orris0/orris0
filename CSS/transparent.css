@@ -16,8 +16,6 @@ border-right:10px white solid; border-bottom:10px white solid; background-repeat
 h1 { font-size:xxx-large; color :white; position: relative; left:90px; top: 80px; width:650px; 
 }
 #rosette { position:relative; left:380px; top:-30px; }
-
-
 #content { background-color:transparent; border-left:10px solid hsla(0, 0%,100%,.5); border-right:10px solid hsla(0, 0%,100%,.5); 
 border-bottom:10px solid hsla(0, 0%,100%,.5); width: 904px; margin-top:-20px; margin-left:auto; margin-right:auto; padding:8px; font-size:medium; color:maroon; 
 }
@@ -78,19 +76,11 @@ img { border:0;
 #midcol { margin-left:315px; margin-right:145px; margin-top:10px;
 vertical-align:top;
 }
-
-
 #creditcol { float:right; width:125px; text-align:center;
 }
 #midcontent { margin:0 135px 0 145px; text-align:center;
 }
-/*
-#content { background-color:transparent; border-left:10px white solid;
-border-right:10px white solid; border-bottom:10px white solid; width: 904px;
-margin-top:-55px; margin-left:auto; margin-right:auto; padding:8px;
-font-size:100%; color:maroon;
-}
-*/
+
 footer {text-align:center; clear:both;
 }
 br.clear { clear:both;
