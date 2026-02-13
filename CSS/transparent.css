@@ -185,8 +185,6 @@ p.right {text-align:right;
 
 header, footer, section, article, nav { display:block; 
 }
-body {text-align:center; font-family:"times new roman"; font-size:100%; color:navy; 
-}
 
 #main-content { width:100%; margin:10px; padding:0;
 }
