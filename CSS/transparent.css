@@ -11,7 +11,7 @@ header {width:920px; height:180px; padding:0; border:10px solid hsla(0, 0%,100%,
   background: url(/CSS/images/header3.jpg); margin:50px auto; 
 }
 */
-header {width:98%; height:156px; position: relative; top: -75px; background-image:url('images/header2.jpg'); text-align:center; border-top:10px white solid;  border-left:10px white solid;
+header {width:98%; height:156px; position: relative; top: -20px; background-image:url('images/header2.jpg'); text-align:center; border-top:10px white solid;  border-left:10px white solid;
 border-right:10px white solid; border-bottom:10px white solid; background-repeat:no-repeat; background-position:center top;}
 h1 { font-size:xxx-large; color :white; position: relative; left:90px; top: 80px; width:650px; 
 }
