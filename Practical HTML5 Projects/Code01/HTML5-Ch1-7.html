@@ -1,17 +1,781 @@
+<!-- Listing 1-7a. The new HTML5 listing (HTML5-Ch1-7.html) -->
 <!doctype html>
-<!--Everything you write should be using markups -->
-<!-- head section is communicating about the page to the browser -->
-<!-- Anything you write under head is not displayed on the browser content page. -->
 <html ng-app lang="en">
-<!-- All the Tags should be under <html> -->
-<!-- Describing about the page -->
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <!-- meta details go here -->
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="google-adsense-account" content="ca-pub-9639638377144073">
+    <meta property="og:title" content="A Basic HTML5 Template">
+    <meta property="og:type" content="website">
+    <meta property="og:audio:type" content="audio/mpeg">
+    <meta property="og:description" content="The abuse and mistreatment @ The BRC residential center, breaking-ground, The Travellers Hotel, The Andrews, The Kelly.">
+    <meta property="og:image" content="image.png">
+    <meta name="keywords" content="HTML5, Node.js, Jquery">
+    <meta name="author" content="Orris Baker">
+    <meta property="og:audio:type" content="audio/mpeg">
+
+    <link rel="stylesheet" href="CSS/transparent.css" type="text/css" media="screen" charset="utf-8"> 
+    <link rel="stylesheet" type="text/css" href="CSS/HTML5-style-2.css">
+    <script src="lib/jquery-1.7.1.min.js" type="text/javascript" charset="utf-8"></script>
+    <script type="text/javascript" src=" scripts.js"></script>
+    <script src="js/jquery.mobile-1.0.1.min.js"></script>
+    <script type="text/javascript" src="assets/js/ui.js"></script>
+    <script type="text/javascript" src="js/jquery-1.7-min.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+    <script src="https://use.fontawesome.com/c6d3fbeb1d.js"></script>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9639638377144073" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script type="text/javascript" src="/jquery.easing.1.3.js"></script>
+    <script type="text/javascript" src="jquery.scrollTo.js" charset="utf-8"></script>
+
+   <!-- <link href="./CSS/gallery-page-HTML5.css" rel="stylesheet"> -->
+    <script src rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://m.w3newbie.com/youtube.css">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./style[1].css">
+
+    <link rel="stylesheet" href="./nav[1].css">
+    <link rel="stylesheet" href="https://m.w3newbie.com/youtube.css">
+    <!--
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+-->
+    <link rel="stylesheet" href="./font-awesome.min[1].css">
+    <link rel="icon" type="image/png" href="./weed.jpg">
+    <link rel="icon" type="image/png" href="./flexy-logo.png">
+    <link rel=”stylesheet” href=”http://code.jquery.com/mobile/1.0.1/jquery.mobile-1.0.1.min.css”>
+    <!-- Font Awesome Icons -->
+    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic' rel='stylesheet' type='text/css'>
+    <!-- Plugin CSS -->
+    <link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
+    <!--Add conditional Javascript-->
+    <!-- Favicon-->
+    <link rel="apple-touch-icon" href="./images/apple-touch-icon.png">
+    <link rel="alternate" type="application/pdf" href="MainPage.pdf">
+    <link rel="author" href="mailto:bakerorris0@gmail.comcom">
+    <link rel="author" type="text/html" href="https://orris0.github.io/">
+    <!-- Bootstrap Icons-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+    <!-- SimpleLightbox plugin CSS-->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.css" rel="stylesheet" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.0/jquery.mobile-1.0.min.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Test page for semantic tags </title>
+    <!--Add conditional Javascript-->
+    <!--[if lte IE 8]>
+                <script src="html5.js"></script>
+    <![endif]-->
+</head>
+
+</head>
+
+<body>
+    <div id="container">
+        <div class="row">
+            <div class="col-12">
+                <nav role="navigation" id="nav">
+                    <input class="trigger" type="checkbox" id="mainNavButton">
+                    <label for="mainNavButton" onclick>Menu</label>
+                    <ul>
+                        <li><a href="./index.html">Home</a></li>
+                        <li><a href="./index[1].html">About Us</a></li>
+                        <li><a href="./membership.html">Products</a></li>
+                        <li><a href="./news.html">Blog</a></li>
+                        <li><a href="./starter-page.html">Specials</a></li>
+                        <li><a href="https://atvhfs.com">Contact</a></li>
+                    </ul>
+                </nav>
+            </div><!-- col-12 -->
+        </div><!-- end-.row -->
+        <header>
+            <h1>Tourorris&#39;s Rural Retreats</h1>
+            <img id="rosette" alt="Rosette" title="Rosette" height="127" src="images/rosette-128.png" width="128">
+        </header>
+        <div id="content">
+            <h2>Award winning accommodation, self catering or bed and breakfast</h2>
+            <div id="leftcol">
+                <h3>Cottages, converted barns, caravans</h3>
+                <img alt="cottage interior" height="225" src="images/cotdining300.jpg" width="300"><br>The superb
+                interior of one of our cottages
+            </div>
+            <div id="rightcol">
+                <nav>
+                    <ul>
+                    <li><a href="background-ex7-transp.html" title="Accommodation">Accommodation</a></li>
+                    <li><a href="starter-page.html" title="Location Maps">Maps</a></li>
+                    <li><a href="gallery-page-validated.html" title="Frequently Asked Questions">Information</a></li>
+                    <li><a href="index.html" title="Local attractions">Attractions</a></li>
+                    <li><a href="index3.html" title="Contact us">Contact Us</a></li>
+                    <li><a href="HTML5-Ch1-7.html" title="Return to Home Page">Home Page</a></li>
+                </ul>
+                </nav>
+            </div><!--end of side menu column-->
+            <div id="midcol">
+                <h3>All situated in the beautiful rolling countryside of Bermuda</h3>
+                <img alt="Devon countryside" height="229" src="images/devon420.jpg" width="419">
+            </div>
+            <br class="clear">
+        </div><!--content closed-->
+        <footer class="w3-light-grey">
+            <!-- Footer -->
+    <footer class="w3-light-grey">
+                <footer class="data" id="html5style2footer">
+            <div class="footer-inner">
+                <div class="company-details">
+                    <p class="copyright"> &copy; <time datetime="2013">2024</time> The Kelly Transitional Housing Program</p>
+                    <p class="distributor">Distributor: Findlater HempSmarts Inc & Cannabis in Action Group</p>
+                    <p class="address">414 W 127th, New York, NY 10027</p>
+                    <p class="telephone-number">Tel: 212-665-1678</p>
+                </div>
+                <hr class="full">
+            </div>
+
+                        <div class="row" style="background-color: 66d4ff">
+                <div class="col-12">
+                    <h2>Fine Print</h2>
+                    <p id="fine_print">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        tempor incididunt ut labore
+                        et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                        exercitation ullamco laboris nisi ut
+                        aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
+                        in voluptate velit esse cillum
+                        dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                        proident, sunt in culpa qui
+                        officia deserunt mollit anim id est laborum.
+                    </p>
+                </div>
+            </div>
+
+                        <div class="row">
+                <div class="offset-lg-4 col-lg-4 offset-md-2 col-md-8">
+                    <div class="form-group">
+                        <input class="form-control" type="email" name="subscribe_email" placeholder="Enter your email address" required="required">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class=" col-lg-12 col-md-12  col-sm-12">
+                    <div class="subscribe-accept">
+                        <input type="checkbox" name="subscribe_accept" required="required">
+                        I agree to the
+                        <a href="https://orris0.github.io/orris0/privacy.html">Privacy Policy</a>,
+                        <a href="https://orris0.github.io/orris0/disclaimer.html">Disclaimer</a>
+                        and to receive newsletters from Practical HTML5 Projects for fun and Profit!
+                    </div>
+                    <p id="disclaimer">
+                        Disclaimer! This service is not intended for the those with criminal intent. Celebrities are kind of like people so their privacy should be respected.
+                    </p>
+                    <div id="splitter">
+                        <h2>Terms &amp; Conditions</h2>
+                        <div class="pane" id="tocPane">
+                            <div class="inner">
+                                <ol>
+                                    <li><a href="#privacy">Your Privacy</a></li>
+                                    <li><a href="#celebs">Celeb's Privacy</a></li>
+                                    <li>Ownership & Intellectual Property
+                                        <ol style="list-style-type: lower-roman">
+                                            <li><a href="#liability">Liability</a></li>
+                                            <li><a href="#rights">Exclusive & Non-exclusive rights</a></li>
+                                            <li><a href="#ugc">User Generated Material</a></li>
+                                        </ol>
+                                    </li>
+                                </ol>
+                            </div>
+                        </div>
+
+                        <div class="inner">
+                            <h3>User Generated Material</h3>
+                            <p>This website contains messaging systems and other user
+                                generated content toward the purpose and fulfillment of
+                                directory or indirectly contacting or stalking celebrities
+                                and/or their family and/or people in their vaguely related
+                                social sphere. Such content is here forth and eternally
+                                regarded as property of StarTrackr and parent company et
+
+                                <h3>#</h3>
+                <br>
+                <p></p><a href="https://www.2020research.com"><br>SAGO 2020 Research</a></p><br>                                
+        <h3>A</h3>
+        <p></p><a href="https://www.acop.com"><br>American Consumer Opinion</a></p>
+        <p></p><a href="https://www.advancedfocus.com"><br>Advanced Focus</a></p>
+        <p><a href="https://www.agriculture.com"><br>agriculture</a></p>
+        <p><a href="http://www.alphabuzzgroup.com"><br>alphabuzzgroup</a></p>
+                <p><a href="http://www.ampupnow.com">ampupnow</a></p>
+                <p><a href="https://www.alphadetail.com/Home.do?v=0">alphadetail</a></p>
+
+                <h3>B</h3>
+
+        <p><a href="http://www.buzzback.com/<span class="tiny">Buzzback</span></a></p>
+        <p><a href="http://blackanddecker.com">Blackanddecker</span>
+
+
+
+
+
+        <!-- <p><a href="https://www.abilitypanel.com/index.html"><span class="tiny"><br>Validated by the World Wide Web Consortium</span> -->
+        <!-- <p><a href="http://www.academicagroup.com/services/market_policy_research/join_consumer_panel<span class="tiny"><br>Validated by the World Wide Web Consortium</span> --
+        <a href="https://www.advantageresearch.net"><br>Advantage Research</span>
+        <p><a href="https://www.affluent-dynamics.com<br>Affluent-Dynamics</span> 
+                <p><a href="http://rsvp.alkami.org/member.html<span class="tiny"><br>rsvp.alkami</span>
+                <p><a href="http://www.atkinsresearchinc.com/join.htm"><br>atkinsresearchinc</span>
+                <p><a href="http://www.awres.com/ExecutiveOffices/professionals.asp"><br>awres</span>
+                        <p><a href="http://www.bakerstsolutions.com/panelist.html<span class="tiny"><br>Validated by the World Wide Web Consortium</span>
+            <p><a href="http://baltimoreresearch.com/<span class="tiny"><br>Validated by the World Wide Web Consortium</span>
+
+            <p><a href="http://www.beginsurvey.com/beginsurvey/<span class="tiny"><br>Validated by the World Wide Web Consortium</span>
+
+            <p><a href="http://www.academicsurveys.org/<span class="tiny"><br>Validated by the World Wide Web Consortium</span> --
+            <p><a href="http://www.betatestbeauty.com/<span class="tiny"><br>Validated by the World Wide Web Consortium</span>
+
+            <p><a href="http://beta.intuit.com/signup/index.cfm<span class="tiny"><br>Validated by the World Wide Web Consortium</span>
+
+
+
+
+
+
+
+
+
+
+
+
+<p><a href="http://www4.gsb.columbia.edu/behaviorlab<span class="tiny"><br>Validated by the World Wide Web Consortium</span>
+
+<p><a href="http://www.bowenresearch.com/signup.php<span class="tiny"><br>Validated by the World Wide Web Consortium</span>
+<p><a href="http://www.brandinst.com/<span class="tiny"><br>Validated by the World Wide Web Consortium</span>
+
+C
+<p><a href="http://www.chasenresearch.com/<span class="tiny"><br>Validated by the World Wide Web Consortium</span>
+
+<p><a href="http://www.cint.com/Registration/Template06.aspx?Guid=F6180423-E721-433B-B123-CFDE612F4EF4&MemberId=Local_12445667118398<span class="tiny"><br>Validated by the World Wide Web Consortium</span>
+<p><a href="http://www.clarionresearch.com/webpanel.htm<span class="tiny"><br>Validated by the World Wide Web Consortium</span>
+
+<p><a href="http://cleaningpanel.clickiq.com/login.html<span class="tiny"><br>Validated by the World Wide Web Consortium</span>
+<p><a href="http://www.clearvoicesurveys.com/Default.aspx<span class="tiny"><br>Validated by the World Wide Web Consortium</span>
+<p><a href="http://www.clickiq.com/<span class="tiny"><br>Validated by the World Wide Web Consortium</span>
+
+<p><a href="http://www.cobbey.com/index.html<span class="tiny"><br>Validated by the World Wide Web Consortium</span>
+
+<p><a href="http://team.coffee-mate.com/screener<span class="tiny"><br>Validated by the World Wide Web Consortium</span>
+
+<p><a href="http://www.conceptsinfocus.com/<span class="tiny"><br>Validated by the World Wide Web Consortium</span>
+
+<p><a href="http://survey.confirmit.com/wix3/p312102129.aspx<span class="tiny"><br>Validated by the World Wide Web Consortium</span>
+
+<p><a href="http://www.consumerbehaviorlab.com/<span class="tiny"><br>Validated by the World Wide Web Consortium</span>
+
+<p><a href="http://consumerlink.com/<span class="tiny"><br>Validated by the World Wide Web Consortium</span>
+
+<p><a href="http://www.consumer-opinions.com/<span class="tiny"><br>Validated by the World Wide Web Consortium</span>
+
+<p><a href="http://www.consumerviews.com/<span class="tiny"><br>Validated by the World Wide Web Consortium</span>
+
+<p><a href="http://www.thecvponline.com/Portal/default.aspx<span class="tiny"><br>Validated by the World Wide Web Consortium</span>
+
+<p><a href="http://consumerpanel.researching.com/portals/gpms_cp/5001685/join.asp<span class="tiny"><br>Validated by the World Wide Web Consortium</span>
+
+<p><a href="http://www.contractorboard.com/contractorboard/<span class="tiny"><br>Validated by the World Wide Web Consortium</span>
+
+<p><a href="http://www.creatonomy.com/Panel/PanelIntro.htm<span class="tiny"><br>Validated by the World Wide Web Consortium</span>
+
+<p><a href="http://www.countryhitsongs.com/<span class="tiny"><br>Validated by the World Wide Web Consortium</span>
+
+<p><a href="http://ccrsurveys.com/<span class="tiny"><br>Validated by the World Wide Web Consortium</span>
+
+<p><a href="http://www.cross-tab.com/<span class="tiny"><br>Validated by the World Wide Web Consortium</span>
+
+<p><a href="http://www.curepursuit.com/default.php?page=join.php<span class="tiny"><br>Validated by the World Wide Web Consortium</span>
+
+<p><a href="https://www.cvsadvisor.com/<span class="tiny"><br>Validated by the World Wide Web Consortium</span>
+
+<p><a href="http://www.cypherresearch.com/questionnaire.php<span class="tiny"><br>Validated by the World Wide Web Consortium</span>
+
+D
+<p><a href="http://www.dailysurveypanel.com/?r=orrisb<span class="tiny"><br>Validated by the World Wide Web Consortium</span>
+
+<p><a href="http://www.datatelligence.net/<span class="tiny"><br>Validated by the World Wide Web Consortium</span>
+<p><a href="http://www.panel.decisionresearch.org/ExperimentIntro.htm<span class="tiny"><br>Validated by the World Wide Web Consortium</span>
+
+<p><a href="http://www.delve.com/respondent/Survey.asp<span class="tiny"><br>Validated by the World Wide Web Consortium</span>
+
+<p><a href="http://www.dentek.com/index.php?option=com_comprofiler&task=registersdn<span class="tiny"><br>Validated by the World Wide Web Consortium</span>
+
+<p><a href="http://www.digitalresearch.com/<span class="tiny"><br>Validated by the World Wide Web Consortium</span>
+
+<p><a href="http://www.directiveanalytics.com/join_our_panel.php<span class="tiny"><br>Validated by the World Wide Web Consortium</span>
+
+<p><a href="http://www.dmdsurveys.com/<span class="tiny"><br>Validated by the World Wide Web Consortium</span>
+
+<p><a href="http://www.dollarsurveys.net/<span class="tiny"><br>Validated by the World Wide Web Consortium</span>
+
+<p><a href="http://donowresearch.com/<span class="tiny"><br>Validated by the World Wide Web Consortium</span>
+
+<p><a href="http://www.drugvoice.com/<span class="tiny"><br>Validated by the World Wide Web Consortium</span>
+
+<p><a href="http://www.dubitinformer.com/<span class="tiny"><br>Validated by the World Wide Web Consortium</span>
+
+E
+<p><a href="https://elab.vanderbilt.edu/panel/index.cfm?RID=7015<span class="tiny"><br>Validated by the World Wide Web Consortium</span>
+<p><a href="http://eipanel.com/join.php<span class="tiny"><br>Validated by the World Wide Web Consortium</span>
+
+<p><a href="http://www.eliteopinion.com/index.html<span class="tiny"><br>Validated by the World Wide Web Consortium</span>
+<p><a href="http://decisions.epfl.ch/orsee/public/<span class="tiny"><br>Validated by the World Wide Web Consortium</span>
+
+<p><a href="http://e-callroom.com/<span class="tiny"><br>Validated by the World Wide Web Consortium</span>
+
+<p><a href="http://www.epollsurveys.com/epoll/clients/signup.htm?affiliateid=CD87&<span class="tiny"><br>Validated by the World Wide Web Consortium</span>
+
+<p><a href="http://www.eqr1.com/w1/index.html<span class="tiny"><br>Validated by the World Wide Web Consortium</span>
+
+<p><a href="http://www.e-research-global.com/<span class="tiny"><br>Validated by the World Wide Web Consortium</span>
+
+<p><a href="http://www.esearch.com/<span class="tiny"><br>Validated by the World Wide Web Consortium</span>
+<p><a href="http://it.esearch.com/join/join.htm<span class="tiny"><br>Validated by the World Wide Web Consortium</span>
+
+<p><a href="http://www.executiveadvisoryboard.com/ExecV5/<span class="tiny"><br>Validated by the World Wide Web Consortium</span>
+
+<p><a href="http://experiencedynamics.com/science-usability/join-our-panel<span class="tiny"><br>Validated by the World Wide Web Consortium</span>
+
+<p><a href="http://www.expressresearch.net/signuphere.html<span class="tiny"><br>Validated by the World Wide Web Consortium</span>
+
+F
+https://ld.fgiresearch.com/fgireportbuilder/gw?rcd=DA34FD86D7&proc=1<span class="tiny"><br>Validated by the World Wide Web Consortium</span>
+
+http://www.phortech.com/h.htm<span class="tiny"><br>Validated by the World Wide Web Consortium</span>
+
+http://www.focusgroup.com/<span class="tiny"><br>Validated by the World Wide Web Consortium</span>
+
+http://www.focuslinesurveys.com/http://www.focusworldint.com/respondent.htmhttp://www.focusanywhere.com/signup.phphttp://www.focusready.com/for_participants/index.phphttp://www.foodbusinessresource.com/panelists.htmlhttps://www.foodservicerewards.com/foodservicerewards/portal.do<span class="tiny"><br>Validated by the World Wide Web Consortium</span>
+
+G
+http://www.gamecrew.net/eval.asp?PID=1&bok=yes<span class="tiny"><br>Validated by the World Wide Web Consortium</span>
+
+http://superfan.gactv.com/<span class="tiny"><br>Validated by the World Wide Web Consortium</span>
+
+http://www.game-surveys.com/<span class="tiny"><br>Validated by the World Wide Web Consortium</span>
+
+http://ggp.com/GiftCards/CIMLocations.aspx<span class="tiny"><br>Validated by the World Wide Web Consortium</span>
+
+http://www.glaxes.com/register-e.htm<span class="tiny"><br>Validated by the World Wide Web Consortium</span>
+
+http://www.globaltestmarket.com/gtm_recruiting/join2.php?p=orrisb<span class="tiny"><br>Validated by the World Wide Web Consortium</span>
+
+http://www.goglobal.com/Membership/<span class="tiny"><br>Validated by the World Wide Web Consortium</span>
+
+http://survey1.gongos.com/G1023/default.aspx?nameSource=RF<span class="tiny"><br>Validated by the World Wide Web Consortium</span>
+
+http://www.grahammktres.com/<span class="tiny"><br>Validated by the World Wide Web Consortium</span>
+
+http://www.greenfieldonline.com/TrafficUI/mscui/page.aspx?cid=1&ptid=4&utcoffset=5<span class="tiny"><br>Validated by the World Wide Web Consortium</span>
+
+http://www.grgsurvey.net/cgi-bin/rws3.pl?FORM=Screener707<span class="tiny"><br>Validated by the World Wide Web Consortium</span>
+
+http://www.gsmrinc.com/<span class="tiny"><br>Validated by the World Wide Web Consortium</span>
+
+H
+http://www.hagensinclair.com/participation2.htm<span class="tiny"><br>Validated by the World Wide Web Consortium</span>
+
+http://a.harrispollonline.com/scripts/scywebMT.dll?SI=100004&SC=23&QV0=0&QV1=w27934d.vq&QV2=0&QV3=1230184358&QV4=1&QV5=0&QV6=NA&QV8=14&QV9=010&QV10http://www.harrisinteractive.com/partner/panels_phy.asphttp://www.harrispollonline.com/http://www.hbs.edu/cler/https://www.hcdsurveys.com/panel/join.cfm?referralid=200487<span class="tiny"><br>Validated by the World Wide Web Consortium</span>
+
+http://homeofresearch.org/login.aspx<span class="tiny"><br>Validated by the World Wide Web Consortium</span>
+
+http://hpsweb.honeywell.com/Cultures/en-US/AboutUs/CustomerAdvisoryBoards/LetsTalkProcessControl/default.htm<span class="tiny"><br>Validated by the World Wide Web Consortium</span>
+
+http://www.hotspex.com/<span class="tiny"><br>Validated by the World Wide Web Consortium</span>
+
+http://survey1.gongos.com/GP7064/referral.asp<span class="tiny"><br>Validated by the World Wide Web Consortium</span>
+
+http://www.gaiamlifestyle.com/survey/panelapplication.htm<span class="tiny"><br>Validated by the World Wide Web Consortium</span>
+
+http://hyperion.qar.com/focusdb/<span class="tiny"><br>Validated by the World Wide Web Consortium</span>
+
+I
+http://www.idealopinions.com/<span class="tiny"><br>Validated by the World Wide Web Consortium</span>
+
+https://secure.iguard.org/register.ig<span class="tiny"><br>Validated by the World Wide Web Consortium</span>
+
+http://industryopinion.com/<span class="tiny"><br>Validated by the World Wide Web Consortium</span>
+
+http://www.infonetresearch.com/panel.html<span class="tiny"><br>Validated by the World Wide Web Consortium</span>
+
+http://www.insightexchangeteam.com/nonmember.iphtml<span class="tiny"><br>Validated by the World Wide Web Consortium</span>
+
+http://surveys.insightrix.com/wix/p125557301.aspx?ref=17202<span class="tiny"><br>Validated by the World Wide Web Consortium</span>
+
+https://www.inspire.com/join/sa-arthritis/<span class="tiny"><br>Validated by the World Wide Web Consortium</span>
+
+http://www.internetpoll.com/http://iocs.org/panel.cfmhttp://www.advisorypanel.com/index.htmlhttp://www.iopinion.com/http://www.ithinkinc.com/home/Panel/Default/Home.aspx<span class="tiny"><br>Validated by the World Wide Web Consortium</span>
+
+J
+http://johnson.sona-systems.com/<span class="tiny"><br>Validated by the World Wide Web Consortium</span>
+
+https://websurveyor.net/wsb.dll/19981/FriendsAndNeighbors.htm<span class="tiny"><br>Validated by the World Wide Web Consortium</span>
+
+http://www.marketwaysarabia.com/join-our-panel/index.htm<span class="tiny"><br>Validated by the World Wide Web Consortium</span>
+
+http://questionspace.net/<span class="tiny"><br>Validated by the World Wide Web Consortium</span>
+
+https://www.jramednet.com/Login.aspx?ReturnUrl=/Default.aspx<span class="tiny"><br>Validated by the World Wide Web Consortium</span>
+
+http://www.reckner.com/<span class="tiny"><br>Validated by the World Wide Web Consortium</span>
+
+http://www.justanswer.com/expert.aspx<span class="tiny"><br>Validated by the World Wide Web Consortium</span>
+
+http://netpanel.gmi-mr.com/portals/gpms_cp/5000279/join.asp<span class="tiny"><br>Validated by the World Wide Web Consortium</span>
+
+K
+http://webeffective.keynote.com/join/public/register.asp<span class="tiny"><br>Validated by the World Wide Web Consortium</span>
+
+L
+http://lakamo.com/<span class="tiny"><br>Validated by the World Wide Web Consortium</span>
+
+http://leede.com/index.php/contact-us/participate/<span class="tiny"><br>Validated by the World Wide Web Consortium</span>
+
+http://www.leibowitz-research.com/home.html<span class="tiny"><br>Validated by the World Wide Web Consortium</span>
+
+http://us.lightspeedpanel.com/US/public/index.us<span class="tiny"><br>Validated by the World Wide Web Consortium</span>
+
+M
+http://www.macorr.com/panel.shtml<span class="tiny"><br>Validated by the World Wide Web Consortium</span>
+
+http://www.macworldconnect.com/eval.asp?bok=yes&rl=822832130&hc=2<span class="tiny"><br>Validated by the World Wide Web Consortium</span>
+
+http://www.maildiarypanel.com/<span class="tiny"><br>Validated by the World Wide Web Consortium</span>
+
+http://www.marketreaderpro.com/Market_Research_Consumer_Panel_Join_Our_Panel.asphttp://www.marketreaderpro.com/Market_Research_Consumer_Panel_Cooking_Survey.asphttp://www.marketing-analytics.co.uk/<span class="tiny"><br>Validated by the World Wide Web Consortium</span>
+
+http://marketingresearch.com/<span class="tiny"><br>Validated by the World Wide Web Consortium</span>
+
+http://www.marketsurveys.com/<span class="tiny"><br>Validated by the World Wide Web Consortium</span>
+
+https://survey1.hi-epanel.com/<span class="tiny"><br>Validated by the World Wide Web Consortium</span>
+
+http://www.marsresearch.com/<span class="tiny"><br>Validated by the World Wide Web Consortium</span>
+
+http://www.matrix-r.com/<span class="tiny"><br>Validated by the World Wide Web Consortium</span>
+
+http://maccs.sona-systems.com/<span class="tiny"><br>Validated by the World Wide Web Consortium</span>
+
+http://www.mdcresearch.com/index.cfm?method=contact.participate<span class="tiny"><br>Validated by the World Wide Web Consortium</span>
+
+http://www.medicaladvisoryboard.com/Medv2/<span class="tiny"><br>Validated by the World Wide Web Consortium</span>
+
+http://www.busreslab.com/medicalpanel.htm<span class="tiny"><br>Validated by the World Wide Web Consortium</span>
+
+https://www.theconference.com/<span class="tiny"><br>Validated by the World Wide Web Consortium</span>
+
+http://www.medqueryinc.com/panel.htm<span class="tiny"><br>Validated by the World Wide Web Consortium</span>
+
+http://www.medsurvey.com/sites/main/<span class="tiny"><br>Validated by the World Wide Web Consortium</span>
+
+http://www.microsoft.com/mscorp/marketing_research/<span class="tiny"><br>Validated by the World Wide Web Consortium</span>
+
+https://www.microsoftonlinepanel.com/Login.aspx?action=CT&trackid=60733955&sitegroup=7&siteid=775&languageid=1<span class="tiny"><br>Validated by the World Wide Web Consortium</span>
+
+http://www.millsadvisorypanel.com/<span class="tiny"><br>Validated by the World Wide Web Consortium</span>
+
+http://mindfieldonline.com/referral/8b0d44a5<span class="tiny"><br>Validated by the World Wide Web Consortium</span>
+
+http://web.mit.edu/brl/<span class="tiny"><br>Validated by the World Wide Web Consortium</span>
+
+http://www.mitchellresearch.com/<span class="tiny"><br>Validated by the World Wide Web Consortium</span>
+
+https://www.movietickets.com/myaccount.asp<span class="tiny"><br>Validated by the World Wide Web Consortium</span>
+
+http://www.myclearopinion.com/<span class="tiny"><br>Validated by the World Wide Web Consortium</span>
+
+http://www.myopinionnow.com/joinus.aspx?ref=238247AC23404<span class="tiny"><br>Validated by the World Wide Web Consortium</span>
+
+https://fun.mysurvey.com/join.cfm?r=3156245<span class="tiny"><br>Validated by the World Wide Web Consortium</span>
+
+http://www.mythoughtsmatterplus.com/<span class="tiny"><br>Validated by the World Wide Web Consortium</span>
+
+http://portal.myview.com/portal/app?cmd=Acquisition&token= ( needs to be referred )<span class="tiny"><br>Validated by the World Wide Web Consortium</span>
+
+N
+https://www.nhlfanfaceoff.com/<span class="tiny"><br>Validated by the World Wide Web Consortium</span>
+
+http://www.noxzemashaving.com/promotion/<span class="tiny"><br>Validated by the World Wide Web Consortium</span>
+
+http://www.betapanel.com/n/nytimes/insightpanel06_db/<span class="tiny"><br>Validated by the World Wide Web Consortium</span>
+
+O
+http://www.oceansprayconsumeradvisorypanel.com/<span class="tiny"><br>Validated by the World Wide Web Consortium</span>
+
+http://www.onepoll.com/join.php<span class="tiny"><br>Validated by the World Wide Web Consortium</span>
+
+https://www.opinionoutpost.com/join.php<span class="tiny"><br>Validated by the World Wide Web Consortium</span>
+
+https://www.opinionplace.com/main.adp<span class="tiny"><br>Validated by the World Wide Web Consortium</span>
+
+https://survey.opinionsearch.com/evox/en/index.php<span class="tiny"><br>Validated by the World Wide Web Consortium</span>
+
+https://www.opinionwizard.com/app/user_login/user_login.php<span class="tiny"><br>Validated by the World Wide Web Consortium</span>
+
+http://www.opinionbar.com/<span class="tiny"><br>Validated by the World Wide Web Consortium</span>
+
+http://opinionmart.com/<span class="tiny"><br>Validated by the World Wide Web Consortium</span>
+
+https://opinion.trone.com/panelist.asp<span class="tiny"><br>Validated by the World Wide Web Consortium</span>
+
+http://www.opinionsquare.com/Home.aspx<span class="tiny"><br>Validated by the World Wide Web Consortium</span>
+
+http://www.netverdix.com/<span class="tiny"><br>Validated by the World Wide Web Consortium</span>
+
+http://www.testspin.com/home<span class="tiny"><br>Validated by the World Wide Web Consortium</span>
+
+P
+http://pathenry.com/db/xq/asp.FormNoLogin/qx/survey.htm<span class="tiny"><br>Validated by the World Wide Web Consortium</span>
+
+http://www.panelintelligence.com/<span class="tiny"><br>Validated by the World Wide Web Consortium</span>
+
+http://www.parkstreetresearch.com/join.html<span class="tiny"><br>Validated by the World Wide Web Consortium</span>
+
+https://www.partnership-plus.com/login/<span class="tiny"><br>Validated by the World Wide Web Consortium</span>
+
+http://www.medqueryinc.com/patientpanel.htm<span class="tiny"><br>Validated by the World Wide Web Consortium</span>
+
+http://www.surveygroup.com/pentel/survey/index.cfm<span class="tiny"><br>Validated by the World Wide Web Consortium</span>
+
+http://www.personalopinion.com/<span class="tiny"><br>Validated by the World Wide Web Consortium</span>
+
+http://www.petersmktg.com/<span class="tiny"><br>Validated by the World Wide Web Consortium</span>
+
+http://www.platinumpanel.com/<span class="tiny"><br>Validated by the World Wide Web Consortium</span>
+
+http://www.pollingpoint.com/<span class="tiny"><br>Validated by the World Wide Web Consortium</span>
+
+http://www.ppresearch.sas.upenn.edu/<span class="tiny"><br>Validated by the World Wide Web Consortium</span>
+
+http://www.princeton.edu/~study/paidresearch/<span class="tiny"><br>Validated by the World Wide Web Consortium</span>
+
+http://www.psbsurveys.com/signup.aspxhttp://vanderbilt.sona-systems.com/<span class="tiny"><br>Validated by the World Wide Web Consortium</span>
+
+Q
+http://www.q-insights.com/respondent.html<span class="tiny"><br>Validated by the World Wide Web Consortium</span>
+
+http://www.qstation.com/cgi-shl/public/cgiip.exe/WService=Survey/qform/public/ATY/716-1/form.p<span class="tiny"><br>Validated by the World Wide Web Consortium</span>
+
+http://v2.decipherinc.com/survey/pm/mdp?web=0&sp=th<span class="tiny"><br>Validated by the World Wide Web Consortium</span>
+
+http://www.generationvoice.com/Registration.aspx<span class="tiny"><br>Validated by the World Wide Web Consortium</span>
+
+http://anderson.sona-systems.com/student_new_user.asp<span class="tiny"><br>Validated by the World Wide Web Consortium</span>
+
+R
+https://www.researchparticipants.com/Default.aspx<span class="tiny"><br>Validated by the World Wide Web Consortium</span>
+
+http://www3.rampanel.com/us<span class="tiny"><br>Validated by the World Wide Web Consortium</span>
+
+http://panel.resolutionresearch.com/about/join-now.php<span class="tiny"><br>Validated by the World Wide Web Consortium</span>
+
+http://www.responsepanel.com/<span class="tiny"><br>Validated by the World Wide Web Consortium</span>
+
+S
+http://surveys.insightrix.com/wix/p125557301.aspx?ref=6614<span class="tiny"><br>Validated by the World Wide Web Consortium</span>
+
+http://www.savitzpanel.com/<span class="tiny"><br>Validated by the World Wide Web Consortium</span>
+
+http://saynation.com/Portal/?RP=Register<span class="tiny"><br>Validated by the World Wide Web Consortium</span>
+
+For Joining Medical Database in English https://db1.schlesingerassociates.com/sch2/PreMedicalInternet.jsp?rc=gdH%2BaAPJ7ux1JQj8yu9xKA%3D%3D&user=usmedical&language=en&country=us&languageID=1<span class="tiny"><br>Validated by the World Wide Web Consortium</span>
+
+For Joining Consumer Database in English https://db1.schlesingerassociates.com/sch2/PreRInternet.jsp?rc=gdH%2BaAPJ7ux1JQj8yu9xKA%3D%3D&user=usconsumer&language=en&country=us&languageID=1<span class="tiny"><br>Validated by the World Wide Web Consortium</span>
+
+http://www.scienceboard.net/<span class="tiny"><br>Validated by the World Wide Web Consortium</span>
+
+http://www.shoppers-voice.com/index.html<span class="tiny"><br>Validated by the World Wide Web Consortium</span>
+
+http://www.shopperstudy.com/<span class="tiny"><br>Validated by the World Wide Web Consortium</span>
+
+http://www.skynewspanel.com/<span class="tiny"><br>Validated by the World Wide Web Consortium</span>
+
+http://survey.sotech.com/998024/start.asp?bok=yes&rl=723299782&refPMID=77681&hf=863704.txt<span class="tiny"><br>Validated by the World Wide Web Consortium</span>
+
+http://www.socraticforum.com/eval.asp?bok=yes&rl=1041617482&hc=3<span class="tiny"><br>Validated by the World Wide Web Consortium</span>
+
+http://www.songpeople.co.uk/<span class="tiny"><br>Validated by the World Wide Web Consortium</span>
+
+http://www.specpan.com/<span class="tiny"><br>Validated by the World Wide Web Consortium</span>
+
+https://www.spectrumpanel.com/reg/regini.htm<span class="tiny"><br>Validated by the World Wide Web Consortium</span>
+
+http://www.spidermetrix.com/sm120.php3?refspider=AnnikaHensen<span class="tiny"><br>Validated by the World Wide Web Consortium</span>
+
+http://www.spiritedtalk.org/panel/stp/page/welcome/<span class="tiny"><br>Validated by the World Wide Web Consortium</span>
+
+http://www.superiorresearch.net/register.html<span class="tiny"><br>Validated by the World Wide Web Consortium</span>
+
+http://www.surveyexchange.com/ee/<span class="tiny"><br>Validated by the World Wide Web Consortium</span>
+
+http://www.surveyhead.com/index.php?mode=logout<span class="tiny"><br>Validated by the World Wide Web Consortium</span>
+
+http://www.surveylion.com/<span class="tiny"><br>Validated by the World Wide Web Consortium</span>
+
+http://www.survey.com/<span class="tiny"><br>Validated by the World Wide Web Consortium</span>
+
+http://www.surveycafe.com/surveycafe/screener2.htm<span class="tiny"><br>Validated by the World Wide Web Consortium</span>
+
+http://www.surveys.com/<span class="tiny"><br>Validated by the World Wide Web Consortium</span>
+
+https://www.surveysavvy.com/?id=1688069&action=join<span class="tiny"><br>Validated by the World Wide Web Consortium</span>
+
+https://www.surveyspot.com/join/Join.faces?VendorID=33&OptInSource=usgen&locale=en_US<span class="tiny"><br>Validated by the World Wide Web Consortium</span>
+
+http://www.synchroresearch.com/ http://www.synovate.com/<span class="tiny"><br>Validated by the World Wide Web Consortium</span>
+
+T
+http://www.talkaboutfragrance.com/panel.php?view=join<span class="tiny"><br>Validated by the World Wide Web Consortium</span>
+
+http://www.tammadge.com/<span class="tiny"><br>Validated by the World Wide Web Consortium</span>
+
+http://team.tasterschoice.com/index.php?_action=screener&source=<span class="tiny"><br>Validated by the World Wide Web Consortium</span>
+
+https://www.technologyboard.com/tecv2/Default.aspx<span class="tiny"><br>Validated by the World Wide Web Consortium</span>
+
+http://www.techtank.com/?q=user/register<span class="tiny"><br>Validated by the World Wide Web Consortium</span>
+
+http://survey.thats-what-i-think.co.uk/cgi/srvy/optsrvy.cgi?382820492666&91622136758095280078<span class="tiny"><br>Validated by the World Wide Web Consortium</span>
+
+http://www.theafricanamericanvoice.com/<span class="tiny"><br>Validated by the World Wide Web Consortium</span>
+
+http://www.theb2bvoice.com/<span class="tiny"><br>Validated by the World Wide Web Consortium</span>
+
+http://www.thepatientsvoice.org/<span class="tiny"><br>Validated by the World Wide Web Consortium</span>
+
+http://www.testspin.com/home<span class="tiny"><br>Validated by the World Wide Web Consortium</span>
+
+http://www.trcpanel.com/<span class="tiny"><br>Validated by the World Wide Web Consortium</span>
+
+http://www.trendscan.de/index.php?lang=us<span class="tiny"><br>Validated by the World Wide Web Consortium</span>
+
+u
+http://www.u30.com/<span class="tiny"><br>Validated by the World Wide Web Consortium</span>
+
+http://www.usatalknow.com/<span class="tiny"><br>Validated by the World Wide Web Consortium</span>
+
+http://www.userworks.com/default.asp?page=participate&sub=signup<span class="tiny"><br>Validated by the World Wide Web Consortium</span>
+
+V
+http://www.valuedopinions.com/index.php?id=17&page=1&ref=panthban11_tch_a&partner=1<span class="tiny"><br>Validated by the World Wide Web Consortium</span>
+
+http://www.viewpointforum.com/ ( needs a refferral)<span class="tiny"><br>Validated by the World Wide Web Consortium</span>
+
+http://vlab.uib.no/<span class="tiny"><br>Validated by the World Wide Web Consortium</span>
+
+https://vlab2.gsb.columbia.edu/registration/privacy_db.php<span class="tiny"><br>Validated by the World Wide Web Consortium</span>
+
+http://www.vocalabs.com/<span class="tiny"><br>Validated by the World Wide Web Consortium</span>
+
+http://www.voc-online.com/evaluator-center/<span class="tiny"><br>Validated by the World Wide Web Consortium</span>
+
+W
+http://warwickpsychology.sona-systems.com/<span class="tiny"><br>Validated by the World Wide Web Consortium</span>
+
+https://www.mywellness360.com/enrollWB.aspx?&source=ahm&broker=811974<span class="tiny"><br>Validated by the World Wide Web Consortium</span>
+
+http://whatithinkcounts.com/home/<span class="tiny"><br>Validated by the World Wide Web Consortium</span>
+
+X
+http://www.xpertfocus.com/<span class="tiny"><br>Validated by the World Wide Web Consortium</span>
+
+https://xtrasecure.com/teamship/questionnaire.html<span class="tiny"><br>Validated by the World Wide Web Consortium</span>
+
+Y
+http://promo.yahoo.com/user_research/<span class="tiny"><br>Validated by the World Wide Web Consortium</span>
+
+http://www.yougovamerica.com/<span class="tiny"><br>Validated by the World Wide Web Consortium</span>
+
+http://www.your2cents.com/<span class="tiny"><br>Validated by the World Wide Web Consortium</span>
+
+Z
+https://www.zagat.com/Account/sub1.aspx?SG=R&RURL=http://www.zagat.com/vote/SurveyRedirect.aspx%253fSID%253d166<span class="tiny"><br>Validated by the World Wide Web Consortium</span>
+
+http://www.zandlgroup.com/<span class="tiny"><br>Validated by the World Wide Web Consortium</span>
+
+http://join.zoompanel.com/zoompanel/?master_id=153&subsource_id=111111111&cmp=AFC-OFWI7777004<span class="tiny"><br>Validated by the World Wide Web Consortium</span>
+-->
+                                <!--
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+                                non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. -->
+                            </p>
+
+
+                        </div>
+                    </div>
+                </div><!-- end col-12 -->
+            </div><!-- end .row -->
+
+            <div id="footer">
+                <p>
+                    &copy; Copyright 2010 CelebriTracker Productions
+                </p>
+            </div>
+
+            <a href="https://orris0.github.io/orris0/index.html" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+            <div id="farewell">Come back and visit us soon!</div>
+                <div class="row" style="background-color: #34495e; border-top: 2px solid #f6931e">
+                    <p>&copy; Kite-It.</p>
+                </div>
+        </footer>
+        <script src="lib/jquery-1.8.17.custom.min.js" type="text/javascript"></script>
+
+        <!-- Vendor JS Files -->
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        <script src="../orris0/aos.css"></script>
+        <script src="../orris0/bootstrap.bundle.min.js"></script>
+        <script src="../orris0/glightbox.min.js"></script>
+        <script src="../orris0/isotope.pkgd.min.js"></script>
+        <script src="../orris0/swiper-bundle.min.js"></script>
+        <script src="../orris0/validate.js"></script>
+        <!--jQuery JS-->
+        <link rel="stylesheet" href="./CSS/base.css" type="text/css" media="screen" charset="utf-8" />
+        <script src="./lib/jquery-1.7.1.min.js" type="text/javascript" charset="utf-8"></script>
+        <script type="text/javascript" src="./js/scripts.js"></script>
+        <script src="jquery.innerfade.js" type="text/javascript"></script>
+        <script src="lib/jquery-1.7.1.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="./lib/jquery-1.7.1.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="jquery.Jcrop.min.js" type="text/javascript" charset="utf-8"></script>
+        <script type="text/javascript" src="js/scripts.js"></script>
+        <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+        <script type="text/javascript" src="./jquery.easing.1.3.js"></script>
+        <script type="text/javascript" src="jquery.scrollTo.js" charset="utf-8"></script>
+        <script src="jquery.innerfade.js" type="text/javascript"></script>
+        <script src="jquery.cycle.all.min.js" type="text/javascript"></script>
+        <!-- Template Main JS File -->
+        <script src="../orris0/main.js"></script>
+        <a href="https://orris0.github.io/orris0/membership.html" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+    </body><!-- end body  -->
+</html>
+
+<!--
+<!doctype html>
+<!--Everything you write should be using markups --
+<!-- head section is communicating about the page to the browser --
+<!-- Anything you write under head is not displayed on the browser content page. --
+<html ng-app lang="en">
+<!-- All the Tags should be under <html> --
+<!-- Describing about the page --
 <head>
     <!-- Required meta tags -->
-    <!-- Describing about the page -->
-    <!-- head section is communicating about the page to the browser -->
-    <!-- Anything you write under head is not displayed on the browser content page. -->
+    <!-- Describing about the page --
+    <!-- head section is communicating about the page to the browser --
+    <!-- Anything you write under head is not displayed on the browser content page. --
   <title>Test page for semantic tags</title>
-  <!-- <meta details go here> -->
+  <!-- <meta details go here> --
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="REFRESH" content="2400">
@@ -40,14 +804,14 @@
     <meta property="og:url" content="https://orris0.github.io/orris0/index.html">
     <meta property="og:description" content="A simple HTML5 Template for new projects.">
     <meta property="og:image" content="image.png">
-    <!-- Optional Metadata-->
+    <!-- Optional Metadata--
     <meta property="og:audio:type" content="audio/mpeg">
     <meta property="og:audio" content="https://example.com/bond/theme.mp3">
     <meta property="og:description" content=" The abuse and mistreatment @ The BRC residential center, breaking-ground, The Travellers Hotel, The Andrews, The Kelly.">
-	<!-- <link rel="stylesheet" type="text/css" href="starter-page-style-2.css"> -->
+	<!-- <link rel="stylesheet" type="text/css" href="starter-page-style-2.css"> --
     <link rel="stylesheet" type="text/css" href=" HTML5-style-2.css">
   <style>
-    /* original styles by Andreas Bovens */
+    /* original styles by Andreas Bovens *
 
     body {
       font-size: 0.9em;
@@ -92,7 +856,7 @@
       margin: 0;
     }
 
-    /* defining some specific input sizes */
+    /* defining some specific input sizes *
 
     input[type=text],
     input[type=tel],
@@ -114,7 +878,7 @@
       height: 2em;
     }
 
-    /* dynamic CSS3 validation styles */
+    /* dynamic CSS3 validation styles *
 
     input[type=text]:focus:valid,
     input[type=email]:focus:valid,
@@ -127,14 +891,14 @@
     input[type=number]:focus:out-of-range {
       outline: 2px #f00 solid;
     }
-  </style>
+  </style> */
   <!--[if lte IE 7]>
         <link rel = "stylesheet" type = "text/css" href = "gallery-ie7.css">
     <![endif]-->
   <!-- conditional Javascript added -->
   <!--[if lte IE 8]>
         <script src="html5.js" type="text/javascript"></script>
-    <![endif]-->
+    <![endif]--
 </head>
 
 <body>
@@ -146,23 +910,23 @@
       Okay, cool, perhaps you'll prefer this <a href="no-js.html">non-JavaScript version</a> of the page.
     </p>
   </noscript>
-  <!-- svg-text-embed -->
+  <!-- svg-text-embed --
   <svg version="1.1" baseProfile="full" xmlns="http://www.w3.org/2000/svg" width="500px" height="60px">
     <text x="20" y="50"
       style="font-family:times new roman; font-size:36pt; font-weight:bold; letter-spacing:20px; stroke:black; fill:white; ">
       Tour Orris</text>
   </svg>
-  <!--<div id="container">--><!--surround header and border with a container-->
+  <!--<div id="container">--><!--surround header and border with a container--
   <header><!--change <div id="hdr"> to <header>-->
-    <!-- <h1> SVG </h1> -->
+    <!-- <h1> SVG </h1> --
     <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
       <circle cx="100" cy="50" r="40" stroke="black" stroke-width="2" fill="blue">
     </svg>
-    <!-- <h1>Devon's Rural Retreats</h1> -->
+    <!-- <h1>Devon's Rural Retreats</h1> --
     <h1>MJ's Practical HTML5 Projects</h1>
 
   </header>
-  <!--</div>--><!--close top section - content area starts -->
+  <!--</div>--><!--close top section - content area starts --
   <div id="content">
     <h2>Award winning accommodation, self catering or bed and breakfast</h2>
     <div id="leftcol">
@@ -172,7 +936,7 @@
     </div>
 
     <nav><!--use the semantic tag <nav>-->
-      <ul><!--start of menu list-->
+      <ul><!--start of menu list--
         <li class="btn"> <a href="accommodation.html" title="Accommodation">Accommodation</a>
         </li>
         <li class="btn"><a href="maps.html" title="Location Maps">Maps</a>
@@ -185,9 +949,9 @@
         </li>
         <li class="btn"><a href="index.html" title="Return to Home Page">Home Page</a>
         </li>
-      </ul><!--end of menu list-->
+      </ul><!--end of menu list--
     </nav><!--remove </div> and replace with </nav>-->
-    <!-- aside -->
+    <!-- aside --
     <section>
       <h1>Which browser should you design for?</h1>
       <article>
@@ -213,7 +977,7 @@
         are the most popular by default. It would be safe to predict that there will be a strong swing
         towards IE 9 when it is finalised in 2011.
       </article>
-      <!-- summary-details -->
+      <!-- summary-details --
       <details>
         <summary><b>A COMPUTER FOR &pound;15?</b></summary>
         <p>The UK not for profit organization Raspberry Pi is hoping to sell<br> a computer for &pound;15
@@ -233,11 +997,11 @@
     <br class="clear">
   </div><!--content section closed-->
   <!--change <div id=footer"> to <footer> and enclose text in a paragraph so that it 
-can be centred -->
+can be centred --
   <footer>
-    <!-- note that we're programmatically forcing validation and then preventing the form from actually submitting...this is only a test form, and there's no point having it submit to itself for no reason -->
+    <!-- note that we're programmatically forcing validation and then preventing the form from actually submitting...this is only a test form, and there's no point having it submit to itself for no reason --
 
-    <!-- <h1>HTML5 forms example</h1> -->
+    <!-- <h1>HTML5 forms example</h1> --
 
     <p>This is an example for the <a href="http://dev.opera.com/articles/view/new-form-features-in-HTML5/"><cite>New
           form features in HTML5</cite></a> article</p>
@@ -288,7 +1052,7 @@ can be centred -->
         <label for="deliverydate">Delivery date</label>
         <input type="date" name="deliverydate" id="deliverydate" min="2010-12-16" required> (minimum 16 December
         2010)
-        <!-- with some server-side scripting we'd prefill the min attribute with today's date ... in this static example it's simply hardcoded -->
+        <!-- with some server-side scripting we'd prefill the min attribute with today's date ... in this static example it's simply hardcoded --
       </div>
 
       <div>
@@ -373,4 +1137,4 @@ can be centred -->
   </footer>
 </body>
 
-</html>
+</html> -->
