@@ -36,7 +36,7 @@ vertical-align:top;
 }
 #starter-page-content { background-color:transparent; border-left:10px white solid;
 border-right:10px white solid; border-bottom:10px white solid; width: 944px;
-margin-top:10em; margin-left:-10px; margin-right:auto; padding:8px;
+margin-top:-10em; margin-left:-10px; margin-right:auto; padding:8px;
 font-size:100%; color:maroon;
 }
 footer {text-align:center; clear:both;
