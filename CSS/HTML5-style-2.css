@@ -84,7 +84,423 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
-/* Listing 1-7b. The Revised CSS Sheet for Figure 1-7 (html5-style-2.css)
+html, body, h1, h2, h3, h4, h5, h6, p, ol, ul, li { padding: 7px; margin: 0; 
+}
+header, footer, section, article, nav { display:block; 
+}
+body {text-align:center; background: #bee8ff; font-family:"times new roman"; font-size:100%; color:navy; 
+}
+div#starter-page-container.data {width:97%; max-width:960px; min-width:780px; margin:auto;
+}
+div.row {
+  display: block; unicode-bidi:isolate;
+}
+div.col-12 {
+  display:block;
+  unicode-bidi: isolate;
+}
+/* set vertical button menu position */
+#nav {width:130px; float:left; position: relative; top:29px; left:60px
+}
+
+#starter-page-main-content { width:100%; margin:10px; padding:0;
+}
+header {width:100%; height:156px; position: relative; top: 125px; background-image:url('images/header2.jpg'); text-align:center; border-top:10px white solid;  border-left:10px white solid;
+border-right:10px white solid; border-bottom:10px white solid; background-repeat:no-repeat; background-position:center top;}
+img { border:0;
+}
+#starter-page-leftcol { float:left; width: 305px; vertical-align:top;
+}
+#starter-page-rightcol { width: 135px; float:right; height: 252px; margin-right:10px;
+}
+#starter-page-midcol { margin-left:315px; margin-right:205px; margin-top:-2px;
+vertical-align:top;
+}
+#creditcol { float:right; width:125px; text-align:center;
+}
+#midcontent { margin:0 135px 0 145px; text-align:center;
+}
+#starter-page-content { background-color:transparent; border-left:10px white solid;
+border-right:10px white solid; border-bottom:10px white solid; width: 944px;
+margin-top:-10em; margin-left:-10px; margin-right:auto; padding:8px;
+font-size:100%; color:maroon;
+}
+footer {text-align:center; clear:both;
+}
+br.clear { clear:both;
+}
+#starter-page-mid-left-col {width:47%; float:left; text-align:left;
+}
+#starter-page-mid-right-col {width:47%; float:right; text-align:left;
+}
+h1#starter-page-h1 { padding-top:0px; margin:0px; text-align:center; font-size:xx-large;
+}
+h2#starter-page-h2 { margin:50px 0 5px 0; font-size:x-large; font-weight:bold; 
+}
+h3#starter-page-h3 { font-size:large; color:midnightblue; margin:0 0 -5px 0;
+}
+p.lft {text-align:left;
+}
+p.cntr {text-align:center;
+}
+/*set horizontal menu buttons general style*/
+#starter-page-hnav {display:inline-block;  margin:10px auto 10px auto; width:450px; 
+height:42px; 
+}
+#starter-page-hnav li {margin:10px; float:left; text-align:center; padding:5px;  list-style-type:none;
+}
+/*set general anchor style to fill the container*/
+#starter-page-hnav li a {text-decoration:none; color:white; font-weight:bold; width:120px; padding:5px; text-align:center; 
+}
+/*mouseOut state (default)*/
+#starter-page-hnav li a { position: relative; top:-3.5em; background: #1A9CE0; border: 4px outset #AABAFF; text-align:center; margin-right:5px; left: 8em;
+}
+/* mouseover */
+#starter-page-hnav li a:hover { background: #0A4ADF;   border: 4px outset #8ABAFF; width:120px; 
+}
+/* omousedown */
+#starter-page-hnav li a:active 	{ background:#ABCBFF;  border: 4px inset #ABCBFF; 
+}
+
+ul	{  margin-left:-70px; padding-left:0;   
+}
+/* set general side button styles */
+li { width:115px; list-style-type :none; margin-bottom: -6px; text-align: center; 
+}
+/* set general anchor styles */
+li a { display: block; width:115px; font-weight: bold; text-decoration: none 
+}
+/* specify state styles... */
+/* mouseout (default) */
+li a { background: #1A9CE0;  border: 4px outset #AABAFF;
+}
+/* mouseover */
+li a:hover	{ display:block; background: #0A4ADF; border: 4px outset #8ABAFF; width:115px;
+}
+/* omousedown */
+li a:active { background:#AECBFF; border: 4px inset #AECBFF; 
+}
+br.clear { clear:both; }
+/*various font sizes and colours*/
+.tiny { text-align: center; font-family: Arial; font-size: 8pt; color: #000000; 
+}
+p.cntr { text-align:center; 
+}
+p.lft { text-align:left; margin-top: 1px; 
+}
+p.right {text-align:right; 
+}
+@media (min-width: 48em) {
+  #nav ul {
+    /* older flexbox */
+    display: -ms-flexbox;
+    flex-direction: -ms-row;
+    display: -webkit-box;
+    display: -moz-box;
+    display: box;
+    -webkit-box-orient: horizontal;
+    -moz-box-orient: horizontal;
+    box-orient: horizontal;
+    /* newer flexbox */
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+/*equalise all the margins, paddings and borders built into various browsers*/  
+div body header #content { margin:0; padding:0; border:0; 
+}
+body { background:#fff url(images/green-grad.jpg) repeat-x; margin:auto; box-shadow: 0 0 0 10px #665;
+}
+/*add display attributes for the semantic tags*/
+header, footer, section, article, nav { display:block; 
+}
+header {width:920px; height:180px; padding:0; border:10px solid hsla(0, 0%,100%,.5); 
+  background: url(/CSS/images/header3.jpg); margin:50px auto; 
+}
+h1 { font-size:xxx-large; color :white; position: relative; left:90px; top: 80px; width:650px; 
+}
+#rosette { position:relative; left:380px; top:-30px; }
+
+
+#content { background-color:transparent; border-left:10px solid hsla(0, 0%,100%,.5); border-right:10px solid hsla(0, 0%,100%,.5); 
+border-bottom:10px solid hsla(0, 0%,100%,.5); width: 904px; margin-top:-50px; margin-left:auto; margin-right:auto; padding:8px; font-size:medium; color:maroon; 
+}
+h2 { font-size:100%; color:white; margin:0 0 10px 
+}
+h3 { font-size:100%; color:white; margin:0 0 6px 0; 
+}
+#leftcol { float:left; width: 310px; vertical-align:top; 
+}
+#rightcol { width: 135px; float:right; height: 252px; margin-right:10px;
+}
+#midcol { 	margin-left:315px; margin-right:145px; margin-top:10px; vertical-align:top; 
+}
+/* set side menu block position and width*/
+nav#nav { margin:10px 30px 0 10px; width:135px; 
+}
+/*Set list style within the menu block only. This removes bullets*/
+nav li { list-style-type:none; 
+}	
+/* set general side button styles */
+nav li { margin-bottom: -0.4em; text-align: center; width:130px;
+}
+/* set general anchor styles and include the zoom fix for IE6*/
+nav li a { display: block;
+  font-weight: bold; 
+}
+/* specify mouse state styles */
+/* mouseout (default) *
+nav li a { background:#559a55; font-size: 80%; border: 5px outset #559a55;
+}
+/* mouseover */
+nav li a:hover { background: red;  color:white; border: 5px outset red;
+}
+/*mouse active*/
+nav li a:active { background:maroon;  border: 5px inset maroon; 
+}
+br.clear { 	clear:both; 
+}
+#midcol img { margin-left:10px; 
+}
+footer { clear:both; color:maroon; text-align:center; 
+}
+/*######################################################*/
+html, body, h1, h2, h3, h4, h5, h6, p, ol, ul, li { padding: 10px; margin: 0; 
+}
+header, footer, section, article, nav { display:block; 
+}
+body {text-align:center; background: #bee8ff; font-family:"times new roman"; font-size:100%; color:navy; 
+}
+#container {width:97%; max-width:960px; min-width:780px; margin:auto;
+}
+#main-content { width:100%; margin:10px; padding:0;
+}
+header {width:100%; height:156px; position: relative; top: -45px; background-image:url('images/header2.jpg'); text-align:center; border-bottom:10px white solid;  border-left:10px white solid;
+border-right:10px white solid; border-bottom:10px white solid; background-repeat:no-repeat; background-position:center top;}
+img { border:0;
+}
+#leftcol { float:left; width: 310px; vertical-align:top;
+}
+#rightcol { width: 135px; float:right; height: 252px; margin-right:10px;
+}
+#midcol { margin-left:315px; margin-right:145px; margin-top:10px;
+vertical-align:top;
+}
+
+
+#creditcol { float:right; width:125px; text-align:center;
+}
+#midcontent { margin:0 135px 0 145px; text-align:center;
+}
+#content { background-color:transparent; border-left:10px white solid;
+border-right:10px white solid; border-bottom:10px white solid; width: 904px;
+margin-top:-55px; margin-left:auto; margin-right:auto; padding:8px;
+font-size:100%; color:maroon;
+}
+footer {text-align:center; clear:both;
+}
+br.clear { clear:both;
+}
+#mid-left-col {width:47%; float:left; text-align:left;
+}
+#mid-right-col {width:47%; float:right; text-align:left;
+}
+h1 { padding-top:0px; margin:50px; text-align:center; font-size:200%;
+}
+h2 { margin:50px 0 5px 0; font-size:150%; font-weight:bold; 
+}
+h3 { font-size:100%; color:midnightblue; margin:0 0 -5px 0;
+}
+p.lft {text-align:left;
+}
+p.cntr {text-align:center;
+}
+/*set horizontal menu buttons general style*/
+#hnav {display:inline-block;  margin:10px auto 10px auto; width:450px; 
+height:42px; 
+}
+#hnav li {margin:10px; float:left; text-align:center; padding:5px;  list-style-type:none;
+}
+/*set general anchor style to fill the container*/
+#hnav li a {text-decoration:none; color:white; font-weight:bold; width:120px; padding:5px; text-align:center; 
+}
+/*mouseOut state (default)*/
+#hnav li a { position: relative; top:30px; background: #1A9CE0; border: 4px outset #AABAFF; text-align:center; margin-right:5px;
+}
+/* mouseover */
+#hnav li a:hover { background: #0A4ADF;   border: 4px outset #8ABAFF; width:63em; 
+}
+/* omousedown */
+#hnav li a:active 	{ background:#ABCBFF;  border: 4px inset #ABCBFF; 
+}
+/* set vertical button menu position */
+nav {width:130px; margin: 0px; float:left; position: relative; top:14px;
+}
+ul	{  margin-left:0; padding-left:0;   
+}
+/* set general side button styles */
+li { width:115px; list-style-type :none; margin-bottom: 3px; text-align: center; 
+}
+/* set general anchor styles */
+li a { display: block; width:120px; color: white; font-weight: bold; text-decoration: none 
+}
+/* specify state styles... */
+/* mouseout (default) */
+li a { background: #1A9CE0;  border: 4px outset #AABAFF;
+}
+/* mouseover */
+li a:hover	{ display:block; background: #0A4ADF; border: 4px outset #8ABAFF; width:115px;
+}
+/* omousedown */
+li a:active { background:#AECBFF; border: 4px inset #AECBFF; 
+}
+br.clear { clear:both; }
+/*various font sizes and colours*/
+.tiny { text-align: center; font-family: Arial; font-size: 8pt; color: #000000; 
+}
+p.cntr { text-align:center; 
+}
+p.lft { text-align:left; margin-top: 1px; 
+}
+p.right {text-align:right; 
+}
+@media (min-width: 48em) {
+  #nav ul {
+    /* older flexbox */
+    display: -ms-flexbox;
+    flex-direction: -ms-row;
+    display: -webkit-box;
+    display: -moz-box;
+    display: box;
+    -webkit-box-orient: horizontal;
+    -moz-box-orient: horizontal;
+    box-orient: horizontal;
+    /* newer flexbox */
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+/* ############################### */
+
+html, body, h1, h2, h3, h4, h5, h6, p, ol, ul, li { padding: 10px; margin: 0; 
+}
+header, footer, section, article, nav { display:block; 
+}
+body {text-align:center; background: #bee8ff; font-family:"times new roman"; font-size:100%; color:navy; 
+}
+#container {width:97%; max-width:960px; min-width:780px; margin:auto;
+}
+#main-content { width:100%; margin:10px; padding:0;
+}
+header {width:100%; height:156px; position: relative; top: 1em; background-image:url('images/header2.jpg'); text-align:center; border-top:10px white solid;  border-left:10px white solid;
+border-right:10px white solid; border-bottom:10px white solid; background-repeat:no-repeat; background-position:center top;}
+img { border:0;
+}
+#leftcol { float:left; width: 310px; vertical-align:top;
+}
+#rightcol { width: 135px; float:right; height: 252px; margin-right:10px;
+}
+#midcol { margin-left:315px; margin-right:145px; margin-top:10px;
+vertical-align:top;
+}
+
+
+#creditcol { float:right; width:125px; text-align:center;
+}
+#midcontent { margin:0 135px 0 145px; text-align:center;
+}
+#content { background-color:transparent; border-left:10px white solid;
+border-right:10px white solid; border-bottom:10px white solid; width: 944px;
+margin-top:-125px; margin-left:auto; margin-right:auto; padding:8px;
+font-size:100%; color:maroon;
+}
+footer {text-align:center; clear:both;
+}
+br.clear { clear:both;
+}
+#mid-left-col {width:47%; float:left; text-align:left;
+}
+#mid-right-col {width:47%; float:right; text-align:left;
+}
+h1 { padding-top:0px; margin:50px; text-align:center; font-size:300%;
+}
+h2 { margin:50px 0 5px 0; font-size:150%; font-weight:bold; 
+}
+h3 { font-size:100%; color:midnightblue; margin:0 0 -5px 0;
+}
+p.lft {text-align:left;
+}
+p.cntr {text-align:center;
+}
+/*set horizontal menu buttons general style*/
+#hnav {display:inline-block;  margin:10px auto 10px auto; width:450px; 
+height:42px; 
+}
+#hnav li {margin:10px; float:left; text-align:center; padding:5px;  list-style-type:none;
+}
+/*set general anchor style to fill the container*/
+#hnav li a {text-decoration:none; color:white; font-weight:bold; width:120px; padding:5px; text-align:center; 
+}
+/*mouseOut state (default)*/
+#hnav li a { position: relative; top:30px; background: #1A9CE0; border: 4px outset #AABAFF; text-align:center; margin-right:5px;
+}
+/* mouseover */
+#hnav li a:hover { background: #0A4ADF;   border: 4px outset #8ABAFF; width:120px; 
+}
+/* omousedown */
+#hnav li a:active 	{ background:#ABCBFF;  border: 4px inset #ABCBFF; 
+}
+/* set vertical button menu position */
+nav#nav {width:130px; float:left; position: relative; top: -4em; left:4em;
+}
+ul	{  margin-left:-70px; padding-left:0;   
+}
+/* set general side button styles */
+li { width:115px; list-style-type :none; margin-bottom: 3px; text-align: center; 
+}
+/* set general anchor styles */
+li a { display: block; font-size: 80%; width:10.5em; color: white; font-weight: bold; text-decoration: none 
+}
+/* specify state styles... */
+/* mouseout (default) */
+li a { background: #1A9CE0;  border: 4px outset #AABAFF;
+}
+/* mouseover */
+li a:hover	{ display:block; background: #0A4ADF; border: 4px outset #8ABAFF; width:115px;
+}
+/* omousedown */
+li a:active { background:#AECBFF; border: 4px inset #AECBFF; 
+}
+br.clear { clear:both; }
+/*various font sizes and colours*/
+.tiny { text-align: center; font-family: Arial; font-size: 8pt; color: #000000; 
+}
+p.cntr { text-align:center; 
+}
+p.lft { text-align:left; margin-top: 1px; 
+}
+p.right {text-align:right; 
+}
+@media (min-width: 48em) {
+  #nav ul {
+    /* older flexbox */
+    display: -ms-flexbox;
+    flex-direction: -ms-row;
+    display: -webkit-box;
+    display: -moz-box;
+    display: box;
+    -webkit-box-orient: horizontal;
+    -moz-box-orient: horizontal;
+    box-orient: horizontal;
+    /* newer flexbox */
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+   /* Listing 1-7b. The Revised CSS Sheet for Figure 1-7 (html5-style-2.css)
 (The key items are picked out in bold type.) equalise for various browsers and change #header to header*/
 div body header #content { margin:0; padding:0; border:0;
 }
