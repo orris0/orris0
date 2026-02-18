@@ -38,13 +38,13 @@ h1 {
   width: 480px;
 }
 
-#html5style2rosette {
+div#html5style2rosette {
   position: relative;
   left: 750px;
   top: 5px;
 }
 
-#html5style2content {
+div#html5style2content {
   background-color: transparent;
   border-left: 10px white solid;
   border-right: 10px white solid;
@@ -70,7 +70,7 @@ h3 {
   margin: 0 0 6px 0;
 }
 
-#html5style2leftcol {
+div#html5style2leftcol {
   float: left;
   width: 310px;
   vertical-align: top;
@@ -78,7 +78,7 @@ h3 {
 
 /*#rightcol { width: 135px; float:right; height: 252px; margin-right:10px;
 }*/
-#html5style2midcol {
+div#html5style2midcol {
   margin-left: 315px;
   margin-right: 145px;
   margin-top: 10px;
@@ -141,7 +141,7 @@ br.clear {
   clear: both;
 }
 
-#midcol img {
+div#html5style2midcol img {
   margin-left: 10px;
 }
 
