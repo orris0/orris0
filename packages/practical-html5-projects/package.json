@@ -3,8 +3,33 @@
   "version": "1.0.0",
   "description": "A simple HTML5 Template for new projects.",
   "main": "index.js",
-  "devDep3endencies": {},
-  "scripts": {
+{
+  "devDependencies": {
+    "@squoosh/cli": "^0.7.2",
+    "clean-css-cli": "^5.5.0",
+    "concat": "^1.0.3",
+    "npm": "^8.3.0",
+    "npm-run-all": "^4.1.5",
+    "onchange": "^7.1.0",
+    "sass": "^1.48.0",
+    "uglify-js": "^3.14.5"
+  }
+},
+"scripts": {
+    "scss": "sass assets/scss/style.scss dist/css/style.css",
+    "concat:css": "concat -o dist/css/styles.css dist/css/style.css assets/css/test.css",
+    "concat:js": "mkdir -p dist/js && concat -o dist/js/scripts.js assets/js/test1.js assets/js/test2.js",
+    "concat": "npm run concat:css && npm run concat:js",
+    "cssmin": "cleancss -o dist/css/styles.min.css dist/css/styles.css",
+    "uglify": "uglifyjs -o dist/js/scripts.min.js dist/js/scripts.js",
+    "squoosh": "squoosh-cli --mozjpeg '{quality:70}' assets/img -d dist/img",
+    "build:css": "npm run scss && npm run concat:css && npm run cssmin",
+    "build:js": "npm run concat:js && npm run uglify",
+    "build:img": "npm run squoosh",
+    "build": "npm run build:css && npm run build:js && npm run build:img",
+    "watch:css": "onchange 'assets/scss/*.scss' -- npm run build:css",
+    "watch:js": "onchange 'assets/js/*.js' -- npm run build:js",
+    "watch": "npm-run-all --parallel watch:*"
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
