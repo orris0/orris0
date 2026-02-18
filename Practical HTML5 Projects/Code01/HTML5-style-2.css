@@ -20,7 +20,7 @@ nav {
 }
 
 /*remove the # from #header*/
-header#html5style2header {
+header#html5style2header.data {
   width: 920px;
   height: 180px;
   padding: 0;
@@ -44,7 +44,7 @@ div#html5style2rosette {
   top: 5px;
 }
 
-div#html5style2content {
+div#html5style2content.data {
   background-color: transparent;
   border-left: 10px white solid;
   border-right: 10px white solid;
@@ -70,7 +70,7 @@ h3 {
   margin: 0 0 6px 0;
 }
 
-div#html5style2leftcol {
+div#html5style2leftcol.data {
   float: left;
   width: 310px;
   vertical-align: top;
@@ -78,7 +78,7 @@ div#html5style2leftcol {
 
 /*#rightcol { width: 135px; float:right; height: 252px; margin-right:10px;
 }*/
-div#html5style2midcol {
+div#html5style2midcol.data {
   margin-left: 315px;
   margin-right: 145px;
   margin-top: 10px;
@@ -141,11 +141,11 @@ br.clear {
   clear: both;
 }
 
-div#html5style2midcol img {
+div#html5style2midcol.data img {
   margin-left: 10px;
 }
 
-footer {
+footer#html5style2footer.data {
   clear: both;
   color: maroon;
   text-align: center;
