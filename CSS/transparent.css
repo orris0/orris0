@@ -63,7 +63,7 @@ html, body, h1, h2, h3, h4, h5, h6, p, ol, ul, li { padding: 10px; margin: 0;
 }
 header, footer, section, article, nav { display:block; 
 }
-#container {width:97%; max-width:960px; min-width:780px; margin:auto;
+div.data #container {width:97%; max-width:960px; min-width:780px; margin:auto;
 }
 #main-content { width:100%; margin:10px; padding:0;
 }
