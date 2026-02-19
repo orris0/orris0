@@ -3859,7 +3859,7 @@ nav#nav { margin:95px 9px 0 35px; width:80%;
 nav li { list-style-type:none; 
 }	
 /* set general side button styles */
-nav li { margin-bottom: -19px; text-align: center; width:130px;
+nav li { margin-bottom: -20px; text-align: center; width:130px;
 }
 /* set general anchor styles and include the zoom fix for IE6*
 nav li a { display: block; color: white; font-weight: bold; text-decoration: none; zoom:1;
