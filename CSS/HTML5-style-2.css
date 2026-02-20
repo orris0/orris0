@@ -171,7 +171,7 @@ li { width:115px; list-style-type :none; margin-bottom: -6px; text-align: center
 li a { display: block; width:115px; font-weight: bold; text-decoration: none 
 }
 /* specify state styles... */
-/* mouseout (default) */
+/* mouseout (default) *
 li a { background: #1A9CE0;  border: 4px outset #AABAFF;
 }
 /* mouseover */
