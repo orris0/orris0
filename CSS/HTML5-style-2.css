@@ -167,7 +167,7 @@ ul	{  margin-left:-70px; padding-left:0;
 /* set general side button styles */
 li { width:115px; list-style-type :none; margin-bottom: -6px; text-align: center; 
 }
-/* set general anchor styles */
+/* set general anchor styles *
 li a { display: block; width:115px; font-weight: bold; text-decoration: none 
 }
 /* specify state styles... */
