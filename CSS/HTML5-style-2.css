@@ -456,7 +456,7 @@ ul	{  margin-left:-70px; padding-left:0;
 /* set general side button styles */
 li { width:115px; list-style-type :none; margin-bottom: 3px; text-align: center; 
 }
-/* set general anchor styles */
+/* set general anchor styles *
 li a { display: block; font-size: 80%; width:10.5em; color: white; font-weight: bold; text-decoration: none 
 }
 /* specify state styles... */
