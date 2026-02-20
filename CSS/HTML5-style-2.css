@@ -84,8 +84,8 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
-Listing 4-7b. The CSS Listing for Changing the Tab for the five Tab Menu Pages (squaretabs.css)
-/* Set styles to equalise browser rendition*/
+/*Listing 4-7b. The CSS Listing for Changing the Tab for the five Tab Menu Pages (squaretabs.css)
+* Set styles to equalise browser rendition*/
 html, body, h1, h2, h3, h4, h5, h6, p, ol, ul, li { padding: 0; margin: 0;
 }
 header, footer, section, article, nav { display:block;
@@ -103,7 +103,7 @@ text-align:center; padding-top:35px; margin-bottom:-10px; height: 94px; margin:a
 }
 /*set the generic tab style--and move menu upwards so that it overlaps the header*/
 nav {position:relative; top:-13px; color: navy; border-bottom: 1px solid black;
-margin: -25px 0 0 0; padding: 0px; padding-left: 10px z-index: 1; }
+margin: -25px 0 0 0; padding: 0px; padding-left: 10px; z-index: 1; }
 /* use display:inline to remove IE6 double margin bug*/
 nav li { display: inline; overflow: hidden; list-style-type: none;
 } 
