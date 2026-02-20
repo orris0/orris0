@@ -43,7 +43,7 @@ nav li a { display: block;
   font-weight: bold; 
 }
 /* specify mouse state styles */
-/* mouseout (default) */
+/* mouseout (default) *
 nav li a { background:#559a55; font-size: 80%; border: 5px outset #559a55;
 }
 /* mouseover */
