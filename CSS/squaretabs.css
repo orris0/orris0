@@ -8,13 +8,13 @@ div body #main-header #content { margin:0; padding:0; border:0;
 /*set images to have no borders*/
 img {   border:0;
 }
-/*
+
 img {
   clip-path: polygon(50% 0, 100% 50%,
              50% 100%, 0 50%);
              transition: 1s clip-path;
 }
-             
+ /*            
 img, #logo {
   text-align: left;
 }
