@@ -94,7 +94,7 @@ body {text-align:center; margin: 20px; background: #bee8ff; font: medium arial;
 }
 #container {width:960px; margin:-10px auto 0 auto;
 }
-header {margin-top:0; height:156px; width:100%;
+header#html5style2header.data {margin-top:0; height:156px; width:100%;
 background-image:url('images/bluepan.jpg'); background-repeat:no-repeat;
 background-position:center; border-bottom:0;
 }
