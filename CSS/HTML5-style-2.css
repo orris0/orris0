@@ -136,8 +136,10 @@ html, body, h1, h2, h3, h4, h5, h6, p, ol, ul, li { padding: 7px; margin: 0;
 }
 header, footer, section, article, nav { display:block; 
 }
+/*
 body {text-align:center; background: #bee8ff; font-family:"times new roman"; font-size:100%; color:navy; 
 }
+*/
 div#starter-page-container.data {width:97%; max-width:960px; min-width:780px; margin:auto;
 }
 div.row {
@@ -255,11 +257,12 @@ p.right {text-align:right;
   }
 }
 
-/*equalise all the margins, paddings and borders built into various browsers*/  
+/*equalise all the margins, paddings and borders built into various browsers*  
 div body header #content { margin:0; padding:0; border:0; 
 }
 body { background:#fff url(images/green-grad.jpg) repeat-x; margin:auto; box-shadow: 0 0 0 10px #665;
 }
+*/
 /*add display attributes for the semantic tags*/
 header, footer, section, article, nav { display:block; 
 }
@@ -316,8 +319,10 @@ html, body, h1, h2, h3, h4, h5, h6, p, ol, ul, li { padding: 10px; margin: 0;
 }
 header, footer, section, article, nav { display:block; 
 }
+/*
 body {text-align:center; background: #bee8ff; font-family:"times new roman"; font-size:100%; color:navy; 
 }
+*/
 #container {width:97%; max-width:960px; min-width:780px; margin:auto;
 }
 #main-content { width:100%; margin:10px; padding:0;
@@ -436,9 +441,10 @@ html, body, h1, h2, h3, h4, h5, h6, p, ol, ul, li { padding: 10px; margin: 0;
 }
 header, footer, section, article, nav { display:block; 
 }
+/*
 body {text-align:center; background: #bee8ff; font-family:"times new roman"; font-size:100%; color:navy; 
 }
-
+*/
 #main-content { width:100%; margin:10px; padding:0;
 }
 header {width:100%; height:156px; position: relative; top: 1em; background-image:url('images/header2.jpg'); text-align:center; border-top:10px white solid;  border-left:10px white solid;
@@ -550,7 +556,7 @@ p.right {text-align:right;
 }
 
    /* Listing 1-7b. The Revised CSS Sheet for Figure 1-7 (html5-style-2.css)
-(The key items are picked out in bold type.) equalise for various browsers and change #header to header*/
+(The key items are picked out in bold type.) equalise for various browsers and change #header to header*
 div body header #content { margin:0; padding:0; border:0;
 }
 /*remove the # from #header*/
@@ -4218,9 +4224,10 @@ html, body, h1, h2, h3, h4, h5, h6, p, ol, ul, li { padding: 10px; margin: 0;
 }
 header, footer, section, article, nav { display:block; 
 }
+/*
 body {text-align:center; background: #bee8ff; font-family:"times new roman"; font-size:100%; color:navy; 
 }
-
+*/
 #main-content { width:100%; margin:10px; padding:0;
 }
 header {width:100%; height:156px; position: relative; top: -2.4em; left: -10px; background-image:url('images/header2.jpg'); text-align:center; border-top:10px white solid;  border-left:10px white solid;
