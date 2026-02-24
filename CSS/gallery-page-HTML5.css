@@ -200,7 +200,7 @@ div#gallerypagemidcol.data { margin-left:135px; margin-right:155px;
 div#gallerypagegallery-block.data { position:relative; left: 30px; top: -500px;
 }
 /*set footer*/
-footer { clear:both; color:black; text-align:center; width:970px;
+footer { clear:both; color:black; text-align:center;
 }
 .clear { clear:both;
 }
