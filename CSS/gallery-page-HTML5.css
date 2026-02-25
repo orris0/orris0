@@ -189,7 +189,7 @@ nav#gallerypagenav.data { float:left; margin-left:30px; width:115px;
 header#gallerypageheader.data ul { margin-left:0; border:0; width:115px;
 }
 /*set far right column for ads*/
-div#gallerypagerightcol { width: 12em; float:right; text-align:center;
+div#gallerypagerightcol { width: 150px; float:right; text-align:center;
 }
 div#gallerypagerightcol p.advert {font-size:small; margin-top:190px;
 }
