@@ -182,7 +182,7 @@ h2 {font-size:large; font-family:"times new roman"; text-align:center;
 body {margin:auto; width:970px;
 }
 */
-header#gallerypageheader.data { width:920px;
+header#gallerypageheader.data { width:970px;
 }
 nav#gallerypagenav.data { float:left; margin-left:10px; width:115px;
 }
