@@ -16,7 +16,7 @@ span.small { font-size:small;
 }
 h1 { font-size:300%; color:rebeccapurple; font-family:"times new roman"; text-align:center;
 }
-h2 {font-size:100%; font-family:"times new roman"; text-align:center;
+h2 {font-size:100%; color: whitesmoke font-family:"times new roman"; text-align:center;
 }
 /*PAGE LAYOUT*/
 body {margin:auto; width:970px;
