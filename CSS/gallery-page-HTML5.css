@@ -14,7 +14,7 @@ header, footer, section, article, nav { display:block;
 /*SET FONTS*/
 span.small { font-size:small;
 }
-h1 { font-size:300%; color:fuchsia font-family:"times new roman"; text-align:center;
+h1 { font-size:300%; color:rebeccapurple font-family:"times new roman"; text-align:center;
 }
 h2 {font-size:large; font-family:"times new roman"; text-align:center;
 }
