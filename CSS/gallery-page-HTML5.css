@@ -14,15 +14,14 @@ header, footer, section, article, nav { display:block;
 /*SET FONTS*/
 span.small { font-size:small;
 }
-h1 { font-size:300%; color:white; font-family:"times new roman"; text-align:center;
+h1 { font-size:xx-large; color:white; font-family:"times new roman"; text-align:center;
 }
 h2 {font-size:100%; color: whitesmoke; font-family:"times new roman"; text-align:center;
 }
 /*PAGE LAYOUT*/
 body {margin:auto; width:970px;
 }
-header {
-}
+
 nav { float:left; margin-left:10px; width:115px;
 }
 nav ul { margin-left:0; border:0; width:115px;
