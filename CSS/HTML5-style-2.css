@@ -581,7 +581,7 @@ background: url(images/header3.jpg); margin:10px auto;
   border-left-width: 0px; */
 }
 
-#rosette { position:relative; left:325px; top: 0px;
+#rosette { position:relative; left:325px; top: -5em;
 }
 /*
 #content { background-color:transparent; border-left:10px white solid;
@@ -4319,5 +4319,6 @@ p.lft { text-align:left; margin-top: 1px;
 }
 p.right {text-align:right; 
 }
+
 
 
