@@ -86,8 +86,7 @@ textarea {
    ========================================================================== */
 /*Listing 4-7b. The CSS Listing for Changing the Tab for the five Tab Menu Pages (squaretabs.css)
 * Set styles to equalise browser rendition*/
-html, body, h1, h2, h3, h4, h5, h6, p, ol, ul, li { padding: 0; margin: 0;
-}
+
 header, footer, section, article, nav { display:block;
 }
 body {text-align:center; margin: 20px; background: #bee8ff; font: medium arial;
@@ -4319,6 +4318,7 @@ p.lft { text-align:left; margin-top: 1px;
 }
 p.right {text-align:right; 
 }
+
 
 
 
