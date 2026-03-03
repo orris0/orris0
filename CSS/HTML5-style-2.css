@@ -436,7 +436,7 @@ p.right {text-align:right;
 
 /* ############################### */
 
-html, body, h1, h2, h3, h4, h5, h6, p, ol, ul, li { padding: 10px; margin: 0; 
+html, body, h1, h2, h3, h4, h5, h6, p, ol, ul, li { padding: 10px; margin: auto; 
 }
 header, footer, section, article, nav { display:block; 
 }
@@ -4311,6 +4311,7 @@ p.lft { text-align:left; margin-top: 1px;
 }
 p.right {text-align:right; 
 }
+
 
 
 
