@@ -4216,13 +4216,6 @@ br.clear {
   }
 }
 
-/* https://www.reddit.com/r/VISITDURBAN/comments/1q2745h/why_i_started_visit_durban_from_new_yorkusa/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button */
-
-
-html, body, h1, h2, h3, h4, h5, h6, p, ol, ul, li { padding: 10px; margin: 0; 
-}
-header, footer, section, article, nav { display:block; 
-}
 /*
 body {text-align:center; background: #bee8ff; font-family:"times new roman"; font-size:100%; color:navy; 
 }
@@ -4318,6 +4311,7 @@ p.lft { text-align:left; margin-top: 1px;
 }
 p.right {text-align:right; 
 }
+
 
 
 
