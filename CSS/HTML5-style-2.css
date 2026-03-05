@@ -84,6 +84,19 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+/* Listing 3-6b. The Revised CSS for Re-positioning the Rosette (rosette.css) */
+body { background: #FFF url(images/green-grad.jpg) repeat-x; margin:auto;
+}
+header, nav, footer, article section { display:block;
+}
+header {width:920px; height:180px; padding:0; border:10px white solid;
+background:url(images/header3.jpg); margin: 20px auto;
+}
+h1 { font-size:300%; color :white; position: relative; left:90px; top: 55px;
+width:480px;
+}
+#rosette { position:relative; left:750px; top:5px;
+}
 /*Listing 4-7b. The CSS Listing for Changing the Tab for the five Tab Menu Pages (squaretabs.css)
 * Set styles to equalise browser rendition*/
 
@@ -4317,6 +4330,7 @@ p.lft { text-align:left; margin-top: 1px;
 }
 p.right {text-align:right; 
 }
+
 
 
 
