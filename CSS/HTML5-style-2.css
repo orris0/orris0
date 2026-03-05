@@ -492,7 +492,7 @@ br.clear { clear:both;
 }
 #mid-right-col {width:47%; float:right; text-align:left;
 }
-h1 { padding-top:0px; margin:50px; text-align:center; font-size:300%;
+h1 { font-size:300%; color :white; position: relative; left:90px; top: 55px; width:480px;
 }
 h2 { margin:50px 0 5px 0; font-size:150%; font-weight:bold; 
 }
@@ -4272,8 +4272,7 @@ br.clear { clear:both;
 }
 #mid-right-col {width:47%; float:right; text-align:left;
 }
-h1 { padding-top:0px; text-align:center; font-size:200%;
-}
+
 h2 { font-size:x-large; color:white; margin:0 0 10px 0; 
 }
 h3 { font-size:75%; color:midnightblue; margin:0 0 -5px 0;
@@ -4331,6 +4330,7 @@ p.lft { text-align:left; margin-top: 1px;
 }
 p.right {text-align:right; 
 }
+
 
 
 
