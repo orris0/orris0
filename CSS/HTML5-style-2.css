@@ -4256,7 +4256,7 @@ h1 { padding-top:0px; text-align:center; font-size:200%;
 }
 h2 { margin:50px 0 5px 0; font-size:150%; font-weight:bold; 
 }
-h3 { font-size:100%; color:midnightblue; margin:0 0 -5px 0;
+h3 { font-size:75%; color:midnightblue; margin:0 0 -5px 0;
 }
 p.lft {text-align:left;
 }
@@ -4311,6 +4311,7 @@ p.lft { text-align:left; margin-top: 1px;
 }
 p.right {text-align:right; 
 }
+
 
 
 
