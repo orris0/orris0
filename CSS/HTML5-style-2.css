@@ -95,7 +95,7 @@ background:url(images/header3.jpg); margin: 20px auto;
 h1 { font-size:300%; color :white; position: relative; left:90px; top: 55px;
 width:480px;
 }
-#rosette { position:relative; left:750px; top:5px;
+#rosette { position:relative; left:650px; top:5px;
 }
 /*Listing 4-7b. The CSS Listing for Changing the Tab for the five Tab Menu Pages (squaretabs.css)
 * Set styles to equalise browser rendition*/
