@@ -93,7 +93,8 @@ html, body {
   height:100%;
   background:#FFF url(images/green-grad.jpg) repeat-x; margin:auto;
   text-align: center;
-  font: 1.15em/1 , 'Open Sans', sans-serif:
+  font: 1.15em/1 , 'Open Sans', sans-serif;
+  color:#FFF
 }
    /*equalise for various browsers and change #header to header*/
 div body header #content { margin:0; padding:0; border:0;
