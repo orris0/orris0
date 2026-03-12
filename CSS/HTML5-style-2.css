@@ -98,7 +98,7 @@ header, footer, section, article, nav { display:block;
 header {width:920px; height:180px; padding:0; border:10px white solid;
 background: url(images/header3.jpg); margin:10px auto;
 }
-h1 { font-size:300%; color :white; position: relative; left:90px; top: 20px;
+h1 { font-size:300%; color :white; position: relative; left:90px; top: -5px;
 width:480px;
 }
 #rosette { position:relative; left:315px; top:-61px;
