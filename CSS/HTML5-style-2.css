@@ -84,7 +84,11 @@ textarea {
    ========================================================================== */
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400');
 @import url('https://fonts.googleapis.com/css?family=Raleway:300');
-
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
    /*equalise for various browsers and change #header to header*/
 div body header #content { margin:0; padding:0; border:0;
 }
