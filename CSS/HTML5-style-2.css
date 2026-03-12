@@ -160,19 +160,19 @@ br.clear { clear:both;
 
 
 
-/* set general side button styles */
+/* set general side button styles *
 li.btn { margin-bottom: 3px; text-align: center; width:130px;
 }
-/* set side menu block position and width*/
+/* set side menu block position and width*
 nav#nav { margin:10px 30px 0 10px; width:135px; 
 }
-/*Set list style within the menu block only. This removes bullets*/
+/*Set list style within the menu block only. This removes bullets*
 nav li { list-style-type:none; 
 }	
-/* set general side button styles */
+/* set general side button styles *
 nav li { margin-bottom: -0.4em; text-align: center; width:130px;
 }
-/* set general anchor styles and include the zoom fix for IE6*/
+/* set general anchor styles and include the zoom fix for IE6*
 nav li a { display: block;
   font-weight: bold; 
 }
