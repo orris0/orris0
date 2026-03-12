@@ -112,6 +112,27 @@ h2 { font-size:x-large; color:white; margin:0 0 10px 0;
 }
 h3 { font-size:large; color:white; margin:0 0 6px 0;
 }
+#leftcol { float:left; width: 310px; vertical-align:top;
+}
+#rightcol { width: 135px; float:right; height: 252px; margin-right:10px;
+}
+#midcol { margin-left:315px; margin-right:145px; margin-top:10px;
+vertical-align:top;
+}
+/*set nav block position and width and remove the #menu item*/
+nav ul { margin:10px 0 10px 0; width:135px; float:right;
+}
+/*Set un-ordered list style within the menu block only. This removes bullets*/
+nav li { list-style-type:none;
+}
+/* set general side button styles */
+li.btn { margin-bottom: 3px; text-align: center; width:130px;
+}
+
+
+
+
+
 
 
 #container {width:960px; margin:-10px auto 0 auto;
