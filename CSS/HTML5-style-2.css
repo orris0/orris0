@@ -110,8 +110,7 @@ header, footer, section, article, nav { display:block;
 header {width:920px; height:180px; padding:0; border:10px white solid;
 background: url(images/header3.jpg); margin:15px auto;
 }
-h1 { font-size:300%; color :white; position: relative; left:90px; top:5px;
-width:480px;
+h1 { font-size:300%; color :white; position: relative; top:90px;
 }
 #rosette { position:relative; left:384px; top:-80px;
 }
