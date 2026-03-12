@@ -3988,7 +3988,7 @@ nav li a:hover { background: red;  color:white; border: 5px outset red;
     background-position: bottom;
     margin: 10px auto; 
   }
-/*mouse active*/
+/*mouse active*
 nav li a:active { background:maroon;  border: 5px inset maroon; 
 }
 br.clear { 	clear:both; 
