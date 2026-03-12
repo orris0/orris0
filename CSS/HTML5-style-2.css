@@ -84,11 +84,13 @@ textarea {
    ========================================================================== */
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400');
 @import url('https://fonts.googleapis.com/css?family=Raleway:300');
+/*
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+  */
 html, body {
   height:100%;
   background:#FFF url(images/green-grad.jpg) repeat-x; margin:auto;
