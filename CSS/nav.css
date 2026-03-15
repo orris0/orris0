@@ -1,6 +1,6 @@
 
 body {
-  margin: 25px;
+  margin: auto /* 25px */ ;
 }
 
 /* needed for checkbox hack */
