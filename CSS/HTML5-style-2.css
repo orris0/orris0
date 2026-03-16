@@ -101,7 +101,7 @@ html, body {
 div body header #content { margin:0; padding:0; border:0;
 }
 
-body { background:#FFF url(images/green-grad.jpg) repeat-x; margin:auto;
+body { background:#FFF url(images/green-grad.jpg) repeat-x; margin:auto !important;
 } 
 .wrapper { background-color: #F5F5F5; height: 100%; }
 
