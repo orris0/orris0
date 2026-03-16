@@ -14,7 +14,7 @@ aside {
  float: right;
 }
 
-/*
+
 nav#nav.data {
 	padding: .3em .8em;
   border: 1px solid rgba(0,0,0,.1);
@@ -32,20 +32,20 @@ nav#nav.data {
 
   
 
- Listing 1-7b. The Revised CSS Sheet for Figure 1-7 (html5-style-2.css) 
+ /* Listing 1-7b. The Revised CSS Sheet for Figure 1-7 (html5-style-2.css) 
 (The key items are picked out in bold type.)
 equalise for various browsers and change #header to header*/
 
 div body header #content { margin:0; padding:0; border:0;
 }
-/*set attributes for consistent appearance in all browsers*
+/*set attributes for consistent appearance in all browsers*/
 html, body, p, ul, li, h1, h2 { margin:0; padding:0;
 }
 header#html5-style-2header.data .fixed-top {
   background: #07062f;
      padding: .3em .8em;
   border: 1px solid rgba(0,0,0,.1);
- /* background: #58a linear-gradient(hsla(0,0%,100%,.2),transparent); *
+ /* background: #58a linear-gradient(hsla(0,0%,100%,.2),transparent); */
   border-radius: .2em;
   box-shadow: 0 .05em .25em rgba(0,0,0,.5);
   color: 1px solid rgba(0,0,0,.1);
@@ -57,7 +57,7 @@ header#html5-style-2header.data .fixed-top {
 }
 
 header#html5-style-2header.data .logo {
- /* font-size: 30px; *
+ /* font-size: 30px; */
   margin-top: 150px;
   padding: 0;
   line-height: 1;
@@ -67,7 +67,7 @@ header#html5-style-2header.data .logo {
 
   padding: .3em .8em;
   border: 1px solid rgba(0,0,0,.1);
- /* background: #58a linear-gradient(hsla(0,0%,100%,.2),transparent); *
+ /* background: #58a linear-gradient(hsla(0,0%,100%,.2),transparent); */
   border-radius: .2em;
   box-shadow: 0 .05em .25em rgba(0,0,0,.5);
   color: white;
@@ -83,7 +83,7 @@ header#html5-style-2header.data .logo a {
 	
 	padding: .3em .8em;
   border: 1px solid rgba(0,0,0,.1);
- /* background: #58a linear-gradient(hsla(0,0%,100%,.2),transparent); *
+ /* background: #58a linear-gradient(hsla(0,0%,100%,.2),transparent); */
   border-radius: .2em;
   box-shadow: 0 .05em .25em rgba(0,0,0,.5);
   color: white;
@@ -99,7 +99,7 @@ header#html5-style-2header.data .logo img {
 	
 	padding: .3em .8em;
   border: 1px solid rgba(0,0,0,.1);
- /* background: #58a linear-gradient(hsla(0,0%,100%,.2),transparent); *
+ /* background: #58a linear-gradient(hsla(0,0%,100%,.2),transparent); */
   border-radius: .2em;
   box-shadow: 0 .05em .25em rgba(0,0,0,.5);
   color: white;
@@ -110,12 +110,12 @@ header#html5-style-2header.data .logo img {
   border-left-width: 0px;
 }
 
-/*set images to have no borders*
+/*set images to have no borders*/
 img { border:0;  
 	 
 	 padding: .3em .8em;
   border: 1px solid rgba(0,0,0,.1);
- /* background: #58a linear-gradient(hsla(0,0%,100%,.2),transparent); *
+ /* background: #58a linear-gradient(hsla(0,0%,100%,.2),transparent); */
   border-radius: .2em;
   box-shadow: 0 .05em .25em rgba(0,0,0,.5);
   color: white;
@@ -125,7 +125,7 @@ img { border:0;
   border-width: 10px;
   border-left-width: 0px;
 }
-/*add display attributes for the semantic tags*
+/*add display attributes for the semantic tags*/
 header, footer, section, article, nav { display:block;
 }
 p {
@@ -141,7 +141,7 @@ p {
 	
 	padding: .3em .8em;
   border: 1px solid rgba(0,0,0,.1);
- /* background: #58a linear-gradient(hsla(0,0%,100%,.2),transparent); *
+ /* background: #58a linear-gradient(hsla(0,0%,100%,.2),transparent); */
   border-radius: .2em;
   box-shadow: 0 .05em .25em rgba(0,0,0,.5);
   color: white;
@@ -154,7 +154,7 @@ p {
 
 h1#html5-style-2h1 { color :white; position: relative; left:15%; top: 55px; width:480px; 
 	padding: .3em .8em; border: 1px solid rgba(0,0,0,.1);
- /* background: #58a linear-gradient(hsla(0,0%,100%,.2),transparent); *
+ /* background: #58a linear-gradient(hsla(0,0%,100%,.2),transparent); */
   border-radius: .2em;
   box-shadow: 0 .05em .25em rgba(0,0,0,.5);
   color: white;
@@ -178,7 +178,7 @@ div#wrapper {position:relative; top:0px; left:0;width:970px; margin:auto; text-a
   border-left-width: 0px;
 }
 
-/*add display attributes for the semantic tags*
+/*add display attributes for the semantic tags*/
 header,
 footer,
 section,
