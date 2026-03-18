@@ -56,7 +56,7 @@ function slideShow() {
 
 // chapter_04/05_timers
 $(document).ready(function() {
-  // move the green box with setInterval
+ // move the green box with setInterval
   var $green = $('#green');
     greenLeft = $green.offset().left;
   setInterval(function() {
@@ -321,7 +321,7 @@ $(document).ready(function(){
 
 // 01_document_ready
 $(function(){
-  //alert('Welcome to StarTrackr! Now no longer under police investigation!');
+  alert('Welcome to StarTrackr! Now no longer under police investigation!');
   //alert($('#celebs tbody tr:even').length + ' elements!');
  //$('#celebs tbody  tr:even').addClass('zebra');
   
