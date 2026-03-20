@@ -114,7 +114,7 @@ nav a:visited { color: navy;
 /*hovering over the active tab shows navy text*/
 nav a.active:hover { background: #cfecf5; color: navy;
 }
-/*set the position of the content to move it close up to the menu tabs*/
+/*set the position of the content to move it close up to the menu tabs*
 div#content {
   margin-top:1%; 
   font : 0.9em/1.3em "bitstream vera sans", verdana; 
@@ -127,7 +127,7 @@ div#content {
   border-top: none; 
   z-index: 2;
 }
-
+    */
                 article { float:right; width:70%; background-color:#FF9966; margin-bottom:1em; text-align: center;
                     border: 1px solid rgba(0, 0, 0, .1);
                     background: #58a linear-gradient(#FF9966, #58a);
