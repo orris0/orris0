@@ -322,7 +322,7 @@ $(document).ready(function(){
 // 01_document_ready
 $(function(){
   alert('Welcome to StarTrackr! Now no longer under police investigation!');
-  //alert($('#celebs tbody tr:even').length + ' elements!');
+  alert($('#celebs tbody tr:even').length + ' elements!');
  $('#celebs tbody  tr:even').addClass('zebra');
   
   $('<input type="button" value="toggle"  id="toggleButton">').insertBefore('#disclaimer');
