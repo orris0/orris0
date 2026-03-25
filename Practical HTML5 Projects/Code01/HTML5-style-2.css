@@ -10,10 +10,11 @@ header#header.data {width:920px; height:180px; padding:0; border:10px white soli
 
 background: url(../../images/header3.jpg); margin:10px auto; 
 } 
-
+/*
 h1 { font-size:300%; color :white; position: relative; left:90px; top: 30px; 
 width:480px; 
 } 
+*/
 #rosette { position:relative; left:750px; top:25px; 
 } 
 div#content { background-color:transparent; border-left:10px white solid;
@@ -112,13 +113,13 @@ div#html5style2content.data {
 }
 
 h2 {
-  font-size: x-large;
+  font-size: 160%;
   color: white;
   margin: 0 0 10px 0;
 }
 
 h3 {
-  font-size: large;
+  font-size: 120%;
   color: white;
   margin: 0 0 6px 0;
 }
