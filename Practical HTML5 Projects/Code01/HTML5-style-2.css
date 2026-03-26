@@ -8,6 +8,9 @@ body { background:#FFF url(images/green-grad.jpg) repeat-x; margin:auto;
 } 
 header#header.data {width:920px; height:180px; padding:0; border:10px white solid; 
 
+header#header.data {width:920px; height:180px; padding:0; border:10px white solid; 
+
+
 background: url(../../images/header3.jpg); margin:10px auto; 
 } 
 /*
