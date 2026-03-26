@@ -65,7 +65,7 @@ br.clear { clear:both;
 footer { clear:both; color:maroon; text-align:center; 
 }
 
-/*remove the # from #header*
+/*remove the # from #header*/
 header#html5style2header.data {
   width: 920px;
   height: 180px;
