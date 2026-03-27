@@ -6,6 +6,31 @@ $(document).ready(function() {
     .slideDown();
 });
 
+$(document).ready(function() {
+  $('div')
+    .hide()
+    .highlightOnce()
+    .slideDown();
+});
+
+$(document).ready(function() {
+  $('h1')
+    .hide()
+    .highlightOnce()
+    .slideDown();
+});
+
+$(document).ready(function() {
+  $('input')
+    .hide()
+    .highlightOnce()
+    .slideDown();
+});
+
+$(document).ready(function() {
+  alert($('#celebs tr'). length + ' elements!');
+});
+
 
 
 $(function(){
