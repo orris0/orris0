@@ -1,9 +1,11 @@
 
 $(document).ready(function() {
   $('p')
-    .hide()
-    .highlightOnce()
-    .slideDown();
+  $('.caption')
+  $(’#subtitle')
+  $(’aside a')
+  $(’#container')
+  $(’#header')
 });
 
 $(document).ready(function() {
