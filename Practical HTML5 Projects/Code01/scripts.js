@@ -1,7 +1,7 @@
 
 $(document).ready(function() {
   $('p')
-  $('.caption')
+  $('.caption').css('font-size', '.75rem');
   $(’#subtitle')
   $(’aside a')
   $(’#container')
