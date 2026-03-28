@@ -1,3 +1,19 @@
+(document).ready(function() {
+  var domArray = ['<header></header", 'nav', '<main></main", '<footer></footer>'];
+  $(’body') append(domArray);
+  $('p')
+  $('.caption').css('font-size', '.75rem');
+  $(’#subtitle')
+  $(’aside a')
+  $(’#container')
+  $(’#header')
+  $(’#rightcol')
+  $('#midcol')
+  $(’#content')
+  $(’#nav')
+});
+
+
 
 $(document).ready(function() {
   $('p')
