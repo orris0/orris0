@@ -6,6 +6,10 @@ $(document).ready(function() {
   $(’aside a')
   $(’#container')
   $(’#header')
+  $(’#rightcol')
+  $('#midcol')
+  $(’#content')
+  $(’#nav')
 });
 
 $(document).ready(function() {
