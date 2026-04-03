@@ -9,6 +9,10 @@ $(function(){
       $('#toggleButton').fadeOut();
     });
   });
+$(document).ready(function() {
+  alert('Welcome to StarTrackr! Now no longer under police investigation!);
+});
+
 
   $('<strong>START!</strong>').prependTo('#disclaimer');
   $('<strong>END!</strong>').appendTo('#disclaimer');*/
