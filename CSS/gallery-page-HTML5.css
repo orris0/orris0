@@ -121,24 +121,24 @@ h1#gallerypage-h1 { font-size:300%; color :white; /* position: relative; left:90
  
 div#rosette { position:relative; left:750px; top:5px;
 }
-div#gallerypagecontent { background-color:transparent; border-left:10px white solid; border-right:10px white solid; border-bottom:10px white solid; width: 904px; margin-top: -10px; margin-left:auto; margin-right:auto; padding:8px; font-size:medium; color:maroon;
+div#gallerypagecontent.data { background-color:transparent; border-left:10px white solid; border-right:10px white solid; border-bottom:10px white solid; width: 904px; margin-top: -10px; margin-left:auto; margin-right:auto; padding:8px; font-size:medium; color:maroon;
 }
 h2#gallerypage-h2 { font-size:x-large; color:white; margin:0 0 10px 0;
 }
 h3#gallerypage-h3 { font-size:large; color:white; margin:0 0 6px 0; padding: 2%;
 }
-div#gallerypageleftcol { float:left; width: 310px; vertical-align:top;
+div#gallerypageleftcol.data { float:left; width: 310px; vertical-align:top;
 }
-div#gallerypagerightcol { width: 135px; float:right; height: 252px; margin-right:10px;
+div#gallerypagerightcol.data { width: 135px; float:right; height: 252px; margin-right:10px;
 }
-div#gallerypagemidcol { margin-left:315px; margin-right:145px; margin-top:10px; 
+div#gallerypagemidcol.data { margin-left:315px; margin-right:145px; margin-top:10px; 
 vertical-align:top;
 }
 /*set nav block position and width and remove the #menu item*/
-nav#gallerypagenav ul { margin:10px 0 10px 0; width:135px; float:right;
+nav#gallerypagenav.data ul { margin:10px 0 10px 0; width:135px; float:right;
 }
 /*Set un-ordered list style within the menu block only. This removes bullets*/
-nav#gallerypagenav  li { list-style-type:none;
+nav#gallerypagenav.data  li { list-style-type:none;
 }
 /* set general side button styles */
 li.btn { margin-bottom: 3px; text-align: center; width:130px;
