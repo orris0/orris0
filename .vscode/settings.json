@@ -22,5 +22,6 @@
     "editor.inlayHints.fontSize": 75,
     "editor.codeLensFontSize": 75,
     "editor.fontSize": 28,
-    "editor.suggestFontSize": 24
+    "editor.suggestFontSize": 24,
+    "salesforcedx-vscode-salesforcedx.enableFileTraces": true
 }
