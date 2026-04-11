@@ -35,7 +35,7 @@ div#gallery-one-colrightcol.data p.advert {font-size:small; margin-top:190px;
 /*set middle column for main content*/
 div#gallery-one-colmidcol.data { margin-left:135px; margin-right:155px;
 }
-/*set gallery block position*/
+/* set gallery block position*/
 div#gallery-one-colgallery-block.data { position:relative; left: 90px; top:30px;
 }
 /*set footer*/
