@@ -42,7 +42,7 @@
 
 <body>
     <header class="data" id="gallery-one-colheader">
-        <h1>A full page roll-over gallery of greetings cards</h1>
+        <h1>A full page roll-over gallery of Greetings, Cards...</h1>
         <h2>Hover the mouse over a small picture to see an enlarged version</h2>
     </header>
     <nav class="data" id="gallery-one-colnav">
@@ -125,6 +125,7 @@
   
 			    <div class="row" style="background-color: 66d4ff">
                     <div class="col-12">
+						<!--
                         <h2>Fine Print</h2>
                         <p id="fine_print">
                             Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
@@ -137,6 +138,7 @@
                         proident, sunt in culpa qui
                         officia deserunt mollit anim id est laborum.
                     </p>
+						-->
                 </div>
             </div>
             
@@ -226,6 +228,17 @@
                 </div>
         </footer>
         <script src="lib/jquery-1.8.17.custom.min.js" type="text/javascript"></script>
+	    <script type="text/javascript" src="./js/scripts.js"></script>
+	    $(document).ready(function() {
+         var domArray = ['<header></header>', '<nav></nav>', '<main></main>', '<footer></footer>'];
+         $('body').prepend(domArray);
+         $('#gallery-one-colheader').append('<h1>A full page roll-over gallery of Greetings, Cards...</h1> <h2>Hover the mouse over a small picture to see an enlarged version</h2> ');
+         $('#gallery-one-colnav').append('Nav links will go à.');
+	     $('#gallery-one-colrightcol').append('Nav links will go à.');
+         $('#gallery-one-colmidcol').append('');
+         $('#gallery-one-colfooter').append('');
+        });
+                                
 
         <!-- Vendor JS Files --
         <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
@@ -252,5 +265,6 @@
         <!-- Template Main JS File --
         <script src="./js/main.js"></script>
         <a href="https://orris0.github.io/orris0/gallery-one-col.html" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+        -->
     </body><!-- end body  -->
 </html>
