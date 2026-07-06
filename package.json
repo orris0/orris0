@@ -1,9 +1,13 @@
 {
-   "name":"practical-html5-projects",
-   "version":"1.0.0",
-   "scripts":{
-      "scss":"sass assets/scss/style.scss dist/css/style.css",
-      "concat:css":"concat -o dist/css/styles.css dist/css/style.css assets/css/test.css",
+  "name": "practical-html5-projects",
+  "version": "1.0.0",
+  "description": "A practical and scalable HTML5 web project",
+  "main": "index.js",
+  "scripts": {
+    "start": "parcel src/index.html",
+    "build": "parcel build src/index.html --dist-dir dist",
+"scss":"sass assets/scss/style.scss dist/css/style.css",
+"concat:css":"concat -o dist/css/styles.css dist/css/style.css assets/css/test.css",
       "concat:js":"mkdir -p dist/js && concat -o dist/js/scripts.js assets/js/test1.js assets/js/test2.js",
       "concat":"npm run concat:css && npm run concat:js",
       "cssmin":"cleancss -o dist/css/styles.min.css dist/css/styles.css",
@@ -17,8 +21,12 @@
       "watch:js":"onchange 'assets/js/*.js' -- npm run build:js",
       "watch":"npm-run-all --parallel watch:*"
    },
-   "devDependencies":{
-      "@squoosh/cli":"^0.7.2",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint src/**/*.js"
+  },
+  "devDependencies": {
+    "eslint": "^9.0.0",
+    "@squoosh/cli":"^0.7.2",
       "clean-css-cli":"^5.5.0",
       "concat":"^1.0.3",
       "npm":"^8.3.0",
@@ -26,8 +34,10 @@
       "onchange":"^7.1.0",
       "sass":"^1.48.0",
       "uglify-js":"^3.14.5"
-   },
-   "repository":{
+    "parcel": "^2.12.0"
+  }
+}
+"repository":{
       "type":"git",
       "url":"https://github.com/orris0/orris0.git",
       "author":"orris baker",
