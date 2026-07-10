@@ -1,5 +1,4 @@
-1
-<!Doctype html>
+<!DOCTYPE html>
 <!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
 <!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
 <!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
@@ -7,6 +6,41 @@
 <!-- Consider adding a manifest.appcache: h5bp.com/d/Offline -->
 <!--[if gt IE 8]><!-->
 <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery Designer Template</title>
+    <style>
+        /* Simple layout styles for testing */
+        body { font-family: sans-serif; padding: 40px; text-align: center; }
+        .box { width: 200px; height: 200px; background: #3498db; margin: 20px auto; border-radius: 8px; }
+        .btn { padding: 10px 20px; background: #2ecc71; color: white; border: none; cursor: pointer; font-size: 16px; border-radius: 4px; }
+    </style>
+</head>
+<body>
+
+    <button class="btn">Toggle Box</button>
+    <div class="box"></div>
+
+    <!-- 1. Load the jQuery Library first -->
+    <script src="https://googleapis.com"></script>
+
+    <!-- 2. Write your custom jQuery scripts second -->
+    <script>
+        // document.ready makes sure the HTML loads fully before code runs
+        $(document).ready(function(){
+            
+            $(".btn").click(function(){
+                $(".box").fadeToggle("slow");
+            });
+
+        });
+    </script>
+
+</body>
+</html>
+
+<!Doctype html>
 
 <head>
     <title>Integrating Innovation Done for you podcast and Courses & HTML5 Templates</title>
