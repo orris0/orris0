@@ -6,15 +6,16 @@
 <!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
 <!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
 <!-- Consider adding a manifest.appcache: h5bp.com/d/Offline -->
-<!--[if gt IE 8]><!-->
+<!--[if gt IE 8]> -->
 <html class="no-js" lang="en"> <!--<![endif]-->
 
 <head>
     <title>The home page. Square tabs</title>
     <meta charset="UTF-8">
+    <!-- 1. Load the jQuery Library first --> -->
 
     <!-- CSS -->
-    <link rel="stylesheet" type="text/css" href="./squaretabs.css">
+    <link rel="stylesheet" type="text/css" href="./CSS/squaretabs.css">
     <link rel=”stylesheet” type=”text/css” href="./CSS/HTML5-style-2.css">
     <!-- link rel="stylesheet" href=""/> -->
 
@@ -33,249 +34,76 @@
 
 
     </script>
-
-    <style>
-        #ajax-header {
-            margin: 40px 0 0 0;
-        }
-
-        #ajax-header h1 {
-            color: #859900;
-            margin: 0 0 10px 0;
-            padding: 0;
-        }
-
-        #ajax-nav {
-            background: #859900;
-            margin: 0;
-            padding: 0;
-            overflow: hidden;
-            zoom: 1;
-        }
-
-        #ajax-nav li {
-            list-style-type: none;
-            margin: 0;
-            padding: 10px 20px;
-            display: block;
-            float: left;
-        }
-
-        #ajax-nav a,
-        #ajax-nav a:link,
-        #ajax-nav a:visited {
-            color: #eee8d5;
-        }
-
-        #ajax-nav a:hover,
-        #ajax-nav a:active {
-            color: #fff;
-        }
-
-        #main-col {
-            float: left;
-            width: 60%;
-        }
-
-        #side-col {
-            float: right;
-            width: 35%;
-        }
-
-        .widget {
-            border: 2px solid #859900;
-            margin: 10px 0;
-        }
-
-        .widget h4 {
-            margin: 0 0 10px 0;
-            padding: 10px;
-            background: #859900;
-            color: #FDF6E3;
-        }
-
-        .float-right {
-            float: right;
-            margin: 0 0 10px 10px;
-        }
-
-        .float-left {
-            float: left;
-            margin: 0 10px 10px 0;
-        }
-
-        .source {
-            font-size: 12px;
-        }
-
-        #ajax-foot {
-            clear: both;
-            margin: 10px 0 40px 0;
-            padding: 5px;
-            background: #859900;
-            color: #f3f6e3;
-        }
-
-        #ajax-foot p {
-            margin: 0;
-            padding: 0;
-            font-size: 12px;
-        }
-    </style>
-
-</head>
-
-<body>
-    <div id="container">
-        <header>
-
-            <h1>Practical HTML5 Project&#39;s for Fun and Profit!</h1>
-
-        </header>
-        <nav>
+    <b>Practical HTML5 Project&#39;s for Fun and Profit!</b>
+    <div id="ajax-header">
+        <h1>Miniature Treats</h1>
+        <ul id="ajax-nav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="cupcakes.html">Cupcakes</a></li>
+            <li><a href="petitfours.html">Petits Fours</a></li>
+            <li><a href="teacakes.html">Tea Cakes</a></li>
+            <li><a href="muffins.html">Muffins</a></li>
+        </ul>
+    </div>
+    <div id="main-col">
+        <div id="main-col-wrap">
+            <h2>Cupcakes</h2>
+            <p><img src="images/cupcakes.jpg" class="float-right" alt="Photo of cupcakes" />A cupcake is a small
+                cake designed to serve one person, frequently baked in a small, thin paper or aluminum cup. As
+                with larger cakes, frosting and other cake decorations, such as sprinkles, are common on
+                cupcakes.</p>
+            <p>Although their origin is unknown, recipes for cupcakes have been printed since at least the late
+                18th century.</p>
+            <p>The first mention of the cupcake can be traced as far back as 1796, when a recipe notation of "a
+                cake to be baked in small cups" was written in <em>American Cookery</em> by Amelia Simms. The
+                earliest documentation of the term <em>cupcake</em> was in "Seventy-five Receipts for Pastry,
+                Cakes, and Sweetmeats" in 1828 in Eliza Leslie's <em>Receipts</em> cookbook.</p>
+            <p class="source">Text source: <a href="http://en.wikipedia.org/wiki/Cupcakes">Wikipedia</a><br />Image
+                source: <a href="http://flickr.com/people/10506540@N07">Steven Depolo</a> via <a
+                    href="http://commons.wikimedia.org/wiki/File:Blue_cupcakes_for_graduation,_closeup_-_Tiffany,_May_2008.jpg">Wikimedia
+                    Commons</a></p>
+        </div>
+    </div>
+    <div id="side-col">
+        <div class="widget">
+            <h4>More Information</h4>
             <ul>
-                <li><a class="active" href="index.html">Home Page</a></li>
-                <li><a href="page2.html">Page Two</a></li>
-                <li><a href="page3.html">Page Three with a long label</a></li>
-                <li><a href="page4.html">Page Four</a></li>
-                <li><a href="page5.html">Page Five</a></li>
-            </ul>
-        </nav>
-        <div id="content">
-            <!-- <b>This is the home page</b> -->
-            <div id="ajax-header">
-                <h1>Miniature Treats</h1>
-                <ul id="ajax-nav">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="cupcakes.html">Cupcakes</a></li>
-                    <li><a href="petitfours.html">Petits Fours</a></li>
-                    <li><a href="teacakes.html">Tea Cakes</a></li>
-                    <li><a href="muffins.html">Muffins</a></li>
-                </ul>
-            </div>
-            <div id="main-col">
-                <div id="main-col-wrap">
-                    <h2>Cupcakes</h2>
-                    <p><img src="images/cupcakes.jpg" class="float-right" alt="Photo of cupcakes" />A cupcake is a small
-                        cake designed to serve one person, frequently baked in a small, thin paper or aluminum cup. As
-                        with larger cakes, frosting and other cake decorations, such as sprinkles, are common on
-                        cupcakes.</p>
-                    <p>Although their origin is unknown, recipes for cupcakes have been printed since at least the late
-                        18th century.</p>
-                    <p>The first mention of the cupcake can be traced as far back as 1796, when a recipe notation of "a
-                        cake to be baked in small cups" was written in <em>American Cookery</em> by Amelia Simms. The
-                        earliest documentation of the term <em>cupcake</em> was in "Seventy-five Receipts for Pastry,
-                        Cakes, and Sweetmeats" in 1828 in Eliza Leslie's <em>Receipts</em> cookbook.</p>
-                    <p class="source">Text source: <a
-                            href="http://en.wikipedia.org/wiki/Cupcakes">Wikipedia</a><br />Image source: <a
-                            href="http://flickr.com/people/10506540@N07">Steven Depolo</a> via <a
-                            href="http://commons.wikimedia.org/wiki/File:Blue_cupcakes_for_graduation,_closeup_-_Tiffany,_May_2008.jpg">Wikimedia
-                            Commons</a></p>
-                </div>
-            </div>
-            <div id="side-col">
-                <div class="widget">
-                    <h4>More Information</h4>
-                    <ul>
-                        <li><a href="http://en.wikipedia.org/wiki/Cupcakes">Cupcakes (Wikipedia)</a></li>
-                        <li><a href="http://en.wikipedia.org/wiki/Petit_fours">Petits Fours (Wikipedia)</a></li>
-                        <li><a href="http://en.wikipedia.org/wiki/Tea_cake">Tea Cakes (Wikipedia)</a></li>
-                        <li><a href="http://en.wikipedia.org/wiki/Muffins">Muffins (Wikipedia)</a></li>
-                    </ul>
-                </div>
-                <div class="widget">
-                    <h4>Also Delicious</h4>
-                    <ul>
-                        <li><a href="http://en.wikipedia.org/wiki/Banana_bread">Banana Bread</a></li>
-                        <li><a href="http://en.wikipedia.org/wiki/Pumpkin_bread">Pumpkin Bread</a></li>
-                        <li><a href="http://en.wikipedia.org/wiki/Swiss_roll">Swiss Roll</a></li>
-                        <li><a href="http://en.wikipedia.org/wiki/Cheesecake">Cheesecake</a></li>
-                        <li><a href="http://en.wikipedia.org/wiki/Bundt_cake">Bundt Cake</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div id="ajax-foot">
-                <p>Sample of progressively enhanced asynchronous navigation</p>
-            </div>
-            <p>
-                <img title="Koala" alt="Koala" height="165" src="images/Koalasmall.jpg" width="220" />
-            </p>
-            <p>&nbsp;</p>
-            <p>&nbsp;</p>
-            <p>&nbsp;</p>
-
-        </div>
-    </div> <!-- end container --
-
-        <div id="ajax-header">
-            <h1>Miniature Treats</h1>
-            <ul id="ajax-nav">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="cupcakes.html">Cupcakes</a></li>
-                <li><a href="petitfours.html">Petits Fours</a></li>
-                <li><a href="teacakes.html">Tea Cakes</a></li>
-                <li><a href="muffins.html">Muffins</a></li>
+                <li><a href="http://en.wikipedia.org/wiki/Cupcakes">Cupcakes (Wikipedia)</a></li>
+                <li><a href="http://en.wikipedia.org/wiki/Petit_fours">Petits Fours (Wikipedia)</a></li>
+                <li><a href="http://en.wikipedia.org/wiki/Tea_cake">Tea Cakes (Wikipedia)</a></li>
+                <li><a href="http://en.wikipedia.org/wiki/Muffins">Muffins (Wikipedia)</a></li>
             </ul>
         </div>
-        <div id="main-col">
-            <div id="main-col-wrap">
-                <h2>Cupcakes</h2>
-                <p><img src="images/cupcakes.jpg" class="float-right" alt="Photo of cupcakes" />A cupcake is a small
-                    cake designed to serve one person, frequently baked in a small, thin paper or aluminum cup. As with
-                    larger cakes, frosting and other cake decorations, such as sprinkles, are common on cupcakes.</p>
-                <p>Although their origin is unknown, recipes for cupcakes have been printed since at least the late 18th
-                    century.</p>
-                <p>The first mention of the cupcake can be traced as far back as 1796, when a recipe notation of "a cake
-                    to be baked in small cups" was written in <em>American Cookery</em> by Amelia Simms. The earliest
-                    documentation of the term <em>cupcake</em> was in "Seventy-five Receipts for Pastry, Cakes, and
-                    Sweetmeats" in 1828 in Eliza Leslie's <em>Receipts</em> cookbook.</p>
-                <p class="source">Text source: <a href="http://en.wikipedia.org/wiki/Cupcakes">Wikipedia</a><br />Image
-                    source: <a href="http://flickr.com/people/10506540@N07">Steven Depolo</a> via <a
-                        href="http://commons.wikimedia.org/wiki/File:Blue_cupcakes_for_graduation,_closeup_-_Tiffany,_May_2008.jpg">Wikimedia
-                        Commons</a></p>
-            </div>
+        <div class="widget">
+            <h4>Also Delicious</h4>
+            <ul>
+                <li><a href="http://en.wikipedia.org/wiki/Banana_bread">Banana Bread</a></li>
+                <li><a href="http://en.wikipedia.org/wiki/Pumpkin_bread">Pumpkin Bread</a></li>
+                <li><a href="http://en.wikipedia.org/wiki/Swiss_roll">Swiss Roll</a></li>
+                <li><a href="http://en.wikipedia.org/wiki/Cheesecake">Cheesecake</a></li>
+                <li><a href="http://en.wikipedia.org/wiki/Bundt_cake">Bundt Cake</a></li>
+            </ul>
         </div>
-        <div id="side-col">
-            <div class="widget">
-                <h4>More Information</h4>
-                <ul>
-                    <li><a href="http://en.wikipedia.org/wiki/Cupcakes">Cupcakes (Wikipedia)</a></li>
-                    <li><a href="http://en.wikipedia.org/wiki/Petit_fours">Petits Fours (Wikipedia)</a></li>
-                    <li><a href="http://en.wikipedia.org/wiki/Tea_cake">Tea Cakes (Wikipedia)</a></li>
-                    <li><a href="http://en.wikipedia.org/wiki/Muffins">Muffins (Wikipedia)</a></li>
-                </ul>
-            </div>
-            <div class="widget">
-                <h4>Also Delicious</h4>
-                <ul>
-                    <li><a href="http://en.wikipedia.org/wiki/Banana_bread">Banana Bread</a></li>
-                    <li><a href="http://en.wikipedia.org/wiki/Pumpkin_bread">Pumpkin Bread</a></li>
-                    <li><a href="http://en.wikipedia.org/wiki/Swiss_roll">Swiss Roll</a></li>
-                    <li><a href="http://en.wikipedia.org/wiki/Cheesecake">Cheesecake</a></li>
-                    <li><a href="http://en.wikipedia.org/wiki/Bundt_cake">Bundt Cake</a></li>
-                </ul>
-            </div>
-        </div>
-        <div id="ajax-foot">
-            <p>Sample of progressively enhanced asynchronous navigation</p>
-        </div>
+    </div>
+    <div id="ajax-foot">
+        <p>Sample of progressively enhanced asynchronous navigation</p>
+    </div>
+    <p>
+        <img title="Koala" alt="Koala" height="165" src="images/Koalasmall.jpg" width="220" />
+    </p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
 
+    </div>
+    </div> <!-- end container -->
+    function () {
 
-    <!-- 1. Load the jQuery Library first -->
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    $(".btn").click(function () {
+    $(".box").fadeToggle("slow");
+    });
 
-    <script src="https://googleapis.com"></script>
-
-    <!-- 2. Write your custom jQuery scripts second -->
-    <script>
-        // document.ready makes sure the HTML loads fully before code runs
-        $(document).ready(function () {
-
-            $(".btn").click(function () {
-                $(".box").fadeToggle("slow");
-            });
-
-        });
+    });
     </script>
 
     <script>
@@ -379,88 +207,82 @@
             font-size: 12px;
         }
     </style>
-    </head>
+</head>
 
-    <body>
-        <div class="wrapper">
-            <div class="data" id="container">
+<body>
+    <div class="wrapper">
+        <div class="data" id="container">
 
-                <button class="btn">Toggle Box</button>
-                <div class="box">
-                    <div id="ajax-header">
-                        <h1>Miniature Treats</h1>
-                        <ul id="ajax-nav">
-                            <li><a href="index.html">Home</a></li>
-                            <li><a href="cupcakes.html">Cupcakes</a></li>
-                            <li><a href="petitfours.html">Petits Fours</a></li>
-                            <li><a href="teacakes.html">Tea Cakes</a></li>
-                            <li><a href="muffins.html">Muffins</a></li>
+            <button class="btn">Toggle Box</button>
+            <div class="box">
+                <div id="ajax-header">
+                    <h1>Miniature Treats</h1>
+                    <ul id="ajax-nav">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="cupcakes.html">Cupcakes</a></li>
+                        <li><a href="petitfours.html">Petits Fours</a></li>
+                        <li><a href="teacakes.html">Tea Cakes</a></li>
+                        <li><a href="muffins.html">Muffins</a></li>
+                    </ul>
+                </div>
+                <div id="main-col">
+                    <div id="main-col-wrap">
+                        <h2>Cupcakes</h2>
+                        <p><img src="images/cupcakes.jpg" class="float-right" alt="Photo of cupcakes">
+                            A cupcake is a small cake designed to serve one person, frequently baked
+                            in a small, thin paper or aluminum cup.
+                            As with larger cakes, frosting and other cake decorations, such as
+
+                            sprinkles, are common on cupcakes.
+                        </p>
+                        <p>
+                            Although their origin is unknown, recipes for cupcakes have been printed since at least
+                            the late 18th century.
+                        </p>
+                        <p>The first mention of the cupcake can be traced as far back as 1796, when a recipe
+                            notation of "a cake
+                            to be baked in small cups" was written in <em>American Cookery</em> by Amelia Simms. The
+                            earliest
+                            documentation of the term <em>cupcake</em> was in "Seventy-five Receipts for Pastry,
+                            Cakes,
+                            and
+                            Sweetmeats" in 1828 in Eliza Leslie's <em>Receipts</em> cookbook.</p>
+                        <p class="source">Text source: <a
+                                href="http://en.wikipedia.org/wiki/Cupcakes">Wikipedia</a><br />Image
+                            source: <a href="http://flickr.com/people/10506540@N07">Steven Depolo</a> via <a
+                                href="http://commons.wikimedia.org/wiki/File:Blue_cupcakes_for_graduation,_closeup_-_Tiffany,_May_2008.jpg">Wikimedia
+                                Commons</a></p>
+                    </div>
+                </div>
+                <div id="side-col">
+                    <div class="widget">
+                        <h4>More Information</h4>
+                        <ul>
+                            <li><a href="http://en.wikipedia.org/wiki/Cupcakes">Cupcakes (Wikipedia)</a></li>
+                            <li><a href="http://en.wikipedia.org/wiki/Petit_fours">Petits Fours (Wikipedia)</a></li>
+                            <li><a href="http://en.wikipedia.org/wiki/Tea_cake">Tea Cakes (Wikipedia)</a></li>
+                            <li><a href="http://en.wikipedia.org/wiki/Muffins">Muffins (Wikipedia)</a></li>
                         </ul>
                     </div>
-                    <div id="main-col">
-                        <div id="main-col-wrap">
-                            <h2>Cupcakes</h2>
-                            <p><img src="images/cupcakes.jpg" class="float-right" alt="Photo of cupcakes" />A cupcake is
-                                a
-                                small
-                                cake designed to serve one person, frequently baked in a small, thin paper or aluminum
-                                cup.
-                                As
-                                with
-                                larger cakes, frosting and other cake decorations, such as sprinkles, are common on
-                                cupcakes.
-                            </p>
-                            <p>Although their origin is unknown, recipes for cupcakes have been printed since at least
-                                the
-                                late
-                                18th
-                                century.</p>
-                            <p>The first mention of the cupcake can be traced as far back as 1796, when a recipe
-                                notation of
-                                "a
-                                cake
-                                to be baked in small cups" was written in <em>American Cookery</em> by Amelia Simms. The
-                                earliest
-                                documentation of the term <em>cupcake</em> was in "Seventy-five Receipts for Pastry,
-                                Cakes,
-                                and
-                                Sweetmeats" in 1828 in Eliza Leslie's <em>Receipts</em> cookbook.</p>
-                            <p class="source">Text source: <a
-                                    href="http://en.wikipedia.org/wiki/Cupcakes">Wikipedia</a><br />Image
-                                source: <a href="http://flickr.com/people/10506540@N07">Steven Depolo</a> via <a
-                                    href="http://commons.wikimedia.org/wiki/File:Blue_cupcakes_for_graduation,_closeup_-_Tiffany,_May_2008.jpg">Wikimedia
-                                    Commons</a></p>
-                        </div>
+                    <div class="widget">
+                        <h4>Also Delicious</h4>
+                        <ul>
+                            <li><a href="http://en.wikipedia.org/wiki/Banana_bread">Banana Bread</a></li>
+                            <li><a href="http://en.wikipedia.org/wiki/Pumpkin_bread">Pumpkin Bread</a></li>
+                            <li><a href="http://en.wikipedia.org/wiki/Swiss_roll">Swiss Roll</a></li>
+                            <li><a href="http://en.wikipedia.org/wiki/Cheesecake">Cheesecake</a></li>
+                            <li><a href="http://en.wikipedia.org/wiki/Bundt_cake">Bundt Cake</a></li>
+                        </ul>
                     </div>
-                    <div id="side-col">
-                        <div class="widget">
-                            <h4>More Information</h4>
-                            <ul>
-                                <li><a href="http://en.wikipedia.org/wiki/Cupcakes">Cupcakes (Wikipedia)</a></li>
-                                <li><a href="http://en.wikipedia.org/wiki/Petit_fours">Petits Fours (Wikipedia)</a></li>
-                                <li><a href="http://en.wikipedia.org/wiki/Tea_cake">Tea Cakes (Wikipedia)</a></li>
-                                <li><a href="http://en.wikipedia.org/wiki/Muffins">Muffins (Wikipedia)</a></li>
-                            </ul>
-                        </div>
-                        <div class="widget">
-                            <h4>Also Delicious</h4>
-                            <ul>
-                                <li><a href="http://en.wikipedia.org/wiki/Banana_bread">Banana Bread</a></li>
-                                <li><a href="http://en.wikipedia.org/wiki/Pumpkin_bread">Pumpkin Bread</a></li>
-                                <li><a href="http://en.wikipedia.org/wiki/Swiss_roll">Swiss Roll</a></li>
-                                <li><a href="http://en.wikipedia.org/wiki/Cheesecake">Cheesecake</a></li>
-                                <li><a href="http://en.wikipedia.org/wiki/Bundt_cake">Bundt Cake</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div id="ajax-foot">
-                        <p>Sample of progressively enhanced asynchronous navigation</p>
-                    </div>
+                </div>
+                <div id="ajax-foot">
+                    <p>Sample of progressively enhanced asynchronous navigation</p>
+                </div>
 
-                </div> <!-- end box -->
-            </div> <!-- end .container -->
-        </div> <!-- end wrapper -->
-    </body>
+            </div> <!-- end box -->
+        </div> <!-- end .container -->
+    </div> <!-- end wrapper -->
+</body>
 
 </html>
 
@@ -1983,7 +1805,7 @@
 
                 <div class="row">
                     <div class="col-12">
-                        <div id="hnav">
+                        <div id="nav">
                             <ul>
                                 <li><a href="index.html">Home Page</a></li>
                                 <li><a class="active" href="page2.html">Page Two</a></li>
@@ -2400,130 +2222,16 @@
                                     </li>
                                 </ul>
                                 <br class="clear">
-                            </div><!--gallery block closed -->
+                            </div><!--gallery block closed --
                         </div><!--midcol closed -->
-                        <div class="col-3">
-                            <img class="circle" src="img/orange-globe.png">
-                        </div> <!-- end col-3 -->
-                    </div><!-- end-col-11 -->
-                </div><!-- end .row -->
+                            <div class="col-3">
+                                <img class="circle" src="img/orange-globe.png">
+                            </div> <!-- end col-3 -->
+                        </div><!-- end-col-11 -->
+                    </div><!-- end .row -->
 
-            </div> <!-- end content -->
+                </div> <!-- end content -->
 
-
-            <br class="clear">
-            <div class="row" style="background-color: #1abc9c;">
-
-                <div class="col-10">
-                    <h2>We're flying around the globe</h2>
-                    <div class="data" id="html5style2leftcol">
-                        <h3>Cottages, converted barns, caravans</h3>
-                        <img alt="Cottage interior" title="Cottage interior" height="225"
-                            src="./images/10151431_10152064928468528_813123460_n.jpg" width="300">
-                        <br>
-                        The superb interior of one of our cottages
-                    </div><!-- end_left-col -->
-                    <nav class="data" id="html5style2nav"><!--use the semantic tag <nav>-->
-                        <ul><!--start of menu list-->
-                            <li class="btn"> <a href="accommodation.html" title="Accommodation">Accommodation</a>
-                            </li>
-                            <li class="btn"><a href="maps.html" title="Location Maps">Maps</a></li>
-                            <li class="btn"><a href="index[1].html" title="Frequently Asked Questions">Information</a>
-                            </li>
-                            <li class="btn"><a href="starter-page.html" title="Local attractions">Attractions</a>
-                            </li>
-                            <li class="btn"><a href="HTML5-Ch1-7.html" title="Return to Home Page">Home Page</a>
-                            </li>
-                        </ul><!--end of menu list-->
-                    </nav>
-                    <!--</div> removed and replaced with </nav>-->
-                    <div class="data" id="html5style2midcol">
-                        <h3>Situated in the BDA's beautiful countryside</h3>
-                        <img title="Devon countryside" alt="Devon countryside" src="images/10204240696195594.jpg"
-                            height="229" width="398">
-                    </div>
-                </div><!-- end-col-12 -->
-
-                <br class="clear">
-
-
-                <div class="row">
-                    <div class="çol-12" padding="2%">
-                        <h2 class="dark" id="html5-ch1-7h2">Welcome to <strong>StarTrackr!</strong> </h2>
-                    </div><!-- end-col-12 -->
-                </div><!-- end-row -->
-                <br class="clear">
-                <div class="row" style="background-color: #3C8886; padding: 5% 0 3%;">
-                    <div class="çol-12">
-                        <img src="img/paper.png">
-                        <br>
-                        <div class="data" id="html5style2leftcol">
-                            <h3>Cottages, converted barns, caravans</h3>
-                            <img alt="Cottage interior" title="Cottage interior" height="225"
-                                src="images/10205196736816012.jpg" width="300">
-                            <br>
-                            The superb interior of one of our cottages
-                        </div><!-- end_left-col -->
-                        <nav class="data" id="html5style2nav"><!--use the semantic tag <nav>-->
-                            <ul><!--start of menu list-->
-                                <li class="btn"> <a href="accommodation.html" title="Accommodation">Accommodation</a>
-                                </li>
-                                <li class="btn"><a href="maps.html" title="Location Maps">Maps</a></li>
-                                <li class="btn"><a href="index[1].html"
-                                        title="Frequently Asked Questions">Information</a>
-                                </li>
-                                <li class="btn"><a href="starter-page.html" title="Local attractions">Attractions</a>
-                                </li>
-                                <li class="btn"><a href="HTML5-Ch1-7.html" title="Return to Home Page">Home Page</a>
-                                </li>
-                            </ul><!--end of menu list-->
-                        </nav>
-                        <!--</div> removed and replaced with </nav>-->
-                        <div class="data" id="html5style2midcol">
-                            <h3>Situated in the BDA's beautiful countryside</h3>
-                            <img title="Devon countryside" alt="Devon countryside" src="images/10205283464504150.jpg"
-                                height="229" width="398">
-                        </div>
-                    </div><!-- end-col-12 -->
-                </div> <!-- end class row -->
-                <br class="clear">
-
-                <div class="row" style="background-color: #F6931E;">
-                    <div class="col-11">
-                        <h2>Get ready for take off.</h2>
-                        <br>
-                        <div class="data" id="html5style2leftcol">
-                            <h3>Cottages, converted barns, caravans</h3>
-                            <img alt="Cottage interior" title="Cottage interior" height="225"
-                                src="images/10205283816712955.jpg" width="300">
-                            <br>
-                            The superb interior of one of our cottages
-                        </div><!-- end_left-col -->
-                        <nav class="data" id="html5style2nav"><!--use the semantic tag <nav>-->
-                            <ul><!--start of menu list-->
-                                <li class="btn"> <a href="accommodation.html" title="Accommodation">Accommodation</a>
-                                </li>
-                                <li class="btn"><a href="maps.html" title="Location Maps">Maps</a></li>
-                                <li class="btn"><a href="index[1].html"
-                                        title="Frequently Asked Questions">Information</a>
-                                </li>
-                                <li class="btn"><a href="starter-page.html" title="Local attractions">Attractions</a>
-                                </li>
-                                <li class="btn"><a href="HTML5-Ch1-7.html" title="Return to Home Page">Home Page</a>
-                                </li>
-                            </ul><!--end of menu list-->
-                        </nav>
-                        <!--</div> removed and replaced with </nav>-->
-                        <div class="data" id="html5style2midcol">
-                            <h3>Situated in the BDA's beautiful countryside</h3>
-                            <img title="Devon countryside" alt="Devon countryside" src="images/10205289710420294.jpg"
-                                height="229" width="398">
-                        </div>
-                        <div class="col-3">
-                            <img class="circle" src="img/orange-globe.png">
-                        </div> <!-- end col-3 -->
-                    </div><!-- end col-11 -->
-                </div> <!-- end class row -->
 
                 <br class="clear">
                 <div class="row" style="background-color: #1abc9c;">
@@ -2533,7 +2241,7 @@
                         <div class="data" id="html5style2leftcol">
                             <h3>Cottages, converted barns, caravans</h3>
                             <img alt="Cottage interior" title="Cottage interior" height="225"
-                                src="images/10205326059809006.jpg" width="300">
+                                src="./images/10151431_10152064928468528_813123460_n.jpg" width="300">
                             <br>
                             The superb interior of one of our cottages
                         </div><!-- end_left-col -->
@@ -2554,428 +2262,551 @@
                         <!--</div> removed and replaced with </nav>-->
                         <div class="data" id="html5style2midcol">
                             <h3>Situated in the BDA's beautiful countryside</h3>
-                            <img title="Devon countryside" alt="Devon countryside" src="images/10205468489529660.jpg"
+                            <img title="Devon countryside" alt="Devon countryside" src="images/10204240696195594.jpg"
                                 height="229" width="398">
                         </div>
-                        <div class="col-3">
-                            <img id="waves" class="circle" src="images/waves.png">
-                        </div><!-- end col-3 -->
-                    </div><!-- end col-10 -->
+                    </div><!-- end-col-12 -->
 
-                </div>
-                <br class="clear">
+                    <br class="clear">
 
-                <div class="row" style="background-color: #e5ef3f;">
-                    <div class="col-9">
-                        <h2>Above the clouds &amp; over the sea.</h2>
-                        <div class="data" id="html5style2leftcol">
-                            <h3>Cottages, converted barns, caravans</h3>
-                            <img alt="Cottage interior" title="Cottage interior" height="225"
-                                src="images/10205480303825010.jpg" width="300">
+
+                    <div class="row">
+                        <div class="çol-12" padding="2%">
+                            <h2 class="dark" id="html5-ch1-7h2">Welcome to <strong>StarTrackr!</strong> </h2>
+                        </div><!-- end-col-12 -->
+                    </div><!-- end-row -->
+                    <br class="clear">
+                    <div class="row" style="background-color: #3C8886; padding: 5% 0 3%;">
+                        <div class="çol-12">
+                            <img src="img/paper.png">
                             <br>
-                            The superb interior of one of our cottages
-                        </div><!-- end_left-col -->
-                        <nav class="data" id="html5style2nav"><!--use the semantic tag <nav>-->
-                            <ul><!--start of menu list-->
-                                <li class="btn"> <a href="accommodation.html" title="Accommodation">Accommodation</a>
-                                </li>
-                                <li class="btn"><a href="maps.html" title="Location Maps">Maps</a></li>
-                                <li class="btn"><a href="index[1].html"
-                                        title="Frequently Asked Questions">Information</a>
-                                </li>
-                                <li class="btn"><a href="starter-page.html" title="Local attractions">Attractions</a>
-                                </li>
-                                <li class="btn"><a href="HTML5-Ch1-7.html" title="Return to Home Page">Home Page</a>
-                                </li>
-                            </ul><!--end of menu list-->
-                        </nav>
-                        <!--</div> removed and replaced with </nav>-->
-                        <div class="data" id="html5style2midcol">
-                            <h3>Situated in the BDA's beautiful countryside</h3>
-                            <img title="Devon countryside" alt="Devon countryside" src="images/10205514191552182.jpg"
-                                height="229" width="398">
-                        </div>
-
-                        <div class="col-3">
-                            <img id="plane" class="circle" src="images/plane.png">
-                        </div><!-- end col-3 -->
-                    </div>
-                </div>
-                <br class="clear">
-            </div> <!-- end wrapper -->
-        </div> <!-- end wrapper -->
-
-        <div class="row" style="background-color: #34495e;">
-            <div class="col-8">
-                <h2>In just 42 hours and 27 minutes</h2>
-                <div class="data" id="html5style2leftcol">
-                    <h3>Cottages, converted barns, caravans</h3>
-                    <img alt="Cottage interior" title="Cottage interior" height="225" src="images/10205655819732798.jpg"
-                        width="300">
-                    <br>
-                    The superb interior of one of our cottages
-                </div><!-- end_left-col -->
-                <nav class="data" id="html5style2nav"><!--use the semantic tag <nav>-->
-                    <ul><!--start of menu list-->
-                        <li class="btn"> <a href="accommodation.html" title="Accommodation">Accommodation</a></li>
-                        <li class="btn"><a href="maps.html" title="Location Maps">Maps</a></li>
-                        <li class="btn"><a href="index[1].html" title="Frequently Asked Questions">Information</a>
-                        </li>
-                        <li class="btn"><a href="starter-page.html" title="Local attractions">Attractions</a></li>
-                        <li class="btn"><a href="HTML5-Ch1-7.html" title="Return to Home Page">Home Page</a></li>
-                    </ul><!--end of menu list-->
-                </nav>
-                <!--</div> removed and replaced with </nav>-->
-                <div class="data" id="html5style2midcol">
-                    <h3>Situated in the BDA's beautiful countryside</h3>
-                    <img title="Devon countryside" alt="Devon countryside" src="images/10205691733510620.jpg"
-                        height="229" width="398">
-                </div>
-                <div class="col-3">
-                    <img id="paper-blue" class="circle" src="images/paper-blue.png">
-                </div><!-- end col-3 -->
-            </div><!-- end-col_8 -->
-        </div><!-- end-.row -->
-        <br class="clear">
-
-        <div class="row" style="background-color: #00afe1;">
-            <div class="col-7">
-                <h2>So come along for the ride!</h2>
-                <div class="data" id="html5style2leftcol">
-                    <h3>Cottages, converted barns, caravans</h3>
-                    <img alt="Cottage interior" title="Cottage interior" height="225" src="./bda-9.jpg" width="300">
-                    <br>
-                    The superb interior of one of our cottages
-                </div><!-- end_left-col -->
-                <nav class="data" id="html5style2nav"><!--use the semantic tag <nav>-->
-                    <ul><!--start of menu list-->
-                        <li class="btn"> <a href="accommodation.html" title="Accommodation">Accommodation</a></li>
-                        <li class="btn"><a href="maps.html" title="Location Maps">Maps</a></li>
-                        <li class="btn"><a href="index[1].html" title="Frequently Asked Questions">Information</a>
-                        </li>
-                        <li class="btn"><a href="starter-page.html" title="Local attractions">Attractions</a></li>
-                        <li class="btn"><a href="HTML5-Ch1-7.html" title="Return to Home Page">Home Page</a></li>
-                    </ul><!--end of menu list-->
-                </nav>
-                <!--</div> removed and replaced with </nav>-->
-                <div class="data" id="html5style2midcol">
-                    <h3>Situated in the BDA's beautiful countryside</h3>
-                    <img title="Devon countryside" alt="Devon countryside" src="images/10205779981916775.jpg"
-                        height="229" width="398">
-                </div>
-                <div class="col-3">
-                    <img id="globe" class="circle" src="images/globe.png" width="215px">
-                </div>
-            </div>
-        </div>
-
-        <br class="clear">
-
-        <div class="row" style="background-color: #00AFE1;">
-            <div class="col-12">
-                <img id="plane-background" src="./img/plane-background.png" width="935px">
-                <div class="data" id="html5style2leftcol">
-                    <h3>Cottages, converted barns, caravans</h3>
-                    <img alt="Cottage interior" title="Cottage interior" height="225" src="images/10205788598812192.jpg"
-                        width="300">
-                    <br>
-                    The superb interior of one of our cottages
-                </div><!-- end_left-col -->
-                <nav class="data" id="html5style2nav"><!--use the semantic tag <nav>-->
-                    <ul><!--start of menu list-->
-                        <li class="btn"> <a href="accommodation.html" title="Accommodation">Accommodation</a></li>
-                        <li class="btn"><a href="maps.html" title="Location Maps">Maps</a></li>
-                        <li class="btn"><a href="index[1].html" title="Frequently Asked Questions">Information</a>
-                        </li>
-                        <li class="btn"><a href="starter-page.html" title="Local attractions">Attractions</a></li>
-                        <li class="btn"><a href="HTML5-Ch1-7.html" title="Return to Home Page">Home Page</a></li>
-                    </ul><!--end of menu list-->
-                </nav>
-                <!--</div> removed and replaced with </nav>-->
-                <div class="data" id="html5style2midcol">
-                    <h3>Situated in the BDA's beautiful countryside</h3>
-                    <img title="Devon countryside" alt="Devon countryside" src="images/10205814158051157.jpg"
-                        height="229" width="398">
-                </div>
-            </div>
-        </div>
-        <br class="clear">
-
-        <div class="row" style="background-color: #f6931e;">
-            <div class="col-11">
-                <h2 class="heading">Get ready for take off.</h2>
-            </div><!-- end col-11 -->
-        </div> <!-- end class row -->
-
-        <div class="row" style="background-color: #1abc9c;">
-            <div class="col-11">
-                <div class="data" id="html5style2leftcol">
-                    <h3>Cottages, converted barns, caravans</h3>
-                    <img alt="Cottage interior" title="Cottage interior" height="225" src="images/10205905373851495.jpg"
-                        width="300">
-                    <br>
-                    The superb interior of one of our cottages
-                </div><!-- end_left-col -->
-                <nav class="data" id="html5style2nav"><!--use the semantic tag <nav>-->
-                    <ul><!--start of menu list-->
-                        <li class="btn"> <a href="accommodation.html" title="Accommodation">Accommodation</a></li>
-                        <li class="btn"><a href="maps.html" title="Location Maps">Maps</a></li>
-                        <li class="btn"><a href="index[1].html" title="Frequently Asked Questions">Information</a>
-                        </li>
-                        <li class="btn"><a href="starter-page.html" title="Local attractions">Attractions</a></li>
-                        <li class="btn"><a href="HTML5-Ch1-7.html" title="Return to Home Page">Home Page</a></li>
-                    </ul><!--end of menu list-->
-                </nav>
-                <!--</div> removed and replaced with </nav>-->
-                <div class="data" id="html5style2midcol">
-                    <h3>Situated in the BDA's beautiful countryside</h3>
-                    <img title="Devon countryside" alt="Devon countryside" src="images/10205980577171531.jpg"
-                        height="229" width="398">
-                </div>
-                <div class="col-3">
-                    <img class="circle" src="./img/orange-globe.png">
-                </div> <!-- end col-3 -->
-            </div><!-- end col-11 -->
-        </div> <!-- end class row -->
-
-        <div class="row" style="background-color: #1abc9c;">
-            <div class="col-10">
-                <h2 class="heading">We're flying around the globe</h2>
-                <div class="col-3">
-                    <img class="circle" src="./img/waves.png">
-                </div>
-            </div>
-        </div>
-
-        <div class="row" style="background-color: #e5ef3f;">
-            <div class="col-9">
-                <h2 class="heading">Above the clouds &amp; over the sea.</h2>
-                <div class="col-3">
-                    <img class="circle" src="./img/plane.png">
-                </div>
-            </div>
-        </div>
-
-        <div class="row" style="background-color: #34495e;">
-            <div class="col-8">
-                <h2 class="heading">In just 42 hours and 27 minutes</h2>
-                <div class="data" id="html5style2leftcol">
-                    <h3>Cottages, converted barns, caravans</h3>
-                    <img alt="Cottage interior" title="Cottage interior" height="225" src="images/10206077418952515.jpg"
-                        width="300">
-                    <br>
-                    The superb interior of one of our cottages
-                </div><!-- end_left-col -->
-                <nav class="data" id="html5style2nav"><!--use the semantic tag <nav>-->
-                    <ul><!--start of menu list-->
-                        <li class="btn"> <a href="accommodation.html" title="Accommodation">Accommodation</a></li>
-                        <li class="btn"><a href="maps.html" title="Location Maps">Maps</a></li>
-                        <li class="btn"><a href="index[1].html" title="Frequently Asked Questions">Information</a>
-                        </li>
-                        <li class="btn"><a href="starter-page.html" title="Local attractions">Attractions</a></li>
-                        <li class="btn"><a href="HTML5-Ch1-7.html" title="Return to Home Page">Home Page</a></li>
-                    </ul><!--end of menu list-->
-                </nav>
-                <!--</div> removed and replaced with </nav>-->
-                <div class="data" id="html5style2midcol">
-                    <h3>Situated in the BDA's beautiful countryside</h3>
-                    <img title="Devon countryside" alt="Devon countryside" src="images/10206171308379692.jpg"
-                        height="229" width="398">
-                </div>
-                <div class="col-3">
-                    <img class="circle" src="img/paper-blue.png">
-                </div>
-            </div>
-        </div>
-        <div class="row" style="background-color: #00afe1;">
-            <div class="col-7">
-                <h2 class="heading">So come along for the ride!</h2>
-                <div id="photos">
-                    <a href="#" class="trigger">Image Gallery</a>
-                    <ul id="photos_inner">
-                        <li><img alt="Glendatronix" src="./images/glenda_400.jpg" /></li>
-                        <li><img alt="Darth Fader" src="./images/fader_400.jpg" /></li>
-                        <li><img alt="Beau Dandy" src="./images/beau_400.jpg" /></li>
-                        <li><img alt="Johnny Stardust" src="./images/johnny_400.jpg" /></li>
-                        <li><img alt="Mo' Fat" src="./images/mofat_400.jpg" /></li>
-                        <li><img alt="Glendatronix" src="./images/kellie_400.jpg" /></li>
-                        <li><img alt="Darth Fader" src="./images/fader_400.jpg" /></li>
-                        <li><img alt="Beau Dandy" src="./images/beau_400.jpg" /></li>
-                        <li><img alt="Johnny Stardust" src="./images/johnny_400.jpg" /></li>
-                        <li><img alt="Mo' Fat" src="./images/mofat_400.jpg" /></li>
-                    </ul>
-                </div>
-                <h3>Around town last night</h3>
-                <div class="col-3">
-                    <img id="globe" class="circle" src="images/globe.png" width="215px">
-                </div>
-            </div>
-        </div>
-
-        <div class="row" style="background-color: #00AFE1;">
-            <div class="col-12">
-                <img id="plane-background" src="./img/plane-background.png" width="935px">
-            </div>
-        </div>
-        <footer class="data" id="html5style2footer">
-            <div class="footer-inner">
-                <div class="company-details">
-                    <p class="copyright"> &copy; <time datetime="2013">2024</time> The Kelly Transitional Housing
-                        Program
-                    </p>
-                    <p class="distributor">Distributor: Findlater HempSmarts Inc & Cannabis in Action Group</p>
-                    <p class="address">414 W 127th, New York, NY 10027</p>
-                    <p class="telephone-number">Tel: 212-665-1678</p>
-                </div>
-                <hr class="full">
-            </div>
-
-            <div class="row" style="background-color: #66d4ff">
-                <div class="col-12">
-                    <h2 class="heading">Follow Us</h2>
-                </div>
-                <div id="comment">
-                    <h2>Leave a comment</h2>
-                    name:<br>
-                    <input type="text"><br>
-                    comment:<br>
-                    <textarea rows="5" cols="30" name="comment"></textarea>
-                </div>
-            </div>
-
-            <div class="row" style="background-color: 66d4ff">
-                <div class="col-12">
-                    <h2>Fine Print</h2>
-                    <p id="fine_print">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                        tempor incididunt ut labore
-                        et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                        exercitation ullamco laboris nisi ut
-                        aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
-                        in voluptate velit esse cillum
-                        dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                        proident, sunt in culpa qui
-                        officia deserunt mollit anim id est laborum.
-                    </p>
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="offset-lg-4 col-lg-4 offset-md-2 col-md-8">
-                    <div class="form-group">
-                        <input class="form-control" type="email" name="subscribe_email"
-                            placeholder="Enter your email address" required="required">
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class=" col-lg-12 col-md-12  col-sm-12">
-                    <div class="subscribe-accept">
-                        <input type="checkbox" name="subscribe_accept" required="required">
-                        I agree to the
-                        <a href="https://orris0.github.io/orris0/privacy.html">Privacy Policy</a>,
-                        <a href="https://orris0.github.io/orris0/disclaimer.html">Disclaimer</a>
-                        and to receive newsletters from Practical HTML5 Projects for fun and Profit!
-                    </div>
-                    <p id="disclaimer">
-                        Disclaimer! This service is not intended for the those with criminal intent. Celebrities are
-                        kind of
-                        like people so their privacy should be respected.
-                    </p>
-                    <div id="splitter">
-                        <h2>Terms &amp; Conditions</h2>
-                        <div class="pane" id="tocPane">
-                            <div class="inner">
-                                <ol>
-                                    <li><a href="#privacy">Your Privacy</a></li>
-                                    <li><a href="#celebs">Celeb's Privacy</a></li>
-                                    <li>Ownership & Intellectual Property
-                                        <ol style="list-style-type: lower-roman">
-                                            <li><a href="#liability">Liability</a></li>
-                                            <li><a href="#rights">Exclusive & Non-exclusive rights</a></li>
-                                            <li><a href="#ugc">User Generated Material</a></li>
-                                        </ol>
+                            <div class="data" id="html5style2leftcol">
+                                <h3>Cottages, converted barns, caravans</h3>
+                                <img alt="Cottage interior" title="Cottage interior" height="225"
+                                    src="images/10205196736816012.jpg" width="300">
+                                <br>
+                                The superb interior of one of our cottages
+                            </div><!-- end_left-col -->
+                            <nav class="data" id="html5style2nav"><!--use the semantic tag <nav>-->
+                                <ul><!--start of menu list-->
+                                    <li class="btn"> <a href="accommodation.html"
+                                            title="Accommodation">Accommodation</a>
                                     </li>
-                                </ol>
+                                    <li class="btn"><a href="maps.html" title="Location Maps">Maps</a></li>
+                                    <li class="btn"><a href="index[1].html"
+                                            title="Frequently Asked Questions">Information</a>
+                                    </li>
+                                    <li class="btn"><a href="starter-page.html"
+                                            title="Local attractions">Attractions</a>
+                                    </li>
+                                    <li class="btn"><a href="HTML5-Ch1-7.html" title="Return to Home Page">Home Page</a>
+                                    </li>
+                                </ul><!--end of menu list-->
+                            </nav>
+                            <!--</div> removed and replaced with </nav>-->
+                            <div class="data" id="html5style2midcol">
+                                <h3>Situated in the BDA's beautiful countryside</h3>
+                                <img title="Devon countryside" alt="Devon countryside"
+                                    src="images/10205283464504150.jpg" height="229" width="398">
                             </div>
-                        </div>
+                        </div><!-- end-col-12 -->
+                    </div> <!-- end class row -->
+                    <br class="clear">
 
-                        <div class="inner">
-                            <h3>User Generated Material</h3>
-                            <p>This website contains messaging systems and other user
-                                generated content toward the purpose and fulfillment of
-                                directory or indirectly contacting or stalking celebrities
-                                and/or their family and/or people in their vaguely related
-                                social sphere. Such content is here forth and eternally
-                                regarded as property of StarTrackr and parent company et
-
-                            <div id="comment">
-                                <h2>Leave a comment</h2>
-                                name:<br />
-                                <input type="text" /><br />
-                                comment:<br />
-                                <textarea rows="5" cols="30"></textarea>
+                    <div class="row" style="background-color: #F6931E;">
+                        <div class="col-11">
+                            <h2>Get ready for take off.</h2>
+                            <br>
+                            <div class="data" id="html5style2leftcol">
+                                <h3>Cottages, converted barns, caravans</h3>
+                                <img alt="Cottage interior" title="Cottage interior" height="225"
+                                    src="images/10205283816712955.jpg" width="300">
+                                <br>
+                                The superb interior of one of our cottages
+                            </div><!-- end_left-col -->
+                            <nav class="data" id="html5style2nav"><!--use the semantic tag <nav>-->
+                                <ul><!--start of menu list-->
+                                    <li class="btn"> <a href="accommodation.html"
+                                            title="Accommodation">Accommodation</a>
+                                    </li>
+                                    <li class="btn"><a href="maps.html" title="Location Maps">Maps</a></li>
+                                    <li class="btn"><a href="index[1].html"
+                                            title="Frequently Asked Questions">Information</a>
+                                    </li>
+                                    <li class="btn"><a href="starter-page.html"
+                                            title="Local attractions">Attractions</a>
+                                    </li>
+                                    <li class="btn"><a href="HTML5-Ch1-7.html" title="Return to Home Page">Home Page</a>
+                                    </li>
+                                </ul><!--end of menu list-->
+                            </nav>
+                            <!--</div> removed and replaced with </nav>-->
+                            <div class="data" id="html5style2midcol">
+                                <h3>Situated in the BDA's beautiful countryside</h3>
+                                <img title="Devon countryside" alt="Devon countryside"
+                                    src="images/10205289710420294.jpg" height="229" width="398">
                             </div>
-                            <h2>Fine Print</h2>
-                            <p id="fine_print">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
-                                non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                            </p>
+                            <div class="col-3">
+                                <img class="circle" src="img/orange-globe.png">
+                            </div> <!-- end col-3 -->
+                        </div><!-- end col-11 -->
+                    </div> <!-- end class row -->
 
+                    <br class="clear">
+                    <div class="row" style="background-color: #1abc9c;">
+
+                        <div class="col-10">
+                            <h2>We're flying around the globe</h2>
+                            <div class="data" id="html5style2leftcol">
+                                <h3>Cottages, converted barns, caravans</h3>
+                                <img alt="Cottage interior" title="Cottage interior" height="225"
+                                    src="images/10205326059809006.jpg" width="300">
+                                <br>
+                                The superb interior of one of our cottages
+                            </div><!-- end_left-col -->
+                            <nav class="data" id="html5style2nav"><!--use the semantic tag <nav>-->
+                                <ul><!--start of menu list-->
+                                    <li class="btn"> <a href="accommodation.html"
+                                            title="Accommodation">Accommodation</a>
+                                    </li>
+                                    <li class="btn"><a href="maps.html" title="Location Maps">Maps</a></li>
+                                    <li class="btn"><a href="index[1].html"
+                                            title="Frequently Asked Questions">Information</a>
+                                    </li>
+                                    <li class="btn"><a href="starter-page.html"
+                                            title="Local attractions">Attractions</a>
+                                    </li>
+                                    <li class="btn"><a href="HTML5-Ch1-7.html" title="Return to Home Page">Home Page</a>
+                                    </li>
+                                </ul><!--end of menu list-->
+                            </nav>
+                            <!--</div> removed and replaced with </nav>-->
+                            <div class="data" id="html5style2midcol">
+                                <h3>Situated in the BDA's beautiful countryside</h3>
+                                <img title="Devon countryside" alt="Devon countryside"
+                                    src="images/10205468489529660.jpg" height="229" width="398">
+                            </div>
+                            <div class="col-3">
+                                <img id="waves" class="circle" src="images/waves.png">
+                            </div><!-- end col-3 -->
+                        </div><!-- end col-10 -->
+
+                    </div>
+                    <br class="clear">
+
+                    <div class="row" style="background-color: #e5ef3f;">
+                        <div class="col-9">
+                            <h2>Above the clouds &amp; over the sea.</h2>
+                            <div class="data" id="html5style2leftcol">
+                                <h3>Cottages, converted barns, caravans</h3>
+                                <img alt="Cottage interior" title="Cottage interior" height="225"
+                                    src="images/10205480303825010.jpg" width="300">
+                                <br>
+                                The superb interior of one of our cottages
+                            </div><!-- end_left-col -->
+                            <nav class="data" id="html5style2nav"><!--use the semantic tag <nav>-->
+                                <ul><!--start of menu list-->
+                                    <li class="btn"> <a href="accommodation.html"
+                                            title="Accommodation">Accommodation</a>
+                                    </li>
+                                    <li class="btn"><a href="maps.html" title="Location Maps">Maps</a></li>
+                                    <li class="btn"><a href="index[1].html"
+                                            title="Frequently Asked Questions">Information</a>
+                                    </li>
+                                    <li class="btn"><a href="starter-page.html"
+                                            title="Local attractions">Attractions</a>
+                                    </li>
+                                    <li class="btn"><a href="HTML5-Ch1-7.html" title="Return to Home Page">Home Page</a>
+                                    </li>
+                                </ul><!--end of menu list-->
+                            </nav>
+                            <!--</div> removed and replaced with </nav>-->
+                            <div class="data" id="html5style2midcol">
+                                <h3>Situated in the BDA's beautiful countryside</h3>
+                                <img title="Devon countryside" alt="Devon countryside"
+                                    src="images/10205514191552182.jpg" height="229" width="398">
+                            </div>
+
+                            <div class="col-3">
+                                <img id="plane" class="circle" src="images/plane.png">
+                            </div><!-- end col-3 -->
                         </div>
                     </div>
-                </div><!-- end col-12 -->
-            </div><!-- end .row -->
+                    <br class="clear">
+                </div> <!-- end wrapper -->
+            </div> <!-- end wrapper -->
 
-            <div id="footer">
-                <p>
-                    &copy; Copyright 2010 CelebriTracker Productions
-                </p>
-            </div>
-            <div id="container">
-                <p>&nbsp;</p>
-                <p>Tour Orris (default)</p>
-                <p>
-                    <a href="../orris0/HTML5-Ch1-7.html">Page 1</a>
-                    <a href="html5-nav.html">Page 2</a>
-                    <a href="simplistic-side-by-side.html">Page 3</a>
-                    <a href="simplistic-html5-java.html">Page 4</a>
-                    <a href="simplistic-html5.html">Page 5</a>
-                    <a href="gallery-one-col.html">Page 6</a>
-                    <a href="gallery-2col.html">Page 7</a>
-                </p>
-                <p>&nbsp;</p>
-                <p class="inline-block">Practical HTML5 Project&#39;s<br>
-                    <a href="gallery-3col-mix.html">Page 1</a>
-                    <a href="gallery-page-validated.html">Page 2</a>
-                    <a href="squares-html5.html">Page 3</a>
-                    <a href="horiz-vert-menu.html">Page 4</a>
-                    <a href="fig2-nifty.html">Page 5</a>
-                    <a href="starter-page.html">Page 6</a>
-                    <a href="index2.html">Page 7</a>
-                </p>
-                <p>&nbsp;</p>
+            <div class="row" style="background-color: #34495e;">
+                <div class="col-8">
+                    <h2>In just 42 hours and 27 minutes</h2>
+                    <div class="data" id="html5style2leftcol">
+                        <h3>Cottages, converted barns, caravans</h3>
+                        <img alt="Cottage interior" title="Cottage interior" height="225"
+                            src="images/10205655819732798.jpg" width="300">
+                        <br>
+                        The superb interior of one of our cottages
+                    </div><!-- end_left-col -->
+                    <nav class="data" id="html5style2nav"><!--use the semantic tag <nav>-->
+                        <ul><!--start of menu list-->
+                            <li class="btn"> <a href="accommodation.html" title="Accommodation">Accommodation</a></li>
+                            <li class="btn"><a href="maps.html" title="Location Maps">Maps</a></li>
+                            <li class="btn"><a href="index[1].html" title="Frequently Asked Questions">Information</a>
+                            </li>
+                            <li class="btn"><a href="starter-page.html" title="Local attractions">Attractions</a></li>
+                            <li class="btn"><a href="HTML5-Ch1-7.html" title="Return to Home Page">Home Page</a></li>
+                        </ul><!--end of menu list-->
+                    </nav>
+                    <!--</div> removed and replaced with </nav>-->
+                    <div class="data" id="html5style2midcol">
+                        <h3>Situated in the BDA's beautiful countryside</h3>
+                        <img title="Devon countryside" alt="Devon countryside" src="images/10205691733510620.jpg"
+                            height="229" width="398">
+                    </div>
+                    <div class="col-3">
+                        <img id="paper-blue" class="circle" src="images/paper-blue.png">
+                    </div><!-- end col-3 -->
+                </div><!-- end-col_8 -->
+            </div><!-- end-.row -->
+            <br class="clear">
+
+            <div class="row" style="background-color: #00afe1;">
+                <div class="col-7">
+                    <h2>So come along for the ride!</h2>
+                    <div class="data" id="html5style2leftcol">
+                        <h3>Cottages, converted barns, caravans</h3>
+                        <img alt="Cottage interior" title="Cottage interior" height="225" src="./bda-9.jpg" width="300">
+                        <br>
+                        The superb interior of one of our cottages
+                    </div><!-- end_left-col -->
+                    <nav class="data" id="html5style2nav"><!--use the semantic tag <nav>-->
+                        <ul><!--start of menu list-->
+                            <li class="btn"> <a href="accommodation.html" title="Accommodation">Accommodation</a></li>
+                            <li class="btn"><a href="maps.html" title="Location Maps">Maps</a></li>
+                            <li class="btn"><a href="index[1].html" title="Frequently Asked Questions">Information</a>
+                            </li>
+                            <li class="btn"><a href="starter-page.html" title="Local attractions">Attractions</a></li>
+                            <li class="btn"><a href="HTML5-Ch1-7.html" title="Return to Home Page">Home Page</a></li>
+                        </ul><!--end of menu list-->
+                    </nav>
+                    <!--</div> removed and replaced with </nav>-->
+                    <div class="data" id="html5style2midcol">
+                        <h3>Situated in the BDA's beautiful countryside</h3>
+                        <img title="Devon countryside" alt="Devon countryside" src="images/10205779981916775.jpg"
+                            height="229" width="398">
+                    </div>
+                    <div class="col-3">
+                        <img id="globe" class="circle" src="images/globe.png" width="215px">
+                    </div>
+                </div>
             </div>
 
-            <a href="https://orris0.github.io/orris0/index.html"
+            <br class="clear">
+
+            <div class="row" style="background-color: #00AFE1;">
+                <div class="col-12">
+                    <img id="plane-background" src="./img/plane-background.png" width="935px">
+                    <div class="data" id="html5style2leftcol">
+                        <h3>Cottages, converted barns, caravans</h3>
+                        <img alt="Cottage interior" title="Cottage interior" height="225"
+                            src="images/10205788598812192.jpg" width="300">
+                        <br>
+                        The superb interior of one of our cottages
+                    </div><!-- end_left-col -->
+                    <nav class="data" id="html5style2nav"><!--use the semantic tag <nav>-->
+                        <ul><!--start of menu list-->
+                            <li class="btn"> <a href="accommodation.html" title="Accommodation">Accommodation</a></li>
+                            <li class="btn"><a href="maps.html" title="Location Maps">Maps</a></li>
+                            <li class="btn"><a href="index[1].html" title="Frequently Asked Questions">Information</a>
+                            </li>
+                            <li class="btn"><a href="starter-page.html" title="Local attractions">Attractions</a></li>
+                            <li class="btn"><a href="HTML5-Ch1-7.html" title="Return to Home Page">Home Page</a></li>
+                        </ul><!--end of menu list-->
+                    </nav>
+                    <!--</div> removed and replaced with </nav>-->
+                    <div class="data" id="html5style2midcol">
+                        <h3>Situated in the BDA's beautiful countryside</h3>
+                        <img title="Devon countryside" alt="Devon countryside" src="images/10205814158051157.jpg"
+                            height="229" width="398">
+                    </div>
+                </div>
+            </div>
+            <br class="clear">
+
+            <div class="row" style="background-color: #f6931e;">
+                <div class="col-11">
+                    <h2 class="heading">Get ready for take off.</h2>
+                </div><!-- end col-11 -->
+            </div> <!-- end class row -->
+
+            <div class="row" style="background-color: #1abc9c;">
+                <div class="col-11">
+                    <div class="data" id="html5style2leftcol">
+                        <h3>Cottages, converted barns, caravans</h3>
+                        <img alt="Cottage interior" title="Cottage interior" height="225"
+                            src="images/10205905373851495.jpg" width="300">
+                        <br>
+                        The superb interior of one of our cottages
+                    </div><!-- end_left-col -->
+                    <nav class="data" id="html5style2nav"><!--use the semantic tag <nav>-->
+                        <ul><!--start of menu list-->
+                            <li class="btn"> <a href="accommodation.html" title="Accommodation">Accommodation</a></li>
+                            <li class="btn"><a href="maps.html" title="Location Maps">Maps</a></li>
+                            <li class="btn"><a href="index[1].html" title="Frequently Asked Questions">Information</a>
+                            </li>
+                            <li class="btn"><a href="starter-page.html" title="Local attractions">Attractions</a></li>
+                            <li class="btn"><a href="HTML5-Ch1-7.html" title="Return to Home Page">Home Page</a></li>
+                        </ul><!--end of menu list-->
+                    </nav>
+                    <!--</div> removed and replaced with </nav>-->
+                    <div class="data" id="html5style2midcol">
+                        <h3>Situated in the BDA's beautiful countryside</h3>
+                        <img title="Devon countryside" alt="Devon countryside" src="images/10205980577171531.jpg"
+                            height="229" width="398">
+                    </div>
+                    <div class="col-3">
+                        <img class="circle" src="./img/orange-globe.png">
+                    </div> <!-- end col-3 -->
+                </div><!-- end col-11 -->
+            </div> <!-- end class row -->
+
+            <div class="row" style="background-color: #1abc9c;">
+                <div class="col-10">
+                    <h2 class="heading">We're flying around the globe</h2>
+                    <div class="col-3">
+                        <img class="circle" src="./img/waves.png">
+                    </div>
+                </div>
+            </div>
+
+            <div class="row" style="background-color: #e5ef3f;">
+                <div class="col-9">
+                    <h2 class="heading">Above the clouds &amp; over the sea.</h2>
+                    <div class="col-3">
+                        <img class="circle" src="./img/plane.png">
+                    </div>
+                </div>
+            </div>
+
+            <div class="row" style="background-color: #34495e;">
+                <div class="col-8">
+                    <h2 class="heading">In just 42 hours and 27 minutes</h2>
+                    <div class="data" id="html5style2leftcol">
+                        <h3>Cottages, converted barns, caravans</h3>
+                        <img alt="Cottage interior" title="Cottage interior" height="225"
+                            src="images/10206077418952515.jpg" width="300">
+                        <br>
+                        The superb interior of one of our cottages
+                    </div><!-- end_left-col -->
+                    <nav class="data" id="html5style2nav"><!--use the semantic tag <nav>-->
+                        <ul><!--start of menu list-->
+                            <li class="btn"> <a href="accommodation.html" title="Accommodation">Accommodation</a></li>
+                            <li class="btn"><a href="maps.html" title="Location Maps">Maps</a></li>
+                            <li class="btn"><a href="index[1].html" title="Frequently Asked Questions">Information</a>
+                            </li>
+                            <li class="btn"><a href="starter-page.html" title="Local attractions">Attractions</a></li>
+                            <li class="btn"><a href="HTML5-Ch1-7.html" title="Return to Home Page">Home Page</a></li>
+                        </ul><!--end of menu list-->
+                    </nav>
+                    <!--</div> removed and replaced with </nav>-->
+                    <div class="data" id="html5style2midcol">
+                        <h3>Situated in the BDA's beautiful countryside</h3>
+                        <img title="Devon countryside" alt="Devon countryside" src="images/10206171308379692.jpg"
+                            height="229" width="398">
+                    </div>
+                    <div class="col-3">
+                        <img class="circle" src="img/paper-blue.png">
+                    </div>
+                </div>
+            </div>
+            <div class="row" style="background-color: #00afe1;">
+                <div class="col-7">
+                    <h2 class="heading">So come along for the ride!</h2>
+                    <div id="photos">
+                        <a href="#" class="trigger">Image Gallery</a>
+                        <ul id="photos_inner">
+                            <li><img alt="Glendatronix" src="./images/glenda_400.jpg" /></li>
+                            <li><img alt="Darth Fader" src="./images/fader_400.jpg" /></li>
+                            <li><img alt="Beau Dandy" src="./images/beau_400.jpg" /></li>
+                            <li><img alt="Johnny Stardust" src="./images/johnny_400.jpg" /></li>
+                            <li><img alt="Mo' Fat" src="./images/mofat_400.jpg" /></li>
+                            <li><img alt="Glendatronix" src="./images/kellie_400.jpg" /></li>
+                            <li><img alt="Darth Fader" src="./images/fader_400.jpg" /></li>
+                            <li><img alt="Beau Dandy" src="./images/beau_400.jpg" /></li>
+                            <li><img alt="Johnny Stardust" src="./images/johnny_400.jpg" /></li>
+                            <li><img alt="Mo' Fat" src="./images/mofat_400.jpg" /></li>
+                        </ul>
+                    </div>
+                    <h3>Around town last night</h3>
+                    <div class="col-3">
+                        <img id="globe" class="circle" src="images/globe.png" width="215px">
+                    </div>
+                </div>
+            </div>
+
+            <div class="row" style="background-color: #00AFE1;">
+                <div class="col-12">
+                    <img id="plane-background" src="./img/plane-background.png" width="935px">
+                </div>
+            </div>
+            <footer class="data" id="html5style2footer">
+                <div class="footer-inner">
+                    <div class="company-details">
+                        <p class="copyright"> &copy; <time datetime="2013">2024</time> The Kelly Transitional Housing
+                            Program
+                        </p>
+                        <p class="distributor">Distributor: Findlater HempSmarts Inc & Cannabis in Action Group</p>
+                        <p class="address">414 W 127th, New York, NY 10027</p>
+                        <p class="telephone-number">Tel: 212-665-1678</p>
+                    </div>
+                    <hr class="full">
+                </div>
+
+                <div class="row" style="background-color: #66d4ff">
+                    <div class="col-12">
+                        <h2 class="heading">Follow Us</h2>
+                    </div>
+                    <div id="comment">
+                        <h2>Leave a comment</h2>
+                        name:<br>
+                        <input type="text"><br>
+                        comment:<br>
+                        <textarea rows="5" cols="30" name="comment"></textarea>
+                    </div>
+                </div>
+
+                <div class="row" style="background-color: 66d4ff">
+                    <div class="col-12">
+                        <h2>Fine Print</h2>
+                        <p id="fine_print">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                            tempor incididunt ut labore
+                            et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                            exercitation ullamco laboris nisi ut
+                            aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
+                            in voluptate velit esse cillum
+                            dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                            proident, sunt in culpa qui
+                            officia deserunt mollit anim id est laborum.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="offset-lg-4 col-lg-4 offset-md-2 col-md-8">
+                        <div class="form-group">
+                            <input class="form-control" type="email" name="subscribe_email"
+                                placeholder="Enter your email address" required="required">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class=" col-lg-12 col-md-12  col-sm-12">
+                        <div class="subscribe-accept">
+                            <input type="checkbox" name="subscribe_accept" required="required">
+                            I agree to the
+                            <a href="https://orris0.github.io/orris0/privacy.html">Privacy Policy</a>,
+                            <a href="https://orris0.github.io/orris0/disclaimer.html">Disclaimer</a>
+                            and to receive newsletters from Practical HTML5 Projects for fun and Profit!
+                        </div>
+                        <p id="disclaimer">
+                            Disclaimer! This service is not intended for the those with criminal intent. Celebrities are
+                            kind of
+                            like people so their privacy should be respected.
+                        </p>
+                        <div id="splitter">
+                            <h2>Terms &amp; Conditions</h2>
+                            <div class="pane" id="tocPane">
+                                <div class="inner">
+                                    <ol>
+                                        <li><a href="#privacy">Your Privacy</a></li>
+                                        <li><a href="#celebs">Celeb's Privacy</a></li>
+                                        <li>Ownership & Intellectual Property
+                                            <ol style="list-style-type: lower-roman">
+                                                <li><a href="#liability">Liability</a></li>
+                                                <li><a href="#rights">Exclusive & Non-exclusive rights</a></li>
+                                                <li><a href="#ugc">User Generated Material</a></li>
+                                            </ol>
+                                        </li>
+                                    </ol>
+                                </div>
+                            </div>
+
+                            <div class="inner">
+                                <h3>User Generated Material</h3>
+                                <p>This website contains messaging systems and other user
+                                    generated content toward the purpose and fulfillment of
+                                    directory or indirectly contacting or stalking celebrities
+                                    and/or their family and/or people in their vaguely related
+                                    social sphere. Such content is here forth and eternally
+                                    regarded as property of StarTrackr and parent company et
+
+                                <div id="comment">
+                                    <h2>Leave a comment</h2>
+                                    name:<br />
+                                    <input type="text" /><br />
+                                    comment:<br />
+                                    <textarea rows="5" cols="30"></textarea>
+                                </div>
+                                <h2>Fine Print</h2>
+                                <p id="fine_print">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+                                    non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                </p>
+
+                            </div>
+                        </div>
+                    </div><!-- end col-12 -->
+                </div><!-- end .row -->
+
+                <div id="footer">
+                    <p>
+                        &copy; Copyright 2010 CelebriTracker Productions
+                    </p>
+                </div>
+                <div id="container">
+                    <p>&nbsp;</p>
+                    <p>Tour Orris (default)</p>
+                    <p>
+                        <a href="../orris0/HTML5-Ch1-7.html">Page 1</a>
+                        <a href="html5-nav.html">Page 2</a>
+                        <a href="simplistic-side-by-side.html">Page 3</a>
+                        <a href="simplistic-html5-java.html">Page 4</a>
+                        <a href="simplistic-html5.html">Page 5</a>
+                        <a href="gallery-one-col.html">Page 6</a>
+                        <a href="gallery-2col.html">Page 7</a>
+                    </p>
+                    <p>&nbsp;</p>
+                    <p class="inline-block">Practical HTML5 Project&#39;s<br>
+                        <a href="gallery-3col-mix.html">Page 1</a>
+                        <a href="gallery-page-validated.html">Page 2</a>
+                        <a href="squares-html5.html">Page 3</a>
+                        <a href="horiz-vert-menu.html">Page 4</a>
+                        <a href="fig2-nifty.html">Page 5</a>
+                        <a href="starter-page.html">Page 6</a>
+                        <a href="index2.html">Page 7</a>
+                    </p>
+                    <p>&nbsp;</p>
+                </div>
+
+                <a href="https://orris0.github.io/orris0/index.html"
+                    class="back-to-top d-flex align-items-center justify-content-center"><i
+                        class="bi bi-arrow-up-short"></i></a>
+                <div id="farewell">Come back and visit us soon!</div>
+                <div class="row" style="background-color: #34495e; border-top: 2px solid #f6931e">
+                    <p>&copy; Kite-It.</p>
+                </div>
+            </footer>
+            <a href="https://orris0.github.io/orris0/gallery-page-validated.html"
                 class="back-to-top d-flex align-items-center justify-content-center"><i
                     class="bi bi-arrow-up-short"></i></a>
-            <div id="farewell">Come back and visit us soon!</div>
-            <div class="row" style="background-color: #34495e; border-top: 2px solid #f6931e">
-                <p>&copy; Kite-It.</p>
-            </div>
-        </footer>
-        <a href="https://orris0.github.io/orris0/gallery-page-validated.html"
-            class="back-to-top d-flex align-items-center justify-content-center"><i
-                class="bi bi-arrow-up-short"></i></a>
-        </body><!-- end body  -->
+            </body><!-- end body  -->
 
-        </html>
-        <!--
+            </html>
+            <!--
 </div> -- end container --
 <br class="clear">
 
@@ -3147,19 +2978,19 @@
 
 
 
-        <!--
+            <!--
 <!doctype html>
 <html ng-app lang="en">
     <head>
         <!--Everything you write should be using markups -->
-        <!-- head section is communicating about the page to the browser -->
-        <!-- Anything you write under head is not displayed on the browser content page. -->
-        <!-- All the Tags should be under <html> -->
-        <!-- Describing about the page -->
-        <!-- Required meta tags -->
-        <!-- Describing about the page -->
-        <!-- head section is communicating about the page to the browser -->
-        <!-- Anything you write under head is not displayed on the browser content page. --
+            <!-- head section is communicating about the page to the browser -->
+            <!-- Anything you write under head is not displayed on the browser content page. -->
+            <!-- All the Tags should be under <html> -->
+            <!-- Describing about the page -->
+            <!-- Required meta tags -->
+            <!-- Describing about the page -->
+            <!-- head section is communicating about the page to the browser -->
+            <!-- Anything you write under head is not displayed on the browser content page. --
         <meta charset="UTF-8">
          
         <title>HTML5 Gallery page Templates</title>
@@ -3285,7 +3116,7 @@
             
         </header><!-- end-header -->
 
-        <!--close top section - content area starts --
+            <!--close top section - content area starts --
         <p>&nbsp;</p>
         <p>&nbsp;</p>
         
@@ -3339,7 +3170,7 @@
 
                     <!-- Listing 4-2a. Creating a row of equal-width menu buttons (horizontal-equal-2d.html) -->
 
-        <!-- <wrapper id="horizontalequal2dwrapper"> --
+            <!-- <wrapper id="horizontalequal2dwrapper"> --
                         <header id="horizontalequal2dheader">
                           <!--  <h1></h1>
                         </header> --
@@ -3499,7 +3330,7 @@
                         <footer id="equal2dfooter">A footer goes here
                         </footer>
                     <!-- </wrapper> -->
-        <!-- Listing 4-3a. Displays Variable Width Buttons and a Rollover Effect (horizontal-variable-2d.html) --
+            <!-- Listing 4-3a. Displays Variable Width Buttons and a Rollover Effect (horizontal-variable-2d.html) --
 
                     <div id="horizontalvariable2d">
                         <div id="wrapper">
@@ -3547,7 +3378,7 @@
                         </ul>
                     </nav>
                     <!--Add a conditional for IE 7 and IE 8 to push the content below the menu-->
-        <!--[if lte IE 7]>
+            <!--[if lte IE 7]>
                         <br>
                         <![endif]--
                     <div id="main-content">
@@ -3558,7 +3389,7 @@
                 </div>
                 </div><!-- end-section-4 -->
 
-        <!-- Listing 4-5a. Creating Variable Width 3D Menu Buttons with Rollover (horizontal-variable-3d.html) --
+            <!-- Listing 4-5a. Creating Variable Width 3D Menu Buttons with Rollover (horizontal-variable-3d.html) --
 
                 <section id="horizontal-variable-3d-section">
                 <div id="horizontal-variable-3d-wrapper">
@@ -3576,7 +3407,7 @@
                         </ul>
                     </nav>
                     <!--Add a conditional for IE 7 and IE 8 to push the content below the menu-->
-        <!--[if lte IE 7]>
+            <!--[if lte IE 7]>
                         <br>
                         <![endif]--
                     <div id="horizontal-variable-3d-main-content">
@@ -3677,7 +3508,7 @@
         
                 </div><!--midcol closed-->
 
-        <!-- end-midcontent --
+            <!-- end-midcontent --
 				<br /><br /><br />
 				<script src="jquery-1.12.0.min.js" type="text/javascript" charset="utf-8"></script>
                 <script type="text/javascript" src="./scripts.js"></script>
