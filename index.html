@@ -28,7 +28,46 @@ $('img').fadeIn('slow');
 });
 
 </script>
+<script>
+$(document).ready(function() {
+	$('#ajax-nav a').bind('click', function() { 
+		var url = $(this).attr('href');
+		$('#main-col').load(url + ' #main-col-wrap');
+		return false;
+	});
+	
+//externalLinks();
 
+});
+
+/* Open up a link in a new window using a class to define such */
+//function externalLinks() {}
+
+
+</script>
+
+<style>
+
+#ajax-header { margin: 40px 0 0 0; }
+#ajax-header h1 { color:#859900;margin:0 0 10px 0;padding:0; }
+#ajax-nav { background:#859900;margin:0;padding:0;overflow:hidden;zoom:1; }
+#ajax-nav li { list-style-type:none;margin:0;padding:10px 20px;display:block;float:left; }
+#ajax-nav a,
+#ajax-nav a:link,
+#ajax-nav a:visited { color: #eee8d5; }
+#ajax-nav a:hover,
+#ajax-nav a:active { color: #fff; }
+#main-col { float:left;width:60%; }
+#side-col { float:right;width:35%; }
+.widget { border:2px solid #859900;margin:10px 0; }
+.widget h4 { margin:0 0 10px 0;padding:10px;background:#859900;color:#FDF6E3; }
+.float-right { float:right;margin:0 0 10px 10px; }
+.float-left { float:left;margin:0 10px 10px 0; }
+.source { font-size:12px; }
+#ajax-foot { clear:both;margin:10px 0 40px 0;padding:5px;background:#859900;color:#f3f6e3; }
+#ajax-foot p { margin:0;padding:0;font-size:12px;}
+
+</style>h
 
 
   <meta name="google-adsense-account" content="ca-pub-9639638377144073">
@@ -102,6 +141,17 @@ $('img').fadeIn('slow');
 				
 				    <div class="row">
                         <div class="col-12">
+<div id="ajax-header">
+<h1>Miniature Treats</h1>
+<ul id="ajax-nav">
+<li><a href ="index.html">Home</a></li>
+<li><a href ="asynchronous-nav-page-cupcakes.html">Cupcakes</a></li>
+<li><a href ="asynchronous-nav-page-cupcakes.html">Petits Fours</a></li>
+<li><a href ="asynchronous-nav-page-cupcakes.html">Tea Cakes</a></li>
+<li><a href ="asynchronous-nav-page-cupcakes.html">Muffins</a></li>
+</ul>
+</div>
+       
 				            <header data-role="header" class="data" id="html5-ch1-7header"><!-- <div id="hdr"> changed to <header> -->
 				                <hgroup>  
 						            <h1 class="veryimportant heading stuff" id="html5-ch1-7h1">Tourorris Rural Retreats!</h1>
