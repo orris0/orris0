@@ -1,0 +1,61 @@
+name: Deploy client to GitHub Pages
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+    inputs:
+      base_href:
+        description: 'Base href for Angular build (e.g. /repo/). Leave empty to auto-set to /<repo>/. '
+        required: false
+        default: ''
+
+permissions:
+  contents: write
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+          cache: 'npm'
+          cache-dependency-path: '**/package-lock.json'
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Determine base href
+        id: base
+        run: |
+          if [ -n "${{ github.event.inputs.base_href }}" ]; then
+            echo "base=${{ github.event.inputs.base_href }}" >> $GITHUB_OUTPUT
+          else
+            REPO_NAME="${GITHUB_REPOSITORY#*/}"
+            echo "base=/${REPO_NAME}/" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Build client
+        run: npm --workspace=client run build -- --base-href ${{ steps.base.outputs.base }}
+
+      - name: Copy 404 fallback
+        run: |
+          if [ -f client/src/404.html ]; then
+            mkdir -p client/dist/client || true
+            cp client/src/404.html client/dist/client/404.html || true
+          fi
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./client/dist/client

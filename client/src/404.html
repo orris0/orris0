@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Page not found</title>
+    <meta http-equiv="refresh" content="0;url=./index.html">
+    <script>
+      // SPA fallback: redirect to index.html preserving the path in the query string
+      (function () {
+        try {
+          var path = window.location.pathname + window.location.search + window.location.hash;
+          var index = window.location.origin + window.location.pathname.replace(/[^/]*$/, 'index.html');
+          window.location.replace(index + '?p=' + encodeURIComponent(path));
+        } catch (e) {
+          window.location.replace('./index.html');
+        }
+      })();
+    </script>
+  </head>
+  <body>
+    Redirecting...
+  </body>
+</html>
