@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <!--Everything you write should be using markups -->
 <!-- head section is communicating about the page to the browser -->
@@ -60,6 +61,387 @@ $(document).ready(function() {
 
 
 </script>
+ 
+<!-- CSS -->
+<link rel="stylesheet" href="superfish.css"/>
+<link rel="stylesheet" href="superfish-vertical.css"/>
+
+<!-- jQuery -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script src="hoverIntent.js"></script>
+<script src="superfish.js"></script>
+
+
+<script>
+$(document).ready(function() {
+	$('#sfNav').superfish({
+		animation: {height: 'show'}
+	});
+//externalLinks();
+
+});
+
+/* Open up a link in a new window using a class to define such */
+//function externalLinks() {}
+
+
+</script>
+
+<style>
+
+.sf-menu li.sfHover ul,
+.sf-menu li:hover ul {
+	left: -1px;
+	top: 70px; /* match top ul list item height */
+	z-index: 99;
+}
+
+ul.sf-menu > li {
+	background: #cc0000; /* Dark red background */
+}
+
+ul.sf-menu li li {
+	background: #0000cc; /* Dark blue background */
+}
+
+ul.sf-menu li li li {
+	background: #00cc00; /* Dark green background */
+}
+
+.sf-menu ul li:last-child a {
+	-webkit-border-bottom-right-radius: 7px;
+	-webkit-border-bottom-left-radius: 7px;
+	-moz-border-radius-bottomright: 7px;
+	-moz-border-radius-bottomleft: 7px;
+	border-bottom-right-radius: 7px; /*future proof */
+	border-bottom-left-radius: 7px;  /*future proof */
+}
+
+/**** Level 1 ****/
+.sf-menu,
+.sf-menu * {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+.sf-menu {
+	background: #f6f6f6; /* Old browsers */
+	background: -moz-linear-gradient(top, rgba(0,0,0,1) 1%, rgba(56,56,56,1) 16%, rgba(255,255,255,1) 17%, rgba(246,246,246,1) 47%, rgba(237,237,237,1) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(1%,rgba(0,0,0,1)), color-stop(16%,rgba(56,56,56,1)), color-stop(17%,rgba(255,255,255,1)), color-stop(47%,rgba(246,246,246,1)), color-stop(100%,rgba(237,237,237,1))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, rgba(0,0,0,1) 1%,rgba(56,56,56,1) 16%,rgba(255,255,255,1) 17%,rgba(246,246,246,1) 47%,rgba(237,237,237,1) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, rgba(0,0,0,1) 1%,rgba(56,56,56,1) 16%,rgba(255,255,255,1) 17%,rgba(246,246,246,1) 47%,rgba(237,237,237,1) 100%); /* Opera11.10+ */
+	background: -ms-linear-gradient(top, rgba(0,0,0,1) 1%,rgba(56,56,56,1) 16%,rgba(255,255,255,1) 17%,rgba(246,246,246,1) 47%,rgba(237,237,237,1) 100%); /* IE10+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#ededed',GradientType=0 ); /* IE6-9 */
+	background: linear-gradient(top, rgba(0,0,0,1) 1%,rgba(56,56,56,1) 16%,rgba(255,255,255,1) 17%,rgba(246,246,246,1) 47%,rgba(237,237,237,1) 100%); /* W3C */
+	float: left;
+	font-family: georgia, times, 'times new roman', serif;
+	font-size: 16px;
+	line-height: 14px;
+	margin: 28px 0 14px 0;
+	padding: 0 14px;
+}
+.sf-menu li {
+	border-left: 1px solid transparent;
+	border-right: 1px solid transparent;
+	float: left;
+	position: relative;
+}
+.sf-menu li.sfHover,
+.sf-menu li:hover {
+	visibility: inherit; /* fixes IE7 'sticky bug' */
+}
+.sf-menu li.sfHover,
+.sf-menu li:hover {
+	background: #DF6EA5;
+	border-color: #a22361;
+	-webkit-box-shadow: 3px 3px 3px rgba(0,0,0,0.2);
+	-moz-box-shadow: 3px 3px 3px rgba(0,0,0,0.2);
+	box-shadow: 3px 3px 3px rgba(0,0,0,0.2);
+}
+.sf-menu a {
+	border-left: 1px solid transparent;
+	border-right: 1px solid transparent;
+	color: #444;
+	display: block;
+	padding: 28px 14px;
+	position: relative;
+	width: 98px;
+	text-decoration: none;
+}
+.sf-menu li.sfHover a,
+.sf-menu li:hover a {
+	background: #DF6EA5;
+	border-color: #fff;
+	color: #fff;
+	outline: 0;
+}
+.sf-menu a,
+.sf-menu a:visited {
+	color: #444;
+}
+
+/***** Level 2 ****/
+.sf-menu ul {
+	background: rgb(223,110,165); /* Old browsers */
+	background: -moz-linear-gradient(top, rgba(223,110,165,1) 0%, rgba(211,54,130,1) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(223,110,165,1)), color-stop(100%,rgba(211,54,130,1))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, rgba(223,110,165,1) 0%,rgba(211,54,130,1) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, rgba(223,110,165,1) 0%,rgba(211,54,130,1) 100%); /* Opera11.10+ */
+	background: -ms-linear-gradient(top, rgba(223,110,165,1) 0%,rgba(211,54,130,1) 100%); /* IE10+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#df6ea5', endColorstr='#d33682',GradientType=0 ); /* IE6-9 */
+	background: linear-gradient(top, rgba(223,110,165,1) 0%,rgba(211,54,130,1) 100%); /* W3C */
+	-webkit-border-bottom-right-radius: 7px;
+	-webkit-border-bottom-left-radius: 7px;
+	-moz-border-radius-bottomright: 7px;
+	-moz-border-radius-bottomleft: 7px;
+	border-bottom-right-radius: 7px;
+	border-bottom-left-radius: 7px;
+	border: 1px solid #a22361;
+	border-top: 0 none;
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	top: -999em;
+	left: 0;
+	width: 128px;
+	-webkit-box-shadow: 3px 3px 3px rgba(0,0,0,0.2);
+	-moz-box-shadow: 3px 3px 3px rgba(0,0,0,0.2);
+	box-shadow: 3px 3px 3px rgba(0,0,0,0.2);
+	font-size: 14px;
+}
+.sf-menu ul li {
+	border-left: 1px solid #fff;
+	border-right: 1px solid #fff;
+	display: block;
+	float: none;
+}
+.sf-menu ul li:last-child {
+	border-bottom: 1px solid #fff;
+	-webkit-border-bottom-right-radius: 7px;
+	-webkit-border-bottom-left-radius: 7px;
+	-moz-border-radius-bottomright: 7px;
+	-moz-border-radius-bottomleft: 7px;
+	border-bottom-right-radius: 7px;
+	border-bottom-left-radius: 7px;
+}
+.sf-menu ul li:last-child a {
+	-webkit-border-bottom-right-radius: 7px;
+	-webkit-border-bottom-left-radius: 7px;
+	-moz-border-radius-bottomright: 7px;
+	-moz-border-radius-bottomleft: 7px;
+	border-bottom-right-radius: 7px;
+	border-bottom-left-radius: 7px;
+}
+.sf-menu li.sfHover li.sfHover,
+.sf-menu li:hover li:hover {
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
+}
+.sf-menu li.sfHover li.sfHover {
+	border-right-color: #cb2d79
+}
+.sf-menu li li a {
+	border: 0 none;
+	padding: 14px;
+}
+.sf-menu li li:first-child a {
+	padding-top: 0;
+}
+.sf-menu li li.sfHover a,
+.sf-menu li li:hover a {
+	background: transparent;
+	border: 0 none;
+	color: #f8ddea;
+	outline: 0;
+}
+.sf-menu li li a:hover {
+	color: #f8ddea;
+}
+.sf-menu li.sfHover li a,
+.sf-menu li:hover li a {
+	background: transparent;
+}
+.sf-menu li.sfHover li.sfHover a {
+	background: #cb2d79;
+}
+.sf-menu li.sfHover ul,
+.sf-menu li:hover ul {
+	left: -1px;
+	top: 70px; /* match top ul list item height */
+	z-index: 99;
+}
+.sf-menu li li.sfHover,
+.sf-menu li li:hover {
+	background: transparent;
+	border-color: #fff;
+}
+
+/**** Level 3 ****/
+ul.sf-menu li.sfHover li ul,
+ul.sf-menu li:hover li ul {
+	background: #cb2d79;
+	top: -999em;
+	-webkit-border-radius: 7px;
+	-webkit-border-top-left-radius: 0;
+	-moz-border-radius: 7px;
+	-moz-border-radius-topleft: 0;
+	border-radius: 7px;
+	border-top-left-radius: 0;
+}
+ul.sf-menu li.sfHover li ul li,
+ul.sf-menu li:hover li ul li {
+	background: transparent;
+	border: 0 none;
+}
+ul.sf-menu li li.sfHover ul,
+ul.sf-menu li li:hover ul {
+	left: 9em; /* match ul width */
+	top: 0;
+}
+.sf-menu li.sfHover li.sfHover li a,
+.sf-menu li:hover li:hover li a {
+	background: transparent;
+}
+.sf-menu li li li:first-child a {
+	padding-top: 14px;
+}
+.sf-menu li li li a:hover {
+	background: transparent;
+	color: #fff;
+}
+/*** ARROWS ***/
+.sf-sub-indicator {
+	display: none;
+}
+
+
+</style>
+
+</head>
+<body>
+
+<ul id="sfNav" class="sf-menu">
+<li><a href="#">Papilionidae</a>
+	<ul>
+		<li><a href="#">Common Yellow Swallowtail</a></li>
+		<li><a href="#">Spicebush Swallowtail</a></li>
+		<li><a href="#">Lime Butterfly</a></li>
+		<li><a href="#">Ornithoptera</a>
+	<ul>
+		<li><a href="#">Queen Victoria's Birdwing</a></li>
+		<li><a href="#">Wallace's Golden Birdwing</a></li>
+		<li><a href="#">Cape York Birdwing</a></li>
+	</ul>
+</li>
+</ul>
+</li>
+<li><a href="#">Pieridae</a>
+<ul>
+	<li><a href="#">Small White</a></li>
+	<li><a href="#">Green-veined White</a></li>
+	<li><a href="#">Common Jezebel</a></li>
+</ul>
+</li>
+<li><a href="#">Lycaenidae</a>
+<ul>
+	<li><a href="#">Xerces Blue</a></li>
+	<li><a href="#">Karner Blue</a></li>
+	<li><a href="#">Red Pierrot</a></li>
+</ul>
+</li>
+<li><a href="#">Riodinidae</a>
+<ul>
+	<li><a href="#">Duke of Burgundy</a></li>
+	<li><a href="#">Plum Judy</a></li>
+</ul>
+</li>
+<li><a href="#">Nymphalidae</a>
+<ul>
+<li><a href="#">Painted Lady</a></li>
+<li><a href="#">Monarch</a></li>
+<li><a href="#">Morpho</a>
+<ul>
+	<li><a href="#">Sunset Morpho</a></li>
+	<li><a href="#">Godart's Morpho</a></li>
+</ul>
+</li>
+<li><a href="#">Speckled Wood</a></li>
+</ul>
+</li>
+<li><a href="#">Hesperiidae</a>
+<ul>
+	<li><a href="#">Mallow Skipper</a></li>
+	<li><a href="#">Zabulon Skipper</a></li>
+</ul>
+</li>
+</ul>
+
+<!--
+<h2>Vertical Flyout added with a class</h2>
+
+<ul id="sfNav" class="sf-menu sf-vertical">
+<li><a href="#">Papilionidae</a>
+	<ul>
+		<li><a href="#">Common Yellow Swallowtail</a></li>
+		<li><a href="#">Spicebush Swallowtail</a></li>
+		<li><a href="#">Lime Butterfly</a></li>
+		<li><a href="#">Ornithoptera</a>
+	<ul>
+		<li><a href="#">Queen Victoria's Birdwing</a></li>
+		<li><a href="#">Wallace's Golden Birdwing</a></li>
+		<li><a href="#">Cape York Birdwing</a></li>
+	</ul>
+</li>
+</ul>
+</li>
+<li><a href="#">Pieridae</a>
+<ul>
+	<li><a href="#">Small White</a></li>
+	<li><a href="#">Green-veined White</a></li>
+	<li><a href="#">Common Jezebel</a></li>
+</ul>
+</li>
+<li><a href="#">Lycaenidae</a>
+<ul>
+	<li><a href="#">Xerces Blue</a></li>
+	<li><a href="#">Karner Blue</a></li>
+	<li><a href="#">Red Pierrot</a></li>
+</ul>
+</li>
+<li><a href="#">Riodinidae</a>
+<ul>
+	<li><a href="#">Duke of Burgundy</a></li>
+	<li><a href="#">Plum Judy</a></li>
+</ul>
+</li>
+<li><a href="#">Nymphalidae</a>
+<ul>
+<li><a href="#">Painted Lady</a></li>
+<li><a href="#">Monarch</a></li>
+<li><a href="#">Morpho</a>
+<ul>
+	<li><a href="#">Sunset Morpho</a></li>
+	<li><a href="#">Godart's Morpho</a></li>
+</ul>
+</li>
+<li><a href="#">Speckled Wood</a></li>
+</ul>
+</li>
+<li><a href="#">Hesperiidae</a>
+<ul>
+	<li><a href="#">Mallow Skipper</a></li>
+	<li><a href="#">Zabulon Skipper</a></li>
+</ul>
+</li>
+</ul>
+-->
+
+
+</body>
+</html>
+
+/*
 
 <style>
 
@@ -82,9 +464,10 @@ $(document).ready(function() {
 #ajax-foot { clear:both;margin:10px 0 40px 0;padding:5px;background:#859900;color:#f3f6e3; }
 #ajax-foot p { margin:0;padding:0;font-size:12px;}
 
-</style>h
+</style>
+*/
 
-
+<!--
   <meta name="google-adsense-account" content="ca-pub-9639638377144073">
 	   <meta property="og:title" content="A Basic HTML5 Template">
         <meta property="og:type" content="website">
@@ -95,7 +478,7 @@ $(document).ready(function() {
         <meta name="author" content="Orris Baker">
 	    <meta property="og:audio:type" content="audio/mpeg"> 
       
-        <!-- Viewport for responsive web design --> 
+        <!-- Viewport for responsive web design --
 		<link rel="stylesheet" href="CSS/squaretabs.css"> 
 	    <link rel="stylesheet" href="css-jq/base.css" type="text/css" media="screen" charset="utf-8">
         <script src="lib/jquery-1.7.1.min.js" type="text/javascript" charset="utf-8"></script>
@@ -107,7 +490,7 @@ $(document).ready(function() {
 		<!--
         <link rel="stylesheet" href="style[1].css"> 
         <link rel="stylesheet" type="text/css" href="./CSS/HTML5-style-2.css">
-	    <link rel="stylesheet" href="nav[1].css"> -->
+	    <link rel="stylesheet" href="nav[1].css"> --
         <link rel="stylesheet" href="https://m.w3newbie.com/youtube.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
         <link rel="stylesheet" href="font-awesome.min[1].css">
@@ -116,19 +499,19 @@ $(document).ready(function() {
 	    <link rel="icon" type="image/png" href="flexy-logo.png">
         <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
         <link rel=”stylesheet” href=”http://code.jquery.com/mobile/1.0.1/jquery.mobile-1.0.1.min.css” />
-        <!-- Font Awesome Icons -->
+        <!-- Font Awesome Icons --
         <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
         <!-- Google Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700" rel="stylesheet">
         <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic' rel='stylesheet' type='text/css'>
-        <!-- Plugin CSS -->
+        <!-- Plugin CSS --
         <link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
 		
-	    <!--Add conditional Javascript-->
+	    <!--Add conditional Javascript--
     
         <!--[if lte IE 8]>
                 <script src="js/html5.js" type="text/javascript"></script>
-            <![endif]-->
+            <![endif]--
        
 
     </head>
@@ -153,8 +536,8 @@ $(document).ready(function() {
                                 </ul>
                             </nav>
 					        <img class="logo" src="img/flexy-logo.png">
-				        </div><!-- end-col-12 -->
-                    </div><!-- end-row -->
+				        </div><!-- end-col-12 --
+                    </div><!-- end-row --
 				
 				    <div class="row">
                         <div class="col-12">
@@ -169,7 +552,7 @@ $(document).ready(function() {
 </ul>
 </div>
        
-				            <header data-role="header" class="data" id="ajax-header"><!-- <div id="hdr"> changed to <header> -->
+				            <header data-role="header" class="data" id="ajax-header"><!-- <div id="hdr"> changed to <header> --
 				                <hgroup>  
 						            <h1 class="veryimportant heading stuff" id="html5-ch1-7h1">Tourorris Rural Retreats!</h1>
 						            <h2 class="heading"><strong>I put our holiday dates and address on a Family network</strong></h2>
@@ -186,25 +569,25 @@ $(document).ready(function() {
 									<br>The superb interior of one of our cottages
                                 </div>
                                 <nav#html5-ch1-7nav><!--use the semantic tag <nav>-->
-                                    <ul><!--start of menu list-->
+                                    <ul><!--start of menu list--
                                         <li class="btn"> <a href="accommodation.html" title="Accommodation">Accommodation</a></li>
                                         <li class="btn"><a href="maps.html" title="Location Maps">Maps</a></li>                   
 										<li class="btn"><a href="faqs.html" title="Frequently Asked Questions">Information</a></li>
                                         <li class="btn"><a href="attractions.html" title="Local attractions">Attractions</a></li>
                                         <li class="btn"><a href="contact.html" title="Contact us">Contact Us</a></li>
                                         <li class="btn"><a href="index.html" title="Return to Home Page">Home Page</a></li>
-                                    </ul><!--end of menu list-->
-                                </nav><!--</div> removed and replaced with </nav>-->
+                                    </ul><!--end of menu list--
+                                </nav><!--</div> removed and replaced with </nav>--
                                 <div id="#html5-ch1-7midcol">
                                    <h3>Situated in the UK's beautiful Devon countryside</h3>
                                    <img title="Devon countryside" alt="Devon countryside" src="images/devon398.jpg" height="229" width="398">
                                 </div>
 								<br class="clear">
-                            </div><!--content section closed-->
-					    </div><!-- end-col-12 -->
-                    </div><!-- end-row -->
+                            </div><!--content section closed--
+					    </div><!-- end-col-12 --
+                    </div><!-- end-row --
                     
-                    <!-- hero -->
+                    <!-- hero --
                     <section id="hero" class="d-flex align-items-center scrolled-offset">
                         <div class="container position-relative aos-init aos-animate" data-aos="fade-up" data-aos-delay="500">
                             <div class="row">
@@ -214,12 +597,12 @@ $(document).ready(function() {
                                             <h1>Practical HTML5 Projects for fun and profit</h1
                                             <h2 class="dark">Lets achieve our goals.</h2>		
                                         </div>	    	
-										<!-- <a href="./creating-a-website.html" class="btn-get-started scrollto">Get Started</a> -->    
+										<!-- <a href="./creating-a-website.html" class="btn-get-started scrollto">Get Started</a> --  
                                     </div>
                                 </div>
 							</div>
                         </div>            
-                    </section><!-- End Hero -->
+                    </section><!-- End Hero --
                     <br class="clear">
             
                     <div class="row center-xs center-sm center-md center-lg middle-xs middle-sm middle-md middle-lg">                    
@@ -228,14 +611,14 @@ $(document).ready(function() {
                     <p>
                         Lets achieve our goals.
                     </p>
-                    <!-- <img src="gran-parents.jpg" width="760px" height="400px" class="img-fluid" alt=""> -->
+                    <!-- <img src="gran-parents.jpg" width="760px" height="400px" class="img-fluid" alt=""> --
 
                 </div>
                 
                <!-- <p>
                     Lets achieve our goals.
                 </p>                               
-                -->
+                --
             </div>                          
             
                     </div>
@@ -277,10 +660,10 @@ $(document).ready(function() {
                 </div>
 
 
-            <!-- doitno -->
+            <!-- doitno --
 
             <div id="container" class="ContentPanel">
-            <!-- <div class="ContentPanel"> -->
+            <!-- <div class="ContentPanel"> --
             <div>
                 <br />
                 Click <a href="triproot/index.html"> here</a> to visit the new page immediately.
@@ -296,7 +679,7 @@ $(document).ready(function() {
             </div>
             <div class="MiddlePanel first" id="container">
             <div class="second">
-                <!-- basic-fonts -->
+                <!-- basic-fonts --
                 <p style="font-family: Arial">
                     I am Orris Baker Jr. Hire me for your company, because my work is <b>off the hizzle</b>.<br />
                     <img src="..images/profile.png" alt="Lee Park Portrait" />
@@ -306,7 +689,7 @@ $(document).ready(function() {
                 Indispensable Skills
             </h2>
             <div class="third">
-                <!-- basic-fonts -->
+                <!-- basic-fonts --
                 <p style="margin-top: 0px; font-family: Courier">
                     My skills include:
                 </p>
@@ -325,13 +708,13 @@ $(document).ready(function() {
                     Negotiating with officers of the peace.
                 </li>
             </ul>
-            <!-- better-fonts -->
+            <!-- better-fonts --
             <p style="font-family: Verdana; font-size:smaller">
                 And I also know XHTML!
             </p>
 
             <h2>Previous Work Experience</h2>
-            <!-- better-fonts -->
+            <!-- better-fonts --
             <p style="font-family: Georgia">
                 I have had a long and illustrious career in a variety of trades. Here are
                 some highlights:
@@ -348,7 +731,7 @@ $(document).ready(function() {
                 </li>
             </ul>
             <hr />
-            <!-- better-fonts -->
+            <!-- better-fonts --
             <p style="font-family: Tahoma; font-size:smaller">
                 <br /><br />
                 As proof of my staggering computer skills and monumental work
@@ -356,7 +739,7 @@ $(document).ready(function() {
             </p>
             <hr />
             </div>
-            <!-- Address -->
+            <!-- Address --
             <div id="container">
             <p class="style1">
                 Bargain basement stake collection (all Wooden).
@@ -372,8 +755,8 @@ $(document).ready(function() {
             <img class="inset" alt="" src="food.jpg" />
             <img class="outset" alt="" src="food.jpg" />
             <img class="heavy" alt="" src="food.jpg" />
-            </p> -->
-            <!-- better-fonts -->
+            </p> --
+            <!-- better-fonts --
             <p style="font-family: 'Comic Sans MS'">
                 <br /><br /><br />
                 Sometimes, a truly long word like antidisestablishmentarianism can thwart your justification attempt.
@@ -394,14 +777,14 @@ $(document).ready(function() {
             <li>Look so darned cool</li>
             <li>Remind people of boring PowerPoint presentations</li>
             </ul>
-            <!-- blockquote -->
+            <!-- blockquote --
             <div id="container">
-            <!-- better-fonts -->
+            <!-- better-fonts --
             <p style="font-family: 'Arial Black'">
                 Some words of wisdom from "A Tale of Two Cities":
             </p>
             <blockquote>
-                <!-- better-fonts -->
+                <!-- better-fonts --
                 <p style="font-family: Tahoma; font-size:smaller">
                     It was the best of times, it was the worst of times, it was the age of
                     wisdom, it was the age of foolishness, it was the epoch of belief, it was the
@@ -420,17 +803,17 @@ $(document).ready(function() {
             </p>
             <hr />
             </div>
-            <!-- BreadAndWater -->
+            <!-- BreadAndWater --
             <div id="container">
             <h1>
                 Bread and Water
             </h1>
-            <!-- Alt Text and Tooltips -->
+            <!-- Alt Text and Tooltips --
             <p style="font-family: 'Arial Black'">
                 <img class="dotted" alt="" src="../orris0/matador.jpg" width="201" height="251"
                     alt="A matador extends his cape in welcome." title="Welcome to the ring." />
             </p>
-            <!-- better-fonts -->
+            <!-- better-fonts --
             <p style="font-family: Impact">
                 Where'd he go?
             </p>
@@ -443,7 +826,7 @@ $(document).ready(function() {
                 We fight for your rights.
             </p>
             </div>
-            <!-- headings -->
+            <!-- headings --
             <div id="container">
             <h1>Heading 1</h1>
             <h2>Heading 2</h2>
@@ -453,7 +836,7 @@ $(document).ready(function() {
             <h6>Heading 6 (nobody can read this)</h6>
             <p>This is some regular text for comparison.</p>
             </div>
-            <!-- hr -->
+            <!-- hr --
             <div id="container">
             <p>
                 The hallway smelt of boiled cabbage and old rag mats. At one end of it a
@@ -499,3 +882,4 @@ width="220"></p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p>
   </div>
 </body>
 </html>
+-->
