@@ -1,4 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Integrated HTML5 & jQuery Project Workspace</title>
+    
+    <!-- ==========================================
+         1. STYLESHEET CROSSOVER
+         ========================================== -->
+    <!-- Structure & Typography from Practical HTML5 Projects -->
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/squaretabs.css">
+    
+    <!-- Interaction & UI Styles from jQuery: Novice to Ninja -->
+    <link rel="stylesheet" href="css/ui-theme.css">
+    
+    <!-- ==========================================
+         2. CORE LIBRARIES
+         ========================================== -->
+    <!-- Load the library first. Use a modern 3.x build if Novice to Ninja's 
+         advanced animations/effects fail to load under older versions. -->
+    <script src="lib/jquery-3.7.1.min.js"></script>
+</head>
+<body>
 
+    <!-- ==========================================
+         3. STRUCTURE (Practical HTML5 Projects)
+         ========================================== -->
+    <div id="page-wrapper">
+        <header role="banner">
+            <h1>Master Integration Project</h1>
+            
+            <!-- Target for your Square Tabs layout -->
+            <nav id="main-nav" class="square-tabs">
+                <ul>
+                    <li class="active"><a href="#tab1">Home Base</a></li>
+                    <li><a href="#tab2">Interactive Sandbox</a></li>
+                    <li><a href="#tab3">HTML5 Features</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main id="main-content" role="main">
+            <!-- Left Side / Article Structure -->
+            <article class="primary-content">
+                <h2>HTML5 Semantic Architecture</h2>
+                <p>This layout follows Adrian West's structural blueprints.</p>
+                
+                <!-- ==========================================
+                     4. INTERACTION ZONE (jQuery: Novice to Ninja)
+                     ========================================== -->
+                <section id="ninja-ui-container">
+                    <h3>jQuery Interaction Sandbox</h3>
+                    
+                    <!-- Example: Insert your book 2 interactive markup here -->
+                    <div class="interactive-component">
+                        <button id="toggle-panel-btn">Activate Component</button>
+                        <div id="ninja-panel" style="display:none; padding: 15px; background: #eee;">
+                            <p>This dynamic panel is controlled via jQuery methods.</p>
+                        </div>
+                    </div>
+                </section>
+            </article>
+
+            <!-- Sidebar Structure -->
+            <aside class="sidebar">
+                <h3>Project Resources</h3>
+                <p>Contextual sidebar links go here.</p>
+            </aside>
+        </main>
+
+        <footer role="contentinfo">
+            <p>&copy; 2026 Combined Blueprint Web App</p>
+        </footer>
+    </div>
+
+    <!-- ==========================================
+         5. SCRIPTS EXECUTION
+         ========================================== -->
+    <!-- Custom external scripts file containing your jQuery event handlers -->
+    <script src="js/scripts.js"></script>
+    
+    <!-- Inline initialization block for testing your merge -->
+    <script>
+        $(document).ready(function() {
+            // Confirming jQuery works seamlessly inside the HTML5 DOM tree
+            console.log("DOM loaded. HTML5 nodes accessible by jQuery engine.");
+            
+            // Core Novice to Ninja Hook Example:
+            $('#toggle-panel-btn').on('click', function(e) {
+                e.preventDefault();
+                $('#ninja-panel').slideToggle('fast');
+            });
+        });
+    </script>
+</body>
+</html>
+<!-- ******************************************************************* -->
+
+<!--
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,29 +106,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Merged Project: HTML5 Elements & jQuery Actions</title>
     
-    <!-- 1. BOOK 1 STYLES (Layout and Typography) -->
+    <!-- 1. BOOK 1 STYLES (Layout and Typography) --
     <link rel="stylesheet" href="CSS/squaretabs.css">
     <link rel="stylesheet" href="css-jq/base.css">
     
-    <!-- 2. JAVASCRIPT LIBRARIES -->
+    <!-- 2. JAVASCRIPT LIBRARIES --
     <!-- Note: jQuery: Novice to Ninja scripts often expect modern jQuery syntax. 
          If your Book 2 scripts fail using 1.7.1, swap this line for a 3.x CDN link. -->
     <script src="lib/jquery-1.7.1.min.js"></script>
 </head>
 <body>
 
-    <!-- 3. BOOK 1 HTML5 STRUCTURE -->
+    <!-- 3. BOOK 1 HTML5 STRUCTURE --
     <header>
         <h1>Project Integration Hub</h1>
         <nav id="navigation">
-            <!-- Your Book 1 Square Tabs Navigation Content Goes Here -->
+            <!-- Your Book 1 Square Tabs Navigation Content Goes Here --
         </nav>
     </header>
 
     <main id="main-content">
-        <!-- Main structure from Practical HTML5 Projects -->
+        <!-- Main structure from Practical HTML5 Projects --
         <section id="jquery-demo-area">
-            <!-- Insert the HTML snippets from jQuery: Novice to Ninja here -->
+            <!-- Insert the HTML snippets from jQuery: Novice to Ninja here --
         </section>
     </main>
 
@@ -36,7 +136,7 @@
         <p>&copy; 2026 Code Merge Project</p>
     </footer>
 
-    <!-- 4. BOOK 2 JQUERY INLINE INITIALIZATION -->
+    <!-- 4. BOOK 2 JQUERY INLINE INITIALIZATION --
     <script>
         $(document).all || $(document).ready(function() {
             // Your custom code from jQuery: Novice to Ninja goes here
@@ -45,15 +145,16 @@
         });
     </script>
     
-    <!-- Or link your external script file from Book 2 -->
+    <!-- Or link your external script file from Book 2 --
     <script src="js/scripts.js"></script>
 </body>
 </html>
 
-
+-->
+<!-- ******************************************************************* --> 
 <!--
 
-        <!-- jQuery -->
+        <!-- jQuery --
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 <script>
         $(document).ready(function() {
@@ -93,11 +194,11 @@ $(document).ready(function() {
 
 </script>
  
-<!-- CSS -->
+<!-- CSS --
 <link rel="stylesheet" href="superfish.css"/>
 <link rel="stylesheet" href="superfish-vertical.css"/>
 
-<!-- jQuery -->
+<!-- jQuery --
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 <script src="hoverIntent.js"></script>
 <script src="superfish.js"></script>
