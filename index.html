@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,6 +6,158 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Web Development Master Portfolio</title>
     <link rel="stylesheet" href="css/shared.css">
+	<style>
+		
+		/* ==========================================================================
+   Global Variables & Reset
+   ========================================================================== */
+:root {
+    --primary-color: #2c3e50;
+    --accent-html: #e34c26;
+    --accent-html5: #007acc;
+    --accent-jquery: #0769ad;
+    --text-color: #333333;
+    --bg-light: #f8f9fa;
+    --bg-card: #ffffff;
+    --border-color: #e2e8f0;
+    --radius: 8px;
+    --transition: all 0.3s ease;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    color: var(--text-color);
+    background-color: var(--bg-light);
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* ==========================================================================
+   Header & Footer
+   ========================================================================== */
+.main-header {
+    background-color: var(--primary-color);
+    color: #ffffff;
+    padding: 60px 0;
+    text-align: center;
+    border-bottom: 5px solid var(--accent-html5);
+}
+
+.main-header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+.main-header p {
+    font-size: 1.1rem;
+    opacity: 0.9;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.main-footer {
+    text-align: center;
+    padding: 40px 0;
+    margin-top: 60px;
+    border-top: 1px solid var(--border-color);
+    font-size: 0.9rem;
+    color: #666;
+}
+
+/* ==========================================================================
+   Project Grid & Cards
+   ========================================================================== */
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.project-card {
+    background-color: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius);
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    transition: var(--transition);
+    display: flex;
+    flex-direction: column;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+}
+
+.card-content {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.project-card h2 {
+    font-size: 1.4rem;
+    color: var(--primary-color);
+    margin: 15px 0;
+}
+
+.project-card p {
+    color: #555;
+    font-size: 0.95rem;
+    margin-bottom: 25px;
+    flex-grow: 1;
+}
+
+/* ==========================================================================
+   UI Components & Badges
+   ========================================================================== */
+.badge {
+    display: inline-block;
+    align-self: flex-start;
+    padding: 4px 12px;
+    border-radius: 50px;
+    font-size: 0.75rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+
+.badge-html { background-color: var(--accent-html); }
+.badge-html5 { background-color: var(--accent-html5); }
+.badge-jquery { background-color: var(--accent-jquery); }
+
+.btn {
+    display: block;
+    text-align: center;
+    background-color: var(--primary-color);
+    color: #ffffff;
+    text-decoration: none;
+    padding: 12px 20px;
+    border-radius: var(--radius);
+    font-weight: 600;
+    transition: var(--transition);
+}
+
+.btn:hover {
+    opacity: 0.9;
+    letter-spacing: 0.5px;
+}
+
+	</style>
 </head>
 <body>
 
