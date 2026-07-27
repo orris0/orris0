@@ -11,8 +11,6 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       contents: read
-      pages: write
-      id-token: write
     steps:
       - name: Checkout site repo
         uses: actions/checkout@v4
@@ -43,8 +41,8 @@ jobs:
             owner=$(echo "$r" | cut -d'/' -f1)
             repo=$(echo "$r" | cut -d'/' -f2)
 
-            # Get README via API (raw content)
             echo "Fetching README for $r"
+            # Use raw media type to get raw markdown
             resp=$(curl -s -H "Authorization: token $GITHUB_TOKEN" -H "Accept: application/vnd.github.v3.raw" "https://api.github.com/repos/$owner/$repo/readme")
             if [ -z "$resp" ]; then
               echo "No README for $r, creating placeholder."
@@ -54,7 +52,6 @@ This page is generated from the repository README.md by the site build workflow.
 (README not found)
 EOF
             else
-              # Save directly (raw content)
               echo "$resp" > "docs/${repo}.md"
             fi
           done
@@ -63,9 +60,40 @@ EOF
         run: |
           mkdocs build --site-dir site
 
-      - name: Deploy to GitHub Pages (gh-pages)
-        uses: peaceiris/actions-gh-pages@v4
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./site
-          publish_branch: gh-pages
+      - name: Deploy to orris0.github.io
+        if: ${{ secrets.PUBLISH_PAT != '' }}
+        env:
+          PUBLISH_PAT: ${{ secrets.PUBLISH_PAT }}
+        run: |
+          set -e
+          PUBLISH_REPO="orris0/orris0.github.io"
+          TARGET_BRANCH="main"
+          TMPDIR=$(mktemp -d)
+          echo "Preparing publish repo $PUBLISH_REPO in $TMPDIR"
+
+          # Try to clone; if the repo is empty or doesn't exist yet, init a new git repo
+          if git ls-remote "https://x-access-token:${PUBLISH_PAT}@github.com/${PUBLISH_REPO}.git" >/dev/null 2>&1; then
+            git clone --depth=1 "https://x-access-token:${PUBLISH_PAT}@github.com/${PUBLISH_REPO}.git" "$TMPDIR" || (
+              git clone "https://x-access-token:${PUBLISH_PAT}@github.com/${PUBLISH_REPO}.git" "$TMPDIR" || true
+            )
+          else
+            mkdir -p "$TMPDIR"
+            cd "$TMPDIR"
+            git init
+            git remote add origin "https://x-access-token:${PUBLISH_PAT}@github.com/${PUBLISH_REPO}.git"
+          fi
+
+          # Clear and copy site output
+          rm -rf "$TMPDIR"/*
+          cp -R site/* "$TMPDIR"/
+          cd "$TMPDIR"
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add --all
+          git commit -m "Publish site: $(date -u +"%Y-%m-%dT%H:%M:%SZ")" || echo "No changes to commit"
+          git push origin HEAD:${TARGET_BRANCH} --force
+
+      - name: Warn about missing PUBLISH_PAT
+        if: ${{ secrets.PUBLISH_PAT == '' }}
+        run: |
+          echo "PUBLISH_PAT secret not set in this repository. To publish to orris0.github.io, add a repository secret named PUBLISH_PAT with a PAT that can push to orris0/orris0.github.io. The workflow built the site locally but did not publish it."
