@@ -1,0 +1,71 @@
+name: Build and deploy MkDocs site
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '0 2 * * *'   # daily at 02:00 UTC
+  repository_dispatch:
+    types: [rebuild-site]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
+    steps:
+      - name: Checkout site repo
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.x'
+
+      - name: Install mkdocs and deps
+        run: |
+          python -m pip install --upgrade pip
+          pip install mkdocs==1.5.2
+
+      - name: Fetch README files and write docs pages
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          set -e
+          mkdir -p docs
+          repos=(
+            "orris0/orris0"
+            "orris0/Creating-a-website"
+            "orris0/css-secrets"
+            "orris0/jQuery-novice-to-ninja"
+          )
+          for r in "${repos[@]}"; do
+            owner=$(echo "$r" | cut -d'/' -f1)
+            repo=$(echo "$r" | cut -d'/' -f2)
+
+            # Get README via API (raw content)
+            echo "Fetching README for $r"
+            resp=$(curl -s -H "Authorization: token $GITHUB_TOKEN" -H "Accept: application/vnd.github.v3.raw" "https://api.github.com/repos/$owner/$repo/readme")
+            if [ -z "$resp" ]; then
+              echo "No README for $r, creating placeholder."
+              cat > "docs/${repo}.md" <<'EOF'
+This page is generated from the repository README.md by the site build workflow.
+
+(README not found)
+EOF
+            else
+              # Save directly (raw content)
+              echo "$resp" > "docs/${repo}.md"
+            fi
+          done
+
+      - name: Build site with mkdocs
+        run: |
+          mkdocs build --site-dir site
+
+      - name: Deploy to GitHub Pages (gh-pages)
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./site
+          publish_branch: gh-pages
