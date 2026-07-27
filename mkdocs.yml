@@ -1,0 +1,13 @@
+site_name: orris0 aggregated docs
+site_description: Aggregated documentation site for selected repositories
+site_author: orris0
+repo_url: https://github.com/orris0/orris0
+site_dir: site
+theme:
+  name: readthedocs
+nav:
+  - Home: index.md
+  - orris0: orris0.md
+  - Creating-a-website: Creating-a-website.md
+  - css-secrets: css-secrets.md
+  - jQuery-novice-to-ninja: jQuery-novice-to-ninja.md
