@@ -1,22 +1,9 @@
+
 <!DOCTYPE html>
-<!--Everything you write should be using markups -->
-<!-- head section is communicating about the page to the browser -->
-<!-- Anything you write under head is not displayed on the browser content page. -->
 <html xmlns="http://www.w3.org/1999/xhtml" xml:ng-app lang="en">
-	<!-- All the Tags should be under <html> -->
-	<!-- Describing about the page -->
-	<head>
-		<!-- Required meta tags -->
-	    <!-- Describing about the page -->
-	    <!-- head section is communicating about the page to the browser -->
-		<!-- Anything you write under head is not displayed on the browser content page. -->
-		<meta charset="UTF-8">
-        <title>The Journey through Prohibition</title>
-        <script type="text/javascript" src="jquery-1.7-min.js"></script>
-        <script type="text/javascript" src="script.js"></script>
-        <!-- Required meta tags -->
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <head>
+        	<meta charset="UTF-8">
+         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open Sans">
@@ -26,293 +13,387 @@
         <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
         <link rel="stylesheet" type="text/css" href="CSS/squaretabs.css">
-        <!--Add conditional Javascript-->
-        <!--[if lte IE 8]>
-        <script src="html5.js" type="text/javascript"></script>
-        <![endif]-->
-    </head>
+        
+<!-- CSS -->
+<link rel="stylesheet" href="superfish.css"/>
+<link rel="stylesheet" href="superfish-vertical.css"/>
 
-    <body class="w3-light-grey">
-        <!-- Navigation bar with social media icons -->
-        <div class="w3-bar w3-black w3-hide-small">
-            <a href="#" class="w3-bar-item w3-button"><i class="fa fa-facebook-official"></i></a>
-            <a href="#" class="w3-bar-item w3-button"><i class="fa fa-instagram"></i></a>
-            <a href="#" class="w3-bar-item w3-button"><i class="fa fa-snapchat"></i></a>
-            <a href="#" class="w3-bar-item w3-button"><i class="fa fa-flickr"></i></a>
-            <a href="#" class="w3-bar-item w3-button"><i class="fa fa-twitter"></i></a>
-            <a href="#" class="w3-bar-item w3-button"><i class="fa fa-linkedin"></i></a>
-            <a href="#" class="w3-bar-item w3-button w3-right"><i class="fa fa-search"></i></a>
-        </div>
-            <!-- w3-content defines a container for fixed size centered content, 
-            and is wrapped around the whole page content, except for the footer in this example -->
-        <div class="w3-content" style="max-width:1600px">
-        
-            <div id="container">
-            
-                <div id="banner">
-            
-                    <header class="w3-container w3-center w3-padding-48 w3-white">
-                
-                        <h1 class="headerReplacement">
-                           <b><a href="#menu">MarieJane&#39;s HTML5 for Fun<span class="amp">&amp;</span>Profit</a>
-                        </h1>
+<!-- jQuery -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script src="hoverIntent.js"></script>
+<script src="superfish.js"></script>
 
-                    </header>
-        
-                </div>
-               
-                <div class="popover" id="menu">
-                
-                    <div class="content">
 
-                        <a href="#" class="close"></a>
-
-                        <div class='nav'>
-                        
-                            <ul class='nav_list'>
-
-                                <div class='nav_list_item'>
-                                    <li><a class="active" href="index.html">Jargon</a></li>
-                                </div>
-
-                                <div class = 'nav_list_item'>
-                                    <li><a href="page2.html">Troubleshoot</a></li>
-                                </div>
-
-                                <div class = 'nav_list_item'>
-                                    <li><a href="page3.html">How to ...</a></li>
-                                </div>
-
-                                <div class = 'nav_list_item'>
-                                    <li><a href="page4.html">About this site</a></li>
-                                </div>
-
-                                <div class = 'nav_list_item'>
-                                    <li><a href="page5.html">Suggestions</a></li>
-                                </div>
-                                      
-                            </ul>                                    
-                    
-                        </div> <br><br>
-                    </div> <!-- end content -->
-                </div><!-- end popover / menu -->
-                   
-                <a href="#" class="close"></a>
-            </div>
-            <!--<div class="picture">
-                <img title="Koala" alt="Koala" height="165" src="CSS/images/grandparent.jpg" width="220" />
-            
-            </div> -->
-            <div id="nav">
-                <ul class="nav-list">
-                    <li class="btn"><a class="active" href="index.html">B.D.A Gallery</a></li>
-                    <li class="btn"><a href="mjfashionsblog.html">Mjfashionsblog</a></li>
-                    <li class="btn"><a href="page3.html">The Journey through Prohibition</a></li>
-                    <li class="btn"><a href="page4.html">Page Four</a></li>
-                    <li class="btn"><a href="page5.html">Page Five</a></li>
-                </ul>
-            </div>
-            <div id="navone">
-                <ul>
-                    <li class="btn"><a href="index.html">Home Page</a></li>
-                    <li class="btn"><a href="page2.html">Page Two</a></li>
-                    <li class="btn"><a href="page3.html">The Journey through Prohibition</a></li>
-                    <li class="btn"><a href="page4.html">Page Four</a></li>
-                    <li class="btn"><a href="page5.html">Page Five</a></li>
-                </ul>
-            </div>
-        
-            <div id="rightcol">
-                <p>A full page roll-over Gallery of greeting cards</p><br>
-
-                <p><a href="http://validator.w3.org/check?uri=referer">
-            
-                <img src="http://www.w3.org/html/logo/img/mark-word-icon.png" style="width: 100;" alt="Validated HTML5" title="Validated HTML5"></a></p>
-                    
-                <p>
-                     &nbsp;<a href="http://jigsaw.w3.org/css-validator/"><img src="images/vcss-blue.gif" width="88" height="31" title="Valid CSS!" alt="Valid CSS!"></a>
-                        
-                        <span class="small"><br><br> Markup Validated by the World Wide Web Consortium</span>
-                
-                </p>
-            
-                <br class="clear">
-
-                <p class="advert">Web Design by <br>Orris Baker</p>
-                
-            </div>
-            <div id="midcol">
-                    <div id="gallery-block">
-
-                <p>
-                
-                    <ul id="col-1">
-
-                        <li><a href="#"><img src="CSS/images/58462268_10210491895253489_5615415460276207616_n.jpg" width="70" height="103" alt="Ali"
-                                    title="Ali"><img class="hid" src="CSS/images/58462268_10210491895253489_5615415460276207616_n.jpg" alt=""></a></li>
-        
-                        <li><a href="#"><img src="CSS/images/bda (2).jpg" width="69"
-                                    height="91" alt="Cat" title="Cat"><img class="hid"
-                                    src="CSS/images/bda (2).jpg" alt=""></a></li>
-        
-                        <li><a href="#"><img src="CSS/images/186501582_4073822279322877_3700342967811094344_n.jpg" width="69"
-                                    height="91" alt="Beach" title="Beach"><img class="hid"
-                                    src="CSS/images/186501582_4073822279322877_3700342967811094344_n.jpg" alt=""></a></li>
-        
-                    </ul>
-        
-                    <ul id="col-2">
-        
-                        <li><a href="#"><img src="CSS/images/174009586_119330206921799_1999124613917686075_n.jpg" width="70"
-                                    height="103" alt="Ferns" title="Ferns"><img class="hid"
-                                    src="CSS/images/174009586_119330206921799_1999124613917686075_n.jpg" alt=""></a></li>
-        
-                        <li><a href="#"><img src="CSS/images/234888186_10159637841174772_8502963841125054070_n.jpg" width="69"
-                                    height="91" alt="Nico" title="Nico"><img class="hid"
-                                    src="CSS/images/234888186_10159637841174772_8502963841125054070_n.jpg" alt=""></a></li>
-        
-                        <li><a href="#"><img src="CSS/images/250130341_10159720871062855_7007450331084391798_n.jpg" width="70"
-                                    height="103" alt="Child and Beach" title="Child and Beach"><img class="hid"
-                                    src="CSS/images/250130341_10159720871062855_7007450331084391798_n.jpg" alt=""></a></li>
-        
-                    </ul>
-        
-                    <ul id="col-3">
-        
-                        <li><a href="#"><img src="CSS/images/clear-view-suites-villas (14).jpg" width="70"
-                                    height="103" alt="Ancient and modern" title="Ancient and Modern"><img class="hid"
-                                    src="CSS/images/clear-view-suites-villas (14).jpg" alt=""><a>
-                        <li>
-        
-                        <li><a href="#"><img src="CSS/images/clear-view-suites-villas (13).jpg" width="69"
-                                    height="91" alt="Felix" title="Felix"><img class="hid"
-                                    src="CSS/images/clear-view-suites-villas (13).jpg" alt=""></a></li>
-        
-                        <li><a href="#"><img src="CSS/images/clear-view-suites-villas (12).jpg" width="70"
-                                    height="103" alt="Cliffs" title="Cliffs"><img class="hid"
-                                    src="CSS/images/clear-view-suites-villas (12).jpg" alt=""></a></li>
-        
-                    </ul>
-                    <p>
-                        <a href="page11.html">Page 2</a>
-                        <a href="page12.html">Page 3</a>
-                        <a href="page13.html   ">Page 4</a>
-                        <a href="page14.html">Page 5</a>
-                        <a href="page15.html">Page 6</a>
-                        <a href="page16.html">Page 7</a>
-                        <a href="page17.html">Page 8</a>
-                    </p>
-                </div><!--gallery block closed-->
-        
-            </div><!--midcol closed-->
-            <!-- Optional JavaScript -->
-            <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-            <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-            <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-            <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-            
-        </div>
-        
-			<div class="flex-container">						
-                <p class = "inline-block">							
-				    <a class="foot" href="square-deals-about.html" title="Square Deals, About Us">About Us</a>
-                    <a class="foot" href="square-deals-colours.html" title="Square Deals Colour range">Colour Range</a>
-                    <a class="foot" href="square-deals-contact.html" title="Brochure">Brochure</a>
-                    <a class="foot" href="square-deal-contact.html" title="Contact us">Contact us</a>
-                    <a class="foot" href="index2.html" title="Return to Home Page">Home Page</a>	            
-			        <a class="foot" href="index3.html">Orthodox New Year</a>
-                    <a class="foot" href="index4.html">Martin Luther King Jr Day</a>
-                    <a class="foot" href="index5.html">National Freedom Day</a>
-                    <a class="foot" href="index6.html">Lincoln's Birthday</a>
-                    <a class="foot" href="index7.html">Daisy Gatson Bates Day</a>
-                    <a class="foot" href="index8.html">Presidents Day</a>
-                    <a class="foot" href="index9.html">Mardi Gras Day</a>       
-                    <a class="foot" href="index10.html">Cesar Chavez Day</a>
-                    <a class="foot" href="index11.html">Good Friday</a>
-                    <a class="foot" href="index12.html">Easter</a>
-                    <a class="foot" href="index13.html">Patriots Day</a>
-                    <a class="foot" href="index14.html">San Jacinto Day</a>
-                    <a class="foot" href="index15.html">Mothers Day</a>
-                    <a class="foot" href="index16.html">Fathers Day</a>
-                    <a class="foot" href="index17.html">Juneteenth</a>
-                    <a class="foot" href="index18.html">Independence Day</a>
-                    <a class="foot" href="index19.html">Lynden Baines Johnson Day</a>
-                    <a class="foot" href="index20.html">Labour Day</a>
-                    <a class="foot" href="index21.html">Columbus Day</a>
-                    <a class="foot" href="index22.html">Halloween</a>
-                    <a class="foot" href="index23.html">Veteran's Day</a>
-                    <a class="foot" href="index24.html">Christmas Day</a>
-                    <a class="foot" href="index25.html">New year's Eve</a>
-                </p>  
-            </div> <!-- </div> -->
-            
-            <!-- Footer -->
-            <footer class="w3-light-grey">
-                <div id="farewell"&nbsp; Copyright (c) All rights reserved. Designed by <a href="https://orris0.github.io/orris0/index.html/">Practical HTML5 Projects.</a>
-                    Powered<a href="https://orris0.github.io/orris0/index.html" target="_blank"> For Fun and Profit.... Come back and visit us soon</a>
-                    <!-- Optional JavaScript -->
-                    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-                    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-                    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-                    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-                
-                    <script>
-                        // Toggle between hiding and showing blog replies/comments
-                        document.getElementById("myBtn").click();
-                        function myFunction(id) {
-                        var x = document.getElementById(id);
-                        if (x.className.indexOf("w3-show") == -1) {
-                        x.className += " w3-show";
-                        } else { 
-                        x.className = x.className.replace(" w3-show", "");
-                        }
-                      }
-                      function likeFunction(x) {
-                      x.style.fontWeight = "bold";
-                      x.innerHTML = "&#10003; Liked";
-                      }
-                </script>	                                  
-                <script type="text/javascript" src="jquery-1.7-min.js"></script>
-                <script type="text/javascript" src="script.js"></script>
-            </div>
-        </footer>
-        <!-- Code injected by live-server -->
 <script>
-	// <![CDATA[  <-- For SVG support
-	if ('WebSocket' in window) {
-		(function () {
-			function refreshCSS() {
-				var sheets = [].slice.call(document.getElementsByTagName("link"));
-				var head = document.getElementsByTagName("head")[0];
-				for (var i = 0; i < sheets.length; ++i) {
-					var elem = sheets[i];
-					var parent = elem.parentElement || head;
-					parent.removeChild(elem);
-					var rel = elem.rel;
-					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
-						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
-						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
-					}
-					parent.appendChild(elem);
-				}
-			}
-			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
-			var address = protocol + window.location.host + window.location.pathname + '/ws';
-			var socket = new WebSocket(address);
-			socket.onmessage = function (msg) {
-				if (msg.data == 'reload') window.location.reload();
-				else if (msg.data == 'refreshcss') refreshCSS();
-			};
-			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
-				console.log('Live reload enabled.');
-				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
-			}
-		})();
-	}
-	else {
-		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
-	}
-	// ]]>
+$(document).ready(function() {
+	$('#sfNav').superfish({
+		animation: {height: 'show'}
+	});
+//externalLinks();
+
+});
+
+/* Open up a link in a new window using a class to define such */
+//function externalLinks() {}
+
+
 </script>
-    </body>
+
+<style>
+
+.sf-menu li.sfHover ul,
+.sf-menu li:hover ul {
+	left: -1px;
+	top: 70px; /* match top ul list item height */
+	z-index: 99;
+}
+
+ul.sf-menu > li {
+	background: #cc0000; /* Dark red background */
+}
+
+ul.sf-menu li li {
+	background: #0000cc; /* Dark blue background */
+}
+
+ul.sf-menu li li li {
+	background: #00cc00; /* Dark green background */
+}
+
+.sf-menu ul li:last-child a {
+	-webkit-border-bottom-right-radius: 7px;
+	-webkit-border-bottom-left-radius: 7px;
+	-moz-border-radius-bottomright: 7px;
+	-moz-border-radius-bottomleft: 7px;
+	border-bottom-right-radius: 7px; /*future proof */
+	border-bottom-left-radius: 7px;  /*future proof */
+}
+
+/**** Level 1 ****/
+.sf-menu,
+.sf-menu * {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+.sf-menu {
+	background: #f6f6f6; /* Old browsers */
+	background: -moz-linear-gradient(top, rgba(0,0,0,1) 1%, rgba(56,56,56,1) 16%, rgba(255,255,255,1) 17%, rgba(246,246,246,1) 47%, rgba(237,237,237,1) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(1%,rgba(0,0,0,1)), color-stop(16%,rgba(56,56,56,1)), color-stop(17%,rgba(255,255,255,1)), color-stop(47%,rgba(246,246,246,1)), color-stop(100%,rgba(237,237,237,1))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, rgba(0,0,0,1) 1%,rgba(56,56,56,1) 16%,rgba(255,255,255,1) 17%,rgba(246,246,246,1) 47%,rgba(237,237,237,1) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, rgba(0,0,0,1) 1%,rgba(56,56,56,1) 16%,rgba(255,255,255,1) 17%,rgba(246,246,246,1) 47%,rgba(237,237,237,1) 100%); /* Opera11.10+ */
+	background: -ms-linear-gradient(top, rgba(0,0,0,1) 1%,rgba(56,56,56,1) 16%,rgba(255,255,255,1) 17%,rgba(246,246,246,1) 47%,rgba(237,237,237,1) 100%); /* IE10+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#ededed',GradientType=0 ); /* IE6-9 */
+	background: linear-gradient(top, rgba(0,0,0,1) 1%,rgba(56,56,56,1) 16%,rgba(255,255,255,1) 17%,rgba(246,246,246,1) 47%,rgba(237,237,237,1) 100%); /* W3C */
+	float: left;
+	font-family: georgia, times, 'times new roman', serif;
+	font-size: 16px;
+	line-height: 14px;
+	margin: 28px 0 14px 0;
+	padding: 0 14px;
+}
+.sf-menu li {
+	border-left: 1px solid transparent;
+	border-right: 1px solid transparent;
+	float: left;
+	position: relative;
+}
+.sf-menu li.sfHover,
+.sf-menu li:hover {
+	visibility: inherit; /* fixes IE7 'sticky bug' */
+}
+.sf-menu li.sfHover,
+.sf-menu li:hover {
+	background: #DF6EA5;
+	border-color: #a22361;
+	-webkit-box-shadow: 3px 3px 3px rgba(0,0,0,0.2);
+	-moz-box-shadow: 3px 3px 3px rgba(0,0,0,0.2);
+	box-shadow: 3px 3px 3px rgba(0,0,0,0.2);
+}
+.sf-menu a {
+	border-left: 1px solid transparent;
+	border-right: 1px solid transparent;
+	color: #444;
+	display: block;
+	padding: 28px 14px;
+	position: relative;
+	width: 98px;
+	text-decoration: none;
+}
+.sf-menu li.sfHover a,
+.sf-menu li:hover a {
+	background: #DF6EA5;
+	border-color: #fff;
+	color: #fff;
+	outline: 0;
+}
+.sf-menu a,
+.sf-menu a:visited {
+	color: #444;
+}
+
+/***** Level 2 ****/
+.sf-menu ul {
+	background: rgb(223,110,165); /* Old browsers */
+	background: -moz-linear-gradient(top, rgba(223,110,165,1) 0%, rgba(211,54,130,1) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(223,110,165,1)), color-stop(100%,rgba(211,54,130,1))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, rgba(223,110,165,1) 0%,rgba(211,54,130,1) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, rgba(223,110,165,1) 0%,rgba(211,54,130,1) 100%); /* Opera11.10+ */
+	background: -ms-linear-gradient(top, rgba(223,110,165,1) 0%,rgba(211,54,130,1) 100%); /* IE10+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#df6ea5', endColorstr='#d33682',GradientType=0 ); /* IE6-9 */
+	background: linear-gradient(top, rgba(223,110,165,1) 0%,rgba(211,54,130,1) 100%); /* W3C */
+	-webkit-border-bottom-right-radius: 7px;
+	-webkit-border-bottom-left-radius: 7px;
+	-moz-border-radius-bottomright: 7px;
+	-moz-border-radius-bottomleft: 7px;
+	border-bottom-right-radius: 7px;
+	border-bottom-left-radius: 7px;
+	border: 1px solid #a22361;
+	border-top: 0 none;
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	top: -999em;
+	left: 0;
+	width: 128px;
+	-webkit-box-shadow: 3px 3px 3px rgba(0,0,0,0.2);
+	-moz-box-shadow: 3px 3px 3px rgba(0,0,0,0.2);
+	box-shadow: 3px 3px 3px rgba(0,0,0,0.2);
+	font-size: 14px;
+}
+.sf-menu ul li {
+	border-left: 1px solid #fff;
+	border-right: 1px solid #fff;
+	display: block;
+	float: none;
+}
+.sf-menu ul li:last-child {
+	border-bottom: 1px solid #fff;
+	-webkit-border-bottom-right-radius: 7px;
+	-webkit-border-bottom-left-radius: 7px;
+	-moz-border-radius-bottomright: 7px;
+	-moz-border-radius-bottomleft: 7px;
+	border-bottom-right-radius: 7px;
+	border-bottom-left-radius: 7px;
+}
+.sf-menu ul li:last-child a {
+	-webkit-border-bottom-right-radius: 7px;
+	-webkit-border-bottom-left-radius: 7px;
+	-moz-border-radius-bottomright: 7px;
+	-moz-border-radius-bottomleft: 7px;
+	border-bottom-right-radius: 7px;
+	border-bottom-left-radius: 7px;
+}
+.sf-menu li.sfHover li.sfHover,
+.sf-menu li:hover li:hover {
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
+}
+.sf-menu li.sfHover li.sfHover {
+	border-right-color: #cb2d79
+}
+.sf-menu li li a {
+	border: 0 none;
+	padding: 14px;
+}
+.sf-menu li li:first-child a {
+	padding-top: 0;
+}
+.sf-menu li li.sfHover a,
+.sf-menu li li:hover a {
+	background: transparent;
+	border: 0 none;
+	color: #f8ddea;
+	outline: 0;
+}
+.sf-menu li li a:hover {
+	color: #f8ddea;
+}
+.sf-menu li.sfHover li a,
+.sf-menu li:hover li a {
+	background: transparent;
+}
+.sf-menu li.sfHover li.sfHover a {
+	background: #cb2d79;
+}
+.sf-menu li.sfHover ul,
+.sf-menu li:hover ul {
+	left: -1px;
+	top: 70px; /* match top ul list item height */
+	z-index: 99;
+}
+.sf-menu li li.sfHover,
+.sf-menu li li:hover {
+	background: transparent;
+	border-color: #fff;
+}
+
+/**** Level 3 ****/
+ul.sf-menu li.sfHover li ul,
+ul.sf-menu li:hover li ul {
+	background: #cb2d79;
+	top: -999em;
+	-webkit-border-radius: 7px;
+	-webkit-border-top-left-radius: 0;
+	-moz-border-radius: 7px;
+	-moz-border-radius-topleft: 0;
+	border-radius: 7px;
+	border-top-left-radius: 0;
+}
+ul.sf-menu li.sfHover li ul li,
+ul.sf-menu li:hover li ul li {
+	background: transparent;
+	border: 0 none;
+}
+ul.sf-menu li li.sfHover ul,
+ul.sf-menu li li:hover ul {
+	left: 9em; /* match ul width */
+	top: 0;
+}
+.sf-menu li.sfHover li.sfHover li a,
+.sf-menu li:hover li:hover li a {
+	background: transparent;
+}
+.sf-menu li li li:first-child a {
+	padding-top: 14px;
+}
+.sf-menu li li li a:hover {
+	background: transparent;
+	color: #fff;
+}
+/*** ARROWS ***/
+.sf-sub-indicator {
+	display: none;
+}
+
+
+</style>
+
+</head>
+<body>
+
+<ul id="sfNav" class="sf-menu">
+<li><a href="#">Papilionidae</a>
+	<ul>
+		<li><a href="#">Common Yellow Swallowtail</a></li>
+		<li><a href="#">Spicebush Swallowtail</a></li>
+		<li><a href="#">Lime Butterfly</a></li>
+		<li><a href="#">Ornithoptera</a>
+	<ul>
+		<li><a href="#">Queen Victoria's Birdwing</a></li>
+		<li><a href="#">Wallace's Golden Birdwing</a></li>
+		<li><a href="#">Cape York Birdwing</a></li>
+	</ul>
+</li>
+</ul>
+</li>
+<li><a href="#">Pieridae</a>
+<ul>
+	<li><a href="#">Small White</a></li>
+	<li><a href="#">Green-veined White</a></li>
+	<li><a href="#">Common Jezebel</a></li>
+</ul>
+</li>
+<li><a href="#">Lycaenidae</a>
+<ul>
+	<li><a href="#">Xerces Blue</a></li>
+	<li><a href="#">Karner Blue</a></li>
+	<li><a href="#">Red Pierrot</a></li>
+</ul>
+</li>
+<li><a href="#">Riodinidae</a>
+<ul>
+	<li><a href="#">Duke of Burgundy</a></li>
+	<li><a href="#">Plum Judy</a></li>
+</ul>
+</li>
+<li><a href="#">Nymphalidae</a>
+<ul>
+<li><a href="#">Painted Lady</a></li>
+<li><a href="#">Monarch</a></li>
+<li><a href="#">Morpho</a>
+<ul>
+	<li><a href="#">Sunset Morpho</a></li>
+	<li><a href="#">Godart's Morpho</a></li>
+</ul>
+</li>
+<li><a href="#">Speckled Wood</a></li>
+</ul>
+</li>
+<li><a href="#">Hesperiidae</a>
+<ul>
+	<li><a href="#">Mallow Skipper</a></li>
+	<li><a href="#">Zabulon Skipper</a></li>
+</ul>
+</li>
+</ul>
+
+<!--
+<h2>Vertical Flyout added with a class</h2>
+
+<ul id="sfNav" class="sf-menu sf-vertical">
+<li><a href="#">Papilionidae</a>
+	<ul>
+		<li><a href="#">Common Yellow Swallowtail</a></li>
+		<li><a href="#">Spicebush Swallowtail</a></li>
+		<li><a href="#">Lime Butterfly</a></li>
+		<li><a href="#">Ornithoptera</a>
+	<ul>
+		<li><a href="#">Queen Victoria's Birdwing</a></li>
+		<li><a href="#">Wallace's Golden Birdwing</a></li>
+		<li><a href="#">Cape York Birdwing</a></li>
+	</ul>
+</li>
+</ul>
+</li>
+<li><a href="#">Pieridae</a>
+<ul>
+	<li><a href="#">Small White</a></li>
+	<li><a href="#">Green-veined White</a></li>
+	<li><a href="#">Common Jezebel</a></li>
+</ul>
+</li>
+<li><a href="#">Lycaenidae</a>
+<ul>
+	<li><a href="#">Xerces Blue</a></li>
+	<li><a href="#">Karner Blue</a></li>
+	<li><a href="#">Red Pierrot</a></li>
+</ul>
+</li>
+<li><a href="#">Riodinidae</a>
+<ul>
+	<li><a href="#">Duke of Burgundy</a></li>
+	<li><a href="#">Plum Judy</a></li>
+</ul>
+</li>
+<li><a href="#">Nymphalidae</a>
+<ul>
+<li><a href="#">Painted Lady</a></li>
+<li><a href="#">Monarch</a></li>
+<li><a href="#">Morpho</a>
+<ul>
+	<li><a href="#">Sunset Morpho</a></li>
+	<li><a href="#">Godart's Morpho</a></li>
+</ul>
+</li>
+<li><a href="#">Speckled Wood</a></li>
+</ul>
+</li>
+<li><a href="#">Hesperiidae</a>
+<ul>
+	<li><a href="#">Mallow Skipper</a></li>
+	<li><a href="#">Zabulon Skipper</a></li>
+</ul>
+</li>
+</ul>
+-->
+
+
+</body>
 </html>
+
+
+
+
+
