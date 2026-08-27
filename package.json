@@ -1,12 +1,16 @@
 {
-  "name": "practical-html5-projects",
+  "name": "family-media-network",
   "version": "1.0.0",
-  "description": "Source code for Practical HTML5 Projects by Adrian W. West",
-  "main": "index.html",
+  "description": "Advocacy resource tracking infrastructure for NYC transitional facilities",
+  "main": "server.js",
   "scripts": {
-    "start": "http-server -c-1"
+    "start": "node server.js"
   },
-  "devDependencies": {
-    "http-server": "^14.1.1"
-  }
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.19.2",
+    "helmet": "^7.1.0"
+  },
+  "author": "Family Media Network Collective",
+  "license": "ISC"
 }
