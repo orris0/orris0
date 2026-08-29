@@ -1,0 +1,214 @@
+/* Family Media Network – styles.css */
+:root {
+  --bg: #0f172a;
+  --bg-alt: #1e293b;
+  --text: #f1f5f9;
+  --text-muted: #94a3b8;
+  --accent: #38bdf8;
+  --accent-hover: #7dd3fc;
+  --warn: #f87171;
+  --radius: 12px;
+  --shadow: 0 4px 20px rgba(0, 0, 0, 0.35);
+  --max-width: 900px;
+  --header-height: 64px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.65;
+}
+
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  background: var(--accent);
+  color: #0f172a;
+  padding: 0.5rem 1rem;
+  z-index: 100;
+  text-decoration: none;
+  font-weight: 600;
+}
+.skip-link:focus {
+  top: 0;
+}
+
+.container {
+  width: min(100% - 2rem, var(--max-width));
+  margin-inline: auto;
+}
+
+/* Header & Nav */
+.site-header {
+  position: sticky;
+  top: 0;
+  background: #020617;
+  border-bottom: 3px solid var(--accent);
+  z-index: 50;
+}
+
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: var(--header-height);
+  gap: 1rem;
+}
+
+.logo {
+  margin: 0;
+  font-size: 1.25rem;
+}
+.logo a {
+  color: var(--accent);
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.nav-toggle {
+  display: none;
+  background: transparent;
+  border: 2px solid var(--accent);
+  color: var(--accent);
+  font-size: 1.4rem;
+  padding: 0.25rem 0.6rem;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.main-nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.25rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.main-nav a {
+  color: var(--text);
+  text-decoration: none;
+  font-weight: 600;
+  padding: 0.25rem 0;
+  border-bottom: 2px solid transparent;
+  transition: color 0.2s, border-color 0.2s;
+}
+.main-nav a:hover,
+.main-nav a:focus {
+  color: var(--accent-hover);
+  border-bottom-color: var(--accent);
+}
+
+/* Sections */
+.section {
+  padding: 3rem 0;
+}
+.section.alt {
+  background: var(--bg-alt);
+}
+
+h2 {
+  color: var(--accent);
+  margin-top: 0;
+  font-size: 1.75rem;
+}
+
+.warning {
+  border-left: 4px solid var(--warn);
+  padding: 0.75rem 1rem;
+  background: rgba(248, 113, 113, 0.08);
+  border-radius: 0 var(--radius) var(--radius) 0;
+}
+
+.note {
+  color: var(--text-muted);
+  font-size: 0.95rem;
+}
+
+.rights-list li {
+  margin-bottom: 0.85rem;
+}
+
+/* Email template box */
+.email-template {
+  background: #020617;
+  border: 1px solid #334155;
+  border-radius: var(--radius);
+  padding: 1.25rem;
+  margin: 1.5rem 0;
+  box-shadow: var(--shadow);
+}
+
+.email-template pre {
+  white-space: pre-wrap;
+  font-family: ui-monospace, monospace;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  margin: 0 0 1rem;
+  color: #e2e8f0;
+}
+
+.btn {
+  display: inline-block;
+  background: var(--accent);
+  color: #0f172a;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  font-weight: 700;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background 0.2s;
+}
+.btn:hover,
+.btn:focus {
+  background: var(--accent-hover);
+}
+
+/* Footer */
+.site-footer {
+  background: #020617;
+  padding: 2rem 0;
+  text-align: center;
+  border-top: 1px solid #1e293b;
+  margin-top: 2rem;
+}
+.site-footer .small {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+}
+
+/* Responsive */
+@media (max-width: 700px) {
+  .nav-toggle {
+    display: block;
+  }
+  .main-nav {
+    display: none;
+    width: 100%;
+  }
+  .main-nav.is-open {
+    display: block;
+  }
+  .main-nav ul {
+    flex-direction: column;
+    padding: 1rem 0;
+    gap: 0.75rem;
+  }
+  .header-inner {
+    flex-wrap: wrap;
+  }
+}
