@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Family Media Network – Advocacy for safety and rights in NYC Safe Haven and transitional shelters.">
+  <title>Family Media Network – Shelter Safety & Survivor Support</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <h1 class="logo"><a href="#">Family Media Network</a></h1>
+      <div class="header-actions">
+        <button type="button" class="lang-toggle" id="lang-toggle" aria-label="Switch language">ES</button>
+        <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+      </div>
+      <nav class="main-nav" id="main-nav">
+        <ul>
+          <li><a href="#mission" data-i18n="nav-mission">Mission</a></li>
+          <li><a href="#issues" data-i18n="nav-issues">The Issues</a></li>
+          <li><a href="#rights" data-i18n="nav-rights">Know Your Rights</a></li>
+          <li><a href="#action" data-i18n="nav-action">Take Action</a></li>
+          <li><a href="#contact" data-i18n="nav-contact">Contact</a></li>
+          <li><a href="#resources" data-i18n="nav-resources">Resources</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- Mission -->
+    <section id="mission" class="section">
+      <div class="container">
+        <h2 data-i18n="mission-title">Our Mission</h2>
+        <p data-i18n="mission-p1">Family Media Network centers survivors of assaults and abuse in New York City Safe Haven and transitional shelters—especially disabled and undocumented people—seeking safety, help, accountability, and pathways to support.</p>
+        <p class="note" data-i18n="mission-note">This is a community advocacy resource. It is not affiliated with NYC agencies or shelter operators.</p>
+      </div>
+    </section>
+
+    <!-- Issues -->
+    <section id="issues" class="section alt">
+      <div class="container">
+        <h2 data-i18n="issues-title">Context on the Shelters</h2>
+        <p class="warning" data-i18n="issues-warning">Public reporting and city data have documented elevated violence and serious incidents in parts of the NYC shelter system, including Safe Havens and BRC-operated sites. Individual experiences vary.</p>
+        <ul>
+          <li>The Kelly / XX Street Kelly Safe Haven</li>
+          <li>The Andrews Safe Haven (Breaking Ground)</li>
+          <li>Traveler’s / Travellers Safe Haven</li>
+          <li>Breaking Ground programs</li>
+          <li>BRC transitional and Safe Haven programs (including 25th Street area)</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Rights -->
+    <section id="rights" class="section">
+      <div class="container">
+        <h2 data-i18n="rights-title">Know Your Rights</h2>
+        <p><strong data-i18n="rights-disclaimer">This is not legal advice.</strong> <span data-i18n="rights-consult">Always consult an independent advocate or attorney.</span></p>
+        <ul class="rights-list">
+          <li data-i18n="right1"><strong>Right to shelter</strong> – Generally available in NYC. Immigration status does not bar emergency shelter access.</li>
+          <li data-i18n="right2"><strong>Safety & complaints</strong> – Right to a safe environment and to file complaints without retaliation.</li>
+          <li data-i18n="right3"><strong>Disability accommodations</strong> – Reasonable accommodations must be provided. Request them from staff.</li>
+          <li data-i18n="right4"><strong>Gender identity</strong> – Placement consistent with gender identity is protected.</li>
+          <li data-i18n="right5"><strong>Language access</strong> – Right to interpreters for key interactions.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Action -->
+    <section id="action" class="section alt">
+      <div class="container">
+        <h2 data-i18n="action-title">Take Action</h2>
+        <p data-i18n="action-intro">Copy and adapt the email template. Send to City Council members, DHS, and advocates.</p>
+        <div class="card email-card">
+          <h3 data-i18n="email-heading">Sample Email</h3>
+          <pre id="email-template">Subject: Urgent: Safety Concerns at NYC Safe Haven / Transitional Shelters
+
+Dear [Official],
+
+I am writing about safety concerns at facilities including The Kelly, The Andrews (Breaking Ground), Traveler’s Safe Haven, and BRC sites. Survivors—especially disabled and undocumented people—need stronger safety measures, accommodations, and accountability.
+
+Please investigate and respond with concrete steps.
+
+Sincerely,
+[Name / Advocate]</pre>
+          <button type="button" class="btn" id="copy-email" data-i18n="copy-btn">Copy email template</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact / Form -->
+    <section id="contact" class="section">
+      <div class="container">
+        <h2 data-i18n="contact-title">Contact / Report (Private)</h2>
+        <p data-i18n="contact-intro">Use this form for general questions or to share information safely. For immediate danger call 911. Do not include highly sensitive personal details if you are unsure about privacy.</p>
+        
+        <!-- Replace the action URL with your own Formspree (or similar) endpoint -->
+        <form class="contact-form card" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+          <label>
+            <span data-i18n="label-name">Name or alias (optional)</span>
+            <input type="text" name="name" placeholder="Optional">
+          </label>
+          <label>
+            <span data-i18n="label-email">Email (optional)</span>
+            <input type="email" name="email" placeholder="Optional – for reply only">
+          </label>
+          <label>
+            <span data-i18n="label-message">Message</span>
+            <textarea name="message" rows="5" required placeholder="Your message..."></textarea>
+          </label>
+          <button type="submit" class="btn" data-i18n="submit-btn">Send message</button>
+          <p class="form-note" data-i18n="form-note">Powered by a third-party form service. Create a free account at formspree.io and replace YOUR_FORM_ID.</p>
+        </form>
+      </div>
+    </section>
+
+    <!-- Resources -->
+    <section id="resources" class="section alt">
+      <div class="container">
+        <h2 data-i18n="resources-title">Resources & Learn</h2>
+        <ul>
+          <li><a href="https://github.com/orris0/Creating-a-website" target="_blank" rel="noopener">Creating a Website</a></li>
+          <li><a href="https://github.com/orris0/orris0" target="_blank" rel="noopener">Practical HTML5 Projects</a></li>
+          <li><a href="https://github.com/orris0/jquery-novice-to-ninja" target="_blank" rel="noopener">jQuery Novice to Ninja</a></li>
+          <li><a href="https://github.com/orris0/css-secrets" target="_blank" rel="noopener">CSS Secrets</a></li>
+          <li><a href="https://github.com/orris0/academicpages.github.io" target="_blank" rel="noopener">Academic Pages template</a></li>
+        </ul>
+        <p data-i18n="hotlines">Hotlines: Coalition for the Homeless • Legal Aid • Sanctuary for Families • 800-621-HOPE • 911</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>Family Media Network • For survivors, by the community</p>
+      <p class="small">Not affiliated with NYC agencies. Informational only.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
