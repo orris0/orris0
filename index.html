@@ -1,4 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Family Media Network – Shelter Safety & Survivor Support</title>
+  <style>
+    :root { --bg: #0f172a; --card: #1e293b; --text: #f1f5f9; --accent: #38bdf8; --warn: #f87171; }
+    * { box-sizing: border-box; }
+    body { font-family: system-ui, sans-serif; margin: 0; background: var(--bg); color: var(--text); line-height: 1.6; }
+    header { background: #020617; padding: 1.5rem; text-align: center; border-bottom: 3px solid var(--accent); }
+    nav { display: flex; flex-wrap: wrap; gap: 1rem; justify-content: center; padding: 1rem; background: var(--card); }
+    nav a { color: var(--accent); text-decoration: none; font-weight: 600; }
+    main { max-width: 900px; margin: 0 auto; padding: 1.5rem; }
+    section { background: var(--card); margin: 1.5rem 0; padding: 1.5rem; border-radius: 12px; }
+    h1, h2 { color: var(--accent); }
+    .warning { border-left: 4px solid var(--warn); padding-left: 1rem; }
+    footer { text-align: center; padding: 2rem; font-size: 0.9rem; opacity: 0.8; }
+    @media (max-width: 600px) { nav { flex-direction: column; } }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Family Media Network</h1>
+    <p>Advocacy for safety, rights, and accountability in NYC Safe Haven & transitional shelters</p>
+  </header>
+  <nav>
+    <a href="#mission">Mission</a>
+    <a href="#issues">The Issues</a>
+    <a href="#rights">Know Your Rights</a>
+    <a href="#action">Take Action</a>
+    <a href="#resources">Resources & Learn</a>
+  </nav>
+  <main>
+    <section id="mission">
+      <h2>Our Mission</h2>
+      <p>Family Media Network centers survivors of assaults and abuse in city shelters—especially disabled and undocumented people—seeking safety, help, compensation pathways, and pressure on officials and operators. Focus facilities include The Kelly (Safe Haven), The Andrews (Breaking Ground), Travellers/Traveler’s Hotel/Safe Haven, Breaking Ground programs, and BRC transitional/Safe Haven sites (including 25th Street area history).</p>
+    </section>
+    <section id="issues">
+      <h2>Context on the Shelters</h2>
+      <p class="warning">Public reporting and city data have documented elevated violence, serious incidents, and systemic challenges across parts of the NYC shelter system, including Safe Havens and BRC-operated sites. Individual experiences vary. This site does not make or verify specific unproven allegations.</p>
+      <!-- Add your documented, sourced content carefully -->
+    </section>
+    <section id="rights">
+      <h2>Know Your Rights</h2>
+      <!-- Paste the draft text above -->
+      <p><strong>Not legal advice.</strong> Seek independent help.</p>
+    </section>
+    <section id="action">
+      <h2>Take Action</h2>
+      <p>Use the email template. Contact your City Council member, DHS, and advocates. Support transparent fundraising only through verified channels.</p>
+      <!-- Add form or mailto links, petition embeds if desired -->
+    </section>
+    <section id="resources">
+      <h2>Resources & Learn Web Skills</h2>
+      <ul>
+        <li>Coalition for the Homeless, Legal Aid, Sanctuary for Families, disability & immigration legal aid</li>
+        <li>Learning repos (build your own advocacy tools):
+          <ul>
+            <li><a href="https://github.com/orris0/Creating-a-website">Creating a Website</a></li>
+            <li><a href="https://github.com/orris0/orris0">Practical HTML5-style projects</a></li>
+            <li><a href="https://github.com/orris0/jquery-novice-to-ninja">jQuery Novice to Ninja</a></li>
+            <li><a href="https://github.com/orris0/css-secrets">CSS Secrets</a></li>
+            <li><a href="https://github.com/orris0/academicpages.github.io">Academic Pages example</a></li>
+          </ul>
+        </li>
+      </ul>
+    </section>
+  </main>
+  <footer>
+    <p>Family Media Network • For survivors, by the community • Prioritize safety • Not affiliated with NYC agencies or shelter operators</p>
+  </footer>
+</body>
+</html>
 
+<!--
 <!DOCTYPE html>
 <html lang="en">
 	
@@ -7,11 +82,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Web Development Master Portfolio</title>
     <link rel="stylesheet" href="css/shared.css">
-		<!-- CSS -->
+		<!-- CSS --
 <link rel="stylesheet" href="superfish.css"/>
 <link rel="stylesheet" href="superfish-vertical.css"/>
 
-<!-- jQuery -->
+<!-- jQuery --
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 <script src="hoverIntent.js"></script>
 <script src="superfish.js"></script>
@@ -482,7 +557,7 @@ ul.sf-menu li li:hover ul {
     <main class="container">
         <section class="project-grid">
             
-            <!-- Book 1 Card -->
+            <!-- Book 1 Card --
             <article class="project-card">
                 <div class="card-content">
                     <span class="badge badge-html">Fundamentals</span>
@@ -492,7 +567,7 @@ ul.sf-menu li li:hover ul {
                 </div>
             </article>
 
-            <!-- Book 2 Card -->
+            <!-- Book 2 Card --
             <article class="project-card">
                 <div class="card-content">
                     <span class="badge badge-html5">HTML5 APIs</span>
@@ -502,7 +577,7 @@ ul.sf-menu li li:hover ul {
                 </div>
             </article>
 
-            <!-- Book 3 Card -->
+            <!-- Book 3 Card --
             <article class="project-card">
                 <div class="card-content">
                     <span class="badge badge-jquery">Interactivity</span>
@@ -553,12 +628,12 @@ ul.sf-menu li li:hover ul {
 
     <!-- ==========================================
          3. STRUCTURE (Practical HTML5 Projects)
-         ========================================== -->
+         ========================================== --
     <div id="page-wrapper">
         <header role="banner">
             <h1>Master Integration Project</h1>
             
-            <!-- Target for your Square Tabs layout -->
+            <!-- Target for your Square Tabs layout --
             <nav id="main-nav" class="square-tabs">
                 <ul>
                     <li class="active"><a href="#tab1">Home Base</a></li>
@@ -569,7 +644,7 @@ ul.sf-menu li li:hover ul {
         </header>
 
         <main id="main-content" role="main">
-            <!-- Left Side / Article Structure -->
+            <!-- Left Side / Article Structure --
             <article class="primary-content">
                 <h2>HTML5 Semantic Architecture</h2>
                 <p>This layout follows Adrian West's structural blueprints.</p>
@@ -593,12 +668,12 @@ ul.sf-menu li li:hover ul {
                                 </ul>
                             </nav>
 					        <img class="logo" src="img/flexy-logo.png">
-				        </div><!-- end-col-12 -->
-                    </div><!-- end-row -->
+				        </div><!-- end-col-12 --
+                    </div><!-- end-row --
 				
 				    <div class="row">
                         <div class="col-12">
-				            <header data-role="header" class="data" id="html5-ch1-7header"><!-- <div id="hdr"> changed to <header> -->
+				            <header data-role="header" class="data" id="html5-ch1-7header"><!-- <div id="hdr"> changed to <header> --
 				                <hgroup>  
 						            <h1 class="veryimportant heading stuff" id="html5-ch1-7h1">Tourorris Rural Retreats!</h1>
 						            <h2 class="heading"><strong>I put our holiday dates and address on a Family network</strong></h2>
@@ -615,7 +690,7 @@ ul.sf-menu li li:hover ul {
 									<br>The superb interior of one of our cottages
                                 </div>
                                 <nav#html5-ch1-7nav><!--use the semantic tag <nav>-->
-                                    <ul><!--start of menu list-->
+                                    <ul><!--start of menu list--
                                         <li class="btn"> <a href="accommodation.html" title="Accommodation">Accommodation</a></li>
                                         <li class="btn"><a href="maps.html" title="Location Maps">Maps</a></li>                   
 										<li class="btn"><a href="faqs.html" title="Frequently Asked Questions">Information</a></li>
@@ -623,7 +698,7 @@ ul.sf-menu li li:hover ul {
                                         <li class="btn"><a href="contact.html" title="Contact us">Contact Us</a></li>
                                         <li class="btn"><a href="index.html" title="Return to Home Page">Home Page</a></li>
                                     </ul><!--end of menu list-->
-                                </nav><!--</div> removed and replaced with </nav>-->
+                                </nav><!--</div> removed and replaced with </nav>--
                                 <div id="#html5-ch1-7midcol">
                                    <h3>Situated in the UK's beautiful Devon countryside</h3>
                                    <img title="Devon countryside" alt="Devon countryside" src="images/devon398.jpg" height="229" width="398">
@@ -633,7 +708,7 @@ ul.sf-menu li li:hover ul {
 					    </div><!-- end-col-12 -->
                     </div><!-- end-row -->
                     
-                    <!-- hero -->
+                    <!-- hero --
                     <section id="hero" class="d-flex align-items-center scrolled-offset">
                         <div class="container position-relative aos-init aos-animate" data-aos="fade-up" data-aos-delay="500">
                             <div class="row">
@@ -643,12 +718,12 @@ ul.sf-menu li li:hover ul {
                                             <h1>Practical HTML5 Projects for fun and profit</h1>
                                             <h2 class="dark">Lets achieve our goals.</h2>		
                                         </div>	    	
-										<!-- <a href="./creating-a-website.html" class="btn-get-started scrollto">Get Started</a> -->   
+										<!-- <a href="./creating-a-website.html" class="btn-get-started scrollto">Get Started</a> --   
                                     </div>
                                 </div>
 							</div>
                         </div>            
-                    </section><!-- End Hero -->
+                    </section><!-- End Hero --
                     <br class="clear">
             
                     <div class="row center-xs center-sm center-md center-lg middle-xs middle-sm middle-md middle-lg">                    
@@ -657,7 +732,7 @@ ul.sf-menu li li:hover ul {
                     <p>
                         Lets achieve our goals.
                     </p>
-                    <!-- <img src="gran-parents.jpg" width="760px" height="400px" class="img-fluid" alt=""> -->
+                    <!-- <img src="gran-parents.jpg" width="760px" height="400px" class="img-fluid" alt=""> --
 
                 </div>
                 
@@ -674,7 +749,7 @@ ul.sf-menu li li:hover ul {
             <div class="col-12">
                                    
                 <img src="images/paper.png" width="915px">
-                <!-- MENU -->
+                <!-- MENU --
                 <div class="row">
                 
                     <div class="col-xs-12 col-sm-10 col-md-10 c0l-lg-10"> 		    	
@@ -706,14 +781,14 @@ ul.sf-menu li li:hover ul {
                 </div>
 
 
-            <!-- doitno -->
+            <!-- doitno --
 
             <div id="container" class="ContentPanel">
-            <!-- <div class="ContentPanel"> -->
+            <!-- <div class="ContentPanel"> --
             <div>
                 <br />
                 Click <a href="triproot/index.html"> here</a> to visit the new page immediately.
-                <!-- basic-fonts -->
+                <!-- basic-fonts --
                 <p style="font-family: Times">
                     Just <b>do</b> it.
                     <br />
@@ -725,7 +800,7 @@ ul.sf-menu li li:hover ul {
             </div>
             <div class="MiddlePanel first" id="container">
             <div class="second">
-                <!-- basic-fonts -->
+                <!-- basic-fonts --
                 <p style="font-family: Arial">
                     I am Orris Baker Jr. Hire me for your company, because my work is <b>off the hizzle</b>.<br />
                     <img src="..images/profile.png" alt="Lee Park Portrait" />
@@ -735,7 +810,7 @@ ul.sf-menu li li:hover ul {
                 Indispensable Skills
             </h2>
             <div class="third">
-                <!-- basic-fonts -->
+                <!-- basic-fonts --
                 <p style="margin-top: 0px; font-family: Courier">
                     My skills include:
                 </p>
@@ -754,13 +829,13 @@ ul.sf-menu li li:hover ul {
                     Negotiating with officers of the peace.
                 </li>
             </ul>
-            <!-- better-fonts -->
+            <!-- better-fonts --
             <p style="font-family: Verdana; font-size:smaller">
                 And I also know XHTML!
             </p>
 
             <h2>Previous Work Experience</h2>
-            <!-- better-fonts -->
+            <!-- better-fonts --
             <p style="font-family: Georgia">
                 I have had a long and illustrious career in a variety of trades. Here are
                 some highlights:
@@ -777,7 +852,7 @@ ul.sf-menu li li:hover ul {
                 </li>
             </ul>
             <hr />
-            <!-- better-fonts -->
+            <!-- better-fonts --
             <p style="font-family: Tahoma; font-size:smaller">
                 <br /><br />
                 As proof of my staggering computer skills and monumental work
@@ -785,7 +860,7 @@ ul.sf-menu li li:hover ul {
             </p>
             <hr />
             </div>
-            <!-- Address -->
+            <!-- Address --
             <div id="container">
             <p class="style1">
                 Bargain basement stake collection (all Wooden).
@@ -802,7 +877,7 @@ ul.sf-menu li li:hover ul {
             <img class="outset" alt="" src="food.jpg" />
             <img class="heavy" alt="" src="food.jpg" />
             </p> -->
-            <!-- better-fonts -->
+            <!-- better-fonts --
             <p style="font-family: 'Comic Sans MS'">
                 <br /><br /><br />
                 Sometimes, a truly long word like antidisestablishmentarianism can thwart your justification attempt.
@@ -823,14 +898,14 @@ ul.sf-menu li li:hover ul {
             <li>Look so darned cool</li>
             <li>Remind people of boring PowerPoint presentations</li>
             </ul>
-            <!-- blockquote -->
+            <!-- blockquote --
             <div id="container">
-            <!-- better-fonts -->
+            <!-- better-fonts --
             <p style="font-family: 'Arial Black'">
                 Some words of wisdom from "A Tale of Two Cities":
             </p>
             <blockquote>
-                <!-- better-fonts -->
+                <!-- better-fonts --
                 <p style="font-family: Tahoma; font-size:smaller">
                     It was the best of times, it was the worst of times, it was the age of
                     wisdom, it was the age of foolishness, it was the epoch of belief, it was the
@@ -849,17 +924,17 @@ ul.sf-menu li li:hover ul {
             </p>
             <hr />
             </div>
-            <!-- BreadAndWater -->
+            <!-- BreadAndWater --
             <div id="container">
             <h1>
                 Bread and Water
             </h1>
-            <!-- Alt Text and Tooltips -->
+            <!-- Alt Text and Tooltips --
             <p style="font-family: 'Arial Black'">
                 <img class="dotted" alt="" src="../orris0/matador.jpg" width="201" height="251"
                     alt="A matador extends his cape in welcome." title="Welcome to the ring." />
             </p>
-            <!-- better-fonts -->
+            <!-- better-fonts --
             <p style="font-family: Impact">
                 Where'd he go?
             </p>
@@ -872,7 +947,7 @@ ul.sf-menu li li:hover ul {
                 We fight for your rights.
             </p>
             </div>
-            <!-- headings -->
+            <!-- headings --
             <div id="container">
             <h1>Heading 1</h1>
             <h2>Heading 2</h2>
@@ -882,7 +957,7 @@ ul.sf-menu li li:hover ul {
             <h6>Heading 6 (nobody can read this)</h6>
             <p>This is some regular text for comparison.</p>
             </div>
-            <!-- hr -->
+            <!-- hr --
             <div id="container">
             <p>
                 The hallway smelt of boiled cabbage and old rag mats. At one end of it a
@@ -916,7 +991,7 @@ ul.sf-menu li li:hover ul {
             </p>
             <hr />
             </div>
-            <!-- MiscFormatting -->
+            <!-- MiscFormatting --
             <div id="container">
 
             <p>
@@ -936,7 +1011,7 @@ ul.sf-menu li li:hover ul {
             </p>
             <hr />
             </div>
-            <!-- nestedlist -->
+            <!-- nestedlist --
             <div id="container">
             <h1>Weekly Schedule</h1>
             <ul>
@@ -993,7 +1068,7 @@ ul.sf-menu li li:hover ul {
             </ul>
             <hr />
             </div>
-            <!-- Non-breaking space -->
+            <!-- Non-breaking space --
             <div id="container">
             <p>
                 Product names sometimes contains spaces, but they look funny when split over a line.
@@ -1006,7 +1081,7 @@ ul.sf-menu li li:hover ul {
             </p>
             <hr />
             </div>
-            <!-- OrderedLists -->
+            <!-- OrderedLists --
             <div id="container">
             <h1>The Noble Eightfold Path</h1>
             <ol type="I">
@@ -1061,7 +1136,7 @@ ul.sf-menu li li:hover ul {
             </ol>
             <hr />
             </div>
-            <!-- paragraphs -->
+            <!-- paragraphs --
             <div id="container">
             <p>
                 HTML is a more freewheeling standard. When you create an HTML document, you
@@ -1087,7 +1162,7 @@ ul.sf-menu li li:hover ul {
             </p>
             <hr />
             </div>
-            <!-- paragraphs 2 -->
+            <!-- paragraphs 2 --
             <div id="container">
             <p>
                 It
@@ -1110,7 +1185,7 @@ ul.sf-menu li li:hover ul {
             </p>
             <hr />
             </div>
-            <!-- Plain-table -->
+            <!-- Plain-table --
             <div id="container">
             <h1>Largest Cities in the Year 100</h1>
             <table>
@@ -1172,7 +1247,7 @@ ul.sf-menu li li:hover ul {
             </table>
             <hr />
             </div>
-            <!-- Preformatted -->
+            <!-- Preformatted --
             <div id="container">
             <pre>
             Tumbling-hair
@@ -1187,7 +1262,6 @@ ul.sf-menu li li:hover ul {
             </pre>
             <hr />
             </div>
-            <!-- tablespanning -->
             <div id="container">
             <table width="100%">
                 <tr>
@@ -1224,7 +1298,7 @@ ul.sf-menu li li:hover ul {
             </table>
             <hr />
             </div>
-            <!-- unorderedlist -->
+            <!-- unorderedlist --
             <div id="container">
 
             <h1>Dangers in Cartoon Life</h1>
@@ -1248,7 +1322,7 @@ ul.sf-menu li li:hover ul {
                 <li>Remind people of boring PowerPoint presentations</li>
             </ul>
             </div>
-            <!-- floatingbox -->
+            <!-- floatingbox --
             <div id="container">
             <div class="float">
                 <h1>Buy now!</h1>
@@ -1293,7 +1367,7 @@ ul.sf-menu li li:hover ul {
                 </p>
             </div>
             </div>
-            <!-- floatingbox2 -->
+            <!-- floatingbox2 --
             <div id="container">
             <div class="floatngBox">
                 <h1>Buy now!</h1>
@@ -1346,7 +1420,7 @@ ul.sf-menu li li:hover ul {
                 </p>
             </div>
             </div>
-            <!-- floatingbox3 -->
+            <!-- floatingbox3 --
             <div id="container">
             <div class="float">
                 <h1>Buy now!</h1>
@@ -1394,7 +1468,7 @@ ul.sf-menu li li:hover ul {
 
 
             <div id="container">
-            <!-- image with caption -->
+            <!-- image with caption --
 
             <span class="FloatLeft">
 
@@ -1451,7 +1525,7 @@ ul.sf-menu li li:hover ul {
                 last few paltry cents in your pocket. Guaranteed to keep you out of debtor's
                 prison when you return home. (You did buy a return ticket in advance, right?)</p>
 
-            <!-- inline -->
+            <!-- inline --
             <p>
                 This is the first paragraph.
             </p>
@@ -1489,7 +1563,7 @@ ul.sf-menu li li:hover ul {
                 and handy cooking tips. In the main body of the page, you could
                 discuss the latest meal-time ideas.
             </p>
-            <!-- backgrounds -->
+            <!-- backgrounds --
             <div class="pie">
                 <p>Hungry for some pie?</p>
             </div>
@@ -1545,7 +1619,7 @@ ul.sf-menu li li:hover ul {
 
 
             <div id="container">
-            <!-- <h1>Bookmark Test</h1> -->
+            <!-- <h1>Bookmark Test</h1> --
             <p>Learn about recent developments in <a href="#Canaries">canary
                     sales</a>.</p>
             <p>&nbsp;</p>
@@ -1574,17 +1648,17 @@ ul.sf-menu li li:hover ul {
             <p>Pet canary sales have plummeted in the developed world, due in large part
                 to currency fluctuations and other macroeconomic forces.</p>
             </div>
-            <!-- formattedlinks -->
+            <!-- formattedlinks -
             <p>Go to <a href="http://www.zdnet.com">www.zdnet.com</a></p>
             <p>Go to <a href="http://john.cavaliers.org/boring.html">boring page</a></p>
-            <!-- imagemap -->
+            <!-- imagemap --
             <p>Click inside his mouth...</p>
             <p><map name="FaceMap" id="FaceMap">
                 <area href="http://edcp.org/factsheets/handfoot.html" shape="poly"
                     coords="38, 122, 76, 132, 116, 110, 102, 198, 65, 197" title="Smiling Mouth" alt="Mouth" />
             </map><img src="./face.gif" usemap="#FaceMap" alt="Smiling Face" /></p>
 
-            <!-- Redirect -->
+            <!-- Redirect --
 
             <h1>The page you want has moved</h1>
             <p>
@@ -1598,7 +1672,7 @@ ul.sf-menu li li:hover ul {
                     </p>
                     </div>
                 </div>
-            </div><!-- end container, pg -->
+            </div><!-- end container, pg --
         
                 <footer class="data" id="html5style2footer"> 
                     <div class="footer-inner">        
@@ -1688,11 +1762,11 @@ ul.sf-menu li li:hover ul {
 			     </footer><!-- end-footer -->
                 <!-- ==========================================
                      4. INTERACTION ZONE (jQuery: Novice to Ninja)
-                     ========================================== -->
+                     ========================================== --
                 <section id="ninja-ui-container">
                     <h3>jQuery Interaction Sandbox</h3>
                     
-                    <!-- Example: Insert your book 2 interactive markup here -->
+                    <!-- Example: Insert your book 2 interactive markup here --
                     <div class="interactive-component">
                         <button id="toggle-panel-btn">Activate Component</button>
                         <div id="ninja-panel" style="display:none; padding: 15px; background: #eee;">
@@ -1702,7 +1776,7 @@ ul.sf-menu li li:hover ul {
                 </section>
             </article>
 
-            <!-- Sidebar Structure -->
+            <!-- Sidebar Structure --
             <aside class="sidebar">
                 <h3>Project Resources</h3>
                 <p>Contextual sidebar links go here.</p>
@@ -1717,10 +1791,10 @@ ul.sf-menu li li:hover ul {
     <!-- ==========================================
          5. SCRIPTS EXECUTION
          ========================================== -->
-    <!-- Custom external scripts file containing your jQuery event handlers -->
+    <!-- Custom external scripts file containing your jQuery event handlers --
     <script src="js/scripts.js"></script>
     
-    <!-- Inline initialization block for testing your merge -->
+    <!-- Inline initialization block for testing your merge --
     <script>
         $(document).ready(function() {
             // Confirming jQuery works seamlessly inside the HTML5 DOM tree
@@ -3360,7 +3434,7 @@ ul.sf-menu li li:hover ul {
     <img src="https://w3newbie.com/wp-content/uploads/12-site-bundle-banner.png" style="max-width: 100%; position: absolute; bottom: 0;">
   </a>
 </div>
-!-- End View in Browser -->
+!-- End View in Browser --
 
 
 
@@ -3413,3 +3487,4 @@ ul.sf-menu li li:hover ul {
 
 </body>
 </html>
+-->
