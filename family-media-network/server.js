@@ -40,6 +40,42 @@ app.get('/api/bookshelf', (req, res) => {
     ]);
 });
 
+// Strict validation mapping array matching the frontend list
+const ALLOWED_FACILITIES = ['the-kelly', 'the-andrews', 'the-travellers-hotel', 'breaking-ground', 'brc-25th-street'];
+
+app.post('/api/report-incident', (req, res) => {
+    try {
+        const { shelter, details } = req.body;
+
+        // 1. Fail-fast safety checking for raw undefined objects
+        if (!shelter || !details) {
+            return res.status(400).json({ error: "Incomplete data format received." });
+        }
+
+        // 2. Strict whitelist valuation checks
+        if (!ALLOWED_FACILITIES.includes(shelter)) {
+            return res.status(400).json({ error: "Malicious tracking parameter detected." });
+        }
+
+        // 3. Double-check input lengths on the server side to protect system storage logs
+        if (details.length < 20 || details.length > 3000) {
+            return res.status(400).json({ error: "Input violates standard data length constraints." });
+        }
+
+        // ANONYMOUS EXECUTION LAYER:
+        // Do NOT log the req.ip or req.headers. Here you would securely route 
+        // the text to an encrypted database or send an encrypted text alert.
+        console.log(`[SECURE LOG ENTRY] New incident entry registered for facility: ${shelter}`);
+
+        return res.status(200).json({ status: "success", message: "Data received securely." });
+
+    } catch (err) {
+        // Suppress developer stack traces from exposing file systems to clients
+        return res.status(500).json({ error: "Internal processing error." });
+    }
+});
+
+
 // Catch-all API error block to block unexpected token parsing crashes
 app.use('/api/*', (req, res) => {
     res.status(404).json({ status: "error", error: "Data pipeline target not found." });
