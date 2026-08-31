@@ -1,0 +1,27 @@
+<div class="secure-form-container">
+    <h2>Secure Incident Reporting Pipeline</h2>
+    <p class="privacy-notice">🔒 This system features end-to-end trace protection. Connection signatures and IP data are completely wiped automatically prior to routing.</p>
+    
+    <div id="submissionStatus" style="display:none; padding:12px; margin-bottom:15px; border-radius:4px;"></div>
+    
+    <form id="secureIncidentForm" novalidate>
+        <div class="form-group">
+            <label for="shelterSelect">Target Shelter Location:</label>
+            <select id="shelterSelect" required>
+                <option value="" disabled selected>-- Select Affected Facility --</option>
+                <option value="the-kelly">The Kelly Safe Haven</option>
+                <option value="the-andrews">The Andrews Safe Haven</option>
+                <option value="the-travellers-hotel">The Travellers Hotel Transitional Shelter</option>
+                <option value="breaking-ground">Breaking Ground Managed Sites</option>
+                <option value="brc-25th-street">BRC Transitional Shelter (25th Street)</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="incidentDetails">Incident Testimony & Accountability Details:</label>
+            </textarea>
+        </div>
+
+        <button type="submit" id="btnSubmitReport">Submit Secure Testimony</button>
+    </form>
+</div>
