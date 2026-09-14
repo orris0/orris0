@@ -1,16 +1,35 @@
 {
   "name": "family-media-network",
   "version": "1.0.0",
-  "description": "Advocacy resource tracking infrastructure for NYC transitional facilities",
+  "description": "Secure trauma-informed advocacy and web book learning deployment application",
   "main": "server.js",
   "scripts": {
-    "start": "node server.js"
+    "start": "node server.js",
+    "dev": "nodemon server.js"
   },
   "dependencies": {
     "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
     "express": "^4.19.2",
     "helmet": "^7.1.0"
   },
+  "devDependencies": {
+    "nodemon": "^3.1.0"
+  },
+  "keywords": [
+    "express",
+    "security",
+    "jquery-novice-to-ninja",
+    "css-secrets",
+    "advocacy",
+    "nyc-shelter-registry"
+  ],
   "author": "Family Media Network Collective",
-  "license": "ISC"
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
 }
