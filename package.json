@@ -1,7 +1,7 @@
 {
-  "name": "family-media-network",
+  "name": "ob-media-network",
   "version": "1.0.0",
-  "description": "Advocacy resource tracking infrastructure for NYC transitional facilities",
+  "description": "Secure trauma-informed advocacy and web book showcase infrastructure",
   "main": "server.js",
   "scripts": {
     "start": "node server.js"
@@ -9,8 +9,11 @@
   "dependencies": {
     "cors": "^2.8.5",
     "express": "^4.19.2",
-    "helmet": "^7.1.0"
+    "helmet": "^7.1.0",
+    "multer": "^1.4.5-lts.1"
   },
-  "author": "Family Media Network Collective",
+  "engines": {
+    "node": ">=18.0.0"
+  },
   "license": "ISC"
 }
