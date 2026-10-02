@@ -1,158 +1,771 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="h-full bg-slate-950">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Family Media Network | Advocacy & Learning Hub</title>
-    <!-- High-Contrast Accessibility Baseline inspired by CSS Secrets -->
-    <style>
-        :root {
-            --bg-color: #121214;
-            --card-bg: #1a1a1e;
-            --text-main: #f8f9fa;
-            --text-muted: #a0a0a5;
-            --accent-alert: #ff4d4d;
-            --accent-secure: #00cc66;
-            --accent-link: #3399ff;
-            --font-stack: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Family Media Network &amp; Archive of Accountability Hub</title>
+  <meta name="description" content="Unified Family Media Network and Digital Dossier Advocacy Portal." />
+
+  <!-- Social Media Meta Tags -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Family Media Network Hub" />
+  <meta property="og:description" content="Community media sharing and advocacy portal." />
+
+  <!-- jQuery CDN with fallback -->
+  <script src="[https://code.jquery.com/jquery-3.7.1.min.js](https://code.jquery.com/jquery-3.7.1.min.js)" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+  <!-- Tailwind CSS Engine -->
+  <script src="[https://cdn.tailwindcss.com?plugins=forms,typography](https://cdn.tailwindcss.com?plugins=forms,typography)"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              50: '#fffbe1',
+              500: '#f59e0b',
+              600: '#d97706',
+              900: '#78350f',
+            }
+          }
         }
+      }
+    }
+  </script>
 
-        * { box-sizing: border-box; margin: 0; padding: 0; }
-        body { font-family: var(--font-stack); background: var(--bg-color); color: var(--text-main); line-height: 1.6; padding: 20px; }
-        
-        /* Master Layout Grid */
-        .container { max-width: 1200px; margin: 0 auto; }
-        
-        /* High-Visibility Emergency Header */
-        .emergency-banner { 
-            background: linear-gradient(45deg, #b30000, #4a0000); 
-            padding: 15px; border-radius: 8px; margin-bottom: 30px; 
-            border: 2px solid var(--accent-alert); box-shadow: 0 4px 15px rgba(255,77,77,0.2);
-        }
-        .emergency-banner h2 { font-size: 1.3rem; margin-bottom: 8px; color: #fff; }
-        .emergency-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 10px; font-size: 0.95rem; }
-        .emergency-grid a { color: #fff; font-weight: bold; text-decoration: underline; }
+  <style>
+    :root {
+      --primary: #1877f2;
+      --primary-hover: #166fe5;
+      --bg-card: #1e293b;
+      --text-main: #f8fafc;
+      --text-muted: #94a3b8;
+      --border: #334155;
+      --radius: 8px;
+    }
 
-        header { margin-bottom: 40px; border-bottom: 1px solid #2d2d34; padding-bottom: 20px; }
-        header h1 { font-size: 2.5rem; margin-bottom: 10px; background: linear-gradient(to right, #fff, var(--text-muted)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
-        header p { color: var(--text-muted); max-width: 800px; }
+    * { box-sizing: border-box; }
 
-        .dashboard-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 30px; }
-        @media (max-width: 900px) { .dashboard-grid { grid-template-columns: 1fr; } }
+    /* Superfish Navigation Bar */
+    .sf-menu, .sf-menu * {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+    .sf-menu {
+      background: #0f172a;
+      display: flex;
+      flex-wrap: wrap;
+      font-size: 14px;
+      position: relative;
+      z-index: 1000;
+      border-bottom: 1px solid var(--border);
+    }
+    .sf-menu li {
+      position: relative;
+      white-space: nowrap;
+    }
+    .sf-menu a {
+      display: flex;
+      align-items: center;
+      padding: 12px 16px;
+      color: #f1f5f9;
+      text-decoration: none;
+      font-weight: 500;
+      transition: background 0.2s ease, color 0.2s ease;
+      min-height: 44px;
+    }
+    .sf-menu a:hover,
+    .sf-menu a:focus {
+      background: #1e293b;
+      color: #f59e0b;
+      outline: none;
+    }
+    .sf-menu ul {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      display: none;
+      background: #1e293b;
+      min-width: 220px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+      border: 1px solid var(--border);
+    }
+    .sf-menu li:hover > ul,
+    .sf-menu li:focus-within > ul {
+      display: block;
+    }
+    .sf-menu ul ul {
+      top: 0;
+      left: 100%;
+    }
+    .sf-menu ul a {
+      padding: 10px 14px;
+      font-size: 13px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    }
 
-        /* Section Cards */
-        .panel { background: var(--card-bg); border-radius: 8px; padding: 25px; border: 1px solid #2d2d34; }
-        .panel h2 { font-size: 1.5rem; margin-bottom: 20px; padding-bottom: 10px; border-bottom: 2px solid #2d2d34; }
+    /* Alert Banner */
+    .banner {
+      background-color: #b91c1c;
+      color: #ffffff;
+      padding: 10px 16px;
+      text-align: center;
+      font-size: 14px;
+      position: relative;
+    }
+    .banner a {
+      color: #ffffff;
+      text-decoration: underline;
+      font-weight: 600;
+    }
+    .banner a:hover, .banner a:focus {
+      color: #fef08a;
+    }
+    .banner-close-trigger {
+      position: absolute;
+      right: 16px;
+      top: 50%;
+      transform: translateY(-50%);
+      background: transparent;
+      border: none;
+      color: #ffffff;
+      cursor: pointer;
+      font-size: 20px;
+      font-weight: bold;
+      line-height: 1;
+      padding: 4px 8px;
+      border-radius: 4px;
+    }
+    .banner-close-trigger:hover,
+    .banner-close-trigger:focus {
+      background-color: rgba(255, 255, 255, 0.2);
+      outline: none;
+    }
 
-        /* Shelter Registry Style */
-        .shelter-list { list-style: none; }
-        .shelter-item { margin-bottom: 12px; }
-        .shelter-link { 
-            display: block; padding: 15px; background: #222227; color: var(--text-main); 
-            text-decoration: none; border-radius: 6px; border-left: 4px solid var(--accent-alert);
-            transition: transform 0.2s, background 0.2s;
-        }
-        .shelter-link:hover { background: #2b2b33; transform: translateX(5px); }
+    /* Tab Panel Styling */
+    .tab-panel-container {
+      max-width: 1280px;
+      margin: 16px auto;
+      padding: 0 16px;
+    }
+    .tab-panel-menu {
+      display: flex;
+      list-style: none;
+      border-bottom: 2px solid var(--border);
+      background: var(--bg-card);
+      border-radius: var(--radius) var(--radius) 0 0;
+    }
+    .tab-panel-menu li button {
+      display: block;
+      padding: 12px 20px;
+      text-decoration: none;
+      color: var(--text-muted);
+      font-weight: 600;
+      background: transparent;
+      border: none;
+      cursor: pointer;
+      transition: color 0.2s;
+    }
+    .tab-panel-menu li button:hover,
+    .tab-panel-menu li button:focus {
+      color: #f1f5f9;
+      outline: none;
+    }
+    .tab-panel-menu li button.active-tab {
+      color: #f59e0b;
+      border-bottom: 3px solid #f59e0b;
+      margin-bottom: -2px;
+    }
+    .tab-content {
+      display: none;
+      background: var(--bg-card);
+      padding: 20px;
+      border: 1px solid var(--border);
+      border-top: none;
+      border-radius: 0 0 var(--radius) var(--radius);
+    }
+    .tab-content.active-panel {
+      display: block;
+    }
+    .logs-container, .books-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 12px;
+      margin-top: 12px;
+    }
+    .item-link {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 12px 14px;
+      background: #0f172a;
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      color: #38bdf8;
+      text-decoration: none;
+      font-weight: 500;
+      transition: all 0.2s ease;
+    }
+    .item-link:hover, .item-link:focus {
+      background: #1e293b;
+      border-color: #38bdf8;
+      outline: none;
+    }
+    .book-box {
+      background: #0f172a;
+      padding: 14px;
+      border-radius: var(--radius);
+      border-left: 4px solid #f59e0b;
+    }
 
-        /* Dynamic Bookshelf Styling */
-        .bookshelf { display: flex; flex-direction: column; gap: 15px; }
-        .book-card { background: #222227; padding: 15px; border-radius: 6px; border-top: 3px solid var(--accent-link); }
-        .book-title { font-weight: bold; color: #fff; margin-bottom: 5px; }
-        .book-focus { font-size: 0.9rem; color: var(--text-muted); }
-
-        /* Global Footer */
-        footer { margin-top: 5px; border-top: 1px solid #2d2d34; padding-top: 20px; font-size: 0.85rem; color: var(--text-muted); text-align: center; }
-    </style>
-    <!-- Include production-grade jQuery CDN -->
-    <script src="https://jquery.com" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    .fb-zebra-even { background-color: rgba(30, 41, 59, 0.4); }
+    .fb-zebra-odd { background-color: rgba(15, 23, 42, 0.6); }
+    .fb-card-hover-state { border-color: rgba(245, 158, 11, 0.4) !important; transform: translateY(-1px); }
+  </style>
 </head>
-<body>
+<body class="min-h-screen text-slate-100 flex flex-col font-sans bg-slate-950">
 
-<div class="container">
-    <!-- Immediate Action Emergency Interventions -->
-    <div class="emergency-banner" role="alert">
-        <h2>⚠️ SYSTEM CRITICAL LIFELINES (IMMEDIATE ASSISTANCE)</h2>
-        <div class="emergency-grid">
-            <div>DHS Crisis Ombudsman: <a href="tel:18009946494">800-994-6494</a></div>
-            <div>The Legal Aid Society: <a href="tel:12125773300">212-577-3300</a></div>
-            <div>Coalition for the Homeless: <a href="tel:12127762000">212-776-2000</a></div>
+  <!-- 1. Superfish Multi-Book Navigation Bar -->
+  <nav aria-label="Book Documentation Navigation">
+    <ul id="sfNav" class="sf-menu">
+      <li><a href="html5-ch1-7.html">Book 1: HTML5 &amp; CSS3</a>
+        <ul>
+          <li><a href="index.html">Main Index &amp; Home</a></li>
+          <li><a href="starter-page.html">Starter Page Blueprint</a></li>
+          <li><a href="gallery-page-validated.html">Validated Gallery</a></li>
+          <li><a href="gallery-layouts">Multi-Column Layouts &raquo;</a>
+            <ul>
+              <li><a href="gallery-one-col.html">1-Column Gallery</a></li>
+              <li><a href="gallery-2col.html">2-Column Gallery</a></li>
+              <li><a href="gallery-3col-mix.html">3-Column Mixed Grid</a></li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+
+      <li><a href="wagon_Y.t-validated.html">Book 2: JS &amp; Dynamic Media</a>
+        <ul>
+          <li><a href="#discussion" class="nav-hash-link">News &amp; Events Feed</a></li>
+          <li><a href="#members" class="nav-hash-link">Membership Portal</a></li>
+          <li><a href="media-showcases">Media Engines &raquo;</a>
+            <ul>
+              <li><a href="video-tag.html">Music Studio Player</a></li>
+              <li><a href="video-tag-and-vimeo.html">Movie &amp; Vimeo Studio</a></li>
+              <li><a href="wagon-YT.html">YouTube Video Wagon</a></li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+
+      <li><a href="fashion-blog.html">Book 3: Advanced UI Systems</a>
+        <ul>
+          <li><a href="three-col-hotels.html">Real Estate &amp; Directory</a></li>
+          <li><a href="background-ex7-transp.html">Transparent Theme Engine</a></li>
+          <li><a href="volunteers">Volunteer Portals &raquo;</a>
+            <ul>
+              <li><a href="services.html">Services Module</a></li>
+              <li><a href="yosemite.html">Karner UI Blueprint</a></li>
+              <li><a href="tweaked.html">Sunset UI Tweaks</a></li>
+              <li><a href="verifiable-code-2.html">Godart Verification</a></li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+
+      <li><a href="/registries/the-kelly">Book 4: Security &amp; Registries</a>
+        <ul>
+          <li><a href="/registries/the-kelly">Kelly Safe Haven Registry</a></li>
+          <li><a href="/registries/brc-25th-street">BRC Shelter Logs</a></li>
+          <li><a href="/registries/the-andrews">Andrews Tracking Desk</a></li>
+          <li><a href="/registries/the-travellers-hotel">Travellers Operational Logs</a></li>
+          <li><a href="/registries/breaking-ground">Breaking Ground Units</a></li>
+          <li><a href="/know-your-rights">Know Your Rights Registry</a></li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+
+  <!-- 2. Crisis Line Alert Banner -->
+  <div class="banner" role="region" aria-label="Crisis Line Alert">
+    <strong>🚨 IMMEDIATE ASSISTANCE CRISIS LINES:</strong> DHS Ombudsman: <a href="tel:18009946494">800-994-6494</a> | Legal Aid Society Homeless Rights: <a href="tel:18006492424">800-649-2424</a>
+    <button type="button" class="banner-close-trigger" aria-label="Dismiss crisis line alert">&times;</button>
+  </div>
+
+  <!-- 3. Primary Site Header -->
+  <header class="border-b border-slate-800 bg-slate-900/90 backdrop-blur sticky top-0 z-40">
+    <div class="max-w-7xl mx-auto px-4 py-3 flex flex-wrap items-center justify-between gap-4">
+      <a href="index.html" class="flex items-center gap-3 focus:outline-none focus:ring-2 focus:ring-amber-500 rounded-lg p-1">
+        <div class="p-2 bg-amber-500/10 rounded-lg border border-amber-500/20 text-amber-500 font-bold text-xl">
+          fmn
         </div>
+        <span class="font-bold text-lg text-slate-100 tracking-tight">Family Media Network &amp; Archive Hub</span>
+      </a>
+
+      <!-- Portal Navigation Tabs -->
+      <nav class="flex overflow-x-auto gap-1 text-sm py-1" aria-label="Portal Navigation" role="tablist">
+        <button type="button" role="tab" aria-selected="true" data-target="#family-feed" class="tab-link active px-3 py-2 rounded-md bg-amber-500 text-slate-950 font-semibold focus:outline-none focus:ring-2 focus:ring-amber-400 transition whitespace-nowrap">Family Group Feed</button>
+        <button type="button" role="tab" aria-selected="false" data-target="#shelters" class="tab-link px-3 py-2 rounded-md text-slate-300 font-medium hover:text-white hover:bg-slate-800 focus:outline-none focus:ring-2 focus:ring-amber-500 transition whitespace-nowrap">Shelters Directory</button>
+        <button type="button" role="tab" aria-selected="false" data-target="#community" class="tab-link px-3 py-2 rounded-md text-slate-300 font-medium hover:text-white hover:bg-slate-800 focus:outline-none focus:ring-2 focus:ring-amber-500 transition whitespace-nowrap">Community Node</button>
+        <button type="button" role="tab" aria-selected="false" data-target="#voices" class="tab-link px-3 py-2 rounded-md text-slate-300 font-medium hover:text-white hover:bg-slate-800 focus:outline-none focus:ring-2 focus:ring-amber-500 transition whitespace-nowrap">Survivor Voices</button>
+        <button type="button" role="tab" aria-selected="false" data-target="#resources" class="tab-link px-3 py-2 rounded-md text-slate-300 font-medium hover:text-white hover:bg-slate-800 focus:outline-none focus:ring-2 focus:ring-amber-500 transition whitespace-nowrap">Legal Resources</button>
+        <button type="button" role="tab" aria-selected="false" data-target="#action" class="tab-link px-3 py-2 rounded-md text-slate-300 font-medium hover:text-white hover:bg-slate-800 focus:outline-none focus:ring-2 focus:ring-amber-500 transition whitespace-nowrap">Action Center</button>
+      </nav>
+
+      <button type="button" id="openAuthModal" class="px-4 py-2 border border-amber-500/50 text-amber-400 hover:bg-amber-500/10 active:bg-amber-500/20 rounded-lg text-sm font-medium transition focus:outline-none focus:ring-2 focus:ring-amber-500">
+        Portal Login
+      </button>
+    </div>
+  </header>
+
+  <!-- 4. Tabbed Panel Block (Shelter & Book Specs) -->
+  <div class="tab-panel-container">
+    <ul class="tab-panel-menu" role="tablist">
+      <li><button type="button" id="tab-shelter-btn" data-panel="#shelter-registries-panel" class="active-tab" role="tab" aria-selected="true">Shelter Logs &amp; Registries</button></li>
+      <li><button type="button" id="tab-ref-btn" data-panel="#reference-materials-panel" role="tab" aria-selected="false">Development Resource Manuals</button></li>
+    </ul>
+
+    <!-- Shelter Logs Panel -->
+    <div id="shelter-registries-panel" class="tab-content active-panel" role="tabpanel" aria-labelledby="tab-shelter-btn">
+      <h2 class="text-lg font-bold text-amber-400">Active Transitional Facility Logs</h2>
+      <div class="logs-container">
+        <a class="item-link" href="/registries/the-kelly"><span>The Kelly Safe Haven Dashboard</span><span class="text-xs text-slate-400">View &rarr;</span></a>
+        <a class="item-link" href="/registries/the-andrews"><span>The Andrews Transitional Intake Log</span><span class="text-xs text-slate-400">View &rarr;</span></a>
+        <a class="item-link" href="/registries/the-travellers-hotel"><span>The Travellers Hotel Operational Database</span><span class="text-xs text-slate-400">View &rarr;</span></a>
+        <a class="item-link" href="/registries/breaking-ground"><span>Breaking Ground Scattered Housing Units</span><span class="text-xs text-slate-400">View &rarr;</span></a>
+        <a class="item-link" href="/registries/brc-25th-street"><span>BRC Homeless Transition Center (25th St)</span><span class="text-xs text-slate-400">View &rarr;</span></a>
+        <a class="item-link" href="/know-your-rights"><span>Know Your Rights Legal Assistance Guide</span><span class="text-xs text-slate-400">View &rarr;</span></a>
+      </div>
     </div>
 
-    <header>
-        <h1>Family Media Network</h1>
-        <p>A high-security, dual-purpose ecosystem. This deployment showcases masterclass technical web development framework literature while serving as a secure, decentralized tracking registry for survivors of municipal shelter systemic abuse.</p>
-    </header>
+    <!-- Core Manuals Panel -->
+    <div id="reference-materials-panel" class="tab-content" role="tabpanel" aria-labelledby="tab-ref-btn">
+      <h2 class="text-lg font-bold text-amber-400">Core Development Manuals</h2>
+      <div class="books-container">
+        <div class="book-box">
+          <strong>Book 1: HTML5 &amp; CSS3 Manual</strong>
+          <p class="text-xs text-slate-400 mt-1">Structural validation layouts, cross-browser fluid canvas configuration properties, and multi-column gallery components.</p>
+        </div>
+        <div class="book-box">
+          <strong>Book 2: JS &amp; Dynamic Media Project Blueprint</strong>
+          <p class="text-xs text-slate-400 mt-1">Asynchronous multi-platform audio studio engines, local media streams, and custom video canvas integration patterns.</p>
+        </div>
+        <div class="book-box">
+          <strong>Book 3: Advanced UI &amp; Form Systems</strong>
+          <p class="text-xs text-slate-400 mt-1">Transparent design configuration variables, real estate catalogs, and localized high-contrast template rules.</p>
+        </div>
+        <div class="book-box">
+          <strong>Book 4: Security Protocols &amp; Facility Ledgers</strong>
+          <p class="text-xs text-slate-400 mt-1">Encrypted data ledgers, local client intake tables, multi-tier system parameters, and tenant rights matrices.</p>
+        </div>
+      </div>
+    </div>
+  </div>
 
-    <main class="dashboard-grid">
-        <!-- Shelter Portal Engine (Repo 2 Elements) -->
-        <section class="panel">
-            <h2>Exposing Shelter Abuse Registries</h2>
-            <p style="margin-bottom: 15px; font-size: 0.95rem; color: var(--text-muted);">Select an operational monitoring dashboard to analyze tracked incidents, evidence timelines, and human rights oversight reports:</p>
-            <ul class="shelter-list">
-                <li class="shelter-item"><a class="shelter-link" href="/registries/the-kelly">The Kelly Safe Haven Dashboard</a></li>
-                <li class="shelter-item"><a class="shelter-link" href="/registries/the-andrews">The Andrews Safe Haven Dashboard</a></li>
-                <li class="shelter-item"><a class="shelter-link" href="/registries/the-travellers-hotel">The Travellers Hotel Transitional Portal</a></li>
-                <li class="shelter-item"><a class="shelter-link" href="/registries/breaking-ground">Breaking Ground Monitored Units</a></li>
-                <li class="shelter-item"><a class="shelter-link" href="/registries/brc-25th-street">BRC Transitional Shelter (25th Street)</a></li>
+  <!-- 5. Main Content Wrapper -->
+  <main class="flex-grow max-w-7xl w-full mx-auto px-4 py-6">
+
+    <!-- Notification Toast -->
+    <div id="statusToast" class="hidden mb-6 p-4 rounded-xl border bg-emerald-500/10 border-emerald-500/30 text-emerald-400 text-sm flex items-center justify-between" role="alert">
+      <span id="statusToastMsg"></span>
+      <button type="button" onclick="$('#statusToast').addClass('hidden')" class="text-emerald-400 hover:text-white font-bold p-1 rounded focus:outline-none focus:ring-2 focus:ring-emerald-400" aria-label="Dismiss Toast">&times;</button>
+    </div>
+
+    <!-- SECTION A: FAMILY MEDIA NETWORK FEED -->
+    <section id="family-feed" class="portal-section block space-y-6">
+      
+      <!-- Group Hero Banner -->
+      <div class="bg-slate-900 border border-slate-800 rounded-2xl overflow-hidden">
+        <div class="grid grid-cols-4 h-32 bg-slate-800 text-3xl text-center items-center">
+          <div>🌅</div>
+          <div>🏖️</div>
+          <div>🌳</div>
+          <div>🎄</div>
+        </div>
+        <div class="p-6">
+          <h1 class="text-2xl font-extrabold text-amber-400">Family Media Network</h1>
+          <p class="text-sm text-slate-400 mt-1">🔒 Private group &bull; <strong>12 members</strong></p>
+          <div class="mt-4 p-3 bg-amber-500/10 border border-amber-500/20 rounded-lg text-xs text-amber-300">
+            <strong>Welcome!</strong> This is a private space for our family. Posts are visible to everyone with the link.
+          </div>
+        </div>
+      </div>
+
+      <!-- Main Layout Grid -->
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+        
+        <!-- Left Content Column -->
+        <div class="lg:col-span-2 space-y-6">
+          
+          <!-- Post Composer -->
+          <div class="p-5 bg-slate-900 border border-slate-800 rounded-xl space-y-3">
+            <label for="postInput" class="font-bold text-slate-200 block">Create Post</label>
+            <textarea id="postInput" rows="3" placeholder="What's on your mind, family?" class="w-full bg-slate-950 border border-slate-700 rounded-lg p-3 text-sm text-slate-100 focus:outline-none focus:border-amber-500 focus:ring-1 focus:ring-amber-500"></textarea>
+            <button type="button" id="postBtn" class="px-4 py-2 bg-amber-500 text-slate-950 font-bold rounded-lg hover:bg-amber-400 active:bg-amber-600 transition text-sm focus:outline-none focus:ring-2 focus:ring-amber-500">Share Post</button>
+          </div>
+
+          <!-- Discussion Stream -->
+          <div id="discussion" class="p-5 bg-slate-900 border border-slate-800 rounded-xl space-y-4">
+            <h2 class="text-xl font-bold text-slate-100">Discussion</h2>
+            <div id="postsContainer" class="space-y-3">
+              <div class="p-4 bg-slate-950 border border-slate-800 rounded-lg">
+                <div class="flex justify-between text-xs text-slate-400 mb-1">
+                  <strong class="text-slate-200 text-sm">Grandma Rose</strong>
+                  <span>2 hours ago</span>
+                </div>
+                <p class="text-sm text-slate-300">Looking forward to seeing everyone at the birthday call this Friday! Bring your funny stories.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Members Section -->
+          <div id="members" class="p-5 bg-slate-900 border border-slate-800 rounded-xl space-y-4">
+            <h2 class="text-xl font-bold text-slate-100">Members Roster</h2>
+            <div class="overflow-x-auto">
+              <table id="membersTable" class="w-full text-left text-sm">
+                <thead>
+                  <tr class="border-b border-slate-800 text-slate-400">
+                    <th class="p-2"><button type="button" onclick="sortTable(0)" class="font-semibold text-slate-300 hover:text-amber-400 focus:outline-none">Name ⇅</button></th>
+                    <th class="p-2"><button type="button" onclick="sortTable(1)" class="font-semibold text-slate-300 hover:text-amber-400 focus:outline-none">Family Branch ⇅</button></th>
+                    <th class="p-2"><button type="button" onclick="sortTable(2)" class="font-semibold text-slate-300 hover:text-amber-400 focus:outline-none">City ⇅</button></th>
+                    <th class="p-2"><button type="button" onclick="sortTable(3)" class="font-semibold text-slate-300 hover:text-amber-400 focus:outline-none">Joined ⇅</button></th>
+                  </tr>
+                </thead>
+                <tbody class="divide-y divide-slate-800/50 text-slate-300">
+                  <tr><td class="p-2">Grandma Rose ⭐</td><td class="p-2">Founders</td><td class="p-2">Portland</td><td class="p-2">2024</td></tr>
+                  <tr><td class="p-2">Grandpa Walt ⭐</td><td class="p-2">Founders</td><td class="p-2">Portland</td><td class="p-2">2024</td></tr>
+                  <tr><td class="p-2">Uncle Marcus</td><td class="p-2">Carter</td><td class="p-2">Denver</td><td class="p-2">2024</td></tr>
+                  <tr><td class="p-2">Aunt Priya</td><td class="p-2">Carter</td><td class="p-2">Denver</td><td class="p-2">2024</td></tr>
+                  <tr><td class="p-2">Dad</td><td class="p-2">Bennett</td><td class="p-2">Seattle</td><td class="p-2">2024</td></tr>
+                  <tr><td class="p-2">Mom</td><td class="p-2">Bennett</td><td class="p-2">Seattle</td><td class="p-2">2024</td></tr>
+                  <tr><td class="p-2">Jamie</td><td class="p-2">Bennett</td><td class="p-2">Boston</td><td class="p-2">2025</td></tr>
+                  <tr><td class="p-2">Cousin Leo</td><td class="p-2">Carter</td><td class="p-2">Austin</td><td class="p-2">2025</td></tr>
+                </tbody>
+              </table>
+            </div>
+            <p class="text-xs text-slate-500">Click headers to sort table. ⭐ marks group admins.</p>
+          </div>
+
+          <!-- Photos Grid -->
+          <div id="photos" class="p-5 bg-slate-900 border border-slate-800 rounded-xl space-y-3">
+            <h2 class="text-xl font-bold text-slate-100">Photo Gallery</h2>
+            <div class="grid grid-cols-3 gap-3 text-center text-2xl">
+              <button type="button" class="aspect-square bg-slate-950 rounded-lg flex items-center justify-center border border-slate-800 hover:border-amber-500 focus:outline-none focus:ring-2 focus:ring-amber-500 transition" aria-label="View photo 1">📸</button>
+              <button type="button" class="aspect-square bg-slate-950 rounded-lg flex items-center justify-center border border-slate-800 hover:border-amber-500 focus:outline-none focus:ring-2 focus:ring-amber-500 transition" aria-label="View photo 2">🍰</button>
+              <button type="button" class="aspect-square bg-slate-950 rounded-lg flex items-center justify-center border border-slate-800 hover:border-amber-500 focus:outline-none focus:ring-2 focus:ring-amber-500 transition" aria-label="View photo 3">🎄</button>
+              <button type="button" class="aspect-square bg-slate-950 rounded-lg flex items-center justify-center border border-slate-800 hover:border-amber-500 focus:outline-none focus:ring-2 focus:ring-amber-500 transition" aria-label="View photo 4">🎓</button>
+              <button type="button" class="aspect-square bg-slate-950 rounded-lg flex items-center justify-center border border-slate-800 hover:border-amber-500 focus:outline-none focus:ring-2 focus:ring-amber-500 transition" aria-label="View photo 5">🏔️</button>
+              <button type="button" class="aspect-square bg-slate-950 rounded-lg flex items-center justify-center border border-slate-800 hover:border-amber-500 focus:outline-none focus:ring-2 focus:ring-amber-500 transition" aria-label="View photo 6">⛵</button>
+            </div>
+          </div>
+
+          <!-- Events -->
+          <div id="events" class="p-5 bg-slate-900 border border-slate-800 rounded-xl space-y-3">
+            <h2 class="text-xl font-bold text-slate-100">Upcoming Events</h2>
+            <div class="space-y-3">
+              <div class="flex gap-4 p-3 bg-slate-950 border border-slate-800 rounded-lg items-center">
+                <div class="p-2 bg-amber-500/20 text-amber-400 rounded-lg text-center font-bold min-w-[50px]">
+                  <span class="block text-lg">18</span>Oct
+                </div>
+                <div class="flex-grow">
+                  <h3 class="font-bold text-slate-200">Grandpa Walt's Birthday Call</h3>
+                  <p class="text-xs text-slate-400">Video call at 6pm Pacific. Bring a story!</p>
+                </div>
+                <button type="button" class="px-3 py-1.5 bg-slate-800 hover:bg-slate-700 text-xs font-semibold text-amber-400 rounded-md transition focus:outline-none focus:ring-2 focus:ring-amber-500">RSVP</button>
+              </div>
+              <div class="flex gap-4 p-3 bg-slate-950 border border-slate-800 rounded-lg items-center">
+                <div class="p-2 bg-amber-500/20 text-amber-400 rounded-lg text-center font-bold min-w-[50px]">
+                  <span class="block text-lg">26</span>Nov
+                </div>
+                <div class="flex-grow">
+                  <h3 class="font-bold text-slate-200">Thanksgiving at the Bennetts'</h3>
+                  <p class="text-xs text-slate-400">Potluck signups open in comments.</p>
+                </div>
+                <button type="button" class="px-3 py-1.5 bg-slate-800 hover:bg-slate-700 text-xs font-semibold text-amber-400 rounded-md transition focus:outline-none focus:ring-2 focus:ring-amber-500">RSVP</button>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Right Sidebar -->
+        <div class="space-y-6">
+          <div class="p-5 bg-slate-900 border border-slate-800 rounded-xl space-y-3 text-sm">
+            <h3 class="font-bold text-slate-200 text-base">About Network</h3>
+            <p class="text-slate-400">Our family's digital home: news, photo records, and event schedules.</p>
+            <ul class="space-y-2 text-xs text-slate-300 border-t border-slate-800 pt-3">
+              <li>🔒 <b>Private Access:</b> Only link holders can participate.</li>
+              <li>📍 <b>Locations:</b> Portland, Denver, Seattle, Atlanta</li>
             </ul>
-            <div style="margin-top: 20px;">
-                <a href="/know-your-rights" style="color: var(--accent-secure); font-weight: bold; text-decoration: none;">➔ Access "Know Your Rights" Section (Undocumented & Disabled Guides)</a>
+          </div>
+
+          <div class="p-5 bg-slate-900 border border-slate-800 rounded-xl space-y-2">
+            <h3 class="font-bold text-amber-400 text-base">Next Gathering</h3>
+            <p class="text-xs text-slate-300">🎉 Grandpa Walt's Birthday Call on <strong>Oct 18</strong></p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECTION B: SHELTERS DIRECTORY -->
+    <section id="shelters" class="portal-section hidden space-y-6">
+      <div class="flex flex-col md:flex-row md:items-center justify-between gap-4">
+        <h2 class="text-xl font-bold text-slate-100">Systemic Facility Tracking Directory</h2>
+        <div class="w-full md:w-80">
+          <label for="shelterSearch" class="sr-only">Search facilities</label>
+          <input type="text" id="shelterSearch" placeholder="Search facilities or locations..." class="bg-slate-900 border border-slate-700 rounded-lg px-4 py-2 text-sm text-slate-100 placeholder-slate-500 focus:outline-none focus:border-amber-500 focus:ring-1 focus:ring-amber-500 w-full">
+        </div>
+      </div>
+
+      <div class="grid md:grid-cols-2 gap-4" id="shelterDirectory">
+        <div class="facility-card p-5 bg-slate-900 border border-slate-800 rounded-xl transition-all hover:border-slate-700">
+          <div class="flex justify-between items-start gap-2">
+            <h3 class="font-bold text-slate-100">Downtown Emergency Shelter</h3>
+            <span class="text-xs px-2 py-1 bg-rose-500/10 border border-rose-500/20 text-rose-400 rounded-md whitespace-nowrap">12 Incidents Logged</span>
+          </div>
+          <p class="text-sm text-slate-400 mt-2"><strong>Location:</strong> Manhattan Sector</p>
+          <p class="text-xs text-slate-500 mt-1">Status: Operating Capacity Operational</p>
+          <a href="/registries/brc-25th-street" class="inline-block mt-3 text-xs font-semibold text-amber-400 hover:underline">View Detailed Registry &rarr;</a>
+        </div>
+
+        <div class="facility-card p-5 bg-slate-900 border border-slate-800 rounded-xl transition-all hover:border-slate-700">
+          <div class="flex justify-between items-start gap-2">
+            <h3 class="font-bold text-slate-100">Metro Advocacy Action Center</h3>
+            <span class="text-xs px-2 py-1 bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 rounded-md whitespace-nowrap">0 Open Violations</span>
+          </div>
+          <p class="text-sm text-slate-400 mt-2"><strong>Location:</strong> Brooklyn District</p>
+          <p class="text-xs text-slate-500 mt-1">Status: Resources Available</p>
+          <a href="/registries/the-kelly" class="inline-block mt-3 text-xs font-semibold text-amber-400 hover:underline">View Detailed Registry &rarr;</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION C: COMMUNITY NODE HUB -->
+    <section id="community" class="portal-section hidden space-y-6">
+      <div class="bg-slate-900 border border-slate-800 rounded-2xl overflow-hidden">
+        <div class="p-6 bg-slate-800/50 border-b border-slate-800 flex justify-between items-center flex-wrap gap-4">
+          <div>
+            <span class="text-xs font-semibold px-2.5 py-0.5 rounded-full bg-emerald-500/10 text-emerald-400 border border-emerald-500/20">🔒 Community Node</span>
+            <h2 class="text-xl font-bold text-slate-100 mt-2">HTML5 Event Development &amp; Web Design Group</h2>
+            <p class="text-xs text-slate-400 mt-1">Active Sandbox &bull; <strong>128 Members</strong></p>
+          </div>
+        </div>
+
+        <!-- Feed Content Filters -->
+        <div class="p-6 space-y-4">
+          <div class="fb-filter-action-deck flex items-center gap-2 pb-2 overflow-x-auto">
+            <span class="text-xs text-slate-400 font-medium whitespace-nowrap">Filter Posts:</span>
+            <button type="button" class="fb-ninja-btn active-filter text-xs px-3 py-1.5 rounded-lg bg-amber-500 text-slate-950 font-bold focus:outline-none focus:ring-2 focus:ring-amber-500" data-filter="all">All Content</button>
+            <button type="button" class="fb-ninja-btn text-xs px-3 py-1.5 rounded-lg bg-slate-800 text-slate-300 font-medium hover:bg-slate-700 focus:outline-none focus:ring-2 focus:ring-amber-500" data-filter="announcement">📢 Announcements</button>
+            <button type="button" class="fb-ninja-btn text-xs px-3 py-1.5 rounded-lg bg-slate-800 text-slate-300 font-medium hover:bg-slate-700 focus:outline-none focus:ring-2 focus:ring-amber-500" data-filter="code-snippet">💻 Code Repos</button>
+          </div>
+
+          <div class="space-y-3">
+            <div class="fb-post-card stream-item-row p-4 rounded-xl border border-slate-800 bg-slate-950/50" data-post-type="announcement">
+              <strong class="text-sm text-amber-400 block">Orris Baker</strong>
+              <p class="text-xs text-slate-300 mt-1">Consolidated structural hub page actively deploying code layouts from Practical HTML5 Projects.</p>
             </div>
-        </section>
-
-        <!-- Dynamic Book Presentation Shelf (Repo 3 Mounting) -->
-        <section class="panel">
-            <h2>Educational Framework Showcase</h2>
-            <p style="margin-bottom: 15px; font-size: 0.95rem; color: var(--text-muted);">Asynchronous literature mount streaming architectural books utilized to build this ecosystem:</p>
-            <div id="dynamicBookshelf" class="bookshelf">
-                <p style="color: var(--text-muted);">Connecting to local bookshelf data stream API...</p>
+            <div class="fb-post-card stream-item-row p-4 rounded-xl border border-slate-800 bg-slate-950/50" data-post-type="code-snippet">
+              <strong class="text-sm text-cyan-400 block">Workspace Bot</strong>
+              <p class="text-xs text-slate-300 mt-1">Automated deployment pipelines operating smoothly across edge nodes.</p>
             </div>
-        </section>
-    </main>
+          </div>
+        </div>
+      </div>
+    </section>
 
-    <footer>
-        <p>🔒 <strong>TRAUMA-INFORMED PLATFORM DISCLOSER:</strong> Family Media Network operates entirely as an independent advocacy, community documentation, and educational system. This interface does not substitute for formal court-filed legal representation or emergency medical response. No user IP addresses or visitor metadata variables are preserved within server execution chains.</p>
-    </footer>
-</div>
+    <!-- SECTION D: SURVIVOR VOICES FORM -->
+    <section id="voices" class="portal-section hidden max-w-2xl mx-auto space-y-6">
+      <h2 class="text-xl font-bold text-slate-100">Survivor Documentation Form</h2>
+      <form id="advocacyForm" class="space-y-4 bg-slate-900 p-6 rounded-xl border border-slate-800">
+        <div>
+          <label for="incidentType" class="block text-sm font-medium text-slate-300 mb-1">Classification</label>
+          <select id="incidentType" required class="w-full bg-slate-950 border border-slate-700 rounded-lg px-3 py-2 text-sm text-slate-200 focus:outline-none focus:border-amber-500 focus:ring-1 focus:ring-amber-500">
+            <option value="housing">Housing &amp; Shelter Violations</option>
+            <option value="mistreatment">Systemic Care Mistreatment</option>
+            <option value="legal">Civil Rights Infringements</option>
+          </select>
+        </div>
+        <div>
+          <label for="narrative" class="block text-sm font-medium text-slate-300 mb-1">Details &amp; Narrative</label>
+          <textarea id="narrative" rows="4" required placeholder="Describe the incident or documentation record..." class="w-full bg-slate-950 border border-slate-700 rounded-lg p-3 text-sm text-slate-100 focus:outline-none focus:border-amber-500 focus:ring-1 focus:ring-amber-500"></textarea>
+        </div>
+        <button type="submit" class="w-full py-2.5 bg-amber-500 hover:bg-amber-400 text-slate-950 font-bold rounded-lg transition text-sm focus:outline-none focus:ring-2 focus:ring-amber-500">
+          Submit Confidential Log
+        </button>
+      </form>
+    </section>
 
-<!-- jQuery: Novice to Ninja Dynamic API Injection Script -->
-<script>
-    (function($) {
-        "use strict";
-        $(document).ready(function() {
-            var $bookshelfContainer = $('#dynamicBookshelf');
+    <!-- SECTION E: LEGAL RESOURCES -->
+    <section id="resources" class="portal-section hidden space-y-6">
+      <h2 class="text-xl font-bold text-slate-100">Legal Resources &amp; Rights Portal</h2>
+      <div class="grid md:grid-cols-2 gap-4">
+        <div class="p-5 bg-slate-900 border border-slate-800 rounded-xl">
+          <h3 class="font-bold text-amber-400 text-lg">Tenant Rights Matrix</h3>
+          <p class="text-sm text-slate-400 mt-2">Comprehensive protection guides and legal advocacy procedures.</p>
+        </div>
+        <div class="p-5 bg-slate-900 border border-slate-800 rounded-xl">
+          <h3 class="font-bold text-amber-400 text-lg">Ombudsman Guidelines</h3>
+          <p class="text-sm text-slate-400 mt-2">Formal complaint processes and oversight contact documentation.</p>
+        </div>
+      </div>
+    </section>
 
-            // Fetch metadata cleanly from our Express server endpoint
-            $.ajax({
-                url: '/api/bookshelf',
-                method: 'GET',
-                dataType: 'json',
-                success: function(bookData) {
-                    $bookshelfContainer.empty(); // Clear out the loading notice
-                    
-                    if(bookData && bookData.length > 0) {
-                        $.each(bookData, function(index, book) {
-                            var bookMarkup = `
-                                <div class="book-card">
-                                    <div class="book-title">[Book ${book.id}] ${book.title}</div>
-                                    <div class="book-focus"><strong>Deployment Role:</strong> ${book.focus}</div>
-                                    <div style="font-size: 0.8rem; color: var(--accent-link); margin-top: 4px;">Repository: ${book.category}</div>
-                                </div>
-                            `;
-                            $bookshelfContainer.append(bookMarkup);
-                        });
-                    } else {
-                        $bookshelfContainer.html('<p>No source text configurations found.</p>');
-                    }
-                },
-                error: function() {
-                    $bookshelfContainer.html('<p style="color: var(--accent-alert);">⚠️ Unexpected breakdown loading the dynamic textbook array.</p>');
-                }
-            });
-        });
-    })(jQuery);
-</script>
+    <!-- SECTION F: ACTION CENTER -->
+    <section id="action" class="portal-section hidden space-y-6">
+      <h2 class="text-xl font-bold text-slate-100">Advocacy Action Center</h2>
+      <div class="p-6 bg-slate-900 border border-slate-800 rounded-xl space-y-4">
+        <p class="text-sm text-slate-300">Take direct action by connecting with representatives and local community groups.</p>
+        <button type="button" class="px-4 py-2 bg-amber-500 text-slate-950 font-bold rounded-lg hover:bg-amber-400 transition text-sm">
+          Download Accountability Ledger
+        </button>
+      </div>
+    </section>
 
-</body>
+  </main>
+
+  <!-- Auth Modal -->
+  <div id="authModal" class="fixed inset-0 bg-slate-950/80 backdrop-blur-sm hidden items-center justify-center p-4 z-50" role="dialog" aria-modal="true">
+    <div class="bg-slate-900 border border-slate-800 rounded-2xl max-w-md w-full p-6 space-y-4">
+      <div class="flex justify-between items-center">
+        <h3 class="text-lg font-bold text-slate-100">Portal Authentication</h3>
+        <button type="button" id="closeAuthModal" class="text-slate-400 hover:text-white font-bold">&times;</button>
+      </div>
+      <form id="loginForm" class="space-y-4">
+        <div>
+          <label for="authEmail" class="block text-xs font-medium text-slate-300 mb-1">Email / Access ID</label>
+          <input type="email" id="authEmail" required class="w-full bg-slate-950 border border-slate-700 rounded-lg px-3 py-2 text-sm text-slate-100 focus:outline-none focus:border-amber-500">
+        </div>
+        <div>
+          <label for="authKey" class="block text-xs font-medium text-slate-300 mb-1">Security Key</label>
+          <input type="password" id="authKey" required class="w-full bg-slate-950 border border-slate-700 rounded-lg px-3 py-2 text-sm text-slate-100 focus:outline-none focus:border-amber-500">
+        </div>
+        <button type="submit" class="w-full py-2 bg-amber-500 text-slate-950 font-bold rounded-lg hover:bg-amber-400 text-sm">
+          Authenticate Access
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Interactive JavaScript Engine -->
+  <script>
+    $(document).ready(function() {
+      // 1. Banner Dismissal
+      $('.banner-close-trigger').on('click', function() {$(this).closest('.banner').slideUp(200);
+      });
+
+      // 2. Main Navigation Tabs Logic
+      $('.tab-link').on('click', function() {
+        const target = $(this).data('target');$('.tab-link').removeClass('active bg-amber-500 text-slate-950 font-semibold')
+                   .addClass('text-slate-300 font-medium hover:text-white hover:bg-slate-800');
+        $(this).addClass('active bg-amber-500 text-slate-950 font-semibold')
+               .removeClass('text-slate-300 font-medium hover:text-white hover:bg-slate-800');
+        
+        $('.portal-section').addClass('hidden').removeClass('block');$(target).removeClass('hidden').addClass('block');
+      });
+
+      // 3. Tab Panel Switching (Shelter vs Manuals)
+      $('.tab-panel-menu button').on('click', function() {
+        const targetPanel = $(this).data('panel');
+        
+        $('.tab-panel-menu button').removeClass('active-tab').attr('aria-selected', 'false');$(this).addClass('active-tab').attr('aria-selected', 'true');
+        
+        $('.tab-content').removeClass('active-panel');$(targetPanel).addClass('active-panel');
+      });
+
+      // 4. Modal Display Controls
+      $('#openAuthModal').on('click', function() {
+        $('#authModal').removeClass('hidden').addClass('flex');
+      });
+      $('#closeAuthModal').on('click', function() {
+        $('#authModal').addClass('hidden').removeClass('flex');
+      });
+
+      // 5. Dynamic Post Creation
+      $('#postBtn').on('click', function() {
+        const text = $('#postInput').val().trim();
+        if (text) {
+          const postMarkup = `
+            <div class="p-4 bg-slate-950 border border-slate-800 rounded-lg">
+              <div class="flex justify-between text-xs text-slate-400 mb-1">
+                <strong class="text-amber-400 text-sm">You</strong>
+                <span>Just now</span>
+              </div>
+              <p class="text-sm text-slate-300">${text}</p>
+            </div>`;
+          $('#postsContainer').prepend(postMarkup);
+          $('#postInput').val('');
+          showToast('Post published successfully!');
+        }
+      });
+
+      // 6. Community Feed Filters
+      $('.fb-ninja-btn').on('click', function() {
+        const filter = $(this).data('filter');$('.fb-ninja-btn').removeClass('active-filter bg-amber-500 text-slate-950 font-bold')
+                           .addClass('bg-slate-800 text-slate-300 font-medium');
+        $(this).addClass('active-filter bg-amber-500 text-slate-950 font-bold')
+               .removeClass('bg-slate-800 text-slate-300 font-medium');
+
+        if (filter === 'all') {
+          $('.fb-post-card').show();
+        } else {
+          $('.fb-post-card').hide();$(`.fb-post-card[data-post-type="${filter}"]`).show();
+        }
+      });
+
+      // 7. Advocacy Form Submission
+      $('#advocacyForm').on('submit', function(e) {
+        e.preventDefault();
+        showToast('Documentation log securely recorded.');
+        this.reset();
+      });
+
+      // Helper: Toast Notifications
+      function showToast(msg) {
+        $('#statusToastMsg').text(msg);
+        $('#statusToast').removeClass('hidden');
+        setTimeout(() => { $('#statusToast').addClass('hidden'); }, 4000);
+      }
+    });
+
+    // 8. Members Table Sorting Functionality
+    function sortTable(columnIndex) {
+      const table = document.getElementById("membersTable");
+      let rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
+      switching = true;
+      dir = "asc";
+      while (switching) {
+        switching = false;
+        rows = table.rows;
+        for (i = 1; i < (rows.length - 1); i++) {
+          shouldSwitch = false;
+          x = rows[i].getElementsByTagName("TD")[columnIndex];
+          y = rows[i + 1].getElementsByTagName("TD")[columnIndex];
+          if (dir == "asc") {
+            if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
+              shouldSwitch = true;
+              break;
+            }
+          } else if (dir == "desc") {
+            if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()) {
+              shouldSwitch = true;
+              break;
+            }
+          }
+        }
+        if (shouldSwitch) {
+          rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
+          switching = true;
+          switchcount++;
+        } else {
+          if (switchcount == 0 && dir == "asc") {
+            dir = "desc";
+            switching = true;
+          }
+        }
+      }
+    }
+  </script>
+  </body>
 </html>
