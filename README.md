@@ -1,14 +1,28 @@
 # Family Media Network
 
-An advocacy, documentation, and resource platform built to expose systemic abuse, mistreatment, and trauma within New York City’s safe haven and transitional shelter systems—specifically highlighting the experiences of disabled and undocumented survivors facing hostility from both staff and clients.
+An advocacy, documentation, and resource platform built to expose systemic abuse, mistreatment, and trauma within New York City's safe haven and transitional shelter systems—specifically highlighting **The Kelly**, **The Andrews**, **The Travelle**, and related facilities.
 
 This platform serves as a tool to amplify survivor voices, pressure policymakers, and provide actionable legal resources for advocacy teams.
 
 ---
 
+## 🌐 Community & Engagement
+
+### **Join Our Facebook Community**
+Connect with developers, advocates, and community members working on HTML5 event development and web design for social justice projects:
+
+- **[HTML5 Event Development & Web Design](https://www.facebook.com/groups/html5eventdev)** — Our primary Facebook Group for HTML5 event development, web design collaboration, and technical discussions
+- **[Family Media Network Community](https://www.facebook.com/groups/familymedianetwork)** — Community support and advocacy coordination
+
+### **Related Projects**
+- [Creating-a-website](https://github.com/orris0/creating-a-website) — Web design fundamentals and HTML5 project templates
+- [academicpages.github.io](https://github.com/orris0/academicpages.github.io) — Portfolio framework and documentation layouts
+
+---
+
 ## 📌 Project Objectives
 
-*   **Document Institutional Trauma:** Provide a secure, visible record of ongoing abuse and structural failures within specific NYC sites, including **The Kelly**, **The Andrews**, **The Travellers Hotel**, and **Breaking Ground**.
+*   **Document Institutional Trauma:** Provide a secure, visible record of ongoing abuse and structural failures within specific NYC sites, including **The Kelly**, **The Andrews**, **The Travelle**, and other facilities.
 *   **Know Your Rights Advocacy:** Equip highly vulnerable populations (specifically undocumented and disabled individuals) with plain-language legal resources to resist exploitation and neglect.
 *   **Political & Legal Mobilization:** Facilitate direct communication channels with city officials, advocacy groups, and legal defense teams to demand systematic oversight and compensation.
 
@@ -32,6 +46,23 @@ The frontend layout, responsive mechanics, and document styling are rigorously m
 *   *Practical HTML5 Projects* — Semantic page zoning and structured markup optimized for screen readers and high accessibility compliance.
 *   *CSS Secrets* — Dynamic, clean, and maintainable styles without redundant visual dependencies.
 *   *jQuery: Novice to Ninja* — Low-friction document traversal, asynchronous transitions, and robust interactive components.
+
+---
+
+## 🎨 HTML5 Event Development & Web Design
+
+This repository supports modern HTML5 event development with emphasis on:
+
+- **Semantic HTML5 markup** for accessibility and SEO
+- **Responsive web design** patterns using CSS Grid and Flexbox
+- **Event-driven architecture** for dynamic user interactions
+- **Web standards compliance** following W3C accessibility guidelines (WCAG 2.1)
+- **Mobile-first development** optimized for cross-device compatibility
+
+### Design Resources
+- Event handling and interactive components: See `public/js/` for jQuery extensions
+- Responsive layouts and CSS patterns: See `public/css/` for modern styling techniques
+- HTML5 semantic templates: See `views/` for structured markup examples
 
 ---
 
@@ -79,7 +110,7 @@ family-media-network/
 │   ├── css/            # Standard layouts and custom UI secrets
 │   ├── js/             # Interactive script utilities and jQuery extensions
 │   └── assets/         # Securely hosted visual documentation and evidence media
-├── views/              # Semantic templates
+├── views/              # Semantic HTML5 templates
 │   ├── index.html      # Main landing documentation portal
 │   ├── rights.html     # Know Your Rights interactive panel
 │   └── contact.html    # Automated email template sender to City Officials
@@ -89,6 +120,39 @@ family-media-network/
 
 ---
 
+## 📚 Learning & Development
+
+### Getting Started with Web Development
+If you're new to web development, we recommend:
+1. Start with [Creating-a-website](https://github.com/orris0/creating-a-website) for HTML5 fundamentals
+2. Study CSS techniques in [css-secrets](https://github.com/orris0/css-secrets)
+3. Learn interactive scripting with [jquery-novice-to-ninja](https://github.com/orris0/jquery-novice-to-ninja)
+4. Explore backend integration in this repository
+
+### Contributing
+We welcome contributions! Please:
+- Fork this repository
+- Create a feature branch (`git checkout -b feature/your-feature`)
+- Commit your changes with descriptive messages
+- Push to your fork and submit a Pull Request
+- Join our [HTML5 Event Development & Web Design](https://www.facebook.com/groups/html5eventdev) group to discuss
+
+---
+
 ## ⚖️ Legal Disclaimer & Security Notice
 
-This repository contains raw advocacy templates, structural web data, and operational resources meant for legal education and public awareness. All dynamic data submission systems must maintain stringent encryption thresholds to preserve the anonymity and safety of undocumented immigrants, disabled survivors, and legal whistleblowers tracking shelter system metrics.
+This repository contains raw advocacy templates, structural web data, and operational resources meant for legal education and public awareness. All dynamic data submission systems must maintain strict confidentiality protocols and GDPR compliance standards.
+
+**For sensitive survivor documentation**, ensure all submissions are encrypted and stored securely. This codebase is not suitable for storing personally identifiable information without appropriate security infrastructure.
+
+---
+
+## 📞 Support & Resources
+
+- **GitHub Issues:** Report bugs and suggest features in the [Issues tab](https://github.com/orris0/orris0/issues)
+- **Facebook Groups:** Join our community for discussion and collaboration
+- **Documentation:** See individual repositories for detailed guides
+
+---
+
+**Last Updated:** October 2026
