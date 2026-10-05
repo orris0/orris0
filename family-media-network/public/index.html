@@ -185,44 +185,330 @@
       border-top: none;
       border-radius: 0 0 var(--radius) var(--radius);
     }
-    .tab-content.active-panel {
-      display: block;
-    }
-    .logs-container, .books-container {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 12px;
-      margin-top: 12px;
-    }
-    .item-link {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      padding: 12px 14px;
-      background: #0f172a;
-      border: 1px solid var(--border);
-      border-radius: var(--radius);
-      color: #38bdf8;
-      text-decoration: none;
-      font-weight: 500;
-      transition: all 0.2s ease;
-    }
-    .item-link:hover, .item-link:focus {
-      background: #1e293b;
-      border-color: #38bdf8;
-      outline: none;
-    }
-    .book-box {
-      background: #0f172a;
-      padding: 14px;
-      border-radius: var(--radius);
-      border-left: 4px solid #f59e0b;
-    }
+:root {
+  --primary: #1877f2;
+  --primary-hover: #166fe5;
+  --bg-dark: #0f172a;
+  --bg-card: #1e293b;
+  --text-main: #f8fafc;
+  --text-muted: #94a3b8;
+  --accent: #f59e0b;
+  --border: #334155;
+  --radius: 8px;
+}
 
-    .fb-zebra-even { background-color: rgba(30, 41, 59, 0.4); }
-    .fb-zebra-odd { background-color: rgba(15, 23, 42, 0.6); }
-    .fb-card-hover-state { border-color: rgba(245, 158, 11, 0.4) !important; transform: translateY(-1px); }
-  </style>
+* { box-sizing: border-box; }
+
+/* -----------------------------------------------------------------
+   1. SUPERFISH NAVIGATION BAR
+   Secrets Applied:
+   - Translucent background-clip border (Chapter 2, Secret 1)
+   - CSS Gradient Striped Border Accent (Chapter 2, Secret 4)
+------------------------------------------------------------------- */
+.sf-menu, .sf-menu * {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.sf-menu {
+  background: var(--bg-dark);
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 14px;
+  position: relative;
+  z-index: 1000;
+  border-bottom: 2px solid transparent;
+  /* CSS Secret: Gradient border line at the bottom of the navbar */
+  border-image: linear-gradient(90deg, var(--primary), var(--accent), var(--primary)) 1;
+}
+.sf-menu li {
+  position: relative;
+  white-space: nowrap;
+}
+.sf-menu a {
+  display: flex;
+  align-items: center;
+  padding: 12px 16px;
+  color: #f1f5f9;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background 0.2s ease, color 0.2s ease;
+  min-height: 44px;
+}
+.sf-menu a:hover,
+.sf-menu a:focus {
+  background: var(--bg-card);
+  color: var(--accent);
+  outline: none;
+}
+
+/* Dropdown Menu with Frosted Glass & Dynamic Multi-Shadows */
+.sf-menu ul {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  display: none;
+  /* CSS Secret: Translucent background + backdrop blur */
+  background: rgba(30, 41, 59, 0.85);
+  backdrop-filter: blur(12px);
+  min-width: 220px;
+  /* CSS Secret: Translucent border using background-clip */
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  background-clip: padding-box;
+  /* CSS Secret: Layered box shadows for deep depth (Chapter 2, Secret 2) */
+  box-shadow: 
+    0 8px 32px rgba(0, 0, 0, 0.5),
+    inset 0 1px 0 rgba(255, 255, 255, 0.1);
+  border-radius: 0 0 var(--radius) var(--radius);
+}
+.sf-menu li:hover > ul,
+.sf-menu li:focus-within > ul {
+  display: block;
+}
+.sf-menu ul ul {
+  top: 0;
+  left: 100%;
+  border-radius: var(--radius);
+}
+.sf-menu ul a {
+  padding: 10px 14px;
+  font-size: 13px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+/* -----------------------------------------------------------------
+   2. ALERT BANNER
+   Secrets Applied:
+   - Modern Diagonal Warning Stripes (Chapter 2, Secret 4)
+------------------------------------------------------------------- */
+.banner {
+  /* CSS Secret: Linear gradient striped background pattern */
+  background-color: #991b1b;
+  background-image: repeating-linear-gradient(
+    -45deg,
+    rgba(255, 255, 255, 0.05),
+    rgba(255, 255, 255, 0.05) 15px,
+    transparent 15px,
+    transparent 30px
+  );
+  color: #ffffff;
+  padding: 12px 16px;
+  text-align: center;
+  font-size: 14px;
+  position: relative;
+  /* Inner top accent highlight using shadow */
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2);
+}
+.banner a {
+  color: #ffffff;
+  text-decoration: underline;
+  font-weight: 600;
+}
+.banner a:hover, .banner a:focus {
+  color: #fef08a;
+}
+.banner-close-trigger {
+  position: absolute;
+  right: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: #ffffff;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 1;
+  padding: 4px 8px;
+  border-radius: 4px;
+  transition: all 0.2s ease;
+}
+.banner-close-trigger:hover,
+.banner-close-trigger:focus {
+  background-color: rgba(255, 255, 255, 0.25);
+  outline: none;
+}
+
+/* -----------------------------------------------------------------
+   3. TAB PANEL STYLING & TRAPEZOID/TRADITIONAL TABS
+   Secrets Applied:
+   - Slanted / Trapezoid Tabs using transform skew (Chapter 4, Secret 17)
+------------------------------------------------------------------- */
+.tab-panel-container {
+  max-width: 1280px;
+  margin: 16px auto;
+  padding: 0 16px;
+}
+.tab-panel-menu {
+  display: flex;
+  list-style: none;
+  border-bottom: 2px solid var(--border);
+  gap: 6px;
+  padding-left: 8px;
+}
+.tab-panel-menu li button {
+  position: relative;
+  display: block;
+  padding: 10px 22px;
+  color: var(--text-muted);
+  font-weight: 600;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  transition: color 0.2s ease;
+  z-index: 1;
+}
+
+/* CSS Secret: Pure CSS Trapezoid / Slanted Tab outline background */
+.tab-panel-menu li button::before {
+  content: '';
+  position: absolute;
+  top: 0; right: 0; bottom: 0; left: 0;
+  z-index: -1;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-bottom: none;
+  border-radius: var(--radius) var(--radius) 0 0;
+  transform: scaleY(0.9) perspective(5px) rotateX(2deg);
+  transform-origin: bottom;
+  transition: background 0.2s, transform 0.2s;
+}
+
+.tab-panel-menu li button:hover::before,
+.tab-panel-menu li button:focus::before {
+  background: #273549;
+}
+
+.tab-panel-menu li button.active-tab {
+  color: var(--accent);
+}
+.tab-panel-menu li button.active-tab::before {
+  background: var(--bg-card);
+  border-color: var(--accent);
+  transform: scaleY(1) perspective(5px) rotateX(2deg);
+}
+
+.tab-content {
+  display: none;
+  background: var(--bg-card);
+  padding: 24px;
+  border: 1px solid var(--border);
+  border-top: none;
+  border-radius: 0 0 var(--radius) var(--radius);
+  /* Depth shadow for the tab body */
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.3);
+}
+.tab-content.active-panel {
+  display: block;
+}
+
+/* -----------------------------------------------------------------
+   4. CARD INTERFACES & LOG LISTS
+   Secrets Applied:
+   - Beveled Cut Corners with Gradients (Chapter 3, Secret 12)
+   - Dynamic Multi-Borders with Box Shadows (Chapter 2, Secret 2)
+------------------------------------------------------------------- */
+.logs-container, .books-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 16px;
+  margin-top: 16px;
+}
+
+/* Item Link Buttons with Glowing Borders */
+.item-link {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 16px;
+  background: var(--bg-dark);
+  color: #38bdf8;
+  text-decoration: none;
+  font-weight: 500;
+  border-radius: var(--radius);
+  /* CSS Secret: Multiple inner/outer borders using box-shadow */
+  box-shadow: 
+    0 0 0 1px var(--border),
+    0 2px 4px rgba(0, 0, 0, 0.4);
+  transition: all 0.2s ease;
+}
+.item-link:hover, .item-link:focus {
+  background: #172554;
+  color: #7dd3fc;
+  /* Expanded outer glow ring on hover */
+  box-shadow: 
+    0 0 0 1px #38bdf8,
+    0 0 12px rgba(56, 189, 248, 0.25);
+  outline: none;
+}
+
+/* CSS Secret: Book cards styled with Cut Corners (Beveled Edges) */
+.book-box {
+  background: var(--bg-dark);
+  padding: 18px;
+  color: var(--text-main);
+  /* Cut corner gradient replaces standard border-radius */
+  background: #0f172a;
+  background: linear-gradient(-135deg, transparent 15px, #0f172a 0) top right;
+  border-left: 4px solid var(--accent);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  position: relative;
+}
+.book-box::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 21px;
+  height: 21px;
+  background: linear-gradient(225deg, transparent 50%, rgba(255, 255, 255, 0.08) 50%);
+  pointer-events: none;
+}
+
+/* -----------------------------------------------------------------
+   5. ZEBRA STRIPING & HOVER STATES
+   Secrets Applied:
+   - Subtle Contrast Banding & Modern Scale Elevation
+------------------------------------------------------------------- */
+.fb-zebra-even { 
+  background-color: rgba(30, 41, 59, 0.5); 
+}
+.fb-zebra-odd { 
+  background-color: rgba(15, 23, 42, 0.7); 
+}
+
+/* CSS Secret: Smooth hover elevation effect */
+.fb-card-hover-state { 
+  border-color: rgba(245, 158, 11, 0.6) !important; 
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+}
+
+/* -----------------------------------------------------------------
+   6. BONUS SECRETS (PUE PIE CHARTS & CHECKERBOARDS)
+   Use these helper classes in your HTML widgets!
+------------------------------------------------------------------- */
+
+/* Secret: Pure CSS Checkerboard pattern for code/terminal regions */
+.cs-checkerboard {
+  background: var(--bg-dark);
+  background-image: 
+    linear-gradient(45deg, #1e293b 25%, transparent 25%, transparent 75%, #1e293b 75%),
+    linear-gradient(45deg, #1e293b 25%, transparent 25%, transparent 75%, #1e293b 75%);
+  background-size: 20px 20px;
+  background-position: 0 0, 10px 10px;
+}
+
+/* Secret: Pure CSS Pie Chart Status Indicator (e.g. for server logs/metrics) */
+.cs-pie-status {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: var(--accent);
+  background-image: linear-gradient(to right, transparent 50%, var(--primary) 0);
+  display: inline-block;
+}
+
 </head>
 <body class="min-h-screen text-slate-100 flex flex-col font-sans bg-slate-950">
 
