@@ -1,991 +1,145 @@
 <!DOCTYPE html>
-<html lang="en" class="dark">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Family Media Network - Shelter Advocacy & Web Dev Library</title>
-    <!-- Tailwind CSS -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <!-- FontAwesome Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
-    <script>
-        tailwind.config = {
-            darkMode: 'class',
-            theme: {
-                extend: {
-                    colors: {
-                        brand: {
-                            50: '#f0fdf4',
-                            100: '#dcfce7',
-                            500: '#10b981',
-                            600: '#059669',
-                            700: '#047857',
-                        },
-                        amberAccent: {
-                            500: '#f59e0b',
-                            600: '#d97706',
-                        },
-                        darkSlate: '#0f172a',
-                        cardSlate: '#1e293b',
-                    },
-                    fontFamily: {
-                        sans: ['Inter', 'sans-serif'],
-                        mono: ['JetBrains Mono', 'monospace'],
-                    }
-                }
-            }
-        }
-    </script>
+    <title>Web Development Learning Hub - Redirect</title>
+    <link rel="stylesheet" href="style.css">
     <style>
-        ::-webkit-scrollbar {
-            width: 8px;
-            height: 8px;
-        }
-        ::-webkit-scrollbar-track {
-            background: #0f172a;
-        }
-        ::-webkit-scrollbar-thumb {
-            background: #334155;
+        .countdown-badge {
+            display: inline-block;
+            font-weight: bold;
+            color: #d9534f;
+            background-color: #f9f2f4;
+            padding: 2px 6px;
             border-radius: 4px;
-        }
-        ::-webkit-scrollbar-thumb:hover {
-            background: #475569;
-        }
-        .gradient-border {
-            border-image: linear-gradient(to right, #10b981, #f59e0b) 1;
-        }
-        .toast {
-            transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
         }
     </style>
 </head>
-<body class="bg-slate-950 text-slate-100 font-sans min-h-screen flex flex-col antialiased">
-
-    <!-- Notification Toast -->
-    <div id="toast" class="fixed bottom-5 right-5 z-50 transform translate-y-20 opacity-0 bg-slate-800 text-white px-5 py-3 rounded-xl shadow-2xl border border-slate-700 flex items-center space-x-3 pointer-events-none transition-all duration-300">
-        <i id="toast-icon" class="fas fa-check-circle text-emerald-400 text-lg"></i>
-        <span id="toast-msg" class="text-sm font-medium">Action completed successfully</span>
-    </div>
-
-    <!-- Header Navigation -->
-    <header class="sticky top-0 z-40 bg-slate-900/90 backdrop-blur-md border-b border-slate-800">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex items-center justify-between h-16">
-                <!-- Logo / Title -->
-                <div class="flex items-center space-x-3 cursor-pointer" onclick="switchTab('overview')">
-                    <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-emerald-500 to-amber-500 flex items-center justify-center text-slate-950 font-extrabold text-xl shadow-lg">
-                        F
-                    </div>
-                    <div>
-                        <span class="text-lg font-bold tracking-tight text-white block leading-none">Family Media Network</span>
-                        <span class="text-xs text-amber-400 font-medium">Advocacy & Open Web Hub</span>
-                    </div>
-                </div>
-
-                <!-- Desktop Nav Tabs -->
-                <nav class="hidden md:flex space-x-1 lg:space-x-2">
-                    <button onclick="switchTab('overview')" id="nav-overview" class="nav-btn px-3 py-2 rounded-lg text-sm font-medium transition-colors text-emerald-400 bg-slate-800/60">
-                        <i class="fas fa-bullhorn mr-1.5"></i> Mission
-                    </button>
-                    <button onclick="switchTab('shelters')" id="nav-shelters" class="nav-btn px-3 py-2 rounded-lg text-sm font-medium transition-colors text-slate-300 hover:text-white hover:bg-slate-800">
-                        <i class="fas fa-hospital-user mr-1.5"></i> Shelter Reports
-                    </button>
-                    <button onclick="switchTab('action')" id="nav-action" class="nav-btn px-3 py-2 rounded-lg text-sm font-medium transition-colors text-slate-300 hover:text-white hover:bg-slate-800">
-                        <i class="fas fa-paper-plane mr-1.5"></i> Action Center
-                    </button>
-                    <button onclick="switchTab('rights')" id="nav-rights" class="nav-btn px-3 py-2 rounded-lg text-sm font-medium transition-colors text-slate-300 hover:text-white hover:bg-slate-800">
-                        <i class="fas fa-balance-scale mr-1.5"></i> Know Your Rights
-                    </button>
-                    <button onclick="switchTab('fund')" id="nav-fund" class="nav-btn px-3 py-2 rounded-lg text-sm font-medium transition-colors text-slate-300 hover:text-white hover:bg-slate-800">
-                        <i class="fas fa-hand-holding-heart mr-1.5 text-amber-400"></i> Mutual Aid
-                    </button>
-                    <button onclick="switchTab('library')" id="nav-library" class="nav-btn px-3 py-2 rounded-lg text-sm font-medium transition-colors text-slate-300 hover:text-white hover:bg-slate-800">
-                        <i class="fas fa-code mr-1.5 text-emerald-400"></i> Dev Repos & Books
-                    </button>
-                </nav>
-
-                <!-- Mobile menu button -->
-                <div class="md:hidden">
-                    <button id="mobile-menu-btn" onclick="toggleMobileMenu()" class="p-2 rounded-lg text-slate-400 hover:text-white hover:bg-slate-800">
-                        <i class="fas fa-bars text-xl"></i>
-                    </button>
-                </div>
-            </div>
-        </div>
-
-        <!-- Mobile Navigation Menu -->
-        <div id="mobile-menu" class="hidden md:hidden bg-slate-900 border-b border-slate-800 px-4 pt-2 pb-4 space-y-2">
-            <button onclick="switchTab('overview')" class="block w-full text-left px-3 py-2 rounded-md text-slate-200 hover:bg-slate-800">Mission Overview</button>
-            <button onclick="switchTab('shelters')" class="block w-full text-left px-3 py-2 rounded-md text-slate-200 hover:bg-slate-800">Shelter Incident Reports</button>
-            <button onclick="switchTab('action')" class="block w-full text-left px-3 py-2 rounded-md text-slate-200 hover:bg-slate-800">Email & Action Generator</button>
-            <button onclick="switchTab('rights')" class="block w-full text-left px-3 py-2 rounded-md text-slate-200 hover:bg-slate-800">Know Your Rights Guides</button>
-            <button onclick="switchTab('fund')" class="block w-full text-left px-3 py-2 rounded-md text-slate-200 hover:bg-slate-800">Mutual Aid Fund</button>
-            <button onclick="switchTab('library')" class="block w-full text-left px-3 py-2 rounded-md text-slate-200 hover:bg-slate-800">Web Dev Repos & Books Showcase</button>
+<body>
+    <header>
+        <div>
+            <h1>Web Development Learning Hub</h1>
+            <p>A unified compilation of projects, exercises, and interactive components from three core web development guides.</p>
         </div>
     </header>
 
-    <main class="flex-grow max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-8">
-
-        <!-- SECTION 1: OVERVIEW / MISSION -->
-        <section id="tab-overview" class="tab-content block space-y-10">
-            <!-- Hero Banner -->
-            <div class="relative bg-gradient-to-r from-slate-900 via-slate-800 to-slate-900 rounded-3xl p-8 md:p-12 border border-slate-800 overflow-hidden shadow-2xl">
-                <div class="absolute -right-10 -bottom-10 w-96 h-96 bg-emerald-500/10 rounded-full blur-3xl pointer-events-none"></div>
-                <div class="absolute -left-10 -top-10 w-96 h-96 bg-amber-500/10 rounded-full blur-3xl pointer-events-none"></div>
-
-                <div class="relative z-10 max-w-3xl">
-                    <span class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full text-xs font-semibold bg-red-500/10 text-red-400 border border-red-500/20 mb-6">
-                        <span class="w-2 h-2 rounded-full bg-red-500 animate-ping"></span> Urgent NYC Housing & Human Rights Action
-                    </span>
-                    <h1 class="text-3xl sm:text-5xl font-extrabold text-white tracking-tight leading-tight mb-6">
-                        Exposing Abuse in NYC Safe Havens & Building Technical Empowerment
-                    </h1>
-                    <p class="text-slate-300 text-base sm:text-lg leading-relaxed mb-8">
-                        The <span class="text-white font-semibold">Family Media Network</span> serves a critical dual mandate: documenting systemic mistreatment, disability discrimination, and safety violations at NYC transitional facilities, while publishing free open-source web development education resources.
-                    </p>
-                    <div class="flex flex-wrap gap-4">
-                        <button onclick="switchTab('action')" class="px-6 py-3 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white font-semibold shadow-lg shadow-emerald-900/30 transition-all flex items-center space-x-2">
-                            <i class="fas fa-bullhorn"></i>
-                            <span>Pressure Officials Now</span>
-                        </button>
-                        <button onclick="switchTab('shelters')" class="px-6 py-3 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-200 border border-slate-700 font-semibold transition-all flex items-center space-x-2">
-                            <i class="fas fa-shield-cat"></i>
-                            <span>View Shelter Tracker</span>
-                        </button>
-                        <button onclick="switchTab('library')" class="px-6 py-3 rounded-xl bg-amber-600/20 hover:bg-amber-600/30 text-amber-300 border border-amber-500/30 font-semibold transition-all flex items-center space-x-2">
-                            <i class="fas fa-book"></i>
-                            <span>Web Dev Repos & Books</span>
-                        </button>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Key Objectives Cards -->
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-                <div class="bg-slate-900 p-6 rounded-2xl border border-slate-800 hover:border-slate-700 transition">
-                    <div class="w-12 h-12 rounded-xl bg-red-500/10 text-red-400 flex items-center justify-center text-xl mb-4">
-                        <i class="fas fa-triangle-exclamation"></i>
-                    </div>
-                    <h3 class="text-lg font-bold text-white mb-2">Exposing Institutional Abuse</h3>
-                    <p class="text-slate-400 text-sm leading-relaxed">
-                        Gathering verified reports on neglect, assault, ADA violations, and safety failures across facilities like The Kelly, The Andrews, Travellers Hotel, and Breaking Ground.
-                    </p>
-                </div>
-
-                <div class="bg-slate-900 p-6 rounded-2xl border border-slate-800 hover:border-slate-700 transition">
-                    <div class="w-12 h-12 rounded-xl bg-amber-500/10 text-amber-400 flex items-center justify-center text-xl mb-4">
-                        <i class="fas fa-scale-balanced"></i>
-                    </div>
-                    <h3 class="text-lg font-bold text-white mb-2">Survivor & Legal Protection</h3>
-                    <p class="text-slate-400 text-sm leading-relaxed">
-                        Drafting ready-to-use legal notice templates, disability accommodation requests, and language access rights for residents facing retaliation or unsafe conditions.
-                    </p>
-                </div>
-
-                <div class="bg-slate-900 p-6 rounded-2xl border border-slate-800 hover:border-slate-700 transition">
-                    <div class="w-12 h-12 rounded-xl bg-emerald-500/10 text-emerald-400 flex items-center justify-center text-xl mb-4">
-                        <i class="fas fa-laptop-code"></i>
-                    </div>
-                    <h3 class="text-lg font-bold text-white mb-2">Technical Sovereignty</h3>
-                    <p class="text-slate-400 text-sm leading-relaxed">
-                        Showcasing 5 core GitHub repositories and classic web development books (HTML5, CSS Secrets, jQuery, Academic Pages) to empower independent advocacy technology.
-                    </p>
-                </div>
-            </div>
-        </section>
-
-        <!-- SECTION 2: SHELTER INCIDENT TRACKER & FACILITIES -->
-        <section id="tab-shelters" class="tab-content hidden space-y-8">
-            <div class="flex flex-col md:flex-row md:items-center justify-between gap-4">
+    <main>
+        <section>
+            <article>
                 <div>
-                    <h2 class="text-2xl font-bold text-white tracking-tight flex items-center gap-3">
-                        <i class="fas fa-city text-amber-400"></i> Safe Haven & Transitional Shelter Watchlist
-                    </h2>
-                    <p class="text-slate-400 text-sm mt-1">Monitored facilities in New York City with logged safety complaints, ADA concerns, and ongoing resident reporting.</p>
+                    <span>Fundamentals</span>
+                    <h2>Creating a Website: The Missing Manual</h2>
+                    <p>Core HTML5 semantic structures, foundational layouts, formatting, and site planning principles.</p>
+                    <a href="missing-manual/index.html">Explore Projects</a>
                 </div>
-                <div class="flex gap-2">
-                    <button onclick="openReportModal()" class="px-4 py-2 bg-red-600/90 hover:bg-red-600 text-white text-sm font-semibold rounded-xl shadow transition flex items-center gap-2">
-                        <i class="fas fa-plus-circle"></i> Log Incident Report
-                    </button>
-                </div>
-            </div>
+            </article>
 
-            <!-- Facilities Cards Grid -->
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-6" id="shelter-list">
-                <!-- Facility 1: The Kelly -->
-                <div class="bg-slate-900 rounded-2xl border border-slate-800 p-6 flex flex-col justify-between hover:border-slate-700 transition">
-                    <div>
-                        <div class="flex items-start justify-between mb-3">
-                            <div>
-                                <span class="px-2.5 py-1 text-xs font-semibold bg-red-500/10 text-red-400 rounded-md border border-red-500/20">High Risk Facility</span>
-                                <h3 class="text-xl font-bold text-white mt-2">The Kelly Safe Haven</h3>
-                            </div>
-                            <span class="text-xs font-mono text-slate-500 bg-slate-800 px-2.5 py-1 rounded">NYC DHS Registered</span>
-                        </div>
-                        <p class="text-slate-300 text-sm mb-4">
-                            <strong>Known Issues:</strong> Security personnel non-responsiveness, lack of wheelchair ramps/ADA elevators operational status, delayed medical access for disabled residents.
-                        </p>
-                        <div class="space-y-2 mb-6">
-                            <div class="text-xs text-slate-400 flex items-center gap-2">
-                                <i class="fas fa-map-marker-alt text-amber-400 w-4"></i> Manhattan / Bronx Corridor, NYC
-                            </div>
-                            <div class="text-xs text-slate-400 flex items-center gap-2">
-                                <i class="fas fa-users-viewfinder text-emerald-400 w-4"></i> Primary Impacted Group: Disabled & Elderly Residents
-                            </div>
-                        </div>
-                    </div>
-                    <div class="pt-4 border-t border-slate-800 flex items-center justify-between">
-                        <button onclick="prefillEmail('The Kelly Safe Haven')" class="text-emerald-400 text-xs font-semibold hover:underline flex items-center gap-1">
-                            Draft Complaint Email <i class="fas fa-arrow-right text-xs"></i>
-                        </button>
-                        <span class="text-xs text-slate-500">Updated Sept 2026</span>
-                    </div>
-                </div>
-
-                <!-- Facility 2: The Andrews -->
-                <div class="bg-slate-900 rounded-2xl border border-slate-800 p-6 flex flex-col justify-between hover:border-slate-700 transition">
-                    <div>
-                        <div class="flex items-start justify-between mb-3">
-                            <div>
-                                <span class="px-2.5 py-1 text-xs font-semibold bg-amber-500/10 text-amber-400 rounded-md border border-amber-500/20">Active Investigation</span>
-                                <h3 class="text-xl font-bold text-white mt-2">The Andrews Safe Haven</h3>
-                            </div>
-                            <span class="text-xs font-mono text-slate-500 bg-slate-800 px-2.5 py-1 rounded">NYC DHS Registered</span>
-                        </div>
-                        <p class="text-slate-300 text-sm mb-4">
-                            <strong>Known Issues:</strong> Overcrowding, inadequate translation services for non-English/undocumented individuals, reports of verbal harassment by staff.
-                        </p>
-                        <div class="space-y-2 mb-6">
-                            <div class="text-xs text-slate-400 flex items-center gap-2">
-                                <i class="fas fa-map-marker-alt text-amber-400 w-4"></i> Lower Manhattan / Bowery Area
-                            </div>
-                            <div class="text-xs text-slate-400 flex items-center gap-2">
-                                <i class="fas fa-users-viewfinder text-emerald-400 w-4"></i> Primary Impacted Group: Undocumented & Non-English Speakers
-                            </div>
-                        </div>
-                    </div>
-                    <div class="pt-4 border-t border-slate-800 flex items-center justify-between">
-                        <button onclick="prefillEmail('The Andrews Safe Haven')" class="text-emerald-400 text-xs font-semibold hover:underline flex items-center gap-1">
-                            Draft Complaint Email <i class="fas fa-arrow-right text-xs"></i>
-                        </button>
-                        <span class="text-xs text-slate-500">Updated Aug 2026</span>
-                    </div>
-                </div>
-
-                <!-- Facility 3: The Travellers Hotel -->
-                <div class="bg-slate-900 rounded-2xl border border-slate-800 p-6 flex flex-col justify-between hover:border-slate-700 transition">
-                    <div>
-                        <div class="flex items-start justify-between mb-3">
-                            <div>
-                                <span class="px-2.5 py-1 text-xs font-semibold bg-red-500/10 text-red-400 rounded-md border border-red-500/20">Critical Violations</span>
-                                <h3 class="text-xl font-bold text-white mt-2">The Travellers Hotel Shelter</h3>
-                            </div>
-                            <span class="text-xs font-mono text-slate-500 bg-slate-800 px-2.5 py-1 rounded">Commercial Hotel Program</span>
-                        </div>
-                        <p class="text-slate-300 text-sm mb-4">
-                            <strong>Known Issues:</strong> Poor sanitation, lack of hot water, unaddressed security threats, retaliatory lock-outs against vocal residents.
-                        </p>
-                        <div class="space-y-2 mb-6">
-                            <div class="text-xs text-slate-400 flex items-center gap-2">
-                                <i class="fas fa-map-marker-alt text-amber-400 w-4"></i> Queens / NYC Metro Area
-                            </div>
-                            <div class="text-xs text-slate-400 flex items-center gap-2">
-                                <i class="fas fa-users-viewfinder text-emerald-400 w-4"></i> Primary Impacted Group: Vulnerable Families & Single Adults
-                            </div>
-                        </div>
-                    </div>
-                    <div class="pt-4 border-t border-slate-800 flex items-center justify-between">
-                        <button onclick="prefillEmail('The Travellers Hotel')" class="text-emerald-400 text-xs font-semibold hover:underline flex items-center gap-1">
-                            Draft Complaint Email <i class="fas fa-arrow-right text-xs"></i>
-                        </button>
-                        <span class="text-xs text-slate-500">Updated Sept 2026</span>
-                    </div>
-                </div>
-
-                <!-- Facility 4: Breaking Ground -->
-                <div class="bg-slate-900 rounded-2xl border border-slate-800 p-6 flex flex-col justify-between hover:border-slate-700 transition">
-                    <div>
-                        <div class="flex items-start justify-between mb-3">
-                            <div>
-                                <span class="px-2.5 py-1 text-xs font-semibold bg-amber-500/10 text-amber-400 rounded-md border border-amber-500/20">Policy Review Pending</span>
-                                <h3 class="text-xl font-bold text-white mt-2">Breaking Ground Sites</h3>
-                            </div>
-                            <span class="text-xs font-mono text-slate-500 bg-slate-800 px-2.5 py-1 rounded">Supportive Housing Provider</span>
-                        </div>
-                        <p class="text-slate-300 text-sm mb-4">
-                            <strong>Known Issues:</strong> Arbitrary rule enforcement, long wait times for case management, delayed maintenance responses for residents with physical disabilities.
-                        </p>
-                        <div class="space-y-2 mb-6">
-                            <div class="text-xs text-slate-400 flex items-center gap-2">
-                                <i class="fas fa-map-marker-alt text-amber-400 w-4"></i> Multiple Sites, NYC
-                            </div>
-                            <div class="text-xs text-slate-400 flex items-center gap-2">
-                                <i class="fas fa-users-viewfinder text-emerald-400 w-4"></i> Primary Impacted Group: Formerly Unhoused & Disabled Residents
-                            </div>
-                        </div>
-                    </div>
-                    <div class="pt-4 border-t border-slate-800 flex items-center justify-between">
-                        <button onclick="prefillEmail('Breaking Ground Sites')" class="text-emerald-400 text-xs font-semibold hover:underline flex items-center gap-1">
-                            Draft Complaint Email <i class="fas fa-arrow-right text-xs"></i>
-                        </button>
-                        <span class="text-xs text-slate-500">Updated Aug 2026</span>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- SECTION 3: EMAIL & LETTER GENERATOR -->
-        <section id="tab-action" class="tab-content hidden space-y-8">
-            <div>
-                <h2 class="text-2xl font-bold text-white tracking-tight flex items-center gap-3">
-                    <i class="fas fa-paper-plane text-emerald-400"></i> Official Advocacy Email & Demand Generator
-                </h2>
-                <p class="text-slate-400 text-sm mt-1">Generate legally informed formal complaints directly to NYC City Council, DHS Officials, Shelter Directors, or Legal Aid Teams.</p>
-            </div>
-
-            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
-                <!-- Form Inputs -->
-                <div class="lg:col-span-5 bg-slate-900 p-6 rounded-2xl border border-slate-800 space-y-4">
-                    <h3 class="text-base font-bold text-white border-b border-slate-800 pb-3 flex items-center gap-2">
-                        <i class="fas fa-sliders text-amber-400"></i> Configure Letter Details
-                    </h3>
-
-                    <div>
-                        <label class="block text-xs font-semibold text-slate-300 mb-1">Target Recipient Group</label>
-                        <select id="email-recipient-type" onchange="updateEmailTemplate()" class="w-full bg-slate-800 border border-slate-700 rounded-xl px-3 py-2 text-sm text-white focus:ring-2 focus:ring-emerald-500 focus:outline-none">
-                            <option value="dhs">NYC DHS & City Council Members</option>
-                            <option value="shelter_mgmt">Shelter Management & Administration</option>
-                            <option value="legal">Legal Aid & Disability Rights Attorneys</option>
-                            <option value="media">Journalists & Press Accountability</option>
-                        </select>
-                    </div>
-
-                    <div>
-                        <label class="block text-xs font-semibold text-slate-300 mb-1">Target Facility</label>
-                        <select id="email-facility" onchange="updateEmailTemplate()" class="w-full bg-slate-800 border border-slate-700 rounded-xl px-3 py-2 text-sm text-white focus:ring-2 focus:ring-emerald-500 focus:outline-none">
-                            <option value="The Kelly Safe Haven">The Kelly Safe Haven</option>
-                            <option value="The Andrews Safe Haven">The Andrews Safe Haven</option>
-                            <option value="The Travellers Hotel Shelter">The Travellers Hotel Shelter</option>
-                            <option value="Breaking Ground Safe Haven">Breaking Ground Safe Haven</option>
-                            <option value="General NYC Transitional Shelter">General NYC Shelter System</option>
-                        </select>
-                    </div>
-
-                    <div>
-                        <label class="block text-xs font-semibold text-slate-300 mb-1">Your Name / Pseudonym</label>
-                        <input type="text" id="email-sender-name" value="Concerned Citizen / Survivor" oninput="updateEmailTemplate()" class="w-full bg-slate-800 border border-slate-700 rounded-xl px-3 py-2 text-sm text-white focus:ring-2 focus:ring-emerald-500 focus:outline-none">
-                    </div>
-
-                    <div>
-                        <label class="block text-xs font-semibold text-slate-300 mb-1">Primary Violation / Issue</label>
-                        <select id="email-issue" onchange="updateEmailTemplate()" class="w-full bg-slate-800 border border-slate-700 rounded-xl px-3 py-2 text-sm text-white focus:ring-2 focus:ring-emerald-500 focus:outline-none">
-                            <option value="ada">ADA Disability Non-Compliance & Elevator Outages</option>
-                            <option value="safety">Unsafe Environment & Physical Assault Reports</option>
-                            <option value="undocumented">Language Access Barriers & Undocumented Resident Mistreatment</option>
-                            <option value="retaliation">Staff Harassment & Retaliatory Evictions</option>
-                        </select>
-                    </div>
-
-                    <div>
-                        <label class="block text-xs font-semibold text-slate-300 mb-1">Specific Incident Notes / Demands</label>
-                        <textarea id="email-custom-notes" rows="3" oninput="updateEmailTemplate()" placeholder="Add any specific dates, room numbers, or staff details..." class="w-full bg-slate-800 border border-slate-700 rounded-xl px-3 py-2 text-sm text-white focus:ring-2 focus:ring-emerald-500 focus:outline-none"></textarea>
-                    </div>
-                </div>
-
-                <!-- Preview and Actions -->
-                <div class="lg:col-span-7 bg-slate-900 p-6 rounded-2xl border border-slate-800 flex flex-col justify-between space-y-4">
-                    <div>
-                        <div class="flex items-center justify-between border-b border-slate-800 pb-3 mb-4">
-                            <h3 class="text-base font-bold text-white flex items-center gap-2">
-                                <i class="fas fa-eye text-emerald-400"></i> Letter Preview
-                            </h3>
-                            <span id="target-email-display" class="text-xs text-amber-400 font-mono bg-amber-500/10 px-2.5 py-1 rounded border border-amber-500/20">
-                                To: ombudsman@dhs.nyc.gov
-                            </span>
-                        </div>
-
-                        <div class="space-y-3 font-mono text-xs bg-slate-950 p-4 rounded-xl border border-slate-800 text-slate-300 max-h-[380px] overflow-y-auto">
-                            <div><span class="text-slate-500">Subject:</span> <span id="preview-subject" class="text-emerald-400 font-semibold"></span></div>
-                            <hr class="border-slate-800">
-                            <div id="preview-body" class="whitespace-pre-wrap leading-relaxed"></div>
-                        </div>
-                    </div>
-
-                    <div class="flex flex-wrap gap-3 pt-2">
-                        <button onclick="copyGeneratedEmail()" class="flex-1 bg-slate-800 hover:bg-slate-700 text-white font-semibold py-3 px-4 rounded-xl border border-slate-700 transition flex items-center justify-center gap-2">
-                            <i class="fas fa-copy"></i> Copy to Clipboard
-                        </button>
-                        <a id="mailto-link" href="#" class="flex-1 bg-emerald-600 hover:bg-emerald-500 text-white font-semibold py-3 px-4 rounded-xl shadow-lg transition flex items-center justify-center gap-2">
-                            <i class="fas fa-paper-plane"></i> Open in Email App
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- SECTION 4: KNOW YOUR RIGHTS -->
-        <section id="tab-rights" class="tab-content hidden space-y-8">
-            <div>
-                <h2 class="text-2xl font-bold text-white tracking-tight flex items-center gap-3">
-                    <i class="fas fa-scale-balanced text-amber-400"></i> Resident Rights & Emergency Legal Guides
-                </h2>
-                <p class="text-slate-400 text-sm mt-1">Know your constitutional and municipal protections in NYC shelter and safe haven systems.</p>
-            </div>
-
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <!-- Rights Card 1 -->
-                <div class="bg-slate-900 rounded-2xl border border-slate-800 p-6 space-y-3">
-                    <div class="flex items-center space-x-3 text-emerald-400">
-                        <i class="fas fa-wheelchair text-xl"></i>
-                        <h3 class="text-lg font-bold text-white">Disability & ADA Protections</h3>
-                    </div>
-                    <p class="text-slate-300 text-sm leading-relaxed">
-                        Under Local Law and federal ADA mandates, shelters must provide reasonable accommodations. If an elevator is broken or medical equipment access is denied, facilities are legally required to provide alternative accessible placements immediately.
-                    </p>
-                    <div class="bg-slate-950 p-3 rounded-lg text-xs font-mono text-slate-400 border border-slate-800">
-                        <strong>Key Claim:</strong> "I am requesting a Reasonable Accommodation under Title II of the Americans with Disabilities Act."
-                    </div>
-                    <button onclick="copyText('I am requesting an immediate Reasonable Accommodation under Title II of the Americans with Disabilities Act and NYC Human Rights Law due to accessible facility failures.')" class="text-xs text-amber-400 hover:underline flex items-center gap-1 font-semibold">
-                        <i class="fas fa-copy"></i> Copy Assertion Text
-                    </button>
-                </div>
-
-                <!-- Rights Card 2 -->
-                <div class="bg-slate-900 rounded-2xl border border-slate-800 p-6 space-y-3">
-                    <div class="flex items-center space-x-3 text-emerald-400">
-                        <i class="fas fa-globe text-xl"></i>
-                        <h3 class="text-lg font-bold text-white">Undocumented Resident Protections</h3>
-                    </div>
-                    <p class="text-slate-300 text-sm leading-relaxed">
-                        NYC is a Right to Shelter city. Shelter services and safe havens cannot deny services based on immigration status, nor can staff threaten immigration enforcement.
-                    </p>
-                    <div class="bg-slate-950 p-3 rounded-lg text-xs font-mono text-slate-400 border border-slate-800">
-                        <strong>NYC Executive Order 41:</strong> City agencies and contracted providers will not inquire about immigration status unless strictly mandated.
-                    </div>
-                    <button onclick="copyText('Under NYC Executive Order 41 and the Right to Shelter mandate, services cannot be conditioned on immigration status.')" class="text-xs text-amber-400 hover:underline flex items-center gap-1 font-semibold">
-                        <i class="fas fa-copy"></i> Copy Rights Assertion
-                    </button>
-                </div>
-
-                <!-- Rights Card 3 -->
-                <div class="bg-slate-900 rounded-2xl border border-slate-800 p-6 space-y-3">
-                    <div class="flex items-center space-x-3 text-emerald-400">
-                        <i class="fas fa-language text-xl"></i>
-                        <h3 class="text-lg font-bold text-white">Language Access Rights</h3>
-                    </div>
-                    <p class="text-slate-300 text-sm leading-relaxed">
-                        Facilities are required to provide free interpretation and translated critical documents. You do not need to bring your own translator or rely on family members.
-                    </p>
-                    <div class="bg-slate-950 p-3 rounded-lg text-xs font-mono text-slate-400 border border-slate-800">
-                        <strong>Request:</strong> "I require language translation services in my primary language under Local Law 30."
-                    </div>
-                    <button onclick="copyText('I require language access and translation services under NYC Local Law 30 before signing any documents.')" class="text-xs text-amber-400 hover:underline flex items-center gap-1 font-semibold">
-                        <i class="fas fa-copy"></i> Copy Language Request
-                    </button>
-                </div>
-
-                <!-- Rights Card 4 -->
-                <div class="bg-slate-900 rounded-2xl border border-slate-800 p-6 space-y-3">
-                    <div class="flex items-center space-x-3 text-emerald-400">
-                        <i class="fas fa-shield-halved text-xl"></i>
-                        <h3 class="text-lg font-bold text-white">Protection Against Retaliation</h3>
-                    </div>
-                    <p class="text-slate-300 text-sm leading-relaxed">
-                        Filing a complaint with the OTDA (NYS Office of Temporary and Disability Assistance) or calling 311/DHS Ombudsman is a protected action. Retaliatory transfers or bed loss are illegal.
-                    </p>
-                    <div class="bg-slate-950 p-3 rounded-lg text-xs font-mono text-slate-400 border border-slate-800">
-                        <strong>NYS OTDA Hotline:</strong> 1-800-342-3009 | <strong>NYC DHS Ombudsman:</strong> 800-994-6494
-                    </div>
-                    <button onclick="copyText('NYS OTDA Hotline: 1-800-342-3009 | NYC DHS Ombudsman: 800-994-6494')" class="text-xs text-amber-400 hover:underline flex items-center gap-1 font-semibold">
-                        <i class="fas fa-copy"></i> Copy Hotline Numbers
-                    </button>
-                </div>
-            </div>
-        </section>
-
-        <!-- SECTION 5: MUTUAL AID / SURVIVOR FUND -->
-        <section id="tab-fund" class="tab-content hidden space-y-8">
-            <div class="bg-gradient-to-r from-slate-900 via-slate-900 to-slate-800 p-8 rounded-3xl border border-slate-800 space-y-6">
+            <article>
                 <div>
-                    <span class="px-3 py-1 bg-amber-500/10 text-amber-400 border border-amber-500/20 text-xs font-semibold rounded-full">Community Emergency Response</span>
-                    <h2 class="text-2xl sm:text-3xl font-extrabold text-white tracking-tight mt-2">
-                        Survivor Relief & Legal Compensation Support Fund
-                    </h2>
-                    <p class="text-slate-300 text-sm mt-1 max-w-2xl">
-                        Direct support fund created to assist survivors of shelter abuse with emergency housing transition stipends, legal filing fees, accessibility equipment, and immediate aid.
-                    </p>
+                    <span>HTML5 APIs</span>
+                    <h2>Practical HTML5 Projects</h2>
+                    <p>Advanced real-world components, rich media integration, web forms, and modern web application structures.</p>
+                    <a href="html5-projects/index.html">Explore Projects</a>
                 </div>
+            </article>
 
-                <!-- Progress Bar -->
-                <div class="space-y-2">
-                    <div class="flex justify-between text-sm font-semibold">
-                        <span class="text-slate-300">Funded: <strong class="text-emerald-400">$18,450</strong></span>
-                        <span class="text-slate-400">Target: $25,000</span>
-                    </div>
-                    <div class="w-full bg-slate-950 rounded-full h-4 p-0.5 border border-slate-800">
-                        <div class="bg-gradient-to-r from-emerald-500 to-amber-500 h-full rounded-full transition-all duration-1000" style="width: 73.8%;"></div>
-                    </div>
-                    <div class="flex justify-between text-xs text-slate-500">
-                        <span>73.8% of target reached</span>
-                        <span>142 Supporters</span>
-                    </div>
+            <article>
+                <div>
+                    <span>Interactivity</span>
+                    <h2>jQuery: Novice to Ninja</h2>
+                    <p>Dynamic DOM manipulation, animations, event handling, AJAX integration, and custom interactive widgets.</p>
+                    <a href="jquery-ninja/index.html">Explore Projects</a>
                 </div>
-
-                <!-- Fund Breakdown -->
-                <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 pt-4">
-                    <div class="bg-slate-950 p-4 rounded-xl border border-slate-800/80">
-                        <div class="text-amber-400 font-bold text-lg mb-1">40% Legal Aid</div>
-                        <p class="text-xs text-slate-400">Assisting survivors with legal filing fees, document translations, and court representation.</p>
-                    </div>
-                    <div class="bg-slate-950 p-4 rounded-xl border border-slate-800/80">
-                        <div class="text-emerald-400 font-bold text-lg mb-1">35% Emergency Housing</div>
-                        <p class="text-xs text-slate-400">Immediate safe hotel/lodging stipends for residents facing acute physical danger.</p>
-                    </div>
-                    <div class="bg-slate-950 p-4 rounded-xl border border-slate-800/80">
-                        <div class="text-blue-400 font-bold text-lg mb-1">25% Disability Aid</div>
-                        <p class="text-xs text-slate-400">Direct purchases of mobility aids, medical supplies, and basic care packages.</p>
-                    </div>
-                </div>
-
-                <!-- Support Action -->
-                <div class="pt-4 flex flex-wrap gap-4 items-center">
-                    <button onclick="simulateDonation()" class="px-6 py-3 bg-amber-500 hover:bg-amber-400 text-slate-950 font-extrabold rounded-xl shadow-lg transition flex items-center gap-2">
-                        <i class="fas fa-heart text-slate-950"></i> Contribute to Mutual Aid
-                    </button>
-                    <span class="text-xs text-slate-400"><i class="fas fa-lock text-emerald-400 mr-1"></i> 100% Direct Community Allocation</span>
-                </div>
-            </div>
+            </article>
         </section>
 
-        <!-- SECTION 6: WEB DEV LIBRARY & REPOSITORIES -->
-        <section id="tab-library" class="tab-content hidden space-y-10">
-            <div>
-                <h2 class="text-2xl font-bold text-white tracking-tight flex items-center gap-3">
-                    <i class="fas fa-code text-emerald-400"></i> Open Source Web Dev Repositories & Essential Books
-                </h2>
-                <p class="text-slate-400 text-sm mt-1">
-                    Free technical foundation resources and featured web development books curated to power independent advocacy platforms and digital literacy.
+        <section class="redirect-notice">
+            <h1>The page you want has moved</h1>
+            <p>
+                Please update your bookmarks. The new home page is
+                <a href="triproot/index.html">triproot/index.html</a>.
+            </p>
+            <p>
+                You will be automatically redirected in 
+                <span id="countdown" class="countdown-badge">10</span> seconds. 
+                Click <a href="triproot/index.html">here</a> to visit the new page immediately.
+            </p>
+        </section>
+
+        <section class="media-section">
+            <p>
+                <img src="matador.jpg" alt="Matador" width="201" height="251" title="Welcome to the ring.">
+            </p>
+            
+            <div class="text-content">
+                <p>
+                    The hallway smelt of boiled cabbage and old rag mats. At one end of it a
+                    coloured poster, too large for indoor display, had been tacked to the wall. It
+                    depicted simply an enormous face, more than a metre wide: the face of a man of
+                    about forty-five, with a heavy black moustache and ruggedly handsome features.
+                    Winston made for the stairs. It was no use trying the lift. Even at the best of
+                    times it was seldom working, and at present the electric current was cut off
+                    during daylight hours. It was part of the economy drive in preparation for Hate
+                    Week. The flat was seven flights up, and Winston, who was thirty-nine and had a
+                    varicose ulcer above his right ankle, went slowly, resting several times on the
+                    way. On each landing, opposite the lift-shaft, the poster with the enormous face
+                    gazed from the wall. It was one of those pictures which are so contrived that
+                    the eyes follow you about when you move. BIG BROTHER IS WATCHING YOU, the
+                    caption beneath it ran.
                 </p>
+                <hr>
+                <p>
+                    Behind Winston's back the voice from the telescreen was still babbling away
+                    about pig-iron and the overfulfilment of the Ninth Three-Year Plan. The
+                    telescreen received and transmitted simultaneously. Any sound that Winston made,
+                    above the level of a very low whisper, would be picked up by it, moreover, so
+                    long as he remained within the field of vision which the metal plaque commanded,
+                    he could be seen as well as heard. There was of course no way of knowing whether
+                    you were being watched at any given moment. How often, or on what system, the
+                    Thought Police plugged in on any individual wire was guesswork. It was even
+                    conceivable that they watched everybody all the time. But at any rate they could
+                    plug in your wire whenever they wanted to. You had to live -- did live, from
+                    habit that became instinct -- in the assumption that every sound you made was
+                    overheard, and, except in darkness, every movement scrutinized.
+                </p>
+                <hr>
             </div>
-
-            <!-- Repositories Grid -->
-            <div>
-                <h3 class="text-lg font-bold text-white mb-4 flex items-center gap-2">
-                    <i class="fab fa-github text-amber-400"></i> Core GitHub Repositories (5 Repos)
-                </h3>
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-
-                    <!-- Repo 1: AcademicPages Base -->
-                    <div class="bg-slate-900 rounded-2xl border border-slate-800 p-6 flex flex-col justify-between hover:border-emerald-500/50 transition">
-                        <div>
-                            <div class="flex items-center justify-between mb-3">
-                                <span class="text-xs font-mono bg-emerald-500/10 text-emerald-400 px-2.5 py-1 rounded border border-emerald-500/20">Base Platform</span>
-                                <i class="fab fa-github text-slate-500 text-xl"></i>
-                            </div>
-                            <h4 class="text-lg font-bold text-white mb-2">academicpages.github.io</h4>
-                            <p class="text-slate-400 text-sm mb-4">A Jekyll-based academic personal website template designed for publishing documentation, research, and legal advocacy reports.</p>
-                            <div class="flex flex-wrap gap-2 mb-4">
-                                <span class="text-[10px] font-mono bg-slate-800 text-slate-300 px-2 py-0.5 rounded">Jekyll</span>
-                                <span class="text-[10px] font-mono bg-slate-800 text-slate-300 px-2 py-0.5 rounded">HTML/CSS</span>
-                                <span class="text-[10px] font-mono bg-slate-800 text-slate-300 px-2 py-0.5 rounded">Markdown</span>
-                            </div>
-                        </div>
-                        <a href="https://github.com/orris0/academicpages.github.io.git" target="_blank" rel="noopener noreferrer" class="w-full text-center py-2 bg-slate-800 hover:bg-slate-700 text-emerald-400 font-medium text-xs rounded-xl border border-slate-700 transition flex items-center justify-center gap-2">
-                            <span>View Repo</span> <i class="fas fa-external-link-alt text-[10px]"></i>
-                        </a>
-                    </div>
-
-                    <!-- Repo 2: Creating a Website -->
-                    <div class="bg-slate-900 rounded-2xl border border-slate-800 p-6 flex flex-col justify-between hover:border-emerald-500/50 transition">
-                        <div>
-                            <div class="flex items-center justify-between mb-3">
-                                <span class="text-xs font-mono bg-amber-500/10 text-amber-400 px-2.5 py-1 rounded border border-amber-500/20">Book 1 Repository</span>
-                                <i class="fab fa-github text-slate-500 text-xl"></i>
-                            </div>
-                            <h4 class="text-lg font-bold text-white mb-2">Creating-a-website</h4>
-                            <p class="text-slate-400 text-sm mb-4">Source materials and foundational techniques for planning, building, and deploying web properties from scratch.</p>
-                            <div class="flex flex-wrap gap-2 mb-4">
-                                <span class="text-[10px] font-mono bg-slate-800 text-slate-300 px-2 py-0.5 rounded">HTML</span>
-                                <span class="text-[10px] font-mono bg-slate-800 text-slate-300 px-2 py-0.5 rounded">Web Architecture</span>
-                            </div>
-                        </div>
-                        <a href="https://github.com/orris0/Creating-a-website.git" target="_blank" rel="noopener noreferrer" class="w-full text-center py-2 bg-slate-800 hover:bg-slate-700 text-emerald-400 font-medium text-xs rounded-xl border border-slate-700 transition flex items-center justify-center gap-2">
-                            <span>View Repo</span> <i class="fas fa-external-link-alt text-[10px]"></i>
-                        </a>
-                    </div>
-
-                    <!-- Repo 3: Practical HTML5 Projects -->
-                    <div class="bg-slate-900 rounded-2xl border border-slate-800 p-6 flex flex-col justify-between hover:border-emerald-500/50 transition">
-                        <div>
-                            <div class="flex items-center justify-between mb-3">
-                                <span class="text-xs font-mono bg-amber-500/10 text-amber-400 px-2.5 py-1 rounded border border-amber-500/20">Book 2 Repository</span>
-                                <i class="fab fa-github text-slate-500 text-xl"></i>
-                            </div>
-                            <h4 class="text-lg font-bold text-white mb-2">orris0 / HTML5 Projects</h4>
-                            <p class="text-slate-400 text-sm mb-4">Hands-on practical HTML5 web applications, semantic elements, media integrations, and interactive form designs.</p>
-                            <div class="flex flex-wrap gap-2 mb-4">
-                                <span class="text-[10px] font-mono bg-slate-800 text-slate-300 px-2 py-0.5 rounded">HTML5</span>
-                                <span class="text-[10px] font-mono bg-slate-800 text-slate-300 px-2 py-0.5 rounded">JavaScript</span>
-                            </div>
-                        </div>
-                        <a href="https://github.com/orris0/orris0.git" target="_blank" rel="noopener noreferrer" class="w-full text-center py-2 bg-slate-800 hover:bg-slate-700 text-emerald-400 font-medium text-xs rounded-xl border border-slate-700 transition flex items-center justify-center gap-2">
-                            <span>View Repo</span> <i class="fas fa-external-link-alt text-[10px]"></i>
-                        </a>
-                    </div>
-
-                    <!-- Repo 4: jQuery Novice to Ninja -->
-                    <div class="bg-slate-900 rounded-2xl border border-slate-800 p-6 flex flex-col justify-between hover:border-emerald-500/50 transition">
-                        <div>
-                            <div class="flex items-center justify-between mb-3">
-                                <span class="text-xs font-mono bg-amber-500/10 text-amber-400 px-2.5 py-1 rounded border border-amber-500/20">Book 3 Repository</span>
-                                <i class="fab fa-github text-slate-500 text-xl"></i>
-                            </div>
-                            <h4 class="text-lg font-bold text-white mb-2">jquery-novice-to-ninja</h4>
-                            <p class="text-slate-400 text-sm mb-4">Comprehensive DOM manipulation, event management, animation, and AJAX communication code examples.</p>
-                            <div class="flex flex-wrap gap-2 mb-4">
-                                <span class="text-[10px] font-mono bg-slate-800 text-slate-300 px-2 py-0.5 rounded">jQuery</span>
-                                <span class="text-[10px] font-mono bg-slate-800 text-slate-300 px-2 py-0.5 rounded">DOM Scripting</span>
-                            </div>
-                        </div>
-                        <a href="https://github.com/orris0/jquery-novice-to-ninja.git" target="_blank" rel="noopener noreferrer" class="w-full text-center py-2 bg-slate-800 hover:bg-slate-700 text-emerald-400 font-medium text-xs rounded-xl border border-slate-700 transition flex items-center justify-center gap-2">
-                            <span>View Repo</span> <i class="fas fa-external-link-alt text-[10px]"></i>
-                        </a>
-                    </div>
-
-                    <!-- Repo 5: CSS Secrets -->
-                    <div class="bg-slate-900 rounded-2xl border border-slate-800 p-6 flex flex-col justify-between hover:border-emerald-500/50 transition lg:col-span-1">
-                        <div>
-                            <div class="flex items-center justify-between mb-3">
-                                <span class="text-xs font-mono bg-amber-500/10 text-amber-400 px-2.5 py-1 rounded border border-amber-500/20">Book 4 Repository</span>
-                                <i class="fab fa-github text-slate-500 text-xl"></i>
-                            </div>
-                            <h4 class="text-lg font-bold text-white mb-2">css-secrets</h4>
-                            <p class="text-slate-400 text-sm mb-4">Advanced CSS techniques, modern layout styling, custom borders, responsive design hacks, and animation secrets.</p>
-                            <div class="flex flex-wrap gap-2 mb-4">
-                                <span class="text-[10px] font-mono bg-slate-800 text-slate-300 px-2 py-0.5 rounded">CSS3</span>
-                                <span class="text-[10px] font-mono bg-slate-800 text-slate-300 px-2 py-0.5 rounded">Styling Tricks</span>
-                            </div>
-                        </div>
-                        <a href="https://github.com/orris0/css-secrets.git" target="_blank" rel="noopener noreferrer" class="w-full text-center py-2 bg-slate-800 hover:bg-slate-700 text-emerald-400 font-medium text-xs rounded-xl border border-slate-700 transition flex items-center justify-center gap-2">
-                            <span>View Repo</span> <i class="fas fa-external-link-alt text-[10px]"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Showcased Web Development Books -->
-            <div>
-                <h3 class="text-lg font-bold text-white mb-4 flex items-center gap-2">
-                    <i class="fas fa-book-open text-emerald-400"></i> Showcased Web Development Books & Code Snippets
-                </h3>
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-
-                    <!-- Book 1 -->
-                    <div class="bg-slate-900 p-6 rounded-2xl border border-slate-800 space-y-4">
-                        <div class="flex items-start justify-between">
-                            <div>
-                                <h4 class="text-lg font-bold text-white">1. Creating a Website</h4>
-                                <span class="text-xs text-amber-400 font-medium">Foundations & Site Architecture</span>
-                            </div>
-                            <span class="text-xs bg-slate-800 text-slate-300 px-2.5 py-1 rounded">Book Reference</span>
-                        </div>
-                        <p class="text-slate-400 text-sm">Focuses on building accessible, well-structured web applications with clean HTML foundations and intuitive user interfaces.</p>
-                        <div class="bg-slate-950 p-3 rounded-xl border border-slate-800">
-                            <span class="text-[10px] font-mono text-slate-500 uppercase tracking-wider block mb-1">Sample Architecture Blueprint:</span>
-                            <pre class="font-mono text-xs text-emerald-400 overflow-x-auto"><code>&lt;!DOCTYPE html&gt;
-&lt;html lang="en"&gt;
-  &lt;header class="site-header"&gt;
-    &lt;nav class="accessible-nav"&gt;&lt;/nav&gt;
-  &lt;/header&gt;
-  &lt;main role="main" aria-live="polite"&gt;&lt;/main&gt;
-&lt;/html&gt;</code></pre>
-                        </div>
-                    </div>
-
-                    <!-- Book 2 -->
-                    <div class="bg-slate-900 p-6 rounded-2xl border border-slate-800 space-y-4">
-                        <div class="flex items-start justify-between">
-                            <div>
-                                <h4 class="text-lg font-bold text-white">2. Practical HTML5 Projects</h4>
-                                <span class="text-xs text-amber-400 font-medium">Interactive Features & Semantic Markup</span>
-                            </div>
-                            <span class="text-xs bg-slate-800 text-slate-300 px-2.5 py-1 rounded">Book Reference</span>
-                        </div>
-                        <p class="text-slate-400 text-sm">Teaches modern HTML5 APIs, local storage management, semantic structure, and accessible form validations.</p>
-                        <div class="bg-slate-950 p-3 rounded-xl border border-slate-800">
-                            <span class="text-[10px] font-mono text-slate-500 uppercase tracking-wider block mb-1">Sample Local Storage State:</span>
-                            <pre class="font-mono text-xs text-emerald-400 overflow-x-auto"><code>// Save user report draft locally
-const report = { facility: "The Kelly", incident: "Elevator Outage" };
-localStorage.setItem("incident_draft", JSON.stringify(report));</code></pre>
-                        </div>
-                    </div>
-
-                    <!-- Book 3 -->
-                    <div class="bg-slate-900 p-6 rounded-2xl border border-slate-800 space-y-4">
-                        <div class="flex items-start justify-between">
-                            <div>
-                                <h4 class="text-lg font-bold text-white">3. jQuery: Novice to Ninja</h4>
-                                <span class="text-xs text-amber-400 font-medium">Dynamic DOM Interaction & Event Handling</span>
-                            </div>
-                            <span class="text-xs bg-slate-800 text-slate-300 px-2.5 py-1 rounded">Book Reference</span>
-                        </div>
-                        <p class="text-slate-400 text-sm">Explores quick client-side interactions, event listener bindings, and asynchronous updates for rapid web development.</p>
-                        <div class="bg-slate-950 p-3 rounded-xl border border-slate-800">
-                            <span class="text-[10px] font-mono text-slate-500 uppercase tracking-wider block mb-1">Sample Dynamic Toggle Logic:</span>
-                            <pre class="font-mono text-xs text-emerald-400 overflow-x-auto"><code>$('#toggle-report-btn').on('click', function() {
-  $('.incident-details-box').slideToggle(300);
-});</code></pre>
-                        </div>
-                    </div>
-
-                    <!-- Book 4 -->
-                    <div class="bg-slate-900 p-6 rounded-2xl border border-slate-800 space-y-4">
-                        <div class="flex items-start justify-between">
-                            <div>
-                                <h4 class="text-lg font-bold text-white">4. CSS Secrets</h4>
-                                <span class="text-xs text-amber-400 font-medium">Advanced Styling & Visually Resilient UI</span>
-                            </div>
-                            <span class="text-xs bg-slate-800 text-slate-300 px-2.5 py-1 rounded">Book Reference</span>
-                        </div>
-                        <p class="text-slate-400 text-sm">Covers high-level CSS properties, flexible layout tricks, accessible contrast solutions, and sleek UI accents.</p>
-                        <div class="bg-slate-950 p-3 rounded-xl border border-slate-800">
-                            <span class="text-[10px] font-mono text-slate-500 uppercase tracking-wider block mb-1">Sample High-Contrast Glassmorphism CSS:</span>
-                            <pre class="font-mono text-xs text-emerald-400 overflow-x-auto"><code>.advocacy-card {
-  background: rgba(15, 23, 42, 0.85);
-  backdrop-filter: blur(12px);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-}</code></pre>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
+            
+            <p>Click inside his mouth...</p>
+            <p>
+                <map name="FaceMap">
+                    <area alt="Mouth" coords="38, 122, 76, 132, 116, 110, 102, 198, 65, 197" href="http://edcp.org/factsheets/handfoot.html" shape="poly" title="Smiling Mouth">
+                </map>
+                <img src="face.gif" alt="Smiling Face" usemap="#FaceMap">
+            </p>
         </section>
-
     </main>
 
-    <!-- Log Incident Modal -->
-    <div id="incident-modal" class="fixed inset-0 z-50 bg-slate-950/80 backdrop-blur-sm hidden items-center justify-center p-4">
-        <div class="bg-slate-900 border border-slate-800 rounded-2xl max-w-lg w-full p-6 space-y-4 shadow-2xl relative">
-            <button onclick="closeReportModal()" class="absolute top-4 right-4 text-slate-400 hover:text-white">
-                <i class="fas fa-times text-lg"></i>
-            </button>
-            <h3 class="text-xl font-bold text-white flex items-center gap-2">
-                <i class="fas fa-file-medical-text text-red-400"></i> Submit Confidential Incident Report
-            </h3>
-            <p class="text-xs text-slate-400">Your report will help document conditions across NYC safe havens and transitional facilities.</p>
-
-            <form id="incident-form" onsubmit="submitIncidentReport(event)" class="space-y-3">
-                <div>
-                    <label class="block text-xs text-slate-300 font-semibold mb-1">Facility Name</label>
-                    <select id="modal-facility" class="w-full bg-slate-800 border border-slate-700 rounded-xl px-3 py-2 text-sm text-white focus:outline-none">
-                        <option>The Kelly Safe Haven</option>
-                        <option>The Andrews Safe Haven</option>
-                        <option>The Travellers Hotel Shelter</option>
-                        <option>Breaking Ground Safe Haven</option>
-                        <option>Other NYC Shelter Facility</option>
-                    </select>
-                </div>
-                <div>
-                    <label class="block text-xs text-slate-300 font-semibold mb-1">Category</label>
-                    <select class="w-full bg-slate-800 border border-slate-700 rounded-xl px-3 py-2 text-sm text-white focus:outline-none">
-                        <option>ADA / Accessibility Violation</option>
-                        <option>Unsafe Conditions / Physical Violence</option>
-                        <option>Language Access Denied</option>
-                        <option>Staff Retaliation / Verbal Abuse</option>
-                    </select>
-                </div>
-                <div>
-                    <label class="block text-xs text-slate-300 font-semibold mb-1">Incident Summary</label>
-                    <textarea required rows="3" placeholder="Describe what happened..." class="w-full bg-slate-800 border border-slate-700 rounded-xl px-3 py-2 text-sm text-white focus:outline-none"></textarea>
-                </div>
-                <div class="pt-2 flex gap-3">
-                    <button type="button" onclick="closeReportModal()" class="flex-1 py-2.5 rounded-xl border border-slate-700 text-slate-300 text-sm font-semibold hover:bg-slate-800">Cancel</button>
-                    <button type="submit" class="flex-1 py-2.5 rounded-xl bg-red-600 hover:bg-red-500 text-white text-sm font-semibold shadow-lg">Submit Confidential Report</button>
-                </div>
-            </form>
-        </div>
-    </div>
-
-    <!-- Footer -->
-    <footer class="bg-slate-900 border-t border-slate-800 mt-12 py-8 text-xs text-slate-500">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-4">
-            <div class="flex items-center space-x-2">
-                <div class="w-6 h-6 rounded-md bg-emerald-500 flex items-center justify-center text-slate-950 font-bold text-xs">F</div>
-                <span class="text-slate-300 font-medium">Family Media Network © 2026</span>
-            </div>
-            <div class="flex space-x-6">
-                <a href="https://github.com/orris0/academicpages.github.io.git" target="_blank" class="hover:text-slate-300 transition">academicpages Repo</a>
-                <a href="https://github.com/orris0/Creating-a-website.git" target="_blank" class="hover:text-slate-300 transition">Creating-a-website Repo</a>
-                <a href="https://github.com/orris0/orris0.git" target="_blank" class="hover:text-slate-300 transition">HTML5 Projects Repo</a>
-                <a href="https://github.com/orris0/jquery-novice-to-ninja.git" target="_blank" class="hover:text-slate-300 transition">jQuery Repo</a>
-                <a href="https://github.com/orris0/css-secrets.git" target="_blank" class="hover:text-slate-300 transition">CSS Secrets Repo</a>
-            </div>
+    <footer>
+        <div>
+            <p>&copy; 2026 Unified Web Portfolio Hub. Built with semantic HTML5 &amp; Modern CSS Grid.</p>
         </div>
     </footer>
 
     <script>
-        // State Management & Navigation Tab Switcher
-        function switchTab(tabId) {
-            // Hide all tabs
-            document.querySelectorAll('.tab-content').forEach(el => el.classList.add('hidden'));
-            
-            // Show target tab
-            const target = document.getElementById('tab-' + tabId);
-            if (target) {
-                target.classList.remove('hidden');
-            }
+        (function() {
+            let secondsLeft = 10;
+            const targetUrl = 'triproot/index.html';
+            const countdownEl = document.getElementById('countdown');
 
-            // Update Nav styling
-            document.querySelectorAll('.nav-btn').forEach(btn => {
-                btn.classList.remove('text-emerald-400', 'bg-slate-800/60');
-                btn.classList.add('text-slate-300');
-            });
-
-            const activeBtn = document.getElementById('nav-' + tabId);
-            if (activeBtn) {
-                activeBtn.classList.add('text-emerald-400', 'bg-slate-800/60');
-                activeBtn.classList.remove('text-slate-300');
-            }
-
-            // Close mobile menu if open
-            document.getElementById('mobile-menu').classList.add('hidden');
-        }
-
-        function toggleMobileMenu() {
-            const menu = document.getElementById('mobile-menu');
-            menu.classList.toggle('hidden');
-        }
-
-        // Email & Template Logic
-        const recipientsMap = {
-            'dhs': 'ombudsman@dhs.nyc.gov, citycouncil@council.nyc.gov',
-            'shelter_mgmt': 'director@safehaven-nyc.org, operations@shelter.org',
-            'legal': 'intake@legalaid.org, disabilityrights@nycourts.gov',
-            'media': 'tips@nyctimes.com, investigative@family-media.org'
-        };
-
-        function updateEmailTemplate() {
-            const recipientType = document.getElementById('email-recipient-type').value;
-            const facility = document.getElementById('email-facility').value;
-            const sender = document.getElementById('email-sender-name').value || "Concerned Citizen / Resident";
-            const issueType = document.getElementById('email-issue').value;
-            const customNotes = document.getElementById('email-custom-notes').value;
-
-            const recipientEmail = recipientsMap[recipientType] || 'ombudsman@dhs.nyc.gov';
-            document.getElementById('target-email-display').innerText = `To: ${recipientEmail}`;
-
-            let issueSubject = "Urgent: Safe Haven Facility Complaint & Human Rights Notice";
-            let bodyText = `Dear Officials / Oversight Committee,\n\nI am writing to submit a formal complaint regarding conditions at ${facility}.\n\n`;
-
-            if (issueType === 'ada') {
-                issueSubject = `URGENT ADA Compliance Failure at ${facility}`;
-                bodyText += `SPECIFIC ISSUE: Severe ADA non-compliance and elevator / accessibility failures. Disabled residents are being deprived of basic physical mobility and medical care access.\n\n`;
-            } else if (issueType === 'safety') {
-                issueSubject = `CRITICAL SAFETY ALERT: Resident Physical Safety Hazards at ${facility}`;
-                bodyText += `SPECIFIC ISSUE: Inadequate security oversight leading to physical safety hazards and unresolved assault concerns on site.\n\n`;
-            } else if (issueType === 'undocumented') {
-                issueSubject = `Language Access & Protection Violation at ${facility}`;
-                bodyText += `SPECIFIC ISSUE: Language translation services are being denied to non-English speaking and undocumented residents in violation of NYC Executive Order 41 and Local Law 30.\n\n`;
-            } else {
-                issueSubject = `Formal Notice: Staff Misconduct & Retaliation at ${facility}`;
-                bodyText += `SPECIFIC ISSUE: Unlawful staff retaliation and intimidation against residents requesting standard shelter services or reporting conditions.\n\n`;
-            }
-
-            if (customNotes.trim() !== '') {
-                bodyText += `ADDITIONAL DETAILS:\n${customNotes}\n\n`;
-            }
-
-            bodyText += `DEMANDS FOR IMMEDIATE ACTION:\n`;
-            bodyText += `1. Conduct an immediate unannounced inspection of ${facility}.\n`;
-            bodyText += `2. Guarantee non-retaliation for all residents involved in reporting conditions.\n`;
-            bodyText += `3. Provide immediate reasonable accommodations and disability-accessible housing options.\n\n`;
-            bodyText += `Sincerely,\n${sender}\nFamily Media Network Advocate`;
-
-            document.getElementById('preview-subject').innerText = issueSubject;
-            document.getElementById('preview-body').innerText = bodyText;
-
-            // Update mailto href
-            const mailtoUrl = `mailto:${recipientEmail}?subject=${encodeURIComponent(issueSubject)}&body=${encodeURIComponent(bodyText)}`;
-            document.getElementById('mailto-link').setAttribute('href', mailtoUrl);
-        }
-
-        function prefillEmail(facilityName) {
-            switchTab('action');
-            const facilitySelect = document.getElementById('email-facility');
-            for (let i = 0; i < facilitySelect.options.length; i++) {
-                if (facilitySelect.options[i].value.includes(facilityName) || facilityName.includes(facilitySelect.options[i].value)) {
-                    facilitySelect.selectedIndex = i;
-                    break;
+            const timer = setInterval(() => {
+                secondsLeft--;
+                if (countdownEl) {
+                    countdownEl.textContent = secondsLeft;
                 }
-            }
-            updateEmailTemplate();
-            showToast(`Configured template for ${facilityName}`);
-        }
-
-        function copyGeneratedEmail() {
-            const subject = document.getElementById('preview-subject').innerText;
-            const body = document.getElementById('preview-body').innerText;
-            const fullText = `Subject: ${subject}\n\n${body}`;
-
-            copyText(fullText, "Email template copied to clipboard!");
-        }
-
-        function copyText(text, successMsg = "Copied to clipboard!") {
-            const tempInput = document.createElement('textarea');
-            tempInput.value = text;
-            document.body.appendChild(tempInput);
-            tempInput.select();
-            document.execCommand('copy');
-            document.body.removeChild(tempInput);
-            showToast(successMsg);
-        }
-
-        // Incident Modal Logic
-        function openReportModal() {
-            document.getElementById('incident-modal').classList.remove('hidden');
-            document.getElementById('incident-modal').classList.add('flex');
-        }
-
-        function closeReportModal() {
-            document.getElementById('incident-modal').classList.add('hidden');
-            document.getElementById('incident-modal').classList.remove('flex');
-        }
-
-        function submitIncidentReport(event) {
-            event.preventDefault();
-            closeReportModal();
-            showToast("Incident report logged securely.");
-            document.getElementById('incident-form').reset();
-        }
-
-        function simulateDonation() {
-            showToast("Redirecting to secure mutual aid portal...");
-        }
-
-        // Toast Helper Function
-        function showToast(message) {
-            const toast = document.getElementById('toast');
-            const toastMsg = document.getElementById('toast-msg');
-            toastMsg.innerText = message;
-            toast.classList.remove('translate-y-20', 'opacity-0');
-            toast.classList.add('translate-y-0', 'opacity-100');
-
-            setTimeout(() => {
-                toast.classList.remove('translate-y-0', 'opacity-100');
-                toast.classList.add('translate-y-20', 'opacity-0');
-            }, 3000);
-        }
-
-        // Initialize App on Load
-        window.onload = function() {
-            updateEmailTemplate();
-        };
+                
+                if (secondsLeft <= 0) {
+                    clearInterval(timer);
+                    window.location.href = targetUrl;
+                }
+            }, 1000);
+        })();
     </script>
 </body>
 </html>
-```
