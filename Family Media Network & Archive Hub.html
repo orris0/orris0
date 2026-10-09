@@ -1,0 +1,1254 @@
+  <!DOCTYPE html>
+<html lang="en" class="h-full bg-slate-950">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Family Media Network &amp; Archive of Accountability Hub</title>
+  <meta name="description" content="Unified Family Media Network and Digital Dossier Advocacy Portal." />
+
+  <!-- Social Media Meta Tags -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Family Media Network & Archive Hub" />
+  <meta property="og:description" content="Community media sharing, shelter directory, and advocacy portal." />
+
+  <!-- jQuery CDN -->
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+  <!-- Tailwind CSS Engine with Forms & Typography Plugins -->
+  <script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              50: '#fffbe1',
+              400: '#fbbf24',
+              500: '#f59e0b',
+              600: '#d97706',
+              900: '#78350f',
+            },
+            advocacy: {
+              400: '#f87171',
+              500: '#ef4444',
+              600: '#dc2626',
+            }
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    :root {
+      --primary: #f59e0b;
+      --primary-hover: #d97706;
+      --bg-card: #1e293b;
+      --text-main: #f8fafc;
+      --text-muted: #94a3b8;
+      --border: #334155;
+      --radius: 8px;
+    }
+
+    * { box-sizing: border-box; }
+
+    /* Superfish Multi-Book Navigation Menu */
+    .sf-menu, .sf-menu * {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+    .sf-menu {
+      background: #0f172a;
+      display: flex;
+      flex-wrap: wrap;
+      font-size: 13px;
+      position: relative;
+      z-index: 1000;
+      border-bottom: 1px solid var(--border);
+    }
+    .sf-menu li {
+      position: relative;
+      white-space: nowrap;
+    }
+    .sf-menu a {
+      display: flex;
+      align-items: center;
+      padding: 10px 14px;
+      color: #cbd5e1;
+      text-decoration: none;
+      font-weight: 500;
+      transition: background 0.2s ease, color 0.2s ease;
+      min-height: 40px;
+    }
+    .sf-menu a:hover,
+    .sf-menu a:focus {
+      background: #1e293b;
+      color: #f59e0b;
+      outline: none;
+    }
+    .sf-menu ul {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      display: none;
+      background: #1e293b;
+      min-width: 220px;
+      box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.5);
+      border: 1px solid var(--border);
+      border-radius: 0 0 6px 6px;
+    }
+    .sf-menu li:hover > ul,
+    .sf-menu li:focus-within > ul {
+      display: block;
+    }
+    .sf-menu ul ul {
+      top: 0;
+      left: 100%;
+    }
+    .sf-menu ul a {
+      padding: 8px 12px;
+      font-size: 12px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    }
+
+    /* Emergency Alert Banner */
+    .banner {
+      background-color: #991b1b;
+      color: #ffffff;
+      padding: 8px 16px;
+      text-align: center;
+      font-size: 13px;
+      position: relative;
+    }
+    .banner a {
+      color: #ffffff;
+      text-decoration: underline;
+      font-weight: 600;
+    }
+    .banner a:hover {
+      color: #fef08a;
+    }
+    .banner-close-trigger {
+      position: absolute;
+      right: 12px;
+      top: 50%;
+      transform: translateY(-50%);
+      background: transparent;
+      border: none;
+      color: #ffffff;
+      cursor: pointer;
+      font-size: 18px;
+      line-height: 1;
+      padding: 2px 6px;
+      border-radius: 4px;
+    }
+    .banner-close-trigger:hover {
+      background-color: rgba(255, 255, 255, 0.2);
+    }
+
+    /* Tabbed Panel Styling */
+    .tab-panel-container {
+      max-width: 1280px;
+      margin: 12px auto;
+      padding: 0 16px;
+    }
+    .tab-panel-menu {
+      display: flex;
+      list-style: none;
+      border-bottom: 2px solid var(--border);
+      background: #0f172a;
+      border-radius: var(--radius) var(--radius) 0 0;
+    }
+    .tab-panel-menu li button {
+      display: block;
+      padding: 10px 16px;
+      font-size: 13px;
+      color: var(--text-muted);
+      font-weight: 600;
+      background: transparent;
+      border: none;
+      cursor: pointer;
+      transition: color 0.2s, border-color 0.2s;
+    }
+    .tab-panel-menu li button:hover {
+      color: #f1f5f9;
+    }
+    .tab-panel-menu li button.active-tab {
+      color: #f59e0b;
+      border-bottom: 3px solid #f59e0b;
+      margin-bottom: -2px;
+    }
+    .tab-panel-content {
+      display: none;
+      background: var(--bg-card);
+      padding: 16px;
+      border: 1px solid var(--border);
+      border-top: none;
+      border-radius: 0 0 var(--radius) var(--radius);
+    }
+    .tab-panel-content.active-panel {
+      display: block;
+    }
+
+    /* Facility & Manual Item Link Cards */
+    .logs-container, .books-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 10px;
+      margin-top: 10px;
+    }
+    .item-link {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px 12px;
+      background: #0f172a;
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      color: #38bdf8;
+      text-decoration: none;
+      font-size: 13px;
+      font-weight: 500;
+      transition: all 0.2s ease;
+    }
+    .item-link:hover {
+      background: #1e293b;
+      border-color: #38bdf8;
+    }
+    .book-box {
+      background: #0f172a;
+      padding: 12px;
+      border-radius: var(--radius);
+      border-left: 4px solid #f59e0b;
+    }
+
+    /* Modal Backdrop */
+    .modal-backdrop {
+      background-color: rgba(2, 6, 23, 0.85);
+    }
+  </style>
+</head>
+<body class="min-h-screen text-slate-100 flex flex-col font-sans bg-slate-950">
+
+  <!-- 1. Superfish Multi-Book Navigation Bar -->
+  <nav aria-label="Book Documentation & Registry Navigation">
+    <ul id="sfNav" class="sf-menu">
+      <li><a href="#book1">Book 1: HTML5 &amp; CSS3</a>
+        <ul>
+          <li><a href="#home" class="nav-app-link" data-tab="home">Main Index &amp; Home</a></li>
+          <li><a href="#starter" onclick="showToast('Starter Blueprint loaded')">Starter Page Blueprint</a></li>
+          <li><a href="#gallery" onclick="showToast('Gallery layout active')">Validated Gallery</a></li>
+          <li><a href="#layouts">Multi-Column Layouts &raquo;</a>
+            <ul>
+              <li><a href="#1col" onclick="showToast('1-Column View Active')">1-Column Gallery</a></li>
+              <li><a href="#2col" onclick="showToast('2-Column View Active')">2-Column Gallery</a></li>
+              <li><a href="#3col" onclick="showToast('3-Column Grid Active')">3-Column Mixed Grid</a></li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+
+      <li><a href="#book2">Book 2: JS &amp; Dynamic Media</a>
+        <ul>
+          <li><a href="#community" class="nav-app-link" data-tab="community">News &amp; Events Feed</a></li>
+          <li><a href="#home" class="nav-app-link" data-tab="home">Membership Portal</a></li>
+          <li><a href="#media">Media Engines &raquo;</a>
+            <ul>
+              <li><a href="#audio" onclick="showToast('Audio Studio Engine initialized')">Music Studio Player</a></li>
+              <li><a href="#video" onclick="showToast('Video Studio initialized')">Movie Studio</a></li>
+              <li><a href="#yt" onclick="showToast('YouTube Streamer loaded')">YouTube Video Wagon</a></li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+
+      <li><a href="#book3">Book 3: Advanced UI Systems</a>
+        <ul>
+          <li><a href="#shelters" class="nav-app-link" data-tab="shelters">Directory &amp; Real Estate</a></li>
+          <li><a href="#theme" onclick="showToast('Transparent theme active')">Transparent Theme Engine</a></li>
+          <li><a href="#volunteers">Volunteer Portals &raquo;</a>
+            <ul>
+              <li><a href="#services" onclick="showToast('Services Module active')">Services Module</a></li>
+              <li><a href="#karner" onclick="showToast('Karner UI Blueprint active')">Karner UI Blueprint</a></li>
+              <li><a href="#tweaks" onclick="showToast('Sunset Tweaks loaded')">Sunset UI Tweaks</a></li>
+              <li><a href="#godart" onclick="showToast('Godart Verification Code active')">Godart Verification</a></li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+
+      <li><a href="#book4">Book 4: Security &amp; Registries</a>
+        <ul>
+          <li><a href="#kelly" onclick="openFacilityModal('The Kelly Safe Haven')">Kelly Safe Haven Registry</a></li>
+          <li><a href="#brc" onclick="openFacilityModal('BRC Shelter Logs')">BRC Shelter Logs</a></li>
+          <li><a href="#andrews" onclick="openFacilityModal('Andrews Tracking Desk')">Andrews Tracking Desk</a></li>
+          <li><a href="#travellers" onclick="openFacilityModal('Travellers Operational Logs')">Travellers Operational Logs</a></li>
+          <li><a href="#breaking" onclick="openFacilityModal('Breaking Ground Units')">Breaking Ground Units</a></li>
+          <li><a href="#legal" class="nav-app-link" data-tab="legal">Know Your Rights Registry</a></li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+
+  <!-- 2. Crisis Line Emergency Alert Banner -->
+  <div class="banner" role="region" aria-label="Crisis Line Alert">
+    <strong>🚨 IMMEDIATE ASSISTANCE CRISIS LINES:</strong> DHS Ombudsman: <a href="tel:18009946494">800-994-6494</a> | Legal Aid Society Homeless Rights: <a href="tel:18006492424">800-649-2424</a>
+    <button type="button" class="banner-close-trigger" aria-label="Dismiss crisis line alert">&times;</button>
+  </div>
+
+  <!-- 3. Primary Site Navigation Header -->
+  <header class="border-b border-slate-800 bg-slate-900/90 backdrop-blur sticky top-0 z-40">
+    <div class="max-w-7xl mx-auto px-4 py-3 flex flex-wrap items-center justify-between gap-3">
+      
+      <!-- Brand Logo -->
+      <a href="#home" class="nav-app-link flex items-center gap-2.5 focus:outline-none focus:ring-2 focus:ring-amber-500 rounded-lg" data-tab="home">
+        <div class="p-2 bg-amber-500/10 rounded-lg border border-amber-500/30 text-amber-500 font-extrabold text-lg flex items-center justify-center">
+          <span class="text-rose-500 mr-0.5">●</span> fmn
+        </div>
+        <div>
+          <span class="font-extrabold text-base text-slate-100 tracking-tight block leading-tight">Family Media Network</span>
+          <span class="text-xs text-rose-400 font-semibold tracking-wide block">&amp; Archive of Accountability</span>
+        </div>
+      </a>
+
+      <!-- Primary Section Tabs Navigation -->
+      <nav class="flex overflow-x-auto gap-1 text-xs sm:text-sm py-1 max-w-full" aria-label="Portal Navigation" role="tablist">
+        <button type="button" role="tab" data-tab="home" class="tab-link active px-3 py-1.5 rounded-md bg-amber-500 text-slate-950 font-bold focus:outline-none focus:ring-2 focus:ring-amber-400 transition whitespace-nowrap">Home / Feed</button>
+        <button type="button" role="tab" data-tab="shelters" class="tab-link px-3 py-1.5 rounded-md text-slate-300 font-medium hover:text-white hover:bg-slate-800 focus:outline-none focus:ring-2 focus:ring-amber-500 transition whitespace-nowrap">Shelters Directory</button>
+        <button type="button" role="tab" data-tab="community" class="tab-link px-3 py-1.5 rounded-md text-slate-300 font-medium hover:text-white hover:bg-slate-800 focus:outline-none focus:ring-2 focus:ring-amber-500 transition whitespace-nowrap">Community Node</button>
+        <button type="button" role="tab" data-tab="voices" class="tab-link px-3 py-1.5 rounded-md text-slate-300 font-medium hover:text-white hover:bg-slate-800 focus:outline-none focus:ring-2 focus:ring-amber-500 transition whitespace-nowrap">Survivor Voices</button>
+        <button type="button" role="tab" data-tab="legal" class="tab-link px-3 py-1.5 rounded-md text-slate-300 font-medium hover:text-white hover:bg-slate-800 focus:outline-none focus:ring-2 focus:ring-amber-500 transition whitespace-nowrap">Legal Resources</button>
+        <button type="button" role="tab" data-tab="action" class="tab-link px-3 py-1.5 rounded-md text-slate-300 font-medium hover:text-white hover:bg-slate-800 focus:outline-none focus:ring-2 focus:ring-amber-500 transition whitespace-nowrap">Action Center</button>
+        <button type="button" role="tab" data-tab="fund" class="tab-link px-3 py-1.5 rounded-md text-slate-300 font-medium hover:text-white hover:bg-slate-800 focus:outline-none focus:ring-2 focus:ring-amber-500 transition whitespace-nowrap">Restorative Fund</button>
+        <button type="button" role="tab" data-tab="faq" class="tab-link px-3 py-1.5 rounded-md text-slate-300 font-medium hover:text-white hover:bg-slate-800 focus:outline-none focus:ring-2 focus:ring-amber-500 transition whitespace-nowrap">FAQ</button>
+      </nav>
+
+      <!-- Auth Controls -->
+      <div class="flex items-center gap-2">
+        <button type="button" onclick="openAuthModal('login')" class="px-3 py-1.5 border border-slate-700 hover:border-slate-500 text-slate-200 rounded-lg text-xs font-semibold transition focus:outline-none focus:ring-2 focus:ring-amber-500">
+          Login
+        </button>
+        <button type="button" onclick="openAuthModal('register')" class="px-3 py-1.5 bg-rose-600 hover:bg-rose-500 text-white rounded-lg text-xs font-bold transition focus:outline-none focus:ring-2 focus:ring-rose-400">
+          Register
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- 4. Tabbed Panel Block (Shelter Logs & Manual Specifications) -->
+  <div class="tab-panel-container">
+    <ul class="tab-panel-menu" role="tablist">
+      <li><button type="button" id="tab-shelter-btn" data-panel="#shelter-registries-panel" class="active-tab" role="tab" aria-selected="true">Active Facility Registries</button></li>
+      <li><button type="button" id="tab-ref-btn" data-panel="#reference-materials-panel" role="tab" aria-selected="false">Development Manual Specs</button></li>
+    </ul>
+
+    <!-- Shelter Logs Panel -->
+    <div id="shelter-registries-panel" class="tab-panel-content active-panel" role="tabpanel">
+      <h2 class="text-sm font-bold text-amber-400">Active Transitional Facility Registries &amp; Logs</h2>
+      <div class="logs-container">
+        <a class="item-link" href="#shelters" onclick="openFacilityModal('The Kelly Safe Haven')"><span>The Kelly Safe Haven Dashboard</span><span class="text-xs text-slate-400">View &rarr;</span></a>
+        <a class="item-link" href="#shelters" onclick="openFacilityModal('The Andrews Transitional Center')"><span>The Andrews Intake Log</span><span class="text-xs text-slate-400">View &rarr;</span></a>
+        <a class="item-link" href="#shelters" onclick="openFacilityModal('The Travellers Hotel')"><span>The Travellers Hotel Database</span><span class="text-xs text-slate-400">View &rarr;</span></a>
+        <a class="item-link" href="#shelters" onclick="openFacilityModal('Breaking Ground Units')"><span>Breaking Ground Units</span><span class="text-xs text-slate-400">View &rarr;</span></a>
+        <a class="item-link" href="#shelters" onclick="openFacilityModal('BRC 25th Street Center')"><span>BRC Transition Center (25th St)</span><span class="text-xs text-slate-400">View &rarr;</span></a>
+        <a class="item-link" href="#legal" class="nav-app-link" data-tab="legal"><span>Know Your Rights Legal Guide</span><span class="text-xs text-slate-400">View &rarr;</span></a>
+      </div>
+    </div>
+
+    <!-- Core Manuals Panel -->
+    <div id="reference-materials-panel" class="tab-panel-content" role="tabpanel">
+      <h2 class="text-sm font-bold text-amber-400">Core Technical Manual Specifications</h2>
+      <div class="books-container">
+        <div class="book-box">
+          <strong class="text-xs text-amber-300">Book 1: HTML5 &amp; CSS3 Manual</strong>
+          <p class="text-xs text-slate-400 mt-1">Structural validation layouts, responsive dynamic viewport options, and multi-column CSS grid gallery blueprints.</p>
+        </div>
+        <div class="book-box">
+          <strong class="text-xs text-amber-300">Book 2: JS &amp; Dynamic Media</strong>
+          <p class="text-xs text-slate-400 mt-1">Asynchronous audio player studio, web local storage integrations, and media canvas streaming pipelines.</p>
+        </div>
+        <div class="book-box">
+          <strong class="text-xs text-amber-300">Book 3: Advanced UI Systems</strong>
+          <p class="text-xs text-slate-400 mt-1">Theme variables, high-contrast layouts, real estate directory grids, and component state verification.</p>
+        </div>
+        <div class="book-box">
+          <strong class="text-xs text-amber-300">Book 4: Security Protocols &amp; Facility Ledgers</strong>
+          <p class="text-xs text-slate-400 mt-1">Encrypted client intake ledgers, privacy compliance standards, tenant rights matrices, and advocacy trackers.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 5. Main Content Wrapper -->
+  <main class="flex-grow max-w-7xl w-full mx-auto px-4 py-4">
+
+    <!-- Universal Status Toast Notification -->
+    <div id="statusToast" class="hidden mb-4 p-3 rounded-xl border bg-emerald-500/10 border-emerald-500/30 text-emerald-400 text-xs sm:text-sm flex items-center justify-between shadow-lg" role="alert">
+      <div class="flex items-center gap-2">
+        <span class="text-base">✅</span>
+        <span id="statusToastMsg">Action completed successfully.</span>
+      </div>
+      <button type="button" onclick="$('#statusToast').addClass('hidden')" class="text-emerald-400 hover:text-white font-bold px-2 py-0.5 rounded focus:outline-none" aria-label="Dismiss Toast">&times;</button>
+    </div>
+
+    <!-- ========================================== -->
+    <!-- TAB 1: HOME / FAMILY MEDIA NETWORK FEED    -->
+    <!-- ========================================== -->
+    <section id="tab-home" class="app-tab-section block space-y-6">
+      
+      <!-- Family Group Hero Banner -->
+      <div class="bg-slate-900 border border-slate-800 rounded-2xl overflow-hidden shadow-lg">
+        <div class="grid grid-cols-4 h-28 sm:h-36 bg-slate-800 text-3xl sm:text-4xl text-center items-center">
+          <div class="transition transform hover:scale-110 cursor-pointer" title="Family Vacations">🌅</div>
+          <div class="transition transform hover:scale-110 cursor-pointer" title="Summer Beach Days">🏖️</div>
+          <div class="transition transform hover:scale-110 cursor-pointer" title="Reunions">🌳</div>
+          <div class="transition transform hover:scale-110 cursor-pointer" title="Holidays">🎄</div>
+        </div>
+        <div class="p-5 sm:p-6 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+          <div>
+            <div class="flex items-center gap-2">
+              <span class="px-2.5 py-0.5 rounded-full text-xs font-semibold bg-amber-500/10 border border-amber-500/30 text-amber-400">🔒 Private Network</span>
+              <span class="text-xs text-slate-400">12 Active Members</span>
+            </div>
+            <h1 class="text-2xl sm:text-3xl font-extrabold text-amber-400 mt-1">Family Media Network</h1>
+            <p class="text-xs sm:text-sm text-slate-400 mt-1">Centralized portal for family announcements, media sharing, and event planning.</p>
+          </div>
+          <button type="button" onclick="switchTab('voices')" class="px-4 py-2 bg-rose-600 hover:bg-rose-500 text-white font-bold text-xs sm:text-sm rounded-xl transition shadow-md whitespace-nowrap">
+             Submit Documentation
+          </button>
+        </div>
+      </div>
+
+      <!-- Main Two-Column Grid -->
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+        
+        <!-- Left Content Area (2 Cols) -->
+        <div class="lg:col-span-2 space-y-6">
+          
+          <!-- Interactive Post Composer -->
+          <div class="p-5 bg-slate-900 border border-slate-800 rounded-xl space-y-3 shadow-md">
+            <label for="postInput" class="font-bold text-slate-200 text-sm flex items-center gap-2">
+              <span>✏️</span> Create Family Post
+            </label>
+            <textarea id="postInput" rows="3" placeholder="Share news, family updates, or memories..." class="w-full bg-slate-950 border border-slate-700 rounded-lg p-3 text-sm text-slate-100 focus:outline-none focus:border-amber-500 focus:ring-1 focus:ring-amber-500 placeholder-slate-500"></textarea>
+            <div class="flex justify-between items-center">
+              <div class="flex gap-2 text-lg">
+                <button type="button" onclick="appendEmoji('📸')" class="p-1 hover:bg-slate-800 rounded" title="Add Photo">📸</button>
+                <button type="button" onclick="appendEmoji('🎉')" class="p-1 hover:bg-slate-800 rounded" title="Add Celebration">🎉</button>
+                <button type="button" onclick="appendEmoji('❤️️')" class="p-1 hover:bg-slate-800 rounded" title="Add Heart">❤️</button>
+              </div>
+              <button type="button" id="postBtn" class="px-4 py-2 bg-amber-500 text-slate-950 font-bold rounded-lg hover:bg-amber-400 active:bg-amber-600 transition text-sm shadow">Share Post</button>
+            </div>
+          </div>
+
+          <!-- Discussion Stream -->
+          <div class="p-5 bg-slate-900 border border-slate-800 rounded-xl space-y-4">
+            <div class="flex justify-between items-center border-b border-slate-800 pb-3">
+              <h2 class="text-lg font-bold text-slate-100 flex items-center gap-2">💬 Discussion Stream</h2>
+              <span class="text-xs text-slate-400">Sorted by Most Recent</span>
+            </div>
+            
+            <div id="postsContainer" class="space-y-3">
+              <div class="p-4 bg-slate-950 border border-slate-800 rounded-lg space-y-2">
+                <div class="flex justify-between items-start text-xs text-slate-400">
+                  <div>
+                    <strong class="text-slate-200 text-sm block">Grandma Rose ⭐</strong>
+                    <span class="text-amber-400/80">Founders Branch &bull; Portland</span>
+                  </div>
+                  <span>2 hours ago</span>
+                </div>
+                <p class="text-sm text-slate-300">Looking forward to seeing everyone at the birthday call this Friday! Bring your funny stories and photo albums.</p>
+                <div class="flex gap-4 pt-1 text-xs text-slate-400">
+                  <button type="button" onclick="likePost(this)" class="hover:text-amber-400">❤️ 4 Likes</button>
+                  <button type="button" onclick="showToast('Comments thread loaded')" class="hover:text-amber-400">💬 2 Comments</button>
+                </div>
+              </div>
+
+              <div class="p-4 bg-slate-950 border border-slate-800 rounded-lg space-y-2">
+                <div class="flex justify-between items-start text-xs text-slate-400">
+                  <div>
+                    <strong class="text-slate-200 text-sm block">Uncle Marcus</strong>
+                    <span class="text-amber-400/80">Carter Branch &bull; Denver</span>
+                  </div>
+                  <span>Yesterday at 4:15 PM</span>
+                </div>
+                <p class="text-sm text-slate-300">Uploaded new photos from the summer mountain trail trip to the shared photo grid!</p>
+                <div class="flex gap-4 pt-1 text-xs text-slate-400">
+                  <button type="button" onclick="likePost(this)" class="hover:text-amber-400">❤️ 6 Likes</button>
+                  <button type="button" onclick="showToast('Comments thread loaded')" class="hover:text-amber-400">💬 1 Comment</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Members Roster Table -->
+          <div class="p-5 bg-slate-900 border border-slate-800 rounded-xl space-y-4">
+            <div class="flex justify-between items-center">
+              <h2 class="text-lg font-bold text-slate-100 flex items-center gap-2">👥 Family Members Roster</h2>
+              <span class="text-xs text-slate-400">Click table headers to sort</span>
+            </div>
+            <div class="overflow-x-auto">
+              <table id="membersTable" class="w-full text-left text-sm">
+                <thead>
+                  <tr class="border-b border-slate-800 text-slate-400 bg-slate-950/50">
+                    <th class="p-2.5"><button type="button" onclick="sortTable(0)" class="font-semibold text-slate-300 hover:text-amber-400 focus:outline-none">Name ⇅</button></th>
+                    <th class="p-2.5"><button type="button" onclick="sortTable(1)" class="font-semibold text-slate-300 hover:text-amber-400 focus:outline-none">Family Branch ⇅</button></th>
+                    <th class="p-2.5"><button type="button" onclick="sortTable(2)" class="font-semibold text-slate-300 hover:text-amber-400 focus:outline-none">City ⇅</button></th>
+                    <th class="p-2.5"><button type="button" onclick="sortTable(3)" class="font-semibold text-slate-300 hover:text-amber-400 focus:outline-none">Joined ⇅</button></th>
+                  </tr>
+                </thead>
+                <tbody class="divide-y divide-slate-800/50 text-slate-300">
+                  <tr class="hover:bg-slate-800/30"><td class="p-2.5 font-medium text-slate-200">Grandma Rose ⭐</td><td class="p-2.5">Founders</td><td class="p-2.5">Portland</td><td class="p-2.5">2024</td></tr>
+                  <tr class="hover:bg-slate-800/30"><td class="p-2.5 font-medium text-slate-200">Grandpa Walt ⭐</td><td class="p-2.5">Founders</td><td class="p-2.5">Portland</td><td class="p-2.5">2024</td></tr>
+                  <tr class="hover:bg-slate-800/30"><td class="p-2.5 font-medium text-slate-200">Uncle Marcus</td><td class="p-2.5">Carter</td><td class="p-2.5">Denver</td><td class="p-2.5">2024</td></tr>
+                  <tr class="hover:bg-slate-800/30"><td class="p-2.5 font-medium text-slate-200">Aunt Priya</td><td class="p-2.5">Carter</td><td class="p-2.5">Denver</td><td class="p-2.5">2024</td></tr>
+                  <tr class="hover:bg-slate-800/30"><td class="p-2.5 font-medium text-slate-200">Dad (Robert)</td><td class="p-2.5">Bennett</td><td class="p-2.5">Seattle</td><td class="p-2.5">2024</td></tr>
+                  <tr class="hover:bg-slate-800/30"><td class="p-2.5 font-medium text-slate-200">Mom (Sarah)</td><td class="p-2.5">Bennett</td><td class="p-2.5">Seattle</td><td class="p-2.5">2024</td></tr>
+                  <tr class="hover:bg-slate-800/30"><td class="p-2.5 font-medium text-slate-200">Jamie Bennett</td><td class="p-2.5">Bennett</td><td class="p-2.5">Boston</td><td class="p-2.5">2025</td></tr>
+                  <tr class="hover:bg-slate-800/30"><td class="p-2.5 font-medium text-slate-200">Cousin Leo</td><td class="p-2.5">Carter</td><td class="p-2.5">Austin</td><td class="p-2.5">2025</td></tr>
+                </tbody>
+              </table>
+            </div>
+            <p class="text-xs text-slate-500">⭐ denotes group administrator privileges.</p>
+          </div>
+
+          <!-- Interactive Photo Gallery Grid -->
+          <div class="p-5 bg-slate-900 border border-slate-800 rounded-xl space-y-3">
+            <h2 class="text-lg font-bold text-slate-100 flex items-center gap-2">🖼️ Shared Media Gallery</h2>
+            <div class="grid grid-cols-2 sm:grid-cols-3 gap-3 text-center text-3xl">
+              <button type="button" onclick="openPhotoModal('Sunset Beach Trip', '🌅')" class="aspect-square bg-slate-950 rounded-xl flex flex-col items-center justify-center border border-slate-800 hover:border-amber-500 focus:outline-none transition group p-3">
+                <span>🌅</span>
+                <span class="text-xs text-slate-400 group-hover:text-amber-400 mt-2 font-sans font-medium">Sunset Trip</span>
+              </button>
+              <button type="button" onclick="openPhotoModal('Birthday Celebration', '🍰')" class="aspect-square bg-slate-950 rounded-xl flex flex-col items-center justify-center border border-slate-800 hover:border-amber-500 focus:outline-none transition group p-3">
+                <span>🍰</span>
+                <span class="text-xs text-slate-400 group-hover:text-amber-400 mt-2 font-sans font-medium">Grandpa's Cake</span>
+              </button>
+              <button type="button" onclick="openPhotoModal('Holiday Reunion', '🎄')" class="aspect-square bg-slate-950 rounded-xl flex flex-col items-center justify-center border border-slate-800 hover:border-amber-500 focus:outline-none transition group p-3">
+                <span>🎄</span>
+                <span class="text-xs text-slate-400 group-hover:text-amber-400 mt-2 font-sans font-medium">Christmas '24</span>
+              </button>
+              <button type="button" onclick="openPhotoModal('Graduation Day', '🎓')" class="aspect-square bg-slate-950 rounded-xl flex flex-col items-center justify-center border border-slate-800 hover:border-amber-500 focus:outline-none transition group p-3">
+                <span>🎓</span>
+                <span class="text-xs text-slate-400 group-hover:text-amber-400 mt-2 font-sans font-medium">Jamie's Grad</span>
+              </button>
+              <button type="button" onclick="openPhotoModal('Mountain Hike', '🏔️')" class="aspect-square bg-slate-950 rounded-xl flex flex-col items-center justify-center border border-slate-800 hover:border-amber-500 focus:outline-none transition group p-3">
+                <span>🏔️</span>
+                <span class="text-xs text-slate-400 group-hover:text-amber-400 mt-2 font-sans font-medium">Denver Trail</span>
+              </button>
+              <button type="button" onclick="openPhotoModal('Sailing Day', '⛵')" class="aspect-square bg-slate-950 rounded-xl flex flex-col items-center justify-center border border-slate-800 hover:border-amber-500 focus:outline-none transition group p-3">
+                <span>⛵</span>
+                <span class="text-xs text-slate-400 group-hover:text-amber-400 mt-2 font-sans font-medium">Summer Lake</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Upcoming Events -->
+          <div class="p-5 bg-slate-900 border border-slate-800 rounded-xl space-y-3">
+            <h2 class="text-lg font-bold text-slate-100 flex items-center gap-2">📅 Upcoming Family Events</h2>
+            <div class="space-y-3">
+              <div class="flex gap-4 p-3.5 bg-slate-950 border border-slate-800 rounded-xl items-center justify-between flex-wrap">
+                <div class="flex items-center gap-3">
+                  <div class="p-2.5 bg-amber-500/20 text-amber-400 rounded-lg text-center font-bold min-w-[55px]">
+                    <span class="block text-xl leading-none">18</span>
+                    <span class="text-xs uppercase">Oct</span>
+                  </div>
+                  <div>
+                    <h3 class="font-bold text-slate-200 text-sm">Grandpa Walt's Birthday Video Call</h3>
+                    <p class="text-xs text-slate-400">Video call at 6:00 PM Pacific. Bring stories!</p>
+                  </div>
+                </div>
+                <button type="button" onclick="toggleRsvp(this)" class="px-3 py-1.5 bg-slate-800 hover:bg-slate-700 text-xs font-bold text-amber-400 rounded-lg border border-amber-500/30 transition">RSVP Yes</button>
+              </div>
+
+              <div class="flex gap-4 p-3.5 bg-slate-950 border border-slate-800 rounded-xl items-center justify-between flex-wrap">
+                <div class="flex items-center gap-3">
+                  <div class="p-2.5 bg-amber-500/20 text-amber-400 rounded-lg text-center font-bold min-w-[55px]">
+                    <span class="block text-xl leading-none">26</span>
+                    <span class="text-xs uppercase">Nov</span>
+                  </div>
+                  <div>
+                    <h3 class="font-bold text-slate-200 text-sm">Thanksgiving Dinner at Bennett House</h3>
+                    <p class="text-xs text-slate-400">Potluck signups opening in comment thread.</p>
+                  </div>
+                </div>
+                <button type="button" onclick="toggleRsvp(this)" class="px-3 py-1.5 bg-slate-800 hover:bg-slate-700 text-xs font-bold text-amber-400 rounded-lg border border-amber-500/30 transition">RSVP Yes</button>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Right Sidebar Area -->
+        <div class="space-y-6">
+          <div class="p-5 bg-slate-900 border border-slate-800 rounded-xl space-y-3 text-sm">
+            <h3 class="font-bold text-slate-200 text-base flex items-center gap-2">ℹ️ About FMN Hub</h3>
+            <p class="text-slate-400 text-xs leading-relaxed">Our unified digital repository for news, encrypted record-keeping, advocacy resources, and events.</p>
+            <ul class="space-y-2 text-xs text-slate-300 border-t border-slate-800 pt-3">
+              <li class="flex items-center gap-2">🔒 <span><b>Private Access:</b> Invited members only.</span></li>
+              <li class="flex items-center gap-2">📍 <span><b>Nodes:</b> Portland, Denver, Seattle, Boston</span></li>
+              <li class="flex items-center gap-2">🛡️ <span><b>Advocacy:</b> Integrated with Accountability Dossier.</span></li>
+            </ul>
+          </div>
+
+          <div class="p-5 bg-slate-900 border border-slate-800 rounded-xl space-y-3">
+            <h3 class="font-bold text-amber-400 text-sm uppercase tracking-wider">Quick Actions</h3>
+            <div class="space-y-2">
+              <button type="button" onclick="switchTab('voices')" class="w-full text-left p-2.5 bg-slate-950 hover:bg-slate-800 border border-slate-800 rounded-lg text-xs font-semibold text-rose-400 flex justify-between items-center transition">
+                <span>Submit Incident Log</span>
+                <span>&rarr;</span>
+              </button>
+              <button type="button" onclick="switchTab('shelters')" class="w-full text-left p-2.5 bg-slate-950 hover:bg-slate-800 border border-slate-800 rounded-lg text-xs font-semibold text-slate-300 flex justify-between items-center transition">
+                <span>Browse Shelter Records</span>
+                <span>&rarr;</span>
+              </button>
+              <button type="button" onclick="switchTab('action')" class="w-full text-left p-2.5 bg-slate-950 hover:bg-slate-800 border border-slate-800 rounded-lg text-xs font-semibold text-amber-400 flex justify-between items-center transition">
+                <span>Send Advocacy Notice</span>
+                <span>&rarr;</span>
+              </button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ========================================== -->
+    <!-- TAB 2: SHELTERS DIRECTORY & TRACKING       -->
+    <!-- ========================================== -->
+    <section id="tab-shelters" class="app-tab-section hidden space-y-6">
+      <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 bg-slate-900 p-5 border border-slate-800 rounded-2xl">
+        <div>
+          <span class="px-2.5 py-0.5 text-xs font-bold bg-rose-500/10 border border-rose-500/30 text-rose-400 rounded-full">Systemic Facility Ledger</span>
+          <h2 class="text-xl font-bold text-slate-100 mt-1">Shelters Directory &amp; Incident Tracking</h2>
+          <p class="text-xs text-slate-400">Search transitional facilities, inspect safety compliance logs, and view survivor documentation.</p>
+        </div>
+        <div class="w-full md:w-80">
+          <label for="shelterSearch" class="sr-only">Search facilities</label>
+          <input type="text" id="shelterSearch" placeholder="Search facilities, boroughs, or logs..." class="bg-slate-950 border border-slate-700 rounded-xl px-4 py-2 text-sm text-slate-100 placeholder-slate-500 focus:outline-none focus:border-amber-500 focus:ring-1 focus:ring-amber-500 w-full">
+        </div>
+      </div>
+
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-4" id="shelterDirectory">
+        
+        <!-- Facility Card 1 -->
+        <div class="facility-card p-5 bg-slate-900 border border-slate-800 rounded-xl space-y-3 flex flex-col justify-between hover:border-slate-700 transition">
+          <div>
+            <div class="flex justify-between items-start gap-2">
+              <h3 class="font-bold text-slate-100 text-base">The Kelly Safe Haven</h3>
+              <span class="text-xs px-2 py-0.5 bg-amber-500/10 border border-amber-500/30 text-amber-400 rounded font-semibold whitespace-nowrap">4 Logs</span>
+            </div>
+            <p class="text-xs text-slate-400 mt-2"><strong>Borough / Sector:</strong> Manhattan Sector</p>
+            <p class="text-xs text-slate-400 mt-1"><strong>Status:</strong> Active Intake Operational</p>
+            <p class="text-xs text-slate-500 mt-2 leading-relaxed">Documented inspections regarding unit cleanliness, elevator maintenance, and caseworker staffing.</p>
+          </div>
+          <button type="button" onclick="openFacilityModal('The Kelly Safe Haven')" class="w-full py-2 bg-slate-950 hover:bg-slate-800 border border-slate-800 text-amber-400 text-xs font-bold rounded-lg transition text-center">
+            View Full Registry &rarr;
+          </button>
+        </div>
+
+        <!-- Facility Card 2 -->
+        <div class="facility-card p-5 bg-slate-900 border border-slate-800 rounded-xl space-y-3 flex flex-col justify-between hover:border-slate-700 transition">
+          <div>
+            <div class="flex justify-between items-start gap-2">
+              <h3 class="font-bold text-slate-100 text-base">BRC 25th Street Center</h3>
+              <span class="text-xs px-2 py-0.5 bg-rose-500/10 border border-rose-500/30 text-rose-400 rounded font-semibold whitespace-nowrap">12 Incidents</span>
+            </div>
+            <p class="text-xs text-slate-400 mt-2"><strong>Borough / Sector:</strong> Manhattan Core</p>
+            <p class="text-xs text-slate-400 mt-1"><strong>Status:</strong> High Capacity Alert</p>
+            <p class="text-xs text-slate-500 mt-2 leading-relaxed">Multiple survivor reports filed on security compliance and delayed maintenance responses.</p>
+          </div>
+          <button type="button" onclick="openFacilityModal('BRC 25th Street Center')" class="w-full py-2 bg-slate-950 hover:bg-slate-800 border border-slate-800 text-amber-400 text-xs font-bold rounded-lg transition text-center">
+            View Full Registry &rarr;
+          </button>
+        </div>
+
+        <!-- Facility Card 3 -->
+        <div class="facility-card p-5 bg-slate-900 border border-slate-800 rounded-xl space-y-3 flex flex-col justify-between hover:border-slate-700 transition">
+          <div>
+            <div class="flex justify-between items-start gap-2">
+              <h3 class="font-bold text-slate-100 text-base">The Andrews Transitional</h3>
+              <span class="text-xs px-2 py-0.5 bg-emerald-500/10 border border-emerald-500/30 text-emerald-400 rounded font-semibold whitespace-nowrap">1 Open Log</span>
+            </div>
+            <p class="text-xs text-slate-400 mt-2"><strong>Borough / Sector:</strong> Brooklyn District</p>
+            <p class="text-xs text-slate-400 mt-1"><strong>Status:</strong> Resources Available</p>
+            <p class="text-xs text-slate-500 mt-2 leading-relaxed">Regular shelter intake logs with active legal advocacy oversight and tenant support.</p>
+          </div>
+          <button type="button" onclick="openFacilityModal('The Andrews Transitional Center')" class="w-full py-2 bg-slate-950 hover:bg-slate-800 border border-slate-800 text-amber-400 text-xs font-bold rounded-lg transition text-center">
+            View Full Registry &rarr;
+          </button>
+        </div>
+
+        <!-- Facility Card 4 -->
+        <div class="facility-card p-5 bg-slate-900 border border-slate-800 rounded-xl space-y-3 flex flex-col justify-between hover:border-slate-700 transition">
+          <div>
+            <div class="flex justify-between items-start gap-2">
+              <h3 class="font-bold text-slate-100 text-base">Travellers Hotel Lodge</h3>
+              <span class="text-xs px-2 py-0.5 bg-amber-500/10 border border-amber-500/30 text-amber-400 rounded font-semibold whitespace-nowrap">3 Incidents</span>
+            </div>
+            <p class="text-xs text-slate-400 mt-2"><strong>Borough / Sector:</strong> Queens Sector</p>
+            <p class="text-xs text-slate-400 mt-1"><strong>Status:</strong> Under Review</p>
+            <p class="text-xs text-slate-500 mt-2 leading-relaxed">Temporary housing site undergoing facility inspection for heating and water systems.</p>
+          </div>
+          <button type="button" onclick="openFacilityModal('The Travellers Hotel')" class="w-full py-2 bg-slate-950 hover:bg-slate-800 border border-slate-800 text-amber-400 text-xs font-bold rounded-lg transition text-center">
+            View Full Registry &rarr;
+          </button>
+        </div>
+
+        <!-- Facility Card 5 -->
+        <div class="facility-card p-5 bg-slate-900 border border-slate-800 rounded-xl space-y-3 flex flex-col justify-between hover:border-slate-700 transition">
+          <div>
+            <div class="flex justify-between items-start gap-2">
+              <h3 class="font-bold text-slate-100 text-base">Breaking Ground Units</h3>
+              <span class="text-xs px-2 py-0.5 bg-emerald-500/10 border border-emerald-500/30 text-emerald-400 rounded font-semibold whitespace-nowrap">0 Open Violations</span>
+            </div>
+            <p class="text-xs text-slate-400 mt-2"><strong>Borough / Sector:</strong> Scattered Sites</p>
+            <p class="text-xs text-slate-400 mt-1"><strong>Status:</strong> Fully Operational</p>
+            <p class="text-xs text-slate-500 mt-2 leading-relaxed">Scattered site supportive housing apartments with direct community case management.</p>
+          </div>
+          <button type="button" onclick="openFacilityModal('Breaking Ground Units')" class="w-full py-2 bg-slate-950 hover:bg-slate-800 border border-slate-800 text-amber-400 text-xs font-bold rounded-lg transition text-center">
+            View Full Registry &rarr;
+          </button>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ========================================== -->
+    <!-- TAB 3: COMMUNITY NODE HUB                  -->
+    <!-- ========================================== -->
+    <section id="tab-community" class="app-tab-section hidden space-y-6">
+      <div class="bg-slate-900 border border-slate-800 rounded-2xl overflow-hidden shadow-lg">
+        <div class="p-6 bg-slate-800/50 border-b border-slate-800 flex justify-between items-center flex-wrap gap-4">
+          <div>
+            <span class="text-xs font-semibold px-2.5 py-0.5 rounded-full bg-emerald-500/10 text-emerald-400 border border-emerald-500/30">🔒 Community Sandbox Node</span>
+            <h2 class="text-xl font-bold text-slate-100 mt-2">HTML5 Event Development &amp; Design Group</h2>
+            <p class="text-xs text-slate-400 mt-1">Shared dynamic web components &bull; <strong>128 Active Developers &amp; Advocates</strong></p>
+          </div>
+          <button type="button" onclick="showToast('New repository template instantiated')" class="px-3.5 py-2 bg-amber-500 text-slate-950 font-bold text-xs rounded-xl hover:bg-amber-400 transition">
+            + New Sandbox Post
+          </button>
+        </div>
+
+        <!-- Feed Category Content Filters -->
+        <div class="p-6 space-y-4">
+          <div class="flex items-center gap-2 pb-2 overflow-x-auto border-b border-slate-800">
+            <span class="text-xs text-slate-400 font-medium whitespace-nowrap mr-2">Filter Feed:</span>
+            <button type="button" class="node-filter-btn active-filter text-xs px-3 py-1.5 rounded-lg bg-amber-500 text-slate-950 font-bold focus:outline-none" data-filter="all">All Content</button>
+            <button type="button" class="node-filter-btn text-xs px-3 py-1.5 rounded-lg bg-slate-800 text-slate-300 font-medium hover:bg-slate-700 focus:outline-none" data-filter="announcement">📢 Announcements</button>
+            <button type="button" class="node-filter-btn text-xs px-3 py-1.5 rounded-lg bg-slate-800 text-slate-300 font-medium hover:bg-slate-700 focus:outline-none" data-filter="code-snippet">💻 Code Repos</button>
+            <button type="button" class="node-filter-btn text-xs px-3 py-1.5 rounded-lg bg-slate-800 text-slate-300 font-medium hover:bg-slate-700 focus:outline-none" data-filter="advocacy">🛡️ Policy Updates</button>
+          </div>
+
+          <div class="space-y-3">
+            <div class="node-post-card p-4 rounded-xl border border-slate-800 bg-slate-950/60 space-y-1.5" data-post-type="announcement">
+              <div class="flex justify-between items-center text-xs">
+                <strong class="text-amber-400 font-bold text-sm">Orris Baker</strong>
+                <span class="text-slate-500">Announcement &bull; 3 hours ago</span>
+              </div>
+              <p class="text-xs text-slate-300 leading-relaxed">Consolidated structural hub page actively deploying HTML5 layout projects and cross-browser CSS grid blueprints.</p>
+            </div>
+
+            <div class="node-post-card p-4 rounded-xl border border-slate-800 bg-slate-950/60 space-y-1.5" data-post-type="code-snippet">
+              <div class="flex justify-between items-center text-xs">
+                <strong class="text-cyan-400 font-bold text-sm">Workspace Deployment Bot</strong>
+                <span class="text-slate-500">Code Snippet &bull; 5 hours ago</span>
+              </div>
+              <p class="text-xs text-slate-300 leading-relaxed">Automated verification pipeline operating smoothly across edge nodes. All accessibility tags validated.</p>
+              <pre class="bg-slate-900 p-2.5 rounded-lg text-xs font-mono text-emerald-400 border border-slate-800 overflow-x-auto">git commit -m "Deploy responsive dashboard tab-panel engine"</pre>
+            </div>
+
+            <div class="node-post-card p-4 rounded-xl border border-slate-800 bg-slate-950/60 space-y-1.5" data-post-type="advocacy">
+              <div class="flex justify-between items-center text-xs">
+                <strong class="text-rose-400 font-bold text-sm">Advocacy Legal Desk</strong>
+                <span class="text-slate-500">Policy &bull; Yesterday</span>
+              </div>
+              <p class="text-xs text-slate-300 leading-relaxed">Updated tenant rights self-advocacy PDF guides available for download in the Legal Resources module.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================== -->
+    <!-- TAB 4: SURVIVOR VOICES & DOCUMENTATION     -->
+    <!-- ========================================== -->
+    <section id="tab-voices" class="app-tab-section hidden max-w-3xl mx-auto space-y-6">
+      <div class="text-center space-y-2">
+        <span class="px-3 py-1 bg-rose-500/10 border border-rose-500/30 text-rose-400 text-xs font-bold rounded-full uppercase tracking-wider">Encrypted Portal</span>
+        <h2 class="text-2xl font-extrabold text-slate-100">Survivor Documentation Form</h2>
+        <p class="text-xs sm:text-sm text-slate-400">Safely log shelter conditions, systemic violations, or mistreatment reports. Submissions can be filed anonymously.</p>
+      </div>
+
+      <form id="advocacyForm" class="space-y-4 bg-slate-900 p-6 sm:p-8 rounded-2xl border border-slate-800 shadow-xl">
+        <div class="grid sm:grid-cols-2 gap-4">
+          <div>
+            <label for="facilitySelect" class="block text-xs font-semibold text-slate-300 mb-1">Facility Name / Location</label>
+            <input type="text" id="facilitySelect" required placeholder="e.g. BRC 25th St or The Kelly Safe Haven" class="w-full bg-slate-950 border border-slate-700 rounded-xl px-3.5 py-2.5 text-sm text-slate-100 focus:outline-none focus:border-amber-500">
+          </div>
+          <div>
+            <label for="incidentType" class="block text-xs font-semibold text-slate-300 mb-1">Classification Category</label>
+            <select id="incidentType" required class="w-full bg-slate-950 border border-slate-700 rounded-xl px-3.5 py-2.5 text-sm text-slate-200 focus:outline-none focus:border-amber-500">
+              <option value="housing">Housing &amp; Shelter Conditions</option>
+              <option value="safety">Safety &amp; Security Violations</option>
+              <option value="medical">Medical / Health Neglect</option>
+              <option value="mistreatment">Systemic Care Misconduct</option>
+              <option value="legal">Civil Rights Infringements</option>
+            </select>
+          </div>
+        </div>
+
+        <div>
+          <label for="narrative" class="block text-xs font-semibold text-slate-300 mb-1">Detailed Narrative / Incident Record</label>
+          <textarea id="narrative" rows="5" required placeholder="Describe the incident, date, involved personnel, and any details..." class="w-full bg-slate-950 border border-slate-700 rounded-xl p-3.5 text-sm text-slate-100 focus:outline-none focus:border-amber-500 placeholder-slate-500"></textarea>
+        </div>
+
+        <div class="flex items-center gap-2 p-3 bg-slate-950 rounded-xl border border-slate-800 text-xs text-slate-400">
+          <input type="checkbox" id="anonCheck" class="rounded bg-slate-900 border-slate-700 text-amber-500 focus:ring-amber-500">
+          <label for="anonCheck" class="cursor-pointer">Submit anonymously without recording user metadata.</label>
+        </div>
+
+        <button type="submit" class="w-full py-3 bg-rose-600 hover:bg-rose-500 active:bg-rose-700 text-white font-bold rounded-xl transition text-sm shadow-md">
+          🔒 Submit Encrypted Documentation Log
+        </button>
+      </form>
+    </section>
+
+    <!-- ========================================== -->
+    <!-- TAB 5: LEGAL RESOURCES & ADVOCACY          -->
+    <!-- ========================================== -->
+    <section id="tab-legal" class="app-tab-section hidden space-y-6">
+      <div class="border-b border-slate-800 pb-4">
+        <h2 class="text-2xl font-extrabold text-slate-100">Legal Resources &amp; Rights Portal</h2>
+        <p class="text-xs sm:text-sm text-slate-400 mt-1">Know your rights, download self-advocacy toolkits, and access pro bono legal networks.</p>
+      </div>
+
+      <div class="grid md:grid-cols-2 gap-6">
+        <!-- Tenant Rights Matrix -->
+        <div class="p-6 bg-slate-900 border border-slate-800 rounded-2xl space-y-4 flex flex-col justify-between">
+          <div class="space-y-2">
+            <span class="px-2.5 py-0.5 bg-amber-500/10 border border-amber-500/30 text-amber-400 text-xs font-bold rounded-md">Protection Guide</span>
+            <h3 class="font-bold text-slate-100 text-lg">Tenant &amp; Resident Rights Matrix</h3>
+            <p class="text-xs text-slate-400 leading-relaxed">Comprehensive guides detailing legal protections against shelter retaliation, standards of sanitation, medical access rights, and formal grievance filing steps.</p>
+          </div>
+          <button type="button" onclick="showToast('Rights Manual PDF download initiated')" class="w-full py-2.5 bg-slate-950 hover:bg-slate-800 border border-slate-700 text-amber-400 font-bold rounded-xl text-xs transition">
+            📥 Download Rights Manual (PDF)
+          </button>
+        </div>
+
+        <!-- Legal Aid Network Directory -->
+        <div class="p-6 bg-slate-900 border border-slate-800 rounded-2xl space-y-4 flex flex-col justify-between">
+          <div class="space-y-2">
+            <span class="px-2.5 py-0.5 bg-emerald-500/10 border border-emerald-500/30 text-emerald-400 text-xs font-bold rounded-md">Legal Contact Network</span>
+            <h3 class="font-bold text-slate-100 text-lg">Legal Aid &amp; Pro Bono Directory</h3>
+            <p class="text-xs text-slate-400 leading-relaxed">Direct contact details for free housing representation attorneys, homeless rights advocates, DHS Ombudsman representatives, and civil rights non-profits.</p>
+          </div>
+          <button type="button" onclick="showToast('Directory matrix displayed')" class="w-full py-2.5 bg-slate-950 hover:bg-slate-800 border border-slate-700 text-emerald-400 font-bold rounded-xl text-xs transition">
+            📞 View Legal Contacts Matrix
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================== -->
+    <!-- TAB 6: ADVOCACY ACTION CENTER              -->
+    <!-- ========================================== -->
+    <section id="tab-action" class="app-tab-section hidden space-y-6">
+      <div class="border-b border-slate-800 pb-4">
+        <h2 class="text-2xl font-extrabold text-slate-100">Advocacy Action Center</h2>
+        <p class="text-xs sm:text-sm text-slate-400 mt-1">Take direct action by dispatching petitions to oversight boards and public representatives.</p>
+      </div>
+
+      <div class="grid md:grid-cols-2 gap-6">
+        <!-- Direct Action Campaign -->
+        <div class="p-6 bg-slate-900 border border-slate-800 rounded-2xl space-y-4">
+          <span class="px-2.5 py-0.5 bg-rose-500/10 border border-rose-500/30 text-rose-400 text-xs font-bold rounded-md">Direct Action</span>
+          <h3 class="font-bold text-slate-100 text-lg">Send Oversight Inspection Demand</h3>
+          <p class="text-xs text-slate-400 leading-relaxed">Automatically dispatch a pre-formatted legal demand letter to municipal inspectors and DHS oversight officers requesting immediate facility audits.</p>
+          <button type="button" onclick="showToast('Petition notice securely dispatched to oversight board')" class="w-full py-3 bg-rose-600 hover:bg-rose-500 text-white font-bold rounded-xl text-xs transition shadow-md">
+            📩 Send Inspection Petition Notice
+          </button>
+        </div>
+
+        <!-- Download Ledger -->
+        <div class="p-6 bg-slate-900 border border-slate-800 rounded-2xl space-y-4">
+          <span class="px-2.5 py-0.5 bg-amber-500/10 border border-amber-500/30 text-amber-400 text-xs font-bold rounded-md">Ledger Export</span>
+          <h3 class="font-bold text-slate-100 text-lg">Accountability Ledger Export</h3>
+          <p class="text-xs text-slate-400 leading-relaxed">Download compiled incident records, sanitation reports, and facility timeline documentation for legal filings or public oversight hearings.</p>
+          <button type="button" onclick="showToast('Accountability ledger file generated')" class="w-full py-3 bg-slate-950 hover:bg-slate-800 border border-slate-700 text-amber-400 font-bold rounded-xl text-xs transition">
+            📊 Download Full Ledger (CSV/PDF)
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================== -->
+    <!-- TAB 7: RESTORATIVE JUSTICE FUND            -->
+    <!-- ========================================== -->
+    <section id="tab-fund" class="app-tab-section hidden max-w-3xl mx-auto space-y-6">
+      <div class="text-center space-y-2">
+        <span class="px-3 py-1 bg-emerald-500/10 border border-emerald-500/30 text-emerald-400 text-xs font-bold rounded-full uppercase tracking-wider">Mutual Aid</span>
+        <h2 class="text-2xl font-extrabold text-slate-100">Restorative Justice Mutual Aid Fund</h2>
+        <p class="text-xs sm:text-sm text-slate-400">Direct financial micro-grants for relocation support, legal filing fees, and emergency assistance.</p>
+      </div>
+
+      <div class="p-6 bg-slate-900 border border-slate-800 rounded-2xl space-y-5 shadow-xl">
+        <div class="grid sm:grid-cols-3 gap-4 text-center">
+          <div class="p-4 bg-slate-950 rounded-xl border border-slate-800">
+            <span class="block text-xl font-bold text-emerald-400">$2,500</span>
+            <span class="text-xs text-slate-400">Max Grant Cap</span>
+          </div>
+          <div class="p-4 bg-slate-950 rounded-xl border border-slate-800">
+            <span class="block text-xl font-bold text-amber-400">24-48 hrs</span>
+            <span class="text-xs text-slate-400">Review Window</span>
+          </div>
+          <div class="p-4 bg-slate-950 rounded-xl border border-slate-800">
+            <span class="block text-xl font-bold text-rose-400">100% Direct</span>
+            <span class="text-xs text-slate-400">Survivor Allocation</span>
+          </div>
+        </div>
+
+        <form id="grantForm" onsubmit="event.preventDefault(); showToast('Grant application received and queued for review.'); this.reset();" class="space-y-4 border-t border-slate-800 pt-4">
+          <h3 class="font-bold text-slate-200 text-sm">Emergency Micro-Grant Application</h3>
+          <div>
+            <label for="applicantName" class="block text-xs font-medium text-slate-300 mb-1">Applicant Name / Alias</label>
+            <input type="text" id="applicantName" required placeholder="Preferred Name or Secure ID" class="w-full bg-slate-950 border border-slate-700 rounded-xl px-3.5 py-2 text-sm text-slate-100 focus:outline-none focus:border-amber-500">
+          </div>
+          <div>
+            <label for="grantAmount" class="block text-xs font-medium text-slate-300 mb-1">Requested Grant Amount ($)</label>
+            <input type="number" id="grantAmount" max="2500" required placeholder="e.g. 500" class="w-full bg-slate-950 border border-slate-700 rounded-xl px-3.5 py-2 text-sm text-slate-100 focus:outline-none focus:border-amber-500">
+          </div>
+          <div>
+            <label for="grantReason" class="block text-xs font-medium text-slate-300 mb-1">Purpose / Emergency Need Description</label>
+            <textarea id="grantReason" rows="3" required placeholder="Describe relocation, legal filing fees, or emergency assistance need..." class="w-full bg-slate-950 border border-slate-700 rounded-xl p-3 text-sm text-slate-100 focus:outline-none focus:border-amber-500"></textarea>
+          </div>
+          <button type="submit" class="w-full py-3 bg-emerald-600 hover:bg-emerald-500 text-slate-950 font-extrabold rounded-xl text-sm transition shadow">
+            Submit Micro-Grant Application
+          </button>
+        </form>
+      </div>
+    </section>
+
+    <!-- ========================================== -->
+    <!-- TAB 8: FREQUENTLY ASKED QUESTIONS (FAQ)    -->
+    <!-- ========================================== -->
+    <section id="tab-faq" class="app-tab-section hidden max-w-3xl mx-auto space-y-6">
+      <div class="border-b border-slate-800 pb-4 text-center">
+        <h2 class="text-2xl font-extrabold text-slate-100">Frequently Asked Questions</h2>
+        <p class="text-xs sm:text-sm text-slate-400 mt-1">Information on anonymity, security protocols, and documentation usage.</p>
+      </div>
+
+      <div class="space-y-3">
+        <div class="p-5 bg-slate-900 border border-slate-800 rounded-2xl space-y-2">
+          <h3 class="font-bold text-amber-400 text-sm">Are survivor testimony submissions anonymous?</h3>
+          <p class="text-xs text-slate-300 leading-relaxed">Yes. All survivor testimonies can be submitted anonymously with no mandatory email or personal identifying metadata logged on our servers.</p>
+        </div>
+
+        <div class="p-5 bg-slate-900 border border-slate-800 rounded-2xl space-y-2">
+          <h3 class="font-bold text-amber-400 text-sm">How is documented facility evidence utilized?</h3>
+          <p class="text-xs text-slate-300 leading-relaxed">Compiled testimonies and incident logs serve as official evidence for advocacy campaigns, policy proposals, and public oversight investigations with DHS representatives.</p>
+        </div>
+
+        <div class="p-5 bg-slate-900 border border-slate-800 rounded-2xl space-y-2">
+          <h3 class="font-bold text-amber-400 text-sm">Who manages the Family Media Network?</h3>
+          <p class="text-xs text-slate-300 leading-relaxed">The network is privately maintained by verified family administrators while offering public access options for community advocacy and legal support resources.</p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ========================================== -->
+  <!-- MODAL: AUTHENTICATION (LOGIN / REGISTER)   -->
+  <!-- ========================================== -->
+  <div id="authModal" class="fixed inset-0 modal-backdrop backdrop-blur-sm hidden items-center justify-center p-4 z-50" role="dialog" aria-modal="true">
+    <div class="bg-slate-900 border border-slate-800 rounded-2xl max-w-md w-full p-6 space-y-5 shadow-2xl">
+      <div class="flex justify-between items-center border-b border-slate-800 pb-3">
+        <div class="flex gap-4">
+          <button type="button" id="modalTabLogin" onclick="switchAuthTab('login')" class="text-base font-bold text-amber-400 border-b-2 border-amber-400 pb-1">Login</button>
+          <button type="button" id="modalTabRegister" onclick="switchAuthTab('register')" class="text-base font-bold text-slate-400 hover:text-slate-200 pb-1">Register</button>
+        </div>
+        <button type="button" onclick="closeAuthModal()" class="text-slate-400 hover:text-white font-bold text-xl">&times;</button>
+      </div>
+
+      <!-- Login Form View -->
+      <form id="loginForm" onsubmit="event.preventDefault(); showToast('Successfully logged in!'); closeAuthModal();" class="space-y-4">
+        <div>
+          <label for="loginEmail" class="block text-xs font-semibold text-slate-300 mb-1">Email / Access Key ID</label>
+          <input type="email" id="loginEmail" required placeholder="user@familynet.org" class="w-full bg-slate-950 border border-slate-700 rounded-xl px-3.5 py-2 text-sm text-slate-100 focus:outline-none focus:border-amber-500">
+        </div>
+        <div>
+          <label for="loginPass" class="block text-xs font-semibold text-slate-300 mb-1">Security Key Password</label>
+          <input type="password" id="loginPass" required placeholder="••••••••" class="w-full bg-slate-950 border border-slate-700 rounded-xl px-3.5 py-2 text-sm text-slate-100 focus:outline-none focus:border-amber-500">
+        </div>
+        <button type="submit" class="w-full py-2.5 bg-amber-500 hover:bg-amber-400 text-slate-950 font-bold rounded-xl text-sm transition">
+          Authenticate Access
+        </button>
+      </form>
+
+      <!-- Register Form View -->
+      <form id="registerForm" onsubmit="event.preventDefault(); showToast('Account created successfully!'); closeAuthModal();" class="space-y-4 hidden">
+        <div>
+          <label for="regEmail" class="block text-xs font-semibold text-slate-300 mb-1">Email Address</label>
+          <input type="email" id="regEmail" required placeholder="user@familynet.org" class="w-full bg-slate-950 border border-slate-700 rounded-xl px-3.5 py-2 text-sm text-slate-100 focus:outline-none focus:border-amber-500">
+        </div>
+        <div>
+          <label for="regPass" class="block text-xs font-semibold text-slate-300 mb-1">Set Security Password</label>
+          <input type="password" id="regPass" required placeholder="••••••••" class="w-full bg-slate-950 border border-slate-700 rounded-xl px-3.5 py-2 text-sm text-slate-100 focus:outline-none focus:border-amber-500">
+        </div>
+        <button type="submit" class="w-full py-2.5 bg-rose-600 hover:bg-rose-500 text-white font-bold rounded-xl text-sm transition">
+          Create Member Profile
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <!-- ========================================== -->
+  <!-- MODAL: FACILITY DETAILS / PHOTO VIEWER      -->
+  <!-- ========================================== -->
+  <div id="infoModal" class="fixed inset-0 modal-backdrop backdrop-blur-sm hidden items-center justify-center p-4 z-50" role="dialog" aria-modal="true">
+    <div class="bg-slate-900 border border-slate-800 rounded-2xl max-w-lg w-full p-6 space-y-4 shadow-2xl">
+      <div class="flex justify-between items-center border-b border-slate-800 pb-3">
+        <h3 id="infoModalTitle" class="text-lg font-bold text-amber-400">Facility Details</h3>
+        <button type="button" onclick="$('#infoModal').addClass('hidden').removeClass('flex')" class="text-slate-400 hover:text-white font-bold text-xl">&times;</button>
+      </div>
+      <div id="infoModalBody" class="text-xs sm:text-sm text-slate-300 leading-relaxed space-y-2">
+        <!-- Dynamic Modal Content Here -->
+      </div>
+      <div class="flex justify-end pt-2">
+        <button type="button" onclick="$('#infoModal').addClass('hidden').removeClass('flex')" class="px-4 py-2 bg-slate-800 hover:bg-slate-700 text-slate-200 text-xs font-bold rounded-xl">
+          Close Window
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="bg-slate-900 border-t border-slate-800 py-6 mt-12 text-center text-xs text-slate-500 space-y-2">
+    <p>&copy; Family Media Network &amp; Archive of Accountability Hub. Built for survivor advocacy, family media archive, and public oversight.</p>
+    <p class="text-slate-600">Confidentiality Protections &bull; Encrypted Registry Access</p>
+  </footer>
+
+  <!-- Interactive Application JavaScript Engine -->
+  <script>
+    $(document).ready(function() {
+      
+      // 1. Alert Banner Dismissal
+      $('.banner-close-trigger').on('click', function() {
+        $(this).closest('.banner').slideUp(200);
+      });
+
+      // 2. Navigation Tab Switching Engine
+      $('.tab-link, .nav-app-link').on('click', function(e) {
+        const targetTab = $(this).data('tab');
+        if (targetTab) {
+          e.preventDefault();
+          switchTab(targetTab);
+        }
+      });
+
+      // 3. Sub-Panel Toggle Logic (Shelter Logs vs Development Specs)
+      $('.tab-panel-menu button').on('click', function() {
+        const targetPanel = $(this).data('panel');
+        $('.tab-panel-menu button').removeClass('active-tab').attr('aria-selected', 'false');
+        $(this).addClass('active-tab').attr('aria-selected', 'true');
+        $('.tab-panel-content').removeClass('active-panel');
+        $(targetPanel).addClass('active-panel');
+      });
+
+      // 4. Dynamic Family Post Creator
+      $('#postBtn').on('click', function() {
+        const text = $('#postInput').val().trim();
+        if (text) {
+          const postMarkup = `
+            <div class="p-4 bg-slate-950 border border-amber-500/30 rounded-lg space-y-2 animate-fade-in">
+              <div class="flex justify-between items-start text-xs text-slate-400">
+                <div>
+                  <strong class="text-amber-400 text-sm block">You (Active Member)</strong>
+                  <span class="text-slate-500">Just now</span>
+                </div>
+                <span class="text-xs px-2 py-0.5 bg-amber-500/10 text-amber-400 rounded">New</span>
+              </div>
+              <p class="text-sm text-slate-300">${escapeHtml(text)}</p>
+              <div class="flex gap-4 pt-1 text-xs text-slate-400">
+                <button type="button" onclick="likePost(this)" class="hover:text-amber-400">❤️ 0 Likes</button>
+                <button type="button" onclick="showToast('Comments thread loaded')" class="hover:text-amber-400">💬 0 Comments</button>
+              </div>
+            </div>`;
+          $('#postsContainer').prepend(postMarkup);
+          $('#postInput').val('');
+          showToast('Family update published to feed!');
+        }
+      });
+
+      // 5. Community Feed Filter Buttons
+      $('.node-filter-btn').on('click', function() {
+        const filter = $(this).data('filter');
+        $('.node-filter-btn').removeClass('active-filter bg-amber-500 text-slate-950 font-bold')
+                            .addClass('bg-slate-800 text-slate-300 font-medium');
+        $(this).addClass('active-filter bg-amber-500 text-slate-950 font-bold')
+               .removeClass('bg-slate-800 text-slate-300 font-medium');
+
+        if (filter === 'all') {
+          $('.node-post-card').show();
+        } else {
+          $('.node-post-card').hide();
+          $(`.node-post-card[data-post-type="${filter}"]`).show();
+        }
+      });
+
+      // 6. Facility Search Engine
+      $('#shelterSearch').on('keyup', function() {
+        const value = $(this).val().toLowerCase();
+        $("#shelterDirectory .facility-card").filter(function() {
+          $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1);
+        });
+      });
+
+      // 7. Advocacy Form Submission Handler
+      $('#advocacyForm').on('submit', function(e) {
+        e.preventDefault();
+        showToast('Documentation log encrypted & securely recorded.');
+        this.reset();
+      });
+    });
+
+    // Global Function: Primary Tab Switcher
+    function switchTab(tabId) {
+      $('.app-tab-section').addClass('hidden').removeClass('block');
+      $(`#tab-${tabId}`).removeClass('hidden').addClass('block');
+
+      $('.tab-link').removeClass('active bg-amber-500 text-slate-950 font-bold')
+                    .addClass('text-slate-300 font-medium hover:text-white hover:bg-slate-800');
+      $(`.tab-link[data-tab="${tabId}"]`).addClass('active bg-amber-500 text-slate-950 font-bold')
+                                        .removeClass('text-slate-300 font-medium hover:text-white hover:bg-slate-800');
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    // Global Function: Toast Notification Handler
+    function showToast(msg) {
+      $('#statusToastMsg').text(msg);
+      $('#statusToast').removeClass('hidden');
+      setTimeout(() => { $('#statusToast').addClass('hidden'); }, 4000);
+    }
+
+    // Global Function: Auth Modal Controls
+    function openAuthModal(mode) {
+      switchAuthTab(mode);
+      $('#authModal').removeClass('hidden').addClass('flex');
+    }
+    function closeAuthModal() {
+      $('#authModal').addClass('hidden').removeClass('flex');
+    }
+    function switchAuthTab(mode) {
+      if (mode === 'login') {
+        $('#loginForm').removeClass('hidden');
+        $('#registerForm').addClass('hidden');
+        $('#modalTabLogin').addClass('text-amber-400 border-amber-400').removeClass('text-slate-400');
+        $('#modalTabRegister').removeClass('text-amber-400 border-amber-400').addClass('text-slate-400');
+      } else {
+        $('#loginForm').addClass('hidden');
+        $('#registerForm').removeClass('hidden');
+        $('#modalTabRegister').addClass('text-amber-400 border-amber-400').removeClass('text-slate-400');
+        $('#modalTabLogin').removeClass('text-amber-400 border-amber-400').addClass('text-slate-400');
+      }
+    }
+
+    // Global Function: Facility Detail Modal Launcher
+    function openFacilityModal(facilityName) {
+      $('#infoModalTitle').text(facilityName + ' Ledger');
+      $('#infoModalBody').html(`
+        <p><strong>Facility Name:</strong> ${facilityName}</p>
+        <p><strong>Registry Status:</strong> Active Intake &amp; Case Management Tracking</p>
+        <p class="mt-2">This record contains verified inspection logs, compliance records, and survivor testimonies registered under Book 4 Security Protocols.</p>
+        <div class="mt-3 p-2.5 bg-slate-950 rounded border border-slate-800 text-xs text-amber-300">
+          📍 Direct Contact Legal Rights Line: 800-649-2424
+        </div>
+      `);
+      $('#infoModal').removeClass('hidden').addClass('flex');
+    }
+
+    // Global Function: Photo Modal Launcher
+    function openPhotoModal(title, emoji) {
+      $('#infoModalTitle').text(title);
+      $('#infoModalBody').html(`
+        <div class="text-center py-6">
+          <div class="text-6xl mb-3">${emoji}</div>
+          <p class="font-bold text-slate-200">${title}</p>
+          <p class="text-xs text-slate-400 mt-1">Shared family media item archived in cloud storage.</p>
+        </div>
+      `);
+      $('#infoModal').removeClass('hidden').addClass('flex');
+    }
+
+    // Emoji Helper
+    function appendEmoji(emoji) {
+      const val = $('#postInput').val();
+      $('#postInput').val(val + ' ' + emoji);
+    }
+
+    // Interactive Post Like Counter
+    function likePost(btn) {
+      let txt = $(btn).text();
+      let count = parseInt(txt.match(/\d+/)[0]) + 1;
+      $(btn).html(`❤️ ${count} Likes`).addClass('text-amber-400');
+    }
+
+    // RSVP Toggle Handler
+    function toggleRsvp(btn) {
+      if ($(btn).hasClass('bg-emerald-600')) {
+        $(btn).removeClass('bg-emerald-600 text-white').addClass('bg-slate-800 text-amber-400').text('RSVP Yes');
+        showToast('RSVP updated.');
+      } else {
+        $(btn).addClass('bg-emerald-600 text-white').removeClass('bg-slate-800 text-amber-400').text('✓ Attending');
+        showToast('You are confirmed for this event!');
+      }
+    }
+
+    // Table Column Sort Implementation
+    function sortTable(n) {
+      var table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
+      table = document.getElementById("membersTable");
+      switching = true;
+      dir = "asc"; 
+      while (switching) {
+        switching = false;
+        rows = table.rows;
+        for (i = 1; i < (rows.length - 1); i++) {
+          shouldSwitch = false;
+          x = rows[i].getElementsByTagName("TD")[n];
+          y = rows[i + 1].getElementsByTagName("TD")[n];
+          if (dir == "asc") {
+            if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
+              shouldSwitch = true;
+              break;
+            }
+          } else if (dir == "desc") {
+            if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()) {
+              shouldSwitch = true;
+              break;
+            }
+          }
+        }
+        if (shouldSwitch) {
+          rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
+          switching = true;
+          switchcount ++; 
+        } else {
+          if (switchcount == 0 && dir == "asc") {
+            dir = "desc";
+            switching = true;
+          }
+        }
+      }
+    }
+
+    // Utility: HTML Sanitizer
+    function escapeHtml(text) {
+      return text.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;").replace(/'/g, "&#039;");
+    }
+  </script>
+</body>
+</html>
