@@ -37,12 +37,12 @@ function showLocation(pos) {
 
 function errorHandler(e) {
     if (e.code === 1) { // PERMISSION_DENIED
-        lbl.innerHTML = "Permission denied. - " + e.message;
+        lbl.textContent = "Permission denied. - " + e.message;
     } else if (e.code === 2) { //POSITION_UNAVAILABLE
-        lbl.innerHTML = "Make sure your network connection is active and " +
+        lbl.textContent = "Make sure your network connection is active and " +
             "try this again. - " + e.message;
     } else if (e.code === 3) { //TIMEOUT
-        lbl.innerHTML = "A timeout ocurred; try again. - " + e.message;
+        lbl.textContent = "A timeout ocurred; try again. - " + e.message;
     }
 }
 
