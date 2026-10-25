@@ -490,7 +490,7 @@ function slideshow( slideshowname ) {
       if (typeof r.innerHTML == 'undefined') { return false; }
 
       // Update the text
-      r.innerHTML = text;
+      r.textContent = text;
     }
   }
 
