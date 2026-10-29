@@ -1,0 +1,728 @@
+html body h1 h2 h3 h4 h5 h6 p ol ul li {  padding: 0; margin: 0; 
+}
+header, footer, section, article, nav { display:block; 
+}
+/*
+body { 
+    background-color:#bbFFaa; 
+    color:black; 
+    font-family:Arial; 
+    clip-path:polygon(20px 0, calc(100% - 20px) 0, 100% 20px, 
+    100% calc(100% - 20px), calc(100% - 20px) 100%,
+    20px 100%, 0 calc(100% - 20px), 0 20px);
+}
+*/
+ 
+#container { width:97%; margin:auto; min-width:800px; max-width:1100px; clip-path:polygon(20px 0, calc(100% - 20px) 0, 100% 20px, 
+    100% calc(100% - 20px), calc(100% - 20px) 100%,
+    20px 100%, 0 calc(100% - 20px), 0 20px);
+}
+header.row { color:black; background-color:#FFCC00; padding-top:10px; 
+    clip-path:polygon(20px 0, calc(100% - 20px) 0, 100% 20px, 
+    100% calc(100% - 20px), calc(100% - 20px) 100%,
+    20px 100%, 0 calc(100% - 20px), 0 20px); 
+    background-image:url("images/panew.jpg"); 
+    background-repeat:no-repeat; 
+    margin-left: 1em;
+    margin-right: 1em;
+    margin:10px auto;
+    width: 920px;
+    height: 180px;
+    padding: 0;
+    border: 10px white solid;
+    margin: 0 auto 0 auto; 
+
+}
+div.col-12 { display: block; unicode-bidi: isolate; color: black; font-family: Arial; clip-path:polygon(20px 0, calc(100% - 20px) 0, 100% 20px, 
+    100% calc(100% - 20px), calc(100% - 20px) 100%,
+    20px 100%, 0 calc(100% - 20px), 0 20px);
+  }
+h1 { font-size:300%; color :white; position: relative; left:25%; top: -5em; width:680px; 
+}
+
+#banner h1 { 
+    text-shadow: 0.1em 0.1em 0.2em blue;        
+    font-family:Arial; font-size:125%; color:white; 
+    background: hsl(0,50%,45%);
+    text-shadow: 1px 1px black, 2px 2px black,
+    3px 3px black, 4px 4px black,
+    5px 5px black, 6px 6px black,
+    7px 7px black, 8px 8px black; 
+    font-weight:normal; 
+     /* 
+      padding-top:35px; 
+      margin-bottom:-10px; 
+      height: 94px; 
+      margin:auto;
+      padding: .3em .8em;
+      border: 1px solid rgba(0, 0, 0, .1);
+      
+      border-radius: .2em;
+      box-shadow: 0 .05em .25em rgba(0, 0, 0, .5);
+    
+      line-height: 5.5;
+      border-width: 10px;
+      border-left-width: 0;font-weight:normal; text-align:center; padding-top:2em; margin-bottom:-0.625em; margin:auto; */
+}
+
+  
+  svg {
+    width: 500px;
+    height: 60px
+
+  }
+
+div.logo {
+    background: solid rgba(0, 0, 0, .1);
+    border: 1px solid rgba(0, 0, 0, .1);
+    border-left-width: 0 !important;
+    border-width: 10px;
+    border-radius: .2em;
+    box-shadow: 0 .05em .25em rgba(0, 0, 0, .5);
+    color: white;
+    font-size:100%;
+    text-shadow: 0 -.05em .05em rgba(0, 0, 0, .5);
+    line-height: 1.5;
+    margin: -1px auto; padding: 0;
+	padding: .3em .8em;	 
+    text-shadow: 0 -.05em .05em rgba(0, 0, 0, .5);
+}
+
+/*set attributes for consistent appearance in all browsers*/
+div.header-wrapper { 
+    position: relative;
+    top: 1.1em;
+    left: 0%;
+    border: 1px solid rgba(0, 0, 0, .1);
+    border-left-width: 0 !important;
+    border-width: 10px;
+    box-shadow: 0 .05em .25em rgba(0, 0, 0, .5);
+    color: white;
+    font-size: 100%;
+    text-shadow: 0 -.05em .05em rgba(0, 0, 0, .5);
+    line-height: 1.5;
+    margin: 0 auto;
+	padding: .3em .8em;	 
+    text-shadow: 0 -.05em .05em rgba(0, 0, 0, .5);
+    width:970px;background: #58a linear-gradient(#FF9966, #58a);
+
+    clip-path:polygon(20px 0, calc(100% - 20px) 0, 100% 20px, 
+    100% calc(100% - 20px), calc(100% - 20px) 100%,
+    20px 100%, 0 calc(100% - 20px), 0 20px);
+}
+
+/*set attributes for consistent appearance in all browsers*/
+div.wrapper { 
+    position: relative;
+    top: 0.2em;
+    left: 1.4%;
+    border: 1px solid rgba(0, 0, 0, .1);
+    border-left-width: 0 !important;
+    border-width: 10px;
+    box-shadow: 0 .05em .25em rgba(0, 0, 0, .5);
+    color: white;
+    font-size: 100%;
+    text-shadow: 0 -.05em .05em rgba(0, 0, 0, .5);
+    line-height: 1.5;
+    margin: 0 auto;
+	padding: .3em .8em;	 
+    text-shadow: 0 -.05em .05em rgba(0, 0, 0, .5);
+    width: 970px;
+    background: #58a linear-gradient(#FF9966, #58a);
+
+    clip-path:polygon(20px 0, calc(100% - 20px) 0, 100% 20px, 
+    100% calc(100% - 20px), calc(100% - 20px) 100%,
+    20px 100%, 0 calc(100% - 20px), 0 20px);
+}
+/*set the position of the content to move it close up to the menu tabs*/
+#content {margin-top:10px; font : 0.9em/1.3em "bitstream vera sans", verdana; position:relative; top:-1em; text-align: left; background: #cfecf5; padding: 20px; border: 1px solid black; border-top: none; z-index: 2;
+}
+div#main-content { 
+    position: relative;
+    top: -1em;
+    left: 0%;
+    
+    text-align:center; background-color:white; color:black; margin-top:35px;
+	border-bottom:4px solid #336666; border-left:4px solid #336666; border-right:4px solid #336666; border-top:none; 
+	border: 1px solid rgba(0, 0, 0, .1);
+    border-left-width: 0 !important;
+    border-width: 10px;
+    box-shadow: 0 .05em .25em rgba(0, 0, 0, .5);
+    color: white;
+    font-size: 100%;
+    text-shadow: 0 -.05em .05em rgba(0, 0, 0, .5);
+    line-height: 1.5;
+    margin: 0 auto;
+	padding: .3em .8em;	 
+    text-shadow: 0 -.05em .05em rgba(0, 0, 0, .5);
+    
+
+    clip-path:polygon(20px 0, calc(100% - 20px) 0, 100% 20px, 
+    100% calc(100% - 20px), calc(100% - 20px) 100%,
+    20px 100%, 0 calc(100% - 20px), 0 20px);
+
+    }
+
+div#right-col { float:right; width:180px;border: 1px solid rgba(0, 0, 0, .1);
+    border-left-width: 0 !important;
+    border-width: 10px;
+    box-shadow: 0 .05em .25em rgba(0, 0, 0, .5);
+    color: white;
+    font-size: 100%;
+    text-shadow: 0 -.05em .05em rgba(0, 0, 0, .5);
+    line-height: 1.5;
+    margin: 0 auto;
+	padding: .3em .8em;	 
+    text-shadow: 0 -.05em .05em rgba(0, 0, 0, .5);
+    
+    clip-path:polygon(20px 0, calc(100% - 20px) 0, 100% 20px, 
+    100% calc(100% - 20px), calc(100% - 20px) 100%,
+    20px 100%, 0 calc(100% - 20px), 0 20px);
+    }
+
+/*set far right column for ads*/
+#rightcol { 
+    width:150px; 
+    float:right; 
+    text-align:center;
+    margin-top: 0em;	
+}
+#rightcol p.advert {font-size:small; margin-top: 1%;
+} 
+
+h2.dark {                     
+    font-weight: bold;               
+    margin-top: 0;
+    margin-bottom: 0;                  
+    background: rgba(0, 0, 0, .5);
+    border-radius: .2em;
+    box-shadow: 0 .05em .25em rgba(0, 0, 0, .5);
+    color: white;
+    text-shadow: 0 -.05em .05em rgba(0, 0, 0, .5);  
+    font-size: 100%;
+    text-align: center;
+    line-height: 1.5;
+    border-width: 10px;
+    border-left-width: 0;
+    clip-path:polygon(20px 0, calc(100% - 20px) 0, 100% 20px, 
+    100% calc(100% - 20px), calc(100% - 20px) 100%,
+    20px 100%, 0 calc(100% - 20px), 0 20px);
+  }
+
+
+nav ul  {  
+    width: 99.5em; 
+    padding:0;list-style-type:none; margin:auto; 
+    display:block;height:36px;text-transform:uppercase;
+    font-size:56%;font-weight:bold;
+    background:url('images/bgOFF.gif') repeat-x left top;
+    font-family:Helvetica,Arial,Verdana,sans-serif;
+    border-bottom:4px solid #336666; border-top:1px solid #C0E2D4;
+    position:relative;
+    top: 2.9em; 
+    left:0.5em;
+}
+nav ul  li { display:block;float:left;margin:0;padding:0;
+}
+nav ul  li a { display:block; float:left;color:#874B46;
+text-decoration:none;padding:12px 20px 0 20px;height:24px;
+background:transparent url("images/bgDIVIDER.gif") no-repeat top right; 
+}
+nav ul  li a:hover{ background:transparent url("images/bgHOVER.gif") no-repeat top right; 
+}
+nav ul  li a.current,ul#main-menu li a.current:hover { color:#fff;
+background:transparent url("images/bgON.gif") no-repeat top right; 
+}
+
+#left-col { float:left; width: 180px; 
+}
+
+#mid-col { margin-left:185px; margin-right:185px;
+}
+h1 { font-size:300%; color :white; position: relative; left:45px; top: 5px; width:480px; 
+}
+
+#banner h1 { 
+    text-shadow: 0.1em 0.1em 0.2em blue;        
+    font-family:Arial; font-size:125%; color:white; 
+    background: hsl(0,50%,45%);
+    text-shadow: 1px 1px black, 2px 2px black,
+    3px 3px black, 4px 4px black,
+    5px 5px black, 6px 6px black,
+    7px 7px black, 8px 8px black; 
+    font-weight:normal; 
+     /* 
+      padding-top:35px; 
+      margin-bottom:-10px; 
+      height: 94px; 
+      margin:auto;
+      padding: .3em .8em;
+      border: 1px solid rgba(0, 0, 0, .1);
+      
+      border-radius: .2em;
+      box-shadow: 0 .05em .25em rgba(0, 0, 0, .5);
+    
+      line-height: 5.5;
+      border-width: 10px;
+      border-left-width: 0;font-weight:normal; text-align:center; padding-top:2em; margin-bottom:-0.625em; margin:auto; */
+}
+
+h1 {font-family:Arial; font-size:100%; padding-top:60px; padding-left:60px; margin-top:0; margin-bottom:0; color:white;
+}
+h2 { font-size:150%; margin-top:0; margin-bottom:5px; color:black;
+}
+br .clear {	clear:both;
+}
+
+a { background: orange; color:navy;
+}
+.inline-block a { display:inline-block; width:110px; height:30px; line-height:30px; text-align:center;
+}
+
+div#wrapped-header-container { 
+    /* image */
+    position: relative; 
+    top: 1em;
+    left: 0%;
+	width:970px; 
+    /* cut curners */
+    clip-path:polygon(20px 0, calc(100% - 20px) 0, 100% 20px, 
+  100% calc(100% - 20px), calc(100% - 20px) 100%,
+  20px 100%, 0 calc(100% - 20px), 0 20px);
+                                                                                                                                                                                                                                                                                                                                                                                                
+	min-width:800px; 
+	max-width:1100px;
+	background: #58a linear-gradient(#FF9966, #58a); 
+    border: 1px solid rgba(0, 0, 0, .1);
+    border-left-width: 0 !important;
+    border-width: 10px;
+    border-radius: .2em;
+    box-shadow: 0 .05em .25em rgba(0, 0, 0, .5);
+    color: white;
+    font-size: 100%;
+    text-shadow: 0 -.05em .05em rgba(0, 0, 0, .5);
+    line-height: 1.5;
+    margin: -1% auto; padding: 0;
+	padding: .3em .8em;	 
+    text-shadow: 0 -.05em .05em rgba(0, 0, 0, .5);
+}
+
+.hero-image {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("photographer.jpg");
+    height: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+  
+  .hero-text {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+  }
+  
+  .hero-text button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 10px 25px;
+    color: black;
+    background-color: #ddd;
+    text-align: center;
+    cursor: pointer;
+  }
+  
+  .hero-text button:hover {
+    background-color: #555;
+    color: white;
+  }
+
+ img { border: none; }
+
+div.search {
+    border: 1px solid rgba(0, 0, 0, .1);
+    border-left-width: 0 !important;
+    border-width: 10px;
+    border-radius: .2em;
+    box-shadow: 0 .05em .25em rgba(0, 0, 0, .5);
+	position:absolute; 
+    top:8em; 
+    left:6em;
+    color: white;
+    font-size: 50%;
+    text-shadow: 0 -.05em .05em rgba(0, 0, 0, .5);
+    line-height: 1.5;
+    margin: 0 auto; padding: 0;
+	padding: .3em .8em;	 
+    text-shadow: 0 -.05em .05em rgba(0, 0, 0, .5);	
+}
+
+/* form */
+
+
+
+/* div.row {} */
+
+/* nav.nav {} */
+
+/* div#banner {} */
+
+
+  /* p {} */
+
+  /* a {} */
+
+  /* img {} */
+
+  /* span {} */
+
+  /* br.clear {} */
+
+  /* p.advert {} */
+
+/* nav#nav {} */
+
+/* input#mainNavButton.trigger {} */
+
+/* div#banner {} */
+
+/* div#banner-wrapper {} */
+
+/* label {} */
+
+/* ul {} */
+
+/* li {} */
+
+
+.container {  
+    position: relative; 
+    top: -29.7em; 
+    left: -4em;
+	width:43em; 
+	margin:auto; 
+	min-width:43.6em; 
+	max-width:43em;
+	/* background: #58a linear-gradient(#FF9966, #58a); */
+    border: 1px solid rgba(0, 0, 0, .1);
+    border-left-width: 0 !important;
+    border-width: 10px;
+    border-radius: .2em;
+    box-shadow: 0 .05em .25em rgba(0, 0, 0, .5);
+    color: white;
+    font-size: 100%;
+    text-shadow: 0 -.05em .05em rgba(0, 0, 0, .5);
+    line-height: 1.5;
+    margin: 0 auto; padding: 0;
+	padding: .3em .8em;	 
+    text-shadow: 0 -.05em .05em rgba(0, 0, 0, .5);
+}
+
+.icon-wrap {
+    position: relative; top: 0em; left: 0em;
+}
+
+/*set the generic tab style--and move menu upwards so that it overlaps the header*
+div#hnav {
+    position:relative; top:-154.7em; left: 1%; color: navy; border-bottom: 1px solid black; margin: -25px 0 0 0; padding: 0px; padding-left: 3em; z-index: 1;
+  }
+/*set middle column for main content*/
+#midcol {position:relative; 
+    left: 15em; 
+    top:-25em; margin-top: 33px;  margin-left:135px; margin-right:155px; padding: 0.3em .8em;	
+    width: 14em;
+    border: 1px solid rgba(0, 0, 0, .1);
+    border-radius: .2em;
+    box-shadow: 0 .05em .25em rgba(0, 0, 0, .5);
+    color: white;
+    text-shadow: 0 -.05em .05em rgba(0, 0, 0, .5);
+    font-size: 125%;
+    line-height: 1.5;
+    border-width: 10px;
+    border-left-width: 0;
+}
+/*set gallery block position*/ 
+#gallery-block { 
+    position:relative; 
+    left: 1em; 
+    top:-25em; 
+    padding: 4.3em .8em;	
+    border: 1px solid rgba(0, 0, 0, .1);
+    border-radius: .2em;
+    box-shadow: 0 .05em .25em rgba(0, 0, 0, .5);
+    color: white;
+    text-shadow: 0 -.05em .05em rgba(0, 0, 0, .5);
+    font-size: 195%;
+    line-height: 1.5;
+    border-width: 10px;
+    border-left-width: 0; 
+}
+#banner h1 {text-shadow: 0.1em 0.1em 0.2em blue; font-family:Arial; font-size:125%; color:white; font-weight:normal; text-align:center; padding-top:2em; margin-bottom:-10px; margin:auto; 
+}
+/*set the generic tab style--and move menu upwards so that it overlaps the header*/
+div#hnav {
+  position:relative; 
+  top:-100px; 
+  left: 0;
+  color: navy; margin: 0 0 0 0; padding: 0px; padding-left: 3em; z-index: 1;
+}
+/* use display:inline to remove IE6 double margin bug*/
+#hnav li { display: inline; overflow: hidden; list-style-type: none;
+}
+/*set tab colour*/
+#hnav a, a.active { color: navy; background: #81d9f6; font: bold 1em Arial; border: 1px solid black; padding: 2px 5px 0px 5px; margin: 0; text-decoration: none; }
+/*make a 3px wide bottom border on tab the same colour as the page*/
+#hnav a.active { background: #cfecf5; color:navy; border-bottom: 3px solid #cfecf5;
+}
+/*hovering over a non-active tab shows an aqua tab*/
+#hnav a:hover { background: aqua;
+}
+#hnav a:visited { color: navy;
+}
+/*hovering over the active tab shows navy text*/
+#hnav a.active:hover { background: #cfecf5; color: navy;
+}
+/*set the position of the content to butt up to the menu tabs*/ 
+	div#content {margin-top:0; font : 0.9em/1.3em "bitstream vera sans", verdana, sans-serif;
+		position:relative; top:0em; text-align: left; background: #cfecf5;
+		padding: 1.25em; border:  0.0625em solid black; border-top: none; z-index: 2;
+		}
+
+/*set the position of the content to butt up to the menu tabs*/ 
+	div#content {margin-top:0; font : 0.9em/1.3em "bitstream vera sans", verdana, sans-serif;
+		position:relative; top:-4em; text-align: left; background: #cfecf5;
+		padding: 1.25em; border:  0.0625em solid black; border-top: none; z-index: 2;
+		}
+
+.slide-wrap { 
+    position: relative;
+    top: -60.6em;
+    left: -12%;
+    width: 79%;
+}
+section#hero {
+    position:relative;
+    top: 0em;
+    left: 1em;
+    display: block;
+    width:95%;
+}
+
+section.slider {
+    width: 100%;
+    position: relative;
+    top: 1em;
+    left: 3.3em;
+    height: 486.667px;
+}
+
+div.bx-viewport {
+    width: 100%;
+    position: relative;
+    top: 3.3em;
+    height: 486.667px;
+}
+div.bx-wrapper {
+    position:relative;
+    top: 31em;
+    left: 0em;
+}
+ul.slider1 {
+    width: 100%;
+    position: relative;
+    top:27em;
+    left: 4%;
+    height: 486.667px;
+}
+
+div.menu-bar {
+    width:47em;
+    position: relative;
+    top:-252em;
+    left: 1em;
+}
+
+.button {
+    position: relative;
+                    
+    /* text color, paddings, etc. */
+                    
+    display: inline-block;
+                   
+    border-radius: .2em;
+                    
+    color: white;
+                   
+    text-shadow: 0 -.05em .05em rgba(0, 0, 0, .5);
+                    
+    font-size: 0.8rem;
+                    
+    line-height: 1.5;
+                    
+    border-width: 10px;
+                    
+    border-left-width: 0;
+                    
+  }
+                
+  .button::before {
+                    
+    content: ''; 
+    /* To generate the box */
+                    
+    position: absolute;
+                    
+    top: 0; right: 0; bottom: 0; left: 0;
+                    
+    z-index: -1;
+                    
+    background: maroon;
+                    
+    transform: skew(45deg);
+                    
+  }
+                
+  .button>div {
+                    
+    transform: skewX(45deg);
+                
+  }
+
+     
+
+.parallel {
+position: relative;
+/* text color, paddings, etc. */
+display: inline-block;
+border-radius: .2em;
+color: white;
+text-shadow: 0 -.05em .05em rgba(0, 0, 0, .5);
+font-size: 80%;
+line-height: 1.5;
+border-width: 10px;
+border-left-width: 0;
+}
+.parallel::before {
+content: ''; /* To generate the box */
+position: absolute;
+top: 0; right: 0; bottom: 0; left: 0;
+z-index: -1;
+background: maroon;
+transform: skew(45deg);
+}
+.parallel>div {
+transform: skewX(45deg);
+}
+	
+#left-col { float:left; width: 180px; 
+}
+
+#mid-col { margin-left:185px; margin-right:185px;
+}
+
+h1 {font-family:Arial; font-size:125%; padding-top:60px; padding-left:60px; margin-top:5%; margin-bottom:0; color:#333;
+}
+h2 { font-size:75%; margin-top:0; margin-bottom:5px; color:black;
+}
+
+br .clear {	clear:both;
+}
+/*set images to have no borders*/
+img { 	border:0;
+}
+
+/*set middle column for main content*/
+#midcol { margin-left:135px; margin-right:155px;
+}
+/*set gallery block position*/ 
+#gallery-block { position:relative; left: -109%; top:1%; 
+}
+/*set footer*/
+footer { 	clear:both; color:black; text-align:center; width:970px;
+}
+.clear { clear:both;
+}
+/*set menu buttons*/
+#navone li.btn a { display:block; background-color :#946055; color:yellow; font-weight:bold; padding:4px; border: 4px outset #c96e6b;
+	margin-left:0; text-align:center; list-style-type:none; text-decoration:none; width:110px;
+}
+#navone li.btn a:hover { background-color:9f7562; color:white;
+}
+#navone li.btn a:active { background:#aecbff;  border: 4px inset #aecbff; 
+}
+#navone li.btn { width:110px;
+}
+/*SET THUMBNAIL GALLERY BLOCK*/  
+/* Set general thumbnail styles */
+#col-1	{ position: absolute; top: 0; left: 0; width:85px;
+} 
+/*place the column on the page*/
+li	{ margin: 5px; list-style-type:none; 
+} 
+/*remove bullets from the un-ordered list elements and create the
+MouseOut state (default) - create and position a space for the larger images and hide them*/
+#col-1 a img.hid { width: 260px; height:390px; position: absolute; top: 10px; left: 330px;
+	visibility: hidden;
+}
+/* MouseOver state (hover)- this reveals larger picture */
+#col-1 a:hover { background: white; }
+#col-1 a:hover img.hid { visibility:visible; }
+
+/*----------------------------------------------------*/
+
+/* set 2nd column of thumbnails 85px further over to right*/
+#col-2	{ position: absolute; top: 0; left: 85px; width:85px; }
+li	{ margin: 5px; list-style-type:none;	
+}
+/* MouseOut state (default) - hide larger picture */
+#col-2 a img.hid { width: 260px; height:390px;
+	position: absolute; top: 10px; left: 245px; margin-left:0;
+	visibility: hidden;
+	}
+/* MouseOver state (hover)- reveal larger picture */
+#col-2 a:hover { background: white; }
+#col-2 a:hover img.hid { visibility:visible; }
+
+/*----------------------------------------------------*/
+
+/* set 3nd column of thumbnails 170px further over to right*/
+#col-3	{ position: absolute; top: 0; left: 175px; width:95px; }
+li	{ margin: 5px; list-style-type:none;	
+}
+/* MouseOut state (default) - hide larger picture */
+#col-3 a img.hid {
+	width: 260px; height:390px;
+	position: absolute; top: 10px; left: 155px; margin-left:0;
+	visibility: hidden;
+	}
+/* MouseOver state (hover)- reveal larger picture */
+#col-3a:hover { background: white; 
+}
+#col-3 a:hover img.hid { visibility:visible; 
+}
+
+/* set the generic tab style--and set position so that it overlaps the header*/ 
+#navtwo {position:relative; top:-13px; color: navy; border-bottom: 1px solid black;
+margin: -25px 0 0 0; padding: 0px; padding-left: 10px; z-index: 1; }
+/* use display:inline to remove IE6 double margin bug*/
+#navtwo li { display: inline; overflow: hidden; list-style-type: none; 
+	}
+/*set tab colour*/
+	#navtwo a, a.active { color: navy; background: #81d9f6; font: bold 1em "Trebuchet MS", Arial, sans-serif;
+		border: 1px solid black; padding: 2px 5px 0px 5px; margin: 0; text-decoration: none; 
+		}
+ /*make a 3px wide bottom border on tab the same colour as the page*/  
+	 a.active { background: #cfecf5; color:navy; border-bottom: 3px solid #cfecf5; 
+	}
+  /*hovering over a non-active tab shows an aqua tab*/
+	#navtwo a:hover { 	background: aqua; 
+	}
+ 	#navtwo a:visited { color: navy; 
+	}
+ /*hovering over the active tab shows navy text*/
+	#navtwo a.active:hover { background: #cfecf5; color: navy; 
+	}

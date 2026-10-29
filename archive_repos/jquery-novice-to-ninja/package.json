@@ -1,0 +1,30 @@
+{
+  "name": "jquery-novice-to-ninja",
+  "version": "1.0.0",
+  "description": "source from book examples",
+  "main": ".eslintrc.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Davinnah/jQuery-novice-to-ninja.git"
+  },
+  "author": "Davinna",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Davinnah/jQuery-novice-to-ninja/issues"
+  },
+  "homepage": "https://github.com/Davinnah/jQuery-novice-to-ninja#readme",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "graceful-fs": "^4.1.11",
+    "gulp": "^3.9.1",
+    "gulp-babel": "^7.0.1",
+    "minimatch": "^3.0.4"
+  },
+  "dependencies": {
+    "jquery": "3.3.1",
+  }
+}

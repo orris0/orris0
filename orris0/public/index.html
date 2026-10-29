@@ -1,0 +1,1010 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Family Media Network Dashboard</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- jQuery CDN -->
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        /* ==========================================================================
+           CSS SECRETS (Lea Verou Inspired Techniques) & CUSTOM STYLES
+           ========================================================================== */
+
+        /* 1. CSS Custom Properties for Themes */
+        :root {
+            --bg-gradient-1: #1e1b4b;
+            --bg-gradient-2: #311042;
+            --bg-gradient-3: #0f172a;
+            --glass-bg: rgba(255, 255, 255, 0.07);
+            --glass-border: rgba(255, 255, 255, 0.18);
+            --glass-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+            --text-primary: #f8fafc;
+            --text-secondary: #94a3b8;
+            --accent-pink: #ec4899;
+            --accent-purple: #8b5cf6;
+            --accent-indigo: #6366f1;
+            --striped-pattern: repeating-linear-gradient(
+                -45deg,
+                rgba(255, 255, 255, 0.03),
+                rgba(255, 255, 255, 0.03) 10px,
+                transparent 10px,
+                transparent 20px
+            );
+        }
+
+        [data-theme="light"] {
+            --bg-gradient-1: #e0e7ff;
+            --bg-gradient-2: #f3e8ff;
+            --bg-gradient-3: #f1f5f9;
+            --glass-bg: rgba(255, 255, 255, 0.65);
+            --glass-border: rgba(255, 255, 255, 0.8);
+            --glass-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.07);
+            --text-primary: #0f172a;
+            --text-secondary: #475569;
+            --striped-pattern: repeating-linear-gradient(
+                -45deg,
+                rgba(99, 102, 241, 0.05),
+                rgba(99, 102, 241, 0.05) 10px,
+                transparent 10px,
+                transparent 20px
+            );
+        }
+
+        body {
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: linear-gradient(135deg, var(--bg-gradient-1), var(--bg-gradient-2), var(--bg-gradient-3));
+            background-size: 400% 400%;
+            animation: gradientBG 18s ease infinite;
+            color: var(--text-primary);
+            min-height: 100vh;
+            transition: color 0.3s ease;
+        }
+
+        @keyframes gradientBG {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        /* 2. Glassmorphism & Frosted Glass Backdrop Blur */
+        .glass-panel {
+            background: var(--glass-bg);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border: 1px solid var(--glass-border);
+            box-shadow: var(--glass-shadow);
+            border-radius: 1rem;
+        }
+
+        .glass-panel-striped {
+            background: var(--striped-pattern), var(--glass-bg);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border: 1px solid var(--glass-border);
+            box-shadow: var(--glass-shadow);
+            border-radius: 1rem;
+        }
+
+        /* 3. Lea Verou Cutout Corners using clip-path */
+        .cutout-corner-top-right {
+            clip-path: polygon(
+                0 0, 
+                calc(100% - 20px) 0, 
+                100% 20px, 
+                100% 100%, 
+                0 100%
+            );
+        }
+
+        .cutout-tab {
+            clip-path: polygon(
+                12px 0, 
+                calc(100% - 12px) 0, 
+                100% 100%, 
+                0 100%
+            );
+        }
+
+        /* 4. Custom Elastic Transitions & Animations */
+        .elastic-hover {
+            transition: transform 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55), box-shadow 0.3s ease;
+        }
+        .elastic-hover:hover {
+            transform: translateY(-6px) scale(1.02);
+            box-shadow: 0 12px 28px rgba(0,0,0,0.25);
+        }
+
+        /* Pulse animation for live online badges */
+        @keyframes pulse-ring {
+            0% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(34, 197, 94, 0.7); }
+            70% { transform: scale(1); box-shadow: 0 0 0 8px rgba(34, 197, 94, 0); }
+            100% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(34, 197, 94, 0); }
+        }
+
+        .online-badge-pulse {
+            animation: pulse-ring 2s infinite;
+        }
+
+        /* Audio Equalizer Bar Animations */
+        @keyframes eq-bar {
+            0%, 100% { height: 6px; }
+            50% { height: 28px; }
+        }
+        .eq-bar-playing {
+            animation: eq-bar 1.2s ease-in-out infinite;
+        }
+
+        /* Custom Scrollbars */
+        ::-webkit-scrollbar {
+            width: 8px;
+            height: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: rgba(0, 0, 0, 0.1);
+        }
+        ::-webkit-scrollbar-thumb {
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: rgba(255, 255, 255, 0.4);
+        }
+
+        /* Custom Sleek Range Sliders */
+        input[type=range] {
+            -webkit-appearance: none;
+            background: rgba(255, 255, 255, 0.15);
+            border-radius: 8px;
+            height: 6px;
+        }
+        input[type=range]::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            height: 18px;
+            width: 18px;
+            border-radius: 50%;
+            background: #ec4899;
+            cursor: pointer;
+            box-shadow: 0 0 10px rgba(236, 72, 153, 0.8);
+            transition: transform 0.1s ease;
+        }
+        input[type=range]::-webkit-slider-thumb:hover {
+            transform: scale(1.2);
+        }
+
+        /* Custom Styled Checkboxes & Toggles */
+        .custom-toggle {
+            position: relative;
+            display: inline-block;
+            width: 50px;
+            height: 26px;
+        }
+        .custom-toggle input {
+            opacity: 0;
+            width: 0;
+            height: 0;
+        }
+        .toggle-slider {
+            position: absolute;
+            cursor: pointer;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background-color: rgba(255, 255, 255, 0.2);
+            transition: .4s;
+            border-radius: 34px;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+        .toggle-slider:before {
+            position: absolute;
+            content: "";
+            height: 18px;
+            width: 18px;
+            left: 3px;
+            bottom: 3px;
+            background-color: white;
+            transition: .4s;
+            border-radius: 50%;
+        }
+        input:checked + .toggle-slider {
+            background-color: #8b5cf6;
+        }
+        input:checked + .toggle-slider:before {
+            transform: translateX(24px);
+        }
+
+        /* Image Zoom Utility for Lightbox */
+        .zoom-container {
+            overflow: hidden;
+            cursor: zoom-in;
+        }
+        .zoom-container img {
+            transition: transform 0.3s ease;
+        }
+        .zoom-container.zoomed img {
+            transform: scale(1.8);
+            cursor: zoom-out;
+        }
+    </style>
+</head>
+<body class="p-3 md:p-6 text-slate-100" data-theme="dark">
+
+    <!-- TOP HEADER / STATS BAR -->
+    <header class="max-w-7xl mx-auto mb-6 glass-panel p-5 relative overflow-hidden cutout-corner-top-right">
+        <div class="flex flex-col md:flex-row justify-between items-center gap-4">
+            
+            <!-- Logo & Brand Title -->
+            <div class="flex items-center space-x-3">
+                <div class="w-12 h-12 rounded-2xl bg-gradient-to-tr from-pink-500 via-purple-500 to-indigo-500 flex items-center justify-center text-white shadow-lg text-2xl font-black">
+                    <i class="fa-solid fa-shapes"></i>
+                </div>
+                <div>
+                    <h1 class="text-2xl font-bold tracking-tight bg-gradient-to-r from-pink-400 via-purple-300 to-indigo-300 bg-clip-text text-transparent">
+                        Family Media Network
+                    </h1>
+                    <p class="text-xs text-slate-400 font-medium">CSS Secrets & jQuery Novice to Ninja Experience</p>
+                </div>
+            </div>
+
+            <!-- Quick Stats Cards (CSS Grid) -->
+            <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 w-full md:w-auto">
+                <div class="glass-panel p-3 text-center border-l-4 border-l-pink-500">
+                    <p class="text-xs text-slate-400 uppercase font-semibold">Photos</p>
+                    <p class="text-xl font-extrabold text-pink-400" id="stat-photos">1,248</p>
+                </div>
+                <div class="glass-panel p-3 text-center border-l-4 border-l-purple-500">
+                    <p class="text-xs text-slate-400 uppercase font-semibold">Albums</p>
+                    <p class="text-xl font-extrabold text-purple-400" id="stat-albums">34</p>
+                </div>
+                <div class="glass-panel p-3 text-center border-l-4 border-l-indigo-500">
+                    <p class="text-xs text-slate-400 uppercase font-semibold">Members</p>
+                    <p class="text-xl font-extrabold text-indigo-400" id="stat-members">12</p>
+                </div>
+                <div class="glass-panel p-3 text-center border-l-4 border-l-emerald-500">
+                    <p class="text-xs text-slate-400 uppercase font-semibold">Storage</p>
+                    <p class="text-xl font-extrabold text-emerald-400">42.8 GB</p>
+                </div>
+            </div>
+
+            <!-- Theme Toggler & Quick Tools -->
+            <div class="flex items-center space-x-4">
+                <div class="flex items-center space-x-2">
+                    <i class="fa-solid fa-moon text-sm text-purple-300"></i>
+                    <label class="custom-toggle">
+                        <input type="checkbox" id="themeToggleBtn">
+                        <span class="toggle-slider"></span>
+                    </label>
+                    <i class="fa-solid fa-sun text-sm text-amber-300"></i>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- MAIN DASHBOARD CONTENT GRID -->
+    <main class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-6">
+
+        <!-- LEFT/CENTER CONTENT COLUMN (8 COLUMNS) -->
+        <section class="lg:col-span-8 space-y-6">
+
+            <!-- INTERACTIVE TABBED NAVIGATION BAR (jQuery Novice to Ninja) -->
+            <div class="glass-panel-striped p-2 flex flex-wrap gap-2 justify-between items-center">
+                <nav class="flex flex-wrap gap-2" id="mediaTabs">
+                    <button data-tab="all" class="tab-btn px-4 py-2.5 rounded-lg text-sm font-semibold transition-all duration-300 bg-purple-600 text-white shadow-md">
+                        <i class="fa-solid fa-border-all mr-1.5"></i> All Feeds
+                    </button>
+                    <button data-tab="photo" class="tab-btn px-4 py-2.5 rounded-lg text-sm font-semibold text-slate-300 hover:bg-white/10 transition-all duration-300">
+                        <i class="fa-solid fa-image mr-1.5 text-pink-400"></i> Photos
+                    </button>
+                    <button data-tab="video" class="tab-btn px-4 py-2.5 rounded-lg text-sm font-semibold text-slate-300 hover:bg-white/10 transition-all duration-300">
+                        <i class="fa-solid fa-video mr-1.5 text-purple-400"></i> Videos
+                    </button>
+                    <button data-tab="audio" class="tab-btn px-4 py-2.5 rounded-lg text-sm font-semibold text-slate-300 hover:bg-white/10 transition-all duration-300">
+                        <i class="fa-solid fa-microphone mr-1.5 text-indigo-400"></i> Audio Notes
+                    </button>
+                    <button data-tab="recipe" class="tab-btn px-4 py-2.5 rounded-lg text-sm font-semibold text-slate-300 hover:bg-white/10 transition-all duration-300">
+                        <i class="fa-solid fa-utensils mr-1.5 text-amber-400"></i> Recipes
+                    </button>
+                </nav>
+
+                <div class="text-xs font-medium px-3 py-1 rounded-full bg-white/10 border border-white/20 text-slate-300">
+                    Showing <span id="visibleCount" class="text-pink-400 font-bold">5</span> items
+                </div>
+            </div>
+
+            <!-- LIVE SEARCH & INSTANT FILTER BAR -->
+            <div class="glass-panel p-4 flex flex-col md:flex-row gap-3 items-center justify-between">
+                <div class="relative w-full md:w-1/2">
+                    <i class="fa-solid fa-magnifying-glass absolute left-3 top-1/2 -translate-y-1/2 text-slate-400"></i>
+                    <input type="text" id="searchInput" placeholder="Search memories, tags, or members..." 
+                           class="w-full pl-10 pr-4 py-2 rounded-xl bg-black/20 border border-white/10 focus:border-purple-400 focus:outline-none text-sm text-slate-100 placeholder-slate-400 transition-all">
+                </div>
+                
+                <div class="flex items-center space-x-3 w-full md:w-auto justify-end">
+                    <span class="text-xs text-slate-400 font-medium"><i class="fa-solid fa-filter mr-1"></i> Filter By Member:</span>
+                    <select id="memberFilter" class="bg-black/30 border border-white/15 rounded-lg px-3 py-1.5 text-xs text-slate-200 focus:outline-none focus:border-purple-400">
+                        <option value="all">Everyone</option>
+                        <option value="Mom">Mom (Sarah)</option>
+                        <option value="Dad">Dad (Robert)</option>
+                        <option value="Grandma">Grandma (Elena)</option>
+                        <option value="Alex">Alex (Brother)</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- DYNAMIC MEDIA FEED GALLERY (Grid Layout) -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-5" id="mediaGallery">
+
+                <!-- CARD 1: PHOTO -->
+                <article class="media-card glass-panel overflow-hidden elastic-hover flex flex-col justify-between" 
+                         data-category="photo" data-member="Mom" data-title="Summer Family Picnic Grand Park">
+                    <div>
+                        <div class="relative overflow-hidden group">
+                            <img src="https://images.unsplash.com/photo-1511895426328-dc8714191300?auto=format&fit=crop&w=800&q=80" 
+                                 alt="Family Picnic" class="w-full h-48 object-cover transition-transform duration-500 group-hover:scale-105">
+                            <span class="absolute top-3 left-3 bg-pink-500/80 backdrop-blur-md text-white text-xs px-2.5 py-1 rounded-full font-semibold">
+                                <i class="fa-solid fa-image mr-1"></i> Photo
+                            </span>
+                            <button class="open-lightbox-btn absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center text-white text-2xl font-bold"
+                                    data-src="https://images.unsplash.com/photo-1511895426328-dc8714191300?auto=format&fit=crop&w=1200&q=80"
+                                    data-caption="Annual Summer Family Picnic at Grand Park - July 2026">
+                                <i class="fa-solid fa-expand hover:scale-125 transition-transform"></i>
+                            </button>
+                        </div>
+                        <div class="p-4">
+                            <div class="flex items-center justify-between text-xs text-slate-400 mb-2">
+                                <span><i class="fa-solid fa-user text-pink-400 mr-1"></i> Shared by Mom</span>
+                                <span><i class="fa-regular fa-clock mr-1"></i> 2 hours ago</span>
+                            </div>
+                            <h3 class="font-bold text-lg text-slate-100 mb-1">Summer Family Picnic</h3>
+                            <p class="text-xs text-slate-300 leading-relaxed mb-3">Such a wonderful sunny afternoon at Grand Park! Kids loved the homemade lemonade.</p>
+                        </div>
+                    </div>
+                    <div class="px-4 pb-4 border-t border-white/10 pt-3 flex items-center justify-between text-xs">
+                        <button class="like-btn text-slate-400 hover:text-pink-400 transition-colors flex items-center gap-1.5">
+                            <i class="fa-regular fa-heart text-base"></i> <span class="like-count">24</span>
+                        </button>
+                        <button class="comment-trigger-btn text-slate-400 hover:text-purple-400 transition-colors flex items-center gap-1.5">
+                            <i class="fa-regular fa-comment text-base"></i> <span>5 comments</span>
+                        </button>
+                        <button class="favorite-btn text-slate-400 hover:text-amber-400 transition-colors">
+                            <i class="fa-regular fa-bookmark text-base"></i>
+                        </button>
+                    </div>
+                </article>
+
+                <!-- CARD 2: VINTAGE PHOTO -->
+                <article class="media-card glass-panel overflow-hidden elastic-hover flex flex-col justify-between" 
+                         data-category="photo" data-member="Grandma" data-title="Grandma Vintage Wedding Photo 1974">
+                    <div>
+                        <div class="relative overflow-hidden group">
+                            <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=800&q=80" 
+                                 alt="Vintage Memory" class="w-full h-48 object-cover transition-transform duration-500 group-hover:scale-105">
+                            <span class="absolute top-3 left-3 bg-amber-500/80 backdrop-blur-md text-white text-xs px-2.5 py-1 rounded-full font-semibold">
+                                <i class="fa-solid fa-clock-rotate-left mr-1"></i> Vintage
+                            </span>
+                            <button class="open-lightbox-btn absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center text-white text-2xl font-bold"
+                                    data-src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=1200&q=80"
+                                    data-caption="Grandma Elena's Portrait - Rediscovered from old album">
+                                <i class="fa-solid fa-expand hover:scale-125 transition-transform"></i>
+                            </button>
+                        </div>
+                        <div class="p-4">
+                            <div class="flex items-center justify-between text-xs text-slate-400 mb-2">
+                                <span><i class="fa-solid fa-user text-amber-400 mr-1"></i> Grandma Elena</span>
+                                <span><i class="fa-regular fa-clock mr-1"></i> Yesterday</span>
+                            </div>
+                            <h3 class="font-bold text-lg text-slate-100 mb-1">Old Memories Restored</h3>
+                            <p class="text-xs text-slate-300 leading-relaxed mb-3">Digitized this old portrait from 1974. Time flies so fast!</p>
+                        </div>
+                    </div>
+                    <div class="px-4 pb-4 border-t border-white/10 pt-3 flex items-center justify-between text-xs">
+                        <button class="like-btn text-slate-400 hover:text-pink-400 transition-colors flex items-center gap-1.5">
+                            <i class="fa-regular fa-heart text-base"></i> <span class="like-count">42</span>
+                        </button>
+                        <button class="comment-trigger-btn text-slate-400 hover:text-purple-400 transition-colors flex items-center gap-1.5">
+                            <i class="fa-regular fa-comment text-base"></i> <span>12 comments</span>
+                        </button>
+                        <button class="favorite-btn text-slate-400 hover:text-amber-400 transition-colors">
+                            <i class="fa-regular fa-bookmark text-base"></i>
+                        </button>
+                    </div>
+                </article>
+
+                <!-- CARD 3: AUDIO MEMORY -->
+                <article class="media-card glass-panel p-5 elastic-hover flex flex-col justify-between" 
+                         data-category="audio" data-member="Dad" data-title="Dad Acoustic Guitar & Voice Note">
+                    <div>
+                        <div class="flex items-center justify-between mb-3">
+                            <span class="bg-indigo-500/80 backdrop-blur-md text-white text-xs px-2.5 py-1 rounded-full font-semibold">
+                                <i class="fa-solid fa-microphone mr-1"></i> Voice Note
+                            </span>
+                            <span class="text-xs text-slate-400"><i class="fa-solid fa-user text-indigo-400 mr-1"></i> Dad (Robert)</span>
+                        </div>
+                        
+                        <h3 class="font-bold text-lg text-slate-100 mb-2">Acoustic Guitar Jam & Stories</h3>
+                        <p class="text-xs text-slate-300 mb-4">Playing an old bedtime song for the grandkids.</p>
+
+                        <!-- Visual Audio Player Box -->
+                        <div class="glass-panel p-3 bg-black/20 rounded-xl mb-3">
+                            <div class="flex items-center justify-between mb-2">
+                                <button class="audio-play-btn w-10 h-10 rounded-full bg-indigo-600 hover:bg-indigo-500 text-white flex items-center justify-center transition-transform active:scale-95 shadow-lg">
+                                    <i class="fa-solid fa-play"></i>
+                                </button>
+                                <div class="flex items-end gap-1 h-8 px-2 flex-grow justify-center" id="audioWave">
+                                    <span class="w-1 bg-indigo-400 rounded-full h-2"></span>
+                                    <span class="w-1 bg-indigo-400 rounded-full h-5"></span>
+                                    <span class="w-1 bg-pink-400 rounded-full h-3"></span>
+                                    <span class="w-1 bg-purple-400 rounded-full h-7"></span>
+                                    <span class="w-1 bg-indigo-400 rounded-full h-4"></span>
+                                    <span class="w-1 bg-indigo-300 rounded-full h-2"></span>
+                                    <span class="w-1 bg-purple-400 rounded-full h-6"></span>
+                                    <span class="w-1 bg-pink-400 rounded-full h-3"></span>
+                                </div>
+                                <span class="text-xs font-mono text-indigo-300 audio-time">02:15</span>
+                            </div>
+                            <input type="range" class="w-full audio-slider" min="0" max="100" value="30">
+                        </div>
+                    </div>
+
+                    <div class="border-t border-white/10 pt-3 flex items-center justify-between text-xs">
+                        <button class="like-btn text-slate-400 hover:text-pink-400 transition-colors flex items-center gap-1.5">
+                            <i class="fa-regular fa-heart text-base"></i> <span class="like-count">18</span>
+                        </button>
+                        <button class="comment-trigger-btn text-slate-400 hover:text-purple-400 transition-colors flex items-center gap-1.5">
+                            <i class="fa-regular fa-comment text-base"></i> <span>3 comments</span>
+                        </button>
+                        <button class="favorite-btn text-slate-400 hover:text-amber-400 transition-colors">
+                            <i class="fa-regular fa-bookmark text-base"></i>
+                        </button>
+                    </div>
+                </article>
+
+                <!-- CARD 4: RECIPE -->
+                <article class="media-card glass-panel p-5 elastic-hover flex flex-col justify-between" 
+                         data-category="recipe" data-member="Grandma" data-title="Secret Chocolate Chip Cookie Recipe">
+                    <div>
+                        <div class="flex items-center justify-between mb-3">
+                            <span class="bg-amber-500/80 backdrop-blur-md text-white text-xs px-2.5 py-1 rounded-full font-semibold">
+                                <i class="fa-solid fa-utensils mr-1"></i> Family Recipe
+                            </span>
+                            <span class="text-xs text-slate-400"><i class="fa-solid fa-user text-amber-400 mr-1"></i> Grandma</span>
+                        </div>
+                        
+                        <h3 class="font-bold text-lg text-slate-100 mb-1">Secret Chocolate Chip Cookies</h3>
+                        <p class="text-xs text-slate-300 mb-3">The secret ingredient is a pinch of sea salt and extra vanilla extract!</p>
+
+                        <!-- Accordion Preview for Recipe -->
+                        <div class="recipe-accordion border border-white/10 rounded-xl overflow-hidden mb-3">
+                            <button class="accordion-header w-full p-2.5 bg-white/5 text-left text-xs font-semibold flex justify-between items-center hover:bg-white/10 transition-colors">
+                                <span><i class="fa-solid fa-list-check mr-1.5 text-amber-400"></i> View Key Ingredients</span>
+                                <i class="fa-solid fa-chevron-down text-slate-400 transition-transform"></i>
+                            </button>
+                            <div class="accordion-content hidden p-3 bg-black/20 text-xs text-slate-300 space-y-1">
+                                <p>• 2 cups unsalted butter (browned)</p>
+                                <p>• 1.5 cups dark brown sugar</p>
+                                <p>• 2 tsp pure Madagascar vanilla</p>
+                                <p>• 12 oz semi-sweet chocolate chunks</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="border-t border-white/10 pt-3 flex items-center justify-between text-xs">
+                        <button class="like-btn text-slate-400 hover:text-pink-400 transition-colors flex items-center gap-1.5">
+                            <i class="fa-regular fa-heart text-base"></i> <span class="like-count">31</span>
+                        </button>
+                        <button class="comment-trigger-btn text-slate-400 hover:text-purple-400 transition-colors flex items-center gap-1.5">
+                            <i class="fa-regular fa-comment text-base"></i> <span>8 comments</span>
+                        </button>
+                        <button class="favorite-btn text-slate-400 hover:text-amber-400 transition-colors">
+                            <i class="fa-regular fa-bookmark text-base"></i>
+                        </button>
+                    </div>
+                </article>
+
+                <!-- CARD 5: VIDEO -->
+                <article class="media-card glass-panel overflow-hidden elastic-hover flex flex-col justify-between" 
+                         data-category="video" data-member="Alex" data-title="Alex Skateboarding Tricks Sunset">
+                    <div>
+                        <div class="relative overflow-hidden group">
+                            <img src="https://images.unsplash.com/photo-1520045892732-304bc3ac5d8e?auto=format&fit=crop&w=800&q=80" 
+                                 alt="Video Thumbnail" class="w-full h-48 object-cover transition-transform duration-500 group-hover:scale-105">
+                            <span class="absolute top-3 left-3 bg-purple-600/80 backdrop-blur-md text-white text-xs px-2.5 py-1 rounded-full font-semibold">
+                                <i class="fa-solid fa-video mr-1"></i> Video
+                            </span>
+                            <div class="absolute inset-0 bg-black/30 flex items-center justify-center">
+                                <button class="w-14 h-14 rounded-full bg-purple-600/90 text-white flex items-center justify-center text-xl shadow-xl hover:scale-110 transition-transform">
+                                    <i class="fa-solid fa-play ml-1"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="p-4">
+                            <div class="flex items-center justify-between text-xs text-slate-400 mb-2">
+                                <span><i class="fa-solid fa-user text-purple-400 mr-1"></i> Alex</span>
+                                <span><i class="fa-regular fa-clock mr-1"></i> 3 days ago</span>
+                            </div>
+                            <h3 class="font-bold text-lg text-slate-100 mb-1">Sunset Skate Session</h3>
+                            <p class="text-xs text-slate-300 leading-relaxed mb-3">Finally landed that kickflip at sunset! Filmed on Go-Pro.</p>
+                        </div>
+                    </div>
+                    <div class="px-4 pb-4 border-t border-white/10 pt-3 flex items-center justify-between text-xs">
+                        <button class="like-btn text-slate-400 hover:text-pink-400 transition-colors flex items-center gap-1.5">
+                            <i class="fa-regular fa-heart text-base"></i> <span class="like-count">19</span>
+                        </button>
+                        <button class="comment-trigger-btn text-slate-400 hover:text-purple-400 transition-colors flex items-center gap-1.5">
+                            <i class="fa-regular fa-comment text-base"></i> <span>2 comments</span>
+                        </button>
+                        <button class="favorite-btn text-slate-400 hover:text-amber-400 transition-colors">
+                            <i class="fa-regular fa-bookmark text-base"></i>
+                        </button>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- RIGHT SIDEBAR COLUMN (4 COLUMNS) -->
+        <aside class="lg:col-span-4 space-y-6">
+
+            <!-- ACTIVE FAMILY MEMBERS SIDEBAR -->
+            <div class="glass-panel p-5">
+                <div class="flex items-center justify-between mb-4 border-b border-white/10 pb-3">
+                    <h2 class="font-bold text-base text-slate-100 flex items-center gap-2">
+                        <i class="fa-solid fa-users text-purple-400"></i> Family Circle
+                    </h2>
+                    <span class="text-xs bg-emerald-500/20 text-emerald-400 px-2 py-0.5 rounded-full font-semibold">4 Online</span>
+                </div>
+
+                <div class="space-y-3" id="memberList">
+                    <!-- Member 1 -->
+                    <div class="flex items-center justify-between p-2 rounded-xl hover:bg-white/5 transition-colors group cursor-pointer member-item" data-member="Mom">
+                        <div class="flex items-center space-x-3">
+                            <div class="relative">
+                                <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=120&q=80" alt="Sarah" class="w-10 h-10 rounded-full object-cover border border-pink-400">
+                                <span class="absolute bottom-0 right-0 w-3 h-3 bg-emerald-500 border-2 border-slate-900 rounded-full online-badge-pulse"></span>
+                            </div>
+                            <div>
+                                <h4 class="text-sm font-semibold text-slate-100 group-hover:text-pink-400 transition-colors">Sarah (Mom)</h4>
+                                <p class="text-xs text-slate-400">Active now</p>
+                            </div>
+                        </div>
+                        <button class="direct-msg-btn w-8 h-8 rounded-full bg-white/10 hover:bg-purple-600 text-slate-300 hover:text-white flex items-center justify-center transition-colors">
+                            <i class="fa-regular fa-paper-plane text-xs"></i>
+                        </button>
+                    </div>
+
+                    <!-- Member 2 -->
+                    <div class="flex items-center justify-between p-2 rounded-xl hover:bg-white/5 transition-colors group cursor-pointer member-item" data-member="Dad">
+                        <div class="flex items-center space-x-3">
+                            <div class="relative">
+                                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=120&q=80" alt="Robert" class="w-10 h-10 rounded-full object-cover border border-indigo-400">
+                                <span class="absolute bottom-0 right-0 w-3 h-3 bg-emerald-500 border-2 border-slate-900 rounded-full online-badge-pulse"></span>
+                            </div>
+                            <div>
+                                <h4 class="text-sm font-semibold text-slate-100 group-hover:text-indigo-400 transition-colors">Robert (Dad)</h4>
+                                <p class="text-xs text-slate-400">Active now</p>
+                            </div>
+                        </div>
+                        <button class="direct-msg-btn w-8 h-8 rounded-full bg-white/10 hover:bg-purple-600 text-slate-300 hover:text-white flex items-center justify-center transition-colors">
+                            <i class="fa-regular fa-paper-plane text-xs"></i>
+                        </button>
+                    </div>
+
+                    <!-- Member 3 -->
+                    <div class="flex items-center justify-between p-2 rounded-xl hover:bg-white/5 transition-colors group cursor-pointer member-item" data-member="Grandma">
+                        <div class="flex items-center space-x-3">
+                            <div class="relative">
+                                <img src="https://images.unsplash.com/photo-1567532939604-b6b5b0db2604?auto=format&fit=crop&w=120&q=80" alt="Elena" class="w-10 h-10 rounded-full object-cover border border-amber-400">
+                                <span class="absolute bottom-0 right-0 w-3 h-3 bg-amber-500 border-2 border-slate-900 rounded-full"></span>
+                            </div>
+                            <div>
+                                <h4 class="text-sm font-semibold text-slate-100 group-hover:text-amber-400 transition-colors">Elena (Grandma)</h4>
+                                <p class="text-xs text-slate-400">Away 15m</p>
+                            </div>
+                        </div>
+                        <button class="direct-msg-btn w-8 h-8 rounded-full bg-white/10 hover:bg-purple-600 text-slate-300 hover:text-white flex items-center justify-center transition-colors">
+                            <i class="fa-regular fa-paper-plane text-xs"></i>
+                        </button>
+                    </div>
+
+                    <!-- Member 4 -->
+                    <div class="flex items-center justify-between p-2 rounded-xl hover:bg-white/5 transition-colors group cursor-pointer member-item" data-member="Alex">
+                        <div class="flex items-center space-x-3">
+                            <div class="relative">
+                                <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=120&q=80" alt="Alex" class="w-10 h-10 rounded-full object-cover border border-purple-400">
+                                <span class="absolute bottom-0 right-0 w-3 h-3 bg-emerald-500 border-2 border-slate-900 rounded-full online-badge-pulse"></span>
+                            </div>
+                            <div>
+                                <h4 class="text-sm font-semibold text-slate-100 group-hover:text-purple-400 transition-colors">Alex (Brother)</h4>
+                                <p class="text-xs text-slate-400">Active now</p>
+                            </div>
+                        </div>
+                        <button class="direct-msg-btn w-8 h-8 rounded-full bg-white/10 hover:bg-purple-600 text-slate-300 hover:text-white flex items-center justify-center transition-colors">
+                            <i class="fa-regular fa-paper-plane text-xs"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- FAMILY EVENTS ACCORDION WIDGET (jQuery Accordion Pattern) -->
+            <div class="glass-panel p-5">
+                <h2 class="font-bold text-base text-slate-100 mb-4 flex items-center gap-2 border-b border-white/10 pb-3">
+                    <i class="fa-solid fa-calendar-days text-pink-400"></i> Upcoming Family Events
+                </h2>
+
+                <div class="space-y-2" id="eventsAccordion">
+
+                    <!-- Event Item 1 -->
+                    <div class="accordion-item border border-white/10 rounded-xl overflow-hidden">
+                        <button class="accordion-trigger w-full p-3 bg-white/5 text-left text-xs font-bold flex justify-between items-center hover:bg-white/10 transition-colors">
+                            <span class="text-pink-300"><i class="fa-solid fa-cake-candles mr-2"></i> Grandma's 80th Birthday</span>
+                            <i class="fa-solid fa-chevron-down text-slate-400 transition-transform"></i>
+                        </button>
+                        <div class="accordion-body hidden p-3 bg-black/20 text-xs text-slate-300 space-y-1">
+                            <p class="font-semibold text-slate-200">Date: Nov 15, 2026</p>
+                            <p>Location: Sunset Beach Resort & Grill</p>
+                            <p class="text-slate-400 text-[11px] pt-1">Organized by Mom. Secret surprise party planned!</p>
+                        </div>
+                    </div>
+
+                    <!-- Event Item 2 -->
+                    <div class="accordion-item border border-white/10 rounded-xl overflow-hidden">
+                        <button class="accordion-trigger w-full p-3 bg-white/5 text-left text-xs font-bold flex justify-between items-center hover:bg-white/10 transition-colors">
+                            <span class="text-purple-300"><i class="fa-solid fa-campground mr-2"></i> Annual Mountain Camping Trip</span>
+                            <i class="fa-solid fa-chevron-down text-slate-400 transition-transform"></i>
+                        </button>
+                        <div class="accordion-body hidden p-3 bg-black/20 text-xs text-slate-300 space-y-1">
+                            <p class="font-semibold text-slate-200">Date: Dec 04 - Dec 07, 2026</p>
+                            <p>Location: Pine Valley Campground</p>
+                            <p class="text-slate-400 text-[11px] pt-1">Dad is bringing the acoustic guitar and marshmallow kits.</p>
+                        </div>
+                    </div>
+
+                    <!-- Event Item 3 -->
+                    <div class="accordion-item border border-white/10 rounded-xl overflow-hidden">
+                        <button class="accordion-trigger w-full p-3 bg-white/5 text-left text-xs font-bold flex justify-between items-center hover:bg-white/10 transition-colors">
+                            <span class="text-indigo-300"><i class="fa-solid fa-gift mr-2"></i> Holiday Gift Exchange</span>
+                            <i class="fa-solid fa-chevron-down text-slate-400 transition-transform"></i>
+                        </button>
+                        <div class="accordion-body hidden p-3 bg-black/20 text-xs text-slate-300 space-y-1">
+                            <p class="font-semibold text-slate-200">Date: Dec 24, 2026</p>
+                            <p>Location: Family Living Room</p>
+                            <p class="text-slate-400 text-[11px] pt-1">Budget limit: $50 per Secret Santa.</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- CSS SECRETS TRIVIA & UX TIPS -->
+            <div class="glass-panel p-4 border-l-4 border-l-amber-400">
+                <h4 class="text-xs font-bold text-amber-300 uppercase tracking-wider mb-1"><i class="fa-solid fa-lightbulb mr-1"></i> CSS Secrets Included</h4>
+                <p class="text-xs text-slate-300 leading-relaxed">
+                    This interface showcases Lea Verou styling secrets: backdrop filters, striped gradients, polygon clip-path cutouts, custom range sliders, and dynamic CSS variables for themes!
+                </p>
+            </div>
+
+        </aside>
+
+    </main>
+
+    <!-- FLOATING ACTION TOOLBAR (Quick Upload Trigger) -->
+    <div class="fixed bottom-6 right-6 z-40">
+        <button id="quickUploadBtn" class="w-14 h-14 rounded-full bg-gradient-to-r from-pink-500 to-purple-600 text-white text-xl flex items-center justify-center shadow-2xl hover:scale-110 active:scale-95 transition-all duration-300 group">
+            <i class="fa-solid fa-plus group-hover:rotate-90 transition-transform"></i>
+        </button>
+    </div>
+
+    <!-- MODAL 1: INTERACTIVE LIGHTBOX FOR PHOTOS & MEDIA (jQuery Lightbox Pattern) -->
+    <div id="lightboxModal" class="fixed inset-0 z-50 bg-black/80 backdrop-blur-md hidden flex items-center justify-center p-4">
+        <div class="glass-panel max-w-4xl w-full max-h-[90vh] overflow-hidden flex flex-col md:flex-row relative">
+            
+            <!-- Close Button -->
+            <button id="closeLightbox" class="absolute top-3 right-3 z-10 w-8 h-8 rounded-full bg-black/50 text-white hover:bg-red-500 transition-colors flex items-center justify-center">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+
+            <!-- Image View Area with Zoom Capability -->
+            <div class="md:w-2/3 bg-black flex items-center justify-center relative zoom-container" id="lightboxZoomBox">
+                <img id="lightboxImg" src="" alt="Zoomed view" class="max-h-[70vh] object-contain">
+                <span class="absolute bottom-2 left-2 text-[10px] bg-black/60 text-slate-300 px-2 py-1 rounded">
+                    <i class="fa-solid fa-magnifying-glass-plus mr-1"></i> Click image to zoom
+                </span>
+            </div>
+
+            <!-- Side Details & Comment Panel -->
+            <div class="md:w-1/3 p-5 flex flex-col justify-between border-t md:border-t-0 md:border-l border-white/10">
+                <div>
+                    <h3 id="lightboxCaption" class="text-base font-bold text-slate-100 mb-2">Caption Header</h3>
+                    <p class="text-xs text-slate-400 mb-4">Shared with Family Circle</p>
+                    
+                    <!-- Comments List -->
+                    <div class="space-y-3 mb-4 max-h-48 overflow-y-auto pr-1" id="lightboxComments">
+                        <div class="bg-white/5 p-2 rounded-lg text-xs">
+                            <span class="font-bold text-pink-400">Mom:</span>
+                            <p class="text-slate-300">Love this memory so much!</p>
+                        </div>
+                        <div class="bg-white/5 p-2 rounded-lg text-xs">
+                            <span class="font-bold text-indigo-400">Dad:</span>
+                            <p class="text-slate-300">Great lighting in this frame.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Comment Input -->
+                <div class="pt-3 border-t border-white/10 flex gap-2">
+                    <input type="text" id="lightboxCommentInput" placeholder="Write a comment..." class="w-full bg-black/30 border border-white/15 rounded-lg px-3 py-1.5 text-xs text-white focus:outline-none focus:border-purple-400">
+                    <button id="addCommentBtn" class="bg-purple-600 hover:bg-purple-500 text-white px-3 py-1.5 rounded-lg text-xs font-semibold">Post</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- MODAL 2: UPLOAD MEDIA DIALOG -->
+    <div id="uploadModal" class="fixed inset-0 z-50 bg-black/80 backdrop-blur-md hidden flex items-center justify-center p-4">
+        <div class="glass-panel max-w-md w-full p-6 relative">
+            <button id="closeUpload" class="absolute top-3 right-3 text-slate-400 hover:text-white">
+                <i class="fa-solid fa-xmark text-lg"></i>
+            </button>
+
+            <h3 class="text-lg font-bold text-slate-100 mb-4 flex items-center gap-2">
+                <i class="fa-solid fa-cloud-arrow-up text-pink-400"></i> Share New Memory
+            </h3>
+
+            <form id="uploadForm" class="space-y-4">
+                <div>
+                    <label class="block text-xs text-slate-300 font-semibold mb-1">Memory Title</label>
+                    <input type="text" required id="uploadTitle" placeholder="e.g. Birthday Party Fun" class="w-full bg-black/30 border border-white/15 rounded-xl px-3 py-2 text-xs text-white focus:outline-none focus:border-purple-400">
+                </div>
+
+                <div>
+                    <label class="block text-xs text-slate-300 font-semibold mb-1">Category</label>
+                    <select id="uploadCategory" class="w-full bg-black/30 border border-white/15 rounded-xl px-3 py-2 text-xs text-white focus:outline-none focus:border-purple-400">
+                        <option value="photo">Photo</option>
+                        <option value="video">Video</option>
+                        <option value="audio">Voice Note / Audio</option>
+                        <option value="recipe">Recipe</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label class="block text-xs text-slate-300 font-semibold mb-1">Description / Notes</label>
+                    <textarea id="uploadDesc" rows="3" placeholder="Add story or details..." class="w-full bg-black/30 border border-white/15 rounded-xl px-3 py-2 text-xs text-white focus:outline-none focus:border-purple-400"></textarea>
+                </div>
+
+                <div class="pt-2 flex justify-end gap-2">
+                    <button type="button" id="cancelUpload" class="px-4 py-2 rounded-xl text-xs font-semibold bg-white/10 hover:bg-white/20 text-slate-300">Cancel</button>
+                    <button type="submit" class="px-4 py-2 rounded-xl text-xs font-semibold bg-gradient-to-r from-pink-500 to-purple-600 text-white shadow-lg">Upload Memory</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- INTERACTIVE TOAST CONTAINER -->
+    <div id="toastContainer" class="fixed top-5 right-5 z-50 space-y-2 pointer-events-none"></div>
+
+    <!-- ==========================================================================
+         JQUERY INTERACTION PATTERNS (jQuery: Novice to Ninja)
+         ========================================================================== -->
+    <script>
+        $(document).ready(function () {
+
+            /* 1. TOAST NOTIFICATION HELPER FUNCTION */
+            function showToast(message, icon = "fa-check-circle", colorClass = "border-l-pink-500") {
+                const toastHtml = `
+                    <div class="toast-message pointer-events-auto glass-panel p-3.5 pr-6 border-l-4 ${colorClass} text-xs font-semibold text-slate-100 flex items-center gap-2.5 shadow-2xl transition-all duration-300 transform translate-x-12 opacity-0">
+                        <i class="fa-solid ${icon} text-base"></i>
+                        <span>${message}</span>
+                    </div>
+                `;
+                const $toast = $(toastHtml).appendTo('#toastContainer');
+                
+                // Elastic slide-in
+                setTimeout(() => {
+                    $toast.removeClass('translate-x-12 opacity-0').addClass('translate-x-0 opacity-100');
+                }, 50);
+
+                // Auto dismiss
+                setTimeout(() => {
+                    $toast.removeClass('translate-x-0 opacity-100').addClass('translate-x-12 opacity-0');
+                    setTimeout(() => $toast.remove(), 400);
+                }, 3500);
+            }
+
+            /* 2. THEME TOGGLER (CSS Dynamic Properties) */
+            $('#themeToggleBtn').on('change', function() {
+                if ($(this).is(':checked')) {
+                    $('body').attr('data-theme', 'light');
+                    showToast("Switched to Light Glass Theme", "fa-sun", "border-l-amber-400");
+                } else {
+                    $('body').attr('data-theme', 'dark');
+                    showToast("Switched to Dark Neon Theme", "fa-moon", "border-l-purple-500");
+                }
+            });
+
+            /* 3. INTERACTIVE TABBED NAVIGATION (Filter Feeds) */
+            $('#mediaTabs .tab-btn').on('click', function() {
+                const category = $(this).data('tab');
+
+                // Active tab class styling
+                $('#mediaTabs .tab-btn').removeClass('bg-purple-600 text-white shadow-md').addClass('text-slate-300 hover:bg-white/10');
+                $(this).addClass('bg-purple-600 text-white shadow-md').removeClass('text-slate-300 hover:bg-white/10');
+
+                // Filter Cards with jQuery Fade Effects
+                filterGallery(category, $('#memberFilter').val(), $('#searchInput').val());
+            });
+
+            /* 4. LIVE SEARCH & MEMBER FILTER BAR */
+            $('#searchInput').on('keyup', function() {
+                const activeTab = $('#mediaTabs .tab-btn.bg-purple-600').data('tab') || 'all';
+                filterGallery(activeTab, $('#memberFilter').val(), $(this).val());
+            });
+
+            $('#memberFilter').on('change', function() {
+                const activeTab = $('#mediaTabs .tab-btn.bg-purple-600').data('tab') || 'all';
+                filterGallery(activeTab, $(this).val(), $('#searchInput').val());
+            });
+
+            // Filtering Core Logic
+            function filterGallery(category, member, query) {
+                let count = 0;
+                const searchStr = (query || '').toLowerCase().trim();
+
+                $('.media-card').each(function() {
+                    const cardCat = $(this).data('category');
+                    const cardMember = $(this).data('member');
+                    const cardTitle = $(this).data('title').toLowerCase();
+
+                    const matchesCategory = (category === 'all' || cardCat === category);
+                    const matchesMember = (member === 'all' || cardMember === member);
+                    const matchesQuery = (searchStr === '' || cardTitle.includes(searchStr));
+
+                    if (matchesCategory && matchesMember && matchesQuery) {
+                        $(this).stop().fadeIn(300);
+                        count++;
+                    } else {
+                        $(this).stop().fadeOut(200);
+                    }
+                });
+
+                $('#visibleCount').text(count);
+            }
+
+            /* 5. ACCORDION PATTERN (jQuery Novice to Ninja Pattern) */
+            $('.accordion-header, .accordion-trigger').on('click', function() {
+                const $content = $(this).next('.accordion-content, .accordion-body');
+                const $icon = $(this).find('.fa-chevron-down');
+
+                // Toggle slide accordion
+                $content.slideToggle(250);
+                $icon.toggleClass('rotate-180');
+            });
+
+            /* 6. LIKE & FAVORITE BUTTON INTERACTIVITY */
+            $(document).on('click', '.like-btn', function() {
+                const $icon = $(this).find('i');
+                const $count = $(this).find('.like-count');
+                let currentLikes = parseInt($count.text(), 10);
+
+                if ($icon.hasClass('fa-regular')) {
+                    $icon.removeClass('fa-regular').addClass('fa-solid text-pink-500 animate-bounce');
+                    $count.text(currentLikes + 1);
+                    showToast("Liked memory!", "fa-heart", "border-l-pink-500");
+                } else {
+                    $icon.removeClass('fa-solid text-pink-500 animate-bounce').addClass('fa-regular');
+                    $count.text(currentLikes - 1);
+                }
+            });
+
+            $(document).on('click', '.favorite-btn', function() {
+                const $icon = $(this).find('i');
+                if ($icon.hasClass('fa-regular')) {
+                    $icon.removeClass('fa-regular').addClass('fa-solid text-amber-400');
+                    showToast("Added to Saved Favorites", "fa-bookmark", "border-l-amber-400");
+                } else {
+                    $icon.removeClass('fa-solid text-amber-400').addClass('fa-regular');
+                    showToast("Removed from Favorites", "fa-bookmark", "border-l-slate-400");
+                }
+            });
+
+            /* 7. AUDIO PLAYER INTERACTIVITY */
+            $('.audio-play-btn').on('click', function() {
+                const $btn = $(this);
+                const $icon = $btn.find('i');
+                const $waveBars = $btn.siblings('#audioWave').find('span');
+
+                if ($icon.hasClass('fa-play')) {
+                    $icon.removeClass('fa-play').addClass('fa-pause');
+                    $waveBars.addClass('eq-bar-playing');
+                    showToast("Playing voice audio note...", "fa-play", "border-l-indigo-500");
+                } else {
+                    $icon.removeClass('fa-pause').addClass('fa-play');
+                    $waveBars.removeClass('eq-bar-playing');
+                }
+            });
+
+            /* 8. LIGHTBOX MODAL & IMAGE ZOOMING */
+            $('.open-lightbox-btn').on('click', function() {
+                const src = $(this).data('src');
+                const caption = $(this).data('caption');
+
+                $('#lightboxImg').attr('src', src);
+                $('#lightboxCaption').text(caption);
+                $('#lightboxModal').fadeIn(200).css('display', 'flex');
+            });
+
+            $('#closeLightbox, #lightboxModal').on('click', function(e) {
+                if (e.target === this || e.target.id === 'closeLightbox' || $(e.target).closest('#closeLightbox').length) {
+                    $('#lightboxModal').fadeOut(200);
+                    $('#lightboxZoomBox').removeClass('zoomed');
+                }
+            });
+
+            // Toggle Image Zoom on Click
+            $('#lightboxZoomBox').on('click', function(e) {
+                if (e.target.id === 'closeLightbox' || $(e.target).closest('#closeLightbox').length) return;
+                $(this).toggleClass('zoomed');
+            });
+
+            // Commenting in Lightbox
+            $('#addCommentBtn').on('click', function() {
+                const text = $('#lightboxCommentInput').val().trim();
+                if (text) {
+                    const commentHtml = `
+                        <div class="bg-white/5 p-2 rounded-lg text-xs">
+                            <span class="font-bold text-purple-400">You:</span>
+                            <p class="text-slate-300">${text}</p>
+                        </div>
+                    `;
+                    $('#lightboxComments').append(commentHtml);
+                    $('#lightboxCommentInput').val('');
+                    showToast("Comment posted!", "fa-comment", "border-l-purple-500");
+                }
+            });
+
+            $('.comment-trigger-btn').on('click', function() {
+                // Open first item's lightbox as a quick demo modal trigger
+                $('.open-lightbox-btn').first().trigger('click');
+            });
+
+            /* 9. UPLOAD MODAL & FORM SUBMISSION */
+            $('#quickUploadBtn').on('click', function() {
+                $('#uploadModal').fadeIn(200).css('display', 'flex');
+            });
+
+            $('#closeUpload, #cancelUpload, #uploadModal').on('click', function(e) {
+                if (e.target === this || e.target.id === 'closeUpload' || e.target.id === 'cancelUpload') {
+                    $('#uploadModal').fadeOut(200);
+                }
+            });
+
+            $('#uploadForm').on('submit', function(e) {
+                e.preventDefault();
+                const title = $('#uploadTitle').val();
+                const category = $('#uploadCategory').val();
+
+                // Increment stat counters
+                if (category === 'photo') {
+                    let pCount = parseInt($('#stat-photos').text().replace(',', ''), 10);
+                    $('#stat-photos').text((pCount + 1).toLocaleString());
+                }
+
+                $('#uploadModal').fadeOut(200);
+                this.reset();
+                showToast(`"${title}" shared with family!`, "fa-cloud-arrow-up", "border-l-emerald-500");
+            });
+
+            /* 10. DIRECT MESSAGING ACTION TRIGGER */
+            $('.direct-msg-btn').on('click', function(e) {
+                e.stopPropagation();
+                const member = $(this).closest('.member-item').data('member');
+                showToast(`Opened private chat with ${member}`, "fa-paper-plane", "border-l-purple-500");
+            });
+
+        });
+    </script>
+</body>
+</html>
+

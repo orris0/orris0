@@ -1,0 +1,2807 @@
+#photos {
+  border: 1px solid #BEBEBE;
+  height: 400px;
+  overflow: hidden;
+  position: relative;
+  width: 400px;
+}
+
+#photos ul {
+  left: 0;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 0;
+  width: 2400px;
+}
+
+#photos li {
+  float: left;
+}
+
+#photos .trigger {
+  left: 0;
+  position: absolute;
+  top: 0;
+  z-index: 10;
+  text-indent: -9999px;
+  height: 400px;
+  width: 400px;
+  display: block;
+}
+
+
+
+#photos {
+  overflow: hidden;
+  width: 600px;
+}
+
+#photos_inner {
+  height: 100px;
+  width: 1500px;
+  overflow: hidden;
+  position: relative;
+}
+
+#photos_inner img {
+  float: left;
+  width: 100px;
+  height: 100px;
+}
+
+
+/* Fixes issue here http://code.google.com/p/jcrop/issues/detail?id=1 */
+.jcrop-holder { text-align: left; }
+
+.jcrop-vline, .jcrop-hline
+{
+	font-size: 0;
+	position: absolute;
+	background: white url('Jcrop.gif') top left repeat;
+}
+.jcrop-vline { height: 100%; width: 1px !important; }
+.jcrop-hline { width: 100%; height: 1px !important; }
+.jcrop-handle {
+	font-size: 1px;
+	width: 7px !important;
+	height: 7px !important;
+	border: 1px #eee solid;
+	background-color: #333;
+  /*
+	*width: 9px;
+	*height: 9px; */
+}
+
+.jcrop-tracker { width: 100%; height: 100%; }
+
+.custom .jcrop-vline,
+.custom .jcrop-hline
+{
+	background: yellow;
+}
+.custom .jcrop-handle
+{
+	border-color: black;
+	background-color: #C7BB00;
+  /*
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+  */
+}
+
+#navigation {
+	float: right;
+	width: 150px;
+}
+#intro {
+	width: 450px;
+}
+/*
+body {
+	font-family: "Lucida Sans Unicode","Lucida Grande",Sans-Serif;
+	color: #3E3E3E;
+	background: #94C5EB url(./images/background-grad.png) repeat-x;
+	font-size: 12px;
+}
+*/
+p {
+	padding: 5px;
+}
+
+a {
+	color: #3687AF;
+}
+
+#container{
+	margin:20px auto;
+	text-align: center;
+width: 1010px
+}
+
+#header{
+	height: 23.6%;
+	color: #172322;
+  /*	background: transparent url(../images/header-corners.png) no-repeat bottom left; */
+}
+
+#header h1
+{
+	padding:0;
+	margin:0;
+}
+/*
+#content{
+	background-color: #fff;
+	padding: 0 15px 10px 15px;
+    
+} 
+*/
+#footer{
+	background-color: #fff;
+	padding:15px;
+  clear: both;
+}
+/*
+h2 {
+	border-bottom:2px solid #015287;
+	color: #D15600;
+	padding-top: 10px;
+  margin-top: 0;
+}
+*/
+table {
+	border-collapse:collapse;
+	font-size:12px;
+	margin:0 20px 20px 20px;
+	border-top:2px solid #015287;
+	width:480px;
+}
+
+th {
+	border-bottom: 2px solid #015287;
+	color: #D15600;
+	font-size: 14px;
+	font-weight: normal;
+	text-align: left;
+	padding: 3px 8px;
+}
+
+td {
+	padding: 6px;
+}
+
+/* Listing 1-7b. The Revised CSS Sheet for Figure 1-7 (html5-style-2. */
+html, body {
+  min-height: 100%; }
+
+/* equalise for various browsers and change #header to header *
+div body header #content { margin:0; padding:0; border:0;
+}
+body { background:#FFF *url(images/green-grad.jpg) repeat-x; margin: auto;
+}
+/*add display attributes for the semantic tags*/
+header, footer, section, article, nav { display:block;
+}
+/*
+div {
+  border: 1px solid black;
+ padding: 0.2em 0.2em;
+}
+*/
+#menu { 
+  float: right;
+  width: 200px;
+}
+
+#menu, #menu ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+#menu li { 
+  cursor: pointer;
+  background: #94C5EB;
+  border-bottom: 1px solid #444;
+}
+
+#menu li a {
+  text-decoration: none;
+}
+
+#menu > li > a { 
+  padding: 2px 10px;
+  font-weight:bold;
+}
+
+#menu li li { 
+  cursor: auto;
+  border: 0;
+  padding: 0 14px;
+  background-color: #fff;
+}
+
+#disclaimer, #intro {
+  width: 400px;
+}
+
+
+/* base.css */
+#photos {
+  border: 1px solid #BEBEBE;
+  height: 400px;
+  overflow: hidden;
+  position: relative;
+  width: 400px;
+}
+
+#photos ul {
+  left: 0;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 0;
+  width: 2400px;
+}
+
+#photos li {
+  float: left;
+}
+
+#photos .trigger {
+  left: 0;
+  position: absolute;
+  top: 0;
+  z-index: 10;
+  text-indent: -9999px;
+  height: 400px;
+  width: 400px;
+  display: block;
+}
+/*
+div.wrapper { 
+    position: relative; 
+    top: 3.5em; 
+    left: 23.6%; 
+    width: 1000px; 
+	  font-size: 100%;
+    margin-left:0; 
+    margin-top:-56px;
+
+	  text-align: center;
+}
+*/
+img.logo { overflow-clip-margin: content-box; overflow: clip; }
+/*
+nav#nav.data {
+	display: block;
+    padding: .8em;
+    background: #16a085;
+    color: white;
+    text-decoration: none;
+    border-right: 1px solid #34495e;
+    font-size: .9em;
+}
+
+remove the # from #header*/
+header#html5-style-2header {
+  width: 920px;
+  height: 180px;
+  padding: 0;
+  border: 10px white solid;
+  background: url(./bda-20.jpg);
+  margin: 10px auto;
+}
+
+h1#html5-style-2h1.veryimportant.heading.stuff { font-size:100%; color:rgba(0,0,0,.5); position: relative; left:90px; top: -3px;
+width:480px;
+}
+/*
+#rosette { position:relative; left:350px; top: -10em;
+}
+ */
+#html5-style-2content { background-color:transparent; border-left:10px white solid; border-right:10px white solid; border-bottom:10px white solid; 
+					   width: 902px; margin-top: 0px; margin-left:auto; margin-right:auto; padding:8px; font-size: 100%; color:maroon;
+}
+h2#html5-style-2h2 { font-size: x-large; color:white; margin:0 0 10px 0;
+}
+h3#html5-style-2h3 { font-size: large; color:white; margin:0 0 6px 0;
+}
+#html5-style-2leftcol { float:left; width: 310px; margin-top: 10px; margin-left: 10px;
+    margin-top: 10px ; vertical-align:top;
+}
+#html5-style-2rightcol { width: 135px; float:right; height: 262px; margin-right:10px;
+}
+#html5-style-2midcol { margin-left:337px; margin-right:145px; margin-top:7px; vertical-align:top;
+}
+/*set nav block position and width and remove the #menu item*/
+nav#html5-style-2nav ul { margin:10px 0 10px 0; width:135px; float:right;
+}
+/*Set un-ordered list style within the menu block only. This removes bullets*/
+nav#html5-style-2nav li { list-style-type:none;
+}
+/* set general side button styles */
+nav#html5-style-2nav li.btn { margin-bottom: 3px; text-align: center; width:130px;
+}
+/* set general anchor styles and include the zoom fix for IE6*
+nav#html5-style-2nav li.btn a { display: block; color: white; font-weight: bold; text-decoration: none; zoom:1;
+}
+/* specify mouse state styles */
+/* mouseout (default) */
+nav#html5-style-2nav, li.btn a { background:#559a55; color: white; border: 5px outset #559a55; padding-bottom:3px;
+}
+/* mouseover */
+nav#html5-style-2nav li.btn a:hover { background: red; color:white; border: 5px outset red;
+}
+/*mouse active*/
+nav#html5-style-2nav li.btn a:active { background:maroon; border: 5px inset maroon;
+}
+br.clear { clear:both;
+}
+#html5-style-2midcol img { margin-left:0px; margin-top: -9px;
+}
+/*change #footer to footer */
+footer#html5-style-2footer { clear:both; color:maroon; text-align:center; padding: 0.3em 0.5em;
+}
+
+/* flexboxgrid */
+/*equalise for various browsers and change #header to header*/
+div body header #content { margin:0; padding:0; border:0; 
+}
+/*
+body { background:#FFF url(images/green-grad.jpg) repeat-x; margin:auto;
+}
+/*add display attributes for the semantic tags*
+header, footer, section, article, nav { display:block; 
+}
+/*remove the # from #header*
+header#html5style2header {width:920px; height:180px; padding:0; border:10px white solid; 
+  background: url(../bda-20.jpg); background-position: bottom; margin:10px auto; 
+}
+/*
+h1 { font-size:150%; color :black; position: relative; text-align:center; top: 2px; width:480px; 
+*
+#rosette { position:relative; left:785px; top:-105px; }
+*/
+#html5style2content { background-color:transparent; border-left:10px white solid; border-right:10px white solid; 
+border-bottom:10px white solid; width: 904px; margin-top:195px; margin-left:484px; margin-right:auto; padding:8px; font-size:medium; color:maroon; 
+}
+/*
+h2 { font-size:x-large; color:white; margin:0 0 10px 0; 
+}
+/*
+h3 { font-size:large; color:white; margin:0 0 6px 0; 
+}
+*/
+#html5style2leftcol { float:left; width: 310px; vertical-align:top; 
+}
+/*#rightcol { width: 135px; float:right; height: 252px; margin-right:10px;
+}*/
+#html5style2midcol { margin-left:315px; margin-right:145px; margin-top:10px; vertical-align:top; 
+}
+/*set nav block position and width*/
+/*nav { margin:10px 30px 0 10px; width:135px; float:right; 
+}*/
+#html5style2nav ul { margin:10px 0 10px 0; width:135px; float:right;
+}
+/*Set un-ordered list style within the menu block only. This removes bullets*/
+#html5style2nav li { list-style-type:none; 
+}	
+/* set general side button styles */
+#html5style2nav li.btn { margin-bottom: 3px; text-align: center; width:130px;
+}
+/* set general anchor styles and include the zoom fix for IE6*/
+#html5style2nav li.btn a { display: block; color: white; font-weight: bold; text-decoration: none; zoom:1;
+}
+/* specify mouse state styles */
+/* mouseout (default) */
+#html5style2nav li.btn a { background:#559a55; color: white; border: 5px outset #559a55; padding-bottom:3px;
+}
+/* mouseover */
+#html5style2nav li.btn a:hover { background: red;  color:white; border: 5px outset red;
+}
+/*mouse active*/
+#html5style2nav li.btn a:active { background:maroon;  border: 5px inset maroon; 
+}
+br.clear { 	clear:both; 
+}
+#html5style2 img { margin-left:10px; 
+}
+#html5style2 footer { clear:both; color:maroon; text-align:center; 
+}
+
+hgroup {
+  display: block;
+}
+
+
+
+
+/* Set styles to equalise browser rendition
+html, body, h1, h2, h3, h4, h5, h6, p, ol, ul, li { padding: 0; margin: 0;
+}*
+html, body {
+  min-height: 100%; }
+header, footer, section, article, nav { display:block;
+}
+/*set images to have no borders*/
+img {   border:0;
+}
+/*add display attributes for the semantic tags*
+header, footer, section, article, nav { display:block; 
+}
+
+/*SET FONTS*/
+span.small { font-size:small;
+}
+/*
+body { background-color:#bbFFaa; color:black; font-family:Arial;}      
+body {text-align:center; margin: 20px; background: #bee8ff; font: medium arial;
+}
+
+div#container {width:960px; margin:-10px auto 0 auto;
+}
+*
+.wrapper{ position: relative; top: 0; left: 0; width: 950px; margin: auto; text-align: center;}
+header {margin-top:1em; height:156px; width:100%; background-image:url('../images/showcase.jpg'); background-position: top; background-repeat:no-repeat; border-bottom:0;
+}
+#banner h1 {text-shadow: 0.1em 0.1em 0.2em blue; font-family:Arial; font-size:125%; color:white; font-weight:normal; text-align:center; padding-top:2em; margin-bottom:-10px; margin:auto; 
+}
+
+/*set the generic tab style--and move menu upwards so that it overlaps the header*
+nav {
+  position:relative; top:6px; 
+  color: navy; 
+  border-bottom: 1px solid black;
+  margin: -25px 0 0 0; padding: 0px; padding-left: 3em; z-index: 1;}
+/* use display:inline to remove IE6 double margin bug*
+nav li { display: inline; overflow: hidden; list-style-type: none;
+}
+/*set tab colour*/
+nav a a.active { color: navy; background: #81d9f6; font-family: Arial; border: 1px solid black; padding: 2px 5px 0px 5px; margin: 0; text-decoration: none; }
+/*make a 3px wide bottom border on tab the same colour as the page*/
+nav a.active { background: #cfecf5; color:navy; border-bottom: 3px solid #cfecf5;
+}
+/*hovering over a non-active tab shows an aqua tab*/
+nav a:hover { background: aqua;
+}
+nav a:visited { color: navy;
+}
+/*hovering over the active tab shows navy text*/
+nav a.active:hover { background: #cfecf5; color: navy;
+}
+/*set the position of the content to move it close up to the menu tabs*
+div#content { 
+  font : 0.9em/1.3em "bitstream vera sans", verdana; 
+  position:relative;  
+  text-align: left; 
+  background: #cfecf5;
+  padding: 20px; 
+  border: 1px solid black; 
+  border-top: none; 
+  z-index: 2;
+}
+*/
+               /* article { float:right; width:70%; background-color:#FF9966; margin-bottom:1em; text-align: center;
+                    border: 1px solid rgba(0, 0, 0, .1);
+                    background: #58a linear-gradient(#FF9966, #58a);
+                    border-radius: .2em;
+                    box-shadow: 0 .05em .25em rgba(0, 0, 0, .5);
+                    color: white;
+                    text-shadow: 0 -.05em .05em rgba(0, 0, 0, .5);
+                    font-size: 100%;
+                    line-height: 1.5;
+                    border-width: 10px;
+                    border-left-width: 0;
+                    }
+                footer { clear:both; background-color:#FF9966; text-align:center; padding: .3em .8em;
+                    border: 1px solid rgba(0, 0, 0, .1);
+                    /* background: #58a linear-gradient(#FF9966, #58a); *
+                    border-radius: .2em;
+                    box-shadow: 0 .05em .25em rgba(0, 0, 0, .5);
+                    color: white;
+                    text-shadow: 0 -.05em .05em rgba(0, 0, 0, .5);
+                    font-size: 100%;
+                    line-height: 1.5;
+                    border-width: 10px;
+                    border-left-width: 0;                   
+                  }
+                  /*
+                h2 { 
+                    font-weight: bold;
+                    margin-top: 0;
+                    margin-bottom: 0;
+                    /*background: rgba(0, 0, 0, .5); *
+                    border-radius: .2em;
+                    box-shadow: 0 .05em .25em rgba(0, 0, 0, .5);
+                    color: white;
+                    text-shadow: 0 -.05em .05em rgba(0, 0, 0, .5);
+                    font-size: 100%;
+                    text-align: center;
+                    line-height: 1.5;
+                    border-width: 10px;
+                    border-left-width: 0;
+                    }
+                    */
+                .button {
+                    position: relative;
+                    /* text color, paddings, etc. */
+                    display: inline-block;
+                    border-radius: .2em;
+                    color: white;
+                    text-shadow: 0 -.05em .05em rgba(0, 0, 0, .5);
+                    font-size: 0.8rem;
+                    line-height: 1.5;
+                    border-width: 10px;
+                    border-left-width: 0;
+                    }
+                .button::before {
+                    content: ''; /* To generate the box */
+                    position: absolute;
+                    top: 0; right: 0; bottom: 0; left: 0;
+                    z-index: -1;
+                    background: maroon;
+                    transform: skew(45deg);
+                    }
+                .button>div {
+                    transform: skewX(45deg);
+                }
+div#hnav ul  {
+    padding:0;
+    list-style-type:none; 
+    margin:auto; 
+    display:block;
+    height:3em;
+    text-transform:uppercase;
+    font-size:12px;
+    font-weight:bold;
+    background:url('images/bgOFF.gif') repeat-x left top;
+    font-family:Helvetica,Arial,Verdana,sans-serif;
+    border-bottom:4px solid #336666; border-top:1px solid #C0E2D4;
+    position:relative;	
+    top: 7.7em; 
+    left: 0;
+}
+div#hnav ul li { display:block;float:left;margin:0;padding:0;
+}
+div#hnav ul li a { display:block; float:left;color:#874B46;
+text-decoration:none;padding:12px 20px 0 20px;height:24px;
+background:transparent url("images/bgDIVIDER.gif") no-repeat top right; 
+}
+div#hnav ul li a:hover{ background:transparent url("images/bgHOVER.gif") no-repeat top right; 
+}
+div#hnav ul li a.currentul#main-menu li a.current:hover { color:#fff;
+background:transparent url("images/bgON.gif") no-repeat top right; 
+}   
+
+.parallel {
+position: relative;
+/* text color, paddings, etc. */
+display: inline-block;
+border-radius: .2em;
+color: white;
+text-shadow: 0 -.05em .05em rgba(0, 0, 0, .5);
+font-size: 80%;
+line-height: 1.5;
+border-width: 10px;
+border-left-width: 0;
+}
+.parallel::before {
+content: ''; /* To generate the box */
+position: absolute;
+top: 0; right: 0; bottom: 0; left: 0;
+z-index: -1;
+background: maroon;
+transform: skew(45deg);
+}
+.parallel>div {
+transform: skewX(45deg);
+}
+/* Uncomment and set these variables to customize the grid. */
+
+.container-fluid {
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 2rem;
+  padding-left: 2rem;
+}
+
+.row {
+  box-sizing: border-box;
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: flex;
+  -ms-flex: 0 1 auto;
+  -webkit-box-flex: 0;
+  flex: 0 1 auto;
+  -ms-flex-direction: row;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  flex-direction: row;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-right: -1rem;
+  margin-left: -1rem;
+}
+
+.row.reverse {
+  -ms-flex-direction: row-reverse;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+  flex-direction: row-reverse;
+}
+
+.col.reverse {
+  -ms-flex-direction: column-reverse;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+  flex-direction: column-reverse;
+}
+
+.col-xs,
+.col-xs-1,
+.col-xs-2,
+.col-xs-3,
+.col-xs-4,
+.col-xs-5,
+.col-xs-6,
+.col-xs-7,
+.col-xs-8,
+.col-xs-9,
+.col-xs-10,
+.col-xs-11,
+.col-xs-12 {
+  box-sizing: border-box;
+  -ms-flex: 0 0 auto;
+  -webkit-box-flex: 0;
+  flex: 0 0 auto;
+  padding-right: 1rem;
+  padding-left: 1rem;
+}
+
+.col-xs {
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  -webkit-box-flex: 1;
+  flex-grow: 1;
+  -ms-flex-preferred-size: 0;
+  flex-basis: 0;
+  max-width: 100%;
+}
+
+.col-xs-1 {
+  -ms-flex-preferred-size: 8.333%;
+  flex-basis: 8.333%;
+  max-width: 8.333%;
+}
+
+.col-xs-2 {
+  -ms-flex-preferred-size: 16.667%;
+  flex-basis: 16.667%;
+  max-width: 16.667%;
+}
+
+.col-xs-3 {
+  -ms-flex-preferred-size: 25%;
+  flex-basis: 25%;
+  max-width: 25%;
+}
+
+.col-xs-4 {
+  -ms-flex-preferred-size: 33.333%;
+  flex-basis: 33.333%;
+  max-width: 33.333%;
+}
+
+.col-xs-5 {
+  -ms-flex-preferred-size: 41.667%;
+  flex-basis: 41.667%;
+  max-width: 41.667%;
+}
+
+.col-xs-6 {
+  -ms-flex-preferred-size: 50%;
+  flex-basis: 50%;
+  max-width: 50%;
+}
+
+.col-xs-7 {
+  -ms-flex-preferred-size: 58.333%;
+  flex-basis: 58.333%;
+  max-width: 58.333%;
+}
+
+.col-xs-8 {
+  -ms-flex-preferred-size: 66.667%;
+  flex-basis: 66.667%;
+  max-width: 66.667%;
+}
+
+.col-xs-9 {
+  -ms-flex-preferred-size: 75%;
+  flex-basis: 75%;
+  max-width: 75%;
+}
+
+.col-xs-10 {
+  -ms-flex-preferred-size: 83.333%;
+  flex-basis: 83.333%;
+  max-width: 83.333%;
+}
+
+.col-xs-11 {
+  -ms-flex-preferred-size: 91.667%;
+  flex-basis: 91.667%;
+  max-width: 91.667%;
+}
+
+.col-xs-12 {
+  -ms-flex-preferred-size: 100%;
+  flex-basis: 100%;
+  max-width: 100%;
+}
+
+.col-xs-offset-1 {
+  margin-left: 8.333%;
+}
+
+.col-xs-offset-2 {
+  margin-left: 16.667%;
+}
+
+.col-xs-offset-3 {
+  margin-left: 25%;
+}
+
+.col-xs-offset-4 {
+  margin-left: 33.333%;
+}
+
+.col-xs-offset-5 {
+  margin-left: 41.667%;
+}
+
+.col-xs-offset-6 {
+  margin-left: 50%;
+}
+
+.col-xs-offset-7 {
+  margin-left: 58.333%;
+}
+
+.col-xs-offset-8 {
+  margin-left: 66.667%;
+}
+
+.col-xs-offset-9 {
+  margin-left: 75%;
+}
+
+.col-xs-offset-10 {
+  margin-left: 83.333%;
+}
+
+.col-xs-offset-11 {
+  margin-left: 91.667%;
+}
+
+.start-xs {
+  -ms-flex-pack: start;
+  -webkit-box-pack: start;
+  justify-content: flex-start;
+  text-align: start;
+}
+
+.center-xs {
+  -ms-flex-pack: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.end-xs {
+  -ms-flex-pack: end;
+  -webkit-box-pack: end;
+  justify-content: flex-end;
+  text-align: end;
+}
+
+.top-xs {
+  -ms-flex-align: start;
+  -webkit-box-align: start;
+  align-items: flex-start;
+}
+
+.middle-xs {
+  -ms-flex-align: center;
+  -webkit-box-align: center;
+  align-items: center;
+}
+
+.bottom-xs {
+  -ms-flex-align: end;
+  -webkit-box-align: end;
+  align-items: flex-end;
+}
+
+.around-xs {
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+}
+
+.between-xs {
+  -ms-flex-pack: justify;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+}
+
+.first-xs {
+  -ms-flex-order: -1;
+  -webkit-box-ordinal-group: 0;
+  order: -1;
+}
+
+.last-xs {
+  -ms-flex-order: 1;
+  -webkit-box-ordinal-group: 2;
+  order: 1;
+}
+
+@media only screen and (min-width: 48em) {
+  .container {
+    width: 46rem;
+  }
+
+  .col-sm,
+  .col-sm-1,
+  .col-sm-2,
+  .col-sm-3,
+  .col-sm-4,
+  .col-sm-5,
+  .col-sm-6,
+  .col-sm-7,
+  .col-sm-8,
+  .col-sm-9,
+  .col-sm-10,
+  .col-sm-11,
+  .col-sm-12 {
+    box-sizing: border-box;
+    -ms-flex: 0 0 auto;
+    -webkit-box-flex: 0;
+    flex: 0 0 auto;
+    padding-right: 1rem;
+    padding-left: 1rem;
+  }
+
+  .col-sm {
+    -webkit-flex-grow: 1;
+    -ms-flex-positive: 1;
+    -webkit-box-flex: 1;
+    flex-grow: 1;
+    -ms-flex-preferred-size: 0;
+    flex-basis: 0;
+    max-width: 100%;
+  }
+
+  .col-sm-1 {
+    -ms-flex-preferred-size: 8.333%;
+    flex-basis: 8.333%;
+    max-width: 8.333%;
+  }
+
+  .col-sm-2 {
+    -ms-flex-preferred-size: 16.667%;
+    flex-basis: 16.667%;
+    max-width: 16.667%;
+  }
+
+  .col-sm-3 {
+    -ms-flex-preferred-size: 25%;
+    flex-basis: 25%;
+    max-width: 25%;
+  }
+
+  .col-sm-4 {
+    -ms-flex-preferred-size: 33.333%;
+    flex-basis: 33.333%;
+    max-width: 33.333%;
+  }
+
+  .col-sm-5 {
+    -ms-flex-preferred-size: 41.667%;
+    flex-basis: 41.667%;
+    max-width: 41.667%;
+  }
+
+  .col-sm-6 {
+    -ms-flex-preferred-size: 50%;
+    flex-basis: 50%;
+    max-width: 50%;
+  }
+
+  .col-sm-7 {
+    -ms-flex-preferred-size: 58.333%;
+    flex-basis: 58.333%;
+    max-width: 58.333%;
+  }
+
+  .col-sm-8 {
+    -ms-flex-preferred-size: 66.667%;
+    flex-basis: 66.667%;
+    max-width: 66.667%;
+  }
+
+  .col-sm-9 {
+    -ms-flex-preferred-size: 75%;
+    flex-basis: 75%;
+    max-width: 75%;
+  }
+
+  .col-sm-10 {
+    -ms-flex-preferred-size: 83.333%;
+    flex-basis: 83.333%;
+    max-width: 83.333%;
+  }
+
+  .col-sm-11 {
+    -ms-flex-preferred-size: 91.667%;
+    flex-basis: 91.667%;
+    max-width: 91.667%;
+  }
+
+  .col-sm-12 {
+    -ms-flex-preferred-size: 100%;
+    flex-basis: 100%;
+    max-width: 100%;
+  }
+
+  .col-sm-offset-1 {
+    margin-left: 8.333%;
+  }
+
+  .col-sm-offset-2 {
+    margin-left: 16.667%;
+  }
+
+  .col-sm-offset-3 {
+    margin-left: 25%;
+  }
+
+  .col-sm-offset-4 {
+    margin-left: 33.333%;
+  }
+
+  .col-sm-offset-5 {
+    margin-left: 41.667%;
+  }
+
+  .col-sm-offset-6 {
+    margin-left: 50%;
+  }
+
+  .col-sm-offset-7 {
+    margin-left: 58.333%;
+  }
+
+  .col-sm-offset-8 {
+    margin-left: 66.667%;
+  }
+
+  .col-sm-offset-9 {
+    margin-left: 75%;
+  }
+
+  .col-sm-offset-10 {
+    margin-left: 83.333%;
+  }
+
+  .col-sm-offset-11 {
+    margin-left: 91.667%;
+  }
+
+  .start-sm {
+    -ms-flex-pack: start;
+    -webkit-box-pack: start;
+    justify-content: flex-start;
+    text-align: start;
+  }
+
+  .center-sm {
+    -ms-flex-pack: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .end-sm {
+    -ms-flex-pack: end;
+    -webkit-box-pack: end;
+    justify-content: flex-end;
+    text-align: end;
+  }
+
+  .top-sm {
+    -ms-flex-align: start;
+    -webkit-box-align: start;
+    align-items: flex-start;
+  }
+
+  .middle-sm {
+    -ms-flex-align: center;
+    -webkit-box-align: center;
+    align-items: center;
+  }
+
+  .bottom-sm {
+    -ms-flex-align: end;
+    -webkit-box-align: end;
+    align-items: flex-end;
+  }
+
+  .around-sm {
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+  }
+
+  .between-sm {
+    -ms-flex-pack: justify;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+  }
+
+  .first-sm {
+    -ms-flex-order: -1;
+    -webkit-box-ordinal-group: 0;
+    order: -1;
+  }
+
+  .last-sm {
+    -ms-flex-order: 1;
+    -webkit-box-ordinal-group: 2;
+    order: 1;
+  }
+}
+
+@media only screen and (min-width: 62em) {
+  .container {
+    width: 61rem;
+  }
+
+  .col-md,
+  .col-md-1,
+  .col-md-2,
+  .col-md-3,
+  .col-md-4,
+  .col-md-5,
+  .col-md-6,
+  .col-md-7,
+  .col-md-8,
+  .col-md-9,
+  .col-md-10,
+  .col-md-11,
+  .col-md-12 {
+    box-sizing: border-box;
+    -ms-flex: 0 0 auto;
+    -webkit-box-flex: 0;
+    flex: 0 0 auto;
+    padding-right: 1rem;
+    padding-left: 1rem;
+  }
+
+  .col-md {
+    -webkit-flex-grow: 1;
+    -ms-flex-positive: 1;
+    -webkit-box-flex: 1;
+    flex-grow: 1;
+    -ms-flex-preferred-size: 0;
+    flex-basis: 0;
+    max-width: 100%;
+  }
+
+  .col-md-1 {
+    -ms-flex-preferred-size: 8.333%;
+    flex-basis: 8.333%;
+    max-width: 8.333%;
+  }
+
+  .col-md-2 {
+    -ms-flex-preferred-size: 16.667%;
+    flex-basis: 16.667%;
+    max-width: 16.667%;
+  }
+
+  .col-md-3 {
+    -ms-flex-preferred-size: 25%;
+    flex-basis: 25%;
+    max-width: 25%;
+  }
+
+  .col-md-4 {
+    -ms-flex-preferred-size: 33.333%;
+    flex-basis: 33.333%;
+    max-width: 33.333%;
+  }
+
+  .col-md-5 {
+    -ms-flex-preferred-size: 41.667%;
+    flex-basis: 41.667%;
+    max-width: 41.667%;
+  }
+
+  .col-md-6 {
+    -ms-flex-preferred-size: 50%;
+    flex-basis: 50%;
+    max-width: 50%;
+  }
+
+  .col-md-7 {
+    -ms-flex-preferred-size: 58.333%;
+    flex-basis: 58.333%;
+    max-width: 58.333%;
+  }
+
+  .col-md-8 {
+    -ms-flex-preferred-size: 66.667%;
+    flex-basis: 66.667%;
+    max-width: 66.667%;
+  }
+
+  .col-md-9 {
+    -ms-flex-preferred-size: 75%;
+    flex-basis: 75%;
+    max-width: 75%;
+  }
+
+  .col-md-10 {
+    -ms-flex-preferred-size: 83.333%;
+    flex-basis: 83.333%;
+    max-width: 83.333%;
+  }
+
+  .col-md-11 {
+    -ms-flex-preferred-size: 91.667%;
+    flex-basis: 91.667%;
+    max-width: 91.667%;
+  }
+
+  .col-md-12 {
+    -ms-flex-preferred-size: 100%;
+    flex-basis: 100%;
+    max-width: 100%;
+  }
+
+  .col-md-offset-1 {
+    margin-left: 8.333%;
+  }
+
+  .col-md-offset-2 {
+    margin-left: 16.667%;
+  }
+
+  .col-md-offset-3 {
+    margin-left: 25%;
+  }
+
+  .col-md-offset-4 {
+    margin-left: 33.333%;
+  }
+
+  .col-md-offset-5 {
+    margin-left: 41.667%;
+  }
+
+  .col-md-offset-6 {
+    margin-left: 50%;
+  }
+
+  .col-md-offset-7 {
+    margin-left: 58.333%;
+  }
+
+  .col-md-offset-8 {
+    margin-left: 66.667%;
+  }
+
+  .col-md-offset-9 {
+    margin-left: 75%;
+  }
+
+  .col-md-offset-10 {
+    margin-left: 83.333%;
+  }
+
+  .col-md-offset-11 {
+    margin-left: 91.667%;
+  }
+
+  .start-md {
+    -ms-flex-pack: start;
+    -webkit-box-pack: start;
+    justify-content: flex-start;
+    text-align: start;
+  }
+
+  .center-md {
+    -ms-flex-pack: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .end-md {
+    -ms-flex-pack: end;
+    -webkit-box-pack: end;
+    justify-content: flex-end;
+    text-align: end;
+  }
+
+  .top-md {
+    -ms-flex-align: start;
+    -webkit-box-align: start;
+    align-items: flex-start;
+  }
+
+  .middle-md {
+    -ms-flex-align: center;
+    -webkit-box-align: center;
+    align-items: center;
+  }
+
+  .bottom-md {
+    -ms-flex-align: end;
+    -webkit-box-align: end;
+    align-items: flex-end;
+  }
+
+  .around-md {
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+  }
+
+  .between-md {
+    -ms-flex-pack: justify;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+  }
+
+  .first-md {
+    -ms-flex-order: -1;
+    -webkit-box-ordinal-group: 0;
+    order: -1;
+  }
+
+  .last-md {
+    -ms-flex-order: 1;
+    -webkit-box-ordinal-group: 2;
+    order: 1;
+  }
+}
+
+@media only screen and (min-width: 75em) {
+  .container {
+    width: 59em;
+	margin: auto;
+  }
+
+  .col-lg,
+  .col-lg-1,
+  .col-lg-2,
+  .col-lg-3,
+  .col-lg-4,
+  .col-lg-5,
+  .col-lg-6,
+  .col-lg-7,
+  .col-lg-8,
+  .col-lg-9,
+  .col-lg-10,
+  .col-lg-11,
+  .col-lg-12 {
+    box-sizing: border-box;
+    -ms-flex: 0 0 auto;
+    -webkit-box-flex: 0;
+    flex: 0 0 auto;
+    padding-right: 1rem;
+    padding-left: 1rem;
+  }
+
+  .col-lg {
+    -webkit-flex-grow: 1;
+    -ms-flex-positive: 1;
+    -webkit-box-flex: 1;
+    flex-grow: 1;
+    -ms-flex-preferred-size: 0;
+    flex-basis: 0;
+    max-width: 100%;
+  }
+
+  .col-lg-1 {
+    -ms-flex-preferred-size: 8.333%;
+    flex-basis: 8.333%;
+    max-width: 8.333%;
+  }
+
+  .col-lg-2 {
+    -ms-flex-preferred-size: 16.667%;
+    flex-basis: 16.667%;
+    max-width: 16.667%;
+  }
+
+  .col-lg-3 {
+    -ms-flex-preferred-size: 25%;
+    flex-basis: 25%;
+    max-width: 25%;
+  }
+
+  .col-lg-4 {
+    -ms-flex-preferred-size: 33.333%;
+    flex-basis: 33.333%;
+    max-width: 33.333%;
+  }
+
+  .col-lg-5 {
+    -ms-flex-preferred-size: 41.667%;
+    flex-basis: 41.667%;
+    max-width: 41.667%;
+  }
+
+  .col-lg-6 {
+    -ms-flex-preferred-size: 50%;
+    flex-basis: 50%;
+    max-width: 50%;
+  }
+
+  .col-lg-7 {
+    -ms-flex-preferred-size: 58.333%;
+    flex-basis: 58.333%;
+    max-width: 58.333%;
+  }
+
+  .col-lg-8 {
+    -ms-flex-preferred-size: 66.667%;
+    flex-basis: 66.667%;
+    max-width: 66.667%;
+  }
+
+  .col-lg-9 {
+    -ms-flex-preferred-size: 75%;
+    flex-basis: 75%;
+    max-width: 75%;
+  }
+
+  .col-lg-10 {
+    -ms-flex-preferred-size: 83.333%;
+    flex-basis: 83.333%;
+    max-width: 83.333%;
+  }
+
+  .col-lg-11 {
+    -ms-flex-preferred-size: 91.667%;
+    flex-basis: 91.667%;
+    max-width: 91.667%;
+  }
+
+  .col-lg-12 {
+    -ms-flex-preferred-size: 100%;
+    flex-basis: 100%;
+    max-width: 100%;
+  }
+
+  .col-lg-offset-1 {
+    margin-left: 8.333%;
+  }
+
+  .col-lg-offset-2 {
+    margin-left: 16.667%;
+  }
+
+  .col-lg-offset-3 {
+    margin-left: 25%;
+  }
+
+  .col-lg-offset-4 {
+    margin-left: 33.333%;
+  }
+
+  .col-lg-offset-5 {
+    margin-left: 41.667%;
+  }
+
+  .col-lg-offset-6 {
+    margin-left: 50%;
+  }
+
+  .col-lg-offset-7 {
+    margin-left: 58.333%;
+  }
+
+  .col-lg-offset-8 {
+    margin-left: 66.667%;
+  }
+
+  .col-lg-offset-9 {
+    margin-left: 75%;
+  }
+
+  .col-lg-offset-10 {
+    margin-left: 83.333%;
+  }
+
+  .col-lg-offset-11 {
+    margin-left: 91.667%;
+  }
+
+  .start-lg {
+    -ms-flex-pack: start;
+    -webkit-box-pack: start;
+    justify-content: flex-start;
+    text-align: start;
+  }
+
+  .center-lg {
+    -ms-flex-pack: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .end-lg {
+    -ms-flex-pack: end;
+    -webkit-box-pack: end;
+    justify-content: flex-end;
+    text-align: end;
+  }
+
+  .top-lg {
+    -ms-flex-align: start;
+    -webkit-box-align: start;
+    align-items: flex-start;
+  }
+
+  .middle-lg {
+    -ms-flex-align: center;
+    -webkit-box-align: center;
+    align-items: center;
+  }
+
+  .bottom-lg {
+    -ms-flex-align: end;
+    -webkit-box-align: end;
+    align-items: flex-end;
+  }
+
+  .around-lg {
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+  }
+
+  .between-lg {
+    -ms-flex-pack: justify;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+  }
+
+  .first-lg {
+    -ms-flex-order: -1;
+    -webkit-box-ordinal-group: 0;
+    order: -1;
+  }
+
+  .last-lg {
+    -ms-flex-order: 1;
+    -webkit-box-ordinal-group: 2;
+    order: 1;
+  }
+}
+
+
+/*
+body {
+            font-family: sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            background-color: #f4f4f4;
+        }
+
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+            padding: 0 20px;
+        }
+
+        header {
+            background: #2a2a2a;
+            color: #ffffff;
+            padding-top: 30px;
+            min-height: 70px;
+            border-bottom: #e8491d 3px solid;
+        }
+        header h1 {
+            text-align: center;
+            text-transform: uppercase;
+            margin: 0;
+            font-size: x-large;
+        }
+
+        .main-content {
+            padding: 20px 0;
+            background: #fff;
+        }
+
+        .section {
+            padding: 20px 0;
+            border-bottom: 1px solid #eee;
+        }
+
+        h2 {
+            color: #e8491d;
+            text-align: center;
+            border-bottom: 2px solid #e8491d;
+            padding-bottom: 10px;
+        }
+        .service-list {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: space-around;
+        }
+        .service-list li {
+            background: #eee;
+            margin: 10px;
+            padding: 20px;
+            text-align: center;
+            flex: 1;
+            border-radius: 5px;
+        }
+        .testimonial {
+            font-style: italic;
+            text-align: center;
+            margin-top: 15px;
+        }
+        .contact-info p {
+            text-align: center;
+            font-size: 1.1rem;
+        }
+        footer {
+            background: #2a2a2a;
+            color: #ffffff;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 20px;
+        }
+    
+
+
+.picture {
+	width: 220px;
+	transform: rotate(10deg);
+	overflow: hidden;
+}
+
+.picture {
+	max-width: 100%;
+	transform: rotate(-0deg) scale(1.0);
+	overflow: hidden;
+}
+
+*/
+
+div#content { flex: 1;
+    clip-path:polygon(20px 0, calc(100% - 20px) 0, 100% 20px, 
+			  100% calc(100% - 20px), calc(100% - 20px) 100%,
+			  20px 100%, 0 calc(100% - 20px), 0 20px);
+}
+
+/*set the generic tab style--and set position so that it overlaps the header*
+#hnav {
+	position:relative; 
+	top:0.1rem; 
+	color: navy; 
+	
+	margin: -25px 0 0 0; 
+	padding: 0px; 
+	padding-left: 10px; 
+	z-index: 1; 
+}
+/* use display:inline to remove IE6 double margin bug*
+#hnav li { 
+	display: inline; 
+	overflow: hidden; 
+	list-style-type: none; 
+}
+/*set tab colour*
+	
+#hnav a, a.active { 
+	color: navy; 
+	background: #81d9f6; 
+	font: bold 1em "Trebuchet MS", 
+	Arial, sans-serif;
+	border: 1px solid black; 
+	padding: 2px 5px 0px 5px; 
+	margin: 0; 
+	text-decoration: none; 
+}
+ /* make a 3px wide bottom border on tab the same colour as the page *
+#hnav a.active { 
+	background: #cfecf5; 
+	color:navy; 
+	border-bottom: 3px solid #cfecf5; 
+}
+  /*hovering over a non-active tab shows an aqua tab*
+#hnav a:hover { 	
+	background: aqua; 
+}
+#hnav a:visited { 
+	color: navy; 
+}
+ /*hovering over the active tab shows navy text*
+#hnav a.active:hover { 
+	background: #cfecf5; 
+	color: navy; 
+}
+
+#news {
+  display: block;
+  height: 70px;
+}
+
+#news ul {
+  list-style-type: none;
+}
+
+#photos img {
+  position: absolute;
+}
+
+#photos {
+  width: 180px;
+  height: 200px;
+  overflow: hidden;
+}
+
+#photos img {
+  display: none;
+}
+
+#photos .show {
+  display: inline;
+}
+*/
+.box {
+  position: absolute; 
+  width: 50px;
+  height: 50px;
+}
+#green {
+  background-color: green;
+}
+#red {
+  background-color: red;
+  top: 60px;
+}
+
+
+
+/*drop down menu style menu.css*/
+#bar {position:absolute; left:380px; top :250px; color:black; margin:auto; 
+width:200px; height:20px; background-color:#ffc0cb; font-family:verdana; 
+font-size:small; border:black 2px solid; }
+.menu {position:absolute; top:271px; color:black; width:60px; height:50px; 
+background-color:#ffc0cb; font-family:verdana; font-size:small; border:black 2px solid; visibility:hidden; }
+#hdr {
+	text-align:center;
+}
+
+#menu {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+#menu, #menu ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+#menu li {
+  float: left;
+  background: #FFF;
+}
+
+#menu a {
+  display: block;
+  padding: 5px;
+  width: 130px;
+}
+
+#menu li ul {
+  position: absolute;
+  left: -999em;
+  width: 140px;
+}
+
+#menu li:hover ul, #menu li ul:hover {
+  left:auto;
+}
+
+/*equalise for various browsers and change #header to header*
+div body header #content {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+button.cancel {
+background-color: #c00;
+}
+button.ok {
+background-color: #6b0;
+}
+hr {
+height: .5em;
+background: currentColor;
+}
+input, select, button { font: inherit; }
+
+h2 {
+    font-size: x-large;
+    color: maroon;
+    margin: 0 0 10px 0;
+
+}
+
+div#html5-ch1-7leftcol.data {
+
+}
+
+h3 {
+    font-size: large;
+    color: maroon;
+    margin: 0 0 6px 0;
+
+}
+
+img {
+
+}
+
+br {
+
+}
+
+nav#html5-style-2nav.data {
+    margin: 18px 50px 10px 0;
+    width: 135px;
+    float: right;
+}
+
+/* set general side button styles *
+li.btn {
+  margin-bottom: 3px;
+  text-align: center;
+  width: 130px;
+}
+
+div#html5-style-2midcol.data {
+    margin-left: 315px;
+    margin-right: 145px;
+    margin-top: 20px;
+    vertical-align: top;
+}
+
+#html5-style-2midcol.data img {
+    margin-top: 10px;
+}
+
+div.footer {
+
+}
+
+div.company-details {
+
+}
+
+P.copyright {
+
+}
+
+P.distributor {
+
+}
+
+P.address {
+
+}
+
+P.telephone-number {
+
+}
+
+hr.full {
+
+}
+
+div#comment {
+
+}
+
+br {
+
+}
+
+textarea {
+
+}
+
+a.back-to-top.d-flex.align-items-center-justify-content-center.active {
+
+}
+
+section#chapter2 {
+
+}
+
+section#chapter3 {
+
+}
+
+p {
+    color: #000;
+    margin:auto; 
+    text-align:center;
+
+}
+
+footer {
+    clear: both;
+    color: white;
+    text-align: center;
+}
+
+
+
+
+
+
+/*add display attributes for the semantic tags*
+header,
+footer,
+section,
+article,
+nav {
+  display: block;
+}
+
+h1 {
+  font-size: 200%;
+  color: white;
+  position: relative;
+  left: 90px;
+  top: -11px;
+  width: 715px;
+}
+
+#rosette {
+  position: relative;
+  left: 780px;
+  top: -93px;
+}
+
+#content {
+  background-color: transparent;
+  border-left: 10px white solid;
+  border-right: 10px white solid;
+  border-bottom: 10px white solid;
+  width: 904px;
+  margin-top: -10px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 8px;
+  font-size: medium;
+  color: maroon;
+}
+
+h3 {
+  font-size: large;
+  color: maroon;
+  margin: 0 0 6px 0;
+}
+
+#leftcol {
+  float: left;
+  width: 310px;
+  vertical-align: top;
+}
+
+/*#rightcol { width: 135px; float:right; height: 252px; margin-right:10px;
+}*/
+#midcol {
+  margin-left: 315px;
+  margin-right: 145px;
+  margin-top: 10px;
+  vertical-align: top;
+}
+
+/*set nav block position and width*/
+/*nav { margin:10px 30px 0 10px; width:135px; float:right; 
+}*
+nav ul {
+  margin: -3px 0 10px 0;
+  width: 135px;
+  float: right;
+}
+
+/*Set un-ordered list style within the menu block only. This removes bullets*
+nav li {
+  list-style-type: none;
+}
+
+/* set general side button styles *
+li.btn {
+  margin-bottom: 3px;
+  text-align: center;
+  width: 130px;
+}
+
+/* set general anchor styles and include the zoom fix for IE6*
+li.btn a {
+  display: block;
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  zoom: 1;
+}
+
+/* specify mouse state styles */
+/* mouseout (default) *
+li.btn a {
+  background: #559a55;
+  color: white;
+  border: 5px outset #559a55;
+  padding-bottom: 3px;
+}
+
+/* mouseover *
+li.btn a:hover {
+  background: red;
+  color: white;
+  border: 5px outset red;
+}
+
+/*mouse active*
+li.btn a:active {
+  background: maroon;
+  border: 5px inset maroon;
+}
+
+br.clear {
+  clear: both;
+}
+
+#midcol img {
+  margin-left: 10px;
+}
+
+footer {
+  clear: both;
+  color: maroon;
+  text-align: center;
+}
+
+
+
+/* style up a few of the new elements *
+article, aside, figure,footer, header, hgroup, menu, nav, section { display: block;}
+
+body > header { background-color: #930; color: white;}
+body > footer {border-top: solid 5px black; }
+*
+h3 { font-variant: small-caps; }
+p { margin-left: 1.5em; }
+section { border-top: dashed 2px black; }
+section > section h3 { margin-left: 2em; }
+section > section p { margin-left: 3em; }
+body > footer > p { text-align: right; font-style: italic; font-size: smaller;} 
+			  
+
+#navigation{
+	float: right;
+	width: 150px;
+}
+#intro{
+	width: 902px;
+}
+
+/*
+Listing 2-6b provides the CSS presentation instructions for a 3 column gallery set in a real world page. 
+ CHAPTER 2 ■ A ROLLOVER PICTURE GALLERY 
+/*set menu buttons*/
+
+/* Listing 2-6b. The CSS Style Sheet for Listing 2-6a (gallery-page.css) 
+*set attributes for consistent appearance in all browsers* 
+html, body, p, ul, li, h1, h2 { margin:0; padding: 0;} 
+/*set images to have no borders*/ 
+img { border:0; 
+} 
+/*add display attributes for the semantic tags*/ 
+header, footer, section, article, nav { display:block; 
+} 
+/*SET FONTS*/ 
+span.small { font-size:small; 
+} 
+h1#gallery-pageh1 { font-size:x-large; font-family:"times new roman"; text-align:center; 
+} 
+h2#gallery-pageh2 {font-size:large; font-family:"times new roman"; text-align:center; 
+} 
+/*PAGE LAYOUT*/ 
+body {margin:auto; width:100%; 
+} 
+header#gallery-pageheader.data { width:95%; 
+} 
+nav#gallery-pagenav.data { float:left; margin-left:10px; width:115px; position: relative; top:325px;
+} 
+ul { margin-left:0; border:0; width:115px; 
+} 
+/*set far right column for ads*/ 
+div#gallery-pagerightcol.data { width:255px; float:right; text-align:center; 
+} 
+div#gallery-pagerightcol p.advert {font-size: 15px; margin-top:190px; 
+} 
+/*set middle column for main content*/ 
+div#gallery-pagemidcol.data { margin-left:135px; margin-right:155px; 
+} 
+/*set gallery block position*/ 
+div#gallery-pagegallery-block.data { position:relative; left: 30px; top: -490px; 
+} 
+/*set gallery block position*/ 
+div#gallerypagegallery-block { position:relative; left: 143px; top: 72rem; 
+} 
+/*set footer*/ 
+footer#gallery-pagefooter { clear:both; color:black; text-align:center; width:970px; 
+} 
+.clear { clear:both; 
+}
+/*
+li.btn a { display:block; background-color :#66CCFF; color:black; font-weight:bold; padding:4px; margin-left:0; text-align:center; list-style-type:none; text-decoration:none; width:110px; 
+} 
+*/
+#gallery-page, li.btn a:hover { background-color:blue; color:white; 
+} 
+#gallery-page, li.btn { width:110px; 
+} 
+/*SET THUMBNAIL GALLERY BLOCK*/ 
+/* Set general thumbnail styles */ 
+#gallery-pagecol-1 { position: absolute; top: 0; left: 0; width:85px; 
+} 
+/*place the first column on the page*/ 
+#gallery-page, li { margin: 5px; list-style-type:none; 
+} 
+/*remove bullets from the un-ordered list elements and create the -
+
+MouseOut state (default) - create and position a space for the larger images and -
+
+hide them*/ 
+#gallery-pagecol-1 a img.hid { width: 260px; height:390px; position: absolute; top: 10px; left: 330px; visibility: hidden; 
+} 
+/* MouseOver state (hover)- this reveals larger picture */ 
+#gallery-pagecol-1 a:hover { background: white; } 
+#gallery-pagecol-1 a:hover img.hid { visibility:visible; 
+} 
+/*----------------------------------------------------*/ 
+/* set 2nd column of thumbnails 85px further over to right*/ 
+#gallery-pagecol-2 { position: absolute; top: 0; left: 85px; width:85px; 
+} 
+#gallery-page, li { margin: 5px; list-style-type:none; 
+} 
+/* MouseOut state (default) - hide larger picture */ 
+#gallery-pagecol-2 a img.hid { width: 260px; height:390px; position: absolute; top: 10px; left: 245px; margin-left:0;visibility: hidden; 
+} 
+/* MouseOver state (hover)- reveal larger picture */ 
+#gallery-pagecol-2 a:hover { background: white; } 
+#gallery-pagecol-2 a:hover img.hid { visibility:visible; } 
+/*----------------------------------------------------*/ 
+/* set 3rd column of thumbnails 170px further over to right*/ 
+#gallery-pagecol-3 { position: absolute; top: 0; left: 175px; width:95px; } 
+#gallery-page, li { margin: 5px; list-style-type:none; 
+} 
+/* MouseOut state (default) - hide larger picture */ 
+#gallery-pagecol-3 a img.hid { width: 260px; height:390px; position: absolute; top: 10px; left: 155px; margin-left:0; visibility: hidden; 
+} 
+/* MouseOver state (hover)- reveal larger picture */ 
+#gallery-pagecol-3 a:hover { background: white; 
+} 
+
+#gallery-pagecol-3 a:hover img.hid { visibility:visible;
+
+}
+
+﻿/*set images to have no borders*/
+img {
+	border: none;
+}
+
+/* Set general thumbnail styles */
+#gallery3colmixcol-1 {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 85px;
+}
+
+/*place the column on the page*/
+li {
+	margin: 5px;
+	list-style-type: none;
+}
+
+/*remove bullets from the list elements*/
+/* MouseOut state (default) - create and position a space for the larger images and hide them*/
+#gallery3colmixcol-1 a img.hid {
+	width: 250px;
+	height: 340px;
+	position: absolute;
+	top: 10px;
+	left: 400px;
+	visibility: hidden;
+}
+
+/* MouseOver state (hover)- reveal larger picture */
+#col-1 a:hover {
+	background: white;
+}
+
+#gallery3colmixcol-1 a:hover img.hid {
+	visibility: visible;
+}
+
+/*----------------------------------------------------*/
+
+/* set 2nd column of thumbnails 85px further over to right*/
+#gallery3colmixcol-2 {
+	position: absolute;
+	top: 0;
+	left: 85px;
+	width: 135px;
+}
+
+li {
+	margin: 5px;
+	list-style-type: none;
+}
+
+/* MouseOut state (default) - hide larger picture */
+#gallery3colmixcol-2 a img.hid {
+	width: 350px;
+	height: 265px;
+	position: absolute;
+	top: 10px;
+	left: 315px;
+	margin-left: 0;
+	visibility: hidden;
+}
+
+/* MouseOver state (hover)- reveal larger picture */
+#gallery3colmixcol-2 a:hover {
+	background: white;
+}
+
+#gallery3colmixcol-2 a:hover img.hid {
+	visibility: visible;
+}
+
+/*----------------------------------------------------*/
+
+
+/* set 3rd column of thumbnails 170px further over to right*/
+#gallery3colmixcol-3 {
+	position: absolute;
+	top: 0;
+	left: 230px;
+	width: 108px;
+}
+
+li {
+	margin: 5px;
+	list-style-type: none;
+}
+
+/* MouseOut state (default) - hide larger picture */
+#gallery3colmixcol-3 a img.hid {
+	width: 260px;
+	height: 260px;
+	position: absolute;
+	top: 10px;
+	left: 175px;
+	margin-left: 0;
+	visibility: hidden;
+}
+
+/* MouseOver state (hover)- reveal larger picture */
+#gallery3colmixcol-3 a:hover {
+	background: white;
+}
+
+#col-3 a:hover img.hid {
+	visibility: visible;
+}
+
+
+
+﻿/*set images to have no borders*/
+img {
+	border: none;
+}
+
+/* Set general thumbnail styles */
+#gallery3colmixcol-1 {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 85px;
+}
+
+/*place the column on the page*/
+li {
+	margin: 5px;
+	list-style-type: none;
+}
+
+/*remove bullets from the list elements*/
+/* MouseOut state (default) - create and position a space for the larger images and hide them*/
+#gallery3colmixcol-1 a img.hid {
+	width: 250px;
+	height: 340px;
+	position: absolute;
+	top: 10px;
+	left: 400px;
+	visibility: hidden;
+}
+
+/* MouseOver state (hover)- reveal larger picture */
+#col-1 a:hover {
+	background: white;
+}
+
+#gallery3colmixcol-1 a:hover img.hid {
+	visibility: visible;
+}
+
+/*----------------------------------------------------*/
+
+/* set 2nd column of thumbnails 85px further over to right*/
+#gallery3colmixcol-2 {
+	position: absolute;
+	top: 0;
+	left: 85px;
+	width: 135px;
+}
+
+li {
+	margin: 5px;
+	list-style-type: none;
+}
+
+/* MouseOut state (default) - hide larger picture */
+#gallery3colmixcol-2 a img.hid {
+	width: 350px;
+	height: 265px;
+	position: absolute;
+	top: 10px;
+	left: 315px;
+	margin-left: 0;
+	visibility: hidden;
+}
+
+/* MouseOver state (hover)- reveal larger picture */
+#gallery3colmixcol-2 a:hover {
+	background: white;
+}
+
+#gallery3colmixcol-2 a:hover img.hid {
+	visibility: visible;
+}
+
+/*----------------------------------------------------*/
+
+
+/* set 3rd column of thumbnails 170px further over to right*/
+#gallery3colmixcol-3 {
+	position: absolute;
+	top: 0;
+	left: 230px;
+	width: 108px;
+}
+
+li {
+	margin: 5px;
+	list-style-type: none;
+}
+
+/* MouseOut state (default) - hide larger picture */
+#gallery3colmixcol-3 a img.hid {
+	width: 260px;
+	height: 260px;
+	position: absolute;
+	top: 10px;
+	left: 175px;
+	margin-left: 0;
+	visibility: hidden;
+}
+
+/* MouseOver state (hover)- reveal larger picture */
+#gallery3colmixcol-3 a:hover {
+	background: white;
+}
+
+#gallery3colmixcol-3 a:hover img.hid {
+	visibility: visible;
+}
+
+#menu { 
+  float: right;
+  width:200px;
+}
+
+#menu, #menu ul{
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+#menu li { 
+  cursor:pointer;
+  background:#94C5EB url(arrows.png) no-repeat right top;
+  border-bottom:1px solid #444;
+}
+
+#menu li a {
+  text-decoration: none;
+}
+
+#menu>li>a { 
+  padding: 2px 10px; font-weight:bold;
+}
+
+#menu li li{ 
+  cursor:auto;
+  border:0;
+  padding:0 14px;
+  background-color:#fff;
+  background-image: none;
+}
+
+#disclaimer, #intro {
+  width: 400px;
+}
+
+#menu {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+#menu, #menu ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+#menu li {
+  float: left;
+  background: #FFF;
+}
+
+#menu a {
+  display: block;
+  padding: 5px;
+  width: 130px;
+}
+
+#menu li ul {
+  position: absolute;
+  left: -999em;
+  width: 140px;
+}
+
+#menu li:hover ul, #menu li ul:hover {
+  left:auto;
+}
+
+#menu {
+  position: absolute;
+  top: 376px;
+  right: 21%;
+}
+
+#menu, #menu ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+#menu li {
+  float: left;
+  background: #FFF;
+}
+
+#menu a {
+  display: block;
+  padding: 5px;
+  width: 62px;
+}
+
+#menu li ul {
+  position: absolute;
+  left: -999em;
+  width: 140px;
+}
+
+#menu li:hover ul, #menu li ul:hover {
+  left:auto;
+}
+#accordion {
+	width:200px;
+}
+#accordion li{
+	cursor: pointer;
+	background:url(accordion_bg.png) repeat-x;
+	font-weight:bold;
+	color:#015287;
+	border:1px solid #b2b2b2;
+	margin-bottom:2px;
+	list-style-image:none;
+	list-style-position:outside;
+	list-style-type:none;
+  /*
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+  */
+	padding: 4px 8px;
+}
+
+#accordion li.active{
+	color:#D15600
+}
+#accordion li ul{
+	padding:0;
+	margin:10px 0 0 0;
+}
+
+#accordion li.active li{
+	text-indent:0;
+}
+#accordion li li{
+	font-weight: normal;
+	background:none;
+	border:0;
+}
+#info{
+	width: 300px;
+	border: 1px solid #999;
+	padding: 0 10px;
+}
+#info p {
+	width: inherit;
+	background-color: inherit;
+}
+#info-nav{
+	margin: 0;
+	padding: 3px 0;
+	width: 100%;
+	list-style: none;
+}
+#info-nav li{
+	display: inline;
+	background: #ccc;
+	border: 1px solid #888;
+	border-bottom: 0;
+	margin-right:2px;
+	padding: 3px;
+}
+#info-nav li a:hover{
+	color:#d15600;
+}
+#info-nav li.current{ 
+	background: #fff;
+	padding-bottom: 4px;
+  
+}
+
+#celebs {
+	clear: both;
+}
+
+/*reset browsers to give cross browser uniformity*
+html, body, p, lu, li { margin:0; padding:0;
+}
+*/
+img { border:0;
+}
+/* Set general thumbnail styles */
+/*place the column on the page*/
+#gallery-onecol-1 { position: absolute; top: 0; left: 0;
+}
+/*remove bullets from the list elements*/
+li { margin: 10px; list-style-type:none;
+}
+/* MouseOut state (default) - create a space for the larger images and hide them*/
+#gallery-onecol-1 a img.hid { width: 260px; height:390px; position: absolute; top: 10px; left: 140px; visibility: hidden;
+}
+/* MouseOver state (hover)- reveal larger image */
+#gallery-onecol-1 a:hover { background: white;
+}
+#gallery-onecol-1 a:hover img.hid { visibility:visible;
+}
+
+#overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: black url(../../css/images/spinner.gif) no-repeat scroll center center;
+}
+
+#lightbox {
+  position: fixed;
+}
+
+/*
+    ColorBox Core Style
+    The following rules are the styles that are consistant between themes.
+    Avoid changing this area to maintain compatability with future versions of ColorBox.
+*/
+#colorbox, #cboxOverlay, #cboxWrapper{position:absolute; top:0; left:0; z-index:9999; overflow:hidden;}
+#cboxOverlay{position:fixed; width:100%; height:100%;}
+#cboxMiddleLeft, #cboxBottomLeft{clear:left;}
+#cboxContent{position:relative;}
+#cboxLoadedContent{overflow:auto;}
+#cboxLoadedContent iframe{display:block; width:100%; height:100%; border:0;}
+#cboxTitle{margin:0;}
+#cboxLoadingOverlay, #cboxLoadingGraphic{position:absolute; top:0; left:0; width:100%;}
+#cboxPrevious, #cboxNext, #cboxClose, #cboxSlideshow{cursor:pointer;}
+
+/* 
+    ColorBox example user style
+    The following rules are ordered and tabbed in a way that represents the
+    order/nesting of the generated HTML, so that the structure easier to understand.
+*/
+#cboxOverlay{background:#000;}
+
+#colorbox{
+    #cboxContent{margin-top:20px;}
+        #cboxLoadedContent{background:#000; padding:5px;}
+        #cboxTitle{position:absolute; top:-20px; left:0; color:#ccc;}
+        #cboxCurrent{position:absolute; top:-20px; right:0px; color:#ccc;}
+        #cboxSlideshow{position:absolute; top:-20px; right:90px; color:#fff;}
+        #cboxPrevious{position:absolute; top:50%; left:5px; margin-top:-32px; background:url(images/controls.png) top left no-repeat; width:28px; height:65px; text-indent:-9999px;}
+        #cboxPrevious.hover{background-position:bottom left;}
+        #cboxNext{position:absolute; top:50%; right:5px; margin-top:-32px; background:url(images/controls.png) top right no-repeat; width:28px; height:65px; text-indent:-9999px;}
+        #cboxNext.hover{background-position:bottom right;}
+        #cboxLoadingOverlay{background:#000;}
+        #cboxLoadingGraphic{background:url(images/loading.gif) center center no-repeat;}
+        #cboxClose{position:absolute; top:5px; right:5px; display:block; background:url(images/controls.png) top center no-repeat; width:38px; height:19px; text-indent:-9999px;}
+        #cboxClose.hover{background-position:bottom center;}
+}
+#fader {
+  position: relative;
+}
+
+#fader .to {
+  display: none;
+  position: absolute;
+  left: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

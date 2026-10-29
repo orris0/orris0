@@ -1,0 +1,8 @@
+node_modules/
+public/storage/uploads/
+*.jpg
+*.png
+orris0/
+public/images
+public/css-jq
+public/js-assets

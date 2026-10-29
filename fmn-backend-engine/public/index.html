@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Family Media Network | Advocacy & Learning Hub</title>
+    <!-- High-Contrast Accessibility Baseline inspired by CSS Secrets -->
+    <style>
+        :root {
+            --bg-color: #121214;
+            --card-bg: #1a1a1e;
+            --text-main: #f8f9fa;
+            --text-muted: #a0a0a5;
+            --accent-alert: #ff4d4d;
+            --accent-secure: #00cc66;
+            --accent-link: #3399ff;
+            --font-stack: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+        }
+
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { font-family: var(--font-stack); background: var(--bg-color); color: var(--text-main); line-height: 1.6; padding: 20px; }
+        
+        /* Master Layout Grid */
+        .container { max-width: 1200px; margin: 0 auto; }
+        
+        /* High-Visibility Emergency Header */
+        .emergency-banner { 
+            background: linear-gradient(45deg, #b30000, #4a0000); 
+            padding: 15px; border-radius: 8px; margin-bottom: 30px; 
+            border: 2px solid var(--accent-alert); box-shadow: 0 4px 15px rgba(255,77,77,0.2);
+        }
+        .emergency-banner h2 { font-size: 1.3rem; margin-bottom: 8px; color: #fff; }
+        .emergency-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 10px; font-size: 0.95rem; }
+        .emergency-grid a { color: #fff; font-weight: bold; text-decoration: underline; }
+
+        header { margin-bottom: 40px; border-bottom: 1px solid #2d2d34; padding-bottom: 20px; }
+        header h1 { font-size: 2.5rem; margin-bottom: 10px; background: linear-gradient(to right, #fff, var(--text-muted)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        header p { color: var(--text-muted); max-width: 800px; }
+
+        .dashboard-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 30px; }
+        @media (max-width: 900px) { .dashboard-grid { grid-template-columns: 1fr; } }
+
+        /* Section Cards */
+        .panel { background: var(--card-bg); border-radius: 8px; padding: 25px; border: 1px solid #2d2d34; }
+        .panel h2 { font-size: 1.5rem; margin-bottom: 20px; padding-bottom: 10px; border-bottom: 2px solid #2d2d34; }
+
+        /* Shelter Registry Style */
+        .shelter-list { list-style: none; }
+        .shelter-item { margin-bottom: 12px; }
+        .shelter-link { 
+            display: block; padding: 15px; background: #222227; color: var(--text-main); 
+            text-decoration: none; border-radius: 6px; border-left: 4px solid var(--accent-alert);
+            transition: transform 0.2s, background 0.2s;
+        }
+        .shelter-link:hover { background: #2b2b33; transform: translateX(5px); }
+
+        /* Dynamic Bookshelf Styling */
+        .bookshelf { display: flex; flex-direction: column; gap: 15px; }
+        .book-card { background: #222227; padding: 15px; border-radius: 6px; border-top: 3px solid var(--accent-link); }
+        .book-title { font-weight: bold; color: #fff; margin-bottom: 5px; }
+        .book-focus { font-size: 0.9rem; color: var(--text-muted); }
+
+        /* Global Footer */
+        footer { margin-top: 5px; border-top: 1px solid #2d2d34; padding-top: 20px; font-size: 0.85rem; color: var(--text-muted); text-align: center; }
+    </style>
+    <!-- Include production-grade jQuery CDN -->
+    <script src="https://jquery.com" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+</head>
+<body>
+
+<div class="container">
+    <!-- Immediate Action Emergency Interventions -->
+    <div class="emergency-banner" role="alert">
+        <h2>⚠️ SYSTEM CRITICAL LIFELINES (IMMEDIATE ASSISTANCE)</h2>
+        <div class="emergency-grid">
+            <div>DHS Crisis Ombudsman: <a href="tel:18009946494">800-994-6494</a></div>
+            <div>The Legal Aid Society: <a href="tel:12125773300">212-577-3300</a></div>
+            <div>Coalition for the Homeless: <a href="tel:12127762000">212-776-2000</a></div>
+        </div>
+    </div>
+
+    <header>
+        <h1>Family Media Network</h1>
+        <p>A high-security, dual-purpose ecosystem. This deployment showcases masterclass technical web development framework literature while serving as a secure, decentralized tracking registry for survivors of municipal shelter systemic abuse.</p>
+    </header>
+
+    <main class="dashboard-grid">
+        <!-- Shelter Portal Engine (Repo 2 Elements) -->
+        <section class="panel">
+            <h2>Exposing Shelter Abuse Registries</h2>
+            <p style="margin-bottom: 15px; font-size: 0.95rem; color: var(--text-muted);">Select an operational monitoring dashboard to analyze tracked incidents, evidence timelines, and human rights oversight reports:</p>
+            <ul class="shelter-list">
+                <li class="shelter-item"><a class="shelter-link" href="/registries/the-kelly">The Kelly Safe Haven Dashboard</a></li>
+                <li class="shelter-item"><a class="shelter-link" href="/registries/the-andrews">The Andrews Safe Haven Dashboard</a></li>
+                <li class="shelter-item"><a class="shelter-link" href="/registries/the-travellers-hotel">The Travellers Hotel Transitional Portal</a></li>
+                <li class="shelter-item"><a class="shelter-link" href="/registries/breaking-ground">Breaking Ground Monitored Units</a></li>
+                <li class="shelter-item"><a class="shelter-link" href="/registries/brc-25th-street">BRC Transitional Shelter (25th Street)</a></li>
+            </ul>
+            <div style="margin-top: 20px;">
+                <a href="/know-your-rights" style="color: var(--accent-secure); font-weight: bold; text-decoration: none;">➔ Access "Know Your Rights" Section (Undocumented & Disabled Guides)</a>
+            </div>
+        </section>
+
+        <!-- Dynamic Book Presentation Shelf (Repo 3 Mounting) -->
+        <section class="panel">
+            <h2>Educational Framework Showcase</h2>
+            <p style="margin-bottom: 15px; font-size: 0.95rem; color: var(--text-muted);">Asynchronous literature mount streaming architectural books utilized to build this ecosystem:</p>
+            <div id="dynamicBookshelf" class="bookshelf">
+                <p style="color: var(--text-muted);">Connecting to local bookshelf data stream API...</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>🔒 <strong>TRAUMA-INFORMED PLATFORM DISCLOSER:</strong> Family Media Network operates entirely as an independent advocacy, community documentation, and educational system. This interface does not substitute for formal court-filed legal representation or emergency medical response. No user IP addresses or visitor metadata variables are preserved within server execution chains.</p>
+    </footer>
+</div>
+
+<!-- jQuery: Novice to Ninja Dynamic API Injection Script -->
+<script>
+    (function($) {
+        "use strict";
+        $(document).ready(function() {
+            var $bookshelfContainer = $('#dynamicBookshelf');
+
+            // Fetch metadata cleanly from our Express server endpoint
+            $.ajax({
+                url: '/api/bookshelf',
+                method: 'GET',
+                dataType: 'json',
+                success: function(bookData) {
+                    $bookshelfContainer.empty(); // Clear out the loading notice
+                    
+                    if(bookData && bookData.length > 0) {
+                        $.each(bookData, function(index, book) {
+                            var bookMarkup = `
+                                <div class="book-card">
+                                    <div class="book-title">[Book ${book.id}] ${book.title}</div>
+                                    <div class="book-focus"><strong>Deployment Role:</strong> ${book.focus}</div>
+                                    <div style="font-size: 0.8rem; color: var(--accent-link); margin-top: 4px;">Repository: ${book.category}</div>
+                                </div>
+                            `;
+                            $bookshelfContainer.append(bookMarkup);
+                        });
+                    } else {
+                        $bookshelfContainer.html('<p>No source text configurations found.</p>');
+                    }
+                },
+                error: function() {
+                    $bookshelfContainer.html('<p style="color: var(--accent-alert);">⚠️ Unexpected breakdown loading the dynamic textbook array.</p>');
+                }
+            });
+        });
+    })(jQuery);
+</script>
+
+</body>
+</html>

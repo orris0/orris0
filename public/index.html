@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en" class="h-full bg-slate-950 text-slate-100">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Family Media Network Hub</title>
+  
+  <!-- CSS Stylesheets -->
+  <link rel="stylesheet" href="/css/style.css" />
+  <link rel="stylesheet" href="/css/web-components.css" />
+  
+  <!-- Modern Library Script Hooks -->
+  <script src="/js/jquery.min.js"></script>
+  <script src="/js/main.js" defer></script>
+</head>
+<body class="h-full flex flex-col font-sans">
+
+  <!-- Core Hub Header / Navigation -->
+  <header class="bg-slate-900 border-b border-slate-800 p-4">
+    <div class="max-w-7xl mx-auto flex justify-between items-center">
+      <h1 class="text-xl font-bold tracking-wide text-amber-500">Family Media Network</h1>
+      <nav id="sfNav">
+        <ul class="flex gap-6 text-sm font-medium text-slate-400">
+          <li><a href="/" class="hover:text-amber-500 transition">Dashboard</a></li>
+          <li><a href="/adrian-west-projects/project1-template/index.html" class="hover:text-amber-500 transition">Project 1</a></li>
+          <li><a href="/adrian-west-projects/project2-template/index.html" class="hover:text-amber-500 transition">Project 2</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Central Dynamic Feed Container -->
+  <main class="flex-1 max-w-4xl mx-auto w-full p-6">
+    <section class="fb-feed space-y-6">
+      
+      <!-- Example Post Card Referencing Correct Image Paths -->
+      <article class="feed-item unread-post bg-slate-900 border border-slate-800 rounded-lg p-5 shadow-sm">
+        <div class="post-header flex items-center gap-3 mb-4">
+          <div class="avatar missing-avatar w-10 h-10 bg-slate-800 rounded-full flex items-center justify-center text-sm font-bold text-slate-400">OM</div>
+          <div class="meta-info">
+            <h3 class="font-semibold text-slate-200">Featured Network Asset</h3>
+            <span class="timestamp text-xs text-slate-500">Just now</span>
+          </div>
+        </div>
+        
+        <div class="post-content space-y-4">
+          <p class="text-slate-300">Welcome to the account repository dashboard. All loose asset media files have been grouped elegantly into their safe static subdirectories.</p>
+          
+          <!-- Corrected Image Asset Mapping Context -->
+          <div class="grid grid-cols-2 gap-4" id="family-gallery">
+            <a href="/images/the-rapper-big-277x576.jpg" title="The Rapper Feature Photo" class="gallery-thumbnail-link block overflow-hidden rounded border border-slate-800">
+              <img src="/images/the-rapper-big-277x576.jpg" alt="The Rapper Image Profile" class="w-full h-auto object-cover hover:scale-105 transition duration-300" />
+            </a>
+            <a href="/images/bobmarley.png" title="Bob Marley Legacy Presentation" class="gallery-thumbnail-link block overflow-hidden rounded border border-slate-800">
+              <img src="/images/bobmarley.png" alt="Bob Marley Presentation Panel" class="w-full h-auto object-cover hover:scale-105 transition duration-300" />
+            </a>
+          </div>
+        </div>
+        
+        <div class="post-footer flex gap-4 mt-4 pt-3 border-t border-slate-800/50">
+          <button class="action-btn like-btn text-sm font-medium text-slate-400 hover:text-rose-500 flex items-center gap-1">👍 Like</button>
+          <button class="action-btn comment-trigger text-sm font-medium text-slate-400 hover:text-amber-500">💬 Comment</button>
+        </div>
+      </article>
+
+    </section>
+  </main>
+
+</body>
+</html>
+

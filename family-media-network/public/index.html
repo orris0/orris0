@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Family Media Network - Hub</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <div style="max-width: 600px; margin: 50px auto; font-family: sans-serif; padding: 20px; border: 1px solid #ccc; border-radius: 8px;">
+        <h2>Family Media Network Live Workspace</h2>
+        <p>Your Termux + Acode backend engine is ready to receive requests.</p>
+        <div id="status" style="padding: 10px; background: #e0ffe0; color: #006600; border-radius: 4px; font-weight: bold;">
+            Connecting to Tablet API Server...
+        </div>
+    </div>
+    <script>
+        async function checkAPI() {
+            try {
+                const res = await fetch("/api/health");
+                const data = await res.json();
+                document.getElementById("status").innerText = "✅ API Active: Running via " + data.workspace;
+            } catch (err) {
+                document.getElementById("status").style.background = "#ffe0e0";
+                document.getElementById("status").style.color = "#cc0000";
+                document.getElementById("status").innerText = "❌ Failed to reach local backend process.";
+            }
+        }
+        window.onload = checkAPI;
+    </script>
+</body>
+</html>

@@ -1,0 +1,20 @@
+name: Notify site repo on push
+on:
+  push:
+    branches:
+      - main
+      - master
+
+jobs:
+  dispatch:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Send repository_dispatch to site repo
+        env:
+          REPO_TOKEN: ${{ secrets.REPO_DISPATCH_TOKEN }}
+        run: |
+          curl -X POST \
+            -H "Accept: application/vnd.github.v3+json" \
+            -H "Authorization: token $REPO_TOKEN" \
+            https://api.github.com/repos/orris0/orris0/dispatches \
+            -d '{"event_type":"rebuild-site"}'

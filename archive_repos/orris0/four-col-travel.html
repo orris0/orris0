@@ -1,0 +1,76 @@
+﻿<!DOCTYPE html>
+<!--Everything you write should be using markups -->
+<!-- head section is communicating about the page to the browser -->
+<!-- Anything you write under head is not displayed on the browser content page. -->
+<html xmlns="http://www.w3.org/1999/xhtml" xml:ng-app lang="en">
+	<!-- All the Tags should be under <html> -->
+	<!-- Describing about the page -->
+	<head>
+		<!-- Required meta tags -->
+	    <!-- Describing about the page -->
+	    <!-- head section is communicating about the page to the browser -->
+		<!-- Anything you write under head is not displayed on the browser content page. -->
+		<meta charset="UTF-8">
+<title>Four column table with id, th</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<style type="text/css">
+table { width: 500px; border:1px black solid; border-collapse:collapse;font-family: "times new roman";
+	font-size: medium;
+}
+td { border:1px black solid; 	
+}
+th { border:1px black solid;
+}
+caption { font-weight:bold; font-size: medium;
+}
+</style>
+</head>
+<body>
+<table summary="Table 4. Linked headers and data cells">
+<caption>
+    Table 4. Linked headers and data cells</caption>
+<tr>
+          <th id="th1">Destination</th>
+          <th id="th2">Coach</th>
+          <th id="th3">Boat</th>
+          <th id="th4">Air</th>
+</tr>        
+<tr>
+   <td headers="th1">To Lisbon</td>
+   <td headers="th2">No</td>
+   <td headers="th3">Yes</td>
+   <td headers="th4">Yes</td>
+</tr>
+<tr>
+   <td headers="th1">To Isle of Wight</td>
+   <td headers="th2">Yes</td>
+   <td headers="th3">Yes</td>
+   <td headers="th4">No</td>
+</tr>
+</table>
+<div id="container">
+    <p>&nbsp;</p>
+    <p>inline content (default)</p>
+    <p>
+        <a href="HTML5-Ch1-7.html">Page 1</a>
+        <a href="html5-nav.html">Page 2</a>
+        <a href="simplistic-html5-java.html">Page 3</a>
+        <a href="simplistic-html5.html">Page 4</a>
+        <a href="simplistic-side-by-side.html">Page 5</a>
+        <a href="starter-page.html">Page 6</a>
+        <a href="svg-text-embed-html5.html">Page 7</a>
+    </p>
+    <p>&nbsp;</p>
+    <p class="inline-block">inline-block content<br />
+        <a href="svg-object-circle.html">Page 1</a>
+        <a href="svg-inline-square.html">Page 2</a>
+        <a href="SVG-inline-circle.html">Page 3</a>
+        <a href="svg-object-square.html">Page 4</a>
+        <a href="svg-text-embed-html5.html">Page 5</a>
+        <a href="summary-details-tags.html">Page 6</a>
+        <a href="#">Page 7</a>
+    </p>
+    <p>&nbsp;</p>
+</div>
+</body>
+</html>

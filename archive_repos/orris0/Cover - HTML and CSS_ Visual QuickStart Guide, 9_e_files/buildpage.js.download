@@ -1,0 +1,947 @@
+var baseURL;
+
+if (window.getInformITBaseURL)
+	baseURL = window.getInformITBaseURL();
+else {
+	if (window.location.hostname == "localhost") {
+		baseURL = "../completecourse/";
+	} else {
+		baseURL = "https://s3.amazonaws.com/storefronts/streaming-video/completecourse/";
+	}
+}
+
+requirejs.config({
+	baseUrl: baseURL + "js/",
+	waitSeconds: 60,
+	paths: {
+		"jquery": "jquery-2.1.3.min",
+		"jquery.ui": "jquery-ui.min",
+		"jquery.json": "jquery.json.min",
+		"jquery.onscreen": "jquery.onscreen",
+		"jquery.highlight": "jquery.highlight",
+		"jquery.scrollTo": "jquery.scrollTo.min",
+		"bootstrap": "bootstrap",
+		"bootstrap-notify": "bootstrap-notify.min",
+		"bootstrap-dialog": "bootstrap-dialog.min",
+		"imagesloaded": "imagesloaded.pkgd.min",
+		"popcorn": "popcorn-complete.min",
+		"bootstrap-toolkit": "bootstrap-toolkit",
+		"videojs": "video",
+		"videojs-markers": "videojs-markers",
+		"handlebars": "handlebars-v3.0.3",
+		"lunr": "lunr.min"
+	},
+	shim: {
+		"jquery": {
+			export: "$"
+		},
+		"jquery.ui": {
+			export: "$"
+		},
+		"jquery.json": {
+			export: "$",
+			deps: ['jquery']
+		},
+		"jquery.onscreen": {
+			export: "$",
+			deps: ['jquery']
+		},
+		"jquery.highlight": {
+			export: "$",
+			deps: ['jquery']
+		},
+		"jquery.scrollTo": {
+			export: "$",
+			deps: ['jquery']
+		},
+		"bootstrap": {
+			export: "$",
+			deps: ['jquery']
+		},
+		"bootstrap-notify": {
+			export: "$",
+			deps: ['bootstrap']
+		},
+		"bootstrap-dialog": {
+			deps: ['bootstrap']
+		},
+		"popcorn": {
+			export: "Popcorn"
+		},
+		"popcorn.timebase": {
+			export: "Popcorn",
+			deps: ['popcorn']
+		},
+		"bootstrap-toolkit": {
+			deps: ["jquery"]
+		},
+		"videojs": {
+			export: "videojs",
+			deps: ["jquery"]
+		},
+		"videojs-markers": {
+			deps: ["videojs", "jquery"]
+		},
+		"imagesloaded": {
+			export: "$",
+			deps: ["jquery"]
+		},
+		"handlebars": {
+			exports: "Handlebars"
+		}
+	},
+	// this fixed the "appending .js" problem I was getting on informit.com
+	config: {
+		text: {
+			useXhr: function (url, protocol, hostname, port) {
+				return true;
+			}
+		}
+	}
+});
+
+define(["jquery", "video-manager", "video-overlay", "toc-tree", "videojs", "popcorn", "popcorn.timebase", "bootstrap-toolkit", "comments", "notes", "account"], function ($, VideoManager) {
+	var manifest;
+
+	var contentsPaneDesiredVisible = undefined;
+	var lastSize = undefined;
+
+	var optionsTitle;
+
+	$("body").css("opacity", 0);
+
+	$.extend({
+		replaceTag: function (currentElem, newTagObj, keepProps) {
+			var $currentElem = $(currentElem);
+			var i, $newTag = $(newTagObj).clone();
+			if (keepProps) {//{{{
+				newTag = $newTag[0];
+				newTag.className = currentElem.className;
+				$.extend(newTag.classList, currentElem.classList);
+				$.extend(newTag.attributes, currentElem.attributes);
+			}//}}}
+			$currentElem.wrapAll($newTag);
+			$currentElem.contents().unwrap();
+			// return node; (Error spotted by Frank van Luijn)
+			return this; // Suggested by ColeLawrence
+		}
+	});
+
+	$.fn.extend({
+		replaceTag: function (newTagObj, keepProps) {
+			// "return" suggested by ColeLawrence
+			return this.each(function() {
+				jQuery.replaceTag(this, newTagObj, keepProps);
+			});
+		}
+	});
+
+	function initialize () {
+		onResize();
+
+		var v = $("#video .overlay").VideoOverlay();
+
+		$("#video .video-js label").replaceTag("<span>");
+
+		// NOTE: started using opacity too since the tab panels were overriding "invisible"
+		$("#main").removeClass("invisible").css("opacity", 1);
+
+		$("body").addClass("skin-" + manifest.skin);
+
+		$("#comments-panel").Comments( { manager: $("#video"), titlePath: getEscapedPathFromTitle(optionsTitle) });
+
+		$("#notes-panel").Notes({ manager: $("#video"), titlePath: getEscapedPathFromTitle(optionsTitle) });
+
+		$("#account-panel").Account( { manifest: manifest } );
+
+//		if ($("#video").VideoManager("hasCustomerIdentifier") && manifest.allowComments !== false) {
+		if (manifest.allowComments !== false) {
+			$("#show-comments-button").click(onOpenComments);
+		} else {
+			$("#show-comments-button").hide(0);
+		}
+
+		if (manifest.allowNotes !== false) {
+			$("#show-notes-button").click(onOpenNotes);
+		} else {
+			$("#show-notes-button").hide(0);
+		}
+
+		if (manifest.buyButton != undefined) {
+			var buyButton = $("<a>", { class: "buy-btn btn btn-danger", target: "_blank", href: manifest.buyButton, text: " Add to cart"});
+			$("<i>", { class: "fa fa-shopping-cart"}).prependTo(buyButton);
+			$("#header-nav .navbar-brand").append(buyButton);
+		}
+
+		/*
+		 if (!coachMarksShown) {
+		 $("#coach-marks").CoachMarks().CoachMarks("instance").open();
+		 coachMarksShown = true;
+		 }
+		 */
+
+		$(".toc#contents-pane").on("playvideo", onPlayContent);
+	}
+
+	function getEscapedPathFromTitle (title) {
+		return title.substr(0, 48).toLowerCase().replace(/ /g,"_");
+	}
+
+	function onPlayContent () {
+		var currentSize = ResponsiveBootstrapToolkit.current();
+
+		if (currentSize == "xs") {
+			resizePanes(false, false);
+			matchToggleButtonToVisibility();
+		}
+	}
+
+	function onResize () {
+		var wh = $(window).outerHeight();
+
+		var reservedTop = 50;
+
+		if (manifest.navbar == false) {
+			reservedTop = 0;
+		}
+
+		$("#contents").outerHeight(wh - reservedTop);
+		$("#video").outerHeight(wh - reservedTop);
+		$("#sidebar").outerHeight(wh - reservedTop);
+
+		var numUpdates = 0;
+		if ($(".toc#contents-pane").TOCTree("instance")) {
+			numUpdates = $(".toc#contents-pane").TOCTree("getNumberOfUpdates");
+			if (numUpdates == 0) {
+				$("#versions").addClass("hidden");
+			}
+		}
+
+		var hh = reservedTop + $(".course-progress").outerHeight() + $("#contents-pane h2").outerHeight() + 7;
+		if (numUpdates > 0) {
+			hh += $("#versions").outerHeight();
+		}
+		$("#contents-pane .scroller").height(wh - hh);
+
+		var hh_search = reservedTop + $("#search-header").outerHeight();
+		$("#search-results-panel .scroller").height(wh - hh_search);
+
+		$("#main_video").css("max-height", wh - reservedTop);
+
+		$("#video .iframe-holder .the-iframe-holder iframe").css("min-height", wh - reservedTop);
+
+		var c = Math.floor($("#main").width() * .25) + 8;
+		var currentSize = ResponsiveBootstrapToolkit.current();
+		if (currentSize == "xs") {
+			c = "100%";
+			if (manifest.skin != "Microsoft") {
+				$("#collapsible-menu").collapse("hide");
+			}
+		}
+		$(".toc#contents-pane").outerWidth(c);
+		$(".search-results").outerWidth(c);
+
+		doResponsiveLogic();
+
+		matchToggleButtonToVisibility();
+	}
+
+	function matchToggleButtonToVisibility () {
+		if ($("#contents").hasClass("col-xs-0") || $("#contents-pane").css("visibility") === "hidden") {
+			$("#toc-toggler").removeClass("open").attr("aria-expanded", false);
+			$("#contents").attr("aria-expanded", false);
+
+			if (manifest.skin == "Microsoft") {
+				$(".search-button").attr("aria-expanded", $("#search-results-panel").data("state-open"));
+			}
+		} else {
+			$("#toc-toggler").addClass("open").attr("aria-expanded", true);
+			$("#contents").attr("aria-expanded", true);
+
+			if (manifest.skin == "Microsoft") {
+				$(".search-button").attr("aria-expanded", $("#search-results-panel").data("state-open"));
+			}
+		}
+	}
+
+	// THEORY: hide the TOC every time we switch to xs
+	function doResponsiveLogic () {
+		var func = ResponsiveBootstrapToolkit.changed(function () {
+			var currentSize = ResponsiveBootstrapToolkit.current();
+			if (currentSize != lastSize) {
+				var desired = $("#toc-toggler").hasClass("initial-open");
+				if (!desired)
+					desired = $("#toc-toggler").hasClass("open");
+				else {
+					$("#toc-toggler").removeClass("initial-open");
+				}
+				if (currentSize == "xs") {
+					resizePanes(desired, false);
+
+					wasSmall = true;
+
+					$("body").addClass("is-xs");
+				} else {
+					resizePanes(desired, false);
+
+					wasSmall = false;
+
+					$("body").removeClass("is-xs");
+				}
+
+				matchToggleButtonToVisibility();
+
+				lastSize = currentSize;
+			}
+
+			contentsPaneDesiredVisible = undefined;
+
+			$("body").css("opacity", 1);
+		});
+		func();
+	}
+
+	function addLinkToCSS (url) {
+		var link = $("<link/>",
+			{ rel: "stylesheet", href: url, type: "text/css" });
+		$("head").append(link);
+	}
+
+	function convertHabitatTOCtoMetadata (data) {
+		var links = $(data).find("a");
+
+		var metadata = links.map(function (index, item) {
+			var a = $(item);
+			var href = a.attr("href");
+			var hash = VideoManager.HashInURL(href);
+
+			var desc = a.text();
+
+			var src = manifest.folder + "/ops/" + href;
+
+			// allow widgets to be in the TOC (edited from Habitat export)
+			if (href && href.indexOf("[") != -1) {
+				src = href;
+			}
+
+			return {
+				desc: desc,
+				src: src,
+				hash: hash
+			};
+		});
+
+		return metadata;
+	}
+
+	// uses ncx:
+	function convertFrostTOCtoMetadata (data) {
+		var metadata = [];
+
+		var m = $(data).find("navMap");
+
+		var top = $(data).find("navMap > navPoint");
+
+		addFromEPUB(null, top, metadata, []);
+
+		return metadata;
+	}
+
+	function convertFrostTOCtoMetadata_usingHTML (data) {
+		var links = $(data).find("a");
+
+		var metadata = links.map(function (index, item) {
+			var a = $(item);
+			var href = a.attr("href");
+			var hash = VideoManager.HashInURL(href);
+
+			var desc = a.text();
+
+			var src = manifest.folder + "/ops/xhtml/" + href;
+
+			return {
+				desc: desc,
+				src: src,
+				hash: hash
+			};
+		});
+
+		return metadata;
+	}
+
+	function NodeFromEPUB (t, depth, parent) {
+		var a = t.find("content");
+		var href = a.attr("src");
+		var desc = t.find("navLabel text").html();
+		var cost = t.attr("cost");
+		if (cost) {
+			cost = parseInt(cost);
+		}
+		var hash = VideoManager.HashInURL(href);
+
+		// THEORY: grab Chapter or Part numbers from the ePub section descriptions (also grabbed during conversion)
+
+		var shortLabel = null;
+		var match = desc.match(/^(\d+)\./);
+		if (match) {
+			shortLabel = match[1];
+		} else {
+			match = desc.match(/^Part (.*):/);
+			if (match) {
+				shortLabel = match[1];
+			}
+		}
+
+		// allow widgets
+		var src = manifest.folder + "/oebps/html/" + href;
+		if (href && href.indexOf("[") != -1) {
+			src = href;
+		}
+
+		var node = {
+			desc: desc,
+			src: src,
+			hash: hash,
+			depth: depth,
+			short: shortLabel,
+			cost: cost,
+			parent: parent
+		};
+
+		return node;
+	}
+
+	function addFromEPUB (parent, list, metadata, depth) {
+		for (var i = 0; i < list.length; i++) {
+			var t = list.eq(i);
+
+			var cur_depth = [];
+			if (depth.length) {
+				cur_depth = depth.slice();
+			}
+			cur_depth.push(i);
+
+			var node = NodeFromEPUB(t, cur_depth.slice(), parent);
+
+			metadata.push(node);
+
+			var children = t.children("navPoint");
+
+			addFromEPUB(node, children, metadata, cur_depth);
+		}
+	}
+
+	function convertEPUBTOCtoMetadata (data) {
+		var metadata = [];
+
+		var m = $(data).find("navMap");
+
+		var top = $(data).find("navMap > navPoint");
+
+		addFromEPUB(null, top, metadata, []);
+
+		return metadata;
+	}
+
+	// if the toc doesn't have IDs associated with each entry, add temporary ones
+	function addIDsToTOC (toc) {
+		for (var i = 0; i < toc.length; i++) {
+			var t = toc[i];
+			if (t.id == undefined) {
+				t.id = i;
+			}
+		}
+	}
+
+	function onLoadedTOC (metadata) {
+		addIDsToTOC(metadata.toc);
+
+		$(".toc#contents-pane").TOCTree({ type: "video", skin: manifest.skin, data: metadata.toc, metadata: metadata, expander: "#collapse-button" });
+
+		$(".resource-list").TOCTree();
+
+		var settings = { toc: metadata.toc, el: "#video video", player: videojs("main_video", { controls: true, playbackRates: [0.5, .75, 1, 1.5, 2] }), markers: metadata.markers, options: manifest };
+		$("#video").VideoManager(settings);
+
+		//VideoManager.initialize(metadata.toc, "#video video", videojs("main_video"), metadata.markers, manifest);
+
+		initialize();
+
+		if (metadata.title) {
+			setProjectTitle(metadata.title);
+		}
+
+		if (metadata.posterImage) {
+			videojs("main_video").poster(metadata.posterImage);
+		}
+
+		$("#video").VideoManager("loadMostRecentVideo");
+	}
+
+	function onHabitatTOCLoaded (data) {
+		var metadata = convertHabitatTOCtoMetadata(data);
+
+		addIDsToTOC(metadata);
+
+		$(".toc#contents-pane").TOCTree({ type: "habitat", skin: manifest.skin, data: data, metadata: metadata, expander: "#collapse-button", updateLabels: manifest.updateLabels });
+
+		var settings = { toc: metadata, el: "#video video", player: videojs("main_video", { controls: true, playbackRates: [0.5, .75, 1, 1.5, 2] }), markers: [], options: manifest };
+		$("#video").VideoManager(settings);
+
+		//VideoManager.initialize(metadata, "#video video", videojs("main_video"), [], manifest);
+
+		initialize();
+
+		$("#video").VideoManager("loadMostRecentVideo");
+	}
+
+	function onFrostTOCLoaded (data) {
+		var metadata = convertFrostTOCtoMetadata(data);
+
+		addIDsToTOC(metadata);
+
+		$(".toc#contents-pane").TOCTree({ type: "frost", skin: manifest.skin, data: metadata, metadata: metadata, expander: "#collapse-button", updateLabels: manifest.updateLabels });
+
+		var settings = { toc: metadata, el: "#video video", player: videojs("main_video", { controls: true, playbackRates: [0.5, .75, 1, 1.5, 2] }), markers: [], options: manifest };
+		$("#video").VideoManager(settings);
+
+		//VideoManager.initialize(metadata, "#video video", videojs("main_video"), [], manifest);
+
+		initialize();
+
+		$("#video").VideoManager("loadMostRecentVideo");
+	}
+
+	function onEPUBTOCLoaded (data) {
+		var metadata = convertEPUBTOCtoMetadata(data);
+
+		addIDsToTOC(metadata);
+
+		$(".toc#contents-pane").TOCTree({ type: "epub", skin: manifest.skin, data: metadata, metadata: metadata, expander: "#collapse-button" });
+
+		var settings = { toc: metadata, el: "#video video", player: videojs("main_video", { controls: true, playbackRates: [0.5, .75, 1, 1.5, 2] }), markers: [], options: manifest };
+		$("#video").VideoManager(settings);
+
+		//VideoManager.initialize(metadata, "#video video", videojs("main_video"), [], manifest);
+
+		initialize();
+
+		$("#video").VideoManager("loadMostRecentVideo");
+	}
+
+	function loadContent () {
+		switch (manifest.type) {
+			case "metadata":
+				require(["toc.js"], onLoadedTOC);
+				break;
+			case "frost":
+				$.get(manifest.folder + "/oebps/html/tocncx.html", onFrostTOCLoaded);
+				break;
+			case "habitat":
+				$.get(manifest.folder + "/ops/toc.html", onHabitatTOCLoaded);
+				// loading toc.html via "get" gets a 500 error on manageit
+				// loading toc.xhtml via "get" gets a 403 error on manageit (cross-origin?)
+				// loading toc.html via require gets a 500 error on manageit
+				// loading toc.xhtml via require gets a 403 error on manageit (cross-origin?)
+				/*
+				var path = getAbsolutePath() + "/" + manifest.folder + "/OPS/toc.xhtml";
+				console.log("path = " + path);
+				require(["text!" + path], function () { console.log("was able to open toc"); });
+				*/
+				break;
+			case "epub":
+				$.get(manifest.folder + "/oebps/html/tocncx.html", onEPUBTOCLoaded);
+				break;
+		}
+	}
+
+	function getAbsolutePath () {
+		var loc = window.location;
+		var pathName = loc.pathname.substring(0, loc.pathname.lastIndexOf('/'));
+		return loc.origin + pathName;
+	}
+
+	function resizePanes (contentsVisible, resourcesVisible) {
+		var xs = ResponsiveBootstrapToolkit.is("xs");
+		var md = ResponsiveBootstrapToolkit.is(">=md");
+
+		// xs = 3, 6, 3
+		// md = 3, 7, 2
+
+		var contentsSize = 3, resourcesSize = md ? 2 : 3;
+
+		var videoSize = 12 - (contentsVisible ? contentsSize : 0) - (resourcesVisible ? resourcesSize : 0);
+
+		if (xs && manifest.navbar != false) {
+			if (contentsPaneDesiredVisible) {
+				contentsVisible = true;
+				videoSize = 0;
+				contentsSize = 12;
+				$("main").attr({ "hidden": true, "aria-hidden": "true" });
+				//$("#contents .scroller").show(0);
+			} else {
+				contentsVisible = false;
+				videoSize = 12;
+				contentsSize = 0;
+				$("main").attr({ "hidden": false, "aria-hidden": "false" });
+				//$("#contents .scroller").show(0);
+			}
+		} else {
+			$("main").attr({ "hidden": false, "aria-hidden": "false" });
+		}
+
+		if (contentsVisible) {
+			$("#contents").removeClass("col-xs-0").addClass("col-xs-" + contentsSize);
+			$("#contents-pane").attr( { "aria-hidden": false }).css( { "visibility": "visible", display: "block",  } );
+			//$("#contents .toc-tabstop").attr("tabindex", 10);
+		} else {
+			$("#contents").removeClass("col-xs-3").addClass("col-xs-0");
+			$("#contents-pane").attr( { "aria-hidden": true }).css( { visibility: "hidden", display: "none" } );
+			//$("#contents .toc-tabstop").attr("tabindex", -1);
+
+			//$(".toc#contents-pane").TOCTree("closeSearch");
+		}
+
+		if (resourcesVisible) {
+			$("#sidebar").removeClass("col-xs-0").addClass("col-xs-" + resourcesSize);
+		} else {
+			$("#sidebar").removeClass("col-xs-3 col-xs-2").addClass("col-xs-0");
+		}
+
+		$("#video").removeClass("col-xs-0 col-xs-6 col-xs-7 col-xs-8 col-xs-9 col-xs-11 col-xs-12").addClass("col-xs-" + videoSize);
+
+		// let the content know if it's xs
+		$("iframe.content").contents().find(".habitat-body").removeClass("xs");
+		if (xs) {
+			$("iframe.content").contents().find(".habitat-body").addClass("xs");
+		}
+	}
+
+	function onToggleTOC () {
+		contentsPaneDesiredVisible = !$("#toc-toggler").hasClass("open");
+
+		//var contentsVisible = !$("#contents").hasClass("col-xs-0");
+		var resourcesVisible = $("#sidebar").is(":visible");
+
+		$("#search-results-panel").data("state-open", false);
+
+		resizePanes(contentsPaneDesiredVisible, resourcesVisible);
+
+		//$("#contents .scroller").toggle("slide");
+
+		$("#toc-toggler").toggleClass("open");
+
+		$("#toc-toggler").attr("aria-expanded", $("#toc-toggler").hasClass("open"));
+
+		onResize();
+
+		if (contentsPaneDesiredVisible) {
+			$(".toc#contents-pane").TOCTree("closeSearch");
+
+			setTimeout(function () {
+				var index = $("#video").VideoManager("getCurrentIndex");
+				$(".toc-holder li").eq(index).focus();
+			}, 0);
+		}
+	}
+
+	function onOpenTOC () {
+		var contentsVisible = false;
+		var resourcesVisible = $("#sidebar").is(":visible");
+
+		resizePanes(!contentsVisible, resourcesVisible);
+
+		//$("#toc-toggler").addClass("open").attr("aria-expanded", true);
+
+		$(".toc#contents-pane").TOCTree("closeSearch");
+
+		onResize();
+	}
+
+	function onSearch () {
+		var useTOCForResults;
+
+		if ($(".toc#contents-pane").TOCTree("hasSearchIndex")) {
+			useTOCForResults = false;
+		} else {
+			useTOCForResults = true;
+		}
+
+		if (useTOCForResults) {
+			contentsPaneDesiredVisible = true;
+
+			resizePanes(true, false);
+
+			onResize();
+
+			var term = $("#query").val();
+
+			$("#query-too").val(term);
+
+			$(".toc#contents-pane").TOCTree("search", term);
+		} else {
+			var isOpen = $("#search-results-panel").attr("aria-expanded");
+
+			if (manifest.skin != "Microsoft" || isOpen != "true") {
+				$("#search-results-panel").data("state-open", true);
+
+				$("#toc-toggler").removeClass("open").attr("aria-expanded", false);
+
+				if (manifest.skin == "Microsoft") {
+					$(".search-button").attr("aria-expanded", true);
+				}
+
+				contentsPaneDesiredVisible = true;
+
+				resizePanes(true, false);
+
+				$("#contents-pane").attr({"aria-hidden": true}).css({visibility: "hidden", display: "none"});
+
+				onResize();
+
+				var term = $("#query").val();
+
+				$("#query-too").val(term);
+
+				$(".toc#contents-pane").TOCTree("showSearchPane");
+
+				var reservedTop = 50;
+
+				if (manifest.navbar == false) {
+					reservedTop = 0;
+				}
+
+				setTimeout(function () {
+					var wh = $(window).outerHeight();
+					var hh_search = reservedTop + $("#search-header").outerHeight();
+					$("#search-results-panel .scroller").height(wh - hh_search);
+				}, 500);
+			} else if (manifest.skin == "Microsoft") {
+				$("#search-results-panel").data("state-open", false);
+				onCloseSearch();
+			}
+		}
+	}
+
+	function onSearchToo () {
+		var term = $("#query-too").val();
+
+		$("#query").val(term);
+
+		$(".toc#contents-pane").TOCTree("search", term);
+	}
+
+	function onSearchFromTOC () {
+		$(".toc#contents-pane").TOCTree("showSearchPane");
+	}
+
+	function onCloseSearch () {
+		$(".toc#contents-pane").TOCTree("closeSearch");
+
+		$("#search-results-panel").data("state-open", false);
+
+		$(".search-button").focus();
+
+		/*
+		if (manifest.skin == "Microsoft") {
+			$(".search-button").attr("aria-expanded", false);
+		}
+		*/
+
+		//$(".toc").show("slide");
+
+		if ($("#toc-toggler").hasClass("open")) {
+			//onOpenTOC();
+			resizePanes(true, false);
+		} else {
+			resizePanes(false, false);
+		}
+
+		onResize();
+
+		$("#search-results-panel").data("state-open", false);
+	}
+
+	function onClearSearch () {
+		$("#query").val("");
+		$(".toc#contents-pane").TOCTree("closeSearch", "");
+	}
+
+	function onSearchPrevious () {
+		$(".toc#contents-pane").TOCTree("searchNext", -1);
+	}
+
+	function onSearchNext () {
+		$(".toc#contents-pane").TOCTree("searchNext", 1);
+	}
+
+	function setProjectTitle (title) {
+		$("a#home-button").text(title);
+		$("title").text(title);
+	}
+
+	function onOpenComments () {
+		$("#comments-panel").Comments("togglePanel");
+	}
+
+	function onOpenNotes () {
+		$("#notes-panel").Notes("togglePanel");
+		$(".note-search").focus();
+	}
+
+	function onOpenAccountPanel () {
+		$("#account-panel").Account("togglePanel");
+		$(".close-button").focus();
+	}
+
+	// resize the toc column after bootstrap styles have been applied (eventually)
+	function resizeAfterInitialStyling () {
+		var contents = $("#contents");
+		if (contents.css("width") != $("body").css("width")) {
+			onResize();
+		} else {
+			setTimeout(resizeAfterInitialStyling, 100);
+		}
+	}
+
+	function onClickHeaderNav (event) {
+		if (event.shiftKey) {
+			$("#video").VideoManager("showCrossSell");
+		}
+	}
+
+	var BuildPage = {
+		build: function (options) {
+			if (window.location.host.indexOf("learnercommunity") != -1) {
+				options.breakout = options.navbar = false;
+				console.log("LearnerCommunity hack: ACTIVATE!");
+			}
+
+			if (options.breakout == false) {
+				// stay in whatever frame we're in
+			} else {
+				breakout_of_frame();
+			}
+
+			// will this help with the xhr error we sometimes get on InformIT?
+			var timestamp = Date.now();
+			var url = baseURL + "js/viewer_template.html?time=" + timestamp;
+			$("body").load(url, $.proxy(this.doBuild, this, options));
+		},
+
+		doBuild: function (options) {
+			$(".navbar-brand div").text(options.title);
+
+			$("html").addClass("ui");
+
+			if (options.navbar == false) {
+				$("html").addClass("no-navbar");
+
+				$(window).contextmenu(function (event) {
+					event.preventDefault();
+					event.stopImmediatePropagation();
+					return false;
+				});
+			}
+
+			if (options.skin == "Microsoft") {
+				$("#show-comments-button").hide(0).attr( { "aria-hidden": true, "hidden": true  });
+				$("#show-notes-button").hide(0).attr( { "aria-hidden": true, "hidden": true  });
+				$("#account-button").hide(0).attr( { "aria-hidden": true, "hidden": true  });
+				$(".search-button").attr( { "aria-expanded": false });
+				$("#clear-search-button").hide(0).attr( { "aria-hidden": true, "hidden": true  });
+				$("#query").hide(0).attr( { "aria-hidden": true, "hidden": true  });
+				$("#comments-panel").attr( { "aria-hidden": true, "hidden": true  });
+				$("#notes-panel").attr( { "aria-hidden": true, "hidden": true  });
+				$("#account-panel").attr( { "aria-hidden": true, "hidden": true  });
+				$("#loading-text").css("display", "inline-block");
+
+				$("#query-too").attr("placeholder", "Enter search text");
+
+				$(".navbar-header").append($(".search-button"));
+			}
+
+			addLinkToCSS(baseURL + "css/bootstrap.min.css");
+			addLinkToCSS(baseURL + "css/bootstrap-theme.min.css");
+			addLinkToCSS(baseURL + "css/animate.css");
+			addLinkToCSS(baseURL + "css/font-awesome.min.css");
+			addLinkToCSS(baseURL + "css/video-js.min.css");
+			addLinkToCSS(baseURL + "css/bootstrap-dialog.min.css");
+			addLinkToCSS(baseURL + "css/videojs.markers.min.css");
+			addLinkToCSS(baseURL + "css/main.css");
+			addLinkToCSS("https://fonts.googleapis.com/css?family=Source+Sans+Pro");
+
+			// have to initialize this toolkit AFTER we've overwritten the body tag
+			ResponsiveBootstrapToolkit.initialize();
+
+			manifest = options;
+
+			loadContent();
+
+			$(window).resize(onResize);
+
+			//$(".show-all-markers").click(onShowAllMarkers);
+			$("#toc-toggler").click(onToggleTOC);
+			//$("#resource-toggler").click(onToggleResources);
+			//$("a[data-toggle='tab']").on("shown.bs.tab", onResize);
+			//$(".resource-list").on("playvideo", onClickMarker);
+
+			$("#header-nav").click(onClickHeaderNav);
+
+			$(".search-button").click(onSearch);
+			$(".search-results .close-btn").click(onCloseSearch);
+
+			$("#query").on("input", onSearch).on("focus", onSearch);
+			$("#query-too").on("input", onSearchToo);
+			//$(".query-toc").on("input", onSearchFromTOC);
+			$("#toc-search-button").click(onSearchFromTOC);
+			$("#clear-search-button").click(onClearSearch);
+
+			$("#search-previous").click(onSearchPrevious);
+			$("#search-next").click(onSearchNext);
+
+			//$("#account-button").click(function () { window.open("//memberservices.informit.com/my_account/index.aspx"); });
+			$("#account-button").click(onOpenAccountPanel);
+
+			/*
+			if (options.allowComments === true) {
+				$("#show-comments-button").click(onOpenComments);
+			} else {
+				$("#show-comments-button").hide(0);
+			}
+			*/
+
+			optionsTitle = options.title;
+
+			//$("#comments-panel").Comments( { manager: $("#video"), titlePath: getEscapedPathFromTitle(options.title) });
+
+			// this should get rid of the extra vertical scrollbar on the InformIT site for IE users
+			/*
+			if (window.parent) {
+				window.parent.document.body.style.overflow = "hidden";
+			}
+			*/
+			resizeAfterInitialStyling();
+		},
+
+		setSearchIndex: function (data) {
+			// make sure toc has been initialized; if not, set a callback
+			var isInitialized = $(".toc#contents-pane").data("que-TOCTree");
+			if (isInitialized) {
+				$(".toc#contents-pane").TOCTree("setSearchIndex", data);
+				$("#toc-search-button").show(0);
+			} else {
+				console.log("re-trying setSearchIndex");
+				setTimeout($.proxy(this.setSearchIndex, this, data), 500);
+			}
+		}
+	};
+
+	function breakout_of_frame () {
+		if (top.location != location) {
+			top.location.href = document.location.href;
+		}
+	}
+
+	return BuildPage;
+});
