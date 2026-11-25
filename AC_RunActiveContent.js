@@ -160,6 +160,16 @@ function AC_AddExtension(src, ext)
     return src + ext;
 }
 
+function AC_Escape(val)
+{
+  return String(val)
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;')
+    .replace(/'/g, '&#39;');
+}
+
 function AC_Generateobj(objAttrs, params, embedAttrs) 
 { 
   var str = '';
@@ -168,12 +178,12 @@ function AC_Generateobj(objAttrs, params, embedAttrs)
     str += '<object ';
     for (var i in objAttrs)
     {
-      str += i + '="' + objAttrs[i] + '" ';
+      str += i + '="' + AC_Escape(objAttrs[i]) + '" ';
     }
     str += '>';
     for (var i in params)
     {
-      str += '<param name="' + i + '" value="' + params[i] + '" /> ';
+      str += '<param name="' + i + '" value="' + AC_Escape(params[i]) + '" /> ';
     }
     str += '</object>';
   }
@@ -182,7 +192,7 @@ function AC_Generateobj(objAttrs, params, embedAttrs)
     str += '<embed ';
     for (var i in embedAttrs)
     {
-      str += i + '="' + embedAttrs[i] + '" ';
+      str += i + '="' + AC_Escape(embedAttrs[i]) + '" ';
     }
     str += '> </embed>';
   }
